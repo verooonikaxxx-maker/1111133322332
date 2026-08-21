@@ -13,6 +13,10 @@ html,body{background:#f2ede4;color:#1a1a1a;font-family:Georgia,"Times New Roman"
 .site-banner{width:100%;display:block}
 /* HERO — эстетичный бежевый с сосудами в правом верхнем углу */
 .title-block{position:relative;overflow:hidden;background:linear-gradient(135deg,#f4e8d0 0%,#ecdcbc 100%) url('https://static.joxi.pro/1787316252315-0fc1a373-6d29-43c0-b4e5-e24de9e21400.jpg') right top / 38% auto no-repeat;min-height:540px;display:flex;flex-direction:column;justify-content:flex-end;padding:44px 48px 40px;color:#1a1a1a}
+/* Эмблема Софийского Университета — по центру сверху */
+.title-emblem{position:absolute;top:22px;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:6px}
+.title-emblem img{width:64px;height:64px;object-fit:contain;display:block;filter:drop-shadow(0 1px 3px rgba(0,0,0,.15))}
+.title-emblem .cap{font-family:'Helvetica Neue',Arial,sans-serif;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:#5a4f42;font-weight:700;text-align:center;line-height:1.3;max-width:200px}
 .title-block .title-shadow{display:none}
 .title-block .title-texts{position:relative;width:100%;z-index:2}
 .title-block .title-crumb{font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:2px;color:#2e7d32;margin-bottom:22px;font-weight:800;display:inline-block;padding:6px 14px;border:1.5px solid #2e7d32;border-radius:2px;background:rgba(255,255,255,.35)}
@@ -150,7 +154,10 @@ footer{padding:18px 22px;text-align:center;font-size:12px;color:#888;background:
 
 @media(max-width:768px){
   html,body{font-size:19px}
-  .title-block{min-height:auto;background-size:170px auto;background-position:right 10px top 10px;padding:180px 24px 30px}
+  .title-block{min-height:auto;background-size:150px auto;background-position:right 10px top 10px;padding:200px 24px 30px}
+  .title-emblem{top:14px}
+  .title-emblem img{width:52px;height:52px}
+  .title-emblem .cap{font-size:9px;letter-spacing:1.2px}
   .title-block h1{font-size:26px;line-height:1.26;margin:0 0 18px 0}
   .title-block .title-crumb{font-size:11px;padding:5px 10px}
   .title-block .title-lead{font-size:17px;padding-left:12px}
@@ -178,6 +185,10 @@ footer{padding:18px 22px;text-align:center;font-size:12px;color:#888;background:
 
 <div class="title-block">
   <div class="title-shadow"></div>
+  <div class="title-emblem">
+    <img src="___PASTE_SU_EMBLEM_URL___" alt="Софийски университет">
+    <div class="cap">Софийски университет<br>„Св. Климент Охридски"</div>
+  </div>
   <div class="title-texts">
     <div class="title-crumb">РАЗСЛЕДВАНЕ <span>· Кардиология · Фитотерапия · 18 август 2026</span></div>
     <h1>Проф. Иво Петров: „Това, което нормализира <em>кръвното</em> и премахва <em>9 възрастови болести</em> наведнъж". Забранено за десетилетия. Това растение се завърна в България.</h1>
