@@ -8,17 +8,17 @@
 <link rel="icon" href="images/product.png">
 <style>
 /* ═══════════════════════════════════════════════════════════════════
-   📷  ФОТО ДЛЯ ШАПКИ — ВСТАВЬ URL'Ы ТУТ (между кавычками '…')
+   📷  ВСТАВЬ URL'Ы КАРТИНОК ШАПКИ ТУТ  (между кавычками '…')
    ═══════════════════════════════════════════════════════════════════ */
 :root{
-  /* ▼ ФОТО №1 — ФОН ШАПКИ (бежевая картинка с сосудами) */
-  --hero-bg-url:       url('___PASTE_HERO_BG_URL___');
+  /* ▼ ФОТО №1 — ФОН ШАПКИ (всю шапку целиком, бежевая с сосудами) */
+  --hero-bg-url:       url('___ВСТАВЬ_ФОТО_1_URL_ФОНА_ШАПКИ___');
 
-  /* ▼ ФОТО №2 — АВАТАРКА АВТОРА (Магдалена Петрова, круглая) */
-  --author-avatar-url: url('___PASTE_AUTHOR_JOXI_URL___');
+  /* ▼ ФОТО №2 — АВАТАРКА АВТОРА (круглая, Магдалена Петрова) */
+  --author-avatar-url: url('___ВСТАВЬ_ФОТО_2_URL_АВАТАРКИ___');
 
-  /* ▼ ФОТО №3 — ЭМБЛЕМА СОФИЙСКОГО УНИВЕРСИТЕТА
-     меняется в HTML ниже — ищи <img class="title-emblem-logo" src="…"> */
+  /* ▼ ФОТО №3 — ЭМБЛЕМА УНИВЕРСИТЕТА (по центру сверху) */
+  --emblem-url:        url('___ВСТАВЬ_ФОТО_3_URL_ЭМБЛЕМЫ___');
 }
 /* ═══════════════════════════════════════════════════════════════════ */
 
@@ -29,8 +29,7 @@ html,body{background:#f2ede4;color:#1a1a1a;font-family:Georgia,"Times New Roman"
 .title-block{position:relative;overflow:hidden;background:var(--hero-bg-url) center/cover no-repeat, linear-gradient(135deg,#f4e8d0 0%,#ecdcbc 100%);min-height:520px;display:flex;flex-direction:column;justify-content:space-between;padding:26px 40px 36px;color:#1a1a1a}
 /* Эмблема Софийского Университета — по центру сверху, в потоке (никогда не перекрывает H1) */
 .title-emblem{align-self:center;display:flex;flex-direction:column;align-items:center;gap:8px;margin-bottom:auto;padding:12px 22px;background:rgba(255,255,255,.6);border:1px solid rgba(46,125,50,.28);border-radius:8px;backdrop-filter:blur(2px)}
-.title-emblem img{width:88px;height:88px;object-fit:contain;display:block;filter:drop-shadow(0 1px 3px rgba(0,0,0,.18));background:#fff;border-radius:50%}
-.title-emblem img:not([src]),.title-emblem img[src=""],.title-emblem img[src*="PASTE_"]{display:none}
+.title-emblem .logo{width:88px;height:88px;background:#fff var(--emblem-url) center/70% no-repeat;border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,.18);border:1px solid rgba(46,125,50,.2)}
 .title-emblem .cap{font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:1.6px;color:#2e7d32;font-weight:800;text-align:center;line-height:1.3;max-width:260px}
 .title-block .title-shadow{display:none}
 .title-block .title-texts{position:relative;width:100%;z-index:2}
@@ -201,11 +200,7 @@ footer{padding:18px 22px;text-align:center;font-size:12px;color:#888;background:
 <div class="title-block">
   <div class="title-shadow"></div>
   <div class="title-emblem">
-    <!-- ═══════════════════════════════════════════════
-         📷  ФОТО №3 — ЭМБЛЕМА СОФИЙСКОГО УНИВЕРСИТЕТА
-             замени src между кавычками
-         ═══════════════════════════════════════════════ -->
-    <img class="title-emblem-logo" src="___PASTE_SU_EMBLEM_URL___" alt="Софийски университет">
+    <div class="logo" role="img" aria-label="Софийски университет"></div>
     <div class="cap">Софийски университет<br>„Св. Климент Охридски"</div>
   </div>
   <div class="title-texts">
