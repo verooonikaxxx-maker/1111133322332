@@ -10,20 +10,21 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{background:#f2ede4;color:#1a1a1a;font-family:Georgia,"Times New Roman",serif;line-height:1.6;font-size:18px}
 #wrap{max-width:720px;margin:0 auto;background:#fff}
-header.site{background:#0d3b66;color:#fff;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;font-family:Arial,sans-serif;font-size:14px}
-header.site .logo{font-weight:900;letter-spacing:1px;font-size:17px}
-header.site nav a{color:#fff;margin-left:14px;text-decoration:none;opacity:.85;font-size:13px}
-.crumb{font-family:Arial,sans-serif;font-size:12px;color:#0d3b66;padding:14px 22px 0;text-transform:uppercase;letter-spacing:.6px;font-weight:700}
-.crumb span{color:#888;font-weight:400}
-h1{font-size:29px;line-height:1.25;padding:10px 22px 12px;font-weight:700;color:#111}
-h1 em{font-style:normal;color:#2e7d32}
-h1 mark{background:#fff3a3;color:#111;padding:0 4px}
-.subhead{font-size:18px;line-height:1.5;padding:0 22px 16px;color:#444;font-style:italic;border-bottom:1px solid #eee}
-.byline{padding:14px 22px;font-family:Arial,sans-serif;font-size:14px;color:#666;display:flex;align-items:center;gap:12px}
-.byline .avatar{width:38px;height:38px;border-radius:50%;background:url('images/author.jpg') center/cover}
-.byline b{color:#111}
-.hero-img{width:100%;display:block}
-.hero-cap{font-size:13px;color:#666;padding:8px 22px 18px;font-style:italic;border-bottom:1px solid #eee}
+.site-banner{width:100%;display:block}
+.title-block{position:relative;overflow:hidden;background:#111}
+.title-block .title-img{width:100%;display:block;opacity:.85}
+.title-block .title-shadow{position:absolute;left:0;right:0;bottom:0;top:35%;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 45%,rgba(0,0,0,.92) 100%);pointer-events:none}
+.title-block .title-texts{position:absolute;left:0;right:0;bottom:0;padding:22px;color:#fff;z-index:2}
+.title-block .title-crumb{font-family:Arial,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:.8px;color:#f0c040;margin-bottom:10px;font-weight:700}
+.title-block .title-crumb span{color:#fff;opacity:.8;font-weight:400}
+.title-block h1{font-size:30px;line-height:1.22;color:#fff;font-weight:800;margin-bottom:12px;text-shadow:0 2px 8px rgba(0,0,0,.6)}
+.title-block h1 em{font-style:normal;color:#8dea8d}
+.title-block h1 mark{background:#f0c040;color:#111;padding:0 6px}
+.title-block .title-lead{font-size:16px;line-height:1.5;color:#f0f0f0;font-style:italic;margin-bottom:14px;text-shadow:0 1px 4px rgba(0,0,0,.7)}
+.title-block .title-author{display:flex;align-items:center;gap:10px;font-family:Arial,sans-serif;font-size:13px;color:#ddd}
+.title-block .title-author .avatar{width:34px;height:34px;border-radius:50%;background:url('images/author.jpg') center/cover;border:2px solid #fff;flex-shrink:0}
+.title-block .title-author b{color:#fff;display:block;font-size:13px}
+.title-block .title-author small{color:#ccc;font-size:12px}
 article{padding:22px;font-size:18px}
 article p{margin:0 0 18px}
 article p.lead{font-size:22px;line-height:1.5;font-weight:600;color:#111;margin-bottom:24px}
@@ -143,8 +144,11 @@ form.order .disclaimer{font-size:12px;color:#666;margin-top:12px;text-align:cent
 footer{padding:18px 22px;text-align:center;font-size:12px;color:#888;background:#e8e2d5;font-family:Arial,sans-serif}
 
 @media(max-width:640px){
-  h1{font-size:23px;padding:8px 18px 12px}
-  .subhead{font-size:16px;padding:0 18px 14px}
+  .title-block h1{font-size:22px;line-height:1.22}
+  .title-block .title-lead{font-size:14px}
+  .title-block .title-texts{padding:16px}
+  .title-block .title-shadow{top:20%}
+  .title-block .title-img{min-height:340px;object-fit:cover}
   article{padding:18px;font-size:17px}
   article h2{font-size:21px}
   article p.lead{font-size:19px}
@@ -160,30 +164,21 @@ footer{padding:18px 22px;text-align:center;font-size:12px;color:#888;background:
 <body>
 <div id="wrap">
 
-<header class="site">
-  <div class="logo">ЗДРАВЕ и ЖИВОТ</div>
-  <nav>
-    <a href="#">Начало</a>
-    <a href="#">Здраве</a>
-    <a href="#">Интервюта</a>
-  </nav>
-</header>
+<a href="#"><img class="site-banner" src="images/headerm.png" alt="Здраве и Живот"></a>
 
-<div class="crumb">РАЗСЛЕДВАНЕ • <span>Кардиология / Фитотерапия</span> • <span class="js-date"></span></div>
-
-<h1>Забраненото за десетилетия <mark>конопено масло</mark> се завърна в България. Проф. Кръстев: „Едно растение нормализира кръвното и премахва 9 възрастови болести <em>наведнъж</em>"</h1>
-
-<div class="subhead">Cannabis Sativa L — растението, което Big Pharma криеше 60 години — вече е официално одобрено в ЕС като хранителна добавка. Изследвания на University of Nottingham и JCI Insight доказват: една доза сваля систоличното давление за часове. Разказва проф. д-р Стоян Кръстев, кардиолог от ВМА.</div>
-
-<div class="byline">
-  <div class="avatar"></div>
-  <div>от <b>Магдалена Петрова</b> • старши репортер<br><small class="js-datefull"></small> • 9 мин четене</small></div>
+<div class="title-block">
+  <img class="title-img" src="images/hero.jpg" alt="Cannabis Sativa L">
+  <div class="title-shadow"></div>
+  <div class="title-texts">
+    <div class="title-crumb">РАЗСЛЕДВАНЕ <span>• Кардиология / Фитотерапия •</span> <span class="js-date"></span></div>
+    <h1>Забраненото за десетилетия <mark>конопено масло</mark> се завърна в България. Проф. Кръстев: „Едно растение нормализира кръвното и премахва 9 възрастови болести <em>наведнъж</em>"</h1>
+    <div class="title-lead">Cannabis Sativa L — растението, което Big Pharma криеше 60 години — вече е официално одобрено в ЕС като хранителна добавка. Разказва проф. д-р Стоян Кръстев, кардиолог от ВМА — София.</div>
+    <div class="title-author">
+      <div class="avatar"></div>
+      <div><b>Магдалена Петрова</b><small>старши репортер • <span class="js-datefull"></span> • 9 мин четене</small></div>
+    </div>
+  </div>
 </div>
-
-<figure>
-  <img class="hero-img" src="images/hero.jpg" alt="Cannabis Oil капсули">
-  <figcaption>Cannabis Sativa L — растението, чиято употреба за медицински цели беше възстановена в ЕС през 2020 г. Снимка: архив на редакцията.</figcaption>
-</figure>
 
 <article>
 
