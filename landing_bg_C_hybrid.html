@@ -26,7 +26,7 @@
 html,body{background:#f2ede4;color:#1a1a1a;font-family:Georgia,"Times New Roman",serif;line-height:1.7;font-size:21px;font-weight:500}
 #wrap{max-width:1000px;margin:0 auto;background:#fff}
 .site-banner{width:100%;display:block}
-.title-block{position:relative;overflow:hidden;background:var(--hero-bg-url) top right / min(30%,280px) auto no-repeat, linear-gradient(135deg,#f4e8d0 0%,#ecdcbc 100%);min-height:520px;display:flex;flex-direction:column;justify-content:space-between;padding:26px 40px 36px;color:#1a1a1a}
+.title-block{position:relative;overflow:hidden;background:var(--hero-bg-url) center/cover no-repeat, linear-gradient(135deg,#f4e8d0 0%,#ecdcbc 100%);min-height:520px;display:flex;flex-direction:column;justify-content:space-between;padding:26px 40px 36px;color:#1a1a1a}
 /* Эмблема Софийского Университета — по центру сверху, в потоке (никогда не перекрывает H1) */
 .title-emblem{align-self:center;display:flex;flex-direction:column;align-items:center;gap:8px;margin-bottom:auto;padding:12px 22px;background:rgba(255,255,255,.6);border:1px solid rgba(46,125,50,.28);border-radius:8px;backdrop-filter:blur(2px)}
 .title-emblem img{width:88px;height:88px;object-fit:contain;display:block;filter:drop-shadow(0 1px 3px rgba(0,0,0,.18));background:#fff;border-radius:50%}
@@ -169,7 +169,7 @@ footer{padding:18px 22px;text-align:center;font-size:12px;color:#888;background:
 
 @media(max-width:768px){
   html,body{font-size:19px}
-  .title-block{min-height:auto;background-size:130px auto;background-position:right 10px top 10px;padding:16px 22px 26px}
+  .title-block{min-height:auto;background-size:cover;background-position:center;padding:16px 22px 26px}
   .title-emblem{padding:8px 14px}
   .title-emblem img{width:64px;height:64px}
   .title-emblem .cap{font-size:10px;letter-spacing:1.3px;max-width:200px}
