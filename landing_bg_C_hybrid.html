@@ -112,6 +112,17 @@ figure figcaption{font-size:17px;color:#333;font-style:italic;padding:10px 4px 0
 .composition li:last-child{border:none}
 .composition li b{display:block;color:#111;font-size:19px;margin-bottom:4px}
 
+/* Активни съставки — новый эстетичный grid */
+.ingredients{background:linear-gradient(180deg,#f0f7f0,#e6f0e6);border:1px solid #c8e0c8;padding:28px 30px;margin:28px 0;border-radius:8px}
+.ingredients h3{color:#1f5722;margin:0 0 22px 0;font-family:Georgia,serif;font-size:24px;font-weight:800;letter-spacing:-.2px;padding:0;border:none;text-align:center}
+.ing-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px 22px}
+.ing{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;background:#fff;border-radius:6px;border:1px solid #d9e8d9;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.ing-icon{font-size:26px;line-height:1;flex-shrink:0;width:44px;height:44px;background:#f0f7f0;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1px solid #c8e0c8}
+.ing b{display:block;color:#1f5722;font-family:Georgia,serif;font-size:17px;font-weight:800;margin-bottom:4px;letter-spacing:-.2px}
+.ing small{display:block;color:#3a3a3a;font-family:Georgia,serif;font-size:15px;line-height:1.5;font-style:normal}
+.ing b, .ing small{font-style:normal}
+@media(max-width:640px){.ing-grid{grid-template-columns:1fr}.ingredients{padding:22px 20px}.ingredients h3{font-size:20px}}
+
 .patient-letter{background:#fef8e8;border:2px solid #e0c060;padding:28px;margin:30px 0;border-radius:4px;font-family:Georgia,serif;position:relative}
 .patient-letter .pl-photo{float:right;width:130px;height:130px;border-radius:50%;object-fit:cover;margin:0 0 14px 20px;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.2)}
 .patient-letter b.pname{display:block;font-size:20px;color:#111;margin-bottom:4px}
@@ -262,7 +273,7 @@ footer{padding:18px 22px;text-align:center;font-size:12px;color:#888;background:
 
 <p><b>Хроничното запушване на съдовете на долните крайници</b> води до постепенно отмиране на тъканите. Ампутацията става единственият хирургичен изход. Следват инвалидна количка, дом за стари хора и пълна зависимост от чужда помощ. Според статистиката, <b>10-15% от пациентите с диабет и нелекувана хипертония</b> преминават през този сценарий след 65-годишна възраст.</p>
 
-<p><b>Тези четири сценария не са измислица.</b> Това е клиничната статистика на българските болници. И тя се сбъдва — <b>всеки трети българин над 60 години</b> преживява поне един от тях. Ако сте в тази трета и не правите нищо — просто чакате своя ред.</p>
+<p><b>Тези четири сценария не са измислица.</b> Това е клиничната статистика на българските болници. И тя се сбъдва — <b>всеки трети българин над 50 години</b> преживява поне един от тях. Ако сте в тази трета и не правите нищо — просто чакате своя ред.</p>
 
 <div class="warn">Може да си кажете: „това няма да се случи с мен". Всяка сутрин, в болница „Пирогов" в София, докарват 12-15 такива хора. Всички са мислели същото — до онази сутрин, когато не успяха да станат от леглото.</div>
 
@@ -303,7 +314,6 @@ footer{padding:18px 22px;text-align:center;font-size:12px;color:#888;background:
 
 <figure>
   <img src="https://static.joxi.pro/1787319639968-9493fd3e-2d7d-408d-8a6e-4933aa3c0aa1.jpg" alt="Съдовете отвътре — с плаки холестерол">
-  <figcaption>Артериална стена, задръстена с холестеролови плаки, тромби и калциеви кристали. До 60-годишна възраст в съдовете на човек се натрупват до 6,1 кг такова „вътрешно замърсяване".</figcaption>
 </figure>
 
 <div class="doctor-card">
@@ -314,7 +324,7 @@ footer{padding:18px 22px;text-align:center;font-size:12px;color:#888;background:
   </div>
 </div>
 
-<h2>„Всичко започна, когато загубих майка си"</h2>
+<h2>„Всичко започна със смъртта на майка ми"</h2>
 
 <figure>
   <img src="images/content-mother.jpg" alt="История на проф. Петров">
@@ -343,11 +353,6 @@ footer{padding:18px 22px;text-align:center;font-size:12px;color:#888;background:
 <div class="science">
 <b style="font-size:18px;display:block;margin-bottom:10px">Клиничният резултат, който промени практиката ми:</b>
 <p style="margin:0;font-size:17px;line-height:1.55">За 2023-2024 г. в клиниката ми във ВМА — София проследих <b>212 пациенти</b> с хипертония, които преминаха курса. Резултатът: <b>при 93% от тях кръвното се нормализира в първите 3 седмици</b>. При 8 от 10 — <b>стабилно, без таблетки</b>, към 8-ма седмица. За 40 години практика не съм виждал друг протокол с такива цифри.</p>
-</div>
-
-<div class="cta-inline">
-<p><b>Партидата с 50% отстъпка е още активна.</b> Проверете дали има свободен курс за вашия град:</p>
-<a href="#order-form" class="cta-btn">ПРОВЕРИ НАЛИЧНОСТ НА КУРСА</a>
 </div>
 
 <h2>Освен кръвното — какво още забелязват пациентите</h2>
@@ -402,7 +407,7 @@ footer{padding:18px 22px;text-align:center;font-size:12px;color:#888;background:
 
 <figure>
   <img src="https://static.joxi.pro/1787323094676-4c017a04-54dd-4e28-b2a3-91a2a8c3edc8.jpg" alt="Динамика на кръвното преди и след курса">
-  <figcaption>Динамика на систолично налягане на пациенти от групата на проф. Петров: първи резултати вече в 2-3 седмица, стабилно нормализиране към 6-та.</figcaption>
+  <figcaption><b>Динамика на систоличното кръвно налягане</b> при пациентите от групата на проф. Петров. <b>Първи резултати — още на 2-3 седмица.</b> Стабилно нормализиране — към 6-та.</figcaption>
 </figure>
 
 
@@ -421,20 +426,15 @@ footer{padding:18px 22px;text-align:center;font-size:12px;color:#888;background:
 
 <h2 id="cannabis-block">Съставът на Cannabis Oil — какво е вътре</h2>
 
-<figure>
-  <img src="images/content-composition.jpg" alt="Съставки на Cannabis Oil">
-  <figcaption>Меки капсули (softgel) с студено пресовано конопено масло. Всяка капсула е херметически запечатана — активните вещества не се окисляват.</figcaption>
-</figure>
-
-<div class="composition">
-<h3>Активни съставки на 1 капсула:</h3>
-<ul>
-<li><b>Конопено масло (студено пресовано)</b><br>Основната субстанция. Съдържа канабидиол (CBD) — активната молекула, доказана в клинични изследвания за подпомагане на съдовата функция.</li>
-<li><b>Omega-3 и Omega-6 полиненаситени мастни киселини</b><br>В идеалното за човешкия организъм съотношение 3:1. Възстановяват клетъчните мембрани на съдовата стена.</li>
-<li><b>Природни терпени</b><br>Естествени антиоксиданти и противовъзпалителни агенти. Подпомагат възстановяването на съдовата стена и намаляват хроничното възпаление.</li>
-<li><b>Витамин E (токоферол)</b><br>Основният антиоксидант за съдовата стена. Забавя стареенето на съдовете.</li>
-<li><b>Витамини от групата B</b><br>Подпомагат нервната система, намаляват стреса и тревожността.</li>
-</ul>
+<div class="ingredients">
+<h3>Активни съставки в 1 капсула Cannabis Oil</h3>
+<div class="ing-grid">
+  <div class="ing"><div class="ing-icon">🌿</div><div><b>Конопено масло</b><small>Студено пресовано. Съдържа <b>канабидиол (CBD)</b> — активната молекула, доказана клинично за подпомагане на съдовата функция.</small></div></div>
+  <div class="ing"><div class="ing-icon">💧</div><div><b>Omega-3 и Omega-6</b><small>В идеалното за организма съотношение <b>3:1</b>. Възстановяват клетъчните мембрани на съдовата стена.</small></div></div>
+  <div class="ing"><div class="ing-icon">🍃</div><div><b>Природни терпени</b><small>Антиоксиданти и противовъзпалителни агенти. Намаляват хроничното възпаление в тялото.</small></div></div>
+  <div class="ing"><div class="ing-icon">✨</div><div><b>Витамин E (токоферол)</b><small>Основният антиоксидант за съдовата стена. Забавя стареенето на съдовете.</small></div></div>
+  <div class="ing"><div class="ing-icon">⚡</div><div><b>Витамини група B</b><small>Подпомагат нервната система, намаляват стреса и тревожността.</small></div></div>
+</div>
 </div>
 
 <figure>
