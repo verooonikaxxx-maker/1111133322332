@@ -23,8 +23,9 @@
 /* ═══════════════════════════════════════════════════════════════════ */
 
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{background:#f2ede4;color:#1a1a1a;font-family:Georgia,"Times New Roman",serif;line-height:1.7;font-size:21px;font-weight:500}
-#wrap{max-width:1000px;margin:0 auto;background:#fff}
+html,body{background:#f2ede4;color:#1a1a1a;font-family:Georgia,"Times New Roman",serif;line-height:1.7;font-size:21px;font-weight:500;overflow-x:hidden}
+#wrap{max-width:1000px;margin:0 auto;background:#fff;overflow-x:hidden}
+img,figure img{max-width:100%;height:auto}
 .site-banner{width:100%;display:block}
 /* Верхняя полоса издания */
 .site-strip{background:#1a1a1a;color:#fff;font-family:'Helvetica Neue',Arial,sans-serif;text-align:center;padding:12px 20px;font-size:15px;font-weight:800;letter-spacing:3px;text-transform:uppercase}
@@ -189,14 +190,27 @@ footer{padding:18px 22px;text-align:center;font-size:12px;color:#888;background:
 
 @media(max-width:768px){
   html,body{font-size:19px}
-  .title-block{min-height:auto;background:var(--hero-bg-url) right -30px top / auto 100% no-repeat, linear-gradient(135deg,#f4e8d0 0%,#ecdcbc 100%);padding:20px 22px 26px}
+  .title-block{min-height:auto;background:linear-gradient(90deg,rgba(236,223,192,.95) 0%,rgba(236,223,192,.85) 55%,rgba(236,223,192,.5) 100%), var(--hero-bg-url) right center / cover no-repeat;padding:20px 22px 26px}
   .title-emblem{margin-bottom:18px;gap:10px}
   .title-emblem .logo{width:48px;height:48px}
   .title-emblem .cap{font-size:10px;letter-spacing:1.1px;max-width:150px}
   .title-block .title-texts{max-width:100%}
-  .title-block h1{font-size:26px;line-height:1.22;margin:0 0 16px 0}
-  .title-block .title-lead{font-size:17px;padding-left:12px;margin-bottom:18px}
+  .title-block h1{font-size:24px;line-height:1.24;margin:0 0 14px 0;text-shadow:0 1px 2px rgba(255,255,255,.7)}
+  .title-block .title-crumb{font-size:10px;padding:4px 10px;margin-bottom:14px}
+  .title-block .title-lead{font-size:17px;padding-left:0;margin-bottom:16px}
   .title-block .title-author{padding-top:14px;max-width:100%}
+  /* Форма-бейджи: стакаем в 1 колонку на мобиле */
+  form.order > div[style*="flex:1"]{min-width:100% !important;flex:1 1 100% !important}
+  /* Comments: чтобы не создавали горизонтальный overflow */
+  .comment{padding:14px 16px;gap:12px}
+  .comment .body p{overflow-wrap:anywhere;word-break:break-word}
+  .comment .body img{max-width:100% !important;height:auto !important}
+  .comments{padding:20px 16px}
+  /* Форма/programa/stock — компакт */
+  form.order{padding:20px 16px}
+  .programa{padding:22px 16px;margin:24px 0}
+  .stock-line{padding:14px 14px;font-size:16px}
+  article{padding:22px 18px}
   article{padding:22px;font-size:19px}
   article h2{font-size:24px}
   article h3{font-size:21px}
