@@ -67,6 +67,12 @@ article a{color:#2e7d32;font-weight:700;text-decoration:none;border-bottom:2px s
 figure{margin:18px 0}
 figure img{width:100%;display:block;border-radius:2px}
 figure figcaption{font-size:17px;color:#333;font-style:italic;padding:10px 4px 0;font-weight:500;line-height:1.5}
+/* Маленькие плавающие картинки — текст обтекает */
+figure.float-left,figure.float-right{max-width:260px;margin:6px 0}
+figure.float-left{float:left;margin:6px 22px 12px 0}
+figure.float-right{float:right;margin:6px 0 12px 22px}
+figure.float-left figcaption,figure.float-right figcaption{font-size:14px;padding:8px 2px 0}
+@media(max-width:640px){figure.float-left,figure.float-right{float:none;max-width:100%;margin:14px 0}}
 
 /* 9 болей */
 .diseases{background:#f9f7f2;padding:0;margin:24px 0;border-radius:4px;overflow:hidden}
@@ -326,12 +332,11 @@ footer{padding:18px 22px;text-align:center;font-size:12px;color:#888;background:
 
 <h2>„Всичко започна със смъртта на майка ми"</h2>
 
-<figure>
-  <img src="images/content-mother.jpg" alt="История на проф. Петров">
-  <figcaption>Проф. Петров с майка си, около 2015 г. Тя почина от инсулт на 71 години — след 8 години на 5 таблетки, които не спряха катастрофата.</figcaption>
+<div class="doc-answer" style="overflow:auto">
+<figure class="float-left">
+  <img src="https://static.joxi.pro/1787392298782-081116ab-c5a8-4ccf-826c-57aaa83acd7b.jpg" alt="История на проф. Петров">
+  <figcaption>Проф. Петров с майка си, около 2015 г. Тя почина от инсулт на 71 години.</figcaption>
 </figure>
-
-<div class="doc-answer">
 <b class="who">Проф. Иво Петров:</b>
 <p>— Моята майка почина от инсулт на 71 години. Пиеше 5 таблетки за кръвно, а налягането ѝ беше 195 сутрин. Само сменяхме дозите и добавяхме нови хапчета — един ден просто не стана от леглото. Тогава разбрах едно: <b>таблетките не лекуват — само крият числото на монитора</b>, а стената на съда през това време продължава да се уплътнява и в един момент се пука. Започнах да търся какво може реално да възстанови стената и стигнах до нещо, което медицината използваше преди войната — <b>маслото от индустриален коноп</b>.</p>
 </div>
@@ -438,7 +443,6 @@ footer{padding:18px 22px;text-align:center;font-size:12px;color:#888;background:
 </div>
 
 <figure>
-  <img src="images/content-3.jpg" alt="Индустриален коноп">
   <figcaption>Индустриалният коноп, същото растение, което до 1937 г. беше основа на аптечните препарати в САЩ и Европа. От 2024 г. отново е одобрено в ЕС като хранителна добавка.</figcaption>
 </figure>
 
@@ -449,12 +453,11 @@ footer{padding:18px 22px;text-align:center;font-size:12px;color:#888;background:
 
 <h2>Защо не е в аптеките</h2>
 
-<figure>
-  <img src="images/content-pharmacy.jpg" alt="Аптечни рафтове с лекарства">
+<div class="doc-answer" style="overflow:auto">
+<figure class="float-right">
+  <img src="https://static.joxi.pro/1787392455679-1d8b0e54-0a8c-4cea-ab15-4a997bdc0024.jpg" alt="Аптечни рафтове с лекарства">
   <figcaption>Всеки месец българските пенсионери оставят в аптеките между 45 и 120 евро — за таблетки, които крият числото, но не лекуват стената на съда.</figcaption>
 </figure>
-
-<div class="doc-answer">
 <b class="who">Проф. Иво Петров:</b>
 <p>За съжаление, българските аптечни вериги искат <b>от производителя маркетингова такса от 40-50%</b> отгоре на цената, за да го поставят на рафтовете. Това би вдигнало цената на курса до над 150 евро. Производителят отказа и премина към директни продажби през интернет.</p>
 <p>За вас това е добра новина: получавате продукта <b>директно от производителя, без надценка на аптеката, на половин цена</b>. Освен това аптеките <b>не биха имали интерес</b> да продават Cannabis Oil — защото след месец на курса, пациентите спират да купуват 3-4 други лекарства. Аптеката губи. Затова тя се бори срещу продукта.</p>
@@ -487,17 +490,17 @@ footer{padding:18px 22px;text-align:center;font-size:12px;color:#888;background:
 
 <div style="display:flex;gap:10px;margin:14px 0 18px;flex-wrap:wrap;justify-content:center">
   <div style="flex:1;min-width:140px;background:#f0f7f0;border:1px solid #c8e0c8;padding:12px;text-align:center;border-radius:4px;font-family:Arial,sans-serif;font-size:14px;color:#1b3a1c">
-    <img src="images/badge-delivery.png" alt="доставка" style="width:36px;height:36px;display:block;margin:0 auto 6px">
+    <img src="https://static.joxi.pro/1787392563173-73ad3c92-9cde-41d4-9541-bc731df76a47.jpg" alt="доставка" style="width:36px;height:36px;display:block;margin:0 auto 6px">
     <b style="display:block;font-size:14px">Безплатна доставка</b>
     <small style="font-size:12px;color:#555">до цяла България, 2-4 дни</small>
   </div>
   <div style="flex:1;min-width:140px;background:#f0f7f0;border:1px solid #c8e0c8;padding:12px;text-align:center;border-radius:4px;font-family:Arial,sans-serif;font-size:14px;color:#1b3a1c">
-    <img src="images/badge-quality.png" alt="качество" style="width:36px;height:36px;display:block;margin:0 auto 6px">
+    <img src="https://static.joxi.pro/1787392650431-5fd45b5d-0525-4ab6-8b4f-d472e891c2a8.jpg" alt="качество" style="width:36px;height:36px;display:block;margin:0 auto 6px">
     <b style="display:block;font-size:14px">Одобрено в ЕС</b>
     <small style="font-size:12px;color:#555">хранителна добавка, без THC</small>
   </div>
   <div style="flex:1;min-width:140px;background:#fff2f2;border:1px solid #f0c8c8;padding:12px;text-align:center;border-radius:4px;font-family:Arial,sans-serif;font-size:14px;color:#5c0f0f">
-    <img src="images/badge-stock.png" alt="дефицит" style="width:36px;height:36px;display:block;margin:0 auto 6px">
+    <img src="https://static.joxi.pro/1787392767508-b13e4c1e-1f62-45ad-a8a0-70a70139e792.jpg" alt="дефицит" style="width:36px;height:36px;display:block;margin:0 auto 6px">
     <b style="display:block;font-size:14px">Ограничена партида</b>
     <small style="font-size:12px;color:#555">остават <span class="prod_left_val">47</span> курса</small>
   </div>
@@ -514,48 +517,52 @@ footer{padding:18px 22px;text-align:center;font-size:12px;color:#888;background:
 <div class="comments">
 <h2>Отзиви на пациенти</h2>
 
+<!-- 📷 АВАТАРКА КОММЕНТА №1 — Мария Петрова (♀ 68) — замени URL между кавычек -->
 <div class="comment">
-<div class="ava" style="background-image:url('images/comments/1.jpg')"></div>
+<div class="ava" style="background-image:url('___ВСТАВЬ_ФОТО_АВАТАРКИ_КОММЕНТ_1___')"></div>
 <div class="body"><b>Мария Петрова, 68</b><small>София • преди 3 дни</small>
 <p>Много благодарност! Пих Cannabis Oil 2 месеца. Кръвното от 175 слезе на 130. Но най-изненадващо — коленете, които 12 години ме измъчваха, спряха да болят! Не знаех, че става за ставите. Дъщеря ми не вярваше — сега сама поръча за мъжа си.</p>
 <img src="https://static.joxi.pro/1786968255209-cfe66be3-5e4d-497e-8f3f-213d066cad7a.jpg" alt="Резултат — тонометр и колена" style="max-width:240px;display:block;margin:10px 0 0;border-radius:3px">
 <span class="tag">Хипертония + артроза</span></div>
 </div>
 
+<!-- 📷 АВАТАРКА КОММЕНТА №2 — Николай Христов (♂ 64) — замени URL между кавычек -->
 <div class="comment">
-<div class="ava" style="background-image:url('images/comments/2.jpg')"></div>
+<div class="ava" style="background-image:url('___ВСТАВЬ_ФОТО_АВАТАРКИ_КОММЕНТ_2___')"></div>
 <div class="body"><b>Николай Христов, 64</b><small>Пловдив • преди 5 дни</small>
 <p>Не съм от лековерните. Три седмици носех таблетките в джоба. На четвъртата седмица цифрите станаха такива, че се обадих на лекаря си — той свали две от четирите таблетки. Плюс — простатата спря да ме буди нощем. Ходя веднъж, не по 4 пъти.</p>
-<img src="images/comments/result-2.jpg" alt="Тонометр 128/82" style="max-width:240px;display:block;margin:10px 0 0;border-radius:3px">
 <span class="tag">Хипертония + простата</span></div>
 </div>
 
+<!-- 📷 АВАТАРКА КОММЕНТА №3 — Радка Петрова (♀ 61) — замени URL между кавычек -->
 <div class="comment">
-<div class="ava" style="background-image:url('images/comments/3.jpg')"></div>
+<div class="ava" style="background-image:url('___ВСТАВЬ_ФОТО_АВАТАРКИ_КОММЕНТ_3___')"></div>
 <div class="body"><b>Радка Петрова, 61</b><small>Варна • преди 6 дни</small>
 <p>Cannabis Oil е чудо. Помогна ми още от първата седмица — кръвното слезе, но продължих курса. След 3 седмици — приливите на менопаузата спряха. Спя цяла нощ. Излекуваха се и варикозите. Чувствам се 15 години по-млада!</p>
 <img src="https://static.joxi.pro/1787218867023-1b0b681b-9338-46ac-8293-707e4fe04e51.jpg" alt="Резултат — крака преди / след" style="max-width:240px;display:block;margin:10px 0 0;border-radius:3px">
 <span class="tag">Менопауза + варикоза</span></div>
 </div>
 
+<!-- 📷 АВАТАРКА КОММЕНТА №4 — Ивелина Йорданова (♀ 42, дочь) — замени URL между кавычек -->
 <div class="comment">
-<div class="ava" style="background-image:url('images/comments/7.jpg')"></div>
+<div class="ava" style="background-image:url('___ВСТАВЬ_ФОТО_АВАТАРКИ_КОММЕНТ_4___')"></div>
 <div class="body"><b>Ивелина Йорданова, 42</b><small>София • преди 2 седмици</small>
 <p>Пиша не за себе си, за баща ми. 78 години, кръвно 195/110 с 4 таблетки. Отказваше да пробва — „не вярвам на нищо от интернет". Показах му тази статия и историята на Гергана. Прочете я и мълча. На другия ден каза: „поръчай". Пие вече месец. Кръвното — 145. Не е чудо, но е промяна.</p>
-<img src="images/comments/result-7.jpg" alt="Резултат — дневник на баща" style="max-width:240px;display:block;margin:10px 0 0;border-radius:3px">
 <span class="tag">Дъщеря за баща</span></div>
 </div>
 
+<!-- 📷 АВАТАРКА КОММЕНТА №5 — Георги Стоев (♂ 66) — замени URL между кавычек -->
 <div class="comment">
-<div class="ava" style="background-image:url('images/comments/8.jpg')"></div>
+<div class="ava" style="background-image:url('___ВСТАВЬ_ФОТО_АВАТАРКИ_КОММЕНТ_5___')"></div>
 <div class="body"><b>Георги Стоев, 66</b><small>Плевен • преди 3 седмици</small>
 <p>Диабетик от 15 години. Пиях Metformin 2 пъти дневно + инсулин вечер. След месец Cannabis Oil — захарта се държи стабилно на 5.8-6.2. Лекарят намали инсулина наполовина. И умората, която ме караше да спя до обяд, изчезна. Ставам в 6.30 и работя в градината.</p>
 <img src="https://static.joxi.pro/1787322491142-c6308809-cbe1-42d9-ba44-d4de6b67d565.jpg" alt="Резултат — глюкометр" style="max-width:240px;display:block;margin:10px 0 0;border-radius:3px">
 <span class="tag">Диабет + умора</span></div>
 </div>
 
+<!-- 📷 АВАТАРКА КОММЕНТА №6 — Димитър Христов (♂ 72, скептик) — замени URL между кавычек -->
 <div class="comment">
-<div class="ava" style="background-image:url('images/comments/10.jpg')"></div>
+<div class="ava" style="background-image:url('___ВСТАВЬ_ФОТО_АВАТАРКИ_КОММЕНТ_6___')"></div>
 <div class="body"><b>Димитър Христов, 72</b><small>Хасково • преди 4 седмици</small>
 <p>Скептик съм. Прочетох 100 такива истории — все едно и също звучат. Тази е различна с това, че тестът реално ми показа риска — 10 от 12. Затова поръчах, „за да проверя". Втори месец на курса. Кръвното сутрин — 128. Простата — 100% забравена. Три от 4 таблетки — отменени от лекаря. Пиша за да не забравя, че беше истина.</p>
 <img src="https://static.joxi.pro/1787218867023-28463bdf-083b-4205-83ca-6360df303922.jpg" alt="Резултат — тонометр 128" style="max-width:240px;display:block;margin:10px 0 0;border-radius:3px">
