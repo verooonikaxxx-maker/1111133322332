@@ -30,6 +30,7 @@ Load the appropriate reference file BEFORE writing:
 | Selecting emotional angles | `references/triggers.md` |
 | Mass generation (10+ variations) | `references/generator.md` |
 | Quality scoring/editing | `references/quality-checks.md` |
+| Competitor teardown / DR health verticals | `references/validated-structures.md` |
 
 ## Quick Workflow
 
@@ -248,6 +249,11 @@ Test in this order (highest to lowest impact):
 → Load `references/generator.md`
 → Follow 11-category framework
 → Generate specified number of variations
+
+### "Analyze competitor ads" / "which of these ads is winning"
+→ Load `references/validated-structures.md`
+→ Rank by est. spend/day, not total spend; check cross-page reuse
+→ Output: top performers, hook families, LP architecture, transferable skeleton
 
 ### "Analyze this copy"
 → Load `references/quality-checks.md`
