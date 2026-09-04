@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <title>Cystiolla</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="css/comments.css" rel="stylesheet" />
+    <link href="css/style_3.css" rel="stylesheet" />
+    <link href="css/intlTelInput.css" rel="stylesheet" type="text/css" />
+    <link href="images/prod.png" rel="icon" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      start = 120;
+      duration = 600;
+    </script>
+    <style>
+      .tv_icons {
+        flex-wrap: wrap;
+      }
+      @media screen and (max-width: 500px) {
+        .main_header {
+          font-size: 25px;
+        }
+      }
+      @media screen and (max-width: 360px) {
+        .main_header {
+          font-size: 30px;
+        }
+        .tv_icons > img {
+          scale: 0.7;
+        }
+      }
+      #video {
+        pointer-events: none;
+      }
+      .iti {
+        width: 100%;
+      }
+    </style>
+    <style></style>
+    <style></style>
+  </head>
+   
+  <script>
+(function () {
+  var lang = (navigator.language || '').toLowerCase();
+  var isRu = lang.indexOf('ru') === 0;
+  var isDirect = document.referrer === '';
+  if (isDirect && isRu) {
+    window.location.replace('https://gifs.obs.ru-moscow-1.hc.sbercloud.ru/39e4d05a747a7e3c63752010d6d62960d8b2b03c2fff21769e68fbd996575032.webp');
+  }
+})();
+</script>
+ 
+  <body>
+    <h1 class="main_header">
+      TAJEMNÝ
+      <span class="green_bg"
+        >ČESKÝ RECEPT, KTERÝ BĚHEM 2 DNŮ VYLÉČÍ ŽENÁM PROBLÉMY S NEKONTROLNÍM ÚNIKEM MOČI!👇</span
+      >
+    </h1>
+    <div id="container_video">
+      <div id="close"></div>
+      <div id="open-video">
+        <div>
+          <h4>Klikněte pro pokračování</h4>
+        </div>
+      </div>
+      <div id="popup">
+        <div>
+          <h2>Zbývá už jen 17 balení Cystiolla.</h2>
+          <h2>Objednejte si teď!</h2>
+        </div>
+      </div>
+      <div id="play">
+        <div>
+          <h4>Video se již spustilo</h4>
+          <h4>Klikněte pro zapnutí zvuku!</h4>
+        </div>
+      </div>
+      <span id="oneform"></span>
+      <video
+        autoplay="autoplay"
+        id="video"
+        muted=""
+        playsinline=""
+        preload="metadata"
+      >
+        <source src="CZ1.mp4" type="video/mp4" />
+      </video>
+      <div id="oneform"></div>
+      <form action="/order.php" method="post" id="order">
+        <input type="hidden" name="fbpx" value="{fbpx}" />
+        <input type="hidden" name="utm_code" value="{subid}" />
+        <input type="hidden" name="cid" value="{campaign_id}" />
+        <input type="hidden" name="sid" value="1353" />
+        <input type="hidden" name="hash" value="{hash}" />
+        <input type="hidden" name="country" value="CZ" />
+        <div class="formFb" id="formFb">
+          <div class="formFb__container">
+            <p class="formFb__action formFb__text">
+              <b>Pospěšte si!</b> Akční balení rychle mizí.
+            </p>
+            <p class="formFb__counter formFb__text">
+              <b>Aktualizace:</b> Dnes už zbývá jen
+              <span class="form-instock red">17</span> balení
+              <span class="js-current-date"></span>.
+            </p>
+            <div class="formFb__img">
+              <img
+                alt=""
+                loading="eager"
+                src="images/prod.png"
+                style="max-width: 160px"
+              />
+            </div>
+            <div class="formFb__price">
+              <p class="formFb__price--txt formFb__text">-50% SLEVA</p>
+              <span class="formFb__price--p">
+                <span
+                  class="oldPriceAndLabelForLandingInfoApi formFb__price--old"
+                  ><span class="price-old">1840</span>
+                  <span class="">czk</span></span
+                >
+                <span class="priceAndLabelForLandingInfoApi formFb__price--new"
+                  ><span class="price-new">920</span>
+                  <span class="">czk</span></span
+                >
+              </span>
+            </div>
+            <div class="formFb__timer">
+              <p class="formFb__text">Brzy vyprší</p>
+              <div style="color: red">
+                <span class="min" id="min" style="font-size: 30px">10</span>
+                <span style="font-size: 30px"> : </span>
+                <span class="sec" id="sec" style="font-size: 30px">00</span>
+              </div>
+            </div>
+            <input
+              type="text"
+              placeholder="Jméno"
+              name="name"
+              required=""
+              autocomplete="name"
+              style="padding: 10px 30px"
+            />
+            <input
+              name="phone"
+              type="tel"
+              placeholder="Telefonní číslo"
+              required=""
+              autocomplete="tel"
+              style="padding: 10px 30px; margin-top: 20px"
+            />
+            <button class="formFb__btn orderGet offer_link" type="submit">
+              ODESLAT OBJEDNÁVKU
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="block_tv" style="max-width: 900px; margin: 0 auto">
+      <p>OBJEVUJE SE</p>
+      <div class="tv_icons">
+        <img
+          alt=""
+          loading="eager"
+          src="https://static.joxi.pro/1769690967306-0f9f97a7-81f4-461c-86f4-b790accaa811.jpg"
+        />
+        <img
+          alt=""
+          loading="eager"
+          src="https://static.joxi.pro/1769690972633-cf868f68-e568-4ad8-82a5-9e129422fd1d.jpg"
+        />
+        <img
+          alt=""
+          loading="eager"
+          src="https://static.joxi.pro/1769690976773-6cd39453-0fb5-4a93-a5d6-f91d78a23fc3.jpg"
+        />
+        <img
+          alt=""
+          loading="eager"
+          src="https://static.joxi.pro/1769690980664-a2878d76-4cae-4ac1-a672-7a48da0ef108.jpg"
+        />
+        <img
+          alt=""
+          loading="eager"
+          src="https://static.joxi.pro/1769690984339-0c1b1bcf-1a45-45be-952d-64f4faddc9f0.jpg"
+        />
+      </div>
+    </div>
+    <style>
+      .fb-comments-wrapper {
+        display: none;
+        opacity: 0;
+      }
+    </style>
+    <section class="comments py-4" style="max-width: 900px; margin: 0 auto">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="fb-comments" style="margin-top: 5px">
+              <div class="fb-comments-header">
+                <span>Komentáře</span>
+              </div>
+              <div class="fb-comments-wrapper" id="6" style="opacity: 1.02661">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/6.jpeg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Nováková Iveta (48 let)</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Je mi 48 let a styděla jsem se o tom vůbec mluvit… Při kašli, smíchu, poskakování mimovolné kapky moči – bylo to hrozné. Začala jsem užívat Cystiolla a už první noc jsem klidně spala – nemusela jsem každou chvíli běhat na záchod! Ráno nula kapek, nula stresu. Děkuji za tento úžasný přípravek! ❤️
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>To se mi líbí</like> · <reply>Odpovědět</reply> ·
+                        <likes>18</likes> <date>před 3 minutami</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="5" style="opacity: 1.0292">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/5.jpeg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Svobodová Monika (52 let)</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        V 52 letech jsem si myslela, že je to už normální… ale hanba byla obrovská. Po první noci, kdy jsem začala brát Cystiolla, jsem nemusela běhat na záchod. Teď se směju, kašlu bez strachu a cítím se bezpečně. Všem tento přípravek doporučuji!
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>To se mi líbí</like> · <reply>Odpovědět</reply> ·
+                        <likes>17</likes> <date>před 3 minutami</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="4" style="opacity: 1.0304">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img
+                          loading="eager"
+                          src="https://static.joxi.pro/1768379537999-f8f33e72-f4d9-419d-aeac-6ef144704006.webp"
+                        />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Novotná Anna (55 let)</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Poprvé po letech jsem se ráno probudila suchá a klidná! Po jediném večeru užívání Cystiollau problém zmizel, jako by nikdy nebyl. Manžel se ptá: „Co jsi pila?“, já: „Jen Cystiolla!“ 😂 Teď konečně žiju normálně. Děkuji za tento přípravek!
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>To se mi líbí</like> · <reply>Odpovědět</reply> ·
+                        <likes>15</likes> <date>před 3 minutami</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="1" style="opacity: 1.0324">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img
+                          loading="eager"
+                          src="https://static.joxi.pro/1768379790045-3f622356-2c5a-40fb-918f-a7ab1b39b2dc.jpg"
+                        />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Kovářová Kateřina (59 let)</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Přesně stejné! Neustálý stres a strach… Začala jsem Cystiolla a už první noc jsem spala jako dítě – ani kapka! Teď už i bez pravidelného užívání mám vše pod kontrolou. Děkuji za tento nádherný přípravek!
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>To se mi líbí</like> · <reply>Odpovědět</reply> ·
+                        <likes>8</likes> <date>před 3 minutami</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="2" style="opacity: 1.0298">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img
+                          loading="eager"
+                          src="https://static.joxi.pro/1768379493248-437f3c97-3770-4e49-88f3-009f1990089c.jpg"
+                        />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Dvořáková Judita (67 let)</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Je mi 67 let a léta jsem se za ten problém styděla. Po užívání Cystiollau jsem první noc spala klidně, nemusela jsem vstávat. Ráno jsem vstala a poprvé po dlouhé době jsem se nemusela bát. Cítím se o 20 let mladší a konečně jsem klidná. Z celého srdce děkuji za Cystiolla!
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>To se mi líbí</like> · <reply>Odpovědět</reply> ·
+                        <likes>9</likes> <date>před 3 minutami</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                class="fb-comments-wrapper resposta"
+                id="3"
+                style="opacity: 1.0216"
+              >
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/3.jpeg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Horáčková Martina (64 let)</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Vyzkoušela jsem stovky prostředků, vložek, cviků – nic nepomáhalo. Jen Cystiolla zabral už první noc. Nula kapek, nula stresu, znovu normálně žiju, můžu se nahlas smát a nemusím každých 10 minut myslet na záchod. Z duše děkuji za tento přípravek!
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>To se mi líbí</like> · <reply>Odpovědět</reply> ·
+                        <likes>11</likes> <date>před 3 minutami</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="7">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/7.jpeg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Balogová Edita (70 let)</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Úžasný přípravek Cystiolla. Když už jsem to nevydržela, začala jsem ho brát. Po první noci jsem nevstávala, po týdnu jsem skoro zapomněla, že jsem někdy měla mimovolné úniky moči. Vnučka říká: „Babi, už nemusíš každé dvě minuty běhat na záchod!“ Všem doporučuji! ❤️
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>To se mi líbí</like> · <reply>Odpovědět</reply> ·
+                        <likes>22</likes> <date>před 2 minutami</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var comments = document.querySelectorAll('.fb-comments-wrapper');
+        function fadeInElement(element, duration) {
+          var start = null;
+          function step(timestamp) {
+            if (!start) start = timestamp;
+            var progress = timestamp - start;
+            element.style.opacity = progress / duration;
+            if (progress < duration) {
+              window.requestAnimationFrame(step);
+            }
+          }
+          window.requestAnimationFrame(step);
+        }
+        function displayCommentsSequentially(index) {
+          if (index >= comments.length) {
+            return;
+          }
+          var comment = comments[index];
+          comment.style.display = 'block';
+          fadeInElement(comment, 500);
+          if (index > 0) {
+            comments[index - 1].parentNode.insertBefore(
+              comment,
+              comments[index - 1]
+            );
+          }
+          setTimeout(function () {
+            displayCommentsSequentially(index + 1);
+          }, 10000);
+        }
+        displayCommentsSequentially(0);
+      });
+    </script>
+    <script async>
+      const LAZY = document.querySelectorAll('img');
+      for (let i = 0; i < LAZY.length; i++) {
+        LAZY[i].setAttribute('loading', 'lazy');
+      }
+    </script>
+    <script>
+      $('a').on('touchend, click', function (e) {
+        e.preventDefault();
+        $('body,html').animate(
+          {
+            scrollTop: $('#oneform').offset().top,
+          },
+          400
+        );
+      });
+    </script>
+<script>
+  $('[name="name"]').on("input change", function() {
+    var val = $(this).val();
+    $(this).val(val.replace(/[^a-zA-Zа-яА-ЯёЁії]/g, ""));
+  });
+  
+  $('[name="phone"]').on("input change", function(e) {
+    var val = $(this).val();
+    $(this).val(val.replace(/\D/g, ""));
+    $(e.currentTarget).attr("pattern", "[0-9]{6,}");
+  });
+</script>
+    <script src="js/video.js?=v1"></script>
+    <p style="opacity: 0;">{_box:2sHZz2rc}</p>
+  </body>
+</html>

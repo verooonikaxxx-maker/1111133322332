@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link href="css/style_3.css?=v2" rel="stylesheet" />
+  <link href="images/product.png" rel="shortcut icon" type="image/x-icon" />
+  <link href="css/popup.css" rel="stylesheet" />
+  <link href="css/intlTelInput.css" rel="stylesheet" type="text/css" />
+  <link href="css/intlTelInput.css" rel="stylesheet" />
+  <style>
+    .tv_icons {
+      flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 500px) {
+      .main_header {
+        font-size: 20px;
+      }
+    }
+
+    @media screen and (max-width: 360px) {
+      .main_header {
+        font-size: 20px;
+      }
+
+      .tv_icons>img {
+        scale: 0.7;
+      }
+    }
+
+    #video {
+      pointer-events: none;
+    }
+
+    .iti {
+      width: 100%;
+    }
+  </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+  <script src="js/scripts.js"></script>
+  <script>
+    var start = 1740;
+    var duration = 30;
+  </script>
+  <style>
+    @keyframes slide-in-one-tap {
+      from {
+        transform: translateY(80px);
+      }
+
+      to {
+        transform: translateY(0px);
+      }
+    }
+
+    .trust-hide-gracefully {
+      opacity: 0;
+    }
+
+    .trust-wallet-one-tap .hidden {
+      display: none;
+    }
+
+    .trust-wallet-one-tap .semibold {
+      font-weight: 500;
+    }
+
+    .trust-wallet-one-tap .binance-plex {
+      font-family: 'Binance';
+    }
+
+    .trust-wallet-one-tap .rounded-full {
+      border-radius: 50%;
+    }
+
+    .trust-wallet-one-tap .flex {
+      display: flex;
+    }
+
+    .trust-wallet-one-tap .flex-col {
+      flex-direction: column;
+    }
+
+    .trust-wallet-one-tap .items-center {
+      align-items: center;
+    }
+
+    .trust-wallet-one-tap .space-between {
+      justify-content: space-between;
+    }
+
+    .trust-wallet-one-tap .justify-center {
+      justify-content: center;
+    }
+
+    .trust-wallet-one-tap .w-full {
+      width: 100%;
+    }
+
+    .trust-wallet-one-tap .box {
+      transition: all 0.5s cubic-bezier(0, 0, 0, 1.43);
+      animation: slide-in-one-tap 0.5s cubic-bezier(0, 0, 0, 1.43);
+      width: 384px;
+      border-radius: 15px;
+      background: #fff;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+      position: fixed;
+      right: 30px;
+      bottom: 30px;
+      z-index: 1020;
+    }
+
+    .trust-wallet-one-tap .header {
+      gap: 15px;
+      border-bottom: 1px solid #e6e6e6;
+      padding: 10px 18px;
+    }
+
+    .trust-wallet-one-tap .header .left-items {
+      gap: 15px;
+    }
+
+    .trust-wallet-one-tap .header .title {
+      color: #1e2329;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+    }
+
+    .trust-wallet-one-tap .header .subtitle {
+      color: #474d57;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .trust-wallet-one-tap .header .close {
+      color: #1e2329;
+      cursor: pointer;
+    }
+
+    .trust-wallet-one-tap .body {
+      padding: 9px 18px;
+      gap: 10px;
+    }
+
+    .trust-wallet-one-tap .body .right-items {
+      gap: 10px;
+      width: 100%;
+    }
+
+    .trust-wallet-one-tap .body .right-items .wallet-title {
+      color: #1e2329;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+    }
+
+    .trust-wallet-one-tap .body .right-items .wallet-subtitle {
+      color: #474d57;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .trust-wallet-one-tap .connect-indicator {
+      gap: 15px;
+      padding: 8px 0;
+    }
+
+    .trust-wallet-one-tap .connect-indicator .flow-icon {
+      color: #474d57;
+    }
+
+    .trust-wallet-one-tap .loading-color {
+      color: #fff;
+    }
+
+    .trust-wallet-one-tap .button {
+      border-radius: 50px;
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+      background-color: rgb(5, 0, 255);
+      border-color: rgb(229, 231, 235);
+      cursor: pointer;
+      text-align: center;
+      height: 45px;
+    }
+
+    .trust-wallet-one-tap .button .button-text {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+    }
+
+    .trust-wallet-one-tap .footer {
+      margin: 20px 30px;
+    }
+
+    .trust-wallet-one-tap .check-icon {
+      color: #fff;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <!-- POPUP -->
+  <div class="popup_10s d-none" id="popup-leave">
+    <div class="left">
+      <div class="left_img">
+        <img class="img-fluid" loading="lazy" src="images/product.png" />
+      </div>
+    </div>
+    <div class="right">
+      <h1>Изчакайте!</h1>
+      <p>
+        Гледайте видеото до края, за да се възползвате от 50% отстъпка при покупка на Detoxil
+        Water!<br />
+        и да получите БЕЗПЛАТНО електронна книга за диабета и дневник за самоконтрол
+        на кръвната захар!
+      </p>
+      <button class="btn" id="stay-btn">
+        получете БЕЗПЛАТНО 2 подаръка - необходими за диабетици
+      </button>
+      <button class="link" id="leave-btn">
+        Не, благодаря — предпочитам веднага да попълня формуляра
+      </button>
+      <div class="leafleft"></div>
+      <div class="leafright"></div>
+    </div>
+  </div>
+  <div class="bg_10s d-none" id="bg-leave"></div>
+  <!-- POPUP -->
+  <h1 class="main_header">
+    Всеки втори човек е „гнездо на паразити”
+    <span class="green_bg">Гледайте това видео, преди да стане твърде късно!</span>.
+  </h1>
+<span id="oneform"></span>
+  <div id="container_video">
+    <div id="video-block" style="width: 100%; text-align: center">
+      <div id="close"></div>
+      <div id="open-video">
+        <div>
+          <h4>Кликнете, за да продължите гледането</h4>
+        </div>
+      </div>
+      <div id="popup">
+        <div>
+          <h2>Останаха само 17 опаковки Parazol.</h2>
+          <h2>Поръчайте веднага!</h2>
+        </div>
+      </div>
+      <div id="play">
+        <div>
+          <h4>Видеото вече започна</h4>
+          <h4>Кликнете, за да включите звука!</h4>
+        </div>
+      </div>
+      <video autoplay="autoplay" id="video" muted="" playsinline="" preload="metadata">
+        <source src="qqqq.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <form action="/order.php" class="d-none" id="order" method="POST">
+      <input type="hidden" name="fbpx" value="{fbpx}" />
+      <input type="hidden" name="utm_code" value="{subid}" />
+      <input type="hidden" name="cid" value="{campaign_id}" />
+      <input type="hidden" name="sid" value="2722" />
+      <input type="hidden" name="hash" value="{hash}" />
+      <input type="hidden" name="country" value="BG" />
+      <div class="formFb" id="formFb">
+        <div class="formFb__container">
+          <p class="formFb__action formFb__text">
+            <b>ПОБЪРЗАЙТЕ!</b> Промоционалните опаковки Parazol скоро ще свършат.
+          </p>
+          <p class="formFb__counter formFb__text">
+            <b>Актуализация:</b> за днес останаха само
+            <span class="form-instock red">17</span> броя
+            <span class="js-current-date"></span>.
+          </p>
+          <div class="formFb__img">
+            <img alt="" loading="lazy" src="images/product.png" />
+          </div>
+          <div class="formFb__price">
+            <p class="formFb__price--txt formFb__text">-50% ОТСТЪПКА</p>
+            <span class="formFb__price--p">
+              <span class="oldPriceAndLabelForLandingInfoApi formFb__price--old"><span class="price-old">78</span>
+                <span class="">EUR</span></span>
+              <span class="priceAndLabelForLandingInfoApi formFb__price--new"><span class="price-new">39</span>
+                <span class="">EUR</span></span>
+            </span>
+          </div>
+          <div class="formFb__timer">
+            <p class="formFb__text">Изтича след</p>
+            <div class="timer">
+              <span class="min">10</span><span>:</span><span class="sec">00</span>
+            </div>
+          </div>
+          <div class="formFb__inputs">
+            <label>Вашето име:</label>
+            <input autocomplete="name" minlength="3" name="name" placeholder="Име" required="required"
+              title="Позволени са само букви и интервали" type="text" />
+          </div>
+          <div class="formFb__inputs">
+            <label>Вашият телефонен номер:</label>
+            <input autocomplete="tel" data-intl-tel-input-id="0" id="phone" name="phone" placeholder=""
+              required="required" title="Моля, въведете номера според примера: +359123456789 или 123456789"
+              type="tel" value="" />
+          </div>
+          <button class="formFb__btn" type="submit">ИЗПРАТИ ПОРЪЧКАТА</button>
+          <p class="formFb__counter formFb__text">
+            *Тази отстъпка за опаковката важи при поръчка на пълен
+            курс.
+          </p>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="block_tv" style="max-width: 900px; margin: 0 auto">
+    <p>КАКТО ВИДЯНО ПО</p>
+    <div class="tv_icons">
+      <img alt="" loading="lazy" src="https://static.joxi.pro/1782916563830-02f9d7bf-e841-462e-acbf-620e7193e90b.jpg" />
+      <img alt="" loading="lazy" src="https://static.joxi.pro/1782916563830-88c3e97b-9f59-4857-9aca-cfe3f9a04863.jpg" />
+      <img alt="" loading="lazy" src="https://static.joxi.pro/1782916563830-a0aade32-a989-4af2-b4c9-2e3909e61cae.jpg" />
+      <img alt="" loading="lazy" src="https://static.joxi.pro/1782916563830-9a0bbfef-2145-4a85-8497-73c1ac352e5a.jpg" />
+      <img alt="" loading="lazy" src="https://static.joxi.pro/1782916563829-716bf973-8a40-4266-8302-d01f28f7a9e9.jpg" />
+    </div>
+  </div>
+  <style>
+    .fb-comments-wrapper {
+      display: none;
+      opacity: 0;
+    }
+  </style>
+  <section class="comments py-4" style="max-width: 900px; margin: 0 auto">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="fb-comments" style="margin-top: 5px">
+            <div class="fb-comments-header">
+              <span>Коментари</span>
+            </div>
+            <div id="comments-container">
+              <div class="fb-comments-wrapper" id="16" style="display: none; opacity: 1">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/15-qb3ol78k7so9r9p18udnvadsqut2h07hf5oe3qoxd4.jpeg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Мария Георгиева</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Изглежда страхотно, със сигурност ще пробвам! ...
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Харесва ми</like>
+                        ·
+                        <reply>Отговор</reply>
+                        ·
+                        <likes>85</likes>
+                        <date>преди 3 минути</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="15" style="display: none; opacity: 1">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/14-qb3okofsf3yjb2gcam94hf4kv5dq724uokmoi7gstk.jpg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Елена Иванова</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Видеото е малко кратко, очаквах повече информация,
+                        но ми хареса и смятам да спазвам
+                        всички препоръки.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Харесва ми</like>
+                        ·
+                        <reply>Отговор</reply>
+                        ·
+                        <likes>79</likes>
+                        <date>преди 3 минути</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="16" style="display: none; opacity: 1">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/8-qb3odlpiz09twqqcm2587penvq99931ldju3g7yhns.jpeg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Георги Николов</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Всеки, който се бори с паразити, трябва да види това!
+                        Това, което разкриват, е невероятно — никога не бих
+                        помислил, че нещо такова е възможно!
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Харесва ми</like>
+                        ·
+                        <reply>Отговор</reply>
+                        ·
+                        <likes>81</likes>
+                        <date>преди 3 минути</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="14" style="display: none; opacity: 1">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/7-qb3ocz5eezey63n49se6jv3lmhcg4ck1ag6fxkvxt4.jpeg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Димитър Стоянов</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Амин! Бог да ви благослови!
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Харесва ми</like>
+                        ·
+                        <reply>Отговор</reply>
+                        ·
+                        <likes>66</likes>
+                        <date>преди 2 минути</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="13" style="display: none; opacity: 1">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/13-qb3ok7ip03bdi34x1exu8jea67p4ci9om8vxv85vxk.jpeg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Анна Димитрова</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Боже, благослови този човек!
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Харесва ми</like>
+                        ·
+                        <reply>Отговор</reply>
+                        ·
+                        <likes>50</likes>
+                        <date>преди 2 минути</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="12" style="display: none; opacity: 1">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/12-qb3oj7stjm76xay1y7bs6kn3e3quhnoqmz6gefjehs.jpeg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Ивана Петрова</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Наистина се надявам това да подейства, вече съм пробвала
+                        толкова много неща! Но това, което казват, има смисъл.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Харесва ми</like>
+                        ·
+                        <reply>Отговор</reply>
+                        ·
+                        <likes>47</likes>
+                        <date>преди 2 минути</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="11" style="display: none; opacity: 1">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/6-qb3ocfesfgnxeafsh1v0li2x5e1qmpdo7qh8urp7fs.jpeg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Николай Павлов</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Никога не бях чувал за това, звучеше странно, но
+                        има логика... Вече започнах да го използвам и действа още от
+                        първите дни!
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Харесва ми</like>
+                        ·
+                        <reply>Отговор</reply>
+                        ·
+                        <likes>40</likes>
+                        <date>преди 2 минути</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="10" style="display: none; opacity: 1">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/5-qb3obwm0mry6y373itqh7mtp9omecrb1h5fj98h2w8.jpeg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Стефан Савов</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Страхотно, @София! Започвам още днес заедно със съпруга ми...
+                        и двамата имаме този проблем с паразитите.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Харесва ми</like>
+                        ·
+                        <reply>Отговор</reply>
+                        ·
+                        <likes>41</likes>
+                        <date>преди 2 минути</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="9" style="display: none; opacity: 0">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/11-qb3oitp8xvf6er5a4bem2dyuosio0jrwreb7fk7r3c.jpeg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Росица Попова</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Да, @Анна, това наистина действа, аз съм живото доказателство...
+                        здравето ми беше съсипано, чувствах се ужасно...
+                        благодарение на това видео си върнах силите. Цялото ми семейство
+                        е възхитено, стараем се да сме благодарни на този
+                        прекрасен човек, който ни помогна. Споделям това
+                        видео всеки ден.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Харесва ми</like>
+                        ·
+                        <reply>Отговор</reply>
+                        ·
+                        <likes>22</likes>
+                        <date>преди 2 минути</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="7" style="display: none; opacity: 0">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/10-qb3oibubc0qqa5v80lop90h3egyoyat0cxwzbay8dk.jpeg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Десислава Лукова</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Това наистина ли действа?
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Харесва ми</like>
+                        ·
+                        <reply>Отговор</reply>
+                        ·
+                        <likes>18</likes>
+                        <date>преди 3 минути</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="6" style="display: none; opacity: 0">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/4-qb3obbxkgf5vuo14vksoos1k77gbnf0y2b2up5bqp4.jpeg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Петър Ковачев</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Решението винаги е било под носа ни... просто
+                        никой не го е забелязвал. Благодаря ви много, донесохте
+                        светлина и надежда!
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Харесва ми</like>
+                        ·
+                        <reply>Отговор</reply>
+                        ·
+                        <likes>17</likes>
+                        <date>преди 3 минути</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="5" style="display: none; opacity: 0">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/3-qb3oaxtzlwml0ilm5wpa5dlnafdtfygz0dakhzwnag.jpeg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Гергана Милева</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Монтажът на видеото не ми хареса... но напълно
+                        разбирам съдържанието му! Вярвам на всичко.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Харесва ми</like>
+                        ·
+                        <reply>Отговор</reply>
+                        ·
+                        <likes>15</likes>
+                        <date>преди 3 минути</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="4" style="display: none; opacity: 0">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/9-qb3oht1jjc0ztymj2dk5v57virjcocqdmcv9prq3u0.jpeg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Теодора Христова</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Ще изпратя това видео нататък, познавам хора, които имат
+                        здравословни проблеми, а това видео може да им помогне да излязат от
+                        трудна ситуация.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Харесва ми</like>
+                        ·
+                        <reply>Отговор</reply>
+                        ·
+                        <likes>11</likes>
+                        <date>преди 3 минути</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="3" style="display: none; opacity: 0">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/2-qb3oae3dmdvk8pead66470kytc33ybalxnldf6pwx4.jpeg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Александър Марков</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Току-що започнах да гледам, а това видео вече напълно
+                        промени мисленето ми за паразитите.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Харесва ми</like>
+                        ·
+                        <reply>Отговор</reply>
+                        ·
+                        <likes>9</likes>
+                        <date>преди 3 минути</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="2" style="display: none; opacity: 0">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/1-qb3o98qh9oay1v2d2oaj5b0oodqyjmqf3yw0b0f8iw.jpeg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Петър Василев</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Това е малко спорно, но мисля, че си струва
+                        да се гледа, за да си съставите собствено мнение...
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Харесва ми</like>
+                        ·
+                        <reply>Отговор</reply>
+                        ·
+                        <likes>8</likes>
+                        <date>преди 3 минути</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div id="more">
+              <p>
+                <strong><span style="text-align: center">
+                    Трябва да влезете в профила си, за да добавите коментар
+                  </span></strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/video1.js"></script>
+  <script src="js/scripts.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var comments = document.querySelectorAll('.fb-comments-wrapper');
+
+      function fadeInElement(element, duration) {
+        var start = null;
+
+        function step(timestamp) {
+          if (!start) start = timestamp;
+          var progress = timestamp - start;
+          element.style.opacity = progress / duration;
+          if (progress < duration) {
+            window.requestAnimationFrame(step);
+          }
+        }
+
+        window.requestAnimationFrame(step);
+      }
+
+      function displayCommentsSequentially(index) {
+        if (index >= comments.length) {
+          return;
+        }
+
+        var comment = comments[index];
+        comment.style.display = 'block';
+        fadeInElement(comment, 500); // 500 милисекунди за анимацията на появяване
+
+        if (index > 0) {
+          comments[index - 1].parentNode.insertBefore(
+            comment,
+            comments[index - 1]
+          );
+        }
+
+        setTimeout(function () {
+          displayCommentsSequentially(index + 1);
+        }, 10000); // 10 секунди забавяне
+      }
+
+      displayCommentsSequentially(0);
+    });
+  </script>
+
+  <script
+    async=""> const LAZY = document.querySelectorAll('img'); for (let i = 0; i < LAZY.length; i++) { LAZY[i].setAttribute('loading', 'lazy'); } </script>
+  <script>
+    $("a").on("touchend, click", function (e) {
+      e.preventDefault();
+      $('body,html').animate({
+        scrollTop: $('#oneform').offset().top
+      }, 400);
+    });
+  </script>
+  <script>
+    $('[name="name"]').on("input", function () {
+      var val = $(this).val();
+
+      var cleaned = val
+        .replace(/[^\p{L}\s]/gu, "")
+        .replace(/^\s+/, "")
+        .replace(/\s\s+/, " ");
+
+      var parts = cleaned.split(" ");
+      if (parts.length > 2) {
+        cleaned = parts[0] + " " + parts[1];
+      }
+
+      $(this).val(cleaned);
+    });
+
+    $('[name="name"]').on("change blur", function () {
+      $(this).val($(this).val().trim());
+    });
+
+    $('[name="phone"]').on("input change", function (e) {
+      var val = $(this).val();
+      $(this).val(val.replace(/\D/g, ""));
+      $(e.currentTarget).attr("pattern", "[0-9]{6,}");
+    });
+  </script>
+  <p style="opacity: 0">{_box:2sHZz2rc}</p>
+</body>
+
+</html>
