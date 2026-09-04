@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="bg" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ленд C — редакция ШАПКИ (изолирано)</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#f2ede4;color:#1a1a1a;font-family:Georgia,"Times New Roman",serif;line-height:1.7;font-size:21px;font-weight:500}
+#wrap{max-width:1000px;margin:24px auto;background:#fff;box-shadow:0 6px 24px rgba(0,0,0,.12)}
+.site-banner{width:100%;display:block}
+
+/* ============================================================
+   ▼▼▼ ШАПКА — редактируй CSS и HTML тут ▼▼▼
+   ============================================================ */
+
+/* 1. БЕЖЕВЫЙ ФОН + КАРТИНКА С СОСУДАМИ В ПРАВОМ ВЕРХНЕМ УГЛУ
+   Картинка (кровеносная система на бежевом фоне) масштабируется по высоте
+   и прижимается вправо. Слева остаётся чистый бежевый — там идёт текст. */
+.title-block{
+  position:relative;
+  overflow:hidden;
+  background:#f0e4cc url('images/hero-bg-beige.jpg') right top / auto 100% no-repeat;
+  min-height:560px;
+  display:flex;
+  align-items:flex-end;
+}
+
+/* 2. ТЁМНАЯ ЗАЛИВКА — не нужна на светлом фоне, отключена */
+.title-block .title-shadow{display:none}
+
+/* 3. КОНТЕЙНЕР ТЕКСТОВ — правый отступ 38% чтобы не наезжать на сосуды */
+.title-block .title-texts{position:relative;width:100%;padding:36px 40px;color:#1a1a1a;z-index:2;padding-right:38%}
+
+/* 4. КРОШКА — зелёная (вместо жёлтой) */
+.title-block .title-crumb{font-family:Arial,sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:.8px;color:#2e7d32;margin-bottom:14px;font-weight:700}
+.title-block .title-crumb span{color:#555;font-weight:400}
+
+/* 5. H1 — тёмный на бежевом */
+.title-block h1{font-size:38px;line-height:1.22;color:#111;font-weight:800;margin-bottom:16px;text-shadow:none}
+.title-block h1 em{font-style:normal;color:#2e7d32}
+.title-block h1 mark{background:#2e7d32;color:#fff;padding:2px 8px;border-radius:2px}  /* ← ЗЕЛЁНАЯ плашка вместо жёлтой */
+
+/* 6. ЛИД */
+.title-block .title-lead{font-size:19px;line-height:1.5;color:#3a3a3a;font-style:italic;margin-bottom:18px;text-shadow:none}
+
+/* 7. АВТОР */
+.title-block .title-author{display:flex;align-items:center;gap:12px;font-family:Arial,sans-serif;font-size:15px;color:#555}
+.title-block .title-author .avatar{
+  width:42px;height:42px;border-radius:50%;
+  background:url('images/author.jpg') center/cover, #ccc;
+  border:2px solid #2e7d32;flex-shrink:0;
+}
+.title-block .title-author b{color:#111;display:block;font-size:15px}
+.title-block .title-author small{color:#666;font-size:13px}
+
+/* 8. МОБИЛКА — сосуды сверху ~220px, текст ниже во всю ширину */
+@media(max-width:768px){
+  html,body{font-size:19px}
+  .title-block{min-height:auto;background-size:auto 220px;background-position:right top;padding-top:200px}
+  .title-block .title-texts{padding:22px;padding-right:22px}
+  .title-block h1{font-size:26px;line-height:1.24}
+  .title-block .title-lead{font-size:17px}
+}
+
+/* ============================================================
+   ▲▲▲ /ШАПКА ▲▲▲
+   ============================================================ */
+
+.hint{max-width:1000px;margin:16px auto 40px;padding:16px 22px;background:#fff8dc;border:1px dashed #d4a017;border-radius:4px;font-family:Arial,sans-serif;font-size:13px;color:#5c4a0d;line-height:1.6}
+.hint code{background:#fff;padding:2px 6px;border-radius:2px;font-family:monospace;color:#c8102e}
+.hint b{color:#111}
+</style>
+</head>
+<body>
+
+<div id="wrap">
+
+  <!-- ============ БАННЕР ИЗДАНИЯ (шапка сайта) ============ -->
+  <a href="#"><img class="site-banner" src="images/headerm.png" alt="Здраве и Живот"></a>
+
+  <!-- ============ ШАПКА СТАТЬИ (title-block) ============ -->
+  <div class="title-block">
+    <div class="title-shadow"></div>
+    <div class="title-texts">
+
+      <!-- Крошка сверху -->
+      <div class="title-crumb">РАЗСЛЕДВАНЕ <span>• Кардиология / Фитотерапия •</span> 21 август 2026</div>
+
+      <!-- H1 — заголовок статьи -->
+      <h1>Проф. Иво Петров: „Това, което <mark>нормализира кръвното</mark> и премахва 9 възрастови болести <em>наведнъж</em>". Забранено за десетилетия. <mark>Това растение</mark> се завърна в България.</h1>
+
+      <!-- Подзаголовок / лид -->
+      <div class="title-lead">Растението, което Big Pharma криеше 60 години, вече е официално одобрено в ЕС като хранителна добавка. Ексклузивно интервю на проф. д-р Иво Петров, кардиолог от ВМА — София.</div>
+
+      <!-- Автор -->
+      <div class="title-author">
+        <div class="avatar"></div>
+        <div><b>Магдалена Петрова</b><small>старши репортер • 21 август 2026 • 9 мин четене</small></div>
+      </div>
+
+    </div>
+  </div>
+  <!-- ============ /ШАПКА СТАТЬИ ============ -->
+
+</div>
+
+<div class="hint">
+  <b>Как редактировать эту шапку:</b><br>
+  • <b>ФОН</b> — блок <code>.title-block</code>, строка <code>background:url('…')</code>. Замени URL на свой (joxi/локальный).<br>
+  • <b>ВЫСОТА</b> — там же, <code>min-height:620px</code>.<br>
+  • <b>ТЁМНАЯ ЗАЛИВКА</b> — <code>.title-block .title-shadow</code>, градиент по вертикали. Убавь alpha, если фон должен быть светлее.<br>
+  • <b>H1 / ЛИД / АВТОР</b> — правь текст прямо в HTML внизу, в блоке <code>&lt;div class="title-texts"&gt;</code>.<br>
+  • <b>ЦВЕТА В H1</b>: <code>&lt;mark&gt;…&lt;/mark&gt;</code> = жёлтая подсветка, <code>&lt;em&gt;…&lt;/em&gt;</code> = зелёный текст.<br>
+  • <b>БАННЕР ИЗДАНИЯ</b> (headerm.png сверху) — тег <code>&lt;a&gt;&lt;img class="site-banner"&gt;</code>.<br><br>
+  <b>Как влить обратно в ленд:</b> когда результат нравится — скопируй правки в <code>landing_bg_C_hybrid.html</code>: CSS-правила <code>.title-block…</code> лежат в &lt;style&gt; вверху, HTML шапки — сразу после <code>&lt;div id="wrap"&gt;</code>. Либо просто скинь мне этот файл и скажи «залей в ленд».
+</div>
+
+</body>
+</html>
