@@ -1,0 +1,34 @@
+{
+  "id": "rs_nutra_parasites08",
+  "fid": "a01f2892",
+  "geo": [
+    "RS"
+  ],
+  "lang": "sr",
+  "vertical": "nutra",
+  "offer": "unknown",
+  "sub_vertical": "parasites",
+  "type": "prelander",
+  "format": "html",
+  "page_kind": "vsl",
+  "sid": "",
+  "promise": "„GODINAMA SU ŽIVELI U MENI, A JA SAM KRIVILA GODINE I UMOR.“\n      PATOLOG SA 35",
+  "pains": [],
+  "proof": [],
+  "tone": "expert",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": true,
+  "has_tv_block": true,
+  "comments_count": 0,
+  "price": null,
+  "status": "active",
+  "batch": "zip_sustavy_2026-09-04"
+}

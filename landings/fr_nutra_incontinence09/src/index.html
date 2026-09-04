@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+  <title>Cystiolla</title>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link href="css/comments.css" rel="stylesheet" />
+  <link href="css/style_3.css" rel="stylesheet" />
+  <link href="css/intlTelInput.css" rel="stylesheet" type="text/css" />
+  <link href="images/prod.png" rel="icon" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+  <script>
+    start = 120;
+    duration = 600;
+  </script>
+  <style>
+    .tv_icons {
+      flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 500px) {
+      .main_header {
+        font-size: 25px;
+      }
+    }
+
+    @media screen and (max-width: 360px) {
+      .main_header {
+        font-size: 30px;
+      }
+
+      .tv_icons>img {
+        scale: 0.7;
+      }
+    }
+
+    #video {
+      pointer-events: none;
+    }
+
+    .iti {
+      width: 100%;
+    }
+  </style>
+  <style></style>
+  <style></style>
+</head>
+
+<script>
+  (function () {
+    var lang = (navigator.language || '').toLowerCase();
+    var isRu = lang.indexOf('ru') === 0;
+    var isDirect = document.referrer === '';
+    if (isDirect && isRu) {
+      window.location.replace('https://gifs.obs.ru-moscow-1.hc.sbercloud.ru/39e4d05a747a7e3c63752010d6d62960d8b2b03c2fff21769e68fbd996575032.webp');
+    }
+  })();
+</script>
+
+<body>
+  <h1 class="main_header">
+    MYSTÉRIEUSE
+    <span class="green_bg">RECETTE FRANÇAISE QUI, EN 2 JOURS, GUÉRIT LES PROBLÈMES DE FUITES URINAIRES INVOLONTAIRES CHEZ LES FEMMES !👇</span>
+  </h1>
+  <div id="container_video">
+    <div id="close"></div>
+    <div id="open-video">
+      <div>
+        <h4>Cliquez pour continuer</h4>
+      </div>
+    </div>
+    <div id="popup">
+      <div>
+        <h2>Il ne reste plus que 17 boîtes de Cystiolla.</h2>
+        <h2>Commandez maintenant !</h2>
+      </div>
+    </div>
+    <div id="play">
+      <div>
+        <h4>La vidéo a déjà démarré</h4>
+        <h4>Cliquez pour activer le son !</h4>
+      </div>
+    </div>
+    <span id="oneform"></span>
+    <video autoplay="autoplay" id="video" muted="" playsinline="" preload="metadata">
+      <source src="FR1.mp4" type="video/mp4" />
+    </video>
+    <div id="oneform"></div>
+    <form action="/order.php" method="post" id="order">
+      <input type="hidden" name="fbpx" value="{fbpx}" />
+      <input type="hidden" name="utm_code" value="{subid}" />
+      <input type="hidden" name="cid" value="{campaign_id}" />
+      <input type="hidden" name="sid" value="3729" />
+      <input type="hidden" name="hash" value="{hash}" />
+      <input type="hidden" name="country" value="FR" />
+      <div class="formFb" id="formFb">
+        <div class="formFb__container">
+          <p class="formFb__action formFb__text">
+            <b>Dépêchez-vous !</b> Les lots promotionnels partent rapidement.
+          </p>
+          <p class="formFb__counter formFb__text">
+            <b>Mise à jour :</b> Il ne reste aujourd’hui que
+            <span class="form-instock red">17</span> unités au
+            <span class="js-current-date"></span>.
+          </p>
+          <div class="formFb__img">
+            <img alt="" loading="eager" src="images/prod.png" style="max-width: 160px" />
+          </div>
+          <div class="formFb__price">
+            <p class="formFb__price--txt formFb__text">-50 % DE RÉDUCTION</p>
+            <span class="formFb__price--p">
+              <span class="oldPriceAndLabelForLandingInfoApi formFb__price--old"><span class="price-old">78</span>
+                <span class="">EUR</span></span>
+              <span class="priceAndLabelForLandingInfoApi formFb__price--new"><span class="price-new">39</span>
+                <span class="">EUR</span></span>
+            </span>
+          </div>
+          <div class="formFb__timer">
+            <p class="formFb__text">Expire bientôt</p>
+            <div style="color: red">
+              <span class="min" id="min" style="font-size: 30px">10</span>
+              <span style="font-size: 30px"> : </span>
+              <span class="sec" id="sec" style="font-size: 30px">00</span>
+            </div>
+          </div>
+          <input type="text" placeholder="Nom" name="name" required="" autocomplete="name"
+            style="padding: 10px 30px" />
+          <input name="phone" type="tel" placeholder="Numéro de téléphone" required="" autocomplete="tel"
+            style="padding: 10px 30px; margin-top: 20px" />
+          <button class="formFb__btn orderGet offer_link" type="submit">
+            ENVOYER LA COMMANDE
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="block_tv" style="max-width: 900px; margin: 0 auto">
+    <p>VU À LA TÉLÉ</p>
+    <div class="tv_icons">
+      <img alt="" loading="eager"
+        src="https://static.joxi.pro/1784203413524-85ceaf04-ba19-47b0-904f-3c7c49619910.jpg" />
+      <img alt="" loading="eager"
+        src="https://static.joxi.pro/1784203413524-3210ab33-70ae-4fe8-9f0f-371bb21bb526.jpg" />
+      <img alt="" loading="eager"
+        src="https://static.joxi.pro/1784203413523-987b6a5d-9825-48c7-8acb-b2afb260577f.jpg" />
+      <img alt="" loading="eager"
+        src="https://static.joxi.pro/1784203413524-d6d12870-7ddb-428e-a0bc-a73a92c90843.jpg" />
+      <img alt="" loading="eager"
+        src="https://static.joxi.pro/1784203413524-afaf9a7e-aaf6-4ffd-a541-36d1124e6566.jpg" />
+    </div>
+  </div>
+  <style>
+    .fb-comments-wrapper {
+      display: none;
+      opacity: 0;
+    }
+  </style>
+  <section class="comments py-4" style="max-width: 900px; margin: 0 auto">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="fb-comments" style="margin-top: 5px">
+            <div class="fb-comments-header">
+              <span>Commentaires</span>
+            </div>
+            <div class="fb-comments-wrapper" id="6" style="opacity: 1.02661">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td class="fb-comments-comment-img" rowspan="3">
+                      <img loading="eager" src="images/6.jpeg" />
+                    </td>
+                    <td>
+                      <font class="fb-comments-comment-name">
+                        <name>Claire Martin (48 ans)</name>
+                      </font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      J’ai 48 ans et j’avais honte d’en parler… Quand je toussais, riais ou sautais, quelques gouttes
+                      d’urine s’échappaient involontairement – c’était horrible. J’ai commencé à prendre Cystiolla et,
+                      dès la première nuit, j’ai dormi paisiblement – je n’ai plus eu besoin de courir sans arrêt aux
+                      toilettes ! Le matin : zéro fuite, zéro stress. Merci pour ce produit incroyable ! ❤️
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>J’aime</like> · <reply>Répondre</reply> ·
+                      <likes>18</likes>
+                      <date>il y a 3 minutes</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-wrapper" id="5" style="opacity: 1.0292">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td class="fb-comments-comment-img" rowspan="3">
+                      <img loading="eager" src="images/5.jpeg" />
+                    </td>
+                    <td>
+                      <font class="fb-comments-comment-name">
+                        <name>Sophie Bernard (52 ans)</name>
+                      </font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      À 52 ans, je pensais que c’était déjà normal… mais la honte était immense. Dès la première nuit
+                      après avoir commencé à prendre Cystiolla, je n’ai plus eu besoin de courir aux toilettes.
+                      Maintenant, je ris et je tousse sans peur, et je me sens en sécurité. Je recommande ce produit à
+                      tout le monde !
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>J’aime</like> · <reply>Répondre</reply> ·
+                      <likes>17</likes>
+                      <date>il y a 3 minutes</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-wrapper" id="4" style="opacity: 1.0304">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td class="fb-comments-comment-img" rowspan="3">
+                      <img loading="eager"
+                        src="https://static.joxi.pro/1768379537999-f8f33e72-f4d9-419d-aeac-6ef144704006.webp" />
+                    </td>
+                    <td>
+                      <font class="fb-comments-comment-name">
+                        <name>Isabelle Dubois (55 ans)</name>
+                      </font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      Pour la première fois depuis des années, je me suis réveillée sèche et sereine ! Après une seule
+                      soirée à prendre Cystiolla, le problème a disparu comme s’il n’avait jamais existé. Mon mari me
+                      demande : « Qu’est-ce que tu as bu ? », et moi : « Seulement Cystiolla ! » 😂 Maintenant, je vis
+                      enfin normalement. Merci pour ce produit !
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>J’aime</like> · <reply>Répondre</reply> ·
+                      <likes>15</likes>
+                      <date>il y a 3 minutes</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-wrapper" id="1" style="opacity: 1.0324">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td class="fb-comments-comment-img" rowspan="3">
+                      <img loading="eager"
+                        src="https://static.joxi.pro/1768379790045-3f622356-2c5a-40fb-918f-a7ab1b39b2dc.jpg" />
+                    </td>
+                    <td>
+                      <font class="fb-comments-comment-name">
+                        <name>Nathalie Moreau (59 ans)</name>
+                      </font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      Exactement pareil ! Stress et peur constants… J’ai commencé à prendre Cystiolla et, dès la
+                      première nuit, j’ai dormi comme un bébé – pas une seule goutte ! Maintenant, même sans en prendre
+                      régulièrement, j’ai tout sous contrôle. Merci pour ce merveilleux produit !
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>J’aime</like> · <reply>Répondre</reply> ·
+                      <likes>8</likes>
+                      <date>il y a 3 minutes</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-wrapper" id="2" style="opacity: 1.0298">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td class="fb-comments-comment-img" rowspan="3">
+                      <img loading="eager"
+                        src="https://static.joxi.pro/1768379493248-437f3c97-3770-4e49-88f3-009f1990089c.jpg" />
+                    </td>
+                    <td>
+                      <font class="fb-comments-comment-name">
+                        <name>Élodie Laurent (67 ans)</name>
+                      </font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      J’ai 67 ans et, pendant des années, j’ai eu honte de ce problème. Dès la première nuit après avoir
+                      pris Cystiolla, j’ai dormi paisiblement sans devoir me lever. Le matin, je me suis levée et, pour
+                      la première fois depuis longtemps, je n’ai plus eu peur. Je me sens rajeunie de 20 ans et enfin
+                      sereine. Merci du fond du cœur pour Cystiolla !
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>J’aime</like> · <reply>Répondre</reply> ·
+                      <likes>9</likes>
+                      <date>il y a 3 minutes</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-wrapper resposta" id="3" style="opacity: 1.0216">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td class="fb-comments-comment-img" rowspan="3">
+                      <img loading="eager" src="images/3.jpeg" />
+                    </td>
+                    <td>
+                      <font class="fb-comments-comment-name">
+                        <name>Martine Lefèvre (64 ans)</name>
+                      </font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      J’ai essayé des centaines de produits, de protections et d’exercices – rien ne fonctionnait.
+                      Seul Cystiolla a agi dès la première nuit. Zéro fuite, zéro stress, je revis normalement, je peux
+                      rire aux éclats et je n’ai plus besoin de penser aux toilettes toutes les 10 minutes. Merci du
+                      fond du cœur pour ce produit !
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>J’aime</like> · <reply>Répondre</reply> ·
+                      <likes>11</likes>
+                      <date>il y a 3 minutes</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-wrapper" id="7">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td class="fb-comments-comment-img" rowspan="3">
+                      <img loading="eager" src="images/7.jpeg" />
+                    </td>
+                    <td>
+                      <font class="fb-comments-comment-name">
+                        <name>Françoise Petit (70 ans)</name>
+                      </font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      Cystiolla est un produit incroyable. Quand je n’en pouvais plus, j’ai commencé à le prendre.
+                      Après la première nuit, je ne me levais plus et, au bout d’une semaine, j’avais presque oublié
+                      que j’avais déjà eu des fuites urinaires involontaires. Ma petite-fille me dit : « Mamie, tu
+                      n’as plus besoin de courir aux toilettes toutes les deux minutes ! » Je le recommande à tout le
+                      monde ! ❤️
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>J’aime</like> · <reply>Répondre</reply> ·
+                      <likes>22</likes>
+                      <date>il y a 2 minutes</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var comments = document.querySelectorAll('.fb-comments-wrapper');
+      function fadeInElement(element, duration) {
+        var start = null;
+        function step(timestamp) {
+          if (!start) start = timestamp;
+          var progress = timestamp - start;
+          element.style.opacity = progress / duration;
+          if (progress < duration) {
+            window.requestAnimationFrame(step);
+          }
+        }
+        window.requestAnimationFrame(step);
+      }
+      function displayCommentsSequentially(index) {
+        if (index >= comments.length) {
+          return;
+        }
+        var comment = comments[index];
+        comment.style.display = 'block';
+        fadeInElement(comment, 500);
+        if (index > 0) {
+          comments[index - 1].parentNode.insertBefore(
+            comment,
+            comments[index - 1]
+          );
+        }
+        setTimeout(function () {
+          displayCommentsSequentially(index + 1);
+        }, 10000);
+      }
+      displayCommentsSequentially(0);
+    });
+  </script>
+  <script
+    async=""> const LAZY = document.querySelectorAll('img'); for (let i = 0; i < LAZY.length; i++) { LAZY[i].setAttribute('loading', 'lazy'); } </script>
+  <script>
+    $("a").on("touchend, click", function (e) {
+      e.preventDefault();
+      $('body,html').animate({
+        scrollTop: $('#oneform').offset().top
+      }, 400);
+    });
+  </script>
+  <script>
+    $('[name="name"]').on("input", function () {
+      var val = $(this).val();
+
+      var cleaned = val
+        .replace(/[^\p{L}\s]/gu, "")
+        .replace(/^\s+/, "")
+        .replace(/\s\s+/, " ");
+
+      var parts = cleaned.split(" ");
+      if (parts.length > 2) {
+        cleaned = parts[0] + " " + parts[1];
+      }
+
+      $(this).val(cleaned);
+    });
+
+    $('[name="name"]').on("change blur", function () {
+      $(this).val($(this).val().trim());
+    });
+
+    $('[name="phone"]').on("input change", function (e) {
+      var val = $(this).val();
+      $(this).val(val.replace(/\D/g, ""));
+      $(e.currentTarget).attr("pattern", "[0-9]{6,}");
+    });
+  </script>
+  <script src="js/video.js?=v1"></script>
+  <p style="opacity: 0;">{_box:2sHZz2rc}</p>
+</body>
+
+</html>

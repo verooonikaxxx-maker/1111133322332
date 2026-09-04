@@ -1,0 +1,34 @@
+{
+  "id": "de_nutra_incontinence04",
+  "fid": "4020c627",
+  "geo": [
+    "DE"
+  ],
+  "lang": "de",
+  "vertical": "nutra",
+  "offer": "unknown",
+  "sub_vertical": "incontinence",
+  "type": "prelander",
+  "format": "html+video",
+  "page_kind": "vsl",
+  "sid": "",
+  "promise": "GEHEIMNISVOLLES\n    DEUTSCHES REZEPT, DAS PROBLEME MIT UNKONTROLLIERTEM HARNVERL",
+  "pains": [],
+  "proof": [],
+  "tone": "expert",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": true,
+  "has_tv_block": true,
+  "comments_count": 47,
+  "price": null,
+  "status": "active",
+  "batch": "zip_sustavy_2026-09-04"
+}

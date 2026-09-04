@@ -1,0 +1,34 @@
+{
+  "id": "hu_nutra_incontinence05",
+  "fid": "5df6293e",
+  "geo": [
+    "HU"
+  ],
+  "lang": "hu",
+  "vertical": "nutra",
+  "offer": "unknown",
+  "sub_vertical": "incontinence",
+  "type": "prelander",
+  "format": "html",
+  "page_kind": "vsl",
+  "sid": "",
+  "promise": "\"AMIKOR MÁR NEM TUDOD TARTANI A VIZELETED, A CSALÁD ELFELEJT.\"\n      A FIATAL OR",
+  "pains": [],
+  "proof": [],
+  "tone": "expert",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": true,
+  "has_tv_block": true,
+  "comments_count": 0,
+  "price": null,
+  "status": "active",
+  "batch": "zip_sustavy_2026-09-04"
+}

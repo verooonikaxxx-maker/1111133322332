@@ -1,0 +1,34 @@
+{
+  "id": "cz_nutra_incontinence10",
+  "fid": "afb972b3",
+  "geo": [
+    "CZ"
+  ],
+  "lang": "cs",
+  "vertical": "nutra",
+  "offer": "unknown",
+  "sub_vertical": "incontinence",
+  "type": "prelander",
+  "format": "html+video",
+  "page_kind": "vsl",
+  "sid": "",
+  "promise": "TAJEMNÝ\n      ČESKÝ RECEPT, KTERÝ BĚHEM 2 DNŮ VYLÉČÍ ŽENÁM PROBLÉMY S NEKONTROLN",
+  "pains": [],
+  "proof": [],
+  "tone": "expert",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": true,
+  "has_tv_block": true,
+  "comments_count": 46,
+  "price": null,
+  "status": "active",
+  "batch": "zip_sustavy_2026-09-04"
+}

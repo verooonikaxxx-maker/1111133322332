@@ -1,0 +1,34 @@
+{
+  "id": "bg_nutra_joints03",
+  "fid": "24c40417",
+  "geo": [
+    "BG"
+  ],
+  "lang": "bg",
+  "vertical": "nutra",
+  "offer": "unknown",
+  "sub_vertical": "joints",
+  "type": "prelander",
+  "format": "html",
+  "page_kind": "vsl",
+  "sid": "",
+  "promise": "„КОГАТО ВЕЧЕ НЕ МОЖЕШ ДА ХОДИШ, СЕМЕЙСТВОТО ТЕ ЗАБРАВЯ.\"\n      ТОЗИ СВЕЩЕНИК ОБИ",
+  "pains": [],
+  "proof": [],
+  "tone": "expert",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": true,
+  "has_tv_block": true,
+  "comments_count": 0,
+  "price": null,
+  "status": "active",
+  "batch": "zip_sustavy_2026-09-04"
+}

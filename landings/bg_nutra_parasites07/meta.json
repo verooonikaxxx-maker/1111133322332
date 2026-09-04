@@ -1,0 +1,34 @@
+{
+  "id": "bg_nutra_parasites07",
+  "fid": "9bba7f8f",
+  "geo": [
+    "BG"
+  ],
+  "lang": "bg",
+  "vertical": "nutra",
+  "offer": "unknown",
+  "sub_vertical": "parasites",
+  "type": "prelander",
+  "format": "html+video",
+  "page_kind": "vsl",
+  "sid": "",
+  "promise": "Изчакайте!",
+  "pains": [],
+  "proof": [],
+  "tone": "expert",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": true,
+  "has_tv_block": true,
+  "comments_count": 94,
+  "price": null,
+  "status": "active",
+  "batch": "zip_sustavy_2026-09-04"
+}

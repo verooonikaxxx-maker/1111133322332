@@ -1,0 +1,34 @@
+{
+  "id": "id_nutra_joints06",
+  "fid": "616ffa44",
+  "geo": [
+    "ID"
+  ],
+  "lang": "id",
+  "vertical": "nutra",
+  "offer": "unknown",
+  "sub_vertical": "joints",
+  "type": "prelander",
+  "format": "html",
+  "page_kind": "vsl",
+  "sid": "",
+  "promise": "UMUR 44 TAHUN, SAYA SUDAH DI KURSI RODA. DOKTER BILANG — INI SELAMANYA. TAPI IST",
+  "pains": [],
+  "proof": [],
+  "tone": "expert",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": true,
+  "has_tv_block": true,
+  "comments_count": 0,
+  "price": null,
+  "status": "active",
+  "batch": "zip_sustavy_2026-09-04"
+}

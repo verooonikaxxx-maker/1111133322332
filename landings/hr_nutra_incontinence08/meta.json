@@ -1,0 +1,34 @@
+{
+  "id": "hr_nutra_incontinence08",
+  "fid": "a38ecd2c",
+  "geo": [
+    "HR"
+  ],
+  "lang": "hr",
+  "vertical": "nutra",
+  "offer": "unknown",
+  "sub_vertical": "incontinence",
+  "type": "prelander",
+  "format": "html+video",
+  "page_kind": "vsl",
+  "sid": "",
+  "promise": "TAJANSTVENI\n      RECEPT KOJI LIJEČI NEVOLJKO MOKRENJE KOD ŽENA ZA SAMO 2 DANA!👇",
+  "pains": [],
+  "proof": [],
+  "tone": "expert",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": true,
+  "has_tv_block": true,
+  "comments_count": 46,
+  "price": null,
+  "status": "active",
+  "batch": "zip_sustavy_2026-09-04"
+}

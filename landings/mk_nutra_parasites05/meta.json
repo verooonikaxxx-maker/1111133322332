@@ -1,0 +1,34 @@
+{
+  "id": "mk_nutra_parasites05",
+  "fid": "266b0c5d",
+  "geo": [
+    "MK"
+  ],
+  "lang": "mk",
+  "vertical": "nutra",
+  "offer": "unknown",
+  "sub_vertical": "parasites",
+  "type": "prelander",
+  "format": "html",
+  "page_kind": "vsl",
+  "sid": "",
+  "promise": "\"Кој не верува во силата на природата, никогаш нема да го разбере сопственото те",
+  "pains": [],
+  "proof": [],
+  "tone": "expert",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": true,
+  "has_tv_block": true,
+  "comments_count": 0,
+  "price": null,
+  "status": "active",
+  "batch": "zip_sustavy_2026-09-04"
+}
