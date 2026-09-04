@@ -1,0 +1,34 @@
+{
+  "id": "bg_nutra_joints01",
+  "fid": "c44fe8cf",
+  "geo": [
+    "BG"
+  ],
+  "lang": "bg",
+  "vertical": "nutra",
+  "offer": "unknown",
+  "sub_vertical": "joints",
+  "type": "article",
+  "format": "html",
+  "page_kind": "advertorial",
+  "sid": "2804",
+  "cta": "",
+  "promise": "„Посещавам онези, за които никой вече не идва\" — български свещеник, който лекува ставите на изоставените стари хора в домовете за стари хора със старинна манастирска рецепта",
+  "pains": [],
+  "proof": [],
+  "tone": "news",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": false,
+  "has_tv_block": false,
+  "comments_count": 0,
+  "price": null,
+  "status": "active"
+}

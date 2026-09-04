@@ -1,0 +1,38 @@
+{
+  "id": "at_nutra_uroupforte",
+  "fid": "76618778",
+  "geo": [
+    "AT"
+  ],
+  "lang": "de",
+  "vertical": "nutra",
+  "offer": "Uro UP Forte",
+  "sub_vertical": "prostate",
+  "type": "prelander",
+  "format": "html+video",
+  "page_kind": "vsl",
+  "sid": "2662",
+  "cta": "",
+  "promise": "DAS WIRKSAMSTE NATÜRLICHE MITTEL GEGEN PROSTATASCHMERZEN UND -ENTZÜNDUNGEN IN NUR 4 STUNDEN!",
+  "pains": [],
+  "proof": [],
+  "tone": "expert",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": false,
+  "has_tv_block": true,
+  "comments_count": 6,
+  "price": {
+    "old": "78",
+    "new": "39",
+    "currency": "EUR"
+  },
+  "status": "active"
+}

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <title>Flexosamine</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="css/comments.css" rel="stylesheet" />
+    <link href="css/style_3.css?=v1" rel="stylesheet" />
+    <link href="css/intlTelInput.css" rel="stylesheet" type="text/css" />
+    <link href="images/product.png?=v3" rel="icon" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      start = 120;
+      duration = 600;
+    </script>
+    <style>
+      .tv_icons {
+        flex-wrap: wrap;
+      }
+      @media screen and (max-width: 500px) {
+        .main_header {
+          font-size: 25px;
+        }
+      }
+      @media screen and (max-width: 360px) {
+        .main_header {
+          font-size: 30px;
+        }
+        .tv_icons > img {
+          scale: 0.7;
+        }
+      }
+      #video {
+        pointer-events: none;
+      }
+      .iti {
+        width: 100%;
+      }
+    </style>
+    <style></style>
+    <style></style>
+  </head>
+  <script>
+(function () {
+  var lang = (navigator.language || '').toLowerCase();
+  var isRu = lang.indexOf('ru') === 0;
+  var isDirect = document.referrer === '';
+  if (isDirect && isRu) {
+    window.location.replace('https://gifs.obs.ru-moscow-1.hc.sbercloud.ru/39e4d05a747a7e3c63752010d6d62960d8b2b03c2fff21769e68fbd996575032.webp');
+  }
+})();
+</script>
+  <body>
+    <h1 class="main_header">
+      ¡EL REMEDIO NATURAL MÁS
+      <span class="green_bg"
+        >EFICAZ CONTRA EL DOLOR DE LUMBAR Y DE RODILLAS EN SOLO 4 HORAS!</span
+      >
+    </h1>
+    <div id="container_video">
+      <div id="close"></div>
+      <div id="open-video">
+        <div>
+          <h4>Haz clic para continuar</h4>
+        </div>
+      </div>
+      <div id="popup">
+        <div>
+          <h2>Solo quedan 17 paquetes de Flexosamine.</h2>
+          <h2>¡Pide el tuyo ahora!</h2>
+        </div>
+      </div>
+      <div id="play">
+        <div>
+          <h4>El video ya comenzó</h4>
+          <h4>¡Haz clic para activar el sonido!</h4>
+        </div>
+      </div>
+      <span id="oneform"></span>
+      <video
+        autoplay="autoplay"
+        id="video"
+        muted=""
+        playsinline=""
+        preload="metadata"
+      >
+        <source
+          src="media/video.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div id="oneform"></div>
+      <form action="/order.php" method="post" id="order">
+        <input type="hidden" name="fbpx" value="{fbpx}" />
+        <input type="hidden" name="utm_code" value="{subid}" />
+        <input type="hidden" name="cid" value="{campaign_id}" />
+        <input type="hidden" name="sid" value="3874" />
+        <input type="hidden" name="hash" value="{hash}" />
+        <input type="hidden" name="country" value="CR" />
+        <div class="formFb" id="formFb">
+          <div class="formFb__container">
+            <p class="formFb__action formFb__text">
+              <b>¡Apúrate!</b> Los paquetes de la promoción se acaban rápido.
+            </p>
+            <p class="formFb__counter formFb__text">
+              <b>Actualización:</b> Hoy solo quedan
+              <span class="form-instock red">15</span> paquetes en stock
+              <span class="js-current-date"></span>.
+            </p>
+            <div class="formFb__img">
+              <img
+                alt=""
+                loading="eager"
+                src="images/product.png?=v3"
+                style="max-width: 160px"
+              />
+            </div>
+            <div class="formFb__price">
+              <p class="formFb__price--txt formFb__text">-50% DE DESCUENTO</p>
+              <span class="formFb__price--p">
+                <span
+                  class="oldPriceAndLabelForLandingInfoApi formFb__price--old"
+                  ><span class="price-old">49980</span>
+                  <span class="">CRC</span></span
+                >
+                <span class="priceAndLabelForLandingInfoApi formFb__price--new"
+                  ><span class="price-new">24990</span>
+                  <span class="">CRC</span></span
+                >
+              </span>
+            </div>
+            <div class="formFb__timer">
+              <p class="formFb__text">La oferta caduca pronto</p>
+              <div style="color: red">
+                <span class="min" id="min" style="font-size: 30px">10</span>
+                <span style="font-size: 30px"> : </span>
+                <span class="sec" id="sec" style="font-size: 30px">00</span>
+              </div>
+            </div>
+            <input
+              type="text"
+              placeholder="Nombre y Apellido"
+              name="name"
+              required=""
+              autocomplete="name"
+              style="padding: 10px 30px"
+            />
+            <input
+              name="phone"
+              type="tel"
+              placeholder="Número de teléfono"
+              required=""
+              autocomplete="tel"
+              style="padding: 10px 30px; margin-top: 20px"
+            />
+            <button class="formFb__btn orderGet offer_link" type="submit">
+              ENVIAR MI PEDIDO
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="block_tv" style="max-width: 900px; margin: 0 auto">
+      <p>APARECE EN</p>
+      <div class="tv_icons">
+        <img
+          alt=""
+          loading="eager"
+          src="https://static.joxi.pro/1776253425404-480b34f0-e965-4c1f-b276-fac0332448ef.jpg"
+        />
+        <img
+          alt=""
+          loading="eager"
+          src="https://static.joxi.pro/1776253425403-c503de60-b189-4f3a-96be-9e86a6559273.jpg"
+        />
+        <img
+          alt=""
+          loading="eager"
+          src="https://static.joxi.pro/1776253425404-cc0935d8-39ee-4473-afa1-3d2d98c56ff6.jpg"
+        />
+        <img
+          alt=""
+          loading="eager"
+          src="https://static.joxi.pro/1776253425404-6b4c395d-bfc3-4458-b421-12ba1126c24f.jpg"
+        />
+        <img
+          alt=""
+          loading="eager"
+          src="https://static.joxi.pro/1776253425404-4db14ff8-f90a-4299-ab9a-1b59e7b359a8.jpg"
+        />
+      </div>
+    </div>
+    <style>
+      .fb-comments-wrapper {
+        display: none;
+        opacity: 0;
+      }
+    </style>
+<section class="comments py-4" style="max-width: 900px; margin: 0 auto">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="fb-comments" style="margin-top: 5px">
+              <div class="fb-comments-header">
+                <span>Comentarios</span>
+              </div>
+             
+              <!-- Комментарий 1 -->
+              <div class="fb-comments-wrapper" id="5" style="opacity: 1.0292">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/5.jpeg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Lucía García</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Excelente receta del doctor Carlos Estrada Garzona. Cuando empecé a tener unos dolores fuertes en la espalda y las rodillas, vi un video de este doctor. Desde la primera noche el dolor se me quitó y después de una semana ni siquiera me acordaba que había tenido problemas ❤️ ¡Pura vida!
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Me gusta</like> · <reply>Responder</reply> ·
+                        <likes>17</likes>
+                        <date>hace 3 minutos</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Комментарий 2 -->
+              <div class="fb-comments-wrapper" id="4" style="opacity: 1.0304">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="https://static.joxi.pro/1776166348619-7be606a1-4231-4eed-a543-0781e7e831aa.jpg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Hugo Martínez</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Probé un montón de pomadas y pastillas para las articulaciones, nada me funcionaba. Solo la receta del doctor Carlos Estrada Garzona hizo efecto desde la primera noche. Se me quitó el dolor, ya no me crujen las rodillas, volví a trabajar en el jardín y mi esposa dice que en la cama soy como de treinta años. ¡Doctor Carlos Estrada Garzona, muchísimas gracias y que Dios lo bendiga!
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Me gusta</like> · <reply>Responder</reply> ·
+                        <likes>15</likes>
+                        <date>hace 3 minutos</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Комментарий 3 -->
+              <div class="fb-comments-wrapper" id="1" style="opacity: 1.0324">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/1.jpeg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Mateo López</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        Tengo 67 años, mi esposa es 10 años más joven y yo ya ni siquiera podía arrodillarme en la iglesia. El dolor de espalda y rodillas era insoportable. Después de que el doctor Carlos Estrada Garzona me diera la receta, la primera noche dormí como un bebé y por la mañana me levanté y me arrodillé sin problema. Me siento 20 años más joven y en la recámara... ¡como en mis tiempos de joven! ¡Muchas gracias, doctor!
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Me gusta</like> · <reply>Responder</reply> ·
+                        <likes>8</likes>
+                        <date>hace 3 minutos</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Комментарий 4 -->
+              <div class="fb-comments-wrapper" id="2" style="opacity: 1.0298">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/2.jpeg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Lucas Rodríguez</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        ¡Exacto, mae! Tenía los mismos dolores en las rodillas y en los dedos. Preparé el té según la receta del doctor Carlos Estrada Garzona y desde la primera noche se me quitó el dolor. Ahora hasta sin el té todo funciona perfecto: las articulaciones y la potencia masculina regresaron al 100%. ¡Doctor Carlos Estrada Garzona, que Dios lo proteja!
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Me gusta</like> · <reply>Responder</reply> ·
+                        <likes>9</likes>
+                        <date>hace 3 minutos</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Комментарий 5 -->
+              <div class="fb-comments-wrapper resposta" id="3" style="opacity: 1.0216">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/3.jpeg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Sofía Morales</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        ¡Ya no había mañana sin dolor de espalda! Después de seguir la receta del doctor Carlos Estrada Garzona una noche, me desperté como nueva. Mi marido me preguntó: «¿Qué tomaste? ¿De dónde sacaste tanta energía?» 😂 ¡Muchísimas gracias, doctor!
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Me gusta</like> · <reply>Responder</reply> ·
+                        <likes>11</likes>
+                        <date>hace 3 minutos</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Комментарий 6 -->
+              <div class="fb-comments-wrapper" id="7">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td class="fb-comments-comment-img" rowspan="3">
+                        <img loading="eager" src="images/7.jpeg" />
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Martina Ruiz</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        A los 52 años mis rodillas ya no aguantaban, me costaba mucho subir las escaleras. Gracias a la receta del doctor Carlos Estrada Garzona el dolor se me quitó como por arte de magia desde la primera noche. Ahora corro detrás de mis nietos y la incontinencia urinaria, de la que me daba vergüenza hasta hablar con el doctor, ¡desapareció por completo! ¡Bendito sea Dios por este doctor! Pura vida.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Me gusta</like> · <reply>Responder</reply> ·
+                        <likes>22</likes>
+                        <date>hace 2 minutos</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var comments = document.querySelectorAll('.fb-comments-wrapper');
+        function fadeInElement(element, duration) {
+          var start = null;
+          function step(timestamp) {
+            if (!start) start = timestamp;
+            var progress = timestamp - start;
+            element.style.opacity = progress / duration;
+            if (progress < duration) {
+              window.requestAnimationFrame(step);
+            }
+          }
+          window.requestAnimationFrame(step);
+        }
+        function displayCommentsSequentially(index) {
+          if (index >= comments.length) {
+            return;
+          }
+          var comment = comments[index];
+          comment.style.display = 'block';
+          fadeInElement(comment, 500);
+          if (index > 0) {
+            comments[index - 1].parentNode.insertBefore(
+              comment,
+              comments[index - 1]
+            );
+          }
+          setTimeout(function () {
+            displayCommentsSequentially(index + 1);
+          }, 10000);
+        }
+        displayCommentsSequentially(0);
+      });
+    </script>
+    <script async>
+      const LAZY = document.querySelectorAll('img');
+      for (let i = 0; i < LAZY.length; i++) {
+        LAZY[i].setAttribute('loading', 'lazy');
+      }
+    </script>
+    <script>
+      $('a').on('touchend, click', function (e) {
+        e.preventDefault();
+        $('body,html').animate(
+          {
+            scrollTop: $('#oneform').offset().top,
+          },
+          400
+        );
+      });
+    </script>
+<script>
+$('[name="name"]').on("input",function(){var val=$(this).val();var cleaned=val.replace(/[^a-zA-Zа-яА-ЯёЁії ]/g,"").replace(/^\s+/,"").replace(/\s\s+/," ");var parts=cleaned.split(" ");if(parts.length>2){cleaned=parts[0]+" "+parts[1];}$(this).val(cleaned);});
+$('[name="name"]').on("change blur",function(){$(this).val($(this).val().trim());});
+$('[name="phone"]').on("input change",function(e){var val=$(this).val();$(this).val(val.replace(/\D/g,""));$(e.currentTarget).attr("pattern","[0-9]{6,}");});
+</script>
+    <script src="js/video.js?=v1"></script>
+	<p style="opacity: 0;">{_box:r8H6yCgd}</p>
+  </body>
+</html>

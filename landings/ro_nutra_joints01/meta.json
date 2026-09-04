@@ -1,0 +1,34 @@
+{
+  "id": "ro_nutra_joints01",
+  "fid": "52a62db9",
+  "geo": [
+    "RO"
+  ],
+  "lang": "ro",
+  "vertical": "nutra",
+  "offer": "unknown",
+  "sub_vertical": "joints",
+  "type": "article",
+  "format": "html",
+  "page_kind": "advertorial",
+  "sid": "2828",
+  "cta": "",
+  "promise": "Prof. Dimitrie Aurescu, în vârstă de 102 ani, din Cluj-Napoca dezvăluie formula pentru recuperarea completă a articulațiilor — o metodă accesibilă fiecărui român",
+  "pains": [],
+  "proof": [],
+  "tone": "news",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": false,
+  "has_tv_block": false,
+  "comments_count": 0,
+  "price": null,
+  "status": "active"
+}

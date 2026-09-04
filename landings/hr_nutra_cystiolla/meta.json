@@ -1,0 +1,38 @@
+{
+  "id": "hr_nutra_cystiolla",
+  "fid": "10af924a",
+  "geo": [
+    "HR"
+  ],
+  "lang": "hr",
+  "vertical": "nutra",
+  "offer": "Cystiolla",
+  "sub_vertical": "incontinence",
+  "type": "prelander",
+  "format": "html+video",
+  "page_kind": "vsl",
+  "sid": "2443",
+  "cta": "",
+  "promise": "TAJANSTVENI RECEPT KOJI LIJEČI NEVOLJKO MOKRENJE KOD ŽENA ZA SAMO 2 DANA!👇",
+  "pains": [],
+  "proof": [],
+  "tone": "expert",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": true,
+  "has_tv_block": true,
+  "comments_count": 6,
+  "price": {
+    "old": "78",
+    "new": "39",
+    "currency": "EUR"
+  },
+  "status": "active"
+}

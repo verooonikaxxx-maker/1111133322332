@@ -1,0 +1,34 @@
+{
+  "id": "bg_nutra_parasites01",
+  "fid": "201ac0b0",
+  "geo": [
+    "BG"
+  ],
+  "lang": "bg",
+  "vertical": "nutra",
+  "offer": "Parazol",
+  "sub_vertical": "parasites",
+  "type": "article",
+  "format": "html",
+  "page_kind": "advertorial",
+  "sid": "2722",
+  "cta": "",
+  "promise": "„Виждал съм ги в телата на онези, които дори не са подозирали“ — български патолог разкрива истината за паразитите, която се премълчава",
+  "pains": [],
+  "proof": [],
+  "tone": "news",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": false,
+  "has_tv_block": false,
+  "comments_count": 0,
+  "price": null,
+  "status": "active"
+}

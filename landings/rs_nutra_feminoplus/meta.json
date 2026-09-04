@@ -1,0 +1,38 @@
+{
+  "id": "rs_nutra_feminoplus",
+  "fid": "e4ac4abd",
+  "geo": [
+    "RS"
+  ],
+  "lang": "sr",
+  "vertical": "nutra",
+  "offer": "Femino Plus",
+  "sub_vertical": "incontinence",
+  "type": "prelander",
+  "format": "html+video",
+  "page_kind": "vsl",
+  "sid": "4695",
+  "cta": "",
+  "promise": "ТАЈНИ СРПСКИ РЕЦЕПТ КОЈИ ЗА 2 ДАНА ЛЕЧИ ПРОБЛЕМЕ НЕКОНТРОЛИСАНОГ ЦУРЕЊА МОКРАЋЕ КОД ЖЕНА!👇",
+  "pains": [],
+  "proof": [],
+  "tone": "expert",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": true,
+  "has_tv_block": true,
+  "comments_count": 6,
+  "price": {
+    "old": "2980",
+    "new": "1490",
+    "currency": "RSD"
+  },
+  "status": "active"
+}

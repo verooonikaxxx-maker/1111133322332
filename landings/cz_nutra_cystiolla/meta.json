@@ -1,0 +1,38 @@
+{
+  "id": "cz_nutra_cystiolla",
+  "fid": "1ac13492",
+  "geo": [
+    "CZ"
+  ],
+  "lang": "cs",
+  "vertical": "nutra",
+  "offer": "Cystiolla",
+  "sub_vertical": "incontinence",
+  "type": "prelander",
+  "format": "html+video",
+  "page_kind": "vsl",
+  "sid": "1353",
+  "cta": "",
+  "promise": "TAJEMNÝ ČESKÝ RECEPT, KTERÝ BĚHEM 2 DNŮ VYLÉČÍ ŽENÁM PROBLÉMY S NEKONTROLNÍM ÚNIKEM MOČI!👇",
+  "pains": [],
+  "proof": [],
+  "tone": "expert",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": true,
+  "has_tv_block": true,
+  "comments_count": 6,
+  "price": {
+    "old": "1840",
+    "new": "920",
+    "currency": "czk"
+  },
+  "status": "active"
+}

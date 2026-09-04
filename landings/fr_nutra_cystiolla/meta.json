@@ -1,0 +1,38 @@
+{
+  "id": "fr_nutra_cystiolla",
+  "fid": "666576df",
+  "geo": [
+    "FR"
+  ],
+  "lang": "fr",
+  "vertical": "nutra",
+  "offer": "Cystiolla",
+  "sub_vertical": "incontinence",
+  "type": "prelander",
+  "format": "html+video",
+  "page_kind": "vsl",
+  "sid": "3729",
+  "cta": "",
+  "promise": "MYSTÉRIEUSE RECETTE FRANÇAISE QUI, EN 2 JOURS, GUÉRIT LES PROBLÈMES DE FUITES URINAIRES INVOLONTAIRES CHEZ LES FEMMES !👇",
+  "pains": [],
+  "proof": [],
+  "tone": "expert",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": true,
+  "has_tv_block": true,
+  "comments_count": 6,
+  "price": {
+    "old": "78",
+    "new": "39",
+    "currency": "EUR"
+  },
+  "status": "active"
+}

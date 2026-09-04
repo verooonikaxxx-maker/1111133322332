@@ -1,0 +1,34 @@
+{
+  "id": "cz_nutra_joints01",
+  "fid": "f6fb5342",
+  "geo": [
+    "CZ"
+  ],
+  "lang": "cs",
+  "vertical": "nutra",
+  "offer": "unknown",
+  "sub_vertical": "joints",
+  "type": "article",
+  "format": "html",
+  "page_kind": "advertorial",
+  "sid": "2406",
+  "cta": "",
+  "promise": "„Navštěvuji ty, které už nikdo nenavštěvuje“ — český kněz, který léčí klouby opuštěných seniorů v domovech důchodců",
+  "pains": [],
+  "proof": [],
+  "tone": "news",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": false,
+  "has_tv_block": false,
+  "comments_count": 0,
+  "price": null,
+  "status": "active"
+}

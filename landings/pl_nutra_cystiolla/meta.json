@@ -1,0 +1,38 @@
+{
+  "id": "pl_nutra_cystiolla",
+  "fid": "91fc59f6",
+  "geo": [
+    "PL"
+  ],
+  "lang": "pl",
+  "vertical": "nutra",
+  "offer": "Cystiolla",
+  "sub_vertical": "incontinence",
+  "type": "prelander",
+  "format": "html+video",
+  "page_kind": "vsl",
+  "sid": "1385",
+  "cta": "",
+  "promise": "TAJEMNICZY PRZEPIS, KTÓRY WYLECZY NIEDOTRZYMYWANIE MOCZU U KOBIET W CIĄGU 2 DNI!👇",
+  "pains": [],
+  "proof": [],
+  "tone": "expert",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": false,
+  "has_tv_block": true,
+  "comments_count": 6,
+  "price": {
+    "old": "310",
+    "new": "155",
+    "currency": "PLN"
+  },
+  "status": "active"
+}

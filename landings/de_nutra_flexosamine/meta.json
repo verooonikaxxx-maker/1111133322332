@@ -1,0 +1,38 @@
+{
+  "id": "de_nutra_flexosamine",
+  "fid": "98b34b48",
+  "geo": [
+    "DE"
+  ],
+  "lang": "de",
+  "vertical": "nutra",
+  "offer": "Flexosamine",
+  "sub_vertical": "joints",
+  "type": "prelander",
+  "format": "html+video",
+  "page_kind": "vsl",
+  "sid": "2461",
+  "cta": "",
+  "promise": "DAS BESTE NATÜRLICHE MITTEL GEGEN RÜCKEN- UND KNIESCHMERZEN – IN NUR 4 STUNDEN!",
+  "pains": [],
+  "proof": [],
+  "tone": "expert",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": true,
+  "has_tv_block": true,
+  "comments_count": 6,
+  "price": {
+    "old": "98",
+    "new": "49",
+    "currency": "EUR"
+  },
+  "status": "active"
+}

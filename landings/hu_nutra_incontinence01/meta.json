@@ -1,0 +1,34 @@
+{
+  "id": "hu_nutra_incontinence01",
+  "fid": "dbb85f21",
+  "geo": [
+    "HU"
+  ],
+  "lang": "hu",
+  "vertical": "nutra",
+  "offer": "unknown",
+  "sub_vertical": "incontinence",
+  "type": "article",
+  "format": "html",
+  "page_kind": "advertorial",
+  "sid": "2542",
+  "cta": "",
+  "promise": "\"Meglátogatom azokat, akiket már senki sem látogat\" — a fiatal magyar orvos, aki az idősotthonokban kezeli az elhagyott idős hölgyek vizelettartási zavarát.",
+  "pains": [],
+  "proof": [],
+  "tone": "news",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": false,
+  "has_tv_block": false,
+  "comments_count": 0,
+  "price": null,
+  "status": "active"
+}

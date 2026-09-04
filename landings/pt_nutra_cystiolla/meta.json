@@ -1,0 +1,38 @@
+{
+  "id": "pt_nutra_cystiolla",
+  "fid": "86fca417",
+  "geo": [
+    "PT"
+  ],
+  "lang": "pt",
+  "vertical": "nutra",
+  "offer": "Cystiolla",
+  "sub_vertical": "incontinence",
+  "type": "prelander",
+  "format": "html+video",
+  "page_kind": "vsl",
+  "sid": "2565",
+  "cta": "",
+  "promise": "RECEITA SECRETA QUE CURA INCONTINÊNCIA URINÁRIA EM MULHERES EM APENAS 2 DIAS! 👇",
+  "pains": [],
+  "proof": [],
+  "tone": "expert",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": true,
+  "has_tv_block": true,
+  "comments_count": 6,
+  "price": {
+    "old": "78",
+    "new": "39",
+    "currency": "EUR"
+  },
+  "status": "active"
+}

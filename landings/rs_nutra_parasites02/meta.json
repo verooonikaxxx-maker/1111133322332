@@ -1,0 +1,34 @@
+{
+  "id": "rs_nutra_parasites02",
+  "fid": "94e91ae9",
+  "geo": [
+    "RS"
+  ],
+  "lang": "sr",
+  "vertical": "nutra",
+  "offer": "unknown",
+  "sub_vertical": "parasites",
+  "type": "article",
+  "format": "html",
+  "page_kind": "advertorial",
+  "sid": "2691",
+  "cta": "",
+  "promise": "Стојанка Драговић, лекар-паразитолог од 105 година из околине Београда, открива формулу за потпуно чишћење организма од паразита — метод доступан сваком грађанину Србије",
+  "pains": [],
+  "proof": [],
+  "tone": "news",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": false,
+  "has_tv_block": false,
+  "comments_count": 0,
+  "price": null,
+  "status": "active"
+}

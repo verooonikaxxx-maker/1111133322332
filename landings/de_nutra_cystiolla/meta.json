@@ -1,0 +1,38 @@
+{
+  "id": "de_nutra_cystiolla",
+  "fid": "bb46718b",
+  "geo": [
+    "DE"
+  ],
+  "lang": "de",
+  "vertical": "nutra",
+  "offer": "Cystiolla",
+  "sub_vertical": "incontinence",
+  "type": "prelander",
+  "format": "html+video",
+  "page_kind": "vsl",
+  "sid": "3354",
+  "cta": "",
+  "promise": "GEHEIMNISVOLLES DEUTSCHES REZEPT, DAS PROBLEME MIT UNKONTROLLIERTEM HARNVERLUST BEI FRAUEN INNERHALB VON 2 TAGEN HEILT!👇",
+  "pains": [],
+  "proof": [],
+  "tone": "expert",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": true,
+  "has_tv_block": true,
+  "comments_count": 6,
+  "price": {
+    "old": "78",
+    "new": "39",
+    "currency": "EUR"
+  },
+  "status": "active"
+}

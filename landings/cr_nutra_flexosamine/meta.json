@@ -1,0 +1,38 @@
+{
+  "id": "cr_nutra_flexosamine",
+  "fid": "9a30e046",
+  "geo": [
+    "CR"
+  ],
+  "lang": "es",
+  "vertical": "nutra",
+  "offer": "Flexosamine",
+  "sub_vertical": "joints",
+  "type": "prelander",
+  "format": "html+video",
+  "page_kind": "vsl",
+  "sid": "3874",
+  "cta": "",
+  "promise": "¡EL REMEDIO NATURAL MÁS EFICAZ CONTRA EL DOLOR DE LUMBAR Y DE RODILLAS EN SOLO 4 HORAS!",
+  "pains": [],
+  "proof": [],
+  "tone": "expert",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": true,
+  "has_tv_block": true,
+  "comments_count": 5,
+  "price": {
+    "old": "49980",
+    "new": "24990",
+    "currency": "CRC"
+  },
+  "status": "active"
+}

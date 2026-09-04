@@ -1,0 +1,38 @@
+{
+  "id": "ba_nutra_cyrelief",
+  "fid": "a1ff29dd",
+  "geo": [
+    "BA"
+  ],
+  "lang": "bs",
+  "vertical": "nutra",
+  "offer": "CY-Relief",
+  "sub_vertical": "incontinence",
+  "type": "prelander",
+  "format": "html+video",
+  "page_kind": "vsl",
+  "sid": "2735",
+  "cta": "",
+  "promise": "TAJNI BOSANSKI RECEPT KOJI ZA 2 DANA LIJEČI PROBLEME NEKONTROLISANOG CURENJA MOKRAĆE KOD ŽENA!👇",
+  "pains": [],
+  "proof": [],
+  "tone": "expert",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": true,
+  "has_tv_block": true,
+  "comments_count": 6,
+  "price": {
+    "old": "110",
+    "new": "55",
+    "currency": "KM"
+  },
+  "status": "active"
+}

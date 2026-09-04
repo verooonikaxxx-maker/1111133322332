@@ -1,0 +1,34 @@
+{
+  "id": "mk_nutra_joints01",
+  "fid": "9d5c6b1f",
+  "geo": [
+    "MK"
+  ],
+  "lang": "mk",
+  "vertical": "nutra",
+  "offer": "unknown",
+  "sub_vertical": "joints",
+  "type": "article",
+  "format": "html",
+  "page_kind": "advertorial",
+  "sid": "2694",
+  "cta": "",
+  "promise": "\"Кој не верува во силата на природата, никогаш нема да го разбере сопственото тело\" — дедо Ѓорѓи Стојаноски од Шар Планина, кој им ја врати радоста од одењето на повеќе од 1700 луѓе без ниту една преп",
+  "pains": [],
+  "proof": [],
+  "tone": "news",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": false,
+  "has_tv_block": false,
+  "comments_count": 0,
+  "price": null,
+  "status": "active"
+}

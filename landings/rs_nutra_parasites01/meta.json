@@ -1,0 +1,34 @@
+{
+  "id": "rs_nutra_parasites01",
+  "fid": "36c6a1f6",
+  "geo": [
+    "RS"
+  ],
+  "lang": "sr",
+  "vertical": "nutra",
+  "offer": "unknown",
+  "sub_vertical": "parasites",
+  "type": "article",
+  "format": "html",
+  "page_kind": "advertorial",
+  "sid": "2691",
+  "cta": "",
+  "promise": "„Video sam ih u telima onih koji nisu ni slutili“ — srpski patolog otkriva istinu o parazitima koja se prećutkuje",
+  "pains": [],
+  "proof": [],
+  "tone": "news",
+  "traffic_source": [
+    "facebook"
+  ],
+  "tracker_macros": [
+    "{fbpx}",
+    "{subid}",
+    "{campaign_id}",
+    "{hash}"
+  ],
+  "has_cloak": false,
+  "has_tv_block": false,
+  "comments_count": 0,
+  "price": null,
+  "status": "active"
+}
