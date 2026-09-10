@@ -1,0 +1,48 @@
+ПАРАЗИТЫ — ТРАВНИК В ГОРАХ — ХОРВАТИЯ
+────────────────────────────────────────────────
+Адаптация финальной румынской версии (landers-ro/06). Каркас, арка,
+психология, сроки и вёрстка — те же. Локализовано ВСЁ.
+
+Герой:      djed Ante Vuković, 75 лет, travar s Velebita, selo Krasno
+Учитель:    от него знание о травах; talijanski herbarij iz XVI stoljeća
+Хук:        «Svaki pastir čisti ovcu dvaput godišnje. Ali kad se isto to
+            dogodi čovjeku, nitko ne gleda tamo.»
+Ниша:       паразиты
+ГЕО:        Хорватия (lang=hr, country=HR)
+Оффер:      Parazol
+sid:        2722  ← ВНИМАНИЕ: это болгарский sid, заглушка.
+            В файле стоит <!-- TODO: set HR sid before launch -->
+            Хорватский sid ОБЯЗАТЕЛЬНО подставить перед заливом.
+Цена:       196 / 138 / 98 → 49 EUR   (98→49 = ровно 50%)
+            Цены выставлены по аналогии с BG с поправкой на уровень HR —
+            подтвердите под свой оффер.
+Пенсия:     около 450 евро в месяц
+Картинки:   30 шт., все локальные в images/
+
+ЛОКАЛИЗАЦИЯ
+География: Velebit i Lika — Krasno, Sveti Rok, Lovinac, Otočac, Brinje,
+           Gospić; specijalist u Zagrebu; mladić iz Zagreba.
+Люди:      Ljubica 78 (Krasno) · Blaž 71 (Sveti Rok) · Marica 65 (Lovinac)
+           Katarina 72 (kraj Gospića) · Stipe 70, umirovljeni šumar iz Otočca
+           teta Ruža 77 (Lovinac) · djed Mile 75 (Brinje)
+           teta Manda 82 (Sveti Rok) · teta Jela 74 (Otočac)
+Эмиграция: Njemačka, Irska, Austrija, Engleska
+Травы:     pelin · vratič · klinčići · kora crnog oraha · bučine sjemenke
+Язык:      иекавица, хорватская лексика (ljekarna, liječnik, tjedan, kura,
+           tisuće, obitelj, tržnica). Сербизмов и экавицы нет — проверено.
+Комментарии: 16 хорватских имён и фамилий, ни одно не пересекается
+           с героями истории
+
+ЧТО ПЕРЕНЕСЕНО БЕЗ ИЗМЕНЕНИЙ
+  • 244 текстовых узла, 9 h2, 21 li, 31 картинка — позиции те же
+  • продукт на 33%, кнопка заказа на 67%
+  • канон сроков: 2-3 дня — вздутие и сон; 7-10 день — яйца;
+    2-3 неделя — кожа и силы; конец 4-й недели — основной результат;
+    давняя проблема — вторая коробка
+  • 70 коробок в день = остаток «Preostalo iz današnje serije: 33 /70»
+  • живая дата (Objavljeno / Ažurirano / последний день программы)
+  • счётчик остатка убывает 33 → 31 → 29, минус 2 каждые 3 секунды
+  • зелёная рамка, бежевая плашка под заголовком, мобильная вёрстка
+
+Файлы: index.html — в залив;  _preview.html — посмотреть;
+       РАЗБОР.txt — весь текст по блокам
