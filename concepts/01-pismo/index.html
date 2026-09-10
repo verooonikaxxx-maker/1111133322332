@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<!--
+  КОНЦЕПЦИЯ 1 — «Письмо, которое я не отправила»
+  Мастер-макет на русском. Перед заливом: перевести и заполнить все {{СЛОТЫ}}.
+  Разбор — в ../DNA-padre.md и ../CONCEPTS.md, инструкция — в README.md рядом.
+  lang ниже меняется на язык ГЕО (bg-BG, cs-CZ, pl-PL, mk-MK ...).
+-->
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Письмо, которое я не отправила</title>
+
+  <style>
+    :root {
+      --paper: #f4efe7;
+      --sheet: #fffdf9;
+      --ink: #241f1b;
+      --ink-soft: #574e45;
+      --ink-faint: #8a7f73;
+      --rule: #e2d8c9;
+      --rule-soft: #eee7db;
+      --accent: #a4552f;
+      --accent-soft: #f6ece5;
+      --warn: #8a6d1f;
+      --warn-soft: #fbf4e0;
+      --serif: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+      --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: 19px;
+      line-height: 1.72;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .sheet {
+      max-width: 640px;
+      margin: 0 auto;
+      background: var(--sheet);
+      padding: 0 26px 56px;
+      border-left: 1px solid var(--rule-soft);
+      border-right: 1px solid var(--rule-soft);
+    }
+
+    @media (max-width: 560px) {
+      body { font-size: 18px; }
+      .sheet { padding: 0 18px 40px; border: 0; }
+    }
+
+    /* ---------- шапка письма: намеренно НЕ медиа-шапка ---------- */
+    .head { padding: 44px 0 30px; border-bottom: 1px solid var(--rule); }
+    .head h1 {
+      font-size: 34px;
+      line-height: 1.24;
+      font-weight: 400;
+      margin: 0 0 18px;
+      letter-spacing: -0.015em;
+    }
+    @media (max-width: 560px) { .head h1 { font-size: 27px; } .head { padding: 30px 0 22px; } }
+    .head .byline {
+      font-family: var(--sans);
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--ink-faint);
+    }
+
+    /* ---------- текст ---------- */
+    p { margin: 0 0 20px; }
+    .lead { font-size: 21px; line-height: 1.62; color: var(--ink); }
+    @media (max-width: 560px) { .lead { font-size: 19px; } }
+
+    .part { margin: 46px 0 0; }
+    .part-date {
+      font-family: var(--sans);
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 6px;
+      font-weight: 600;
+    }
+    .part h2 {
+      font-size: 25px;
+      line-height: 1.32;
+      font-weight: 400;
+      margin: 0 0 22px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--rule-soft);
+    }
+    @media (max-width: 560px) { .part h2 { font-size: 21px; } }
+
+    /* реплика — несёт эмоциональные переходы вместо аргументов */
+    .said {
+      margin: 26px 0;
+      padding: 2px 0 2px 20px;
+      border-left: 3px solid var(--accent);
+      font-size: 20px;
+      line-height: 1.6;
+      color: var(--ink-soft);
+      font-style: italic;
+    }
+    .said .who {
+      display: block;
+      margin-top: 10px;
+      font-family: var(--sans);
+      font-size: 13px;
+      font-style: normal;
+      color: var(--ink-faint);
+    }
+
+    /* ---------- «что я думала / что оказалось» — вместо чек-листа симптомов ---------- */
+    .believed { margin: 28px 0; border-top: 1px solid var(--rule); }
+    .believed-row { border-bottom: 1px solid var(--rule); padding: 20px 0; }
+    .believed-row .thought {
+      font-size: 20px;
+      line-height: 1.5;
+      margin: 0 0 12px;
+      color: var(--ink);
+    }
+    .believed-row .thought::before {
+      content: "Я думала:";
+      display: block;
+      font-family: var(--sans);
+      font-size: 11px;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+    .believed-row .truth {
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.62;
+      color: var(--ink-soft);
+      margin: 0;
+      padding-left: 18px;
+      border-left: 2px solid var(--rule);
+    }
+
+    /* ---------- фото ---------- */
+    figure { margin: 30px 0; }
+    figure img { width: 100%; height: auto; display: block; }
+    figcaption {
+      font-family: var(--sans);
+      font-size: 14px;
+      line-height: 1.55;
+      color: var(--ink-faint);
+      margin-top: 10px;
+      padding-left: 14px;
+      border-left: 2px solid var(--rule);
+    }
+
+    /* ---------- подпись ---------- */
+    .sign {
+      margin: 40px 0 0;
+      padding-top: 22px;
+      border-top: 1px solid var(--rule);
+      text-align: right;
+      font-style: italic;
+      font-size: 20px;
+      color: var(--ink-soft);
+    }
+
+    /* ---------- обращение к читателю ---------- */
+    .toreader {
+      margin: 44px 0 0;
+      padding: 26px 24px;
+      background: var(--accent-soft);
+      border: 1px solid #e8d5c8;
+    }
+    .toreader h2 {
+      font-size: 23px;
+      font-weight: 400;
+      margin: 0 0 16px;
+      line-height: 1.34;
+    }
+    .toreader p:last-child { margin-bottom: 0; }
+
+    /* ---------- CTA-строка ---------- */
+    .cta-line {
+      display: block;
+      width: 100%;
+      margin: 26px 0;
+      padding: 17px 22px;
+      background: var(--accent);
+      color: #fff;
+      border: 0;
+      font-family: var(--sans);
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 1.4;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .cta-line:hover { background: #8e4626; }
+
+    /* ---------- заказ ---------- */
+    .order {
+      margin: 48px 0 0;
+      border: 1px solid var(--rule);
+      background: #fff;
+    }
+    .order-head {
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--rule);
+      background: var(--sheet);
+    }
+    .order-head h2 {
+      font-size: 22px;
+      font-weight: 400;
+      margin: 0 0 8px;
+      line-height: 1.34;
+    }
+    .order-head p {
+      margin: 0;
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--ink-soft);
+    }
+    .order-body { padding: 24px; }
+
+    .price {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      font-family: var(--sans);
+    }
+    .price .old { font-size: 20px; color: var(--ink-faint); text-decoration: line-through; }
+    .price .new { font-size: 34px; font-weight: 700; color: var(--ink); }
+    .price .note { font-size: 14px; color: var(--ink-soft); }
+
+    .deadline {
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--warn);
+      background: var(--warn-soft);
+      border: 1px solid #eadfbc;
+      padding: 12px 14px;
+      margin-bottom: 20px;
+    }
+    .deadline[hidden] { display: none; }
+
+    .field { margin-bottom: 16px; }
+    .field label {
+      display: block;
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--ink-soft);
+      margin-bottom: 6px;
+    }
+    .field input[type="text"],
+    .field input[type="tel"] {
+      width: 100%;
+      padding: 14px 16px;
+      font-family: var(--sans);
+      font-size: 17px;
+      color: var(--ink);
+      background: #fff;
+      border: 1px solid #c9bfb2;
+      border-radius: 0;
+      -webkit-appearance: none;
+    }
+    .field input:focus { outline: 2px solid var(--accent); outline-offset: -2px; border-color: var(--accent); }
+    .field .err {
+      display: none;
+      font-family: var(--sans);
+      font-size: 14px;
+      color: #a02a1c;
+      margin-top: 6px;
+    }
+    .field.is-bad .err { display: block; }
+    .field.is-bad input { border-color: #a02a1c; }
+
+    /* опция «доставить другому» — снимает главное трение у детей */
+    .forwhom {
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.55;
+      color: var(--ink-soft);
+      background: var(--sheet);
+      border: 1px solid var(--rule);
+      padding: 14px 16px;
+      margin-bottom: 20px;
+      display: flex;
+      gap: 11px;
+      align-items: flex-start;
+      cursor: pointer;
+    }
+    .forwhom input { margin: 3px 0 0; width: 18px; height: 18px; flex: none; }
+
+    .order-note {
+      font-family: var(--sans);
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--ink-faint);
+      margin: 16px 0 0;
+    }
+
+    /* ---------- комментарии ---------- */
+    .talk { margin: 48px 0 0; }
+    .talk h2 {
+      font-family: var(--sans);
+      font-size: 14px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      font-weight: 600;
+      margin: 0 0 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    /* ---------- СЛОТЫ: должны быть заметны и в браузере ---------- */
+    .slot {
+      display: block;
+      font-family: var(--sans);
+      font-size: 14px;
+      line-height: 1.6;
+      color: #7a5a12;
+      background: repeating-linear-gradient(135deg, #fdf6e3, #fdf6e3 9px, #faefd6 9px, #faefd6 18px);
+      border: 2px dashed #c9a648;
+      padding: 14px 16px;
+      margin: 20px 0;
+      font-style: normal;
+    }
+    .slot::before {
+      content: "ЗАПОЛНИТЬ · " attr(data-slot);
+      display: block;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      font-weight: 700;
+      color: #9c7b1c;
+      margin-bottom: 7px;
+    }
+    .slot--img { min-height: 150px; }
+  </style>
+</head>
+
+<body>
+  <main class="sheet">
+
+    <!-- ======================= ШАПКА ======================= -->
+    <!-- Намеренно НЕ шапка СМИ: ни логотипа, ни рубрики, ни «Специальный репортаж».
+         Это первое, по чему узнают старую связку. -->
+    <header class="head">
+      <h1>Письмо, которое я не отправила</h1>
+      <p class="byline">
+        <span class="slot" data-slot="автор письма">
+          Имя, возраст, город. Это должен быть реальный человек, давший согласие на публикацию,
+          либо страница не должна подаваться как документальная. См. README, раздел «Что нельзя
+          заполнить выдумкой».
+        </span>
+      </p>
+    </header>
+
+    <!-- ======================= КРЮЧОК ======================= -->
+    <p class="lead">
+      Я написала это письмо матери год назад и не отправила. Оно лежало в ящике стола,
+      пока я не поняла, что писала его не ей.
+    </p>
+
+    <p class="lead">
+      Я писала его себе — той, какой была за полгода до того, как отвезла её.
+      Той, которая ещё могла всё изменить и не знала об этом.
+    </p>
+
+    <p>
+      Если вы читаете это и у вас дома есть человек, который стал хуже ходить —
+      дочитайте. Я не прошу денег и мне нечего вам продать сверх того, что написано ниже.
+      Мне нужно, чтобы кто-то не сделал того, что сделала я.
+    </p>
+
+    <!-- ======================= ЧАСТЬ I ======================= -->
+    <!-- Функция: свидетель. Продукт не упоминается. Быт, а не медицина. -->
+    <section class="part">
+      <p class="part-date">Март</p>
+      <h2>Сначала это была просто лестница</h2>
+
+      <p>
+        Мама перестала выходить в магазин. Сказала, что там всё подорожало и она заказывает
+        по телефону. Я поверила, потому что так было удобнее верить.
+      </p>
+
+      <p>
+        Потом я заметила, что она перестала спускаться к почтовому ящику. Потом — что она
+        завтракает, обедает и ужинает в одной комнате. Потом — что ночью в её окне свет
+        горит в три часа.
+      </p>
+
+      <p>
+        Я спросила один раз. Она ответила: «Возраст, Оля. У всех так». И я приняла этот
+        ответ, потому что он снимал с меня необходимость что-то делать.
+      </p>
+
+      <div class="said">
+        «Мне не больно. Просто медленно. Я же никуда не тороплюсь.»
+        <span class="who">Так она говорила мне восемь месяцев подряд.</span>
+      </div>
+
+      <p>
+        Я до сих пор не знаю, врала она мне или себе.
+      </p>
+    </section>
+
+    <!-- ======================= ЧАСТЬ II ======================= -->
+    <!-- Функция: подмена темы. Сустав → социальная смерть. Это ядро связки. -->
+    <section class="part">
+      <p class="part-date">Июнь</p>
+      <h2>День, когда я сказала слово «тяжело»</h2>
+
+      <p>
+        Она упала в ванной. Не сломала ничего — просто не смогла встать и пролежала
+        на полу до утра, потому что телефон остался в комнате.
+      </p>
+
+      <p>
+        Дальше всё было очень быстро и очень разумно. У меня работа. У меня свои дети.
+        Квартира на пятом этаже без лифта. Муж сказал: «Мы физически не справимся».
+        Он был прав. Я сама сказала врачу слово «тяжело» — и в ту секунду всё было решено.
+      </p>
+
+      <p>
+        Я помню, как собирала её вещи. Она сидела на кровати и говорила, куда что положить,
+        очень спокойно, как будто помогала мне, а не себе. Ни разу не попросила оставить.
+        Это было хуже всего.
+      </p>
+
+      <div class="said">
+        «Ты не виновата. Ноги подвели — значит, подвели. Не носить же тебе меня на руках.»
+        <span class="who">Мама, в машине, по дороге.</span>
+      </div>
+
+      <p>
+        Мы обе понимали, что произошло на самом деле. Её отвезли не потому, что она стала
+        старой. Её отвезли потому, что она перестала ходить. Это разные вещи, и я поняла
+        разницу слишком поздно.
+      </p>
+
+      <figure>
+        <span class="slot slot--img" data-slot="фото 1 — бытовая деталь, не медицина">
+          Подъезд, лестница, собранная сумка, окно. Без стоковых улыбающихся стариков и без
+          белых халатов — визуальный код связки должен читаться как личный архив.
+          Файл кладём локально в images/, не на внешний хостинг.
+        </span>
+        <figcaption>
+          <span class="slot" data-slot="подпись к фото 1">
+            Одна фраза от первого лица. В этой связке подпись под фото работает сильнее
+            самого фото (см. DNA §4).
+          </span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- ======================= ЧАСТЬ III ======================= -->
+    <!-- Функция: точка переноса «чужая история → моя» + все возражения разом,
+         оформленные как самообманы рассказчицы, а не как аргументы к читателю. -->
+    <section class="part">
+      <p class="part-date">Что я говорила себе всё это время</p>
+      <h2>Четыре фразы, которые стоили моей матери двух лет</h2>
+
+      <p>
+        Я не была равнодушной. Я была уверенной. Вот во что именно —
+        и что оказалось на самом деле.
+      </p>
+
+      <div class="believed">
+
+        <div class="believed-row">
+          <p class="thought">«Это возраст. С этим ничего не делают.»</p>
+          <p class="truth">
+            <span class="slot" data-slot="возражение 1 — «это возраст»">
+              Здесь идёт проверяемая формулировка о том, чем боль и скованность в суставах
+              отличаются от нормального старения. Только то, что подтверждено источником,
+              который вы готовы показать. Без диагнозов и без обещаний излечения.
+            </span>
+          </p>
+        </div>
+
+        <div class="believed-row">
+          <p class="thought">«Она пьёт таблетки, значит, лечится.»</p>
+          <p class="truth">
+            <span class="slot" data-slot="возражение 2 — «таблетки уже есть»">
+              Разница между «снять боль» и «повлиять на причину». Не дискредитация назначений
+              врача — иначе ленд ловит претензию и теряет доверие. Формулировка ниже по
+              градусу, чем в старой связке.
+            </span>
+          </p>
+        </div>
+
+        <div class="believed-row">
+          <p class="thought">«Если бы что-то работало, это было бы в аптеке.»</p>
+          <p class="truth">
+            <span class="slot" data-slot="возражение 3 — «почему не в аптеке»">
+              Фактическое положение: что это за категория продукта, где он продаётся и почему.
+              Легенда про «редкое сырьё» и «2–3 года до аптек» из старой связки не переносится —
+              это её узнаваемый отпечаток и слабое место.
+            </span>
+          </p>
+        </div>
+
+        <div class="believed-row">
+          <p class="thought">«Уже поздно. В её состоянии — какая разница.»</p>
+          <p class="truth">
+            <span class="slot" data-slot="возражение 4 — «уже поздно»">
+              Что реально меняется и в какие сроки. Без «80-летние снова пошли». Здесь честная
+              формулировка сильнее преувеличения: рассказчица говорит о своей матери,
+              и читатель проверяет её на достоверность.
+            </span>
+          </p>
+        </div>
+
+      </div>
+
+      <p>
+        Если хотя бы одна из этих фраз звучала у вас в голове на этой неделе —
+        остановитесь на ней подольше, чем остановилась я.
+      </p>
+    </section>
+
+    <!-- ======================= ЧАСТЬ IV ======================= -->
+    <!-- Функция: перелом. Продукт появляется здесь и не раньше — ~55% страницы. -->
+    <section class="part">
+      <p class="part-date">Сентябрь</p>
+      <h2>Как я узнала, что вариант был</h2>
+
+      <p>
+        <span class="slot" data-slot="как рассказчица узнала о средстве">
+          Обстоятельство, а не реклама: разговор, назначение, чужой опыт в семье. Один абзац.
+          Важно: узнаёт не эксперт и не журналист — обычный человек, который искал поздно.
+          Это и отличает концепцию от «Падре», где источник знания был авторитетом.
+        </span>
+      </p>
+
+      <p>
+        <span class="slot" data-slot="что это за продукт">
+          Название, форма выпуска, способ и частота применения, состав. Только то, что есть
+          на упаковке и в документах поставщика. Механизм действия — если он подтверждён;
+          если нет, этого блока не должно быть вообще, и страница не станет от этого слабее.
+        </span>
+      </p>
+
+      <p>
+        Я заказала не потому, что поверила. Я заказала потому, что мне нужно было
+        сделать хоть что-нибудь — впервые за два года.
+      </p>
+    </section>
+
+    <!-- ======================= ЧАСТЬ V ======================= -->
+    <section class="part">
+      <p class="part-date">Что я проверила перед заказом</p>
+      <h2>Я больше не собиралась верить на слово</h2>
+
+      <p>
+        После двух лет собственной уверенности я перестала доверять своим выводам
+        и стала задавать вопросы. Вот что я выяснила.
+      </p>
+
+      <div class="believed">
+        <div class="believed-row">
+          <p class="thought">«Кто это производит и на каком основании продаёт.»</p>
+          <p class="truth">
+            <span class="slot" data-slot="производитель и регистрация">
+              Производитель, страна, регистрационный статус в ГЕО. Реальные данные из карточки
+              оффера. Если статуса нет — блок убирается целиком, а не заменяется общими словами.
+            </span>
+          </p>
+        </div>
+        <div class="believed-row">
+          <p class="thought">«Сколько это стоит и что будет, если не подойдёт.»</p>
+          <p class="truth">
+            <span class="slot" data-slot="цена, оплата, возврат">
+              Условия по офферу: цена курса, оплата при получении, сроки и порядок возврата.
+            </span>
+          </p>
+        </div>
+        <div class="believed-row">
+          <p class="thought">«Что об этом говорят те, кто уже пробовал.»</p>
+          <p class="truth">
+            <span class="slot" data-slot="отзывы — только настоящие">
+              Отзывы вставляются только собранные: с площадки ПП, из карточки товара, из службы
+              контроля качества. Выдуманных отзывов на этой странице нет и быть не должно —
+              см. README. Если собранных нет, блок удаляется.
+            </span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ЧАСТЬ VI ======================= -->
+    <section class="part">
+      <p class="part-date">Сейчас</p>
+      <h2>Что изменилось</h2>
+
+      <p>
+        <span class="slot" data-slot="результат — фактический, без преувеличения">
+          Что произошло за какой срок. Это единственное место на странице, где может появиться
+          утверждение о результате, и оно должно быть тем, что вы готовы подтвердить.
+          Проценты вида «96,2% полное устранение боли» из старой связки не переносим:
+          это её главный контентный отпечаток и главный юридический риск.
+        </span>
+      </p>
+
+      <p>
+        Я не вернула два года. Их не возвращают. Но я перестала быть человеком,
+        который ничего не сделал.
+      </p>
+
+      <p class="sign">
+        <span class="slot" data-slot="подпись">Имя рассказчицы</span>
+      </p>
+    </section>
+
+    <!-- ======================= ОБРАЩЕНИЕ ======================= -->
+    <!-- CTA переформулирован: не «купи себе», а «отправь тому, кто не попросит сам».
+         Это снимает главное трение у сегмента 40–55. -->
+    <section class="toreader">
+      <h2>Если вы дочитали — значит, у вас ещё есть время</h2>
+
+      <p>
+        Ваша мать не попросит. Мой отец не просил, и её отец не просил, и вы сами не будете
+        просить, когда придёт ваша очередь. Так устроено: человек, который стал хуже ходить,
+        первым делом перестаёт беспокоить.
+      </p>
+
+      <p>
+        Поэтому решать придётся вам. Не через год, когда станет очевидно.
+        Очевидно становится ровно тогда, когда уже поздно.
+      </p>
+
+      <a class="cta-line js-to-form" href="#order">Оформить доставку — себе или родителям</a>
+    </section>
+
+    <!-- ======================= ЗАКАЗ ======================= -->
+    <section class="order" id="order">
+      <div class="order-head">
+        <h2>Оформление доставки</h2>
+        <p>
+          Оставьте имя и телефон. Консультант перезвонит, уточнит адрес и сроки.
+          Заполнять адрес на сайте не нужно.
+        </p>
+      </div>
+
+      <div class="order-body">
+
+        <div class="price">
+          <span class="old"><span class="slot" data-slot="старая цена">0 EUR</span></span>
+          <span class="new"><span class="slot" data-slot="цена">0 EUR</span></span>
+          <span class="note"><span class="slot" data-slot="что входит в цену">курс на N дней</span></span>
+        </div>
+
+        <!-- Дедлайн из конфига внизу файла. Это НЕ таймер, который сбрасывается
+             при перезагрузке: дата реальная и одна для всех. См. README. -->
+        <p class="deadline" id="deadline" hidden></p>
+
+        <form id="orderForm" action="order.php" method="POST" novalidate>
+          <input type="hidden" name="sid" value="{subid}">
+          <input type="hidden" name="cid" value="{campaign_id}">
+          <input type="hidden" name="fbpx" value="{fbpx}">
+          <input type="hidden" name="hash" value="{hash}">
+          <input type="hidden" name="country" value="">
+          <input type="hidden" name="utm_code" value="">
+          <input type="hidden" name="recipient" id="recipient" value="self">
+
+          <div class="field" id="fName">
+            <label for="name">Имя и фамилия</label>
+            <input type="text" id="name" name="name" autocomplete="name"
+                   inputmode="text" placeholder="Как к вам обращаться">
+            <span class="err">Впишите имя</span>
+          </div>
+
+          <div class="field" id="fPhone">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel"
+                   inputmode="tel" placeholder="Номер для звонка">
+            <span class="err" id="phoneErr">Проверьте номер</span>
+          </div>
+
+          <label class="forwhom" for="forOther">
+            <input type="checkbox" id="forOther">
+            <span>Заказываю не себе. Адрес получателя продиктую консультанту по телефону.</span>
+          </label>
+
+          <button type="submit" class="cta-line">Отправить заявку</button>
+        </form>
+
+        <p class="order-note">
+          <span class="slot" data-slot="условия доставки и оплаты">
+            Кто доставляет, за сколько дней, как происходит оплата. Реальные условия оффера.
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ======================= ОБСУЖДЕНИЕ ======================= -->
+    <section class="talk">
+      <h2>Обсуждение</h2>
+      <span class="slot" data-slot="комментарии">
+        Блок оставлен пустым намеренно. Выдуманная лента комментариев — узнаваемый отпечаток
+        старой связки (одинаковая разметка comments__item во всех 25 лендах) и прямое нарушение
+        требования не выдумывать отзывы. Варианты: подключить реальные комментарии,
+        вставить собранные отзывы с площадки ПП, либо удалить секцию.
+      </span>
+    </section>
+
+  </main>
+
+  <script>
+    /* ---------------------------------------------------------------
+       Конфигурация ленда. Один блок на весь файл — правится под ГЕО.
+       --------------------------------------------------------------- */
+    var CONFIG = {
+      country: 'BG',          // ISO-код ГЕО → уходит в скрытое поле country
+      phoneMin: 8,            // BG/HR 8, PL 9, DE 10, CZ 9 — выставить под ГЕО
+      phoneMax: 15,
+      // Реальная дата окончания промо. Пустая строка — блок дедлайна не показывается.
+      // Осознанно НЕ таймер на 10 минут: он сбрасывается при перезагрузке,
+      // это ложное указание на срочность (см. ANALYSIS.md, Приложение I 2005/29/EC).
+      promoEndsAt: '',
+      deadlineText: 'Условия действуют до {date}.'
+    };
+
+    (function () {
+      'use strict';
+
+      var form = document.getElementById('orderForm');
+      var nameEl = document.getElementById('name');
+      var phoneEl = document.getElementById('phone');
+      var fName = document.getElementById('fName');
+      var fPhone = document.getElementById('fPhone');
+
+      /* -------- страна в скрытое поле -------- */
+      form.elements.country.value = CONFIG.country;
+
+      /* -------- имя: \p{L} — любая буква любого алфавита --------
+         Старый фильтр [^a-zA-Zа-яА-ЯёЁії ] резал ż ó ł ü đ ç ã ñ прямо при вводе
+         и портил имена в колл-центре (ANALYSIS.md §1). Здесь этого нет. */
+      nameEl.addEventListener('input', function () {
+        var v = this.value
+          .replace(/[^\p{L}\p{M}'\-\s]/gu, '')
+          .replace(/^\s+/, '')
+          .replace(/\s{2,}/g, ' ');
+        var parts = v.split(' ');
+        if (parts.length > 2) { v = parts[0] + ' ' + parts[1]; }
+        if (v !== this.value) { this.value = v; }
+      });
+      nameEl.addEventListener('blur', function () { this.value = this.value.trim(); });
+
+      /* -------- телефон: + сохраняем, минимум из конфига --------
+         Старый вариант вырезал + и принимал 6 цифр — гарантированный недозвон. */
+      phoneEl.addEventListener('input', function () {
+        var lead = this.value.trim().charAt(0) === '+' ? '+' : '';
+        var digits = this.value.replace(/\D/g, '').slice(0, CONFIG.phoneMax);
+        this.value = lead + digits;
+      });
+
+      function digitsOf(s) { return s.replace(/\D/g, '').length; }
+
+      function validate() {
+        var ok = true;
+
+        if (nameEl.value.trim().length < 2) { fName.classList.add('is-bad'); ok = false; }
+        else { fName.classList.remove('is-bad'); }
+
+        var n = digitsOf(phoneEl.value);
+        if (n < CONFIG.phoneMin || n > CONFIG.phoneMax) {
+          document.getElementById('phoneErr').textContent =
+            'Номер должен содержать не менее ' + CONFIG.phoneMin + ' цифр';
+          fPhone.classList.add('is-bad');
+          ok = false;
+        } else { fPhone.classList.remove('is-bad'); }
+
+        return ok;
+      }
+
+      form.addEventListener('submit', function (e) {
+        if (!validate()) {
+          e.preventDefault();
+          var bad = form.querySelector('.is-bad input');
+          if (bad) { bad.focus(); }
+        }
+      });
+
+      /* -------- получатель: себе или другому -------- */
+      document.getElementById('forOther').addEventListener('change', function () {
+        document.getElementById('recipient').value = this.checked ? 'other' : 'self';
+      });
+
+      /* -------- скролл к форме только с помеченных ссылок --------
+         Старый код вешал preventDefault на ВСЕ <a> страницы (ANALYSIS.md §5). */
+      var jumps = document.querySelectorAll('.js-to-form');
+      for (var i = 0; i < jumps.length; i++) {
+        jumps[i].addEventListener('click', function (e) {
+          e.preventDefault();
+          document.getElementById('order').scrollIntoView({ behavior: 'smooth', block: 'start' });
+          setTimeout(function () { nameEl.focus({ preventScroll: true }); }, 450);
+        });
+      }
+
+      /* -------- дедлайн промо, если задан -------- */
+      if (CONFIG.promoEndsAt) {
+        var end = new Date(CONFIG.promoEndsAt);
+        if (!isNaN(end) && end > new Date()) {
+          var box = document.getElementById('deadline');
+          box.textContent = CONFIG.deadlineText.replace('{date}', end.toLocaleDateString());
+          box.hidden = false;
+        }
+      }
+
+      /* -------- lazy только ниже первого экрана --------
+         Старый скрипт переводил в lazy ВСЕ картинки, включая первый экран. */
+      var imgs = document.querySelectorAll('img');
+      for (var j = 0; j < imgs.length; j++) {
+        var above = imgs[j].getBoundingClientRect().top < window.innerHeight;
+        imgs[j].setAttribute('loading', above ? 'eager' : 'lazy');
+        imgs[j].setAttribute('decoding', 'async');
+      }
+    })();
+  </script>
+</body>
+
+</html>
