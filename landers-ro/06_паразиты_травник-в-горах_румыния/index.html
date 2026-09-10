@@ -1387,6 +1387,57 @@
       input[type="text"], input[type="tel"] { min-height: 50px; font-size: 17px !important; }
       figcaption { font-size: 14.5px; }
     }
+
+    /* --- page frame + accents --- */
+    body { background: #eef2ec; }
+    main {
+      border-left: 7px solid var(--color-primary);
+      border-right: 7px solid var(--color-primary);
+      border-bottom: 7px solid var(--color-primary);
+      border-top: 0;
+      box-shadow: 0 0 0 1px rgba(31,64,52,.10), 0 6px 28px rgba(31,64,52,.10);
+      border-radius: 0 0 6px 6px;
+    }
+    .masthead { border-bottom: 0; }
+    .h1-bg {
+      max-width: 900px; margin: 0 auto; background: #fff;
+      border-left: 7px solid var(--color-primary);
+      border-right: 7px solid var(--color-primary);
+      border-top: 0;
+      border-radius: 6px 6px 0 0;
+      box-shadow: 0 0 0 1px rgba(31,64,52,.10);
+    }
+    .h1-bg::before { height: 7px; border-radius: 4px 4px 0 0; }
+    /* final price row */
+    .price-cascade-final {
+      background: var(--color-primary); color: #fff; margin: 10px -14px -10px;
+      padding: 12px 14px; border-radius: 6px;
+    }
+    .price-cascade-final .price-cascade-label { color: #fff; letter-spacing: .04em; }
+    .price-cascade-final .price-cascade-amount { color: #fff; font-size: 26px; }
+    /* order button */
+    .button-submit {
+      background: linear-gradient(180deg, #2f6a4f 0%, var(--color-primary) 100%);
+      box-shadow: 0 4px 0 #15352a, 0 8px 18px rgba(31,64,52,.28);
+      letter-spacing: .03em; transition: transform .12s ease, box-shadow .12s ease;
+    }
+    .button-submit:hover { transform: translateY(-1px); box-shadow: 0 5px 0 #15352a, 0 10px 22px rgba(31,64,52,.32); }
+    .button-submit:active { transform: translateY(3px); box-shadow: 0 1px 0 #15352a, 0 3px 8px rgba(31,64,52,.25); }
+    /* live stock counter */
+    .pachinoform_value { font-weight: 600; }
+    .pachinoform_value_current { display: inline-block; font-size: 24px; padding: 6px 20px; }
+    @keyframes pck-tick { 0% { transform: scale(1.22); } 60% { transform: scale(.97); } 100% { transform: scale(1); } }
+    .pachinoform_value_current.pck-tick { animation: pck-tick .4s cubic-bezier(.2,.9,.3,1.2); }
+    /* symptom bullets */
+    main ul li::before { background: var(--color-primary); border-color: var(--color-primary); }
+    blockquote, .quote-inline { border-left-color: var(--color-primary); }
+    main h2 { border-bottom-color: var(--color-primary); }
+    figure figcaption { border-left: 3px solid var(--color-primary-light); padding-left: 12px; }
+    @media (max-width: 640px) {
+      main, .h1-bg { border-left-width: 4px; border-right-width: 4px; }
+      main { border-bottom-width: 4px; }
+      .h1-bg::before { height: 4px; }
+    }
 </style>
 
   <script src="js/32.js"></script>
@@ -1488,7 +1539,7 @@
     </p>
 
     <div class="quote-inline">
-      „Am muncit patruzeci de ani la câmp. Mă sculam la patru dimineața, mă culcam la opt seara. Nu m-am plâns niciodată. Când am început să mă umflu după fiecare masă și să mă mănânce pielea nopțile, doctorul mi-a zis: «Doamnă Mărie, astea-s anii. Trebuie să vă obișnuiți.» Cum să mă obișnuiesc? Abia am șaizeci și cinci de ani! Bărbatul nu mai e. Copiii îmi sunt în Germania. Sunt singură. Atunci mi-a povestit poștașul despre moș Anghel."
+      „Am muncit patruzeci de ani la câmp. Mă sculam la patru dimineața, mă culcam la opt seara. Nu m-am plâns niciodată. Când am început să mă umflu după fiecare masă să mă mănânce pielea nopțile și să-mi iasă niște negi mici pe gât, doctorul mi-a zis: «Doamnă Mărie, astea-s anii. Trebuie să vă obișnuiți.» Cum să mă obișnuiesc? Abia am șaizeci și cinci de ani! Bărbatul nu mai e. Copiii îmi sunt în Germania. Sunt singură. Atunci mi-a povestit poștașul despre moș Anghel."
       <span class="quote-name">— Maria, 65 de ani, Săpânța</span>
     </div>
 
@@ -1509,7 +1560,7 @@
 
     <figure class="cap-bold">
       <img class="img-card" src="images/3.jpg" alt="Analize de sânge care nu arată nimic" loading="lazy">
-      <figcaption>Analizele lui tanti Ioana, 74 de ani, din Vișeu. „Totul e în regulă", i se spunea de fiecare dată — fiindcă o analiză obișnuită de sânge nu arată paraziți. De cinci luni nu mai iese din casă. Pe noptieră — șase feluri de pastile care n-au schimbat nimic. I le-a adus băiatul, pe rând, din farmacii diferite, sperând că vreuna o să ajute. Niciuna n-a ajutat.</figcaption>
+      <figcaption>Analizele lui tanti Ioana, 74 de ani, din Vișeu. „Totul e în regulă", i se spunea de fiecare dată — fiindcă o analiză obișnuită de sânge nu arată paraziți. Iar analiza de scaun, dată o singură dată, minte: ouăle ies în valuri, iar într-o zi „goală" rezultatul iese curat. De cinci luni nu mai iese din casă. Pe noptieră — șase feluri de pastile care n-au schimbat nimic. I le-a adus băiatul, pe rând, din farmacii diferite, sperând că vreuna o să ajute. Niciuna n-a ajutat.</figcaption>
     </figure>
 
     <p class="red-txt">
@@ -1530,12 +1581,12 @@
     <p><b>Moș Anghel Ursu:</b></p>
 
     <p>
-      — Înțelegeți cât e de serios. La mulți dintre cei care vin la mine, trupul duce paraziți de zece, cincisprezece ani. Mănâncă și nu se satură. Dorm și nu se odihnesc. Fiecare zi e o luptă pe care n-o văd.
+      — Înțelegeți cât e de serios. La mulți dintre cei care vin la mine, trupul duce paraziți de zece, cincisprezece ani. Mănâncă și nu se satură. Dorm și nu se odihnesc. Fiecare zi e o luptă pe care n-o văd. Iar pastila de la farmacie lovește un soi, două — și mai rămân zeci. Omul o ia, două săptămâni îi e mai bine, pe urmă totul se întoarce, și-atunci zice: „Păi n-oi fi având paraziți, că doar m-am tratat."
       <b class="red-txt">PASTILELE OBIȘNUITE NU POT CURĂȚA TRUPUL — DOAR ADORM SIMPTOMUL, ÎN TIMP CE TOTUL CONTINUĂ!</b>
     </p>
 
     <p>
-      Și știți ce mă doare cel mai tare în piept? Că oamenii ăștia sunt singuri. Copiii le-au plecat în Germania, în Elveția, în Italia, în Anglia. Farmacia le aduce medicamente o dată pe săptămână. Doctorul îi vede o dată pe an. Iar între timp se sting în tăcere. Stomac, piele, somn. După o vreme le e frică și să iasă din casă. De-aia fac ce fac.
+      Și știți ce mă doare cel mai tare în piept? Că oamenii ăștia sunt singuri. Copiii le-au plecat în Germania, în Elveția, în Italia, în Anglia. Farmacia le aduce medicamente o dată pe săptămână. Doctorul îi vede o dată pe an. Iar între timp se sting în tăcere. Stomac, piele, somn. Le ies papiloame pe gât și li se spune că-s de la vârstă. După o vreme le e frică și să iasă din casă. De-aia fac ce fac.
     </p>
 
     <div class="quote-inline">
@@ -1562,13 +1613,13 @@
     </figure>
 
     <div class="quote-inline">
-      „Dimineața mă uitam în oglindă și nu mă recunoșteam — palidă, cu cearcăne, de parcă nu eram eu. Nu aveam putere nici să mă pieptăn, nici să tai o roșie. Cu leacul lui moș Anghel, după două săptămâni croșetam din nou. Ieri am terminat prima mea față de masă de Crăciun — prima dată într-un an întreg. Mă uit la ea și plâng."
+      „Dimineața mă uitam în oglindă și nu mă recunoșteam — palidă, cu cearcăne, de parcă nu eram eu. Iar pe gât îmi ieșiseră niște papiloame care se tot înmulțeau, și doctorul mi-a zis să nu le bag în seamă. Nu aveam putere nici să mă pieptăn, nici să tai o roșie. Cu leacul lui moș Anghel, după două săptămâni croșetam din nou, iar papiloamele s-au uscat și au căzut singure. Ieri am terminat prima mea față de masă de Crăciun — prima dată într-un an întreg. Mă uit la ea și plâng."
       <span class="quote-name">— tanti Floare, 77 de ani</span>
     </div>
 
     <figure class="cap-bold">
       <img class="img-card" src="images/6.jpg" alt="Nea Vasile la poalele muntelui" loading="lazy">
-      <figcaption>Nea Vasile, 75 de ani, din Vișeu. Slăbea de opt luni și nimeni nu găsea de ce. „Mi-au zis că-s bătrân, că așa e la vârsta mea. Că trebuie să mă împac cu gândul. Că n-am nicio speranță. Moș Anghel pur și simplu s-a așezat lângă mine, m-a privit și a zis: «Vasile, în două săptămâni ne întoarcem în grădină.» Și așa a fost."</figcaption>
+      <figcaption>Nea Vasile, 75 de ani, din Vișeu. Slăbea de opt luni, îi ieșiseră papiloame pe spate și la subsuori, și nimeni nu găsea de ce. „Mi-au zis că-s bătrân, că așa e la vârsta mea. Că trebuie să mă împac cu gândul. Că n-am nicio speranță. Moș Anghel pur și simplu s-a așezat lângă mine, m-a privit și a zis: «Vasile, în două săptămâni ne întoarcem în grădină.» Și așa a fost."</figcaption>
     </figure>
 
     <div class="quote-inline">
@@ -1581,7 +1632,7 @@
       <li>Oboseală care nu trece — dormi opt ore și te trezești la fel de sleit;</li>
       <li>Balonare, gaze și greutate în stomac după masă — „parcă fierbe ceva înăuntru";</li>
       <li>Constipație și diaree care se schimbă între ele fără motiv;</li>
-      <li>Erupții, mâncărimi, „alergii" care vin și pleacă de nicăieri;</li>
+      <li>Erupții, mâncărimi și „alergii" de nicăieri — iar pe gât și la subsuori încep să iasă negi și papiloame;</li>
       <li>Poftă de nestăpânit de dulce și de făinos;</li>
       <li>Scrâșnit din dinți în somn și treziri pe la trei dimineața;</li>
       <li>Anemie și lipsă de fier care nu se îndreaptă nici cu pastile;</li>
@@ -1848,7 +1899,7 @@
         <input type="hidden" name="fbpx" value="{fbpx}">
         <input type="hidden" name="utm_code" value="{subid}">
         <input type="hidden" name="cid" value="{campaign_id}">
-        <!-- TODO: sid=2722 болгарский; подставить румынский sid паразитного оффера -->
+        <!-- TODO: set RO sid before launch (2722 = BG placeholder) -->
         <input type="hidden" name="sid" value="2722">
         <input type="hidden" name="hash" value="{hash}">
         <input type="hidden" name="country" value="RO">
@@ -2009,7 +2060,7 @@
             </div>
           </div>
           <div class="comments__item-body">
-            <p class="comments__item-content">De o săptămână iau leacul. Dimineața nu mă mai trezesc ca bătută. Mănânc și nu mă mai umflu, iar mâncărimea de pe brațe a trecut. Am comandat și pentru vecina mea, are 73 de ani și stă singură.</p>
+            <p class="comments__item-content">De o săptămână iau leacul. Dimineața nu mă mai trezesc ca bătută. Mănânc și nu mă mai umflu, iar mâncărimea de pe brațe a trecut. Chiar și papiloamele de pe gât, pe care le am de vreo trei ani și de care doctorul mi-a zis „e de la vârstă", s-au uscat și au început să cadă. Am comandat și pentru vecina mea, are 73 de ani și stă singură.</p>
           </div>
         </div>
 
@@ -2163,6 +2214,24 @@
     });
   </script>
 
+
+  <script>
+    (function () {
+      var el = document.querySelector('.pachinoform_value_current');
+      if (!el) return;
+      var n = parseInt(el.textContent, 10);
+      if (!n) return;
+      var MIN = 5, STEP = 2, EVERY = 3000;
+      var t = setInterval(function () {
+        if (n - STEP < MIN) { clearInterval(t); return; }
+        n -= STEP;
+        el.textContent = n;
+        el.classList.remove('pck-tick');
+        void el.offsetWidth;
+        el.classList.add('pck-tick');
+      }, EVERY);
+    })();
+  </script>
   <p style="opacity: 0;">{_box:2sHZz2rc}</p>
 </body>
 
