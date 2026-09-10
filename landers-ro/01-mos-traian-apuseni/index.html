@@ -1,1352 +1,2169 @@
-<!DOCTYPE html>
-<html lang="ro-RO">
+﻿<!DOCTYPE html>
+<html lang="ro-RO" style="">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="robots" content="noindex, nofollow">
-  <title>„Un genunchi nu moare de bătrânețe. Moare de sete." — meșterul din Apuseni care a redat mersul la peste 1.700 de oameni</title>
+
+
+  <title>„Un genunchi nu moare de bătrânețe. Moare de sete." — moș Traian Cormoș, meșterul din Apuseni care a redat mersul la peste 1.700 de oameni fără o singură pastilă prescrisă</title>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="no-cache" http-equiv="Cache-Control">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="telephone=no" name="format-detection">
+
+  <meta content="noindex, nofollow" name="robots">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+
 
   <style>
     :root {
-      --ink: #1c1a17;
-      --ink-2: #4a463f;
-      --ink-3: #7d776d;
-      --paper: #faf7f1;
-      --sheet: #ffffff;
-      --line: #e0d9cc;
-      --line-2: #efe9dd;
-      --green: #1f4034;
-      --green-2: #2d5c4a;
-      --green-pale: #edf3ef;
-      --clay: #b4552b;
-      --clay-pale: #fbeee7;
-      --amber: #8a6a12;
-      --amber-pale: #fbf3dd;
-      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      --serif: Georgia, "Iowan Old Style", "Times New Roman", serif;
+      --color-primary: #1f4034;
+      --color-primary-dark: #163026;
+      --color-primary-light: #edf3ef;
+      --color-accent: #b4552b;
+      --color-danger: #a8401f;
+      --color-danger-light: #fbeee7;
+      --color-success: #2d6a4a;
+      --color-success-light: #eaf3ed;
+      --color-warning: #8a6a12;
+      --color-text: #23201c;
+      --color-text-muted: #4f4a42;
+      --color-text-light: #7d776d;
+      --color-bg: #ffffff;
+      --color-bg-soft: #faf7f1;
+      --color-bg-alt: #f2ede4;
+      --color-border: #e0d9cc;
+      --color-border-soft: #ece5d9;
+      --shadow-sm: 0 1px 2px rgba(31, 64, 52, 0.04), 0 1px 3px rgba(31, 64, 52, 0.06);
+      --shadow-md: 0 4px 12px rgba(31, 64, 52, 0.08), 0 2px 4px rgba(31, 64, 52, 0.04);
+      --shadow-lg: 0 10px 25px rgba(31, 64, 52, 0.10), 0 4px 10px rgba(31, 64, 52, 0.05);
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --radius-lg: 12px;
+      --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --font-serif: "Source Serif Pro", Georgia, "Times New Roman", serif
     }
 
-    * { box-sizing: border-box; }
-    html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      -webkit-text-size-adjust: 100%
+    }
 
     body {
       margin: 0;
-      background: var(--paper);
-      color: var(--ink);
-      font-family: var(--sans);
-      font-size: 18px;
-      line-height: 1.68;
+      padding: 0;
+      font-family: var(--font-sans);
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--color-text);
+      background: var(--color-bg-soft);
       -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale
     }
 
-    img { max-width: 100%; height: auto; display: block; }
-
-    .wrap {
-      max-width: 720px;
-      margin: 0 auto;
-      background: var(--sheet);
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    @media (min-width: 760px) {
-      body { font-size: 19px; }
-      .wrap { padding-left: 44px; padding-right: 44px; border-left: 1px solid var(--line-2); border-right: 1px solid var(--line-2); }
-    }
-
-    /* --- masthead --- */
-    .topbar {
-      background: var(--green);
-      color: #dfeae4;
+    .clinical-topbar {
+      background: var(--color-primary-dark);
+      color: #fff;
       font-size: 12px;
-      letter-spacing: .14em;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
-      font-weight: 600;
+      padding: 8px 16px;
+      text-align: center;
+      font-weight: 500
     }
-    .topbar > div {
-      max-width: 720px;
+
+    .clinical-topbar::before {
+      content: "▲ ";
+      margin-right: 6px
+    }
+
+    .masthead {
+      background: #fff;
+      border-bottom: 2px solid var(--color-text);
+      padding: 18px 16px;
+      text-align: center
+    }
+
+    .masthead-inner {
+      max-width: 900px;
       margin: 0 auto;
-      padding: 9px 20px;
-    }
-    @media (min-width: 760px) { .topbar > div { padding: 9px 44px; } }
-
-    .masthead { padding-top: 18px; padding-bottom: 16px; border-bottom: 2px solid var(--ink); }
-    .masthead .name {
-      font-family: var(--serif);
-      font-size: 23px;
-      font-weight: 700;
-      letter-spacing: -.01em;
-      color: var(--ink);
-    }
-    .masthead .name span { color: var(--clay); }
-    .masthead .sub {
-      font-size: 12.5px;
-      color: var(--ink-3);
-      margin-top: 3px;
-      letter-spacing: .02em;
-    }
-
-    /* --- hero --- */
-    .hero { padding-top: 26px; padding-bottom: 8px; }
-    .hero .kicker {
-      display: inline-block;
-      font-size: 11.5px;
-      font-weight: 700;
-      letter-spacing: .13em;
-      text-transform: uppercase;
-      color: var(--clay);
-      border-bottom: 2px solid var(--clay);
-      padding-bottom: 4px;
-      margin-bottom: 16px;
-    }
-    h1 {
-      font-family: var(--serif);
-      font-size: 31px;
-      line-height: 1.22;
-      font-weight: 700;
-      letter-spacing: -.02em;
-      margin: 0 0 16px;
-    }
-    @media (min-width: 560px) { h1 { font-size: 38px; } }
-    .dek {
-      font-size: 18.5px;
-      line-height: 1.6;
-      color: var(--ink-2);
-      margin: 0 0 18px;
-    }
-    .byline {
-      font-size: 13.5px;
-      color: var(--ink-3);
-      padding: 11px 0;
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-    }
-
-    /* --- body copy --- */
-    p { margin: 0 0 18px; }
-    section { padding-top: 8px; }
-
-    h2 {
-      font-family: var(--serif);
-      font-size: 25px;
-      line-height: 1.28;
-      font-weight: 700;
-      letter-spacing: -.015em;
-      margin: 40px 0 6px;
-      color: var(--green);
-    }
-    @media (min-width: 560px) { h2 { font-size: 29px; } }
-    h2 + .h2sub {
-      font-size: 16px;
-      line-height: 1.55;
-      color: var(--ink-3);
-      margin: 0 0 22px;
-      padding-bottom: 18px;
-      border-bottom: 1px solid var(--line-2);
-    }
-
-    .who {
-      font-weight: 700;
-      color: var(--green);
-    }
-
-    /* emphasis: key lines only */
-    mark {
-      background: linear-gradient(transparent 58%, #ffe9a8 58%);
-      color: inherit;
-      padding: 0 1px;
-    }
-    .strong-line {
-      font-weight: 700;
-      font-size: 19px;
-      line-height: 1.5;
-    }
-
-    /* --- pull quotes --- */
-    .voice {
-      margin: 24px -20px;
-      padding: 22px 20px 20px;
-      background: var(--green-pale);
-      border-top: 1px solid #d5e4dc;
-      border-bottom: 1px solid #d5e4dc;
-    }
-    @media (min-width: 760px) { .voice { margin-left: -44px; margin-right: -44px; padding-left: 44px; padding-right: 44px; } }
-    .voice p {
-      font-family: var(--serif);
-      font-size: 20px;
-      line-height: 1.52;
-      font-style: italic;
-      color: var(--ink);
-      margin: 0 0 10px;
-    }
-    .voice cite {
-      display: block;
-      font-family: var(--sans);
-      font-style: normal;
-      font-size: 13.5px;
-      font-weight: 600;
-      color: var(--green-2);
-      letter-spacing: .01em;
-    }
-
-    /* --- figures --- */
-    figure { margin: 26px 0; }
-    figure img { border-radius: 3px; }
-    figcaption {
-      font-size: 14.5px;
-      line-height: 1.55;
-      color: var(--ink-3);
-      margin-top: 10px;
-      padding-left: 13px;
-      border-left: 3px solid var(--line);
-    }
-
-    /* --- alert --- */
-    .alarm {
-      margin: 28px 0;
-      padding: 20px 18px;
-      background: var(--clay-pale);
-      border-left: 5px solid var(--clay);
-    }
-    .alarm p { margin: 0 0 12px; }
-    .alarm p:last-child { margin: 0; }
-    .alarm .cap {
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      color: var(--clay);
-      margin-bottom: 9px;
-    }
-
-    /* --- symptom list --- */
-    .signs {
-      margin: 26px 0;
-      border: 1px solid var(--line);
-      background: var(--paper);
-    }
-    .signs h3 {
-      margin: 0;
-      padding: 16px 18px;
-      font-family: var(--sans);
-      font-size: 16px;
-      line-height: 1.45;
-      font-weight: 700;
-      color: var(--green);
-      background: var(--green-pale);
-      border-bottom: 1px solid var(--line);
-    }
-    .signs ol { margin: 0; padding: 6px 0; list-style: none; counter-reset: s; }
-    .signs li {
-      counter-increment: s;
-      position: relative;
-      padding: 11px 18px 11px 52px;
-      font-size: 16.5px;
-      line-height: 1.5;
-      border-bottom: 1px solid var(--line-2);
-    }
-    .signs li:last-child { border-bottom: 0; }
-    .signs li::before {
-      content: counter(s);
-      position: absolute;
-      left: 16px;
-      top: 11px;
-      width: 24px;
-      height: 24px;
-      border: 1.5px solid var(--green-2);
-      border-radius: 50%;
-      color: var(--green-2);
-      font-size: 12.5px;
-      font-weight: 700;
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-
-    /* --- ingredients --- */
-    .recipe { margin: 26px 0; }
-    .recipe .item {
-      padding: 16px 0;
-      border-top: 1px solid var(--line-2);
-    }
-    .recipe .item:last-child { border-bottom: 1px solid var(--line-2); }
-    .recipe .item b {
-      display: block;
-      font-size: 17.5px;
-      color: var(--green);
-      margin-bottom: 4px;
-    }
-    .recipe .item span { font-size: 16px; line-height: 1.55; color: var(--ink-2); }
-
-    /* --- mechanism steps --- */
-    .steps { margin: 26px 0; counter-reset: st; }
-    .steps .st {
-      counter-increment: st;
-      position: relative;
-      padding: 20px 18px 20px 66px;
-      background: var(--paper);
-      border: 1px solid var(--line);
-      margin-bottom: 12px;
-    }
-    .steps .st::before {
-      content: counter(st);
-      position: absolute;
-      left: 16px;
-      top: 17px;
-      font-family: var(--serif);
-      font-size: 34px;
-      font-weight: 700;
-      line-height: 1;
-      color: var(--clay);
-    }
-    .steps .st b { display: block; font-size: 17.5px; color: var(--green); margin-bottom: 6px; }
-    .steps .st span { font-size: 16px; line-height: 1.58; color: var(--ink-2); }
-
-    /* --- case cards --- */
-    .case { margin: 26px 0; border: 1px solid var(--line); }
-    .case img { border-bottom: 1px solid var(--line); }
-    .case .body { padding: 18px; }
-    .case .body > b { display: block; font-size: 17.5px; color: var(--green); margin-bottom: 8px; }
-    .case .body p { font-size: 16.5px; margin-bottom: 12px; }
-    .case .result {
-      background: var(--green-pale);
-      border-top: 1px solid #d5e4dc;
-      padding: 14px 18px;
-      font-size: 15.5px;
-      line-height: 1.55;
-    }
-    .case .result b { color: var(--green); }
-
-    /* --- price ladder --- */
-    .ladder { margin: 26px 0; border: 1px solid var(--line); }
-    .ladder .row {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
       gap: 14px;
-      padding: 13px 18px;
-      border-bottom: 1px solid var(--line-2);
-      font-size: 16px;
+      flex-wrap: wrap
     }
-    .ladder .row span:last-child { white-space: nowrap; font-weight: 600; color: var(--ink-3); text-decoration: line-through; }
-    .ladder .row.now {
-      background: var(--green);
-      border-bottom: 0;
-      color: #fff;
-      padding-top: 17px;
-      padding-bottom: 17px;
-    }
-    .ladder .row.now span:first-child { font-weight: 700; }
-    .ladder .row.now span:last-child {
-      text-decoration: none;
-      color: #fff;
-      font-family: var(--serif);
-      font-size: 27px;
+
+    .masthead-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-serif);
       font-weight: 700;
+      font-size: 22px;
+      color: var(--color-primary-dark);
+      letter-spacing: -0.01em
     }
 
-    /* --- order form --- */
-    .order {
-      margin: 34px -20px 0;
-      border-top: 4px solid var(--clay);
-      background: var(--paper);
-      padding: 24px 20px 26px;
+    .masthead-logo-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--color-primary);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700
     }
-    @media (min-width: 760px) { .order { margin-left: -44px; margin-right: -44px; padding-left: 44px; padding-right: 44px; } }
-    .order h3 {
-      font-family: var(--serif);
-      font-size: 23px;
-      line-height: 1.3;
-      margin: 0 0 6px;
-      color: var(--green);
-    }
-    .order .lead-note { font-size: 16px; color: var(--ink-2); margin: 0 0 20px; }
 
-    .stock {
-      font-size: 14.5px;
-      line-height: 1.55;
-      color: var(--amber);
-      background: var(--amber-pale);
-      border: 1px solid #e9dcb4;
-      padding: 12px 14px;
-      margin-bottom: 20px;
+    .masthead-tagline {
+      font-size: 12px;
+      color: var(--color-text-light);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-left: 1px solid var(--color-border);
+      padding-left: 14px;
+      font-weight: 500
     }
-    .stock b { font-weight: 700; }
 
-    .fld { margin-bottom: 15px; }
-    .fld label {
-      display: block;
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--ink-2);
-      margin-bottom: 6px;
+    @media (max-width:560px) {
+      .masthead-tagline {
+        border-left: 0;
+        padding-left: 0;
+        font-size: 11px;
+        width: 100%;
+        border-top: 1px solid var(--color-border);
+        padding-top: 8px;
+        margin-top: 4px
+      }
     }
-    .fld input {
-      width: 100%;
-      padding: 15px 16px;
-      font-family: var(--sans);
-      font-size: 17px;
-      color: var(--ink);
+
+    header {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0
+    }
+
+    .bg-image {
+      text-align: center
+    }
+
+    .text-container {
+      display: block
+    }
+
+    .h1-bg {
+      position: relative;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 28px 22px 20px;
       background: #fff;
-      border: 1.5px solid #c4bdb0;
-      border-radius: 2px;
-      -webkit-appearance: none;
+      border-bottom: 1px solid var(--color-border)
     }
-    .fld input:focus { outline: 0; border-color: var(--green-2); box-shadow: 0 0 0 3px rgba(45, 92, 74, .14); }
-    .fld .msg { display: none; font-size: 14px; color: #a3311c; margin-top: 6px; }
-    .fld.bad input { border-color: #a3311c; }
-    .fld.bad .msg { display: block; }
 
-    .btn {
-      display: block;
-      width: 100%;
-      padding: 18px 20px;
-      background: var(--clay);
-      color: #fff;
-      border: 0;
-      border-radius: 2px;
-      font-family: var(--sans);
-      font-size: 18px;
+    .h1-bg::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent) 100%)
+    }
+
+    .title_h1 {
+      font-family: var(--font-serif);
+      font-size: 28px;
+      line-height: 1.25;
+      color: var(--color-text);
       font-weight: 700;
-      letter-spacing: .04em;
-      text-align: center;
-      text-decoration: none;
-      cursor: pointer;
+      margin: 0 0 14px;
+      letter-spacing: -0.01em
     }
-    .btn:active { background: #9a4523; }
 
-    .cta-inline { margin: 28px 0; }
-
-    .guarantee {
-      margin-top: 16px;
-      font-size: 14.5px;
-      line-height: 1.6;
-      color: var(--ink-2);
+    .h1-quote {
+      display: block;
+      font-size: 30px;
+      font-style: italic;
+      color: var(--color-danger);
+      margin-bottom: 10px;
+      letter-spacing: -0.01em
     }
-    .guarantee div { padding: 5px 0 5px 24px; position: relative; }
-    .guarantee div::before {
-      content: "✓";
+
+    .head-two-part {
+      display: block;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--color-text);
+      line-height: 1.35;
+      margin-top: 6px
+    }
+
+    .head-main-date {
+      font-size: 13px;
+      color: var(--color-text-light);
+      padding: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+      padding-bottom: 14px;
+      border-bottom: 1px dashed var(--color-border)
+    }
+
+    .head-main-date::before {
+      content: "📅";
+      font-size: 14px
+    }
+
+    .head-main-date-title {
+      display: inline;
+      font-style: normal;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 500
+    }
+
+    .main-subtitle {
+      display: block;
+      padding: 16px 18px;
+      color: var(--color-text);
+      font-size: 17px;
+      border-radius: var(--radius-md);
+      font-weight: 500;
+      border-left: 4px solid var(--color-primary);
+      background: var(--color-primary-light);
+      line-height: 1.55;
+      font-style: normal;
+      margin: 0;
+      box-shadow: none
+    }
+
+    @media (max-width:640px) {
+      .title_h1 {
+        font-size: 22px
+      }
+
+      .h1-quote {
+        font-size: 24px
+      }
+
+      .head-two-part {
+        font-size: 16px
+      }
+
+      .main-subtitle {
+        font-size: 15px;
+        padding: 14px 14px
+      }
+
+      .h1-bg {
+        padding: 22px 16px 18px
+      }
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 22px 40px;
+      background: #fff;
+      border-left: 1px solid var(--color-border-soft);
+      border-right: 1px solid var(--color-border-soft)
+    }
+
+    @media (max-width:640px) {
+      main {
+        padding: 18px 14px 30px
+      }
+    }
+
+    main p {
+      margin: 0 0 16px;
+      color: var(--color-text)
+    }
+
+    main img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--radius-md)
+    }
+
+    main h2 {
+      font-family: var(--font-serif);
+      font-size: 24px;
+      line-height: 1.3;
+      font-weight: 700;
+      color: var(--color-primary-dark);
+      margin: 32px 0 16px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--color-primary-light);
+      letter-spacing: -0.01em
+    }
+
+    main h2 span {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--color-text-muted);
+      margin-top: 10px;
+      margin-bottom: 0;
+      line-height: 1.5
+    }
+
+    @media (max-width:640px) {
+      main h2 {
+        font-size: 19px
+      }
+
+      main h2 span {
+        font-size: 15px
+      }
+    }
+
+    main ul {
+      padding-left: 0;
+      list-style: none;
+      margin: 16px 0;
+      background: var(--color-bg-soft);
+      border: 1px solid var(--color-border-soft);
+      border-radius: var(--radius-md);
+      padding: 14px 18px 14px 20px
+    }
+
+    main ul li {
+      position: relative;
+      padding-left: 22px;
+      margin-bottom: 8px;
+      line-height: 1.5
+    }
+
+    main ul li::before {
+      content: "";
       position: absolute;
       left: 0;
-      color: var(--green-2);
-      font-weight: 700;
+      top: 10px;
+      width: 10px;
+      height: 10px;
+      border: 2px solid var(--color-primary);
+      border-radius: 50%;
+      background: #fff
     }
 
-    /* --- comments --- */
-    .talk { margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--line); }
-    .talk h3 {
-      font-size: 13px;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      color: var(--ink-3);
-      font-weight: 700;
-      margin: 0 0 18px;
+    main ul li:last-child {
+      margin-bottom: 0
     }
-    .cmt { display: flex; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--line-2); }
-    .cmt.reply { padding-left: 30px; border-left: 2px solid var(--line-2); }
-    .cmt .av { width: 42px; height: 42px; border-radius: 50%; flex: none; overflow: hidden; background: var(--line-2); }
-    .cmt .av img { width: 100%; height: 100%; object-fit: cover; }
-    .cmt .txt { min-width: 0; }
-    .cmt .nm { font-size: 15px; font-weight: 700; color: var(--green); margin-bottom: 2px; }
-    .cmt .bd { font-size: 16px; line-height: 1.55; }
-    .cmt .mt { font-size: 13px; color: var(--ink-3); margin-top: 6px; }
 
-    footer {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 26px 20px 40px;
-      font-size: 13.5px;
+    .red-txt {
+      color: var(--color-danger);
+      font-weight: 600
+    }
+
+    figure {
+      margin: 22px 0;
+      padding: 0;
+      text-align: center
+    }
+
+    figure img {
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      max-width: 100%;
+      height: auto
+    }
+
+    figure figcaption {
+      margin-top: 12px;
+      padding: 10px 14px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--color-text-muted);
+      background: var(--color-bg-soft);
+      border-left: 3px solid var(--color-primary);
+      border-radius: 0 var(--radius-sm) var(--radius-sm)0;
+      text-align: left;
+      font-style: italic
+    }
+
+    figure.cap-bold figcaption {
+      font-style: normal;
+      font-weight: 500;
+      color: var(--color-text)
+    }
+
+    .img-card {
+      border: 1px solid var(--color-border);
+      padding: 6px;
+      background: #fff;
+      box-shadow: var(--shadow-md);
+      border-radius: var(--radius-md)
+    }
+
+    .img-card2 {
+      border: 1px solid var(--color-border);
+      padding: 6px;
+      background: #fff
+    }
+
+    .pachino-ramka312-block {
+      margin: 24px 0
+    }
+
+    .pachino-ramka312 {
+      background: var(--color-danger-light);
+      border: 1px solid rgba(192, 57, 43, 0.25);
+      border-left: 4px solid var(--color-danger);
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      color: var(--color-text);
+      font-weight: 500;
+      box-shadow: none;
+      margin: 0;
+      font-size: 16px;
       line-height: 1.6;
-      color: var(--ink-3);
+      position: relative
     }
-    @media (min-width: 760px) { footer { padding-left: 44px; padding-right: 44px; } }
-  </style>
+
+    .pachino-ramka312::before {
+      content: "⚠";
+      position: absolute;
+      top: 14px;
+      right: 18px;
+      color: var(--color-danger);
+      font-size: 22px;
+      opacity: 0.7
+    }
+
+    .pachino-ramka312 .obertka-1 {
+      display: block
+    }
+
+    .rev-block {
+      margin: 24px 0;
+      padding: 20px 22px;
+      background: var(--color-primary-light);
+      border: 1px solid rgba(31, 64, 52, 0.15);
+      border-left: 4px solid var(--color-primary);
+      border-radius: var(--radius-md);
+      box-shadow: none
+    }
+
+    .rev-block p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 12px
+    }
+
+    .rev-block img {
+      border-radius: var(--radius-md);
+      margin-bottom: 14px;
+      max-width: 100%
+    }
+
+    .rev-block font {
+      display: block;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(31, 64, 52, 0.15);
+      color: var(--color-primary-dark);
+      font-size: 15px
+    }
+
+    .rev-block font b {
+      font-weight: 600
+    }
+
+    .recept {
+      background: #fff;
+      padding: 20px 22px;
+      box-shadow: var(--shadow-md);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--color-border);
+      border-top: 4px solid var(--color-success);
+      margin: 24px 0;
+      position: relative
+    }
+
+    .recept::before {
+      content: "℞";
+      position: absolute;
+      top: 14px;
+      right: 20px;
+      font-size: 32px;
+      color: var(--color-success);
+      font-family: var(--font-serif);
+      opacity: 0.4;
+      line-height: 1
+    }
+
+    .recept p b {
+      color: var(--color-primary-dark);
+      font-size: 16px
+    }
+
+    .my-ul-0-green {
+      margin: 12px 0 0 !important;
+      padding: 0 !important;
+      background: transparent !important;
+      border: 0 !important;
+      list-style: none
+    }
+
+    .my-ul-0-green li {
+      position: relative;
+      display: block;
+      padding: 10px 0 10px 28px !important;
+      margin: 0 !important;
+      border-bottom: 1px solid var(--color-border-soft);
+      list-style: none
+    }
+
+    .my-ul-0-green li::before {
+      content: "✓" !important;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      color: var(--color-success);
+      font-size: 16px;
+      line-height: 1.5;
+      font-weight: 700;
+      border: 0 !important;
+      background: transparent !important;
+      width: auto !important;
+      height: auto !important;
+      border-radius: 0 !important
+    }
+
+    .my-ul-0-green li:last-child {
+      border-bottom: 0
+    }
+
+    .my-ul-0-green li b {
+      color: var(--color-primary-dark);
+      font-size: 16px
+    }
+
+    .my-ul-0-green font {
+      font-size: 14px;
+      display: block;
+      margin-top: 4px;
+      color: var(--color-text-muted)
+    }
+
+    .obertk512 {
+      display: block;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--color-border);
+      max-width: 780px;
+      margin: 28px auto;
+      padding: 0;
+      line-height: 1.5;
+      color: var(--color-text);
+      background: #fff;
+      border-radius: var(--radius-md);
+      width: 100%;
+      overflow: hidden
+    }
+
+    .obertk512 h1 {
+      font-family: var(--font-serif);
+      line-height: 1.3;
+      margin: 0;
+      color: #fff;
+      font-size: 18px;
+      padding: 16px 20px;
+      font-weight: 600;
+      background: var(--color-primary);
+      border: 0;
+      border-radius: 0
+    }
+
+    .block-offer-actions-block {
+      padding: 10px 22px 22px;
+      border: 0
+    }
+
+    .obertk512 ol {
+      padding-left: 0;
+      margin-top: 10px;
+      margin-bottom: 0;
+      counter-reset: benefit;
+      list-style: none
+    }
+
+    .obertk512 li {
+      line-height: 1.4;
+      padding: 16px 0 16px 50px;
+      border-bottom: 1px solid var(--color-border-soft);
+      position: relative;
+      counter-increment: benefit
+    }
+
+    .obertk512 li::before {
+      content: counter(benefit);
+      position: absolute;
+      left: 0;
+      top: 14px;
+      width: 36px;
+      height: 36px;
+      background: var(--color-primary-light);
+      color: var(--color-primary-dark);
+      border-radius: 50%;
+      font-weight: 700;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--color-primary)
+    }
+
+    .obertk512 li::marker {
+      content: none
+    }
+
+    .obertk512 li:last-child {
+      border-bottom: 0
+    }
+
+    .obertk512 li font {
+      line-height: 1.3;
+      color: var(--color-primary-dark);
+      text-align: left;
+      font-weight: 600;
+      font-size: 17px;
+      display: block;
+      margin-bottom: 6px
+    }
+
+    .block-offer-actions-block li span {
+      display: block;
+      font-size: 15px;
+      line-height: 1.5;
+      font-weight: 400;
+      color: var(--color-text-muted);
+      margin: 0;
+      padding: 0;
+      border-bottom: 0
+    }
+
+    .pachino-ramka2 {
+      text-align: left;
+      color: var(--color-success);
+      font-weight: 600;
+      border: 1px solid rgba(30, 132, 73, 0.25);
+      border-left: 4px solid var(--color-success);
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      background: var(--color-success-light);
+      box-shadow: none;
+      margin: 20px 0;
+      font-size: 16px;
+      line-height: 1.55
+    }
+
+    .pachino-ramka {
+      border: 1px solid rgba(183, 121, 31, 0.3);
+      border-left: 4px solid var(--color-warning);
+      padding: 18px 20px;
+      border-radius: var(--radius-md);
+      background: #fff9ef;
+      margin: 20px 0;
+      font-size: 16px;
+      line-height: 1.55;
+      position: relative
+    }
+
+    .pachino-ramka::before {
+      content: "🕐";
+      position: absolute;
+      top: 14px;
+      right: 18px;
+      font-size: 22px;
+      opacity: 0.8
+    }
+
+    .ramka-title {
+      display: block;
+      color: var(--color-warning);
+      padding: 0;
+      margin-bottom: 10px;
+      font-weight: 700 !important;
+      background: transparent;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 0.06em
+    }
+
+    .pachino-ramka font {
+      color: var(--color-danger);
+      font-weight: 600
+    }
+
+    .noclose-cta {
+      font-size: 15px;
+      max-width: 780px;
+      margin: 16px auto;
+      display: block;
+      background: var(--color-danger-light);
+      border: 1px solid rgba(192, 57, 43, 0.2);
+      padding: 12px 16px;
+      border-radius: var(--radius-md);
+      line-height: 1.5
+    }
+
+    .pre-cta {
+      display: block;
+      color: var(--color-success);
+      font-weight: 500;
+      font-size: 16px;
+      margin-top: 12px
+    }
+
+    .nowrap {
+      white-space: nowrap
+    }
+
+    .price-cascade {
+      max-width: 700px;
+      margin: 24px auto;
+      padding: 20px 24px;
+      background: var(--color-bg-soft);
+      border: 1px solid var(--color-border-soft);
+      border-left: 4px solid var(--color-success);
+      border-radius: var(--radius-md)
+    }
+
+    .price-cascade-title {
+      font-weight: 600;
+      color: var(--color-primary-dark);
+      margin-bottom: 14px;
+      font-size: 16px
+    }
+
+    .price-cascade-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px dashed var(--color-border-soft)
+    }
+
+    .price-cascade-label {
+      font-size: 15px;
+      color: var(--color-text-muted)
+    }
+
+    .price-cascade-amount {
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--color-text-light);
+      text-decoration: line-through
+    }
+
+    .price-cascade-final {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0 0;
+      margin-top: 8px;
+      border-top: 2px solid var(--color-success)
+    }
+
+    .price-cascade-final .price-cascade-label {
+      color: var(--color-success);
+      font-weight: 700;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em
+    }
+
+    .price-cascade-final .price-cascade-amount {
+      color: var(--color-success);
+      font-weight: 700;
+      font-size: 22px;
+      text-decoration: none
+    }
+
+    .pachinoform {
+      padding: 0;
+      font-size: 17px;
+      line-height: 1.5;
+      color: var(--color-text);
+      border: 1px solid var(--color-border);
+      background: #fff;
+      display: block;
+      border-radius: var(--radius-lg);
+      width: 100%;
+      max-width: 780px;
+      margin: 24px auto;
+      box-shadow: var(--shadow-lg);
+      overflow: hidden
+    }
+
+    .pachinoform_title {
+      display: flex;
+      gap: 16px;
+      max-width: none;
+      align-self: stretch;
+      text-align: left;
+      background: var(--color-primary);
+      color: #fff;
+      padding: 20px 24px;
+      align-items: center
+    }
+
+    .pachinoform_title_logo {
+      flex-shrink: 0;
+      background: #fff;
+      padding: 6px;
+      border-radius: 50%;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .pachinoform_title_logo img {
+      max-width: 100%;
+      height: auto
+    }
+
+    .pachinoform_title_text {
+      align-self: center;
+      color: #fff;
+      font-size: 15px;
+      line-height: 1.4
+    }
+
+    .pachinoform_title_text>b {
+      display: block;
+      line-height: 1.3;
+      font-size: 17px;
+      margin-bottom: 4px;
+      color: #fff;
+      font-weight: 600
+    }
+
+    .pachinoform_order {
+      max-width: none;
+      font-weight: 500;
+      font-size: 15px;
+      margin: 0;
+      text-align: center;
+      padding: 16px 24px;
+      background: var(--color-primary-light);
+      border-bottom: 1px solid var(--color-border-soft);
+      color: var(--color-text);
+      line-height: 1.5
+    }
+
+    .pachinoform_order>b {
+      color: var(--color-danger);
+      font-weight: 700
+    }
+
+    .pachinoform_value {
+      display: flex;
+      color: var(--color-text);
+      font-weight: 600;
+      font-size: 15px;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 24px 0;
+      flex-wrap: wrap;
+      gap: 10px
+    }
+
+    .pachinoform_value_current {
+      border: 2px solid var(--color-danger);
+      color: var(--color-danger);
+      line-height: 1;
+      font-size: 22px;
+      padding: 6px 18px;
+      margin: 0 6px;
+      border-radius: var(--radius-sm);
+      background: var(--color-danger-light);
+      font-weight: 700
+    }
+
+    .pachinoform_value_total {
+      font-size: 18px;
+      color: var(--color-text-muted)
+    }
+
+    .pachinoform_price {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      margin: 20px 0 0;
+      padding: 0 24px;
+      flex-wrap: wrap
+    }
+
+    @media (max-width:380px) {
+      .pachinoform_price {
+        gap: 14px
+      }
+
+      .pachinoform_price_old span {
+        font-size: 20px
+      }
+
+      .pachinoform_price_new span {
+        font-size: 26px;
+        padding: 6px 14px
+      }
+    }
+
+    .pachinoform_price_old span {
+      display: block;
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      color: var(--color-text-light);
+      position: relative;
+      line-height: 1
+    }
+
+    .pachinoform_price_old span::before {
+      position: absolute;
+      content: "";
+      left: -4px;
+      top: 50%;
+      right: -4px;
+      border-top: 2px solid var(--color-danger);
+      transform: rotate(-12deg)
+    }
+
+    .pachinoform_price_new span {
+      display: inline-block;
+      background: var(--color-success);
+      color: #fff;
+      text-shadow: none;
+      font-size: 32px;
+      padding: 8px 20px;
+      font-weight: 700;
+      line-height: 1;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 4px 12px rgba(30, 132, 73, 0.25)
+    }
+
+    .pachinoform form {
+      padding: 22px 24px 20px
+    }
+
+    .pachinoform .name-input,
+    .pachinoform .phone-input {
+      color: var(--color-text);
+      font-size: 15px;
+      margin-bottom: 14px
+    }
+
+    .pachinoform .name-input label,
+    .pachinoform .phone-input label {
+      font-weight: 500;
+      font-size: 14px;
+      color: var(--color-text-muted);
+      margin-bottom: 6px;
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 0.04em
+    }
+
+    .pachinoform .name-input input,
+    .pachinoform .phone-input input {
+      font: inherit;
+      color: var(--color-text);
+      box-sizing: border-box;
+      width: 100%;
+      border-radius: var(--radius-sm);
+      padding: 12px 16px;
+      min-width: 0;
+      background: #fff;
+      border: 1.5px solid var(--color-border);
+      font-size: 16px !important;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease
+    }
+
+    .pachinoform .name-input input:focus,
+    .pachinoform .phone-input input:focus,
+    .pachinoform input:focus {
+      outline: 0;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(31, 64, 52, 0.15)
+    }
+
+    .pachinoform .button-submit {
+      width: 100%;
+      padding: 16px 22px;
+      background: var(--color-success);
+      color: #fff;
+      font-weight: 700;
+      font-size: 17px;
+      border: 0;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      box-shadow: 0 4px 12px rgba(30, 132, 73, 0.25);
+      transition: background 0.15s ease, transform 0.1s ease
+    }
+
+    .pachinoform .button-submit:hover {
+      background: #176a3a
+    }
+
+    .pachinoform .button-submit:active {
+      transform: translateY(1px)
+    }
+
+    .pachinoform_footer {
+      padding: 16px 24px 20px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--color-text-muted);
+      line-height: 1.5
+    }
+
+    .pachinoform_footer img {
+      max-width: 200px;
+      margin-top: 10px;
+      height: auto
+    }
+
+    .comments {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      border: 1px solid var(--color-border-soft);
+      border-top: 0;
+      padding: 0
+    }
+
+    .comments__header {
+      padding: 18px 22px;
+      background: var(--color-bg-soft);
+      border-bottom: 1px solid var(--color-border-soft)
+    }
+
+    .comments__header-title {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-primary-dark);
+      letter-spacing: 0.04em
+    }
+
+    .comments__item-list {
+      padding: 8px 20px
+    }
+
+    .comments__item {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--color-border-soft)
+    }
+
+    .comments__item:last-child {
+      border-bottom: 0
+    }
+
+    .comments__item-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px
+    }
+
+    .comments__item-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 1px solid var(--color-border)
+    }
+
+    .comments__item-info {
+      flex: 1;
+      min-width: 0
+    }
+
+    .comments__item-name {
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--color-primary-dark);
+      margin: 0 0 2px
+    }
+
+    .comments__item-info p:last-child,
+    .comments__item-info .startdate {
+      font-size: 12px;
+      color: var(--color-text-light);
+      margin: 0
+    }
+
+    .comments__item-body {
+      padding-left: 56px
+    }
+
+    .comments__item-content {
+      font-size: 15px;
+      line-height: 1.55;
+      color: var(--color-text);
+      margin: 0
+    }
+
+    .comm-obert-reply {
+      padding-left: 28px;
+      border-left: 2px solid var(--color-primary-light);
+      margin-left: 8px
+    }
+
+    .comm-obert-reply .comments__item.reply {
+      border-bottom: 1px solid var(--color-border-soft)
+    }
+
+    @media (max-width:560px) {
+      .comments__item-body {
+        padding-left: 0
+      }
+
+      .comm-obert-reply {
+        padding-left: 16px
+      }
+    }
+
+    .form-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px
+    }
+
+    .custom-form {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 18px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--color-border);
+      box-sizing: border-box;
+      font-family: var(--font-sans) !important;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      background: var(--color-bg-soft);
+      border-radius: var(--radius-md)
+    }
+
+    .custom-form__top-field {
+      display: flex;
+      gap: 16px;
+      align-items: center
+    }
+
+    .custom-form__ava-block {
+      position: relative;
+      width: 54px;
+      height: 54px;
+      overflow: hidden;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px dashed var(--color-border);
+      transition: 0.2s;
+      flex: 0 0 auto;
+      background: #fff
+    }
+
+    .custom-form__ava-label {
+      font-size: 11px;
+      text-align: center;
+      line-height: 1.2;
+      cursor: pointer;
+      font-family: inherit;
+      font-weight: 400;
+      color: var(--color-text-light);
+      padding: 4px
+    }
+
+    .custom-form__ava-label_red-text {
+      color: var(--color-danger)
+    }
+
+    .custom-form__name {
+      width: 100%;
+      max-width: 320px;
+      display: inline-block;
+      outline: none;
+      border: 1.5px solid var(--color-border);
+      padding: 10px 14px;
+      font-size: 14px;
+      height: 42px;
+      box-sizing: border-box;
+      font-family: inherit;
+      border-radius: var(--radius-sm);
+      background: #fff
+    }
+
+    .custom-form__message {
+      resize: none;
+      width: 100%;
+      outline: none;
+      border: 1.5px solid var(--color-border);
+      padding: 12px 14px;
+      min-height: 90px;
+      font-size: 14px;
+      line-height: 1.5;
+      font-family: inherit;
+      box-sizing: border-box;
+      border-radius: var(--radius-sm);
+      background: #fff
+    }
+
+    .custom-form__bottom-field {
+      display: flex;
+      flex-direction: row;
+      gap: 14px;
+      align-items: center;
+      flex-wrap: wrap
+    }
+
+    .custom-form__btn {
+      outline: none;
+      padding: 10px 24px;
+      background: var(--color-primary);
+      color: #fff;
+      font-weight: 600;
+      font-size: 14px;
+      transition: background 0.15s ease;
+      cursor: pointer;
+      text-transform: uppercase;
+      border: 0;
+      font-family: var(--font-sans);
+      border-radius: var(--radius-sm);
+      text-decoration: none !important;
+      letter-spacing: 0.04em
+    }
+
+    .custom-form__btn:hover {
+      background: var(--color-primary-dark)
+    }
+
+    .custom-form__photo-label {
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 400;
+      border: none;
+      color: var(--color-primary);
+      text-decoration: underline
+    }
+
+    .trust-strip {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      border: 1px solid var(--color-border-soft);
+      border-top: 0;
+      padding: 20px 22px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      justify-content: space-around;
+      align-items: center
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--color-text-muted);
+      font-weight: 500
+    }
+
+    .trust-item-icon {
+      color: var(--color-primary);
+      font-size: 18px
+    }
+
+    .clinical-footer {
+      max-width: 900px;
+      margin: 0 auto 0;
+      padding: 24px 22px 36px;
+      background: #fff;
+      border: 1px solid var(--color-border-soft);
+      border-top: 1px solid var(--color-border);
+      text-align: center;
+      font-size: 12px;
+      color: var(--color-text-light);
+      line-height: 1.6
+    }
+
+    body input[name="phone"] {
+      background-repeat: no-repeat !important;
+      background-position: left 15px center !important
+    }
+
+    main center {
+      display: block;
+      text-align: center
+    }
+
+    .quote-inline {
+      margin: 20px 0;
+      padding: 16px 20px;
+      background: var(--color-bg-soft);
+      border-left: 4px solid var(--color-text-light);
+      border-radius: 0 var(--radius-md) var(--radius-md)0;
+      font-style: italic;
+      color: var(--color-text-muted);
+      font-size: 16px;
+      line-height: 1.6
+    }
+
+    .quote-inline .quote-name {
+      display: block;
+      margin-top: 10px;
+      font-style: normal;
+      font-weight: 600;
+      color: var(--color-primary-dark);
+      font-size: 14px
+    }
+
+    @media (max-width:480px) {
+      body {
+        font-size: 16px
+      }
+
+      main p {
+        font-size: 16px
+      }
+
+      .rev-block {
+        padding: 16px
+      }
+
+      .recept {
+        padding: 16px
+      }
+
+      .block-offer-actions-block {
+        padding: 6px 16px 16px
+      }
+
+      .obertk512 li {
+        padding-left: 44px
+      }
+
+      .obertk512 li::before {
+        width: 30px;
+        height: 30px;
+        font-size: 14px
+      }
+    }
+  
+    /* --- RO visual refresh: typography, emphasis, mobile --- */
+    body { font-size: 18px; line-height: 1.7; }
+    h1, .title_h1 { letter-spacing: -0.02em; line-height: 1.2; }
+    h2 { letter-spacing: -0.015em; }
+    .masthead-logo { letter-spacing: 0.02em; text-transform: none; }
+    .masthead-logo-icon { border-radius: 2px; }
+    main p { hyphens: auto; -webkit-hyphens: auto; }
+    /* emphasis */
+    .red-txt { color: var(--color-accent); font-weight: 700; }
+    .quote-inline { border-left-width: 4px; }
+    @media (max-width: 640px) {
+      body { font-size: 17.5px; line-height: 1.66; }
+      h1, .title_h1 { font-size: 26px !important; }
+      h2 { font-size: 21px !important; }
+      main { padding-left: 16px !important; padding-right: 16px !important; }
+      .pachinoform_order, button, .button-submit { min-height: 52px; font-size: 17px !important; }
+      input[type="text"], input[type="tel"] { min-height: 50px; font-size: 17px !important; }
+      figcaption { font-size: 14.5px; }
+    }
+</style>
+
+  <script src="js/32.js"></script>
+  <link rel="icon" href="images/0.webp">
 </head>
 
-<body>
+<body data-archive-id="24211ac6-a421-480b-b035-9ffa25d5fe7e">
 
-  <div class="topbar">
-    <div>Reportaj special · Sănătate și comunitate</div>
+  <div class="clinical-topbar">Reportaj special · Sănătate și comunitate</div>
+
+  <div class="masthead">
+    <div class="masthead-inner">
+      <div class="masthead-logo">
+        <span class="masthead-logo-icon">+</span>
+        <span>Jurnal de Sănătate</span>
+      </div>
+      <div class="masthead-tagline">Relatări din România reală</div>
+    </div>
   </div>
 
-  <div class="wrap">
+  <header>
+    <div class="bg-image"></div>
+  </header>
 
-    <div class="masthead">
-      <div class="name">Jurnal de <span>Sănătate</span></div>
-      <div class="sub">Relatări din România reală</div>
+  <div class="text-container"></div>
+
+  <div class="h1-bg split">
+    <h1 class="title_h1">
+      <span class="h1-quote">„Un genunchi nu moare de bătrânețe. Moare de sete."</span>
+      <span class="head-two-part">Moș Traian Cormoș, meșter lemnar din Munții Apuseni, a redat bucuria de a merge la peste 1.700 de oameni, fără o singură pastilă prescrisă. Reporterul nostru a urcat până la gospodăria lui, acolo unde se termină drumul forestier, ca să-i pună singura întrebare care contează: cum face asta?</span>
+    </h1>
+
+    <div class="tdate head-main-date">
+      <span class="head-main-date-title">Publicat:</span>
+      <span>
+        <script>dtime_nums(-3, true)</script>, 09:36
+      </span>
     </div>
 
-    <!-- hook -->
-    <div class="hero">
-      <span class="kicker">La capătul drumului forestier</span>
-      <h1>„Un genunchi nu moare de bătrânețe. Moare de sete."</h1>
-      <p class="dek">
-        Moș Traian Cormoș, 74 de ani, meșter lemnar din Munții Apuseni, a redat mersul la
-        <strong>peste 1.700 de oameni</strong> — fără o singură pastilă prescrisă. Reporterul nostru a urcat
-        până la gospodăria lui, acolo unde se termină drumul, ca să-i pună singura întrebare care contează:
-        cum face asta?
-      </p>
-      <div class="byline">Publicat: <span id="pubdate"></span>, 09:36 · Reportaj de teren</div>
+    <div class="main-subtitle">
+      Sus, în Munții Apuseni, deasupra satului Albac, trăiește un bătrân de 74 de ani pe care oamenii din văi îl știu simplu: „moș Traian". N-a fost niciodată medic. N-a călcat într-o facultate. Dar în ultimii trei ani a scos din durere peste 1.700 de oameni cu articulațiile distruse — oameni pe care până și cei mai buni specialiști îi trimiseseră acasă. Oameni cărora li se spusese să se obișnuiască cu scaunul cu rotile. Oameni care nu se mai ridicau singuri din pat. Toate astea cu niște tuburi de gel făcute cu mâna lui, după înțelepciunea veche a pădurii.
+    </div>
+  </div>
+
+  <main>
+
+    <p>
+      Am urcat într-o joi, pe la prânz. Ceața încă stătea agățată de brădet. Ultimii doi kilometri i-am făcut pe jos, fiindcă drumul forestier se termină într-o poiană. „Îl căutați pe moș Traian?" — ne-a întrebat un bărbat care încărca fânul în căruță, la capătul satului. „Luați poteca din dreptul crucii de lemn. Casa lui e lângă izvor. Da' grăbiți-vă, că pe la două urcă la brazi după rășină."
+    </p>
+
+    <p>
+      Așa l-am găsit pe Traian Cormoș — meșter lemnar de 74 de ani care și-a trăit toată viața în Apuseni și care astăzi strică una dintre cele mai comode minciuni din România: că pentru durerea de articulații nu se mai poate face nimic. O soluție care nu ține de pastile, de injecții sau de operație. Ci de întâlnirea dintre pădure, răbdare și o memorie de familie veche de o sută de ani.
+    </p>
+
+    <p>
+      În satele din jur — la Albac, la Vidra, la Scărișoara, la Câmpeni — aproape fiecare familie a auzit de moș Traian. Fetele își aduc tații care abia mai calcă. Femeile comandă tuburi pentru mamele rămase singure. Bărbații vin după ture lungi, ca să-și poată face treaba a doua zi. Medicul de familie din comună recunoaște: <b>„Nu pot să explic ce face omul ăsta. Dar pacienții mei chiar se ridică din pat."</b>
+    </p>
+
+    <div class="quote-inline">
+      „Am trăit cu durerea șaisprezece ani. Mi-au dat unsprezece feluri de pastile și niciuna n-a ținut mai mult de o lună. Într-o zi mi-a spus nora de moș Traian. M-am dus până la el pe jos, două ore și jumătate, fiindcă nu credeam. Sunt la a patra săptămână cu gelul. Ieri am coborât singură în pivniță după murături. Prima dată în șaisprezece ani."
+      <span class="quote-name">— Ileana, 77 de ani, Albac</span>
     </div>
 
-    <!-- problem -->
-    <section>
-      <p>
-        Sus, deasupra satului Albac, în Munții Apuseni, trăiește un bătrân de 74 de ani pe care oamenii din văi
-        îl știu simplu: <span class="who">moș Traian</span>. N-a fost niciodată medic. N-a călcat într-o
-        facultate. Dar în ultimii trei ani a scos din durere peste 1.700 de oameni cu articulații distruse —
-        oameni pe care specialiștii îi trimiseseră acasă. Oameni cărora li se spusese să se obișnuiască cu
-        scaunul cu rotile. Oameni care nu se mai ridicau singuri din pat. Toate astea cu niște tuburi de gel
-        făcute cu mâna lui, într-o șură din capul satului.
+    <div class="quote-inline">
+      „Băiatul lucrează în Italia. Nevastă-sa n-a vrut să stea cu mine în casă din cauza spatelui — mă auzea gemând noaptea. Am rămas singur la marginea satului, într-o casă pe care abia o mai încălzesc. Nici câinele nu mai venea cu mine, că nu puteam să merg cu el. Atunci a urcat moș Traian până la mine. I-am mulțumit în genunchi. Azi cobor singur la izvor după apă."
+      <span class="quote-name">— Gheorghe, 72 de ani, comuna Vidra</span>
+    </div>
+
+    <figure>
+      <img class="img-card" src="images/1.jpg" alt="Moș Traian Cormoș în vizită la una dintre paciente"
+        loading="lazy">
+      <figcaption>Moș Traian cu una dintre femeile pe care le vizitează, tanti Floare din Vidra. „Pe oamenii ăștia nu-i mai caută nimeni. Copiii au plecat, doctorii i-au lăsat în pace. Dar pădurea nu i-a lăsat. Trebuie doar să știi ce să asculți."</figcaption>
+    </figure>
+
+    <h2>
+      „Trupul știe tot. Trebuie doar să faci liniște, ca să-l auzi."
+      <span>Discuție cu moș Traian în inima Apusenilor — în casa lui de bârne, unde de pe grinzi atârnă mănunchiuri de plante uscate, iar pe poliță stă un caiet legat în piele de oaie, vechi de o sută de ani</span>
+    </h2>
+
+    <p><b>Moș Traian Cormoș:</b> „Țin minte ziua aia ca și cum ar fi fost ieri. Era prin februarie, ningea de trei zile și nu urcase nimeni pe drum. Tocmai puneam rășina la topit lângă sobă — atunci o făceam numai pentru genunchii mei. Aud bătaie în ușă. Era o femeie de vreo șaizeci de ani, venită pe jos peste deal, din valea cealaltă, cu zăpada până la genunchi. Avea gheața prinsă în broboadă. Ochii îi erau ca apa stătută — plini de frică. S-a așezat pe laviță și mi-a zis:</p>
+
+    <p class="quote-inline">
+      „Nea Traiane, te rog, salvează-l pe bărbatul meu. Se stinge. I s-au înțepenit toate încheieturile, genunchii sunt duși. Doctorii nu mai au ce să-i facă. Nu poate să meargă, nu poate să se ridice, nu poate nici măcar să stea pe scaun. Doar zace și plânge."
+    </p>
+
+    <p><b>ATUNCI AM ÎNȚELES: CE MI-A LĂSAT BUNICUL NU MI-A FOST LĂSAT NUMAI MIE — CI ȘI PENTRU FEMEIA AIA ȘI PENTRU BĂRBATUL EI. ÎN ZIUA ACEEA AM HOTĂRÂT SĂ DUC MAI DEPARTE."</b></p>
+
+    <figure>
+      <img class="img-card" src="images/2.jpg" alt="Portretul lui moș Traian Cormoș în Munții Apuseni" loading="lazy">
+      <figcaption>Moș Traian Cormoș, meșter lemnar de 74 de ani din Munții Apuseni. Locuiește într-o casă de bârne pe care a ridicat-o singur prin anii '80, la capătul drumului forestier. Nu are nicio diplomă — are în schimb caietul bunicului său și peste cincizeci de ani de umblat prin pădure, pe care nu le are nimeni altcineva.</figcaption>
+    </figure>
+
+    <p>
+      Moș Traian vorbește rar, cu pauze lungi — ca și cum ar cântări fiecare cuvânt înainte să-l spună. Are mâini mari, noduroase, de om care a lucrat lemnul o viață. Degetele îi sunt pătate de rășină și de rădăcini, cu care se ocupă de șaizeci și cinci de ani. În spatele lui, pe perete, atârnă mănunchiuri uscate de sunătoare și coada-șoricelului. Pe poliță stau borcane, sticluțe întunecate și un caiet gros, legat în piele de oaie, tocit la colțuri — caietul bunicului său Gavrilă.
+    </p>
+
+    <p>
+      „Oamenii cred că durerea de articulații ține de vârstă. Asta e o minciună comodă. Genunchiul, spatele, șoldul — sunt ca o pădure. Dacă o îngrijești, ține sute de ani. Dacă o storci și o otrăvești, în șase-opt ani se usucă. Medicina de azi nu îngrijește articulațiile. Doar adoarme durerea. Și în fiecare an dă tot mai multe pastile. Până când omul cade și-și rupe un os."
+    </p>
+
+    <div class="quote-inline">
+      „Am muncit patruzeci de ani la CAP și pe urmă pe pământul meu. Mă sculam la patru, mă culcam la opt. Nu m-am plâns niciodată. Când mi s-a blocat șoldul, doctorul mi-a zis: «Doamnă Mărie, astea-s anii, va trebui să vă obișnuiți.» Cum să mă obișnuiesc? Am șaizeci și șase de ani! Bărbatul nu mai e. Copiii-s în Spania. Sunt singură și nu pot să cobor în grădină după două roșii. Atunci mi-a spus poștașul de moș Traian."
+      <span class="quote-name">— Maria, 66 de ani, Câmpeni</span>
+    </div>
+
+    <h2>
+      „Farmacia nu spune adevărul — fiindcă, dacă l-ar spune, ar da faliment"
+      <span>Moș Traian Cormoș explică de ce tratamentele obișnuite pentru articulații fac, în timp, mai mult rău decât bine</span>
+    </h2>
+
+    <p><b>Moș Traian Cormoș:</b></p>
+
+    <p>
+      — Hai să-ți spun ce văd lună de lună la cei care urcă la mine. Femeie de șaizeci și cinci de ani. De zece ani ia antiinflamatoare. Durerea din genunchi e mai rea în fiecare an. Acum o doare și stomacul de la atâtea pastile. Analizele de rinichi ies prost. Doctorul îi mai dă o pastilă — acum pentru stomac. Pe urmă una pentru rinichi. Iar genunchiul, între timp, se duce. Cartilajul nu i-l reface nimeni. Doar se adoarme durerea — până când cartilajul se termină de tot.
+    </p>
+
+    <p>
+      Ăsta e cercul vicios: durere → pastilă → durerea se întoarce mai tare → pastilă mai tare → stomacul cedează → încă o pastilă pentru stomac → rinichiul cedează → iar articulația se macină mai departe. <b>Nimeni nu spune adevărul: există și alt drum — să-i dai cartilajului ce-i lipsește și să-l lași să se refacă singur.</b>
+    </p>
+
+    <figure class="cap-bold">
+      <img class="img-card" src="images/3.jpg" alt="Articulații grav afectate" loading="lazy">
+      <figcaption>Genunchii lui tanti Ioana, 74 de ani, din Câmpeni. Artroză de gradul trei — cartilajul aproape complet uzat. De cinci luni nu mai iese din casă. Pe noptieră, șase feluri de pastile care n-au schimbat nimic. I le-a adus băiatul, pe rând, din farmacii diferite, sperând că una tot o să prindă. Niciuna n-a prins.</figcaption>
+    </figure>
+
+    <p class="red-txt">
+      Durerea de genunchi, de spate sau de șold după 45 de ani <b>nu este „normală pentru vârstă"</b> — este semnul că se subțiază cartilajul articular și că scade lichidul sinovial. Cine acoperă semnalul ăsta cu pastile își distruge articulațiile încet și în tăcere.
+    </p>
+
+    <figure class="Figure" style="text-align:center">
+      <img src="images/4.jpg" alt="Articulație sănătoasă față de articulație distrusă" style="margin:0 auto" loading="lazy">
+      <figcaption>
+        <b>Stânga: articulație sănătoasă, cu cartilaj întreg și lichid sinovial suficient. Dreapta: articulație distrusă — cartilaj uzat, inflamație cronică, os pe os. Asta e realitatea a 80% dintre românii de peste 60 de ani de la sate. Antiinflamatoarele nu refac cartilajul — doar reduc durerea, în timp ce totul continuă să se macine.</b>
+      </figcaption>
+    </figure>
+
+    <p class="red-txt">
+      Antiinflamatoarele blochează doar semnalul de durere, în timp ce distrugerea merge înainte în liniște. Fără o refacere reală a cartilajului, articulația se termină — și atunci rămân două variante: scaunul cu rotile sau operația de protezare, care în România costă peste 20.000 de lei. Niciuna nu dă viața înapoi.
+    </p>
+
+    <p><b>Moș Traian Cormoș:</b></p>
+
+    <p>
+      — Înțelegeți cât e de serios. La mulți dintre cei care urcă la mine, cartilajul din genunchi, din șira spinării sau din șold e dus în proporție de 70-90%. Merg os pe os — dacă mai merg. Fiecare pas e o pedeapsă.
+      <b class="red-txt">PASTILELE OBIȘNUITE NU POT REFACE CARTILAJUL — DOAR ACOPERĂ DUREREA CÂT TIMP TOTUL SE PRĂBUȘEȘTE!</b>
+    </p>
+
+    <p>
+      Și știți ce mă doare cel mai tare? Că oamenii ăștia sunt singuri. Copiii au plecat în Italia, în Spania, în Germania, în Anglia. Farmacia le trimite pastilele o dată pe săptămână. Doctorul îi vede o dată pe an. Iar ei se macină în tăcere. Spate, genunchi, șolduri. După o vreme le e frică și să iasă din casă, de teamă să nu cadă. De-aia fac ce fac.
+    </p>
+
+    <div class="quote-inline">
+      „Am muncit patruzeci și doi de ani la pământ. Am muls vaci, am scos cartofi, am cărat lemne. Nu m-am plâns niciodată. Pe urmă, la șaizeci de ani, într-o dimineață n-am mai putut să mă ridic din pat. Genunchiul era ca piatra. Fata mea lucrează în Germania. Mi-a zis la telefon să merg la Cluj, la specialist. Cum să merg? Nu pot să cobor nici scările. Moș Traian a venit el la mine, a mers pe jos o jumătate de zi. În două săptămâni eram înapoi în grădină."
+      <span class="quote-name">— Cătălina, 73 de ani, lângă Abrud</span>
+    </div>
+
+    <div class="quote-inline">
+      „Treizeci de ani am fost miner. Spatele mă durea de pe la patruzeci. La șaptezeci nu mai puteam să stau drept. Discopatie, sciatică — doctorii tot găseau nume, dar durerea nu se ducea. Băiatul e pe șantier în Germania. Trimite bani, dar n-are timp să vină. Cu gelul lui moș Traian, după patru săptămâni m-am urcat iar pe casă să dreg țigla. Prima dată în șase ani."
+      <span class="quote-name">— Nicolae, 71 de ani, fost miner, Roșia Montană</span>
+    </div>
+
+    <h2>
+      Oameni pe care nu-i voi uita niciodată — și povești care vor schimba felul în care priviți puterea naturii
+    </h2>
+
+    <p><b>Moș Traian Cormoș:</b></p>
+
+    <p>— Lăsați-mă să vă spun pe cine văd săptămână de săptămână. Nu vă vorbesc de statistici. Vă vorbesc de oameni. De oameni cu nume, cu familie, cu poveștile lor. De oameni pe care medicina i-a lăsat — dar pe care pădurea încă nu i-a lăsat.</p>
+
+    <figure class="cap-bold">
+      <img class="img-card" src="images/5.jpg" alt="Tanti Veta din Albac" loading="lazy">
+      <figcaption>Tanti Veta, 78 de ani, din Albac. Poliartrită la ambele mâini — nu mai putea ține nici lingura. Soțul i-a murit acum doi ani. Fata e în Germania. „La farmacie mi-au dat douăsprezece feluri de medicamente. Toate îmi cădeau greu la stomac, iar mâinile mă dureau la fel. Moș Traian a venit la mine când i-a spus poștașul că nu mai pot nici să curăț un cartof."</figcaption>
+    </figure>
+
+    <div class="quote-inline">
+      „Dimineața mă uitam la mâinile mele și nu le mai recunoșteam — umflate, strâmbe, parcă nu erau ale mele. Nu puteam nici să mă pieptăn, nici să tai o roșie. Cu gelul lui moș Traian, după două săptămâni croșetam din nou. Ieri am terminat prima față de masă de un an încoace. Mă uit la ea și plâng."
+      <span class="quote-name">— tanti Veta, 78 de ani</span>
+    </div>
+
+    <figure class="cap-bold">
+      <img class="img-card" src="images/6.jpg" alt="Moș Petru la poalele Apusenilor" loading="lazy">
+      <figcaption>Moș Petru, 76 de ani, din Scărișoara. Discopatie L4-L5, coxartroză la ambele șolduri. De opt luni nu se mai ridica. „Mi-au zis că-s prea bătrân pentru operație. Că trebuie să mă împac cu gândul. Că n-am nicio speranță. Moș Traian s-a așezat pur și simplu lângă mine, m-a luat de genunchi și mi-a zis: «Petre, în două săptămâni ieșim în grădină.» Așa a și fost."</figcaption>
+    </figure>
+
+    <div class="quote-inline">
+      „Patruzeci și cinci de ani am fost tractorist. Am arat jumătate de comună. Pe urmă, într-o dimineață, n-am mai putut să ridic capul de pe pernă. Doi copii îmi sunt în Anglia. Trimit bani și mă cheamă de Crăciun. Da' cine-mi dă un pahar cu apă dacă mă înec de tuse la miezul nopții? Cu gelul lui moș Traian, după patru săptămâni tăiam iar lemne. Nu multe — dar cât să-mi încălzesc casa cu mâna mea."
+      <span class="quote-name">— moș Petru, 76 de ani</span>
+    </div>
+
+    <p><b>Astea sunt semnele pe care le văd cel mai des — și pe care milioane de români le ignoră, crezând că-s „doar anii":</b></p>
+    <ul>
+      <li>Durere ascuțită în genunchi la urcat sau coborât scări — ori la orice mișcare;</li>
+      <li>Înțepeneală de dimineață — corpul e „de lemn", nu se mișcă 30-60 de minute după trezire;</li>
+      <li>Durere cronică de spate — nu se pot apleca, nu se pot ridica din pat;</li>
+      <li>Umflături la genunchi, glezne sau degete;</li>
+      <li>Scârțâit și pocnete în articulații la fiecare mișcare;</li>
+      <li>Durere în șold care coboară spre coapsă — nu pot merge mai mult de 50 de metri;</li>
+      <li>Degete deformate, noduroase — nu mai pot apuca obiectele;</li>
+      <li>Amorțeli în picioare sau în mâini — semn de discopatie ori de nerv comprimat;</li>
+      <li>Senzație de „cuțit" în șale când se îndreaptă de spate;</li>
+      <li>Spate gârbovit, ținută strâmbă — cifoză care avansează;</li>
+      <li>Durere noaptea, care nu lasă somnul — se trezesc de 4-5 ori pe noapte;</li>
+    </ul>
+
+    <p>
+      Fiecare dintre aceste simptome este o alarmă. Iar după 45-50 de ani, ignorarea lor duce într-un singur loc:
+      <b class="red-txt">IMOBILIZARE COMPLETĂ, SCAUN CU ROTILE, DEPENDENȚĂ TOTALĂ DE ALȚII — ȘI, ÎN MULTE CAZURI, UN CĂMIN DE BĂTRÂNI, UNDE COPIII VIN O DATĂ PE AN.</b>
+    </p>
+
+    <div class="pachino-ramka312-block">
+      <p class="pachino-ramka312">
+        <span class="obertka-1">
+          Fiecare zi petrecută cu articulațiile netratate vă apropie de imobilizare definitivă! Mii de pensionari români au ajuns în cămine tocmai fiindcă au ignorat durerea — sau fiindcă au luat doar pastile care n-au rezolvat cauza. Faceți ceva acum — pentru dumneavoastră sau pentru ai dumneavoastră — până nu e prea târziu!
+        </span>
       </p>
+    </div>
 
-      <p>
-        Am urcat într-o joi, pe la prânz. Ultimii doi kilometri i-am făcut pe jos, fiindcă drumul forestier se
-        termină într-o poiană. Un bărbat care încărca fânul într-o căruță ne-a arătat cu furca:
-        „Îl căutați pe moș Traian? Luați poteca din dreptul crucii de lemn. Casa lui e lângă izvor. Da' grăbiți-vă,
-        că pe la două urcă la brazi."
-      </p>
+    <h2>
+      „Bunicul umbla țara cu ciubere. Se întorcea cu rețete."
+      <span>Cum a ajuns moș Traian Cormoș la formula pe care o folosesc astăzi peste 1.700 de oameni din satele Apusenilor</span>
+    </h2>
 
-      <p>
-        Așa l-am găsit pe Traian Cormoș — meșter lemnar care și-a trăit toată viața în Apuseni și care astăzi
-        strică una dintre cele mai comode minciuni din România: că <mark>pentru durerea de articulații nu se mai
-        poate face nimic</mark>. O soluție care nu ține de pastile, de injecții sau de operație. Ci de pădure, de
-        răbdare și de o rețetă pe care nimeni din familia lui n-a scris-o vreodată pe internet.
-      </p>
+    <p><b>Moș Traian Cormoș:</b></p>
 
-      <p>
-        În satele din jur — la Albac, la Vidra, la Scărișoara, la Câmpeni — aproape fiecare familie a auzit de
-        moș Traian. Fetele își aduc tații care abia mai calcă. Femeile comandă tuburi pentru mamele lor rămase
-        singure. Bărbații vin după ture lungi, ca să-și poată face treaba a doua zi. Medicul de familie din
-        comună recunoaște, fără să-și dea numele:
-        <strong>„Nu pot să explic ce face omul ăsta. Dar pacienții mei chiar se ridică din pat."</strong>
-      </p>
+    <p>
+      — A doua zi m-am dus la bărbatul femeii aceleia. În casă era întuneric și frig. Omul arăta ca o ciupercă uscată — slab, gălbejit. Trupul încă cald, dar privirea își luase deja rămas-bun. M-am așezat lângă el, l-am luat de mână și l-am întrebat: „De câți ani trăiești cu durerea asta, omule?" A tăcut. I-a curs o lacrimă pe obraz. „De șaptesprezece ani", a șoptit. „Și nimeni nu știe ce să-mi facă. Toți doar scriu rețete."
+    </p>
 
-      <div class="voice">
-        <p>„Am trăit cu durerea șaisprezece ani. Mi-au dat unsprezece feluri de pastile și niciuna n-a ținut mai
-          mult de o lună. Într-o zi mi-a spus nora de moș Traian. M-am dus până la el pe jos, două ore și
-          jumătate, fiindcă nu credeam. Sunt la a patra săptămână cu gelul. Ieri am coborât singură în pivniță
-          după murături. Prima dată în șaisprezece ani."</p>
-        <cite>— Ileana, 77 de ani, Albac</cite>
-      </div>
+    <p>
+      Atunci mi-am amintit de caiet. Bunicul meu, Gavrilă, a fost moț cu ciubere — din ăia care plecau toamna din Apuseni cu căruța încărcată de doniți, ciubere și butoaie și băteau țara până în Bărăgan, schimbând lemn pe grâu. Umbla luni de zile. Și oriunde poposea — la Sibiu, la Făgăraș, în Banat, în Moldova — întreba babele satului ce pun ele pe dureri. Scria tot într-un caiet, cu creion chimic, cu scrisul lui strâmb. Caietul ăla mi-a rămas mie. L-am ținut treizeci de ani în ladă. Pe o pagină, aproape ștearsă, scria așa: <i>„Focul dinlăuntru fură din încheieturi apa și mlădierea. Numai cine cunoaște lacrima bradului le poate da viața înapoi."</i>
+    </p>
 
-      <div class="voice">
-        <p>„Băiatul lucrează în Italia. Nevastă-sa n-a vrut să stea cu mine în casă din cauza spatelui — că
-          mă auzea gemând noaptea. Am rămas singur la marginea satului, într-o casă pe care abia o mai încălzesc.
-          Nici câinele nu mai venea cu mine, că nu puteam să merg cu el. Atunci a urcat moș Traian până la mine.
-          I-am mulțumit în genunchi. Azi cobor singur la izvor după apă."</p>
-        <cite>— Gheorghe, 72 de ani, comuna Vidra</cite>
-      </div>
+    <figure class="cap-bold">
+      <img class="img-card" src="images/7.jpg" alt="Caietul de rețete al bunicului Gavrilă"
+        loading="lazy">
+      <figcaption>Caietul bunicului Gavrilă, adunat pe drumurile bătute cu căruța de ciubere. „Cartea asta a ținut minte în locul nostru o sută de ani, până am deschis-o eu. Toate plantele care intră în Jointerra sunt scrise pe paginile astea."
+      </figcaption>
+    </figure>
 
-      <figure>
-        <img src="images/1.jpg" alt="Moș Traian Cormoș alături de o pacientă" loading="eager">
-        <figcaption>
-          Moș Traian cu una dintre femeile pe care le vizitează, tanti Floare din Vidra. „Pe oamenii ăștia nu-i
-          mai caută nimeni. Copiii au plecat, doctorii i-au lăsat în pace. Dar pădurea nu i-a lăsat. Trebuie doar
-          să știi ce să asculți."
-        </figcaption>
-      </figure>
-    </section>
+    <p>
+      Sigur, nu era o explicație științifică — era înțelepciune trecută din om în om. Dar atunci încă nu știam că ziua aceea va fi începutul a trei ani de muncă. Trei ani în care moștenirea bunicului și darurile pădurii au ajuns împreună în niște tuburi de gel făcute de mână — care pot reface cartilajul din interior, fără nicio pastilă.
+    </p>
 
-    <!-- origin -->
-    <section>
-      <h2>„Trupul știe tot. Trebuie doar să faci liniște, ca să-l auzi."</h2>
-      <p class="h2sub">
-        Discuție cu moș Traian în casa lui de bârne, unde de pe grinzi atârnă mănunchiuri de plante uscate, iar
-        pe polița de lângă sobă stă un caiet legat în piele de oaie.
-      </p>
+    <div class="recept">
+      <p><b>Ce pune moș Traian în gel:</b></p>
+      <ul class="my-ul-0-green size1">
+        <li><b>Rășină de brad din Apuseni — „lacrima bradului"</b>
+          <font>Rășina de brad — cea pe care bunicul o numea „lacrima bradului". Medicina populară din munții noștri o folosește de secole pentru dureri de încheieturi. Antiinflamator natural, care oprește măcinarea cartilajului și trezește refacerea</font>
+        </li>
+        <li><b>Glucozamină și condroitină — în formă naturală</b>
+          <font>Cărămizile cartilajului — rezerva veche a naturii, pe care celulele o recunosc și o folosesc</font>
+        </li>
+        <li><b>Acid hialuronic — în molecule mici</b>
+          <font>Redă umezeala articulației — exact ce i-a dat natura trupului omenesc și ce i-a luat inflamația</font>
+        </li>
+        <li><b>Colagen tip II și MSM</b>
+          <font>Întăresc ligamentele și tendoanele din jurul articulației — plasa naturală de protecție care slăbește odată cu anii</font>
+        </li>
+        <li><b>Camfor și arnică de munte</b>
+          <font>Ușurare imediată a durerii și a umflăturii — cum zicea bunicul: „duhul lemnului care stinge focul"</font>
+        </li>
+      </ul>
+      <p style="margin-top:14px;margin-bottom:0;color:var(--color-text-muted);font-size:14px;line-height:1.5">Gelul mai conține încă 14 extracte vegetale rare, pe care moș Traian și ajutoarele lui le culeg pe versanții Apusenilor timp de șase săptămâni — o singură dată pe an, când plantele sunt în pârg. Proporțiile le-a învățat din caietul bunicului și fiecare pas îl face cu mâna lui.</p>
+    </div>
 
-      <p>
-        <span class="who">Moș Traian Cormoș:</span> „Țin minte ziua aia ca și cum ar fi fost ieri. Era prin
-        februarie, ningea de trei zile și nu urcase nimeni pe drum. Tocmai puneam rășina la topit lângă sobă —
-        atunci o făceam numai pentru genunchii mei. Aud bătaie în ușă. Era o femeie de vreo șaizeci de ani, venită
-        pe jos peste deal, din valea cealaltă, cu zăpada până la genunchi. Avea gheața prinsă în broboadă. S-a
-        așezat pe laviță și mi-a zis:
-      </p>
+    <h2>
+      Așa s-a născut gelul Jointerra — făcut de mână, din cele mai bune plante ale Apusenilor
+    </h2>
 
-      <p>
-        <em>«Nea Traiane, te rog, salvează-l pe bărbatul meu. Se stinge. I s-au înțepenit toate încheieturile,
-        genunchii sunt duși. Doctorii nu mai au ce să-i facă. Nu poate să meargă, nu poate să se ridice, nu poate
-        nici măcar să stea pe scaun. Doar zace și plânge.»</em>
-      </p>
+    <p><b>Moș Traian Cormoș:</b></p>
 
-      <p class="strong-line">
-        ATUNCI AM ÎNȚELES CĂ CE MI-A LĂSAT BUNICUL NU MI-A LĂSAT NUMAI MIE. MI-A LĂSAT ȘI PENTRU FEMEIA AIA ȘI
-        PENTRU BĂRBATUL EI. ÎN ZIUA ACEEA AM HOTĂRÂT SĂ DUC MAI DEPARTE."
-      </p>
+    <p>
+      — Nu se naște în laborator. Se naște în șura mea, aici, la poalele muntelui. Rășina o strângem eu și ajutoarele mele, din brădetul bătrân de pe culmi, unde copacii își fac lacrima de sute de ani. Restul plantelor le culegem tot aici, pe coaste. Culesul ne ia șase săptămâni, fiindcă fiecare plantă trebuie tăiată exact în clipa în care e bună. Pe urmă facem gelul în șarje mici și-l punem în tuburi cu mâna. Într-o zi ies cel mult 70 de tuburi — mai multe nu, că s-ar strica treaba.
+    </p>
 
-      <figure>
-        <img src="images/2.jpg" alt="Moș Traian Cormoș, meșter lemnar din Munții Apuseni" loading="lazy">
-        <figcaption>
-          Moș Traian Cormoș, 74 de ani, din Munții Apuseni. Locuiește într-o casă de bârne pe care a ridicat-o
-          singur prin anii '80, la capătul drumului forestier. Nu are nicio diplomă — are în schimb caietul
-          bunicului său și peste cincizeci de ani de umblat prin pădure.
-        </figcaption>
-      </figure>
+    <figure>
+      <img class="img-card" src="images/8.jpg" alt="Moș Traian în șura lui — plante uscate pe polițe"
+        loading="lazy">
+      <figcaption>Șura lui moș Traian, la poalele muntelui. Pe grinzi atârnă mănunchiuri uscate de sunătoare, gălbenele și măceșe. Aici se naște fiecare tub de Jointerra — de mână, în șarje mici.</figcaption>
+    </figure>
 
-      <p>
-        Moș Traian vorbește rar, cu pauze lungi, ca și cum ar cântări fiecare cuvânt înainte să-l spună. Are mâini
-        mari, noduroase, de om care a lucrat lemnul o viață. Degetele îi sunt pătate de rășină. În spatele lui, pe
-        perete, atârnă mănunchiuri de sunătoare și de coada-șoricelului. Pe poliță — borcane, sticluțe întunecate
-        și caietul acela gros, cu coperta de piele, tocită la colțuri.
-      </p>
+    <img src="images/9.webp" alt="Gel Jointerra — făcut de mână"
+      style="width:78%;max-width:240px;display:block;margin:18px auto" loading="lazy">
 
-      <p>
-        „Oamenii cred că durerea de articulații ține de vârstă. Asta e o minciună comodă. Genunchiul, spatele,
-        șoldul — sunt ca o pădure. Dacă o îngrijești, ține sute de ani. Dacă o storci și o otrăvești, în șase-opt
-        ani se usucă. <mark>Medicina de azi nu îngrijește articulația. Doar adoarme durerea.</mark> Și în fiecare
-        an dă tot mai multe pastile. Până când omul cade și-și rupe un os."
-      </p>
+    <p>
+      La baza gelului stă o rețetă veche de o sută de ani, lăsată de bunicul lui. Pe limbaj științific de azi: combinația de extracte vegetale concentrate face ca substanțele active să pătrundă în organism și să ajungă prin sânge direct la capsula articulară, acolo unde se macină cartilajul. Iar avantajul gelului față de creme și loțiuni este că lucrează din interior — ajunge la toate articulațiile deodată: genunchi, spate, șolduri, mâini, ceafă — fără să fie nevoie să te ungi peste tot. Pentru un om în vârstă care trăiește singur, asta înseamnă tihnă și independență.
+    </p>
 
-      <div class="voice">
-        <p>„Am muncit patruzeci de ani la CAP și pe urmă pe pământul meu. Mă sculam la patru, mă culcam la opt.
-          Nu m-am plâns niciodată. Când mi s-a blocat șoldul, doctorul mi-a zis: «Doamnă Mărie, astea-s anii, va
-          trebui să vă obișnuiți.» Cum să mă obișnuiesc? Am șaizeci și șase de ani! Bărbatul nu mai e. Copiii-s
-          în Spania. Sunt singură și nu pot să cobor în grădină după două roșii. Atunci mi-a spus poștașul de
-          moș Traian."</p>
-        <cite>— Maria, 66 de ani, Câmpeni</cite>
-      </div>
-    </section>
+    <p class="pachino-ramka2">
+      Jointerra nu concurează cu nimeni. Nu vrea să se întreacă. Vrea doar să ajute. Fiecare ingredient — în proporția lui exactă — trezește refacerea cartilajului, întoarcerea lichidului sinovial și potolirea inflamației. Lucrează la nivel celular, ajungând în același timp la toate locurile lovite — genunchi, spate, șolduri, mâini, ceafă — din interiorul organismului. Și, cel mai important: lucrează și la 70, și la 80, și la 85 de ani! Primii oameni ai lui moș Traian au fost chiar cei mai bătrâni — cei pe care îi lăsase toată lumea.
+    </p>
 
-    <!-- failed solutions -->
-    <section>
-      <h2>„Farmacia nu-ți spune adevărul — fiindcă adevărul o costă"</h2>
-      <p class="h2sub">
-        Moș Traian explică de ce tratamentele obișnuite pentru articulații fac, în timp, mai mult rău decât bine.
-      </p>
+    <p><b>Moș Traian Cormoș:</b></p>
 
-      <p>
-        <span class="who">Moș Traian Cormoș:</span><br>
-        — Hai să-ți spun ce văd lună de lună la cei care urcă la mine. Femeie de șaizeci și cinci de ani. De zece
-        ani ia antiinflamatoare. Durerea din genunchi e mai rea în fiecare an. Acum o doare și stomacul de la atâtea
-        pastile. Analizele de rinichi ies prost. Doctorul îi mai dă o pastilă — acum pentru stomac. Pe urmă una
-        pentru rinichi. Iar genunchiul, între timp, se duce. Cartilajul nu i-l reface nimeni. Doar se adoarme
-        durerea — până când nu mai e ce adormi.
-      </p>
+    <p>
+      — Prima femeie căreia i-am dat gelul nu se ridicase din pat de patru luni. Era tanti Floare, din Vidra. A treia zi a intrat singură în bucătărie și mi-a pus cafeaua la foc. Am plâns amândoi. Ea — fiindcă prima dată după atâția ani n-o durea fiecare mișcare. Eu — fiindcă în clipa aceea am înțeles că moștenirea bunicului trăiește. Că n-am muncit degeaba toți anii ăștia.
+    </p>
 
-      <p>
-        Ăsta e cercul: durere → pastilă → durerea se întoarce mai tare → pastilă mai tare → stomacul cedează →
-        încă o pastilă pentru stomac → rinichiul cedează → iar articulația se macină mai departe.
-      </p>
+    <h2>
+      În patru feluri vă ajută Jointerra să vă întoarceți bucuria de a merge — la orice vârstă
+    </h2>
 
-      <p class="strong-line">
-        Și nimeni nu spune partea cealaltă: că se poate da cartilajului ce-i lipsește și lăsat să se refacă singur.
-      </p>
-
-      <figure>
-        <img src="images/3.jpg" alt="Genunchii unei paciente și cutiile de pastile de pe noptieră" loading="lazy">
-        <figcaption>
-          Genunchii lui tanti Ioana, 74 de ani, din Câmpeni. Artroză de gradul trei — cartilajul aproape complet
-          uzat. De cinci luni nu mai iese din casă. Pe noptieră, șase feluri de pastile care n-au schimbat nimic.
-          I le-a adus băiatul, pe rând, din farmacii diferite, sperând că una tot o să prindă. Niciuna n-a prins.
-        </figcaption>
-      </figure>
-
-      <div class="alarm">
-        <div class="cap">De reținut</div>
-        <p>
-          Durerea de genunchi, de spate sau de șold după 45 de ani <strong>nu este „normală pentru vârstă"</strong>
-          — este semnul că se subțiază cartilajul articular și că scade lichidul sinovial. Cine acoperă semnalul
-          ăsta cu pastile își distruge articulațiile încet și în tăcere.
-        </p>
-      </div>
-
-      <figure>
-        <img src="images/4.jpg" alt="Comparație între o articulație sănătoasă și una distrusă" loading="lazy">
-        <figcaption>
-          <strong>Stânga:</strong> articulație sănătoasă, cu cartilaj întreg și lichid sinovial suficient.
-          <strong>Dreapta:</strong> articulație distrusă — cartilaj uzat, inflamație cronică, os pe os.
-          Antiinflamatoarele nu refac cartilajul; doar reduc durerea, în timp ce totul continuă să se macine.
-        </figcaption>
-      </figure>
-
-      <p>
-        Antiinflamatoarele blochează doar semnalul de durere, în timp ce distrugerea merge înainte în liniște.
-        Fără o refacere reală a cartilajului, articulația se termină — și atunci rămân două variante: scaunul cu
-        rotile sau operația de protezare. Niciuna nu dă viața înapoi.
-      </p>
-
-      <p>
-        <span class="who">Moș Traian Cormoș:</span><br>
-        — Înțelegeți cât e de serios. La mulți dintre cei care urcă la mine, cartilajul din genunchi, din șira
-        spinării sau din șold e dus în proporție de 70-90%. Merg os pe os — dacă mai merg. Fiecare pas e o pedeapsă.
-      </p>
-
-      <p class="strong-line">
-        PASTILELE OBIȘNUITE NU POT REFACE CARTILAJUL — DOAR ACOPERĂ DUREREA CÂT TIMP TOTUL SE PRĂBUȘEȘTE!
-      </p>
-
-      <p>
-        Și știi ce mă doare cel mai tare? Că oamenii ăștia sunt singuri. Copiii au plecat în Italia, în Germania,
-        în Anglia. Farmacia le trimite pastilele o dată pe săptămână. Doctorul îi vede o dată pe an. Iar ei se
-        macină în tăcere. Spate, genunchi, șolduri. După o vreme le e frică și să iasă din casă, de teamă să nu
-        cadă. De-aia fac ce fac.
-      </p>
-
-      <div class="voice">
-        <p>„Am muncit patruzeci și doi de ani la pământ. Am muls vaci, am scos cartofi, am cărat lemne. Nu m-am
-          plâns niciodată. Pe urmă, la șaizeci de ani, într-o dimineață n-am mai putut să mă ridic din pat.
-          Genunchiul era ca piatra. Fata mea lucrează în Germania. Mi-a zis la telefon să merg la Cluj, la
-          specialist. Cum să merg? Nu pot să cobor nici scările. Moș Traian a venit el la mine, a mers pe jos o
-          jumătate de zi. În două săptămâni eram înapoi în grădină."</p>
-        <cite>— Cătălina, 73 de ani, lângă Abrud</cite>
-      </div>
-
-      <div class="voice">
-        <p>„Treizeci de ani am fost miner. Spatele mă durea de pe la patruzeci. La șaptezeci nu mai puteam să stau
-          drept. Discopatie, sciatică — doctorii tot găseau nume, dar durerea nu se ducea. Băiatul e pe șantier
-          în Germania. Trimite bani, dar n-are timp să vină. Cu gelul lui moș Traian, după patru săptămâni m-am
-          urcat iar pe casă să dreg țigla. Prima dată în șase ani."</p>
-        <cite>— Nicolae, 71 de ani, fost miner, Roșia Montană</cite>
-      </div>
-    </section>
-
-    <!-- low point -->
-    <section>
-      <h2>Oameni pe care nu-i uit — și povești care schimbă felul în care privești bătrânețea</h2>
-      <p class="h2sub">
-        Moș Traian: „Nu vă vorbesc de statistici. Vă vorbesc de oameni. Cu nume, cu familie, cu poveste. Oameni
-        pe care medicina i-a lăsat — dar pe care pădurea nu i-a lăsat."
-      </p>
-
-      <figure>
-        <img src="images/5.jpg" alt="Tanti Veta, 78 de ani, cu mâinile deformate de artrită" loading="lazy">
-        <figcaption>
-          Tanti Veta, 78 de ani, din Albac. Poliartrită la ambele mâini — nu mai putea ține lingura. Soțul i-a
-          murit acum doi ani, fata e în Germania. „La farmacie mi-au dat douăsprezece feluri de medicamente. Toate
-          îmi cădeau greu la stomac, iar mâinile mă dureau la fel. Moș Traian a venit la mine când i-a spus
-          poștașul că nu mai pot nici să curăț un cartof."
-        </figcaption>
-      </figure>
-
-      <div class="voice">
-        <p>„Dimineața mă uitam la mâinile mele și nu le mai recunoșteam — umflate, strâmbe, parcă nu erau ale mele.
-          Nu puteam nici să mă pieptăn, nici să tai o roșie. Cu gelul lui moș Traian, după două săptămâni croșetam
-          din nou. Ieri am terminat prima față de masă de un an încoace. Mă uit la ea și plâng."</p>
-        <cite>— tanti Veta, 78 de ani</cite>
-      </div>
-
-      <figure>
-        <img src="images/6.jpg" alt="Moș Petru, 76 de ani, fost tractorist" loading="lazy">
-        <figcaption>
-          Moș Petru, 76 de ani, din Scărișoara. Discopatie L4-L5, coxartroză la ambele șolduri. De opt luni nu se
-          mai ridica. „Mi-au zis că-s prea bătrân pentru operație. Că trebuie să mă împac cu gândul. Moș Traian
-          s-a așezat pe pat lângă mine, m-a luat de genunchi și mi-a zis: «Petre, în două săptămâni ieșim în
-          grădină.» Așa a și fost."
-        </figcaption>
-      </figure>
-
-      <div class="voice">
-        <p>„Patruzeci și cinci de ani am fost tractorist. Am arat jumătate de comună. Pe urmă, într-o dimineață,
-          n-am mai putut să ridic capul de pe pernă. Doi copii îmi sunt în Anglia. Trimit bani și mă cheamă de
-          Crăciun. Da' cine-mi dă un pahar cu apă dacă mă înec de tuse la miezul nopții? Cu gelul lui moș Traian,
-          după patru săptămâni tăiam iar lemne. Nu multe — dar cât să-mi încălzesc casa cu mâna mea."</p>
-        <cite>— moș Petru, 76 de ani</cite>
-      </div>
-
-      <div class="signs">
-        <h3>Semnele pe care le văd cel mai des — și pe care milioane de români le pun pe seama vârstei:</h3>
+    <div class="obertk512">
+      <h1>Cele patru acțiuni principale ale gelului Jointerra:</h1>
+      <div class="block-offer-actions-block">
         <ol>
-          <li>Durere ascuțită în genunchi la urcat sau coborât scări — ori la orice mișcare;</li>
-          <li>Înțepeneală de dimineață — corpul e „de lemn" 30-60 de minute după trezire;</li>
-          <li>Durere cronică de spate — nu se pot apleca, nu se pot ridica din pat;</li>
-          <li>Umflături la genunchi, glezne sau degete;</li>
-          <li>Scârțâit și pocnete în articulații la fiecare mișcare;</li>
-          <li>Durere în șold care coboară spre coapsă — nu pot merge mai mult de 50 de metri;</li>
-          <li>Degete deformate, noduroase — nu mai pot apuca obiectele;</li>
-          <li>Amorțeli în picioare sau în mâini — semn de discopatie ori nerv comprimat;</li>
-          <li>Senzație de „cuțit" în șale când se îndreaptă de spate;</li>
-          <li>Spate gârbovit, ținută strâmbă — cifoză care avansează;</li>
-          <li>Durere noaptea, care nu lasă somnul — se trezesc de 4-5 ori.</li>
+          <li>
+            <font>Oprirea durerii și a inflamației</font>
+            <span>Încă din primele 30-45 de minute după aplicare, combinația de rășină de brad, arnică și camfor reduce durerea și inflamația. Nu blochează semnalul nervos (cum fac pastilele obișnuite) — ci potolește inflamația chiar la izvorul ei, acolo unde începe problema.</span>
+          </li>
+          <li>
+            <font>Refacerea cartilajului</font>
+            <span>Glucozamina, condroitina și colagenul de tip II ajung la capsula articulară și trezesc celulele cartilajului (condrocitele), care încep să producă țesut cartilaginos nou. Procesul pornește după 3-5 zile de folosire constantă.</span>
+          </li>
+          <li>
+            <font>Refacerea lichidului sinovial</font>
+            <span>Acidul hialuronic în molecule mici pătrunde în organism și reface lichidul sinovial — „unsoarea" naturală a articulației. Datorită lui, oasele nu se mai freacă unul de altul, iar mișcarea redevine ușoară și nedureroasă.</span>
+          </li>
+          <li>
+            <font>Protecție și prevenție pe termen lung</font>
+            <span>MSM și complexul mineral întăresc ligamentele și tendoanele din jurul articulației, prevenind deteriorările viitoare. După 30-60 de zile de folosire, articulația capătă o protecție stabilă, care ține luni întregi.</span>
+          </li>
         </ol>
       </div>
+    </div>
 
-      <p>
-        Fiecare dintre semnele astea e o alarmă. După 45-50 de ani, ignorarea lor duce într-un singur loc:
-      </p>
+    <h2>
+      Povești pe care moș Traian le spune el însuși — despre oameni care merg din nou
+    </h2>
 
-      <div class="alarm">
-        <p class="strong-line" style="margin-bottom:12px">
-          IMOBILIZARE COMPLETĂ, SCAUN CU ROTILE, DEPENDENȚĂ TOTALĂ DE ALȚII — ȘI, ÎN MULTE CAZURI, UN CĂMIN DE
-          BĂTRÂNI UNDE COPIII VIN O DATĂ PE AN.
-        </p>
-        <p>
-          Fiecare zi petrecută cu articulațiile netratate vă apropie de imobilizare. Mii de pensionari români au
-          ajuns în cămine tocmai fiindcă au ignorat durerea — sau fiindcă au luat doar pastile care n-au rezolvat
-          cauza. <strong>Faceți ceva acum — pentru dumneavoastră sau pentru ai dumneavoastră — până nu e prea
-          târziu.</strong>
-        </p>
+    <p><b>Moș Traian Cormoș:</b></p>
+
+    <p>— Lăsați-mă să vă spun despre câțiva dintre cei pe care îi văd săptămână de săptămână. Oameni cărora nu le mai dădea nimeni nicio șansă — nici doctorii, nici familia. Oameni care merg din nou.</p>
+
+    <div class="rev-block">
+      <img class="img-card2" src="images/10.jpg" alt="Tanti Floare după cură" loading="lazy">
+      <p><b>Tanti Floare, 81 de ani, Vidra.</b> Patru luni nu s-a mai ridicat din pat. A treia zi de Jointerra a făcut primii pași singură. După 30 de zile iese în curte fără ajutor. „Nu se aștepta nimeni. Nici eu. Moș Traian vine o dată pe săptămână. Se uită la mine, îmi pune mâna pe genunchi și dă din cap."</p>
+      <font><b>Rezultat după 30 de zile:</b> Merge singură, a dispărut înțepeneala de dimineață, durerea a scăzut de la 9/10 la 2/10.</font>
+    </div>
+
+    <div class="rev-block">
+      <img class="img-card2" src="images/11.jpg" alt="Nicolae după cură" loading="lazy">
+      <p><b>Nicolae, 71 de ani, fost miner din Roșia Montană.</b> Discopatie, sciatică, nu putea sta în picioare mai mult de 5 minute. După 6 săptămâni s-a întors în grădina lui și lucrează două straturi pe zi. „Credeam că spatele mi-e dus pe veci. Eram gata să accept că rămân infirm. M-am înșelat. Cu gelul lui moș Traian mă simt cu douăzeci de ani mai tânăr."</p>
+      <font><b>Rezultat după 45 de zile:</b> A dispărut durerea ascuțită din șale, s-a întors mobilitatea, iar pentru prima dată în 4 ani a dormit adânc toată noaptea.</font>
+    </div>
+
+    <h2>
+      De ce nu găsiți Jointerra în farmacii? Și cum se poate lua?
+    </h2>
+
+    <p><b>Moș Traian Cormoș:</b></p>
+
+    <p>Sincer, producția de Jointerra e grea și merge încet. Materia primă e rară — rășina se poate strânge doar din brădetul bătrân, restul plantelor se culeg cu mâna pe coastă, iar fereastra e de numai șase săptămâni pe an, când plantele sunt în pârg. Într-o zi ies cel mult 70 de tuburi din șura lui moș Traian. Nu putem acoperi toate cererile.</p>
+
+    <p>O să mai treacă cel puțin 2-3 ani până când Jointerra va ajunge în farmacii. Până atunci este disponibil pe tot teritoriul țării doar prin internet, în cadrul unor programe de sprijin care se deschid de două ori pe an. <span
+        class="red-txt">Reducerea poate ajunge la 50%</span> — ceea ce contează enorm pentru pensionarii români de la sate, care trăiesc cu o pensie de vreo 1.400 de lei pe lună.</p>
+
+    <p>
+      Când farmaciile au aflat că gelurile astea chiar lucrează — inclusiv în artroze avansate și discopatii — au vrut să ceară 590 de lei pe tub. Le-am zis: „Eu nu lucrez pentru bani. Bunicul mi-a lăsat tot ce știa pe degeaba. N-o să jefuiesc pensionarii români." M-au refuzat. După câteva zile au început să urce la mine oameni de la control. Cereau hârtii. Voiau să mă amendeze. Dar n-am stat. Atunci a apărut în viața mea un tânăr din Cluj. Îi tratasem mama cu trei ani înainte, de o artroză grea la genunchi — eu uitasem și de el, și de ea. S-a întors și mi-a zis: „Moșule, dumneata faci aici în munte minuni cu mâinile dumitale. Dar în țară sunt mii de oameni care suferă și care n-o să ajungă niciodată până aici. Lasă-mă să ajut." El se ocupă ca gelurile făcute cu uneltele mele să fie puse în tuburi sterile într-un atelier curat, ca un curier să le ducă în toată țara și ca o mână de oameni să răspundă la telefon. Eu fac gelul mai departe aici, în ritmul meu. El are grijă doar să ajungă la cei care au nevoie.
+    </p>
+
+    <div class="price-cascade">
+      <div class="price-cascade-title">Prețul la care am ajuns:</div>
+      <div class="price-cascade-item">
+        <span class="price-cascade-label">Prețul cerut de farmacii</span>
+        <span class="price-cascade-amount">590 RON</span>
       </div>
-    </section>
-
-    <!-- discovery -->
-    <section>
-      <h2>„Bunicul umbla țara cu ciubere. Se întorcea cu rețete."</h2>
-      <p class="h2sub">
-        Cum a ajuns moș Traian la formula pe care o folosesc astăzi peste 1.700 de oameni din satele Apusenilor.
-      </p>
-
-      <p>
-        <span class="who">Moș Traian Cormoș:</span><br>
-        — A doua zi m-am dus la bărbatul femeii aceleia. În casă era întuneric și frig. Omul arăta ca o ciupercă
-        uscată — slab, gălbejit. Trupul încă cald, dar privirea își luase deja rămas-bun. M-am așezat lângă el,
-        l-am luat de mână și l-am întrebat: „De câți ani trăiești cu durerea asta, omule?" A tăcut. I-a curs o
-        lacrimă pe obraz. „De șaptesprezece ani", a șoptit. „Și nimeni nu știe ce să-mi facă. Toți doar scriu
-        rețete."
-      </p>
-
-      <p>
-        Atunci mi-am amintit de caiet. Bunicul meu, Gavrilă, a fost <em>moț cu ciubere</em> — din ăia care plecau
-        toamna din Apuseni cu căruța încărcată de doniți, ciubere și butoaie, și băteau țara până în Bărăgan,
-        schimbând lemn pe grâu. Umbla luni de zile. Și oriunde poposea — la Sibiu, la Făgăraș, în Banat, în
-        Moldova — întreba babele satului ce pun ele pe dureri. Scria tot într-un caiet, cu creion chimic, cu
-        scrisul lui strâmb. Caietul ăla mi-a rămas mie. L-am ținut treizeci de ani în ladă, fără să-l deschid ca
-        lumea.
-      </p>
-
-      <p>
-        Pe o pagină, aproape ștearsă, scria așa:
-        <mark>„Focul dinlăuntru fură din încheieturi apa și mlădierea. Numai cine cunoaște lacrima bradului le
-        poate da viața înapoi."</mark>
-      </p>
-
-      <figure>
-        <img src="images/7.jpg" alt="Caietul de rețete moștenit de la bunicul" loading="lazy">
-        <figcaption>
-          Caietul bunicului Gavrilă, adunat pe drumurile pe care le-a bătut cu căruța de ciubere. „Cartea asta a
-          ținut minte în locul nostru optzeci de ani, până am deschis-o eu. Toate plantele care intră în Jointerra
-          sunt scrise pe paginile astea."
-        </figcaption>
-      </figure>
-
-      <p>
-        Sigur, nu era o explicație științifică — era înțelepciune trecută din om în om. Dar atunci încă nu știam
-        că ziua aceea o să fie începutul a trei ani de muncă. Trei ani în care ce mi-a lăsat bunicul și ce dă
-        pădurea au ajuns în niște tuburi de gel făcute cu mâna — care pot reface cartilajul din interior, fără
-        pastile.
-      </p>
-
-      <div class="recipe">
-        <p class="strong-line" style="margin-bottom:6px">Ce pune moș Traian în gel:</p>
-
-        <div class="item">
-          <b>Rășină de brad din Apuseni — „lacrima bradului"</b>
-          <span>Rășina de brad, cea pe care bunicul o numea lacrima bradului. Medicina populară din munții
-            noștri o folosește de secole pentru dureri de încheieturi. Antiinflamator natural, care oprește
-            măcinarea cartilajului și trezește refacerea.</span>
-        </div>
-
-        <div class="item">
-          <b>Glucozamină și condroitină — în formă naturală</b>
-          <span>Cărămizile cartilajului — rezerva veche a naturii, pe care celulele o recunosc și o folosesc.</span>
-        </div>
-
-        <div class="item">
-          <b>Acid hialuronic — în molecule mici</b>
-          <span>Redă umezeala articulației — exact ce i-a fost luat de inflamație.</span>
-        </div>
-
-        <div class="item">
-          <b>Colagen tip II și MSM</b>
-          <span>Întăresc ligamentele și tendoanele din jurul articulației — plasa de protecție care slăbește
-            odată cu anii.</span>
-        </div>
-
-        <div class="item">
-          <b>Camfor și arnică de munte</b>
-          <span>Ușurare imediată a durerii și a umflăturii — cum zicea bunicul: „duhul lemnului care stinge
-            focul".</span>
-        </div>
+      <div class="price-cascade-item">
+        <span class="price-cascade-label">Prețul în alte țări din regiune</span>
+        <span class="price-cascade-amount">420 RON</span>
       </div>
-
-      <p>
-        Gelul mai conține încă <strong>14 extracte vegetale rare</strong>, pe care moș Traian și ajutoarele lui
-        le culeg pe versanții Apusenilor timp de șase săptămâni — o singură dată pe an, când plantele sunt în
-        pârg. Proporțiile le-a învățat din caietul bunicului, iar fiecare pas îl face cu mâna lui.
-      </p>
-    </section>
-
-    <!-- mechanism -->
-    <section>
-      <h2>Așa s-a născut Jointerra — făcut de mână, din plantele Apusenilor</h2>
-
-      <p>
-        <span class="who">Moș Traian Cormoș:</span><br>
-        — Nu se naște în laborator. Se naște în șura mea, aici, la poalele muntelui. Rășina o strângem eu și
-        ajutoarele mele, din brădetul bătrân de pe culmi, unde copacii își fac lacrima de sute de ani. Restul
-        plantelor le culegem tot aici, pe coaste. Culesul ne ia șase săptămâni, fiindcă fiecare plantă trebuie
-        tăiată exact când e bună. Pe urmă facem gelul în șarje mici și-l punem în tuburi cu mâna.
-        <mark>Într-o zi ies cel mult 70 de tuburi</mark> — mai multe nu, că se strică treaba.
-      </p>
-
-      <figure>
-        <img src="images/8.jpg" alt="Șura în care se prepară gelul" loading="lazy">
-        <figcaption>
-          Șura lui moș Traian, la poalele muntelui. Pe grinzi atârnă mănunchiuri de sunătoare, gălbenele și
-          măceșe. Aici se naște fiecare tub de Jointerra — de mână, în șarje mici.
-        </figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/9.webp" alt="Jointerra — gel pentru articulații" loading="lazy">
-      </figure>
-
-      <p>
-        La bază stă o rețetă veche de peste o sută de ani, adunată de bunicul lui pe drumuri. Pe limbaj de azi:
-        combinația de extracte vegetale concentrate face ca substanțele active să pătrundă și să ajungă direct la
-        capsula articulară, acolo unde se macină cartilajul. Iar avantajul gelului față de creme și loțiuni este
-        că lucrează din interior — ajunge la toate articulațiile deodată: genunchi, spate, șolduri, mâini, ceafă.
-        Pentru un om în vârstă care trăiește singur, asta înseamnă că nu trebuie să se întindă și să se
-        chinuie să ajungă peste tot.
-      </p>
-
-      <p>
-        Jointerra nu concurează cu nimeni. Fiecare ingredient — în proporția lui exactă — trezește refacerea
-        cartilajului, întoarcerea lichidului sinovial și potolirea inflamației. Și, cel mai important:
-        <strong>lucrează și la 70, și la 80, și la 85 de ani.</strong> Primii oameni ai lui moș Traian au fost
-        chiar cei mai bătrâni — cei pe care îi lăsase toată lumea.
-      </p>
-
-      <div class="voice">
-        <p>„Prima femeie căreia i-am dat gelul nu se ridicase din pat de patru luni. Era tanti Floare, din Vidra.
-          A treia zi a intrat singură în bucătărie și mi-a pus cafeaua la foc. Am plâns amândoi. Ea — că prima
-          dată după ani de zile n-o durea fiecare mișcare. Eu — că am înțeles atunci că munca bunicului n-a fost
-          degeaba."</p>
-        <cite>— moș Traian Cormoș</cite>
+      <div class="price-cascade-item">
+        <span class="price-cascade-label">Prețul pe care îl oferim azi</span>
+        <span class="price-cascade-amount">298 RON</span>
       </div>
-
-      <h2>Cele patru lucruri pe care le face Jointerra — la orice vârstă</h2>
-
-      <div class="steps">
-        <div class="st">
-          <b>Oprește durerea și inflamația</b>
-          <span>Încă din primele 30-45 de minute de la aplicare, combinația de rășină de brad, arnică și camfor
-            reduce durerea și inflamația. Nu blochează semnalul nervos, cum fac pastilele — potolește inflamația
-            chiar de la izvorul ei.</span>
-        </div>
-
-        <div class="st">
-          <b>Reface cartilajul</b>
-          <span>Glucozamina, condroitina și colagenul de tip II ajung la capsula articulară și trezesc celulele
-            cartilajului (condrocitele), care încep să producă țesut nou. Procesul pornește după 3-5 zile de
-            folosire constantă.</span>
-        </div>
-
-        <div class="st">
-          <b>Reface lichidul sinovial</b>
-          <span>Acidul hialuronic în molecule mici pătrunde și reface lichidul sinovial — „unsoarea" naturală a
-            articulației. Oasele nu se mai freacă unul de altul, iar mișcarea redevine ușoară și nedureroasă.</span>
-        </div>
-
-        <div class="st">
-          <b>Protejează pe termen lung</b>
-          <span>MSM și complexul mineral întăresc ligamentele și tendoanele din jurul articulației, prevenind
-            deteriorările viitoare. După 30-60 de zile de folosire, articulația are o protecție care ține
-            luni întregi.</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- proof -->
-    <section>
-      <h2>Oameni care merg din nou — poveștile pe care moș Traian le spune el însuși</h2>
-      <p class="h2sub">
-        „Vă spun despre câțiva dintre cei pe care îi văd săptămână de săptămână. Oameni cărora nu le mai dădea
-        nimeni nicio șansă — nici doctorii, nici familia. Oameni care merg din nou."
-      </p>
-
-      <div class="case">
-        <img src="images/10.jpg" alt="Tanti Floare, 81 de ani, din Vidra" loading="lazy">
-        <div class="body">
-          <b>Tanti Floare, 81 de ani, Vidra</b>
-          <p>
-            Patru luni nu s-a mai ridicat din pat. A treia zi de Jointerra a făcut primii pași singură. După 30 de
-            zile iese în curte fără ajutor. „Nu se aștepta nimeni. Nici eu. Moș Traian vine o dată pe săptămână.
-            Se uită la mine, îmi pune mâna pe genunchi și dă din cap."
-          </p>
-        </div>
-        <div class="result">
-          <b>Rezultat după 30 de zile:</b> merge singură, a dispărut înțepeneala de dimineață, durerea a scăzut
-          de la 9/10 la 2/10.
-        </div>
-      </div>
-
-      <div class="case">
-        <img src="images/11.jpg" alt="Nicolae, 71 de ani, fost miner" loading="lazy">
-        <div class="body">
-          <b>Nicolae, 71 de ani, fost miner, Roșia Montană</b>
-          <p>
-            Discopatie, sciatică, nu putea sta în picioare mai mult de cinci minute. După 6 săptămâni s-a întors
-            în grădină și lucrează două straturi pe zi. „Credeam că spatele mi-e dus pe veci. Eram gata să accept
-            că rămân infirm. M-am înșelat. Cu gelul lui moș Traian mă simt cu douăzeci de ani mai tânăr."
-          </p>
-        </div>
-        <div class="result">
-          <b>Rezultat după 45 de zile:</b> a dispărut durerea ascuțită din șale, s-a întors mobilitatea, prima
-          dată în 4 ani a dormit adânc toată noaptea.
-        </div>
-      </div>
-    </section>
-
-    <!-- objection -->
-    <section>
-      <h2>De ce nu găsiți Jointerra în farmacii? Și cum se poate lua?</h2>
-
-      <p>
-        <span class="who">Moș Traian Cormoș:</span><br>
-        Sincer, e greu de făcut și merge încet. Materia primă e rară — rășina se poate strânge doar din brădetul
-        bătrân, restul plantelor se culeg cu mâna pe coastă, și avem o fereastră de șase săptămâni pe an, când
-        sunt bune. Într-o zi ies cel mult 70 de tuburi din șura mea. Nu putem acoperi cererea.
-      </p>
-
-      <p>
-        O să mai treacă cel puțin 2-3 ani până când Jointerra ajunge în farmacii. Până atunci se dă doar prin
-        internet, în cadrul unor programe de sprijin care se deschid de două ori pe an. Reducerea poate ajunge la
-        <strong>50%</strong> — ceea ce contează enorm pentru pensionarii de la sate.
-      </p>
-
-      <p>
-        Când farmaciile au aflat că gelurile astea chiar lucrează — inclusiv în artroze avansate și discopatii —
-        au vrut să ceară <strong>590 de lei pe tub</strong>. Le-am zis: „Eu nu lucrez pentru bani. Bunicul mi-a
-        lăsat tot ce știa pe degeaba. N-o să jefuiesc pensionarii români." M-au refuzat. După câteva zile au
-        început să urce la mine oameni de la control. Cereau hârtii. Voiau să mă amendeze. Dar n-am stat.
-      </p>
-
-      <p>
-        Atunci a apărut în viața mea un tânăr din Cluj. Îi tratasem mama cu trei ani înainte, de o artroză grea la
-        genunchi — eu uitasem și de el, și de ea. S-a întors și mi-a zis: „Moșule, dumneata faci minuni aici cu
-        mâinile dumitale. Dar în țară sunt mii de oameni care suferă și care n-o să ajungă niciodată până aici.
-        Lasă-mă să ajut." El se ocupă ca gelurile făcute cu uneltele mele să fie puse în tuburi sterile într-un
-        atelier curat, ca un curier să le ducă în toată țara și ca un om să răspundă la telefon. Eu fac gelul mai
-        departe aici, în ritmul meu. El are grijă doar să ajungă la cine are nevoie.
-      </p>
-
-      <p class="strong-line">Prețul la care am ajuns:</p>
-
-      <div class="ladder">
-        <div class="row"><span>Prețul cerut de farmacii</span><span>590 RON</span></div>
-        <div class="row"><span>Prețul în alte țări din regiune</span><span>420 RON</span></div>
-        <div class="row"><span>Prețul nostru obișnuit</span><span>298 RON</span></div>
-        <div class="row now"><span>Cu reducerea pentru cititori, azi</span><span>149 RON</span></div>
-      </div>
-
-      <p>
-        Vă rog: <strong>nu ratați programul acesta.</strong> Nu doar pentru dumneavoastră — ci și pentru părinți,
-        pentru bunici, pentru rudele care poate suferă în tăcere. Sau pentru cei ajunși deja în cămine, singuri,
-        cărora nu le trimite nimeni nimic. Fiți dumneavoastră omul care schimbă ceva.
-      </p>
-
-      <a class="btn cta-inline js-jump" href="#comanda">VREAU SĂ COMAND</a>
-    </section>
-
-    <!-- cta -->
-    <section>
-      <h2>Ultima ocazie de anul acesta — pentru dumneavoastră sau pentru cineva drag</h2>
-
-      <figure>
-        <img src="images/12.jpg" alt="Jointerra" loading="lazy">
-      </figure>
-
-      <p>
-        <span class="who">Moș Traian Cormoș:</span><br>
-        — Am pus deoparte <strong>20.000 de tuburi</strong> numai pentru cititorii acestui site. Orice cetățean
-        român de peste 40 de ani poate primi reducerea de până la 50%, dar programul ține până pe
-        <strong><span id="deadline"></span></strong>.
-      </p>
-
-      <p>
-        Nu așteptați până când nu mai puteți urca scările. Până când vă lasă genunchii de tot. Până când vi se
-        blochează spatele. Și mai ales — <mark>nu așteptați până ajungeți „povară" pentru ai dumneavoastră.</mark>
-        O cură trezește refacerea cartilajului, iar de acolo trupul merge singur mai departe. Fără tratament pe
-        viață, fără pastile, fără durere care se întoarce.
-      </p>
-
-      <p>
-        Scrieți-vă numele și numărul de telefon. Vă sună un consultant, alege programul potrivit și trimite
-        coletul în 2-3 zile prin curier, direct la adresa dumneavoastră, oriunde în țară.
-      </p>
-
-      <p>
-        <em>Cu drag și cu grijă — moș Traian Cormoș. Aveți grijă de ai voștri. Poate singurul lucru de care au
-        nevoie e să știe că nu i-a uitat nimeni.</em>
-      </p>
-
-      <div class="order" id="comanda">
-        <h3>Formular de comandă</h3>
-        <p class="lead-note">Completați numele și telefonul. Nu se plătește nimic în avans — achitați curierului
-          la primire.</p>
-
-        <p class="stock">
-          <b>Actualizare:</b> din cauza numărului mare de cereri, stocul se poate epuiza mai repede decât am
-          estimat. Programul ține până pe <b><span id="deadline2"></span></b> sau până la epuizarea stocului.
-        </p>
-
-        <form id="frm" action="/order.php" method="post" novalidate>
-          <input type="hidden" name="fbpx" value="{fbpx}">
-          <input type="hidden" name="utm_code" value="{subid}">
-          <input type="hidden" name="cid" value="{campaign_id}">
-          <input type="hidden" name="sid" value="2828">
-          <input type="hidden" name="hash" value="{hash}">
-          <input type="hidden" name="country" value="RO">
-
-          <div class="fld" id="f-name">
-            <label for="name-input">Nume</label>
-            <input autocomplete="name" id="name-input" name="name" placeholder="Numele dumneavoastră"
-                   type="text" inputmode="text">
-            <span class="msg">Vă rugăm să vă scrieți numele</span>
-          </div>
-
-          <div class="fld" id="f-phone">
-            <label for="phone-input">Număr de telefon</label>
-            <input autocomplete="tel" id="phone-input" maxlength="20" name="phone"
-                   pattern="^[\-+() 0-9]{9,20}$" placeholder="07XX XXX XXX" type="tel" inputmode="tel">
-            <span class="msg" id="phone-msg">Vă rugăm să verificați numărul</span>
-          </div>
-
-          <button class="btn" type="submit">COMAND ACUM</button>
-        </form>
-
-        <div class="guarantee">
-          <div>Livrare prin curier, direct la adresa indicată</div>
-          <div>Plata la primire — nu achitați nimic în avans</div>
-          <div>Colet discret, fără însemne pe cutie</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- comments -->
-    <div class="talk">
-      <h3>Comentarii</h3>
-
-      <div class="cmt">
-        <div class="av"><img src="images/15.png" alt="" loading="lazy"></div>
-        <div class="txt">
-          <div class="nm">Rodica Munteanu</div>
-          <div class="bd">Am plâns citind. Mama are 79 de ani și de patru ani nu mai coboară din casă din cauza
-            genunchilor. Eu sunt în Torino și mă rod zilnic. Am comandat pentru ea. Poate nu e prea târziu.</div>
-          <div class="mt">Îmi place · Răspunde · 3 min</div>
-        </div>
-      </div>
-
-      <div class="cmt">
-        <div class="av"><img src="images/16.jpg" alt="" loading="lazy"></div>
-        <div class="txt">
-          <div class="nm">Elena Bărbulescu</div>
-          <div class="bd">L-am primit vinerea trecută. Îl pun dimineața și seara. La 5 zile durerea din genunchi
-            a scăzut clar, cobor scările fără să mă țin de balustradă. Povestea moșului m-a convins.</div>
-          <div class="mt">Îmi place · Răspunde · 4 min</div>
-        </div>
-      </div>
-
-      <div class="cmt">
-        <div class="av"><img src="images/17.jpg" alt="" loading="lazy"></div>
-        <div class="txt">
-          <div class="nm">Aurel Pintea</div>
-          <div class="bd">Am 69 de ani. Șapte ani m-au tot plimbat cu antiinflamatoare, doi ortopezi, o infiltrație.
-            Trei săptămâni cu gelul și dimineața mă ridic fără să mă țin de pat. Șapte ani. Nu vă spun ce ciudă
-            mi-e.</div>
-          <div class="mt">Îmi place · Răspunde · 6 min</div>
-        </div>
-      </div>
-
-      <div class="cmt">
-        <div class="av"><img src="images/18.jpg" alt="" loading="lazy"></div>
-        <div class="txt">
-          <div class="nm">Ionuț Sandu</div>
-          <div class="bd">Sunt șofer de TIR, stau 10 ore pe scaun. Spatele și genunchiul drept mă omorau la fiecare
-            coborâre din cabină. Săptămâna a patra — urc și cobor normal. Prima dată în vreo trei ani.</div>
-          <div class="mt">Îmi place · Răspunde · 8 min</div>
-        </div>
-      </div>
-
-      <div class="cmt">
-        <div class="av"><img src="images/19.jpg" alt="" loading="lazy"></div>
-        <div class="txt">
-          <div class="nm">Viorica Dobre</div>
-          <div class="bd">Am comandat 3 tuburi — pentru mine (genunchi), pentru soț (spate) și pentru soacra mea
-            de la cămin. Fraza cu „până ajungi povară" m-a lovit rău. Nu mai avem timp de așteptat.</div>
-          <div class="mt">Îmi place · Răspunde · 11 min</div>
-        </div>
-      </div>
-
-      <div class="cmt">
-        <div class="av"><img src="images/20.jpg" alt="" loading="lazy"></div>
-        <div class="txt">
-          <div class="nm">Mihaela Ardelean</div>
-          <div class="bd">Mă gândesc dacă să comand pentru tata. Are 78 de ani, e la cămin de trei ani, genunchii
-            nu-l mai țin deloc. Nu e prea târziu la vârsta asta?</div>
-          <div class="mt">Îmi place · Răspunde · 14 min</div>
-        </div>
-      </div>
-
-      <div class="cmt reply">
-        <div class="av"><img src="images/21.jpg" alt="" loading="lazy"></div>
-        <div class="txt">
-          <div class="nm">Georgeta Lupu</div>
-          <div class="bd">Mihaela, mama mea are 82! Artroză grea la ambii genunchi, nu se ridica din pat.
-            Folosește de o lună și jumătate și acum iese pe hol singură. Comandă fără grijă.</div>
-          <div class="mt">Îmi place · Răspunde · 16 min</div>
-        </div>
-      </div>
-
-      <div class="cmt reply">
-        <div class="av"><img src="images/22.jpg" alt="" loading="lazy"></div>
-        <div class="txt">
-          <div class="nm">Constantin Vlad</div>
-          <div class="bd">Mihaela, eu am 78 și exact asta aveam — coxartroză, mergeam cu cadrul. O lună și
-            jumătate și umblu singur prin curte. Tatălui dumitale îi trebuie mai mult decât crezi.</div>
-          <div class="mt">Îmi place · Răspunde · 18 min</div>
-        </div>
-      </div>
-
-      <div class="cmt">
-        <div class="av"><img src="images/23.jpg" alt="" loading="lazy"></div>
-        <div class="txt">
-          <div class="nm">Nicoleta Șerban</div>
-          <div class="bd">De o săptămână îl folosesc la genunchi și la șale. Dimineața nu mai sunt „de lemn".
-            Mă aplec, mă ridic, îmi leg singură pantofii. Nouă ani n-am putut.</div>
-          <div class="mt">Îmi place · Răspunde · 21 min</div>
-        </div>
-      </div>
-
-      <div class="cmt">
-        <div class="av"><img src="images/24.jpg" alt="" loading="lazy"></div>
-        <div class="txt">
-          <div class="nm">Maria Ciobanu</div>
-          <div class="bd">La 68 de ani credeam că nu mai pun mâna pe sapă. Primăvara asta mi-am săpat grădina
-            singură. Nora n-a crezut până n-a venit să vadă.</div>
-          <div class="mt">Îmi place · Răspunde · 25 min</div>
-        </div>
-      </div>
-
-      <div class="cmt">
-        <div class="av"><img src="images/25.jpg" alt="" loading="lazy"></div>
-        <div class="txt">
-          <div class="nm">Petre Dumitrescu</div>
-          <div class="bd">Am 82 de ani. Anul trecut abia mă mișcam prin casă, copiii începuseră să vorbească de
-            cămin. Am încercat fără speranță, sincer. Merge. Cobor singur la poartă după ziar.</div>
-          <div class="mt">Îmi place · Răspunde · 28 min</div>
-        </div>
-      </div>
-
-      <div class="cmt">
-        <div class="av"><img src="images/26.jpg" alt="" loading="lazy"></div>
-        <div class="txt">
-          <div class="nm">Marius Toma</div>
-          <div class="bd">Nevastă-mea se chinuie de ani de zile cu mâinile și cu genunchii. Îmi era teamă să nu
-            fie ceva mai rău. Săptămâna a patra: ieri s-a dus singură la piață și s-a întors cu flori. Nu mai
-            țin minte când și-a mai cumpărat flori.</div>
-          <div class="mt">Îmi place · Răspunde · 33 min</div>
-        </div>
-      </div>
-
-      <div class="cmt">
-        <div class="av"><img src="images/27.jpg" alt="" loading="lazy"></div>
-        <div class="txt">
-          <div class="nm">Daniela Neagu</div>
-          <div class="bd">Citesc și mă gândesc la soacra mea, care a murit acum patru ani într-un cămin. Exact
-            aceleași vorbe: „anii", „ce să-i faci". Nimeni n-a căutat mai departe. Am comandat pentru mama și
-            pentru tata, până nu pățesc la fel.</div>
-          <div class="mt">Îmi place · Răspunde · 41 min</div>
-        </div>
-      </div>
-
-      <div class="cmt">
-        <div class="av"><img src="images/28.jpg" alt="" loading="lazy"></div>
-        <div class="txt">
-          <div class="nm">Florin Barbu</div>
-          <div class="bd">Curierul l-a adus în două zile, am plătit la ușă. Pe cutie nu scrie nimic, am verificat
-            — stau la bloc și vecinii văd tot. Încep mâine.</div>
-          <div class="mt">Îmi place · Răspunde · 52 min</div>
-        </div>
-      </div>
-
-      <div class="cmt">
-        <div class="av"><img src="images/29.jpg" alt="" loading="lazy"></div>
-        <div class="txt">
-          <div class="nm">Adriana Ilie</div>
-          <div class="bd">Am întrebat la două farmacii — nu îl au și nici nu îl comandă. Una dintre farmaciste
-            m-a privit lung și mi-a zis: „doamnă, așa ceva nu trece pe la noi". Cam ăsta e răspunsul.</div>
-          <div class="mt">Îmi place · Răspunde · 1 h</div>
-        </div>
+      <div class="price-cascade-final">
+        <span class="price-cascade-label">Cu reducerea pentru cititori, azi</span>
+        <span class="price-cascade-amount">149 RON</span>
       </div>
     </div>
 
+    <p>
+      Vă rog: NU RATAȚI ACEST PROGRAM! Nu doar pentru dumneavoastră — ci și pentru părinți, pentru bunici, pentru rudele apropiate care poate suferă în tăcere. Sau pentru cei ajunși deja în cămine, singuri, cărora nu le trimite nimeni nimic. Fiți dumneavoastră omul care schimbă ceva.
+    </p>
+
+    <p class="red-txt"><b>Pentru comandă, folosiți formularul de mai jos.</b></p>
+
+    <h2>
+      Ultima ocazie de a lua Jointerra anul acesta — pentru dumneavoastră sau pentru cineva drag care suferă în tăcere
+    </h2>
+
+    <img alt="Jointerra" src="images/12.jpg"
+      style="margin:0 auto;display:block;max-width:500px;width:100%;margin-top:24px;margin-bottom:20px" loading="lazy">
+
+    <p><b>Moș Traian Cormoș:</b></p>
+
+    <p>
+      — Am pus deoparte 20.000 de tuburi exclusiv pentru cititorii acestui portal. Orice cetățean român de peste 40 de ani poate primi o <font class="red-txt">reducere de 50%</font>, dar programul se încheie pe <span>
+        <script>dtime_nums(0, true)</script>
+      </span>.
+    </p>
+
+    <p>Nu așteptați până când nu mai puteți urca scările. Până când vă lasă genunchii de tot. Până când vi se blochează spatele. Și, mai presus de toate — nu așteptați până ajungeți „povară" pentru ai dumneavoastră. O cură trezește refacerea naturală a cartilajului — și de acolo trupul merge singur mai departe. Fără tratament pe viață, fără pastile, fără durere care se întoarce. Un singur pas, și trupul își aduce aminte cum se trăiește.</p>
+
+    <p>Scrieți-vă numele și numărul de telefon. Un consultant vă va suna, va alege programul potrivit și va organiza livrarea în 2-3 zile prin curier, direct la adresa dumneavoastră, oriunde în România.</p>
+
+    <p><b>Cu drag și cu grijă — moș Traian Cormoș. Aveți grijă de ai voștri. Poate singurul lucru de care au nevoie este să știe că nu i-a uitat nimeni.</b></p>
+
+    <p class="pachino-ramka">
+      <span class="ramka-title">Actualizare: <span>
+          <script>dtime_nums(-2, true)</script>
+        </span>:</span>
+      Având în vedere interesul foarte mare, stocurile se pot epuiza mai repede decât am estimat! Azi —
+      <font><span>
+          <script>dtime_nums(0, true)</script>
+        </span> — este ultima zi a programului</font> sau până la epuizarea stocurilor.
+    </p>
+
+    <center><img src="images/9.webp" style="max-width:340px;width:100%" loading="lazy"></center><br>
+
+    <center>
+      <p class="noclose-cta red-txt">
+        Atenție! Nu închideți și nu reîncărcați pagina, altfel tubul de Jointerra rezervat pentru dumneavoastră va fi oferit altei persoane!
+      </p>
+      <span class="pre-cta">
+        Puteți participa la ofertă — locul dumneavoastră este rezervat:
+        <span class="nowrap">Nº <font class="number-me"
+            style="border-bottom:2px solid var(--color-danger);font-weight:700">19&nbsp;974</font></span>
+      </span>
+    </center>
+
+    <span id="form"></span>
+    <span id="oneform"></span>
+    <div class="pachinoform">
+      <div class="pachinoform_title">
+        <div class="pachinoform_title_logo">
+          <img alt="" src="images/13.png" loading="lazy">
+        </div>
+        <div class="pachinoform_title_text">
+          <b>Formular oficial de comandă</b>
+          Nº <font class="number-me nowrap">19&nbsp;974</font> / <font class="nowrap">20 000</font>
+        </div>
+      </div>
+      <div class="pachinoform_order">
+        Pentru a primi <b>reducerea de 50%</b> scrieți-vă numele și numărul de telefon în câmpurile de mai jos și apăsați butonul „COMAND".
+      </div>
+      <div class="pachinoform_value">
+        Disponibil:
+        <span class="blc-pck">
+          <strong class="pachinoform_value_current left-pack">33</strong>
+          <strong class="pachinoform_value_total"> /1000</strong>
+        </span>
+      </div>
+      <div class="pachinoform_price">
+        <div class="pachinoform_price_old"><span class="price_old">298 RON</span></div>
+        <div class="pachinoform_price_new"><span class="price_main">149 RON</span></div>
+      </div>
+      <form action="/order.php" method="post">
+        <input type="hidden" name="fbpx" value="{fbpx}">
+        <input type="hidden" name="utm_code" value="{subid}">
+        <input type="hidden" name="cid" value="{campaign_id}">
+        <input type="hidden" name="sid" value="2828">
+        <input type="hidden" name="hash" value="{hash}">
+        <input type="hidden" name="country" value="RO">
+
+        <div class="name-input">
+          <label for="name-input">Nume</label>
+          <input autocomplete="name" id="name-input" name="name" placeholder="Numele dumneavoastră" required="" type="text" value=""
+            style="">
+        </div>
+        <div class="phone-input">
+          <label for="phone-input">Număr de telefon</label>
+          <input autocomplete="tel" id="phone-input" maxlength="20" name="phone" pattern="^[\-+() 0-9]{9,20}$"
+            placeholder="07XX XXX XXX" required="" type="tel" value="" style="">
+        </div>
+        <button class="button-submit" type="submit">COMAND ACUM</button>
+      </form>
+      <div class="pachinoform_footer">
+        ✔️ Livrare garantată prin curier autorizat<br> direct la adresa indicată de dumneavoastră
+        <br>
+        <img alt="" src="images/14.png" style="width:auto" loading="lazy">
+      </div>
+    </div>
+
+    <!-- COMMENTS SECTION -->
+    <div class="comments comments-fb" id="pluginComments">
+      <div class="comments__header">
+        <div class="comments__left-box">
+          <p class="comments__header-title">COMENTARII</p>
+        </div>
+      </div>
+
+      <div class="comments__item-list">
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img class="comments__item-avatar" src="images/15.png" alt="" loading="lazy">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Rodica Munteanu</p>
+              <p class="startdate">Acum 2 ore</p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Am plâns citind. Mama are 76 de ani și e de doi ani într-un cămin lângă Turda — exact fiindcă genunchii nu au mai ținut-o și noi n-am mai putut s-o îngrijim. Asta e cea mai mare vină a mea. I-am comandat Jointerra. Poate încă nu e prea târziu.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img class="comments__item-avatar" src="images/16.jpg" alt="" loading="lazy">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Elena Bărbulescu</p>
+              <p class="startdate">Acum 5 ore</p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Vinerea trecută am primit Jointerra. Îl pun dimineața și seara pe genunchi. În 5 zile durerea a scăzut mult, cobor scările fără să mă țin de balustradă! Povestea moșului m-a convins să comand. Om deosebit.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img class="comments__item-avatar" src="images/17.jpg" alt="" loading="lazy">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Aurel Pintea</p>
+              <p class="startdate">Acum 8 ore</p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Am 69 de ani. Patru ani m-am chinuit cu spatele — discopatie și sciatică. Nu puteam nici să mă aplec să-mi leg șireturile. Trei săptămâni cu gelul și dimineața mă ridic din pat fără să mă țin de noptieră.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img class="comments__item-avatar" src="images/18.jpg" alt="" loading="lazy">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Ionuț Sandu</p>
+              <p class="startdate">Acum 12 ore</p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Lucrez 10 ore pe zi la birou, în Cluj. Spatele și ceafa nu mai răspundeau deloc. Doctorul mi-a zis: „ori vă lăsați de meserie, ori operație". A patra săptămână cu gelul — mă ridic de pe scaun ca omul.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img class="comments__item-avatar" src="images/19.jpg" alt="" loading="lazy">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Liliana Ivan</p>
+              <p class="startdate">Acum 14 ore</p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Sincer, nu credeam. Se laudă atâtea pe internet încât mi-am pierdut încrederea. Am citit articolul din curiozitate și am rămas cu fraza despre „povară". Am comandat. A treia săptămână: urc la etaj fără pauză.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img class="comments__item-avatar" src="images/20.jpg" alt="" loading="lazy">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Dragoș Mitrea</p>
+              <p class="startdate">Acum 16 ore</p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Am comandat 3 tuburi — pentru mine (genunchi), pentru soția mea (mâini, artrită) și pentru socrul meu de la cămin. Nu ne mai permitem să așteptăm.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img class="comments__item-avatar" src="images/21.jpg" alt="" loading="lazy">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Mihaela Ardelean</p>
+              <p class="startdate">Acum 18 ore</p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Mă întreb dacă să comand pentru tata. E de 3 ani la cămin — genunchii nu-i mai funcționează deloc. Nu e prea târziu la vârsta asta? Are 78 de ani.</p>
+          </div>
+        </div>
+
+        <div class="comm-obert-reply">
+          <div class="comments__item reply">
+            <div class="comments__item-header">
+              <img class="comments__item-avatar" src="images/22.jpg" alt="" loading="lazy">
+              <div class="comments__item-info">
+                <p class="comments__item-name">Georgeta Lupu</p>
+                <p class="startdate">Acum 17 ore</p>
+              </div>
+            </div>
+            <div class="comments__item-body">
+              <p class="comments__item-content">Mihaela, mama mea are 82 de ani! Artrită grea la ambii genunchi, nu se ridica din pat. Folosește de două luni și acum iese singură pe hol. Comandă fără grijă.</p>
+            </div>
+          </div>
+          <div class="comments__item reply">
+            <div class="comments__item-header">
+              <img class="comments__item-avatar" src="images/23.jpg" alt="" loading="lazy">
+              <div class="comments__item-info">
+                <p class="comments__item-name">Constantin Vlad</p>
+                <p class="startdate">Acum 15 ore</p>
+              </div>
+            </div>
+            <div class="comments__item-body">
+              <p class="comments__item-content">Mihaela, comandă liniștită. Am 78 de ani, eram la un pas de scaunul cu rotile — coxartroză. Jointerra m-a pus pe picioare. Tatălui dumitale îi trebuie mai mult decât crezi.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img class="comments__item-avatar" src="images/24.jpg" alt="" loading="lazy">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Nicoleta Șerban</p>
+              <p class="startdate">Acum 20 de ore</p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">De o săptămână pun gelul pe genunchi și pe șale. Dimineața nu mai sunt „băț de lemn". Mă aplec, mă ridic, îmi leg singură pantofii.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img class="comments__item-avatar" src="images/25.jpg" alt="" loading="lazy">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Suzana Velea</p>
+              <p class="startdate">Acum o zi</p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Recunosc — m-am uitat la articolul ăsta cu neîncredere. Am pățit-o cu produse care promit tot. Dar povestea omului m-a ținut până la capăt. Am comandat pentru mama și pentru mine.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img class="comments__item-avatar" src="images/26.jpg" alt="" loading="lazy">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Stoian Todea</p>
+              <p class="startdate">Acum o zi</p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Am 82 de ani. Anul trecut nu puteam nici singură până la baie. Copiii vorbeau să mă ducă la cămin. Am încercat fără speranță, sincer. Merge. Cobor singură la poartă după ziar.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img class="comments__item-avatar" src="images/27.jpg" alt="" loading="lazy">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Nenad Pavel</p>
+              <p class="startdate">Acum o zi</p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Nevastă-mea nu mai putea coborî scările. Se ținea de perete și plângea de durere. Credeam că o pierd — nu mai mânca de durere. A patra săptămână: ieri s-a dus singură la piață.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img class="comments__item-avatar" src="images/28.jpg" alt="" loading="lazy">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Iasmina Cristea</p>
+              <p class="startdate">Acum o zi</p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Am comandat patru tuburi — pentru mama (la cămin, genunchi), pentru tata (la cămin, spate) și două pentru mine (mâini, artrită la 54 de ani). Nu vreau să ajung ca ei.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img class="comments__item-avatar" src="images/29.jpg" alt="" loading="lazy">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Slavița Georgescu</p>
+              <p class="startdate">Acum 2 zile</p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Am primit Jointerra — curierul l-a adus în 2 zile! I-am dus deja gelul mamei, la cămin. Am speranță pentru prima dată în trei ani.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img class="comments__item-avatar" src="images/30.jpg" alt="" loading="lazy">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Igor Lazăr</p>
+              <p class="startdate">Acum 2 zile</p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Am căutat Jointerra prin farmacii — nu îl are nimeni. Mi-au zis că trebuie comandat de pe pagina asta. Sper să mai fie stoc.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="form-container">
+        <form class="custom-form">
+          <div class="custom-form__top-field">
+            <div class="custom-form__ava-block">
+              <label class="custom-form__ava-label">
+                <span class="custom-form__ava-label_red-text">*</span><br>Adaugă avatar
+              </label>
+            </div>
+            <input type="text" disabled="" class="custom-form__name" placeholder="Numele dumneavoastră" style="" value="">
+          </div>
+          <textarea class="custom-form__message" disabled="" placeholder="Scrieți un comentariu..." style=""></textarea>
+          <div class="custom-form__bottom-field">
+            <label class="custom-form__photo-label">Adaugă fotografie</label>
+            <button type="button" disabled="" class="custom-form__btn">TRIMITE</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  <div class="trust-strip">
+    <div class="trust-item"><span class="trust-item-icon">🛡️</span> Calitate certificată</div>
+    <div class="trust-item"><span class="trust-item-icon">🚚</span> Livrare în 2-3 zile</div>
+    <div class="trust-item"><span class="trust-item-icon">⚕️</span> Fără rețetă</div>
+    <div class="trust-item"><span class="trust-item-icon">🔒</span> Comandă sigură</div>
   </div>
 
-  <footer>
-    © Jurnal de Sănătate — reportaj special.<br>
-    Informațiile din această pagină au caracter informativ și nu înlocuiesc consultul medical.
-  </footer>
-
+  <div class="clinical-footer">
+    © Jurnal de Sănătate — reportaj special<br>
+    Informațiile prezentate pe această pagină au caracter informativ și nu înlocuiesc consultul medical.
+  </div>
+  <script
+    async=""> const LAZY = document.querySelectorAll('img'); for (let i = 0; i < LAZY.length; i++) { LAZY[i].setAttribute('loading', 'lazy'); } </script>
   <script>
-    (function () {
-      'use strict';
-
-      /* dates: published yesterday, deadline today */
-      var LUNI = ['ianuarie','februarie','martie','aprilie','mai','iunie',
-                  'iulie','august','septembrie','octombrie','noiembrie','decembrie'];
-      function ro(d) { return d.getDate() + ' ' + LUNI[d.getMonth()] + ' ' + d.getFullYear(); }
-      var azi = new Date();
-      var ieri = new Date(azi.getTime() - 86400000);
-      var p = document.getElementById('pubdate');
-      if (p) { p.textContent = ro(ieri); }
-      var dl = ro(azi);
-      ['deadline', 'deadline2'].forEach(function (id) {
-        var el = document.getElementById(id);
-        if (el) { el.textContent = dl; }
-      });
-
-      /* name: keep all Romanian letters */
-      var nameEl = document.getElementById('name-input');
-      nameEl.addEventListener('input', function () {
-        var v = this.value
-          .replace(/[^\p{L}\p{M}'\-\s]/gu, '')
-          .replace(/^\s+/, '')
-          .replace(/\s{2,}/g, ' ');
-        var parts = v.split(' ');
-        if (parts.length > 2) { v = parts[0] + ' ' + parts[1]; }
-        if (v !== this.value) { this.value = v; }
-      });
-      nameEl.addEventListener('blur', function () { this.value = this.value.trim(); });
-
-      /* phone: keep +, min 9 digits */
-      var phoneEl = document.getElementById('phone-input');
-      phoneEl.addEventListener('input', function () {
-        var lead = this.value.trim().charAt(0) === '+' ? '+' : '';
-        this.value = lead + this.value.replace(/\D/g, '').slice(0, 15);
-      });
-
-      var frm = document.getElementById('frm');
-      frm.addEventListener('submit', function (e) {
-        var ok = true;
-        var fn = document.getElementById('f-name');
-        var fp = document.getElementById('f-phone');
-
-        if (nameEl.value.trim().length < 2) { fn.classList.add('bad'); ok = false; }
-        else { fn.classList.remove('bad'); }
-
-        if (phoneEl.value.replace(/\D/g, '').length < 9) { fp.classList.add('bad'); ok = false; }
-        else { fp.classList.remove('bad'); }
-
-        if (!ok) {
-          e.preventDefault();
-          var bad = frm.querySelector('.bad input');
-          if (bad) { bad.focus(); }
-        }
-      });
-
-      /* scroll to form from tagged links only */
-      var jumps = document.querySelectorAll('.js-jump');
-      for (var i = 0; i < jumps.length; i++) {
-        jumps[i].addEventListener('click', function (e) {
-          e.preventDefault();
-          document.getElementById('comanda').scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
-      }
-    })();
+    $("a").on("touchend, click", function (e) {
+      e.preventDefault();
+      $('body,html').animate({
+        scrollTop: $('#oneform').offset().top
+      }, 400);
+    });
   </script>
+  <script>
+    $('[name="name"]').on("input", function () {
+      var val = $(this).val();
+
+      var cleaned = val
+        .replace(/[^\p{L}\s]/gu, "")
+        .replace(/^\s+/, "")
+        .replace(/\s\s+/, " ");
+
+      var parts = cleaned.split(" ");
+      if (parts.length > 2) {
+        cleaned = parts[0] + " " + parts[1];
+      }
+
+      $(this).val(cleaned);
+    });
+
+    $('[name="name"]').on("change blur", function () {
+      $(this).val($(this).val().trim());
+    });
+
+    $('[name="phone"]').on("input change", function (e) {
+      var val = $(this).val();
+      $(this).val(val.replace(/\D/g, ""));
+      $(e.currentTarget).attr("pattern", "[0-9]{6,}");
+    });
+  </script>
+
+  <p style="opacity: 0;">{_box:2sHZz2rc}</p>
 </body>
 
 </html>
