@@ -1389,25 +1389,46 @@
     }
 
     /* --- page frame + accents --- */
-    body { background: #eef2ec; }
+    :root { --frame: #86ae95; --frame-soft: #cfe0d5; }
+    body { background: #eef2ec; padding-top: 14px; }
+
+    /* article header card */
+    .h1-bg {
+      max-width: 900px; margin: 0 auto 14px; background: #f7f0e3;
+      border: 3px solid var(--frame); border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(31,64,52,.07);
+      padding: 30px 30px 22px;
+    }
+    .h1-bg::before { height: 0; display: none; }
+    .h1-bg .title_h1 { font-size: 31px; line-height: 1.22; }
+    .head-two-part { color: #3a352c; }
+    .head-main-date {
+      margin-top: 16px; padding-top: 12px;
+      border-top: 1px dashed #d9cdb4; color: #6f6857;
+    }
+
+    /* article body card */
     main {
-      border-left: 7px solid var(--color-primary);
-      border-right: 7px solid var(--color-primary);
-      border-bottom: 7px solid var(--color-primary);
-      border-top: 0;
-      box-shadow: 0 0 0 1px rgba(31,64,52,.10), 0 6px 28px rgba(31,64,52,.10);
-      border-radius: 0 0 6px 6px;
+      border: 3px solid var(--frame); border-radius: 10px;
+      background: #fff; box-shadow: 0 2px 14px rgba(31,64,52,.07);
+      padding: 30px 30px 44px;
     }
     .masthead { border-bottom: 0; }
-    .h1-bg {
-      max-width: 900px; margin: 0 auto; background: #fff;
-      border-left: 7px solid var(--color-primary);
-      border-right: 7px solid var(--color-primary);
-      border-top: 0;
-      border-radius: 6px 6px 0 0;
-      box-shadow: 0 0 0 1px rgba(31,64,52,.10);
-    }
-    .h1-bg::before { height: 7px; border-radius: 4px 4px 0 0; }
+
+    /* accents */
+    blockquote, .quote-inline { border-left-color: var(--color-primary); }
+    main h2 { border-bottom-color: var(--frame) !important; margin-top: 40px; padding-bottom: 10px; }
+    main h2:first-of-type { margin-top: 8px; }
+    figure figcaption { background: #faf6ec; padding: 10px 0 10px 12px; border-radius: 0 6px 6px 0; }
+    .pachino-ramka { border-color: var(--color-accent); }
+    .clinical-topbar { letter-spacing: .06em; }
+    /* site footer, outside the article card */
+    .trust-strip, .clinical-footer { background: transparent; border: 0; max-width: 900px; margin: 0 auto; }
+    .trust-strip { border-top: 1px solid var(--frame-soft); margin-top: 6px; }
+    .clinical-footer { border-top: 1px solid var(--frame-soft); }
+    figure figcaption { border-left: 3px solid var(--frame-soft); padding-left: 12px; }
+    main img { box-shadow: 0 2px 12px rgba(31,64,52,.10); }
+
     /* final price row */
     .price-cascade-final {
       background: var(--color-primary); color: #fff; margin: 10px -14px -10px;
@@ -1415,6 +1436,7 @@
     }
     .price-cascade-final .price-cascade-label { color: #fff; letter-spacing: .04em; }
     .price-cascade-final .price-cascade-amount { color: #fff; font-size: 26px; }
+
     /* order button */
     .button-submit {
       background: linear-gradient(180deg, #2f6a4f 0%, var(--color-primary) 100%);
@@ -1423,24 +1445,35 @@
     }
     .button-submit:hover { transform: translateY(-1px); box-shadow: 0 5px 0 #15352a, 0 10px 22px rgba(31,64,52,.32); }
     .button-submit:active { transform: translateY(3px); box-shadow: 0 1px 0 #15352a, 0 3px 8px rgba(31,64,52,.25); }
+
     /* live stock counter */
     .pachinoform_value { font-weight: 600; }
     .pachinoform_value_current { display: inline-block; font-size: 24px; padding: 6px 20px; }
     @keyframes pck-tick { 0% { transform: scale(1.22); } 60% { transform: scale(.97); } 100% { transform: scale(1); } }
     .pachinoform_value_current.pck-tick { animation: pck-tick .4s cubic-bezier(.2,.9,.3,1.2); }
+
     /* symptom bullets */
     main ul li::before { background: var(--color-primary); border-color: var(--color-primary); }
-    blockquote, .quote-inline { border-left-color: var(--color-primary); }
-    main h2 { border-bottom-color: var(--color-primary); }
-    figure figcaption { border-left: 3px solid var(--color-primary-light); padding-left: 12px; }
+
     @media (max-width: 640px) {
-      main, .h1-bg { border-left-width: 4px; border-right-width: 4px; }
-      main { border-bottom-width: 4px; }
-      .h1-bg::before { height: 4px; }
+      body { padding-top: 8px; }
+      .h1-bg, main { border-width: 2px; border-radius: 8px; margin-left: 8px; margin-right: 8px; }
+      .h1-bg { padding: 20px 16px 16px; margin-bottom: 10px; }
+      .h1-bg .title_h1 { font-size: 26px; }
+      main { padding: 20px 16px 32px; }
     }
 </style>
 
-  <script src="js/32.js"></script>
+  <script>
+    function dtime_nums(offset, withYear) {
+      var d = new Date();
+      d.setDate(d.getDate() + (offset || 0));
+      var p = function (n) { return n < 10 ? '0' + n : '' + n; };
+      var s = p(d.getDate()) + '.' + p(d.getMonth() + 1);
+      if (withYear !== false) { s += '.' + d.getFullYear(); }
+      document.write(s);
+    }
+  </script>
   <link rel="icon" href="images/0.webp">
 </head>
 
