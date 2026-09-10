@@ -1394,18 +1394,25 @@
 
     /* article header card */
     .h1-bg {
-      max-width: 900px; margin: 0 auto 14px; background: #f7f0e3;
+      max-width: 900px; margin: 0 auto 14px; background: #fff;
       border: 3px solid var(--frame); border-radius: 10px;
       box-shadow: 0 2px 10px rgba(31,64,52,.07);
-      padding: 30px 30px 22px;
+      padding: 0 0 22px; overflow: hidden;
     }
     .h1-bg::before { height: 0; display: none; }
-    .h1-bg .title_h1 { font-size: 31px; line-height: 1.22; }
-    .head-two-part { color: #3a352c; }
-    .head-main-date {
-      margin-top: 16px; padding-top: 12px;
-      border-top: 1px dashed #d9cdb4; color: #6f6857;
+    .h1-bg .title_h1 { font-size: 31px; line-height: 1.22; margin: 0; }
+    /* бежевой остаётся только сама плашка заголовка */
+    .h1-bg .h1-quote {
+      display: block; background: #f7f0e3;
+      border-bottom: 1px solid #e6dcc6;
+      margin: 0 0 18px; padding: 26px 30px 24px;
     }
+    .h1-bg .head-two-part { display: block; padding: 0 30px; color: #3a352c; }
+    .head-main-date {
+      margin: 16px 30px 0; padding-top: 12px;
+      border-top: 1px dashed var(--color-border); color: #6f6857;
+    }
+    .h1-bg .main-subtitle { margin: 0 30px; }
 
     /* article body card */
     main {
@@ -1458,8 +1465,12 @@
     @media (max-width: 640px) {
       body { padding-top: 8px; }
       .h1-bg, main { border-width: 2px; border-radius: 8px; margin-left: 8px; margin-right: 8px; }
-      .h1-bg { padding: 20px 16px 16px; margin-bottom: 10px; }
+      .h1-bg { padding: 0 0 16px; margin-bottom: 10px; }
       .h1-bg .title_h1 { font-size: 26px; }
+      .h1-bg .h1-quote { padding: 18px 16px 16px; margin-bottom: 14px; }
+      .h1-bg .head-two-part { padding: 0 16px; }
+      .h1-bg .main-subtitle { margin: 0 16px; }
+      .head-main-date { margin: 12px 16px 0; }
       main { padding: 20px 16px 32px; }
     }
 </style>
