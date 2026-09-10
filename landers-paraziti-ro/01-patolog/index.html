@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="format-detection" content="telephone=no">
   <meta name="robots" content="noindex, nofollow">
-  <title>„Am semnat cu mâna mea rezultate negative pentru oameni care îi purtau în ei" — 34 de ani la microscop</title>
+  <title>„I-am văzut în trupurile unor oameni care habar n-aveau că îi poartă" — un patolog român scoate la lumină adevărul despre paraziți</title>
   <meta name="description"
-    content="Anchetă: un biolog cu 34 de ani în laboratorul de parazitologie explică de ce analizele ies curate atunci când corpul este deja plin.">
+    content="Anchetă: un medic anatomopatolog cu 34 de ani de practică spune adevărul despre paraziți, trecut sub tăcere.">
 
   <!-- dtime.js genereaza datele din pagina — trebuie incarcat INAINTE de primul apel dtime_nums() din body. -->
   <script src="js/dtime.js?=v2"></script>
@@ -633,7 +633,7 @@
     .form__h {
       background: var(--teal-2);
       color: #fff;
-      padding: 14px 96px 14px 20px;
+      padding: 14px 20px;
       font-family: var(--sans);
       display: flex;
       align-items: center;
@@ -917,282 +917,6 @@
       margin: 0 0 9px;
     }
 
-    /* ================= ELEMENTE DE CONVERSIE ================= */
-
-    /* 6. bara de progres a lecturii */
-    .progress {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 3px;
-      width: 0;
-      background: var(--ochre);
-      z-index: 60;
-      transition: width .1s linear;
-    }
-
-    /* 1. lista de simptome — bifabila */
-    .check li {
-      cursor: pointer;
-      user-select: none;
-      transition: background .15s;
-    }
-
-    .check li:active {
-      background: var(--ochre-wash);
-    }
-
-    .check li.on {
-      color: var(--ink);
-      font-weight: 600;
-    }
-
-    .check li.on::before {
-      background: var(--ochre);
-      border-color: var(--ochre);
-    }
-
-    .check li.on::after {
-      content: "";
-      position: absolute;
-      left: 8px;
-      top: 21px;
-      width: 5px;
-      height: 10px;
-      border: solid #fff;
-      border-width: 0 2.5px 2.5px 0;
-      transform: rotate(45deg);
-    }
-
-    .tally {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      margin: 6px 0 4px;
-      padding: 16px 18px;
-      background: var(--ochre-wash);
-      border-radius: var(--r);
-      font-family: var(--sans);
-    }
-
-    .tally__n {
-      flex: 0 0 auto;
-      font-size: 30px;
-      font-weight: 800;
-      color: var(--ochre);
-      letter-spacing: -.02em;
-    }
-
-    .tally__t {
-      font-size: 15.5px;
-      line-height: 1.45;
-      color: var(--ink-2);
-    }
-
-    .verdict {
-      margin: 0 0 26px;
-      padding: 18px 20px;
-      background: var(--red-wash);
-      border-left: 4px solid var(--red);
-      border-radius: 0 var(--r) var(--r) 0;
-      font-family: var(--sans);
-      font-size: 16.5px;
-      line-height: 1.5;
-      color: var(--red);
-      font-weight: 700;
-      display: none;
-    }
-
-    .verdict.on {
-      display: block;
-    }
-
-    /* 4. cronometru */
-    .timer {
-      margin: 26px 0;
-      padding: 18px;
-      background: var(--teal-2);
-      border-radius: var(--r);
-      text-align: center;
-      color: #fff;
-      font-family: var(--sans);
-    }
-
-    .timer__t {
-      font-size: 13px;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      opacity: .75;
-      margin-bottom: 12px;
-    }
-
-    .timer__d {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-    }
-
-    .timer__u {
-      background: rgba(255, 255, 255, .1);
-      border-radius: var(--r);
-      padding: 8px 0;
-      min-width: 68px;
-    }
-
-    .timer__u b {
-      display: block;
-      font-size: 30px;
-      font-weight: 800;
-      letter-spacing: -.02em;
-      font-variant-numeric: tabular-nums;
-    }
-
-    .timer__u span {
-      display: block;
-      font-size: 11px;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      opacity: .7;
-      margin-top: 2px;
-    }
-
-    /* 11. panglica de reducere */
-    .form {
-      position: relative;
-    }
-
-    .ribbon {
-      position: absolute;
-      top: 14px;
-      right: -6px;
-      z-index: 2;
-      background: var(--red);
-      color: #fff;
-      font-family: var(--sans);
-      font-size: 14px;
-      font-weight: 800;
-      letter-spacing: .04em;
-      padding: 8px 14px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
-    }
-
-    .ribbon::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: -6px;
-      border: 3px solid var(--red);
-      border-right-color: transparent;
-      border-bottom-color: transparent;
-      filter: brightness(.7);
-    }
-
-    /* 9. pret pe zi */
-    .perday {
-      text-align: center;
-      font-family: var(--sans);
-      font-size: 15px;
-      color: var(--ink-2);
-      margin: -12px 0 20px;
-    }
-
-    .perday b {
-      color: var(--teal-2);
-    }
-
-    /* 2. formular in doi pasi */
-    .step1 {
-      display: block;
-      width: 100%;
-      min-height: 64px;
-      border: 0;
-      border-radius: var(--r);
-      background: var(--red);
-      color: #fff;
-      font-family: var(--sans);
-      font-size: 18px;
-      font-weight: 800;
-      letter-spacing: .04em;
-      text-transform: uppercase;
-      cursor: pointer;
-    }
-
-    .step1[hidden],
-    .step2[hidden] {
-      display: none;
-    }
-
-    .reassure {
-      text-align: center;
-      font-family: var(--sans);
-      font-size: 14px;
-      color: var(--ink-3);
-      margin: 12px 0 0;
-    }
-
-    /* 12. garantii ca placi */
-    .tiles {
-      list-style: none;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 8px;
-      margin: 20px 0 0;
-      padding: 18px 0 0;
-      border-top: 1px solid var(--line-2);
-    }
-
-    .tiles li {
-      text-align: center;
-      padding: 12px 6px;
-      background: var(--bg);
-      border-radius: var(--r);
-      font-family: var(--sans);
-      font-size: 12.5px;
-      line-height: 1.35;
-      color: var(--ink-2);
-      font-weight: 600;
-    }
-
-    .tiles svg {
-      display: block;
-      margin: 0 auto 7px;
-      width: 24px;
-      height: 24px;
-      stroke: var(--teal);
-      fill: none;
-      stroke-width: 1.7;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    /* 8. comentarii mutate deasupra formularului */
-    .peek {
-      margin: 0 0 22px;
-    }
-
-    .peek__t {
-      font-family: var(--sans);
-      font-size: 12.5px;
-      font-weight: 800;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      color: var(--ink-3);
-      margin-bottom: 4px;
-    }
-
-    .peek .cm {
-      border-bottom: 1px solid var(--line-2);
-    }
-
-    /* 14. mini-cazuri in grila */
-    @media (min-width: 600px) {
-      .minigrid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0 26px;
-      }
-    }
-
     /* ---- DESKTOP ---- */
     @media (min-width: 760px) {
       body {
@@ -1289,9 +1013,26 @@
     <main>
       <!-- ===== HOOK ===== -->
       <div class="pad head">
-        <h1>„Am semnat cu mâna mea rezultate negative pentru oameni care îi purtau în ei”</h1>
+        <h1>„I-am văzut în trupurile unor oameni care habar n-aveau că îi poartă”</h1>
 
-        <!-- IMG 1 — mutata sus: fata pe primul ecran tine mai bine decat o caseta de text -->
+        <p class="kick">„Ani de zile au trăit în mine, iar eu dădeam vina pe vârstă și pe oboseală.” Un medic
+          anatomopatolog cu 34 de ani de practică spune adevărul pe care nimeni nu vrea să-l audă: paraziții macină
+          trupul pe tăcute, iar cauza dintâi aproape niciodată nu este căutată. Povestea femeii care s-a salvat la
+          timp.</p>
+
+        <div class="meta">
+          <span>Publicat: <b><script>dtime_nums(0, true)</script></b>, 08:52</span>
+          <span>Reportaj de teren · Budești, Maramureș</span>
+        </div>
+
+        <p class="lead">Șase ani, Aurica Pop — învățătoare pensionată dintr-un sat de sub Gutâi — a strâns într-un
+          caiet de dictando toate diagnosticele primite. Unsprezece, scrise cu pixul, unul sub altul. Niciunul
+          adevărat. Povestea ei a ajuns la un om care, timp de treizeci și patru de ani, a văzut cu ochii lui ce
+          poartă oamenii în ei — și care astăzi spune lucrul pe care nu îl scrie nimeni pe buletinul de analize.</p>
+      </div>
+
+      <div class="pad">
+        <!-- IMG 1 -->
         <figure>
           <img src="https://static.joxi.pro/1782819154665-b3512374-8ec8-484f-aa1d-ea1ba06f6aca.jpg"
             alt="Aurica Pop, la poarta casei din Budești, cu caietul în mână">
@@ -1299,23 +1040,6 @@
             fiecare consultație. Doctorii credeau că sunt o pisăloagă.”</figcaption>
         </figure>
 
-        <p class="kick">Un biolog cu 34 de ani în laboratorul de parazitologie explică de ce hârtia iese curată atunci
-          când corpul este deja plin — și de ce sute de mii de români tratează, ani la rând, exact lucrul greșit.</p>
-
-        <div class="meta">
-          <span>Publicat: <b><script>dtime_nums(0, true)</script></b>, 08:52</span>
-          <span>Reportaj de teren · Budești, Maramureș</span>
-          <span>Timp de citire: <b>9 minute</b></span>
-        </div>
-
-        <p class="lead">Șase ani, Aurica Pop — învățătoare pensionată dintr-un sat de sub Gutâi — a strâns într-un
-          caiet de dictando toate diagnosticele primite. Unsprezece, scrise cu pixul, unul sub altul. Niciunul
-          adevărat. Povestea ei a ajuns la o femeie care, timp de treizeci și patru de ani, s-a uitat prin microscop
-          la probele altora — și care astăzi spune un lucru pe care laboratoarele nu îl scriu pe buletinul de
-          analize.</p>
-      </div>
-
-      <div class="pad">
         <p>Am urcat spre Budești într-o joi, pe la prânz. Drumul spre casa Auricăi trece pe lângă biserica de lemn și
           apoi o ia în sus, pe un uliț cu pietriș, pe care mașina îl urcă în treapta întâi. La poartă ne aștepta cu
           caietul în mână, ca și cum ar fi fost un act de identitate.</p>
@@ -1363,37 +1087,36 @@
 
       <!-- ===== MARTORUL ===== -->
       <div class="pad">
-        <h2>Femeia care s-a uitat 34 de ani la ceea ce alții primeau doar pe hârtie</h2>
-        <p class="dek">Interviu cu Lidia Anghelescu, biolog, 34 de ani șefă de laborator de parazitologie la spitalul
-          județean</p>
+        <h2>Omul care a văzut, 34 de ani, ceea ce ceilalți primeau doar pe hârtie</h2>
+        <p class="dek">Interviu cu dr. Sabin Herțeg, medic anatomopatolog, 34 de ani de practică și peste 9 000 de
+          autopsii</p>
 
         <!-- IMG 2 -->
         <figure>
           <img src="https://static.joxi.pro/1782904658553-eaeacda3-ab6c-4e86-a155-c6acaf6be1fb.jpg"
-            alt="Lidia Anghelescu, biolog, 34 de ani în laboratorul de parazitologie">
-          <figcaption><b>Lidia Anghelescu, 71 de ani.</b> Treizeci și patru de ani în laboratorul de parazitologie al
-            spitalului județean. „Eu n-am văzut oameni. Eu am văzut ce era în ei.”</figcaption>
+            alt="Dr. Sabin Herțeg, medic anatomopatolog, 34 de ani de practică">
+          <figcaption><b>Dr. Sabin Herțeg, 71 de ani.</b> Treizeci și patru de ani la masa de autopsie a spitalului
+            județean. „Eu nu i-am văzut pe oameni trăind. Eu am văzut ce era în ei.”</figcaption>
         </figure>
 
-        <div class="who">Lidia Anghelescu, biolog</div>
-        <p>— Eu n-am fost doctor de cabinet. Eu am stat într-o cameră fără ferestre, cu microscopul în față, și m-am
-          uitat la ce trimiteau doctorii de sus. Treizeci și patru de ani. Zeci de mii de probe. Oameni pe care nu
-          i-am văzut niciodată la față și despre care știam mai multe decât familiile lor.</p>
+        <div class="who">Dr. Sabin Herțeg, medic anatomopatolog</div>
+        <p>— Eu n-am fost doctor de cabinet. Eu am stat într-o încăpere fără ferestre, la subsolul spitalului, și am
+          deschis oameni de toate vârstele. Treizeci și patru de ani. Peste nouă mii. Oameni pe care nu i-am văzut
+          niciodată trăind și despre care știam, până la urmă, mai multe decât familiile lor.</p>
 
-        <p>Am să vă spun simplu, fără cuvinte savante. Când o probă e curată, câmpul de sub lentilă e gol. Liniștit.
-          Când nu e curată, arată ca și cum cineva ar fi presărat mac peste sticlă. <strong>Ouă. Zeci, la o singură
-            privire.</strong> Și atunci scrii „pozitiv” și pui parafa.</p>
+        <p>Am să vă spun simplu, fără cuvinte savante. Când tai un intestin, el trebuie să aibă o anumită culoare —
+          viu, roz, curat. La mulți dintre cei de pe masa mea, peretele era acoperit cu o pojghiță cenușie, groasă,
+          ca și cum ar fi fost unsă pe dinăuntru cu ceară. <strong>Sub pojghița aceea, crescuți chiar în perete,
+            stăteau ei.</strong> Nu întotdeauna viermi mari, cum se arată pe internet — mai des mărunți, în colonii,
+          laolaltă cu larvele. Ca să ajung la ce-mi trebuia, de fiecare dată tăiam pojghița cu bisturiul.</p>
 
-        <p>Dar iată ce nu vă spune nimeni. La aceeași femeie, cu o săptămână înainte, scrisesem cu mâna mea „negativ”.
-          Aceeași femeie. Același corp. Aceeași boală, care era acolo și atunci. Doar că, în ziua aceea, nu era nimic
-          de văzut.</p>
+        <div class="bang">Se duceau de infarct, de accident vascular, de ceea ce se numea „cancer cu punct de plecare
+          neprecizat” — iar cauza dintâi nu a căutat-o nimeni. Fiindcă nimănui nu i-a trecut prin cap să se uite
+          acolo.</div>
 
-        <div class="bang">Rezultatul negativ nu spune că nu aveți nimic. Spune doar atât: în ziua aceea, în proba
-          aceea, nu era nimic de văzut.</div>
-
-        <p>Doamna Anghelescu vorbește rar, cu pauze lungi, ca cineva obișnuit să nu se pripească. S-a pensionat acum
+        <p>Domnul Herțeg vorbește rar, cu pauze lungi, ca un om obișnuit să nu se pripească. S-a pensionat acum
           câțiva ani. Locuiește în Baia Mare, într-un bloc de lângă spitalul unde a lucrat. Are pe masă un dosar cu
-          coperți de carton — a păstrat, spune ea, „câteva lucruri de care nu m-am putut despărți”.</p>
+          coperți de carton — a păstrat, spune el, „câteva lucruri de care nu m-am putut despărți”.</p>
 
         <p>„Oamenii cred că paraziții sunt ceva de demult. Din sărăcie. Din alte țări. E o închipuire care costă ani
           de viață. Sunt aici, la noi, în lucrurile obișnuite: <strong>în carnea de la tăierea porcului, dacă n-a
@@ -1409,18 +1132,20 @@
       <div class="pad">
         <h2>Dosarul pe care nu l-a putut arunca</h2>
 
-        <div class="who">Lidia Anghelescu</div>
-        <p>— Îl chema Vasile Tămaș. Cincizeci și șapte de ani. Lucrase paisprezece ani în construcții, în Italia, și
-          se întorsese acasă, la Săpânța, să-și facă o casă. Nu l-am văzut niciodată. I-am văzut doar numele, pe trei
-          buletine de analiză, în doi ani.</p>
+        <div class="who">Dr. Sabin Herțeg</div>
+        <p>— Îl chema Vasile Tămaș. Cincizeci și nouă de ani. Lucrase paisprezece ani în construcții, în Italia, și se
+          întorsese acasă, la Săpânța, să-și facă o casă. Nu l-am văzut niciodată viu. Am văzut doar dosarul lui — și
+          pe el.</p>
 
-        <p>De trei ori a trimis probă. De trei ori am scris „negativ”. Ultima dată, doctorul lui a notat pe trimitere:
-          „astenie marcată, scădere ponderală, fără cauză decelabilă”. Adică: omul se topește și nu știm de ce.</p>
+        <p>În doi ani făcuse de trei ori analize. De trei ori i-au ieșit curate. Ultima dată, medicul lui a notat pe
+          trimitere: „astenie marcată, scădere ponderală, fără cauză decelabilă”. Adică: omul se topește și nu știm
+          de ce.</p>
 
-        <p>Am aflat peste doi ani, de la o colegă. Făcuse un accident vascular. Avea 59 de ani.</p>
+        <p>A ajuns la mine pe masă într-o marți. Accident vascular, la 59 de ani. Iar în intestinele lui era exact
+          ce n-avea ce căuta acolo — sub aceeași pojghiță cenușie.</p>
 
-        <div class="pull">„Trei hârtii cu semnătura mea. Toate corecte după procedură. Și toate trei greșite pentru
-          omul acela.”</div>
+        <div class="pull">„În acte am scris consecința. Despre cauza dintâi — niciun cuvânt. Așa e aproape
+          întotdeauna.”</div>
 
         <p>— Nu spun că paraziții l-au omorât. Nu pot să spun asta și nu o voi spune niciodată. Spun altceva:
           <strong>nimeni nu a căutat mai departe, pentru că avea trei hârtii care ziceau că nu e nimic.</strong> Așa
@@ -1446,7 +1171,7 @@
           </figcaption>
         </figure>
 
-        <div class="who">Lidia Anghelescu</div>
+        <div class="who">Dr. Sabin Herțeg</div>
         <p>— Întrebarea asta am auzit-o de o mie de ori: „Doamnă, dar eu îmi fac analize în fiecare an și e totul
           bine.” Vă explic de ce asta nu înseamnă mare lucru.</p>
 
@@ -1479,7 +1204,7 @@
         <h2>„Pastila de la farmacie lovește o specie. Iar în om trăiesc zeci”</h2>
         <p class="dek">De ce tratamentul obișnuit dă greș aproape întotdeauna — și ce face el, de fapt, ficatului</p>
 
-        <div class="who">Lidia Anghelescu</div>
+        <div class="who">Dr. Sabin Herțeg</div>
         <p>— A doua închipuire, la fel de scumpă ca prima: că e destul să înghiți o pastilă și gata. În corpul omului
           trăiesc zeci de specii — unele în intestin, altele în ficat, altele în căile biliare, altele în mușchi. O
           pastilă de farmacie lovește cel mult una sau două. Restul rămân, se înmulțesc, continuă.</p>
@@ -1521,7 +1246,7 @@
       <div class="pad">
         <h2>Cazuri care mi-au schimbat privirea — și vă vor schimba felul în care vă priviți propria sănătate</h2>
 
-        <div class="who">Lidia Anghelescu</div>
+        <div class="who">Dr. Sabin Herțeg</div>
         <p>— Dați-mi voie să vă spun ce am avut în registru an după an. Nu cifre. Nu statistici. Oameni. Oameni cu
           nume, care până în ultima zi au crezut că problema lor e cu totul altceva.</p>
 
@@ -1537,7 +1262,7 @@
         <div class="tst">
           <p>„Eram obosită tot timpul, palidă, stoarsă. Doctorii ziceau: «lipsă de fier, luați pastile». Le-am luat
             ani de zile. Nimic. Nimeni n-a întrebat dacă nu cumva ia altcineva fierul ăla din mine. Și îl lua.”</p>
-          <cite>din cazurile despre care vorbește doamna Anghelescu</cite>
+          <cite>din cazurile despre care vorbește domnul Herțeg</cite>
         </div>
 
         <!-- IMG 6 -->
@@ -1552,14 +1277,14 @@
           <p>„Slăbeam, deși mâncam normal. Nevastă-mea glumea că am «metabolism rapid». N-a fost de râs. Mânca ceva
             în locul meu, din mine. Am înțeles prea târziu ca să-mi mai fie de folos — dar dumneavoastră, cei care
             citiți asta, nu sunteți încă acolo.”</p>
-          <cite>din cazurile despre care vorbește doamna Anghelescu</cite>
+          <cite>din cazurile despre care vorbește domnul Herțeg</cite>
         </div>
 
         <h2>Semnele pe care le pune toată lumea pe seama anilor</h2>
-        <p class="dek">Bifați-le pe cele pe care le recunoașteți la dumneavoastră. Doamna Anghelescu spune că, dacă
-          adunați trei sau mai multe, merită să vă puneți întrebarea — indiferent ce scrie pe ultimele analize.</p>
+        <p class="dek">Domnul Herțeg spune că, dacă vă regăsiți în trei sau mai multe, merită să vă puneți
+          întrebarea — indiferent ce scrie pe ultimele analize</p>
 
-        <ul class="check" id="simptome">
+        <ul class="check">
           <li>Oboseală care nu trece — dormiți opt ore și vă treziți ca după o zi de coasă;</li>
           <li>Balonare, gaze, greutate după masă — „parcă fierbe ceva în burtă”;</li>
           <li>Constipație și diaree care se schimbă între ele fără motiv;</li>
@@ -1573,13 +1298,6 @@
           <li>Răceli și infecții dese — un corp care nu mai are cu ce să se apere.</li>
         </ul>
 
-        <div class="tally" id="tally" hidden>
-          <div class="tally__n"><span id="tallyN">0</span>/11</div>
-          <div class="tally__t" id="tallyT">Bifați semnele pe care le recunoașteți.</div>
-        </div>
-
-        <div class="verdict" id="verdict"></div>
-
         <p>Fiecare dintre ele se pune ușor pe seama altui lucru. Exact de asta rămân nedescoperite ani întregi.</p>
 
         <div class="bang">Intoxicare cronică, imunitate slăbită, ficat și intestine care cedează — și un corp care an
@@ -1591,8 +1309,8 @@
               dumneavoastră, nici pentru cei de lângă dumneavoastră.</strong></p>
         </div>
 
-        <div class="who">Lidia Anghelescu</div>
-        <p>— Eu am privit toată viața consecințele. Dar soluția nu a venit dintr-un laborator. A venit dintr-o stână.
+        <div class="who">Dr. Sabin Herțeg</div>
+        <p>— Eu am privit toată viața consecințele. Dar soluția nu a venit din sala de autopsie. A venit dintr-o stână.
           De la un om care nu are nicio diplomă de medic, dar care face de cincizeci de ani, corect, un lucru pe care
           noi, oamenii, nu ni-l facem niciodată nouă înșine.</p>
       </div>
@@ -1685,7 +1403,7 @@
           fără ocolișuri: «Aurico, tu ai fața mamei mele înainte să se curețe. Ia și bea asta trei săptămâni.» M-am
           supărat pe el, să vă spun drept. Am luat pachetul mai mult ca să scap. A treia zi mi-am dat seama că burta
           nu mă mai apasă cum mă apăsa de ani de zile. Am pus-o pe seama întâmplării. Abia mai târziu, când mi-a
-          explicat doamna Anghelescu, am înțeles ce se petrecuse de fapt.</p>
+          explicat domnul Herțeg, am înțeles ce se petrecuse de fapt.</p>
       </div>
 
       <hr class="div">
@@ -1715,12 +1433,12 @@
 
       <!-- ===== PROOF ===== -->
       <div class="pad">
-        <h2>„Am fost sceptică. Rezultatele nu m-au lăsat să rămân”</h2>
+        <h2>„Am fost sceptic. Rezultatele nu m-au lăsat să rămân”</h2>
         <p class="dek">Observație pe 2 340 de persoane, cu vârste între 45 și 86 de ani</p>
 
-        <div class="who">Lidia Anghelescu</div>
-        <p>— Când am auzit prima dată de un ceai din plante, am zâmbit. Treizeci și patru de ani de laborator te învață
-          să nu crezi în povești. Dar ce arătau oamenii care îl beau era prea limpede ca să pot închide ochii. Un grup
+        <div class="who">Dr. Sabin Herțeg</div>
+        <p>— Când am auzit prima dată de un ceai din plante, am zâmbit. Treizeci și patru de ani la masa de autopsie te
+          învață să nu crezi în povești. Dar ce arătau oamenii care îl beau era prea limpede ca să pot închide ochii. Un grup
           de specialiști a lărgit observația pe peste 2 300 de oameni din toată țara — cu exact acele simptome pe care
           aproape nimeni nu le lega de așa ceva.</p>
 
@@ -1866,7 +1584,7 @@
         <p class="dek">Nu doar cazurile grele au de câștigat. Oricine a trecut de 40 de ani și simte primele semne
           poate scurta cu ani povestea asta.</p>
 
-        <div class="who">Lidia Anghelescu</div>
+        <div class="who">Dr. Sabin Herțeg</div>
         <p>— Cura ține de obicei între trei și patru săptămâni, iar la cei care duc problema de mult poate ține și mai
           mult. <strong>O singură cură, făcută până la capăt, e de ajuns</strong> — nu e ceva ce se bea permanent.
           Unii o repetă mai târziu o dată pe an, preventiv, exact cum se face la animale, pentru că totul poate fi
@@ -1879,7 +1597,6 @@
         <p>Datorită amestecului lui Toader Bumbu, mii de oameni din România au dus cura până la capăt. Câteva
           cazuri:</p>
 
-        <div class="minigrid">
         <!-- IMG 10 -->
         <div class="mini">
           <img src="https://static.joxi.pro/1778142925769-baf151ad-77dc-450d-9a89-3293efafacfa.jpg"
@@ -1911,9 +1628,8 @@
           <p><b>Bărbat, 70 de ani, Alba.</b> Balonare permanentă, insomnie, scrâșnit din dinți. După cură: somn
             liniștit, tranzit normal, greutate revenită.</p>
         </div>
-        </div>
 
-        <div class="who">Lidia Anghelescu</div>
+        <div class="who">Dr. Sabin Herțeg</div>
         <p>— Eu am privit toată viața ce lasă în urmă. De asta cazurile astea mă ating: de îndată ce povara e luată,
           corpul se ridică singur. Fără chimie tare. Fără pastile care lovesc ficatul. <strong>Trupul omului e
             puternic — trebuie doar să-i iei la timp ceea ce îl macină.</strong></p>
@@ -1925,7 +1641,7 @@
       <div class="pad">
         <h2>De ce nu-l găsiți în farmacii? Și cum se poate ajunge la el</h2>
 
-        <div class="who">Lidia Anghelescu</div>
+        <div class="who">Dr. Sabin Herțeg</div>
         <p>Producția este lentă și migăloasă. Cum îmi explica badea Toader, plantele trebuie culese la momentul lor și
           potrivite în proporția exactă. Totul se face în cantități mici, cu mâna, și nu poate acoperi cererea.</p>
 
@@ -1963,7 +1679,7 @@
           organiza livrarea prin curier sau prin poștă în 2–3 zile, direct la adresa dumneavoastră.</p>
 
         <div class="pull">„După treizeci și patru de ani în care am semnat hârtii, singurul sfat pe care îl dau este
-          să nu vă bazați pe ele. Curățați-vă la timp.” — Lidia Anghelescu</div>
+          să nu vă bazați pe ele. Curățați-vă la timp.” — dr. Sabin Herțeg</div>
 
         <div class="warn">
           Actualizare, <script>dtime_nums(0, true)</script>: din cauza interesului foarte mare, stocurile se pot
@@ -1980,26 +1696,12 @@
           oferit următoarei persoane de pe listă.
         </div>
 
-        <div class="timer">
-          <div class="timer__t">Programul se închide astăzi la miezul nopții</div>
-          <div class="timer__d">
-            <div class="timer__u"><b id="tH">00</b><span>ore</span></div>
-            <div class="timer__u"><b id="tM">00</b><span>min</span></div>
-            <div class="timer__u"><b id="tS">00</b><span>sec</span></div>
-          </div>
-        </div>
-
-        <p class="rez">Locul dumneavoastră este rezervat<b>Nr. <span id="rezNr">19 974</span></b></p>
+        <p class="rez">Locul dumneavoastră este rezervat<b>Nr. 19 974</b></p>
       </div>
 
       <!-- ===== FORM ===== -->
       <div class="pad" id="oneform">
-        <div class="peek" id="peek" hidden>
-          <div class="peek__t">Ce spun cititorii</div>
-        </div>
-
         <div class="form">
-          <div class="ribbon">−50%</div>
           <div class="form__h">
             <!-- IMG 16 -->
             <img src="images/56d9b0017d1d_d58505c9.png" alt="">
@@ -2009,8 +1711,8 @@
             </div>
           </div>
           <div class="form__b">
-            <p class="form__i">Prețul din program este rezervat pentru dumneavoastră. Apăsați butonul, apoi lăsați
-              numele și numărul de telefon — vă sună un consultant.</p>
+            <p class="form__i">Pentru a beneficia de reducerea de <b>50%</b>, introduceți numele și numărul de telefon
+              în câmpurile de mai jos, apoi apăsați butonul „COMANDĂ”.</p>
 
             <div class="stk">
               <span>Stoc disponibil</span>
@@ -2021,9 +1723,8 @@
             <div class="price">
               <s>398 RON</s>
               <b>199 RON</b>
+              <em>−50%</em>
             </div>
-
-            <p class="perday">Adică <b>6,6 lei pe zi</b>, cât ține cura de o lună.</p>
 
             <form action="/order.php" method="post">
               <input type="hidden" name="fbpx" value="{fbpx}">
@@ -2033,46 +1734,25 @@
               <input type="hidden" name="hash" value="{hash}">
               <input type="hidden" name="country" value="RO">
 
-              <button class="step1" id="step1" type="button" hidden>Vreau reducerea de 50%</button>
-
-              <div class="step2" id="step2">
-                <div class="fld name-input">
-                  <label for="name-input">Nume</label>
-                  <input autocomplete="name" id="name-input" name="name" placeholder="Numele dumneavoastră" required
-                    type="text" value="">
-                </div>
-
-                <div class="fld phone-input">
-                  <label for="phone-input">Număr de telefon</label>
-                  <input autocomplete="tel" id="phone-input" maxlength="20" name="phone"
-                    pattern="^[\-+() 0-9]{10,20}$" placeholder="07XX XXX XXX" required type="tel" value="">
-                </div>
-
-                <button class="button-submit" type="submit">Trimite comanda</button>
-                <p class="reassure">Nu plătiți nimic acum — plata se face la primire.</p>
+              <div class="fld name-input">
+                <label for="name-input">Nume</label>
+                <input autocomplete="name" id="name-input" name="name" placeholder="Numele dumneavoastră" required
+                  type="text" value="">
               </div>
+
+              <div class="fld phone-input">
+                <label for="phone-input">Număr de telefon</label>
+                <input autocomplete="tel" id="phone-input" maxlength="20" name="phone" pattern="^[\-+() 0-9]{10,20}$"
+                  placeholder="07XX XXX XXX" required type="tel" value="">
+              </div>
+
+              <button class="button-submit" type="submit">Comandă</button>
             </form>
 
-            <ul class="tiles">
-              <li>
-                <svg viewBox="0 0 24 24">
-                  <path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z" />
-                  <circle cx="7" cy="18" r="2" />
-                  <circle cx="17" cy="18" r="2" />
-                </svg>Livrare prin curier
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24">
-                  <rect x="2" y="6" width="20" height="13" rx="2" />
-                  <path d="M2 10h20M6 15h4" />
-                </svg>Plata la primire
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24">
-                  <path d="M3 8l9-4 9 4-9 4z" />
-                  <path d="M3 8v8l9 4 9-4V8" />
-                </svg>Ambalaj discret
-              </li>
+            <ul class="gua">
+              <li>Livrare prin curier, la adresa indicată de dumneavoastră</li>
+              <li>Plata la primire — nu plătiți nimic în avans</li>
+              <li>Pe cutie nu scrie nimic — ambalaj discret</li>
             </ul>
 
             <!-- IMG 17 -->
@@ -2266,22 +1946,8 @@
     </footer>
   </div>
 
-  <div class="progress" id="progress"></div>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
-    /* ============================================================
-       Comutatoare A/B — puneti false ca sa opriti un element.
-       ============================================================ */
-    var CFG = {
-      progressBar: true,   // 6.  bara de progres a lecturii
-      symptomTally: true,  // 1.  lista de simptome bifabila + contor
-      twoStepForm: true,   // 2.  formular in doi pasi
-      liveStock: true,     // 3.  stocul si numarul de rezervare se misca
-      countdown: true,     // 4.  cronometru pana la miezul noptii
-      commentPeek: true    // 8.  3 comentarii mutate deasupra formularului
-    };
-
     (function () {
       var imgs = document.querySelectorAll('img');
       for (var i = 2; i < imgs.length; i++) {
@@ -2290,136 +1956,28 @@
       }
     })();
 
-    /* --- 6. bara de progres --- */
-    if (CFG.progressBar) {
-      var bar = document.getElementById('progress');
-      var tick = function () {
-        var d = document.documentElement;
-        var max = d.scrollHeight - d.clientHeight;
-        bar.style.width = (max > 0 ? (d.scrollTop || document.body.scrollTop) / max * 100 : 0) + '%';
-      };
-      window.addEventListener('scroll', tick, { passive: true });
-      window.addEventListener('resize', tick);
-      tick();
-    } else {
-      document.getElementById('progress').style.display = 'none';
-    }
-
-    /* --- 1. simptome bifabile + contor + verdict --- */
-    if (CFG.symptomTally) {
-      var list = document.getElementById('simptome');
-      var tally = document.getElementById('tally');
-      var tN = document.getElementById('tallyN');
-      var tT = document.getElementById('tallyT');
-      var verdict = document.getElementById('verdict');
-      tally.hidden = false;
-
-      var render = function () {
-        var n = list.querySelectorAll('li.on').length;
-        tN.textContent = n;
-        if (n === 0) {
-          tT.textContent = 'Bifați semnele pe care le recunoașteți.';
-        } else if (n < 3) {
-          tT.textContent = 'Ați bifat ' + n + '. Citiți lista până la capăt — multe trec neobservate.';
-        } else {
-          tT.textContent = 'Ați bifat ' + n + ' din 11 semne.';
-        }
-        if (n >= 3) {
-          verdict.textContent = 'Trei sau mai multe semne dintr-o dată nu mai țin de vârstă. ' +
-            'Doamna Anghelescu spune limpede: la un asemenea tablou, o analiză „curată" nu înseamnă nimic ' +
-            'dacă nu a fost repetată de trei ori.';
-          verdict.classList.add('on');
-        } else {
-          verdict.classList.remove('on');
-        }
-      };
-
-      Array.prototype.forEach.call(list.querySelectorAll('li'), function (li) {
-        li.setAttribute('role', 'checkbox');
-        li.setAttribute('aria-checked', 'false');
-        li.setAttribute('tabindex', '0');
-        var toggle = function () {
-          li.classList.toggle('on');
-          li.setAttribute('aria-checked', li.classList.contains('on') ? 'true' : 'false');
-          render();
-        };
-        li.addEventListener('click', toggle);
-        li.addEventListener('keydown', function (e) {
-          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); toggle(); }
-        });
-      });
-      render();
-    }
-
-    /* --- 4. cronometru pana la miezul noptii --- */
-    if (CFG.countdown) {
-      var pad = function (n) { return (n < 10 ? '0' : '') + n; };
-      var beat = function () {
-        var now = new Date();
-        var end = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0);
-        var s = Math.max(0, Math.floor((end - now) / 1000));
-        document.getElementById('tH').textContent = pad(Math.floor(s / 3600));
-        document.getElementById('tM').textContent = pad(Math.floor(s % 3600 / 60));
-        document.getElementById('tS').textContent = pad(s % 60);
-      };
-      beat();
-      setInterval(beat, 1000);
-    } else {
-      var tEl = document.querySelector('.timer');
-      if (tEl) tEl.style.display = 'none';
-    }
-
-    /* --- 3. stoc si numar de rezervare in miscare --- */
-    if (CFG.liveStock) {
+    /* Stocul scade in timp real — singurul element dinamic din pagina. */
+    (function () {
       var pack = document.querySelector('.left-pack');
       var fill = document.querySelector('.stkbar i');
-      var rez = document.getElementById('rezNr');
+      if (!pack || !fill) return;
       var left = parseInt(pack.textContent, 10);
-      var nr = 19974;
       var step = function () {
         if (left > 7) {
           left--;
           pack.textContent = left;
           fill.style.width = (left / 1000 * 100) + '%';
         }
-        if (nr < 19998) {
-          nr++;
-          rez.textContent = String(nr).replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
-        }
         setTimeout(step, 40000 + Math.random() * 50000);
       };
       setTimeout(step, 25000 + Math.random() * 20000);
-    }
+    })();
 
     $(function () {
       $('a[href="#oneform"], a[href="#"]').on('touchend click', function (e) {
         e.preventDefault();
         $('body,html').animate({ scrollTop: $('#oneform').offset().top - 10 }, 400);
       });
-
-      /* --- 2. formular in doi pasi --- */
-      if (CFG.twoStepForm) {
-        var $s1 = $('#step1'), $s2 = $('#step2');
-        $s2.attr('hidden', true);
-        $s1.removeAttr('hidden').on('click', function () {
-          $s1.attr('hidden', true);
-          $s2.removeAttr('hidden');
-          setTimeout(function () { $('#name-input').trigger('focus'); }, 60);
-        });
-      }
-
-      /* --- 8. trei comentarii ridicate deasupra formularului ---
-         Sunt MUTATE, nu copiate: altfel acelasi om ar aparea de doua ori.
-         Alegem doar comentarii de sine statatoare, ca sa nu rupem firul
-         intrebare -> doua raspunsuri, care ramane intreg mai jos. */
-      if (CFG.commentPeek) {
-        var $peek = $('#peek');
-        var $all = $('.cms .cm');
-        $.each([1, 2, 8], function (_, i) {
-          if ($all.eq(i).length) $peek.append($all.eq(i).detach());
-        });
-        if ($peek.find('.cm').length) $peek.removeAttr('hidden');
-      }
 
       $('[name="name"]').on('input', function () {
         var cleaned = $(this).val()
