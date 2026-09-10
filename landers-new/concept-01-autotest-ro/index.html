@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Test articulații — 7 mișcări, 2 minute</title>
+<style>
+:root{
+  --ink:#0f2233; --ink-2:#3d5468; --ink-3:#6b8098;
+  --line:#dde5ec; --bg:#f4f7f9; --card:#fff;
+  --brand:#0e6b7a; --brand-2:#0b5563; --brand-soft:#e6f2f4;
+  --green:#1c7a4f; --amber:#a86a08; --red:#a72f2f;
+  --green-s:#e8f4ee; --amber-s:#fcf3e3; --red-s:#f9eaea;
+  --r:14px; --maxw:720px;
+  --fs:17px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:var(--fs)/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 18px}
+section{padding-block:34px}
+h1,h2,h3{line-height:1.25;margin:0 0 14px;font-weight:700;letter-spacing:-.015em}
+h1{font-size:clamp(26px,5.4vw,38px)}
+h2{font-size:clamp(21px,4.2vw,27px);margin-top:6px}
+h3{font-size:19px}
+p{margin:0 0 15px}
+strong{font-weight:660}
+.lead{font-size:clamp(17px,3.4vw,19px);color:var(--ink-2)}
+.muted{color:var(--ink-3);font-size:15px;line-height:1.55}
+
+/* ── bara utilitară ── */
+.topbar{background:var(--brand-2);color:#fff;font-size:13.5px;letter-spacing:.02em}
+.topbar .wrap{display:flex;gap:10px;align-items:center;justify-content:space-between;
+  padding-block:9px;flex-wrap:wrap}
+.topbar b{font-weight:600}
+.topbar span{opacity:.8}
+
+/* ── hero ── */
+.hero{background:var(--card);border-bottom:1px solid var(--line);padding-block:38px 30px}
+.kicker{display:inline-block;background:var(--brand-soft);color:var(--brand-2);
+  font-size:13px;font-weight:650;letter-spacing:.06em;text-transform:uppercase;
+  padding:6px 11px;border-radius:99px;margin-bottom:16px}
+.hero ul{margin:18px 0 0;padding:0;list-style:none;display:grid;gap:9px}
+.hero li{position:relative;padding-left:26px;color:var(--ink-2);font-size:16px}
+.hero li::before{content:"";position:absolute;left:4px;top:9px;width:8px;height:8px;
+  border-radius:50%;background:var(--brand)}
+
+/* ── butoane ── */
+.btn{display:block;width:100%;border:0;border-radius:12px;cursor:pointer;
+  background:var(--brand);color:#fff;font:650 18px/1.3 inherit;padding:17px 20px;
+  text-align:center;transition:background .15s}
+.btn:hover{background:var(--brand-2)}
+.btn-lg{font-size:19px;padding:19px 20px}
+.btn-ghost{background:transparent;color:var(--ink-3);font:500 15px/1 inherit;
+  padding:12px;border:0;cursor:pointer;width:auto}
+.btn-ghost:hover{color:var(--ink)}
+
+/* ── card ── */
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.card+.card{margin-top:14px}
+
+/* ── test ── */
+#test{scroll-margin-top:14px}
+.progress{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.progress .track{flex:1;height:6px;background:var(--line);border-radius:99px;overflow:hidden}
+.progress .fill{height:100%;width:0;background:var(--brand);border-radius:99px;
+  transition:width .3s ease}
+.progress .n{font-size:14px;color:var(--ink-3);font-variant-numeric:tabular-nums;white-space:nowrap}
+.q-task{background:var(--brand-soft);border-radius:10px;padding:13px 15px;margin:0 0 18px;
+  font-size:15.5px;color:var(--brand-2);line-height:1.5}
+.q-task b{display:block;font-size:13px;letter-spacing:.05em;text-transform:uppercase;
+  margin-bottom:4px;opacity:.75}
+.q-text{font-size:20px;font-weight:660;line-height:1.35;margin:0 0 18px}
+.opts{display:grid;gap:10px}
+.opt{display:block;width:100%;text-align:left;background:#fff;border:1.5px solid var(--line);
+  border-radius:11px;padding:15px 17px;font:500 16.5px/1.4 inherit;color:var(--ink);
+  cursor:pointer;transition:border-color .12s,background .12s}
+.opt:hover{border-color:var(--brand);background:var(--brand-soft)}
+
+/* ── rezultat ── */
+.result{display:none}
+.result.on{display:block}
+.zone{border-radius:var(--r);padding:22px;border:1px solid}
+.zone h2{margin-top:0}
+.zone.green{background:var(--green-s);border-color:#bfe0cd;color:var(--green)}
+.zone.amber{background:var(--amber-s);border-color:#eed6ae;color:var(--amber)}
+.zone.red{background:var(--red-s);border-color:#eec4c4;color:var(--red)}
+.zone p{color:var(--ink)}
+.score{display:flex;align-items:baseline;gap:9px;margin-bottom:12px;
+  font-variant-numeric:tabular-nums}
+.score b{font-size:40px;font-weight:700;line-height:1}
+.score span{font-size:15px;color:var(--ink-2)}
+.meter{display:flex;gap:5px;margin:16px 0 4px}
+.meter i{flex:1;height:9px;border-radius:3px;background:#fff;border:1px solid rgba(0,0,0,.08)}
+.meter i.on{border-color:transparent}
+.meter i.g.on{background:#2f9e69} .meter i.a.on{background:#d69022} .meter i.r.on{background:#c94b4b}
+.meter-lab{display:flex;justify-content:space-between;font-size:12.5px;color:var(--ink-3)}
+
+/* ── liste ── */
+.list{margin:0;padding:0;list-style:none;display:grid;gap:13px}
+.list li{position:relative;padding-left:30px}
+.list li::before{content:"";position:absolute;left:6px;top:10px;width:9px;height:9px;
+  border-radius:2px;background:var(--brand);opacity:.55}
+.steps{counter-reset:s;margin:0;padding:0;list-style:none;display:grid;gap:16px}
+.steps li{counter-increment:s;position:relative;padding-left:52px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:-2px;width:36px;height:36px;
+  border-radius:10px;background:var(--brand-soft);color:var(--brand-2);
+  font-weight:700;font-size:17px;display:grid;place-items:center}
+.steps h3{margin-bottom:6px}
+
+/* ── faq ── */
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:0 18px;margin-bottom:10px}
+details+details{margin-top:0}
+summary{cursor:pointer;padding:16px 0;font-weight:640;font-size:17px;list-style:none;
+  display:flex;justify-content:space-between;gap:14px;align-items:flex-start}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--brand);font-size:22px;line-height:1;flex:none;
+  font-weight:400}
+details[open] summary::after{content:"–"}
+details .body{padding-bottom:16px;color:var(--ink-2)}
+details .body p:last-child{margin-bottom:0}
+
+/* ── formular ── */
+.form-card{background:var(--card);border:2px solid var(--brand);border-radius:var(--r);
+  padding:24px 22px;scroll-margin-top:14px}
+.price{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:0 0 18px;
+  padding-bottom:18px;border-bottom:1px solid var(--line)}
+.price .new{font-size:34px;font-weight:700;color:var(--brand-2);line-height:1}
+.price .old{font-size:19px;color:var(--ink-3);text-decoration:line-through}
+.price .tag{background:var(--brand-soft);color:var(--brand-2);font-size:13.5px;font-weight:650;
+  padding:5px 10px;border-radius:7px}
+label{display:block;font-size:14.5px;font-weight:600;color:var(--ink-2);margin:0 0 7px}
+input[type=text],input[type=tel]{width:100%;border:1.5px solid var(--line);border-radius:11px;
+  padding:15px 16px;font:16.5px/1.3 inherit;color:var(--ink);background:#fff;margin-bottom:16px}
+input:focus{outline:2px solid var(--brand);outline-offset:1px;border-color:transparent}
+.after{margin-top:18px;padding-top:18px;border-top:1px solid var(--line)}
+.after ol{margin:0;padding-left:20px;color:var(--ink-2);font-size:15.5px;display:grid;gap:7px}
+
+/* ── diverse ── */
+.note{background:#fff;border-left:3px solid var(--brand);border-radius:0 10px 10px 0;
+  padding:14px 16px;font-size:15px;color:var(--ink-2);margin:18px 0}
+.svg-box{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  padding:20px 16px;margin:18px 0}
+.svg-box svg{display:block;width:100%;height:auto;max-width:100%}
+.cap{font-size:14px;color:var(--ink-3);margin:12px 0 0;text-align:center;line-height:1.5}
+table{width:100%;border-collapse:collapse;font-size:15.5px}
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+th,td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-3);font-weight:650}
+td:first-child{font-weight:640;white-space:nowrap}
+footer{background:var(--brand-2);color:#cfe0e4;padding-block:26px;font-size:14px;line-height:1.6}
+footer a{color:#fff}
+.disclaimer{font-size:13.5px;color:var(--ink-3);line-height:1.55;margin-top:16px}
+.hide{display:none!important}
+@media (max-width:520px){
+  :root{--fs:16.5px}
+  .card,.form-card{padding:19px 16px}
+  .steps li{padding-left:46px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <b>Test de autoevaluare a articulațiilor</b>
+    <span>7 mișcări · aproximativ 2 minute</span>
+  </div>
+</div>
+
+<!-- ══ 1. HOOK: provocare, nu poveste ══ -->
+<div class="hero">
+  <div class="wrap">
+    <span class="kicker">Faceți-l acum, de pe scaun</span>
+    <h1>Șapte mișcări vă arată în ce stadiu sunt articulațiile dumneavoastră astăzi</h1>
+    <p class="lead">Nu aveți nevoie de analize, de programare sau de radiografie.
+      Aveți nevoie de un scaun și de două minute. La final vedeți unde vă aflați —
+      și, mai important, ce se întâmplă în articulație exact în acest stadiu.</p>
+    <ul>
+      <li>Fiecare pas este o mișcare pe care o faceți chiar acum</li>
+      <li>Rezultatul apare imediat, fără să lăsați date</li>
+      <li>Testul nu este un diagnostic medical — este o orientare</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ══ 2. DE CE CONTEAZĂ: inamicul intern ══ -->
+<section>
+  <div class="wrap">
+    <h2>De ce durerea apare mult mai târziu decât problema</h2>
+    <p>Cartilajul articular nu are terminații nervoase proprii. Asta înseamnă un lucru
+      incomod: <strong>cartilajul nu doare</strong>. Când începeți să simțiți durere,
+      semnalul vine deja de la structurile din jur — os subcondral, membrană sinovială,
+      ligamente.</p>
+    <p>De aceea „mă doare de câteva luni” descrie aproape întotdeauna un proces mai vechi
+      de câteva luni. Și de aceea un test funcțional — cum vă mișcați — spune mai mult
+      decât întrebarea „cât de tare vă doare”.</p>
+    <div class="note">Testul de mai jos nu măsoară durerea. Măsoară <strong>ce mai
+      puteți face</strong>. Este singurul lucru pe care îl puteți verifica singur,
+      acasă, în două minute.</div>
+  </div>
+</section>
+
+<!-- ══ 3. OGLINDA: testul ══ -->
+<section id="test">
+  <div class="wrap">
+    <div class="card" id="test-card">
+      <div class="progress">
+        <div class="track"><div class="fill" id="bar"></div></div>
+        <div class="n"><span id="qn">1</span> / 7</div>
+      </div>
+      <div class="q-task" id="task"><b>Ce faceți acum</b><span id="task-t"></span></div>
+      <p class="q-text" id="qtext"></p>
+      <div class="opts" id="opts"></div>
+      <button class="btn-ghost hide" id="back" type="button">← Înapoi la întrebarea anterioară</button>
+    </div>
+
+    <!-- rezultat -->
+    <div class="result" id="result">
+      <div class="zone" id="zone">
+        <div class="score"><b id="pts">0</b><span>din 14 puncte de limitare</span></div>
+        <div class="meter" id="meter"></div>
+        <div class="meter-lab"><span>fără limitări</span><span>limitare severă</span></div>
+        <h2 id="ztitle"></h2>
+        <div id="ztext"></div>
+      </div>
+      <div class="card">
+        <h3>Ce a arătat testul, pe scurt</h3>
+        <div id="zdetail"></div>
+        <p class="muted">Acest rezultat este o orientare funcțională, nu un diagnostic.
+          Numai un medic poate stabili un diagnostic, pe baza unei examinări.</p>
+      </div>
+      <div class="card">
+        <p style="margin-bottom:16px"><strong>Mai jos urmează partea importantă:</strong>
+          de ce articulațiile ajung aici și care sunt cele trei lucruri care chiar
+          schimbă traiectoria.</p>
+        <button class="btn" type="button" onclick="document.getElementById('mecanism').scrollIntoView({behavior:'smooth',block:'start'})">Continuați →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 4. INAMICUL: cercul vicios ══ -->
+<section id="mecanism">
+  <div class="wrap">
+    <h2>Cercul care închide problema — și de ce analgezicele nu îl rup</h2>
+    <p>Cartilajul nu are vase de sânge. Nu primește hrană prin circulație, așa cum
+      primesc mușchii. Se hrănește prin <strong>difuzie</strong>: la fiecare pas,
+      la fiecare flexie, cartilajul este comprimat și eliberat, iar lichidul sinovial
+      intră și iese din el ca dintr-un burete.</p>
+    <p>Concluzia este contraintuitivă și aproape nimeni nu o spune clar:
+      <strong>mișcarea este mecanismul de hrănire al cartilajului.</strong>
+      Mai puțină mișcare înseamnă mai puțină hrană.</p>
+
+    <div class="svg-box">
+      <svg viewBox="0 0 400 452" role="img" aria-label="Cercul vicios: durere, mai puțină mișcare, hrănire redusă, uzură accelerată, sarcină greșită, înapoi la durere">
+        <defs>
+          <marker id="ar" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M0 0 L10 5 L0 10 z" fill="#0e6b7a"/>
+          </marker>
+        </defs>
+        <g font-family="-apple-system,Segoe UI,Roboto,Arial" fill="#0f2233">
+          <g>
+            <rect x="16" y="6" width="300" height="56" rx="12" fill="#f9eaea" stroke="#eec4c4"/>
+            <text x="166" y="31" text-anchor="middle" font-size="18" font-weight="650">Durere</text>
+            <text x="166" y="50" text-anchor="middle" font-size="14" fill="#3d5468">rigiditate, disconfort</text>
+          </g>
+          <g>
+            <rect x="16" y="92" width="300" height="56" rx="12" fill="#fff" stroke="#dde5ec"/>
+            <text x="166" y="117" text-anchor="middle" font-size="18" font-weight="650">Mai puțină mișcare</text>
+            <text x="166" y="136" text-anchor="middle" font-size="14" fill="#3d5468">menajați articulația</text>
+          </g>
+          <g>
+            <rect x="16" y="178" width="300" height="56" rx="12" fill="#fff" stroke="#dde5ec"/>
+            <text x="166" y="203" text-anchor="middle" font-size="18" font-weight="650">Hrănire redusă</text>
+            <text x="166" y="222" text-anchor="middle" font-size="14" fill="#3d5468">difuzia lichidului sinovial scade</text>
+          </g>
+          <g>
+            <rect x="16" y="264" width="300" height="56" rx="12" fill="#fff" stroke="#dde5ec"/>
+            <text x="166" y="289" text-anchor="middle" font-size="18" font-weight="650">Uzură accelerată</text>
+            <text x="166" y="308" text-anchor="middle" font-size="14" fill="#3d5468">cartilajul se subțiază</text>
+          </g>
+          <g>
+            <rect x="16" y="350" width="300" height="56" rx="12" fill="#fff" stroke="#dde5ec"/>
+            <text x="166" y="375" text-anchor="middle" font-size="18" font-weight="650">Sarcină greșită</text>
+            <text x="166" y="394" text-anchor="middle" font-size="14" fill="#3d5468">os pe os, inflamație</text>
+          </g>
+          <g fill="none" stroke="#0e6b7a" stroke-width="2.2" marker-end="url(#ar)" opacity=".8">
+            <path d="M166 64 L166 88"/>
+            <path d="M166 150 L166 174"/>
+            <path d="M166 236 L166 260"/>
+            <path d="M166 322 L166 346"/>
+            <path d="M320 378 C 366 378 372 352 372 206 C 372 60 358 34 322 34"/>
+          </g>
+          <text x="384" y="206" text-anchor="middle" font-size="13" font-weight="600"
+                fill="#6b8098" letter-spacing=".1em" transform="rotate(90 384 206)">CERC ÎNCHIS</text>
+        </g>
+      </svg>
+      <p class="cap">Analgezicul acționează pe săgeata de sus — reduce semnalul de durere.
+        Restul cercului rămâne intact și continuă să se învârtă.</p>
+    </div>
+
+    <p>Aici este partea care merită spusă direct: <strong>nu ați greșit cu nimic.</strong>
+      Ați făcut exact ce v-a spus bunul-simț — v-a durut, ați menajat articulația.
+      Nimeni nu v-a explicat că exact menajarea este ce reduce hrănirea cartilajului.
+      Asta nu e vina dumneavoastră. Este o informație care pur și simplu nu circulă.</p>
+  </div>
+</section>
+
+<!-- ══ 5. RIDICAREA: cele trei pârghii ══ -->
+<section>
+  <div class="wrap">
+    <h2>Trei lucruri rup cercul. Nu unul — trei</h2>
+    <p>Orice pagină care vă spune că un singur produs rezolvă totul vă minte.
+      Cercul de mai sus are trei puncte în care poate fi rupt, și funcționează
+      numai împreună.</p>
+    <ol class="steps">
+      <li>
+        <h3>Mișcare fără impact</h3>
+        <p>Nu efort, nu „să treacă prin durere”. Amplitudine. Mers pe teren plat,
+          bicicletă staționară, mișcări lente ale genunchiului în poziție șezând.
+          Scopul este pomparea lichidului sinovial, nu antrenamentul.</p>
+      </li>
+      <li>
+        <h3>Sarcina de pe articulație</h3>
+        <p>Fiecare kilogram în plus se traduce în mai multă presiune pe genunchi
+          la fiecare pas. Este pârghia cea mai puțin plăcută și cea mai eficientă
+          dintre cele trei.</p>
+      </li>
+      <li>
+        <h3>Materialul de construcție</h3>
+        <p>Mișcarea pompează lichidul, dar organismul are nevoie și de componentele
+          din care își reface țesutul conjunctiv. Aici intervin nutrienții —
+          și aici intervine, ca al treilea element și nu ca minune, un produs.</p>
+      </li>
+    </ol>
+    <div class="note">Dacă rețineți un singur lucru din pagina asta, rețineți-l pe
+      acesta: primele două pârghii sunt gratuite și nu depind de nimeni. Începeți
+      cu ele astăzi, indiferent ce decideți despre a treia.</div>
+  </div>
+</section>
+
+<!-- ══ 6. PRODUSUL — abia acum, ca a treia pârghie ══ -->
+<section>
+  <div class="wrap">
+    <h2>Jointerra — a treia pârghie</h2>
+    <p>Capsule cu administrare orală, de două ori pe zi. Nu este un analgezic și nu
+      înlocuiește un tratament prescris de medic. Este un supliment alimentar care
+      furnizează componentele pe care organismul le folosește pentru țesutul
+      conjunctiv și articular.</p>
+
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Component</th><th>Sursă</th><th>Doză zilnică</th></tr></thead>
+        <tbody>
+          <tr><td>Omega-3</td><td>semințe de in</td><td>{{DOZA_OMEGA3}}</td></tr>
+          <tr><td>Glucozamină sulfat</td><td>crustacee</td><td>{{DOZA_GLUCOZAMINA}}</td></tr>
+          <tr><td>Citrat de magneziu</td><td>alge marine</td><td>{{DOZA_MAGNEZIU}}</td></tr>
+          <tr><td>Gingerol</td><td>extract de ghimbir</td><td>{{DOZA_GINGEROL}}</td></tr>
+          <tr><td>AKBA</td><td>rășină de tămâie (Boswellia)</td><td>{{DOZA_AKBA}}</td></tr>
+          <tr><td>Siliciu</td><td>extract de coada-calului</td><td>{{DOZA_SILICIU}}</td></tr>
+          <tr><td>Curcumină</td><td>extract de turmeric</td><td>{{DOZA_CURCUMINA}}</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin-top:26px">Ce nu face Jointerra</h3>
+    <ul class="list">
+      <li>Nu este un analgezic și nu este conceput să oprească o durere acută pe loc.</li>
+      <li>Nu înlocuiește consultul medical, tratamentul prescris sau o intervenție
+        recomandată de medicul dumneavoastră.</li>
+      <li>Nu funcționează singur. Fără primele două pârghii, a treia rămâne
+        pe jumătate.</li>
+      <li>Nu acționează în aceeași măsură la toată lumea. Cursul recomandat este de
+        {{DURATA_CURS}} zile — este intervalul pentru care este gândită formula,
+        nu o promisiune de rezultat.</li>
+    </ul>
+    <p class="disclaimer">Supliment alimentar. Nu depășiți doza zilnică recomandată.
+      A nu se lăsa la îndemâna copiilor. Nu se recomandă persoanelor cu alergie la
+      crustacee. Dacă urmați un tratament medicamentos sau sunteți sub supraveghere
+      medicală, consultați medicul înainte de utilizare.</p>
+  </div>
+</section>
+
+<!-- ══ 7. OBIECȚII ══ -->
+<section>
+  <div class="wrap">
+    <h2>Ce ne întreabă oamenii cel mai des</h2>
+
+    <details>
+      <summary>Am mai luat suplimente pentru articulații și nu s-a întâmplat nimic</summary>
+      <div class="body"><p>Este cea mai frecventă situație și, de cele mai multe ori,
+        explicația este una dintre trei: doza a fost prea mică, perioada prea scurtă,
+        sau produsul a fost singura schimbare — fără nicio modificare la mișcare și
+        la sarcină. Cercul din secțiunea de mai sus are trei puncte; atacat într-unul
+        singur, se închide la loc.</p></div>
+    </details>
+
+    <details>
+      <summary>Am peste 70 de ani. Nu este prea târziu?</summary>
+      <div class="body"><p>Vârsta schimbă viteza, nu mecanismul: hrănirea prin difuzie
+        funcționează la fel la 45 și la 75 de ani. Ce se schimbă este cât de repede
+        reacționează organismul și cât de departe a mers uzura. La un rezultat în zona
+        roșie a testului, discuția cu un medic ar trebui să fie primul pas —
+        nu ultimul.</p></div>
+    </details>
+
+    <details>
+      <summary>De ce nu găsesc produsul în farmacie?</summary>
+      <div class="body"><p>Este distribuit direct, prin comandă, nu prin lanțul de
+        farmacii. Practic asta înseamnă un preț fără marja de distribuție și un stoc
+        limitat la lotul curent. Detaliile lotului și ale programului sunt mai jos,
+        la formular.</p></div>
+    </details>
+
+    <details>
+      <summary>Cât costă și când plătesc?</summary>
+      <div class="body"><p>Prețul în cadrul programului este {{PRET_NOU}}, față de
+        {{PRET_VECHI}} în afara lui. <strong>Plata se face la primire</strong>,
+        curierului sau la poștă. Nu se cere card și nu se cere nicio plată în avans
+        pe această pagină.</p></div>
+    </details>
+
+    <details>
+      <summary>Ce se întâmplă după ce las numărul de telefon?</summary>
+      <div class="body"><p>Vă sună un consultant, în intervalul {{PROGRAM_APELURI}}.
+        Confirmă adresa, durata cursului potrivit pentru situația dumneavoastră și
+        trimite coletul. Livrarea durează {{TERMEN_LIVRARE}}. Dacă la telefon decideți
+        că nu doriți, comanda pur și simplu nu se plasează — nu se întâmplă nimic.</p></div>
+    </details>
+
+    <details>
+      <summary>Cât durează până simt o diferență?</summary>
+      <div class="body"><p>Nu vă putem promite un termen, iar orice pagină care vă dă
+        o cifră exactă inventează. Cursul este construit pe {{DURATA_CURS}} zile.
+        Ce puteți face este să refaceți testul de sus la finalul cursului și să
+        comparați punctajul — de aceea l-am pus la început.</p></div>
+    </details>
+  </div>
+</section>
+
+<!-- ══ 8. CTA ══ -->
+<section>
+  <div class="wrap">
+    <div class="form-card" id="comanda">
+      <h2 style="margin-top:0">Comandați în cadrul programului</h2>
+      <div class="price">
+        <span class="new">{{PRET_NOU}}</span>
+        <span class="old">{{PRET_VECHI}}</span>
+        <span class="tag">Program {{NUME_PROGRAM}}</span>
+      </div>
+
+      <form action="/order.php" method="post" id="order" novalidate>
+        <input type="hidden" name="fbpx" value="{fbpx}">
+        <input type="hidden" name="utm_code" value="{subid}">
+        <input type="hidden" name="cid" value="{campaign_id}">
+        <input type="hidden" name="sid" value="{{SID}}">
+        <input type="hidden" name="hash" value="{hash}">
+        <input type="hidden" name="country" value="RO">
+
+        <label for="f-name">Nume și prenume</label>
+        <input type="text" id="f-name" name="name" autocomplete="name"
+               placeholder="Ion Popescu" required>
+
+        <label for="f-phone">Număr de telefon</label>
+        <input type="tel" id="f-phone" name="phone" autocomplete="tel"
+               inputmode="tel" placeholder="07XX XXX XXX"
+               pattern="^[\-+() 0-9]{10,20}$" required>
+
+        <button class="btn btn-lg" type="submit">Trimiteți comanda</button>
+      </form>
+
+      <div class="after">
+        <ol>
+          <li>Vă sună un consultant și confirmă detaliile</li>
+          <li>Coletul pleacă în aceeași zi lucrătoare</li>
+          <li>Plătiți la primire — {{TERMEN_LIVRARE}}</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <h3 style="margin-top:0">Despre lotul curent</h3>
+      <p class="muted" style="margin-bottom:0">Program: {{NUME_PROGRAM}}.
+        Perioadă: până la {{DATA_FINAL_PROGRAM}}. Lot disponibil pentru România:
+        {{LOT_DISPONIBIL}} pachete. După epuizarea lotului, comenzile se reiau
+        odată cu următorul — {{URMATORUL_LOT}}.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p style="margin-bottom:8px"><strong style="color:#fff">Jointerra</strong> — supliment
+      alimentar. Informațiile din această pagină au caracter general și nu constituie
+      sfat medical.</p>
+    <p style="margin:0">{{DATE_OPERATOR}} · {{LINK_POLITICA_CONFIDENTIALITATE}} ·
+      {{LINK_TERMENI}}</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ─────────── Testul: 7 mișcări ─────────── */
+  var Q = [
+    { task:"Amintiți-vă cum a fost azi-dimineață, în primele minute după ce v-ați ridicat din pat.",
+      text:"Cât timp v-a luat până articulațiile s-au „dezmorțit”?",
+      opts:[["Sub 5 minute sau deloc",0],["Între 5 și 15 minute",1],["Peste 15 minute, aproape în fiecare dimineață",2]] },
+
+    { task:"Așezați-vă pe scaun. Ridicați-vă în picioare fără să vă sprijiniți cu mâinile de genunchi sau de brațele scaunului.",
+      text:"Cum a fost ridicarea?",
+      opts:[["Ușor, fără să mă gândesc",0],["Cu efort sau cu un mic elan",1],["Nu am reușit fără sprijin",2]] },
+
+    { task:"Stând pe scaun, aplecați-vă în față și atingeți-vă șireturile pantofilor sau gleznele.",
+      text:"Ați ajuns până jos?",
+      opts:[["Da, fără disconfort",0],["Da, dar cu tensiune în spate sau în șold",1],["Nu am ajuns până jos",2]] },
+
+    { task:"Gândiți-vă la ultima dată când ați urcat un etaj pe scări.",
+      text:"Cum ați urcat?",
+      opts:[["Normal, alternând picioarele",0],["Mai lent, ținându-mă de balustradă",1],["Pas lângă pas, sau evit scările",2]] },
+
+    { task:"Stând pe scaun, îndoiți și întindeți încet genunchiul de câteva ori. Ascultați.",
+      text:"Se aud pocnituri, scrâșnete sau trosnituri?",
+      opts:[["Nu se aude nimic",0],["Ocazional, un pocnet",1],["Da, la aproape fiecare mișcare",2]] },
+
+    { task:"Gândiți-vă la ultima dată când ați stat în picioare, nemișcat, la o coadă.",
+      text:"Cât ați rezistat fără să vă mutați greutatea sau să căutați un loc?",
+      opts:[["Peste 15 minute, fără probleme",0],["Aproximativ 10 minute, apoi devine incomod",1],["Sub 10 minute, sau evit situația",2]] },
+
+    { task:"Ultima întrebare. Nu necesită nicio mișcare.",
+      text:"Aveți amorțeală, furnicături sau senzație de „curent” în degete, în picior sau în talpă?",
+      opts:[["Niciodată",0],["Rar, după o poziție incomodă",1],["Des, fără un motiv clar",2]] }
+  ];
+
+  var ZONES = [
+    { max:3, cls:"green",
+      title:"Zona verde — limitări minime",
+      text:"<p>La testul funcțional nu apar limitări semnificative. Asta nu înseamnă că "+
+           "nu se întâmplă nimic — cartilajul nu are terminații nervoase și nu semnalizează "+
+           "devreme — dar mișcările de bază sunt încă libere.</p>",
+      detail:"<p>Ce este util acum: păstrarea amplitudinii. Cercul din secțiunea următoare "+
+           "începe aproape întotdeauna la fel — cu o durere ocazională după care oamenii "+
+           "încep, firesc, să se miște mai puțin. Aceea este veriga de rupt, și e mult "+
+           "mai ușor de rupt acum decât peste trei ani.</p>" },
+
+    { max:8, cls:"amber",
+      title:"Zona galbenă — limitări funcționale prezente",
+      text:"<p>Mai multe mișcări de bază se execută deja cu compensare: sprijin, elan, "+
+           "amplitudine redusă, evitarea unor situații. Compensarea este importantă, "+
+           "pentru că trece neobservată — nu doare, doar te obișnuiești.</p>",
+      detail:"<p>Ce arată de obicei un punctaj în acest interval: cercul s-a închis deja "+
+           "cel puțin o dată. Ați simțit disconfort, ați redus mișcarea, iar reducerea "+
+           "mișcării a scăzut hrănirea cartilajului. Aici cele trei pârghii din secțiunea "+
+           "următoare contează cel mai mult, pentru că mecanismul de hrănire funcționează "+
+           "încă bine.</p>" },
+
+    { max:14, cls:"red",
+      title:"Zona roșie — limitări extinse",
+      text:"<p>Testul arată restricții la majoritatea mișcărilor verificate, inclusiv la "+
+           "cele care nu implică efort. Combinația dintre rigiditate matinală prelungită, "+
+           "dificultate la ridicare și amorțeală merită discutată cu un medic — nu peste "+
+           "câteva luni, ci la prima programare disponibilă.</p>",
+      detail:"<p>De ce insistăm pe consult: amorțeala și furnicăturile țin de compresie "+
+           "nervoasă, iar acolo timpul contează diferit față de uzura cartilajului. "+
+           "Cele trei pârghii de mai jos rămân valabile și în acest stadiu, dar aici ele "+
+           "însoțesc consultul medical, nu îl înlocuiesc.</p>" }
+  ];
+
+  var i = 0, score = 0, hist = [];
+  var $ = function(id){ return document.getElementById(id); };
+  var card = $("test-card"), res = $("result");
+
+  function render(){
+    var q = Q[i];
+    $("task-t").textContent = q.task;
+    $("qtext").textContent  = q.text;
+    $("qn").textContent     = i + 1;
+    $("bar").style.width    = (i / Q.length * 100) + "%";
+    $("back").classList.toggle("hide", i === 0);
+
+    var box = $("opts");
+    box.textContent = "";
+    q.opts.forEach(function(o){
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "opt";
+      b.textContent = o[0];
+      b.addEventListener("click", function(){ answer(o[1]); });
+      box.appendChild(b);
+    });
+  }
+
+  function answer(v){
+    hist.push(v);
+    score += v;
+    i++;
+    if (i < Q.length) { render(); }
+    else { finish(); }
+  }
+
+  $("back").addEventListener("click", function(){
+    if (!hist.length) return;
+    score -= hist.pop();
+    i--;
+    render();
+  });
+
+  function finish(){
+    $("bar").style.width = "100%";
+    card.classList.add("hide");
+
+    var z = ZONES.find(function(x){ return score <= x.max; }) || ZONES[2];
+    $("pts").textContent    = score;
+    $("ztitle").textContent = z.title;
+    $("ztext").innerHTML    = z.text;
+    $("zdetail").innerHTML  = z.detail;
+    $("zone").className     = "zone " + z.cls;
+
+    var m = $("meter");
+    m.textContent = "";
+    for (var k = 0; k < 14; k++){
+      var seg = document.createElement("i");
+      seg.className = (k < 4 ? "g" : k < 9 ? "a" : "r") + (k < score ? " on" : "");
+      m.appendChild(seg);
+    }
+
+    res.classList.add("on");
+    res.scrollIntoView({ behavior:"smooth", block:"start" });
+  }
+
+  render();
+
+  /* ─────────── Formular ─────────── */
+  var nameEl = $("f-name"), phoneEl = $("f-phone");
+
+  // Păstrează literele oricărui alfabet, inclusiv diacriticele românești (ă â î ș ț).
+  nameEl.addEventListener("input", function(){
+    var v = this.value.replace(/[^\p{L}\p{M}\s'-]/gu, "").replace(/^\s+/, "").replace(/\s{2,}/g, " ");
+    if (v !== this.value) this.value = v;
+  });
+
+  // Cifre, spații, paranteze, cratimă și un singur „+” la început.
+  phoneEl.addEventListener("input", function(){
+    var v = this.value.replace(/[^0-9+()\-\s]/g, "");
+    v = v.replace(/(?!^)\+/g, "");
+    if (v !== this.value) this.value = v;
+  });
+
+  $("order").addEventListener("submit", function(e){
+    var n = nameEl.value.trim();
+    var digits = phoneEl.value.replace(/\D/g, "");
+    if (n.length < 2){
+      e.preventDefault(); nameEl.focus();
+      nameEl.style.borderColor = "#a72f2f";
+      return;
+    }
+    if (digits.length < 10){        // RO: 07XXXXXXXX = 10 cifre
+      e.preventDefault(); phoneEl.focus();
+      phoneEl.style.borderColor = "#a72f2f";
+      return;
+    }
+  });
+
+  /* Lazy doar sub prima vizibilă — nimic din primul ecran nu este amânat. */
+  var vh = window.innerHeight || 800;
+  Array.prototype.forEach.call(document.images, function(img){
+    if (img.getBoundingClientRect().top > vh) img.setAttribute("loading", "lazy");
+  });
+})();
+</script>
+</body>
+</html>
