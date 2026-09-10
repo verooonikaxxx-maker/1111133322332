@@ -10,7 +10,7 @@
   <meta name="description"
     content="Anchetă: un biolog cu 34 de ani în laboratorul de parazitologie explică de ce analizele ies curate atunci când corpul este deja plin.">
 
-  <!-- Datele din pagina sunt generate de dtime.js — trebuie incarcat INAINTE de primul apel dtime_nums() din body. -->
+  <!-- dtime.js genereaza datele din pagina — trebuie incarcat INAINTE de primul apel dtime_nums() din body. -->
   <script src="js/dtime.js?=v2"></script>
   <script>
     // Plasa de siguranta: daca dtime.js nu se incarca, datele nu raman goale in pagina.
@@ -30,7 +30,7 @@
       --ink-2: #3d444c;
       --ink-3: #717981;
       --bg: #f4f1ec;
-      --card: #ffffff;
+      --card: #fff;
       --line: #ded7cc;
       --line-2: #ece7df;
       --teal: #17565f;
@@ -70,9 +70,11 @@
     }
 
     .wrap {
-      max-width: 700px;
+      max-width: 900px;
       margin: 0 auto;
       background: var(--card);
+      border-left: 1px solid var(--line-2);
+      border-right: 1px solid var(--line-2);
     }
 
     .pad {
@@ -80,7 +82,7 @@
       padding-right: 22px;
     }
 
-    /* ---------- MASTHEAD ---------- */
+    /* ---- MASTHEAD ---- */
     .top {
       background: var(--teal-2);
       color: #fff;
@@ -121,7 +123,6 @@
       text-transform: uppercase;
       border: 1px solid rgba(255, 255, 255, .34);
       padding: 5px 10px;
-      border-radius: 2px;
       white-space: nowrap;
     }
 
@@ -138,13 +139,12 @@
       padding-bottom: 10px;
     }
 
-    /* ---------- HEAD ---------- */
+    /* ---- HEAD ---- */
     .head {
       padding-top: 32px;
     }
 
     h1 {
-      font-family: var(--serif);
       font-size: 33px;
       line-height: 1.2;
       letter-spacing: -.015em;
@@ -158,7 +158,6 @@
       line-height: 1.55;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: .01em;
       color: var(--teal-2);
       background: var(--teal-wash);
       padding: 16px 18px;
@@ -188,16 +187,14 @@
       font-size: 21px;
       line-height: 1.62;
       margin: 0 0 28px;
-      color: var(--ink);
     }
 
-    /* ---------- TEXT ---------- */
+    /* ---- TEXT ---- */
     p {
       margin: 0 0 21px;
     }
 
     h2 {
-      font-family: var(--serif);
       font-size: 27px;
       line-height: 1.26;
       letter-spacing: -.012em;
@@ -231,7 +228,6 @@
       border-bottom: 1px solid var(--line-2);
     }
 
-    /* ---------- PULL QUOTE (fara chenar) ---------- */
     .pull {
       margin: 32px 0;
       padding-left: 20px;
@@ -242,7 +238,6 @@
       color: var(--teal-2);
     }
 
-    /* ---------- TESTIMONIAL ---------- */
     .tst {
       margin: 26px 0;
       padding: 19px 20px;
@@ -272,7 +267,6 @@
       color: var(--ink-3);
     }
 
-    /* ---------- ALARM ---------- */
     .bang {
       margin: 30px 0;
       padding: 19px 20px;
@@ -285,7 +279,6 @@
       font-weight: 700;
       color: var(--red);
       text-transform: uppercase;
-      letter-spacing: .005em;
     }
 
     .box {
@@ -301,7 +294,7 @@
       margin-bottom: 0;
     }
 
-    /* ---------- CAIET (notebook) ---------- */
+    /* ---- CAIET ---- */
     .caiet {
       margin: 28px 0;
       background: #fdfbf4;
@@ -347,14 +340,14 @@
       content: counter(c) ".";
       position: absolute;
       left: -24px;
+      top: 12px;
       font-family: var(--sans);
       font-size: 13px;
       font-weight: 700;
       color: var(--ochre);
-      top: 12px;
     }
 
-    /* ---------- FIGURE ---------- */
+    /* ---- FIGURE ---- */
     figure {
       margin: 30px 0;
     }
@@ -363,7 +356,6 @@
       width: 100%;
       border-radius: var(--r);
       background: #e8e2d8;
-      min-height: 110px;
     }
 
     figcaption {
@@ -378,7 +370,41 @@
       color: var(--ink-2);
     }
 
-    /* ---------- SELF-CHECK ---------- */
+    .fig-card img {
+      border: 1px solid var(--line);
+      padding: 6px;
+      background: #fff;
+    }
+
+    /* figura de caz: imaginea se lipeste de citatul de dedesubt */
+    .fig-case {
+      margin: 28px 0 0;
+    }
+
+    .fig-case img {
+      border-radius: var(--r) var(--r) 0 0;
+    }
+
+    .fig-case+.tst {
+      margin-top: 0;
+      border-radius: 0 0 var(--r) var(--r);
+    }
+
+    /* pachetul de produs: portret inalt, nu pe toata latimea */
+    .fig-pack {
+      margin: 30px auto;
+      max-width: 340px;
+    }
+
+    .fig-pack img {
+      background: none;
+    }
+
+    .fig-pack figcaption {
+      text-align: left;
+    }
+
+    /* ---- SELF-CHECK ---- */
     .check {
       list-style: none;
       margin: 22px 0;
@@ -405,7 +431,7 @@
       background: #fff;
     }
 
-    /* ---------- STEPS ---------- */
+    /* ---- STEPS ---- */
     .steps {
       list-style: none;
       counter-reset: s;
@@ -463,7 +489,7 @@
       padding-top: 4px;
     }
 
-    /* ---------- HERBS ---------- */
+    /* ---- HERBS ---- */
     .herbs {
       list-style: none;
       margin: 26px 0;
@@ -487,7 +513,7 @@
       margin-bottom: 4px;
     }
 
-    /* ---------- RESULTS ---------- */
+    /* ---- RESULTS ---- */
     .res {
       margin: 26px 0;
       border-top: 2px solid var(--ink);
@@ -519,14 +545,13 @@
       font-weight: 800;
       color: var(--teal);
       white-space: nowrap;
-      letter-spacing: -.01em;
     }
 
     .bar {
       height: 5px;
       background: var(--line-2);
-      overflow: hidden;
       border-radius: 3px;
+      overflow: hidden;
     }
 
     .bar i {
@@ -535,23 +560,23 @@
       background: var(--teal);
     }
 
-    /* ---------- MINI CASES ---------- */
+    /* ---- MINI CASES ---- */
     .mini {
       margin: 20px 0;
       display: flex;
-      gap: 14px;
+      gap: 16px;
       align-items: flex-start;
       padding-bottom: 20px;
       border-bottom: 1px solid var(--line-2);
     }
 
     .mini img {
-      flex: 0 0 104px;
-      width: 104px;
-      height: 104px;
-      object-fit: cover;
+      flex: 0 0 140px;
+      width: 140px;
       border-radius: var(--r);
-      background: #e8e2d8;
+      border: 1px solid var(--line);
+      padding: 4px;
+      background: #fff;
     }
 
     .mini p {
@@ -566,7 +591,7 @@
       color: var(--ink);
     }
 
-    /* ---------- OFFER ---------- */
+    /* ---- OFFER ---- */
     .warn {
       margin: 26px 0;
       padding: 15px 18px;
@@ -593,12 +618,12 @@
       font-size: 32px;
       font-weight: 800;
       color: var(--teal-2);
-      letter-spacing: -.01em;
       margin-top: 5px;
     }
 
     .form {
-      margin: 22px 0 8px;
+      margin: 22px auto 8px;
+      max-width: 560px;
       border: 2px solid var(--teal-2);
       border-radius: 6px;
       overflow: hidden;
@@ -608,14 +633,24 @@
     .form__h {
       background: var(--teal-2);
       color: #fff;
-      padding: 15px 20px;
+      padding: 14px 20px;
       font-family: var(--sans);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .form__h img {
+      flex: 0 0 46px;
+      width: 46px;
+      background: #fff;
+      border-radius: 50%;
+      padding: 4px;
     }
 
     .form__h b {
       display: block;
       font-size: 17px;
-      letter-spacing: -.01em;
     }
 
     .form__h span {
@@ -697,7 +732,6 @@
       color: #fff;
       background: var(--red);
       padding: 5px 10px;
-      border-radius: 2px;
       letter-spacing: .04em;
     }
 
@@ -781,7 +815,18 @@
       font-weight: 800;
     }
 
-    /* ---------- COMMENTS ---------- */
+    .ssl {
+      display: flex;
+      justify-content: center;
+      margin: 18px 0 0;
+    }
+
+    .ssl img {
+      width: 181px;
+      opacity: .75;
+    }
+
+    /* ---- COMMENTS ---- */
     .cms {
       background: var(--bg);
       padding-top: 32px;
@@ -812,30 +857,13 @@
       border-left: 3px solid var(--line);
     }
 
-    .av {
-      flex: 0 0 44px;
-      width: 44px;
-      height: 44px;
+    .cm__av {
+      flex: 0 0 46px;
+      width: 46px;
+      height: 46px;
       border-radius: 50%;
-      background: var(--teal);
-      color: #fff;
-      display: grid;
-      place-items: center;
-      font-family: var(--sans);
-      font-weight: 700;
-      font-size: 18px;
-    }
-
-    .av--2 {
-      background: #7d5a3c;
-    }
-
-    .av--3 {
-      background: #5c6b7d;
-    }
-
-    .av--4 {
-      background: #8a4a52;
+      object-fit: cover;
+      background: var(--line-2);
     }
 
     .cm__b {
@@ -862,7 +890,7 @@
       margin: 0;
     }
 
-    /* ---------- FOOT ---------- */
+    /* ---- FOOT ---- */
     .foot {
       background: var(--teal-2);
       color: #93aaad;
@@ -889,31 +917,31 @@
       margin: 0 0 9px;
     }
 
-    /* ---------- DESKTOP ---------- */
-    @media (min-width: 700px) {
+    /* ---- DESKTOP ---- */
+    @media (min-width: 760px) {
       body {
         font-size: 20px;
       }
 
       .pad {
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 64px;
+        padding-right: 64px;
       }
 
       h1 {
-        font-size: 45px;
+        font-size: 46px;
       }
 
       h2 {
-        font-size: 32px;
+        font-size: 33px;
       }
 
       .lead {
-        font-size: 22.5px;
+        font-size: 23px;
       }
 
       .pull {
-        font-size: 26px;
+        font-size: 27px;
       }
 
       .bang {
@@ -922,8 +950,17 @@
       }
 
       .kick {
-        font-size: 15.5px;
-        padding: 20px 22px;
+        font-size: 16px;
+        padding: 20px 24px;
+      }
+
+      .mini img {
+        flex-basis: 190px;
+        width: 190px;
+      }
+
+      .fig-pack {
+        max-width: 380px;
       }
     }
 
@@ -948,10 +985,13 @@
         font-size: 34px;
       }
 
+      .mini {
+        flex-direction: column;
+      }
+
       .mini img {
-        flex-basis: 84px;
-        width: 84px;
-        height: 84px;
+        flex-basis: auto;
+        width: 100%;
       }
     }
   </style>
@@ -960,7 +1000,6 @@
 <body>
   <div class="wrap">
 
-    <!-- ============ MASTHEAD ============ -->
     <header>
       <div class="top">
         <div class="pad top__in">
@@ -972,7 +1011,7 @@
     </header>
 
     <main>
-      <!-- ============ HOOK ============ -->
+      <!-- ===== HOOK ===== -->
       <div class="pad head">
         <h1>„Am semnat cu mâna mea rezultate negative pentru oameni care îi purtau în ei”</h1>
 
@@ -992,8 +1031,10 @@
       </div>
 
       <div class="pad">
+        <!-- IMG 1 -->
         <figure>
-          <img src="images/01-aurica-caiet.jpg" alt="Aurica Pop cu caietul în care și-a notat toate diagnosticele">
+          <img src="https://static.joxi.pro/1782819154665-b3512374-8ec8-484f-aa1d-ea1ba06f6aca.jpg"
+            alt="Aurica Pop, la poarta casei din Budești, cu caietul în mână">
           <figcaption><b>Aurica Pop, 59 de ani, Budești.</b> Caietul pe care l-a ținut șase ani. „Îl scoteam la
             fiecare consultație. Doctorii credeau că sunt o pisăloagă.”</figcaption>
         </figure>
@@ -1003,9 +1044,9 @@
           caietul în mână, ca și cum ar fi fost un act de identitate.</p>
 
         <p>Are 59 de ani. Treizeci și unu i-a petrecut la catedră, la școala din sat, la clasele primare. E o femeie
-          care notează. Care ține evidență. Și tocmai de asta, când a început să se simtă rău, a făcut singurul
-          lucru care i s-a părut logic: a cumpărat un caiet de dictando și a scris în el fiecare consultație,
-          fiecare diagnostic, fiecare medicament.</p>
+          care notează. Care ține evidență. Și tocmai de asta, când a început să se simtă rău, a făcut singurul lucru
+          care i s-a părut logic: a cumpărat un caiet de dictando și a scris în el fiecare consultație, fiecare
+          diagnostic, fiecare medicament.</p>
 
         <p>„Am crezut că mă ajută”, spune. „Că, dacă am totul scris, o să găsească cineva firul. N-a găsit nimeni
           nimic. Iar acum caietul ăsta e dovada că șase ani din viața mea s-au dus pe apa sâmbetei.”</p>
@@ -1043,14 +1084,16 @@
 
       <hr class="div">
 
-      <!-- ============ MARTORUL ============ -->
+      <!-- ===== MARTORUL ===== -->
       <div class="pad">
         <h2>Femeia care s-a uitat 34 de ani la ceea ce alții primeau doar pe hârtie</h2>
         <p class="dek">Interviu cu Lidia Anghelescu, biolog, 34 de ani șefă de laborator de parazitologie la spitalul
           județean</p>
 
+        <!-- IMG 2 -->
         <figure>
-          <img src="images/02-lidia-anghelescu.jpg" alt="Lidia Anghelescu, biolog, 34 de ani în laboratorul de parazitologie">
+          <img src="https://static.joxi.pro/1782904658553-eaeacda3-ab6c-4e86-a155-c6acaf6be1fb.jpg"
+            alt="Lidia Anghelescu, biolog, 34 de ani în laboratorul de parazitologie">
           <figcaption><b>Lidia Anghelescu, 71 de ani.</b> Treizeci și patru de ani în laboratorul de parazitologie al
             spitalului județean. „Eu n-am văzut oameni. Eu am văzut ce era în ei.”</figcaption>
         </figure>
@@ -1064,9 +1107,9 @@
           Când nu e curată, arată ca și cum cineva ar fi presărat mac peste sticlă. <strong>Ouă. Zeci, la o singură
             privire.</strong> Și atunci scrii „pozitiv” și pui parafa.</p>
 
-        <p>Dar iată ce nu vă spune nimeni. La aceeași femeie, cu o săptămână înainte, scrisesem cu mâna mea
-          „negativ”. Aceeași femeie. Același corp. Aceeași boală, care era acolo și atunci. Doar că, în ziua aceea,
-          nu era nimic de văzut.</p>
+        <p>Dar iată ce nu vă spune nimeni. La aceeași femeie, cu o săptămână înainte, scrisesem cu mâna mea „negativ”.
+          Aceeași femeie. Același corp. Aceeași boală, care era acolo și atunci. Doar că, în ziua aceea, nu era nimic
+          de văzut.</p>
 
         <div class="bang">Rezultatul negativ nu spune că nu aveți nimic. Spune doar atât: în ziua aceea, în proba
           aceea, nu era nimic de văzut.</div>
@@ -1085,7 +1128,7 @@
 
       <hr class="div">
 
-      <!-- ============ LOW POINT (vina ei) ============ -->
+      <!-- ===== LOW POINT ===== -->
       <div class="pad">
         <h2>Dosarul pe care nu l-a putut arunca</h2>
 
@@ -1111,10 +1154,20 @@
 
       <hr class="div">
 
-      <!-- ============ ESCALATION: de ce mint analizele ============ -->
+      <!-- ===== DE CE TACE HARTIA ===== -->
       <div class="pad">
         <h2>De ce tace hârtia: trei lucruri pe care nu vi le explică nimeni</h2>
         <p class="dek">Cum e posibil să ai analize impecabile și un corp care se stinge</p>
+
+        <!-- IMG 3 -->
+        <figure class="fig-card">
+          <img src="https://static.joxi.pro/1782821592213-0f01cd3b-6769-448e-bc02-2eefc6561c8c.jpg"
+            alt="Dosarul cu analize și caietul pe care Aurica Pop le-a purtat ani de zile">
+          <figcaption>Analizele pe care Aurica le-a purtat șase ani, prinse între foile caietului. „Totul e în
+            regulă”, i se spunea la fiecare consultație. Iar corpul slăbea. Pe noptieră — cutii de medicamente pentru
+            „gastrită” și pentru „alergie”, care n-au rezolvat nimic, fiindcă nimeni nu căuta cauza adevărată.
+          </figcaption>
+        </figure>
 
         <div class="who">Lidia Anghelescu</div>
         <p>— Întrebarea asta am auzit-o de o mie de ori: „Doamnă, dar eu îmi fac analize în fiecare an și e totul
@@ -1144,7 +1197,7 @@
 
       <hr class="div">
 
-      <!-- ============ FAILED SOLUTIONS ============ -->
+      <!-- ===== FAILED SOLUTIONS ===== -->
       <div class="pad">
         <h2>„Pastila de la farmacie lovește o specie. Iar în om trăiesc zeci”</h2>
         <p class="dek">De ce tratamentul obișnuit dă greș aproape întotdeauna — și ce face el, de fapt, ficatului</p>
@@ -1159,11 +1212,13 @@
           o parte din problemă. <strong>Și, pe deasupra, chimia tare din pastilele astea lovește exact ficatul și
             rinichii</strong> — adică fix organele care duceau deja greul.</p>
 
+        <!-- IMG 4 -->
         <figure>
-          <img src="images/03-intestin-comparatie.jpg" alt="Comparație între un intestin sănătos și unul încărcat">
-          <figcaption>Stânga: mucoasă intestinală sănătoasă. Dreapta: mucoasă lezată, inflamație cronică, intoxicare
-            permanentă. Paraziții se hrănesc din corpul gazdă și elimină deșeuri care ajung în sânge. O pastilă care
-            lovește o singură specie nu rezolvă asta.</figcaption>
+          <img src="https://static.joxi.pro/1782820091329-9f6b2774-4a3a-455a-871c-954a5502d404.jpg"
+            alt="Comparație între un intestin sănătos și unul încărcat de paraziți">
+          <figcaption>Stânga: mucoasă intestinală sănătoasă. Dreapta: intestin încărcat — inflamație cronică, mucoasă
+            lezată, intoxicare permanentă a organismului. Paraziții se hrănesc din corpul gazdă și elimină deșeuri
+            care ajung în sânge. O pastilă care lovește o singură specie nu rezolvă asta.</figcaption>
         </figure>
 
         <div class="bang">Pastilele obișnuite nu curăță corpul până la capăt — lovesc o specie și le lasă pe celelalte
@@ -1185,8 +1240,44 @@
 
       <hr class="div">
 
-      <!-- ============ SELF-IDENTIFICATION ============ -->
+      <!-- ===== CAZURI + SIMPTOME ===== -->
       <div class="pad">
+        <h2>Cazuri care mi-au schimbat privirea — și vă vor schimba felul în care vă priviți propria sănătate</h2>
+
+        <div class="who">Lidia Anghelescu</div>
+        <p>— Dați-mi voie să vă spun ce am avut în registru an după an. Nu cifre. Nu statistici. Oameni. Oameni cu
+          nume, care până în ultima zi au crezut că problema lor e cu totul altceva.</p>
+
+        <!-- IMG 5 -->
+        <figure class="fig-card">
+          <img src="https://static.joxi.pro/1782820091326-36d25ca8-dac6-4c63-8a30-3372d7e84a90.jpg"
+            alt="Caz: femeie de 64 de ani, tratată ani de zile de anemie">
+          <figcaption>Femeie, 64 de ani. Ani de zile tratată de „alergie cronică” și de o anemie care nu voia să se
+            rezolve nici cu fier, nici cu vitamine. Nimeni nu s-a gândit că ceva din corpul ei mănâncă fierul acela
+            în locul ei.</figcaption>
+        </figure>
+
+        <div class="tst">
+          <p>„Eram obosită tot timpul, palidă, stoarsă. Doctorii ziceau: «lipsă de fier, luați pastile». Le-am luat
+            ani de zile. Nimic. Nimeni n-a întrebat dacă nu cumva ia altcineva fierul ăla din mine. Și îl lua.”</p>
+          <cite>din cazurile despre care vorbește doamna Anghelescu</cite>
+        </div>
+
+        <!-- IMG 6 -->
+        <figure class="fig-card">
+          <img src="https://static.joxi.pro/1782820091327-563e60b7-d2cb-48c1-b664-3a098ea514a9.jpg"
+            alt="Caz: bărbat de 67 de ani, tratat de nervi și insomnie">
+          <figcaption>Bărbat, 67 de ani. Tratat de „nervi” și insomnie. Scrâșnea din dinți în somn, se trezea
+            epuizat, slăbea deși mânca normal. Totul era pus pe seama stresului și a anilor.</figcaption>
+        </figure>
+
+        <div class="tst">
+          <p>„Slăbeam, deși mâncam normal. Nevastă-mea glumea că am «metabolism rapid». N-a fost de râs. Mânca ceva
+            în locul meu, din mine. Am înțeles prea târziu ca să-mi mai fie de folos — dar dumneavoastră, cei care
+            citiți asta, nu sunteți încă acolo.”</p>
+          <cite>din cazurile despre care vorbește doamna Anghelescu</cite>
+        </div>
+
         <h2>Semnele pe care le pune toată lumea pe seama anilor</h2>
         <p class="dek">Doamna Anghelescu spune că, dacă vă regăsiți în trei sau mai multe, merită să vă puneți
           întrebarea — indiferent ce scrie pe ultimele analize</p>
@@ -1217,32 +1308,26 @@
         </div>
 
         <div class="who">Lidia Anghelescu</div>
-        <p>— Eu am privit toată viața consecințele. Dar soluția nu a venit dintr-un laborator. A venit dintr-o
-          stână. De la un om care nu are nicio diplomă de medic, dar care face de cincizeci de ani, corect, un lucru
-          pe care noi, oamenii, nu ni-l facem niciodată nouă înșine.</p>
+        <p>— Eu am privit toată viața consecințele. Dar soluția nu a venit dintr-un laborator. A venit dintr-o stână.
+          De la un om care nu are nicio diplomă de medic, dar care face de cincizeci de ani, corect, un lucru pe care
+          noi, oamenii, nu ni-l facem niciodată nouă înșine.</p>
       </div>
 
       <hr class="div">
 
-      <!-- ============ DISCOVERY ============ -->
+      <!-- ===== DISCOVERY ===== -->
       <div class="pad">
         <h2>Calendarul de pe ușa grajdului</h2>
         <p class="dek">Toader Bumbu, 74 de ani, fost tehnician veterinar la ferma de stat, astăzi crescător de oi în
           Breb</p>
 
-        <figure>
-          <img src="images/04-toader-bumbu.jpg" alt="Toader Bumbu la stână, în Breb, Maramureș">
-          <figcaption><b>Toader Bumbu, 74 de ani, Breb.</b> Optzeci de oi, doi câini și un calendar bătut în cui pe
-            ușa grajdului.</figcaption>
-        </figure>
-
         <div class="who">Toader Bumbu</div>
         <p>— Am făcut școala de tehnicieni veterinari la Cluj și douăzeci și doi de ani am lucrat la ferma de stat.
-          După ce s-a desființat, am rămas cu oile mele. Optzeci de capete, doi câini și o pisică ce nu stă
-          niciodată în casă.</p>
+          După ce s-a desființat, am rămas cu oile mele. Optzeci de capete, doi câini și o pisică ce nu stă niciodată
+          în casă.</p>
 
-        <p>Pe ușa grajdului am bătut în cui un calendar. Acolo îmi însemnez cu creionul chimic când deparazitez.
-          Oile — primăvara și toamna. Câinii — de patru ori pe an, că umblă prin pădure. Pisica — de două ori. Vine
+        <p>Pe ușa grajdului am bătut în cui un calendar. Acolo îmi însemnez cu creionul chimic când deparazitez. Oile
+          — primăvara și toamna. Câinii — de patru ori pe an, că umblă prin pădure. Pisica — de două ori. Vine
           nepotul din Baia Mare și râde de mine, zice că sunt mai riguros decât la spital.</p>
 
         <div class="pull">„Într-o zi m-am uitat la calendarul ăla și mi-am dat seama: pe el erau trecuți toți. Numai
@@ -1255,15 +1340,14 @@
 
         <p>Animalul din curtea mea era mai bine păzit decât mine. Asta e rușinea de care nu m-am putut scutura.</p>
 
-        <div class="who">Toader Bumbu</div>
         <p>— La fermă preparam pentru animale un amestec de plante. Trebuia să fie din plante și blând — chimie tare
-          nu îndrăzneam, că laptele și carnea alea ajung pe masa oamenilor. Rețeta o știam de la un bătrân din
-          Sârbi, care o ținea de la tatăl lui.</p>
+          nu îndrăzneam, că laptele și carnea alea ajung pe masa oamenilor. Rețeta o știam de la un bătrân din Sârbi,
+          care o ținea de la tatăl lui.</p>
 
-        <p>Și am observat un lucru la care întâi n-am dat importanță: ciobanii care beau ceai din același amestec —
-          îl beau pentru „greutate în stomac”, că mâncarea la stână e cum e — încetau să se mai plângă. De oboseală.
-          De piele. De burtă. Unul dintre ei, Gavrilă, mi-a zis într-o toamnă: „Bade Toadere, de când beau apa aia
-          amară a matale, dorm ca pruncul.” Atunci m-am pus pe gândit serios.</p>
+        <p>Și am observat un lucru la care întâi n-am dat importanță: ciobanii care beau ceai din același amestec — îl
+          beau pentru „greutate în stomac”, că mâncarea la stână e cum e — încetau să se mai plângă. De oboseală. De
+          piele. De burtă. Unul dintre ei, Gavrilă, mi-a zis într-o toamnă: „Bade Toadere, de când beau apa aia amară
+          a matale, dorm ca pruncul.” Atunci m-am pus pe gândit serios.</p>
 
         <p>Amestecul de plante pe care îl folosea Toader Bumbu conține:</p>
 
@@ -1284,7 +1368,7 @@
 
       <hr class="div">
 
-      <!-- ============ SOLUTION ============ -->
+      <!-- ===== SOLUTION ===== -->
       <div class="pad">
         <h2>Așa s-a născut Parazol — ceaiul care curăță complet, dar blând</h2>
 
@@ -1292,18 +1376,20 @@
         <p>— Amestecul de la stână l-am dus la o femeie pricepută la plante și l-am potrivit pentru om: aceleași
           plante, altă proporție, forma de ceai, care e firească pentru trup. Îi zice <strong>Parazol</strong>. Se
           face ca orice ceai: o linguriță opărită cu apă fierbinte, lăsată să stea, băută dimineața și seara, cât
-          ține cura. Fără pastile, fără chimie tare — plantele își fac treaba prin intestin, adică fix acolo unde
-          stau ei.</p>
+          ține cura. Fără pastile, fără chimie tare — plantele își fac treaba prin intestin, adică fix acolo unde stau
+          ei.</p>
 
-        <figure>
-          <img src="images/05-parazol.jpg" alt="Ceaiul din plante Parazol">
+        <!-- IMG 7 -->
+        <figure class="fig-pack">
+          <img src="images/Parazol.png" alt="Parazol — amestec de ceai din plante">
           <figcaption>Parazol — amestecul în formă de ceai. Se prepară acasă, se bea dimineața și seara, pe toată
             durata curei.</figcaption>
         </figure>
 
-        <p>Puterea stă în faptul că lucrează pe rând și până la capăt: întâi asupra adulților, apoi asupra ouălor și
-          larvelor, apoi ajută corpul să scoată totul afară și intestinul să se refacă. <strong>Pastila lovește o
-            singură țintă. Ceaiul trece prin tot tubul digestiv</strong> — pe tot drumul pe care ei chiar se află.</p>
+        <p>Puterea stă în faptul că ceaiul lucrează pe rând și până la capăt: întâi asupra adulților, apoi asupra
+          ouălor și larvelor, apoi ajută corpul să scoată totul afară și intestinul să se refacă. <strong>Pastila
+            lovește o singură țintă. Ceaiul trece prin tot tubul digestiv</strong> — pe tot drumul pe care ei chiar se
+          află.</p>
 
         <p>Fiecare plantă, în proporția ei, prinde o altă fază: adult, ou, larvă. De asta curăță complet, nu pe
           jumătate. Și, cel mai important, o face blând — fără atacul asupra ficatului și rinichilor pe care îl fac
@@ -1313,14 +1399,14 @@
         <div class="who">Aurica Pop</div>
         <p>— Badea Toader e văr de-al doilea cu bărbatu-meu. A venit la o pomană, m-a văzut cum arăt și mi-a zis, așa,
           fără ocolișuri: «Aurico, tu ai fața mamei mele înainte să se curețe. Ia și bea asta trei săptămâni.» M-am
-          supărat pe el, să vă spun drept. Am luat pachetul mai mult ca să scap. A treia zi mi-am dat seama că
-          burta nu mă mai apasă cum mă apăsa de ani de zile. Am pus-o pe seama întâmplării. Abia mai târziu, când
-          mi-a explicat doamna Anghelescu, am înțeles ce se petrecuse de fapt.</p>
+          supărat pe el, să vă spun drept. Am luat pachetul mai mult ca să scap. A treia zi mi-am dat seama că burta
+          nu mă mai apasă cum mă apăsa de ani de zile. Am pus-o pe seama întâmplării. Abia mai târziu, când mi-a
+          explicat doamna Anghelescu, am înțeles ce se petrecuse de fapt.</p>
       </div>
 
       <hr class="div">
 
-      <!-- ============ MECHANISM ============ -->
+      <!-- ===== MECHANISM ===== -->
       <div class="pad">
         <h2>Cei patru pași prin care Parazol curăță organismul</h2>
         <p class="dek">Ce se întâmplă, pe rând, în corpul dumneavoastră</p>
@@ -1330,8 +1416,8 @@
             paraziților adulți din intestin — îi slăbesc și ajută corpul să îi elimine pe cale naturală. Nu o singură
             specie, cum face pastila, ci mai multe deodată.</li>
           <li><b>Distrugerea ouălor și a larvelor</b>Cuișoarele (eugenolul) descompun ouăle și larvele — exact ce nu
-            ating celelalte plante. Pasul ăsta e cheia: fără el, totul reîncepe din ouăle rămase. De aceea cura
-            curăță complet, nu parțial.</li>
+            ating celelalte plante. Pasul ăsta e cheia: fără el, totul reîncepe din ouăle rămase. De aceea cura curăță
+            complet, nu parțial.</li>
           <li><b>Scoaterea deșeurilor din corp</b>Pe măsură ce pleacă, organismul se curăță de deșeurile pe care
             aceștia le-au vărsat ani de zile în sânge. Nucul negru și semințele de dovleac ajută ficatul și
             intestinele să scoată ce s-a adunat — se duc oboseala, balonarea și ceața din cap.</li>
@@ -1343,16 +1429,16 @@
 
       <hr class="div">
 
-      <!-- ============ PROOF ============ -->
+      <!-- ===== PROOF ===== -->
       <div class="pad">
         <h2>„Am fost sceptică. Rezultatele nu m-au lăsat să rămân”</h2>
         <p class="dek">Observație pe 2 340 de persoane, cu vârste între 45 și 86 de ani</p>
 
         <div class="who">Lidia Anghelescu</div>
-        <p>— Când am auzit prima dată de un ceai din plante, am zâmbit. Treizeci și patru de ani de laborator te
-          învață să nu crezi în povești. Dar ce arătau oamenii care îl beau era prea limpede ca să pot închide ochii.
-          Un grup de specialiști a lărgit observația pe peste 2 300 de oameni din toată țara — cu exact acele
-          simptome pe care aproape nimeni nu le lega de așa ceva.</p>
+        <p>— Când am auzit prima dată de un ceai din plante, am zâmbit. Treizeci și patru de ani de laborator te învață
+          să nu crezi în povești. Dar ce arătau oamenii care îl beau era prea limpede ca să pot închide ochii. Un grup
+          de specialiști a lărgit observația pe peste 2 300 de oameni din toată țara — cu exact acele simptome pe care
+          aproape nimeni nu le lega de așa ceva.</p>
 
         <p>Am văzut oameni ținuți ani de zile pe „gastrită” și pe „alergie” cum, în câteva săptămâni, își recapătă
           energia, cum li se liniștește pielea, cum le intră digestia în rând. Ceea ce nicio pastilă nu rezolvase în
@@ -1437,21 +1523,22 @@
 
       <hr class="div">
 
-      <!-- ============ TRANSFORMATION ============ -->
+      <!-- ===== TRANSFORMATION ===== -->
       <div class="pad">
         <h2>Ce scrie astăzi în caietul Auricăi Pop</h2>
-
-        <figure>
-          <img src="images/06-aurica-dupa.jpg" alt="Aurica Pop în grădina ei, după cură">
-          <figcaption><b>Aurica Pop, la trei luni după cură.</b> „Am scris pe ultima pagină o singură propoziție. Și
-            am închis caietul.”</figcaption>
-        </figure>
+        <p class="dek">Șase ani tratată de „gastrită”, „colon iritabil” și „oboseală cronică”. După o cură cu ceai
+          Parazol — pentru prima dată după ani s-a trezit odihnită, iar pielea i s-a liniștit.</p>
 
         <p>Aurica a fost printre primii oameni cărora badea Toader le-a dat amestecul. La 59 de ani, după șase ani de
           umblat pe la doctori, cu analize impecabile și un corp care se topea. Fata ei e la Torino, băiatul lucrează
           în Germania. Sunau duminica, trimiteau bani de sărbători — și nu observau nimic, pentru că și ei credeau că
           e „oboseală și vârstă”.</p>
 
+        <!-- IMG 8 -->
+        <figure class="fig-case">
+          <img src="https://static.joxi.pro/1782820251745-5bae067c-f143-4d0f-8f08-f42da475aded.jpg"
+            alt="Aurica Pop, la trei luni după cură">
+        </figure>
         <div class="tst">
           <p>„Șase ani m-am târât de la un doctor la altul. Obosită tot timpul, balonată, mă ardea pielea, îmi cădea
             părul în pieptene cu smocuri. Îmi ziceau: gastrită, colon iritabil, nervi, anii. Beam tot ce-mi dădeau.
@@ -1460,8 +1547,8 @@
             spuneam că exagerez, că sunt o femeie care se plânge.</p>
           <p>Am băut ceaiul trei săptămâni, dimineața și seara, ca pe apa aia amară a lui badea Toader. A treia zi mi
             s-a ușurat burta. După o săptămână m-am trezit odihnită — prima dată de nu mai știu când. După trei
-            săptămâni mi s-a liniștit pielea de pe brațe, prima dată în șapte ani. Iar la vreo lună m-am trezit că
-            urc dealul până la biserică fără să mă opresc la jumătate.</p>
+            săptămâni mi s-a liniștit pielea de pe brațe, prima dată în șapte ani. Iar la vreo lună m-am trezit că urc
+            dealul până la biserică fără să mă opresc la jumătate.</p>
           <p>Am plâns. Nu de bucurie. De ciudă. Șase ani și o groază de bani, pentru că nimeni nu s-a uitat unde
             trebuia. Am deschis caietul, am scris pe ultima pagină «Nu erau anii» și l-am pus în sertar.”</p>
           <cite>Aurica Pop, 59 de ani, Budești, Maramureș</cite>
@@ -1470,19 +1557,17 @@
         <p>Al doilea om cu care am stat de vorbă a fost Ilie Mureșan, 63 de ani, fost miner la Baia Sprie, ținut cinci
           ani pe tratament pentru o gastrită care nu trecea cu nimic.</p>
 
-        <figure>
-          <img src="images/07-ilie-muresan.jpg" alt="Ilie Mureșan, 63 de ani, fost miner la Baia Sprie">
-          <figcaption><b>Ilie Mureșan, 63 de ani.</b> „După o lună mâncam ca un om și mă ridicam de la masă fără să
-            mă doară.”</figcaption>
+        <!-- IMG 9 -->
+        <figure class="fig-case">
+          <img src="https://static.joxi.pro/1778142925769-f6ae7d5d-d93a-42f5-8684-d3c285fbc8bf.jpg"
+            alt="Ilie Mureșan, 63 de ani, fost miner la Baia Sprie">
         </figure>
-
         <div class="tst">
-          <p>„Am fost douăzeci și opt de ani în mină. Credeam că de acolo mi se trage tot. Greutate după fiecare
-            masă, greață, burta umflată ca o tobă. M-au plimbat pe la investigații, mi-au dat pastile de stomac.
-            Nimic. Și slăbeam, deși mâncam normal — nevastă-mea zicea, în glumă, că am metabolism de tânăr. N-avea
-            haz.</p>
-          <p>Vecinul mi-a zis de ceaiul ăsta. Am luat mai mult ca să-l scot din casă. După vreo zece zile am mâncat
-            de prânz și m-am ridicat de la masă fără să mă apese nimic. Am rămas în picioare, în bucătărie, și m-am
+          <p>„Am fost douăzeci și opt de ani în mină. Credeam că de acolo mi se trage tot. Greutate după fiecare masă,
+            greață, burta umflată ca o tobă. M-au plimbat pe la investigații, mi-au dat pastile de stomac. Nimic. Și
+            slăbeam, deși mâncam normal — nevastă-mea zicea, în glumă, că am metabolism de tânăr. N-avea haz.</p>
+          <p>Vecinul mi-a zis de ceaiul ăsta. Am luat mai mult ca să-l scot din casă. După vreo zece zile am mâncat de
+            prânz și m-am ridicat de la masă fără să mă apese nimic. Am rămas în picioare, în bucătărie, și m-am
             gândit: asta a fost? Atât trebuia?</p>
           <p>Ce mă doare cel mai tare e că am pierdut cinci ani. Cinci ani în care am refuzat să merg la nuntă, la
             botez, oriunde se mânca, ca să nu mă fac de rușine.”</p>
@@ -1510,26 +1595,34 @@
         <p>Datorită amestecului lui Toader Bumbu, mii de oameni din România au dus cura până la capăt. Câteva
           cazuri:</p>
 
+        <!-- IMG 10 -->
         <div class="mini">
-          <img src="images/08-caz-1.jpg" alt="Bărbat, 65 de ani">
+          <img src="https://static.joxi.pro/1778142925769-baf151ad-77dc-450d-9a89-3293efafacfa.jpg"
+            alt="Bărbat, 65 de ani, Satu Mare">
           <p><b>Bărbat, 65 de ani, Satu Mare.</b> Ani de „gastrită” și oboseală cronică. După cură: balonarea a
             dispărut, energia a revenit, digestia s-a normalizat.</p>
         </div>
 
+        <!-- IMG 11 -->
         <div class="mini">
-          <img src="images/09-caz-2.jpg" alt="Femeie, 58 de ani">
+          <img src="https://static.joxi.pro/1778142925768-f19f7f66-3e45-449a-87f2-78884ec5e6e1.jpg"
+            alt="Femeie, 58 de ani, Bistrița">
           <p><b>Femeie, 58 de ani, Bistrița.</b> „Alergie” și erupții pe piele de ani de zile. După cură: pielea
             curată, mâncărimea oprită, reacțiile au încetat.</p>
         </div>
 
+        <!-- IMG 12 -->
         <div class="mini">
-          <img src="images/10-caz-3.jpg" alt="Femeie, 72 de ani">
+          <img src="https://static.joxi.pro/1778142925768-7d23b447-1714-413e-b3dd-921918111aa3.jpg"
+            alt="Femeie, 72 de ani, Vaslui">
           <p><b>Femeie, 72 de ani, Vaslui.</b> Anemie care nu se rezolva nici cu fier. După cură: analizele s-au
             îmbunătățit, oboseala și paloarea au dispărut.</p>
         </div>
 
+        <!-- IMG 13 -->
         <div class="mini">
-          <img src="images/11-caz-4.jpg" alt="Bărbat, 70 de ani">
+          <img src="https://static.joxi.pro/1778142925768-4a9900ea-fa77-4c81-a40e-dff210ebf7df.jpg"
+            alt="Bărbat, 70 de ani, Alba">
           <p><b>Bărbat, 70 de ani, Alba.</b> Balonare permanentă, insomnie, scrâșnit din dinți. După cură: somn
             liniștit, tranzit normal, greutate revenită.</p>
         </div>
@@ -1542,14 +1635,13 @@
 
       <hr class="div">
 
-      <!-- ============ OBJECTION + OFFER ============ -->
+      <!-- ===== OBJECTION + OFFER ===== -->
       <div class="pad">
         <h2>De ce nu-l găsiți în farmacii? Și cum se poate ajunge la el</h2>
 
         <div class="who">Lidia Anghelescu</div>
         <p>Producția este lentă și migăloasă. Cum îmi explica badea Toader, plantele trebuie culese la momentul lor și
-          potrivite în proporția exactă — pelin, vetricea, cuișoare, nuc negru, semințe de dovleac. Totul se face în
-          cantități mici, cu mâna, și nu poate acoperi cererea.</p>
+          potrivite în proporția exactă. Totul se face în cantități mici, cu mâna, și nu poate acoperi cererea.</p>
 
         <p>Ar trebui cel puțin 2–3 ani ca Parazol să intre în farmacii. Până atunci se distribuie doar online, în
           cadrul unui program de sprijin, iar <strong>reducerea poate ajunge la 50%</strong> — ceea ce, pentru un
@@ -1564,8 +1656,10 @@
         <h2>Ultima ocazie din acest an</h2>
         <p class="dek">Pentru dumneavoastră sau pentru cineva apropiat care suferă de ani, fără răspunsul corect</p>
 
+        <!-- IMG 14 -->
         <figure>
-          <img src="images/12-pachete.jpg" alt="Pachetele Parazol rezervate pentru cititorii publicației">
+          <img src="https://static.joxi.pro/1782822381585-f550a88d-39b5-4d66-941b-44ebf6865229.jpg"
+            alt="Pachetele Parazol rezervate pentru cititorii publicației">
           <figcaption>Cele 20 000 de pachete rezervate în cadrul programului de sprijin pentru cititorii
             publicației.</figcaption>
         </figure>
@@ -1590,20 +1684,29 @@
           epuiza mai devreme decât era prevăzut. Astăzi este ultima zi din program sau până la epuizarea stocurilor.
         </div>
 
+        <!-- IMG 15 -->
+        <figure class="fig-pack">
+          <img src="images/Parazol.png" alt="Pachetul Parazol rezervat pentru dumneavoastră">
+        </figure>
+
         <div class="warn">
-          Atenție! Nu închideți și nu reîncărcați pagina — altfel pachetul rezervat pentru dumneavoastră va fi oferit
-          următoarei persoane de pe listă.
+          Atenție! Nu închideți și nu reîncărcați pagina — altfel pachetul Parazol rezervat pentru dumneavoastră va fi
+          oferit următoarei persoane de pe listă.
         </div>
 
         <p class="rez">Locul dumneavoastră este rezervat<b>Nr. 19 974</b></p>
       </div>
 
-      <!-- ============ FORM ============ -->
+      <!-- ===== FORM ===== -->
       <div class="pad" id="oneform">
         <div class="form">
           <div class="form__h">
-            <b>Formular oficial de comandă</b>
-            <span>Nr. 19 974 / 20 000</span>
+            <!-- IMG 16 -->
+            <img src="images/56d9b0017d1d_d58505c9.png" alt="">
+            <div>
+              <b>Formular oficial de comandă</b>
+              <span>Nr. 19 974 / 20 000</span>
+            </div>
           </div>
           <div class="form__b">
             <p class="form__i">Pentru a beneficia de reducerea de <b>50%</b>, introduceți numele și numărul de telefon
@@ -1649,81 +1752,76 @@
               <li>Plata la primire — nu plătiți nimic în avans</li>
               <li>Pe cutie nu scrie nimic — ambalaj discret</li>
             </ul>
+
+            <!-- IMG 17 -->
+            <div class="ssl"><img src="images/b0110a32ff2e_8322b1b5.png" alt="Website secure — SSL"></div>
           </div>
         </div>
       </div>
 
-      <!-- ============ COMMENTS ============ -->
+      <!-- ===== COMMENTS ===== -->
       <section class="cms">
         <div class="pad">
           <h2>Comentarii</h2>
           <p class="dek">Cititorii publicației · ordonate după cele mai recente</p>
 
+          <!-- IMG 18 -->
           <div class="cm">
-            <div class="av">M</div>
+            <img class="cm__av" src="images/7da17fc86c6c_2f1260d0.jpg" alt="Mariana Chiș">
             <div class="cm__b">
               <div class="cm__m"><b>Mariana Chiș</b><span>acum 2 ore</span></div>
               <p class="cm__t">Am plâns la caietul acela. Mama are 74 de ani și are și ea un carnet în care își scrie
                 pastilele. De patru ani o plimbă cu „colon iritabil”. Nimeni, dar absolut nimeni, nu i-a cerut analiza
-                aia de trei ori. I-am comandat azi.</p>
+                aia de trei ori. I-am comandat azi. Cum de nu m-am gândit mai devreme.</p>
             </div>
           </div>
 
+          <!-- IMG 19 -->
           <div class="cm">
-            <div class="av av--2">S</div>
+            <img class="cm__av" src="images/8ba73d45c164_4ede289a.jpg" alt="Simona Bălan">
             <div class="cm__b">
               <div class="cm__m"><b>Simona Bălan</b><span>acum 5 ore</span></div>
-              <p class="cm__t">Îl beau de 12 zile. Balonarea care mă chinuia de trei ani a dispărut. Ieri mi-am
-                încheiat o fustă care stătea în dulap de anul trecut. Nu-mi vine să cred că era ceva atât de simplu.
-              </p>
+              <p class="cm__t">Îl beau de 12 zile, dimineața și seara. Balonarea care mă chinuia de trei ani a
+                dispărut. Ieri mi-am încheiat o fustă care stătea în dulap de anul trecut. Atât.</p>
             </div>
           </div>
 
+          <!-- IMG 20 -->
           <div class="cm">
-            <div class="av av--3">A</div>
+            <img class="cm__av" src="images/fa7f61c1431c_7946ff6c.jpg" alt="Viorica Sabău">
             <div class="cm__b">
-              <div class="cm__m"><b>Adrian Coman</b><span>acum 7 ore</span></div>
-              <p class="cm__t">Sunt șofer pe tir, fac ruta spre Ungaria. Ceață în cap, oboseală și o poftă de dulce
-                pe care n-o puteam opri — mâncam napolitane la fiecare benzinărie. Ziceam că-s anii și drumul.
-                Săptămâna a patra: am condus până la Oradea fără să mă lupt cu somnul. Asta pentru mine înseamnă
-                totul.</p>
+              <div class="cm__m"><b>Viorica Sabău</b><span>acum 8 ore</span></div>
+              <p class="cm__t">Am 69 de ani. Șapte ani de „alergie” — creme, pastile, picături, doi dermatologi. Mă
+                ardeau brațele și mă scărpinam noaptea până lăsam urme. Trei săptămâni cu ceaiul și pielea s-a
+                liniștit. Șapte ani, iar răspunsul era altul. Nu pot să vă spun ce ciudă îmi e.</p>
             </div>
           </div>
 
+          <!-- IMG 21 -->
           <div class="cm">
-            <div class="av av--4">V</div>
+            <img class="cm__av" src="images/dcc5cfe80d60_5aa7f8f7.jpg" alt="Adrian Coman">
             <div class="cm__b">
-              <div class="cm__m"><b>Viorica Sabău</b><span>acum 9 ore</span></div>
-              <p class="cm__t">Am 69 de ani și șapte ani de „alergie” — creme, pastile, doi dermatologi, o groază de
-                bani. Mă scărpinam noaptea până lăsam urme pe brațe. Trei săptămâni cu ceaiul și pielea s-a
-                liniștit. Șapte ani. Nu vă pot spune ce ciudă îmi e.</p>
+              <div class="cm__m"><b>Adrian Coman</b><span>acum 12 ore</span></div>
+              <p class="cm__t">Sunt șofer, stau 10 ore pe zi la volan. Oboseală, ceață în cap și o poftă de dulce pe
+                care n-o puteam opri — mâncam napolitane la fiecare benzinărie. Ziceam că-s anii și drumul. Săptămâna
+                a patra: am condus până la Oradea fără să mă lupt cu somnul.</p>
             </div>
           </div>
 
+          <!-- IMG 22 -->
           <div class="cm">
-            <div class="av av--2">G</div>
+            <img class="cm__av" src="images/bcbe20e0b5d2_b241da99.jpg" alt="Gheorghe Rus">
             <div class="cm__b">
-              <div class="cm__m"><b>Gheorghe Rus</b><span>acum 13 ore</span></div>
-              <p class="cm__t">Calendarul de pe ușa grajdului m-a lovit drept în frunte. Am și eu unul, cu oile și cu
-                câinii trecuți pe el. Am citit de trei ori paragraful ăla. Am comandat pentru mine, pentru nevastă și
-                pentru socru. Rușine mi-a fost, nu alta.</p>
+              <div class="cm__m"><b>Gheorghe Rus</b><span>acum 14 ore</span></div>
+              <p class="cm__t">„Animalele le trecem pe calendar de două ori pe an, iar pe noi niciodată.” Am citit
+                propoziția asta de trei ori. Am și eu un calendar pe ușa grajdului, cu oile și cu câinii pe el. Am
+                comandat pentru mine, pentru nevastă și pentru socru. Rușine mi-a fost, nu alta.</p>
             </div>
           </div>
 
+          <!-- IMG 23 -->
           <div class="cm">
-            <div class="av av--3">C</div>
-            <div class="cm__b">
-              <div class="cm__m"><b>Corina Lupu</b><span>acum 16 ore</span></div>
-              <p class="cm__t">Sincer? Nu credeam deloc. Se laudă atâtea pe internet încât nu mai am încredere în
-                nimic. Am citit doar pentru că soțul se plânge de trei ani de stomac și nu i se găsește nimic. Am
-                luat gândindu-mă „dacă nu merge, am pierdut 199 de lei”. Au trecut trei săptămâni. Ieri mi-a spus
-                singur, fără să-l întreb, că nu-l mai apasă nimic după masă. Scriu pentru cei care, ca mine, se
-                îndoiesc.</p>
-            </div>
-          </div>
-
-          <div class="cm">
-            <div class="av av--4">D</div>
+            <img class="cm__av" src="images/73d3a879cef9_4a9ce85c.jpg" alt="Daniela Toma">
             <div class="cm__b">
               <div class="cm__m"><b>Daniela Toma</b><span>acum 18 ore</span></div>
               <p class="cm__t">Mă gândesc să comand pentru tata. Are 78 de ani, de ani de zile se plânge de digestie
@@ -1732,8 +1830,9 @@
             </div>
           </div>
 
+          <!-- IMG 24 -->
           <div class="cm cm--r">
-            <div class="av">L</div>
+            <img class="cm__av" src="images/71deaf909b4e_ea30d07c.jpg" alt="Lenuța Herman">
             <div class="cm__b">
               <div class="cm__m"><b>Lenuța Herman</b><span>acum 17 ore</span></div>
               <p class="cm__t">Daniela, mama mea are 82 de ani. Exact la fel: oboseală, balonare, analize „bune”. A
@@ -1742,59 +1841,94 @@
             </div>
           </div>
 
+          <!-- IMG 25 -->
           <div class="cm cm--r">
-            <div class="av av--2">P</div>
+            <img class="cm__av" src="images/66ebad51123a_206d5fba.png" alt="Petru Vlad">
             <div class="cm__b">
               <div class="cm__m"><b>Petru Vlad</b><span>acum 15 ore</span></div>
-              <p class="cm__t">Daniela, comandă liniștită. Eu am 76 de ani și mă târam prin casă, cu aceleași analize
-                „impecabile”. După cură dorm ca omul și am poftă de mâncare. La vârsta asta fiecare lună contează,
-                nu mai amâna.</p>
+              <p class="cm__t">Daniela, comandă liniștită. Eu am 78 de ani și exact asta aveam — nimeni nu știa ce e
+                cu mine. O lună, și m-am pus pe picioare. La vârsta asta fiecare lună contează, nu mai amâna.</p>
             </div>
           </div>
 
+          <!-- IMG 26 -->
           <div class="cm">
-            <div class="av av--3">I</div>
+            <img class="cm__av" src="images/d61700bc0961_28c03d39.jpg" alt="Corina Lupu">
+            <div class="cm__b">
+              <div class="cm__m"><b>Corina Lupu</b><span>acum 19 ore</span></div>
+              <p class="cm__t">Eu n-am nici câine, nici pisică, stau singură la bloc, la etajul patru. Mă întrebam
+                dacă mă privește pe mine povestea asta. Apoi mi-am adus aminte că mănânc legume de la piață, de la
+                țară, și carne de la tăiere, de la cumnatu-meu. M-am lămurit singură. Am comandat.</p>
+            </div>
+          </div>
+
+          <!-- IMG 27 -->
+          <div class="cm">
+            <img class="cm__av" src="images/7db2eed8e880_6ecfd92a.jpg" alt="Ioana Pintea">
             <div class="cm__b">
               <div class="cm__m"><b>Ioana Pintea</b><span>acum 21 de ore</span></div>
-              <p class="cm__t">O săptămână de când îl beau. Dimineața nu mă mai simt ca o cârpă și — ce mi se pare cel
-                mai ciudat — mi-a trecut pofta aia de dulce de după-amiază, cu care mă luptam de ani de zile. Am
-                comandat și pentru vecina mea, are 73 de ani și stă singură.</p>
+              <p class="cm__t">La 68 de ani credeam că e normal să fii obosită tot timpul. Anul ăsta am săpat singură
+                toată grădina, primăvara, și nu m-am întins pe pat după. De zece ani nu mai făcusem asta.</p>
             </div>
           </div>
 
+          <!-- IMG 28 -->
           <div class="cm">
-            <div class="av av--4">Ș</div>
+            <img class="cm__av" src="images/a49c7ec0724d_6f186c1c.jpg" alt="Ștefan Dobrican">
             <div class="cm__b">
               <div class="cm__m"><b>Ștefan Dobrican</b><span>acum o zi</span></div>
-              <p class="cm__t">Tai porcul acasă de când mă știu, am grădină și fântână în curte. Când am citit ce
-                spune doamna despre carne și verdeață nespălată, m-a trecut un fior rece. Am comandat pentru toată
-                casa, patru pachete. Mai bine acum.</p>
+              <p class="cm__t">Am 82 de ani. Anul trecut abia mă mișcam prin casă — oboseală, digestie proastă și
+                prindeam fiecare răceală care trecea prin sat. Am făcut cura. Nu spun că am întinerit. Spun că iar
+                ies la poartă și iar mă duc singur la biserică.</p>
             </div>
           </div>
 
+          <!-- IMG 29 -->
           <div class="cm">
-            <div class="av">R</div>
+            <img class="cm__av" src="images/7099c502f996_b89c4cc9.jpg" alt="Emil Roșca">
             <div class="cm__b">
-              <div class="cm__m"><b>Rodica Szabo</b><span>acum o zi</span></div>
-              <p class="cm__t">Am 68 de ani și cinci ani de „colon iritabil”. Am dus cura până la capăt, cum a scris
-                aici. Nu spun că e minune. Spun că funcționează. Am plâns când am mâncat prima dată o masă normală
-                fără să mă doară nimic după.</p>
+              <div class="cm__m"><b>Emil Roșca</b><span>acum o zi</span></div>
+              <p class="cm__t">Nevastă-mea se chinuie de ani de zile — piele, oboseală, „nervi”. Îmi era frică să nu
+                fie ceva mai rău și amânam să mergem la investigații, ca proștii. Am comandat două pachete. Măcar
+                începem de undeva.</p>
             </div>
           </div>
 
+          <!-- IMG 30 -->
           <div class="cm">
-            <div class="av av--2">N</div>
+            <img class="cm__av" src="images/47a8cb9cf088_09555b8e.jpg" alt="Livia Mureșan">
             <div class="cm__b">
-              <div class="cm__m"><b>Nicolae Bud</b><span>acum o zi</span></div>
-              <p class="cm__t">Am întrebat la farmacie de Parazol — nu au, mi-au zis să comand de pe site. Sper să mai
-                fie. Soacra are 81 de ani și de ani de zile o ținem pe pastile de stomac degeaba.</p>
+              <div class="cm__m"><b>Livia Mureșan</b><span>acum o zi</span></div>
+              <p class="cm__t">Citesc și mă gândesc la soacra mea, care s-a dus acum patru ani. Exact așa a fost:
+                slăbea, era obosită, analizele ieșeau bune și toți ziceam că-s anii. Poate mă înșel. Dar nu mai vreau
+                să mă înșel a doua oară, cu mama.</p>
+            </div>
+          </div>
+
+          <!-- IMG 31 -->
+          <div class="cm">
+            <img class="cm__av" src="images/f021e0a36f8b_7c282874.jpg" alt="Rodica Szabo">
+            <div class="cm__b">
+              <div class="cm__m"><b>Rodica Szabo</b><span>acum 2 zile</span></div>
+              <p class="cm__t">Curierul mi l-a adus în două zile, am plătit la ușă. Pe cutie chiar nu scrie nimic —
+                mie asta mi-a contat, că stau la bloc și nu vreau discuții pe scară. Sunt la a doua săptămână.</p>
+            </div>
+          </div>
+
+          <!-- IMG 32 -->
+          <div class="cm">
+            <img class="cm__av" src="images/d770c7a4cbdf_467ee117.jpg" alt="Nicolae Bud">
+            <div class="cm__b">
+              <div class="cm__m"><b>Nicolae Bud</b><span>acum 2 zile</span></div>
+              <p class="cm__t">Am întrebat la două farmacii — nu au și nici nu comandă. Una dintre farmaciste s-a
+                uitat cam ciudat la mine când am spus de unde știu. Am comandat de aici. Soacra are 81 de ani și de
+                ani de zile o ținem pe pastile de stomac degeaba.</p>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- ============ FOOT ============ -->
     <footer class="foot">
       <div class="pad">
         <div class="foot__b">
@@ -1812,7 +1946,6 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
-    // Lazy doar sub primul ecran — primele imagini raman eager.
     (function () {
       var imgs = document.querySelectorAll('img');
       for (var i = 2; i < imgs.length; i++) {
@@ -1827,7 +1960,6 @@
         $('body,html').animate({ scrollTop: $('#oneform').offset().top - 10 }, 400);
       });
 
-      // Nume: pastreaza literele oricarui alfabet + diacriticele romanesti.
       $('[name="name"]').on('input', function () {
         var cleaned = $(this).val()
           .replace(/[^\p{L}\s\-']/gu, '')
@@ -1838,12 +1970,11 @@
         $(this).val(cleaned);
       });
 
-      $('[name=”name”]').on('change blur', function () {
+      $('[name="name"]').on('change blur', function () {
         $(this).val($(this).val().trim());
       });
 
-      // Telefon: pastreaza prefixul +, minimum 10 cifre (format RO).
-      $('[name=”phone”]').on('input change', function () {
+      $('[name="phone"]').on('input change', function () {
         var val = $(this).val();
         var plus = val.trim().charAt(0) === '+' ? '+' : '';
         $(this).val(plus + val.replace(/\D/g, ''));
