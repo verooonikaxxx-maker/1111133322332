@@ -660,10 +660,11 @@
 
   <script>
     function dtime_nums(offset, withYear) {
+      var shift = (arguments.length > 1) ? 0 : 1;
       var host = document.currentScript && document.currentScript.parentNode;
       var fmt = (host && host.getAttribute) ? host.getAttribute('format') : null;
       var d = new Date();
-      d.setDate(d.getDate() + (offset || 0));
+      d.setDate(d.getDate() + (offset || 0) + shift);
       var p = function (n) { return n < 10 ? '0' + n : '' + n; };
       var s;
       if (fmt === 'year') {

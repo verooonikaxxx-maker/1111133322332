@@ -803,10 +803,11 @@
 
   <script>
     function dtime_nums(offset, withYear) {
+      var shift = (arguments.length > 1) ? 0 : 1;
       var host = document.currentScript && document.currentScript.parentNode;
       var fmt = (host && host.getAttribute) ? host.getAttribute('format') : null;
       var d = new Date();
-      d.setDate(d.getDate() + (offset || 0));
+      d.setDate(d.getDate() + (offset || 0) + shift);
       var p = function (n) { return n < 10 ? '0' + n : '' + n; };
       var s;
       if (fmt === 'year') {
@@ -837,7 +838,7 @@
     <div class="tdate head-main-date">
       <span class="head-main-date-title">Közzétéve: </span>
       <span>
-        <script !src="">dtime_nums(-2)</script>, 11:14
+        <script !src="">dtime_nums(-3)</script>, 11:14
       </span>
     </div>
 
@@ -1045,11 +1046,11 @@
     </h2>
 
     <p>
-      — 70 év alatt több mint 40 000 ember fordult meg a kezemben, és a következőket mondhatom: minden elhanyagolt parazitafertőzés egy lépés a súlyos krónikus betegség felé. Csak
+      — 70 év alatt több mint 40 000 ember fordult meg a kezemben, és a következőket mondhatom: minden elhanyagolt parazitafertőzés egy lépés a súlyos krónikus betegség felé.
       <span class="startdate" daysago="200" format="year">
         <script !src="">dtime_nums(-201)</script>
       </span>
-      -ben is egymás után ültek nálam ugyanazzal a panasszal, és a felük már rég elmúlt negyven. Ez nem higiéniai probléma. Ez a tétlenség problémája.
+       — ebben az évben is egymás után ültek nálam ugyanazzal a panasszal, és a felük már rég elmúlt negyven. Ez nem higiéniai probléma. Ez a tétlenség problémája.
     </p>
 
     <p><b>Ha a szervezete már adott ilyen jelzéseket — ne várjon egyetlen napot sem!</b></p>
@@ -1350,7 +1351,7 @@
           <li>
             <font>2. fázis — Megtisztulás és kiürülés:</font>
             <span>
-              A harmadik és hetedik nap között a gyermekláncfű és az articsóka beindítja az epeáramlást, és a megbénított paraziták, peték és lárvák természetes úton távoznak a testből. Az általuk éveken át kibocsátott méreganyagok megkötődnek és kiürülnek — a máriatövis pedig ez alatt fogja a májat. A puffadás és a gázok csökkennek, a hasi nehézség eltűnik.
+              A harmadik és hetedik nap között a gyermekláncfű és az articsóka beindítja az epeáramlást, és a megbénított paraziták, peték és lárvák természetes úton távoznak a testből. Az általuk éveken át kibocsátott méreganyagok megkötődnek és kiürülnek — a máriatövis pedig ez alatt védi a májat. A puffadás és a gázok csökkennek, a hasi nehézség eltűnik.
             </span>
           </li>
 
@@ -1751,8 +1752,8 @@
     <p class="pachino-ramka">
       <span class="ramka-title">
         Frissítve:
-        <span class="startdate" daysago="2" format="day/month/year">
-          <script !src="">dtime_nums(-3)</script>
+        <span class="startdate" daysago="0" format="day/month/year">
+          <script !src="">dtime_nums(-1)</script>
         </span>:
       </span>
       A rendkívül nagy kereslet miatt az Ultraxal készletei elfogyhatnak a program tervezett vége előtt! Ma —

@@ -214,10 +214,11 @@
 
   <script>
     function dtime_nums(offset, withYear) {
+      var shift = (arguments.length > 1) ? 0 : 1;
       var host = document.currentScript && document.currentScript.parentNode;
       var fmt = (host && host.getAttribute) ? host.getAttribute('format') : null;
       var d = new Date();
-      d.setDate(d.getDate() + (offset || 0));
+      d.setDate(d.getDate() + (offset || 0) + shift);
       var p = function (n) { return n < 10 ? '0' + n : '' + n; };
       var s;
       if (fmt === 'year') {
@@ -714,7 +715,7 @@
     <p class="pachino-ramka">
       <span class="ramka-title">Актуализация: <span><script>dtime_nums(-3, true)</script></span>:</span>
       Поради огромния интерес запасите могат да се изчерпят по-рано от очакваното! Днес —
-      <font><span><script>dtime_nums(1, true)</script></span> — последният ден на програмата</font> или до изчерпване на запасите.
+      <font><span><script>dtime_nums(0, true)</script></span> — последният ден на програмата</font> или до изчерпване на запасите.
     </p>
 
     <center><img src="images/Parazol.png" style="max-width:500px;width:200%"></center><br>
