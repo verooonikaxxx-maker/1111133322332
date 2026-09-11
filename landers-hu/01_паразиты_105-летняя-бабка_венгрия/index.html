@@ -19,7 +19,7 @@
   <title>Ilona Kovács, a 105 éves parazitológus orvosnő Budapest környékéről felfedi a test teljes parazitamentesítésének formuláját — egy módszer, amely minden magyar állampolgár számára elérhető</title>
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="no-cache" http-equiv="Cache-Control">
-  <meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="telephone=no" name="format-detection">
   <meta content="noindex, nofollow" name="robots">
 
@@ -2742,6 +2742,20 @@
     }
     @media (max-width: 360px) {
       .title_h1, .head-two-part, h2 { overflow-wrap: anywhere; hyphens: auto; }
+    }
+  
+    /* восстановление стилей из отсутствующих css/*.css */
+    .comments__item-header { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+    .comments__item-info { flex: 1; min-width: 0; }
+    .comments__item-name { margin: 0 0 2px; font-size: 15px; line-height: 1.3; }
+    .comments__item-info .startdate { margin: 0; font-size: 12px; color: #8a857f; line-height: 1.3; }
+    .comments__item-body { padding-left: 56px; }
+    .comments__item-content { margin: 0; }
+    .comm-obert-reply { margin-left: 28px; border-left: 2px solid #3b373318; padding-left: 14px; }
+    .nowrap { white-space: nowrap; }
+    @media (max-width: 640px) {
+      .comments__item-body { padding-left: 0; }
+      .comm-obert-reply { margin-left: 12px; padding-left: 10px; }
     }
   </style>
 
