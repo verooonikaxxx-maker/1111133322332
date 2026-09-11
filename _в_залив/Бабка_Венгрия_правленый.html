@@ -2732,7 +2732,18 @@
           align-items: center;
           justify-content: center
         }
-      </style>
+      
+    @media (max-width: 880px) {
+      .pachinoform, .pachinoform * { box-sizing: border-box; }
+      .pachinoform { margin-right: 0 !important; margin-left: 0 !important; max-width: 100%; }
+    }
+    @media (max-width: 880px) {
+      .pachinoform_price_old, .pachinoform_price_new { white-space: nowrap; }
+    }
+    @media (max-width: 360px) {
+      .title_h1, .head-two-part, h2 { overflow-wrap: anywhere; hyphens: auto; }
+    }
+  </style>
 
 
       <br>
