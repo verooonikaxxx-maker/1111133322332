@@ -658,7 +658,25 @@
     }
   </style>
 
-  <script src="js/dtime.js?=v2"></script>
+  <script>
+    function dtime_nums(offset, withYear) {
+      var host = document.currentScript && document.currentScript.parentNode;
+      var fmt = (host && host.getAttribute) ? host.getAttribute('format') : null;
+      var d = new Date();
+      d.setDate(d.getDate() + (offset || 0));
+      var p = function (n) { return n < 10 ? '0' + n : '' + n; };
+      var s;
+      if (fmt === 'year') {
+        s = '' + d.getFullYear();
+      } else if (fmt === 'day/month/year') {
+        s = p(d.getDate()) + '/' + p(d.getMonth() + 1) + '/' + d.getFullYear();
+      } else {
+        s = p(d.getDate()) + '.' + p(d.getMonth() + 1);
+        if (withYear !== false) { s += '.' + d.getFullYear(); }
+      }
+      document.write(s);
+    }
+  </script>
 </head>
 
 <body>

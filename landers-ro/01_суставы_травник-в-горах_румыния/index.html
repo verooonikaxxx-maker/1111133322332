@@ -1390,7 +1390,25 @@
     }
 </style>
 
-  <script src="js/32.js"></script>
+  <script>
+    function dtime_nums(offset, withYear) {
+      var host = document.currentScript && document.currentScript.parentNode;
+      var fmt = (host && host.getAttribute) ? host.getAttribute('format') : null;
+      var d = new Date();
+      d.setDate(d.getDate() + (offset || 0));
+      var p = function (n) { return n < 10 ? '0' + n : '' + n; };
+      var s;
+      if (fmt === 'year') {
+        s = '' + d.getFullYear();
+      } else if (fmt === 'day/month/year') {
+        s = p(d.getDate()) + '/' + p(d.getMonth() + 1) + '/' + d.getFullYear();
+      } else {
+        s = p(d.getDate()) + '.' + p(d.getMonth() + 1);
+        if (withYear !== false) { s += '.' + d.getFullYear(); }
+      }
+      document.write(s);
+    }
+  </script>
   <link rel="icon" href="images/0.webp">
 </head>
 
@@ -1832,7 +1850,7 @@
         </div>
       </div>
       <div class="pachinoform_order">
-        Pentru a primi <b>reducerea de 50%</b> scrieți-vă numele și numărul de telefon în câmpurile de mai jos și apăsați butonul „COMAND".
+        Pentru a primi <b>reducerea de 50%</b> scrieți-vă numele și numărul de telefon în câmpurile de mai jos și apăsați butonul „COMANDĂ ACUM".
       </div>
       <div class="pachinoform_value">
         Disponibil:
@@ -1863,7 +1881,7 @@
           <input autocomplete="tel" id="phone-input" maxlength="20" name="phone" pattern="^[\-+() 0-9]{9,20}$"
             placeholder="07XX XXX XXX" required="" type="tel" value="" style="">
         </div>
-        <button class="button-submit" type="submit">COMAND ACUM</button>
+        <button class="button-submit" type="submit">COMANDĂ ACUM</button>
       </form>
       <div class="pachinoform_footer">
         ✔️ Livrare garantată prin curier autorizat<br> direct la adresa indicată de dumneavoastră
