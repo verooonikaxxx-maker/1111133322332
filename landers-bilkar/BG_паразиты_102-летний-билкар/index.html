@@ -2632,81 +2632,24 @@
     .text-container { margin-top: 0 !important; padding-top: 0 !important; }
     header { margin: 0 !important; padding: 0 !important; }
 
-    /* --- ШАПКА: бежевая карточка в зелёной рамке вместо тёмной коробки --- */
+    /* --- ШАПКА: светло-коричневая, остальное как в оригинале --- */
     .h1-bg, .h1-bg.split {
-      max-width: 900px !important;
-      margin: 18px auto 12px !important;
-      background: var(--beige) !important;
+      background: #c3a484 !important;
       background-image: none !important;
-      border: 3px solid var(--frame) !important;
-      border-radius: 10px !important;
-      box-shadow: 0 2px 10px rgba(31, 64, 52, .07) !important;
-      padding: 26px 26px 20px !important;
-      box-sizing: border-box;
     }
-
     .title_h1 {
       background: transparent !important;
       background-image: none !important;
-      color: var(--ink) !important;
-      border: none !important;
-      border-bottom: 1px dashed #c8b89a !important;
-      border-radius: 0 !important;
-      padding: 0 0 16px !important;
-      margin: 0 0 14px !important;
-      text-align: left !important;
-      font-family: Georgia, 'Times New Roman', serif !important;
-      font-size: 25px !important;
-      line-height: 1.34 !important;
-      font-weight: 700 !important;
-      font-style: normal !important;
-      letter-spacing: .1px;
+      color: #3a2d20 !important;
+      border-bottom-color: #8a6c47 !important;
     }
-
-    .head-two-part, .head-one-part { color: var(--ink) !important; }
-
-    .head-main-date {
-      display: block !important;
-      color: var(--muted) !important;
-      padding: 0 !important;
-      margin: 0 0 14px !important;
-      font-family: Georgia, 'Times New Roman', serif !important;
-      font-size: 14px !important;
-      font-style: normal !important;
-      letter-spacing: .4px;
-    }
-    .head-main-date-title {
-      display: inline !important;
-      color: var(--muted) !important;
-      text-transform: uppercase;
-      font-style: normal !important;
-    }
-    .head-main-date span { display: inline !important; font-style: normal !important; color: #3a4d44 !important; }
-    .head-main-date::before {
-      content: '';
-      display: inline-block;
-      width: 8px; height: 8px;
-      margin-right: 8px;
-      background: var(--frame);
-      border-radius: 2px;
-      vertical-align: 1px;
-    }
-
+    .head-two-part, .head-one-part { color: #3a2d20 !important; }
+    .head-main-date { color: #5c4630 !important; }
+    .head-main-date-title { color: #6b5540 !important; }
     .main-subtitle {
-      display: block !important;
-      color: #2b3a33 !important;
-      background: #ffffff !important;
-      border: none !important;
-      border-left: 4px solid var(--frame) !important;
-      border-radius: 0 !important;
-      box-shadow: none !important;
-      padding: 14px 16px !important;
-      margin: 0 !important;
-      font-family: Georgia, 'Times New Roman', serif !important;
-      font-size: 17px !important;
-      line-height: 1.5 !important;
-      font-style: italic !important;
-      font-weight: 400 !important;
+      color: #3a2d20 !important;
+      background: #ffffff55 !important;
+      border: 1px solid #8a6c4755 !important;
     }
 
     /* --- ТЕЛО СТАТЬИ: строка тянулась на всю ширину экрана --- */
@@ -2745,7 +2688,7 @@
     }
 
     @media (max-width: 940px) {
-      .h1-bg, .h1-bg.split, main {
+      main {
         max-width: 100% !important;
         margin-left: 0 !important;
         margin-right: 0 !important;
@@ -2753,9 +2696,7 @@
         border-right-width: 0 !important;
         border-radius: 0 !important;
       }
-      .h1-bg, .h1-bg.split { padding: 18px 16px 14px !important; }
       main { padding: 18px 16px 24px !important; }
-      .title_h1 { font-size: 21px !important; }
     }
   </style>
 
