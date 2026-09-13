@@ -687,6 +687,13 @@
 </head>
 
 <body>
+  <div class="site-topbar">▲ СПЕЦИАЛЕН РЕПОРТАЖ · ЗДРАВЕ И БЛАГОПОЛУЧИЕ</div>
+  <div class="site-brandbar">
+    <span class="site-logo">+</span>
+    <span class="site-name">HealthInfo България</span>
+    <span class="site-sep"></span>
+    <span class="site-tagline">ДОКЛАДИ В ОБЛАСТТА НА ОБЩЕСТВЕНОТО ЗДРАВЕ</span>
+  </div>
   <header>
     <div class="bg-image">
     </div>
@@ -695,7 +702,7 @@
   <div class="h1-bg split">
     <h1 class="title_h1">
       <span class="head-one-part"></span>
-      <span class="head-two-part">НА 102 ГОДИНИ ТОЙ Е НАЙ-СТАРИЯТ БИЛКАР В БЪЛГАРИЯ И ЕДИНСТВЕНИЯТ ОТ СВОЕТО ПОКОЛЕНИЕ, В ЧИЙТО ОРГАНИЗЪМ НЯМА НИТО ЕДИН ПАРАЗИТ. ЗА ПЪРВИ ПЪТ РАЗКРИВА ФОРМУЛАТА ЗА ИЗЧИСТВАНЕ ОТ ПАРАЗИТИ, КОЯТО 40 ГОДИНИ ДАВАШЕ САМО НА ТЕЗИ, КОИТО ИДВАХА ПРИ НЕГО.</span>
+      <span class="head-two-part">На 102 години той е най-старият билкар в България и единственият от своето поколение, в чийто организъм няма нито един паразит. За първи път разкрива формулата за изчистване от паразити, която 40 години даваше само на тези, които идваха при него.</span>
     </h1>
 
     <div class="tdate head-main-date">
@@ -2621,12 +2628,27 @@
       background-image: none !important;
       color: #ffffff !important;
       border-bottom-color: #ffffff55 !important;
+      /* Georgia капсом по тёмному фону читалась тяжело */
+      font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+      font-size: 34px !important;
+      line-height: 1.28 !important;
+      font-weight: 700 !important;
+      text-transform: none !important;
+      letter-spacing: .1px !important;
     }
-    .head-two-part, .head-one-part { color: #ffffff !important; }
+    .head-two-part, .head-one-part {
+      color: #ffffff !important;
+      font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+      font-size: 34px !important;
+      line-height: 1.28 !important;
+      font-weight: 700 !important;
+      text-transform: none !important;
+    }
 
     /* дата публикации: была мелкая, курсивная и тонула в фоне */
     .head-main-date {
       color: #f2e8da !important;
+      font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
       font-style: normal !important;
       font-size: 15px !important;
       line-height: 1.5 !important;
@@ -2650,6 +2672,9 @@
       color: #ffffff !important;
       background: #ffffff1f !important;
       border: 1px solid #ffffff3d !important;
+      font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+      font-style: normal !important;
+      line-height: 1.55 !important;
     }
 
     /* --- ТЕЛО СТАТЬИ: строка тянулась на всю ширину экрана --- */
@@ -2674,6 +2699,66 @@
       padding-left: 0 !important;
       margin-top: 30px;
       margin-bottom: 16px;
+    }
+
+    /* --- шапка «издания» над статьёй --- */
+    .site-topbar {
+      background: #1f4034;
+      color: #ffffff;
+      text-align: center;
+      font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 1.4px;
+      padding: 12px 14px;
+      line-height: 1.35;
+    }
+    .site-brandbar {
+      background: #ffffff;
+      border-bottom: 1px solid #dcd7cc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      padding: 14px 16px;
+      flex-wrap: wrap;
+    }
+    .site-logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 7px;
+      background: #1f4034;
+      color: #ffffff;
+      font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1;
+    }
+    .site-name {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 27px;
+      font-weight: 700;
+      color: #1f4034;
+      letter-spacing: .2px;
+    }
+    .site-sep { width: 1px; height: 26px; background: #cfc9bd; }
+    .site-tagline {
+      font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1.1px;
+      color: #6b7d74;
+      text-transform: uppercase;
+    }
+    @media (max-width: 760px) {
+      .site-sep, .site-tagline { display: none; }
+      .site-topbar { font-size: 12.5px; letter-spacing: .9px; padding: 10px 12px; }
+      .site-brandbar { gap: 10px; padding: 11px 14px; }
+      .site-logo { width: 32px; height: 32px; font-size: 22px; }
+      .site-name { font-size: 22px; }
     }
 
     /* --- КРУПНЫЙ ШРИФТ: ленд читают женщины 60–75 лет --- */
@@ -2757,11 +2842,11 @@
         border-radius: 0 !important;
       }
       .title_h1 {
-        font-size: 22px !important;
-        line-height: 1.26 !important;
+        font-size: 25px !important;
+        line-height: 1.3 !important;
         padding: 10px 12px 12px !important;
       }
-      .head-two-part, .head-one-part { font-size: 22px !important; line-height: 1.26 !important; }
+      .head-two-part, .head-one-part { font-size: 25px !important; line-height: 1.3 !important; }
       .main-subtitle { font-size: 16.5px !important; line-height: 1.5 !important; }
       .head-main-date, .head-main-date-title, .head-main-date span { font-size: 15px !important; }
 
@@ -2776,8 +2861,8 @@
     }
 
     @media (max-width: 420px) {
-      .title_h1 { font-size: 19px !important; }
-      .head-two-part, .head-one-part { font-size: 19px !important; }
+      .title_h1 { font-size: 22px !important; line-height: 1.27 !important; }
+      .head-two-part, .head-one-part { font-size: 22px !important; line-height: 1.27 !important; }
       .main-subtitle { font-size: 15.5px !important; }
     }
   </style>
