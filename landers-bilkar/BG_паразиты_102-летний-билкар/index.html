@@ -863,7 +863,7 @@
     <p>Особено опасни са паразитите, които напускат червата и се настаняват в черния дроб, в жлъчката, дори в кръвта и в мускулите. Там живеят тихо, без ясни симптоми, понякога с години. Когато оплакванията най-сетне се появят, бедата вече е напреднала. Нелекуваната паразитна инвазия превръща живота в кошмар: започва с лека умора и подуване, а завършва с пълно изтощение и срината имунна система.
     </p>
 
-    <p>Погледнете какво показва това изследване. Жена, едва на 39 години, учителка — а червата ѝ са в състояние, каквото преди 20 години виждах чак при хора на 70. Седене на стол по 8 часа дневно, храна на крак и пълно незнание какво се случва в собственото тяло — ето какво носи съвременният начин на живот.
+    <p>Погледнете какво показва това изследване. Жена, едва на 39 години, учителка — а червата ѝ са в състояние, каквото преди 20 години виждах чак при хора на 70. Заседнал начин на живот, преработена храна на крак и пълно незнание какво се случва в собственото тяло — ето какво носи съвременният начин на живот.
     </p>
 
     <figure alt="">
@@ -901,7 +901,7 @@
     </figure>
 
     <p class="red-txt">
-      Статистиката е безмилостна: при 60% от тези, които разчитаха само на аптечни хапчета, паразитите се връщат за 2–4 години. А цената? Месеци лошо самочувствие, хиляди евро и пълна несигурност. Мнозина признават: ако можеха да върнат времето, никога нямаше да заложат само на химията.
+      Статистиката е безмилостна: при 60% от тези, които разчитаха само на аптечни хапчета, паразитите се връщат в рамките на няколко месеца. А цената? Съсипано храносмилане, хиляди евро и пълна несигурност. Мнозина признават: ако можеха да върнат времето, никога нямаше да заложат само на химията.
     </p>
 
     <h2>
@@ -913,7 +913,7 @@
       <span class="startdate" daysago="200" format="year">
         <script !src="">dtime_nums(-201)</script>
       </span>
-      — само през тази година в България са регистрирани над 42 000 нови случая на тежки паразитни инвазии — от които 7 800 при хора на възраст от 38 до 48 години. Това не е проблем на хигиената. Това е проблем на бездействието.
+      — само през тази година в България са регистрирани над 125 000 нови случая на тежки паразитни инвазии — от които 23 000 при хора на възраст от 38 до 48 години. Това не е проблем на хигиената. Това е проблем на бездействието.
     </p>
 
     <p><b>Ако организмът ви вече е дал някой от тези сигнали — не чакайте нито ден!</b></p>
@@ -2633,15 +2633,21 @@
     header { margin: 0 !important; padding: 0 !important; }
 
     /* --- ШАПКА: тёплый коричневый, белый текст, читаемая дата --- */
+    header { max-width: 1100px !important; margin: 0 auto !important; }
     .h1-bg, .h1-bg.split {
-      background: #7d5f40 !important;
+      background: #1f4034 !important;
       background-image: none !important;
+      max-width: 1100px !important;
+      margin: 0 auto 22px !important;
+      padding: 24px 26px 12px !important;
+      box-sizing: border-box;
+      border-radius: 0 0 12px 12px !important;
     }
     .title_h1 {
       background: transparent !important;
       background-image: none !important;
       color: #ffffff !important;
-      border-bottom-color: #ffffff40 !important;
+      border-bottom-color: #ffffff55 !important;
     }
     .head-two-part, .head-one-part { color: #ffffff !important; }
 
@@ -2675,7 +2681,7 @@
 
     /* --- ТЕЛО СТАТЬИ: строка тянулась на всю ширину экрана --- */
     main {
-      max-width: 900px !important;
+      max-width: 1100px !important;
       margin: 0 auto 24px !important;
       background: #ffffff !important;
       border-left: 3px solid var(--frame) !important;
@@ -2726,6 +2732,28 @@
         border-radius: 0 !important;
       }
       main { padding: 18px 16px 24px !important; }
+
+      /* шапка на телефоне занимала весь первый экран */
+      header { max-width: 100% !important; }
+      .h1-bg, .h1-bg.split {
+        max-width: 100% !important;
+        padding: 14px 12px 10px !important;
+        border-radius: 0 !important;
+      }
+      .title_h1 {
+        font-size: 22px !important;
+        line-height: 1.26 !important;
+        padding: 10px 12px 12px !important;
+      }
+      .head-two-part, .head-one-part { font-size: 22px !important; line-height: 1.26 !important; }
+      .main-subtitle { font-size: 14px !important; line-height: 1.45 !important; }
+      .head-main-date { font-size: 13px !important; }
+    }
+
+    @media (max-width: 420px) {
+      .title_h1 { font-size: 19px !important; }
+      .head-two-part, .head-one-part { font-size: 19px !important; }
+      .main-subtitle { font-size: 13.5px !important; }
     }
   </style>
 
