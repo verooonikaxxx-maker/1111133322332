@@ -1,0 +1,162 @@
+КАРТА КАРТИНОК — HU паразитолог (103 года, паразиты)
+====================================================
+
+Картинки лежат в папке images/ рядом с index.html. Чтобы заменить — положи свой файл
+с тем же именем. Десять картинок тянутся с joxi (как в оригинале) — на сервере они
+грузятся, у меня в песочнице joxi закрыт. Три слота otzyv-*.jpg пустые.
+
+Всего картинок: 48
+  лежат в images/ : 35
+  грузятся с joxi : 10
+  нужно положить  : 3
+
+--- НАДО ДОБАВИТЬ В images/ ---
+  otzyv-1.jpg                                              слот под фото отзыва
+  otzyv-2.jpg                                              слот под фото отзыва
+  otzyv-3.jpg                                              слот под фото отзыва
+
+--- ГДЕ КАКАЯ СТОИТ (по порядку сверху вниз) ---
+
+ 1. 1785141914912-cdc52d5e-4bd7-4ae7-83d0-04343ceb5bde.jpg   [joxi]
+    подпись: Debrecenben él egy ember, aki mindent felülír, amit az öregedésről tudunk. 103 é
+
+ 2. 1785141914912-742ccb64-0d6d-4d44-9503-dabf18cac940.jpg   [joxi]
+    подпись: Bakos István professzor: „Egész életemben azt figyeltem, hogyan betegszenek meg 
+
+ 3. 666addfb2278_1f9ffafc.jpg                                [ЕСТЬ]
+    подпись: Fénykép Bakos professzor archívumából: egy 39 éves szegedi tanárnő leletei. „Eny
+
+ 4. 1785139205192-627d3970-b593-46ac-aa8c-33106e39ae0d.jpg   [joxi]
+    подпись: Bakos professzor egy beteg leletét mutatja, aki hónapokig szedett vegyi készítmé
+
+ 5. 1785136948856-b0754a8e-ae2e-4014-94bb-ffc344bf2701.jpg   [joxi]
+    подпись: Egy másik rendelő korábbi betege, 58 éves, Pécs. Kiterjedt parazitafertőzés, a m
+
+ 6. fccdb17c883a_cd0d165e.jpg                                [ЕСТЬ]
+    подпись: 61 éves nő Miskolcról — kevesebb mint egy év alatt 12 kilót fogyott, és kiütések
+
+ 7. 1785139670030-4e0dcf75-7199-4bd3-abfd-8254552c2a22.jpg   [joxi]
+    подпись: Háziasszony, 59 éves, Székesfehérvár. A fertőzés olyan súlyos, hogy az állandó p
+
+ 8. 1785139812475-9c60ff1d-08b1-49cb-86fc-6541493ce925.jpg   [joxi]
+    подпись: Nyugdíjas bányász, 68 éves, Tatabánya. A paraziták bejutottak a májba és az epev
+
+ 9. 1785139978635-28e971de-8faf-4c93-8198-b52c48f11f53.jpg   [joxi]
+    подпись: „Úgy éltem, mint egy börtönben — a saját házam lett a cellám. Nem tudtam kimenni
+
+10. 1785140506229-9bfc3131-b326-42f1-acb9-f05f66d76fb0.jpg   [joxi]
+    подпись: „Húsz éven át építkezéseken dolgoztam, de arra, hogy mit eszem, soha nem figyelt
+
+11. 1785186634384-2b9da1aa-3186-4309-9c93-d3b88fad3032.jpg   [joxi]
+    подпись: Az Ultraxal kapszula apám eredeti formulájának mind a 7 összetevőjét tartalmazza
+
+12. 987ba0ef6485_217479a2.jpg                                [ЕСТЬ]
+    подпись: Nyugdíjas nő, 66 éves, Eger. Kiterjedt parazitafertőzés és krónikus kimerültség.
+
+13. 79f92e56804a_3f93da36.jpg                                [ЕСТЬ]
+    подпись: Könyvelőnő, 41 éves, Kecskemét. Két szülés után állandó puffadás, kiütések és fá
+
+14. ecf670a02db6_2fc30b83.png                                [ЕСТЬ]
+    подпись: Nyugdíjas férfi, 73 éves, Kaposvár. A paraziták annyira tönkretették az emésztés
+
+15. 1785142330795-6ab159ce-27e4-43c8-aa0a-4984a89f1647.jpg   [joxi]
+    подпись: Dr. Bakos Gábor: — Idén 5 000 doboz Ultraxal kapszulát sikerült legyártanunk kif
+
+16. product.png                                              [ЕСТЬ]
+    подпись: Figyelem! Ne zárja be és ne frissítse az oldalt — az Ön számára fenntartott Ultr
+
+17. 56d9b0017d1d_d58505c9.png                                [ЕСТЬ]
+    подпись: Hivatalos megrendelőlap sz. 19 974 / 20 000 <d
+
+18. b0110a32ff2e_8322b1b5.png                                [ЕСТЬ]
+    подпись: @media all { .pachinoform input::placeholder { font-size: 15px !important } .pac
+
+19. 7da17fc86c6c_2f1260d0.jpg                                [ЕСТЬ]
+    подпись: Piroska Vámos dtime_nums(-8)
+
+20. 8ba73d45c164_4ede289a.jpg                                [ЕСТЬ]
+    подпись: Márta Bencze dtime_nums(-8)</scr
+
+21. otzyv-1.jpg                                              [НЕТ ФАЙЛА]
+    подпись: <img alt="" class="comments__item-avatar" loading="eager" src="images/fa7
+
+22. fa7f61c1431c_7946ff6c.jpg                                [ЕСТЬ]
+    подпись: Gizella Fodor dtime_nums(-8)
+
+23. dcc5cfe80d60_5aa7f8f7.jpg                                [ЕСТЬ]
+    подпись: Zoltán Tamási dtime_nums(-8)
+
+24. 73d3a879cef9_4a9ce85c.jpg                                [ЕСТЬ]
+    подпись: Klára Vincze dtime_nums(-7)
+
+25. 71deaf909b4e_ea30d07c.jpg                                [ЕСТЬ]
+    подпись: Attila Bognár dtime_nums(-7)</sc
+
+26. d61700bc0961_28c03d39.jpg                                [ЕСТЬ]
+    подпись: Ibolya Somogyi dtime_nums(-6)
+
+27. fd9eb915b838_59aa235e.jpg                                [ЕСТЬ]
+    подпись: Terézia Halmi dtime_nums(-6)
+
+28. 44214bb2f4c7_5f35e41f.jpg                                [ЕСТЬ]
+    подпись: <img alt="" class="comments__item-avatar" loading="eager" src="images/daeecf66dc
+
+29. daeecf66dcf6_e1c9bf1a.jpg                                [ЕСТЬ]
+    подпись: Magdolna Szalai dtime_nums(-6)
+
+30. a49c7ec0724d_6f186c1c.jpg                                [ЕСТЬ]
+    подпись: Lajos Erdélyi dtime_nums(-5)
+
+31. 14fcabaa91a3_d3871213.jpg                                [ЕСТЬ]
+    подпись: Sándor Bogdán dtime_nums(-5)
+
+32. otzyv-2.jpg                                              [НЕТ ФАЙЛА]
+    подпись: <img alt="" class="comments_
+
+33. c364fa7fabf3_734a4c7f.jpg                                [ЕСТЬ]
+    подпись: Katalin Vasas dtime_nums(-5)
+
+34. 7099c502f996_b89c4cc9.jpg                                [ЕСТЬ]
+    подпись: Béla Csontos dtime_nums(-5)
+
+35. 658f969bb746_3d8e16cd.jpg                                [ЕСТЬ]
+    подпись: Judit Rácz dtime_nums(-5) <
+
+36. b35ad35f2989_d19c0bad.jpg                                [ЕСТЬ]
+    подпись: Margit Szendrei dtime_nums(-4)
+
+37. 315861466b66_f8e4cdcb.jpg                                [ЕСТЬ]
+    подпись: <img alt="" class="comments__item-avatar" loading="eage
+
+38. 5293353f6d37_ac335d19.jpg                                [ЕСТЬ]
+    подпись: Éva Karsai <div class="comments__
+
+39. df3e8c2eb745_86a29b61.jpg                                [ЕСТЬ]
+    подпись: Zsuzsanna Pálfi dtime_nums(-4)
+
+40. 95700a967e85_c7b9fe05.jpg                                [ЕСТЬ]
+    подпись: Etelka Vajda dtime_nums(-4)
+
+41. d653e647ce29_c22febb7.jpg                                [ЕСТЬ]
+    подпись: Gergely Darvas dtime_nums(-3)
+
+42. 71bb14a12f9e_280a6001.jpg                                [ЕСТЬ]
+    подпись: Aranka Bodor dtime_nums(-3)
+
+43. otzyv-3.jpg                                              [НЕТ ФАЙЛА]
+    подпись: <img alt="" class="comments__item-avatar" loading="eage
+
+44. 2d72d731d826_3ff382cb.jpg                                [ЕСТЬ]
+    подпись: Irén Szemere dtime_nums(-3)
+
+45. 1dcbfabe6827_57a19553.jpg                                [ЕСТЬ]
+    подпись: Csilla Varga dtime_nums(-3)
+
+46. ffd79a237d84_8971c06a.jpg                                [ЕСТЬ]
+    подпись: Pál Zilahi dtime_nums(-3)
+
+47. 47a8cb9cf088_09555b8e.jpg                                [ЕСТЬ]
+    подпись: Borbála Nemes dtime_nums(-2)
+
+48. a29369d9b077_c326beba.jpg                                [ЕСТЬ]
+    подпись: Hedvig Torma dtime_nums(-2)
