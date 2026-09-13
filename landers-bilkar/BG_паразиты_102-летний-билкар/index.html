@@ -2632,24 +2632,45 @@
     .text-container { margin-top: 0 !important; padding-top: 0 !important; }
     header { margin: 0 !important; padding: 0 !important; }
 
-    /* --- ШАПКА: светло-коричневая, остальное как в оригинале --- */
+    /* --- ШАПКА: тёплый коричневый, белый текст, читаемая дата --- */
     .h1-bg, .h1-bg.split {
-      background: #c3a484 !important;
+      background: #7d5f40 !important;
       background-image: none !important;
     }
     .title_h1 {
       background: transparent !important;
       background-image: none !important;
-      color: #3a2d20 !important;
-      border-bottom-color: #8a6c47 !important;
+      color: #ffffff !important;
+      border-bottom-color: #ffffff40 !important;
     }
-    .head-two-part, .head-one-part { color: #3a2d20 !important; }
-    .head-main-date { color: #5c4630 !important; }
-    .head-main-date-title { color: #6b5540 !important; }
+    .head-two-part, .head-one-part { color: #ffffff !important; }
+
+    /* дата публикации: была мелкая, курсивная и тонула в фоне */
+    .head-main-date {
+      color: #f2e8da !important;
+      font-style: normal !important;
+      font-size: 15px !important;
+      line-height: 1.5 !important;
+      letter-spacing: .3px;
+    }
+    .head-main-date-title {
+      display: inline !important;
+      color: #f2e8da !important;
+      font-style: normal !important;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .head-main-date span {
+      display: inline !important;
+      color: #ffffff !important;
+      font-style: normal !important;
+      font-weight: 700;
+    }
+
     .main-subtitle {
-      color: #3a2d20 !important;
-      background: #ffffff55 !important;
-      border: 1px solid #8a6c4755 !important;
+      color: #ffffff !important;
+      background: #ffffff1f !important;
+      border: 1px solid #ffffff3d !important;
     }
 
     /* --- ТЕЛО СТАТЬИ: строка тянулась на всю ширину экрана --- */
