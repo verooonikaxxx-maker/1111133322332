@@ -1,0 +1,56 @@
+СЛОТЫ КАРТИНОК — RO, проф. Аурешку (паразитолог, 102 года)
+
+Папка: landers-parazitolog/RO_паразитолог_102/images/
+Кладёшь файл с таким именем — он встаёт на своё место сам.
+
+01-prof-aurescu-in-cabinet.jpg               01 — EROU: prof. Aurescu în cabinetul său de parazitologie, chip și fișe pe birou
+02-prof-aurescu-portret.jpg                  02 — portret prof. Aurescu, prim-plan
+03-dosar-fise.jpg                            03 — DOVADĂ: dosar de fișe deschis, scris de mână, numele acoperite
+04-fisa-pacient.jpg                          04 — fișă de pacient cu un caz care s-a repetat
+05-caz-femeie-58.jpg                         05 — femeie de 58 de ani, obosită, acasă
+06-caz-femeie-61.jpg                         06 — femeie de 61 de ani, slăbită
+07-caz-casnica-59.jpg                        07 — casnică de 59 de ani
+08-caz-miner-68.jpg                          08 — fost miner de 68 de ani
+09-florica-86.jpg                            09 — Florica Tomescu, 86 de ani, acasă
+10-bogdan-47.jpg                             10 — Bogdan Ionescu, 47 de ani, constructor
+19-dozare-in-laborator.jpg                   19 — DOVADĂ: dozarea extractelor în laborator, aceeași proporție în fiecare serie
+11-parazol-capsule.jpg                       11 — PRODUS: capsulele Parazol
+12-caz-femeie-66.jpg                         12 — femeie de 66 de ani
+13-caz-femeie-41.jpg                         13 — femeie de 41 de ani
+14-caz-barbat-73.jpg                         14 — bărbat de 73 de ani
+15-dr-alexandru-aurescu.jpg                  15 — dr. Alexandru Aurescu, fiul
+16-parazol-cutie.jpg                         16 — PRODUS: cutia Parazol, lângă formular
+17-logo-formular.png                         17 — emblemă deasupra formularului de comandă
+18-badge-plata-sigura.png                    18 — badge „plată sigură“ sub buton
+avatar-01.jpg                                avatar comentariu 1
+foto-comentariu-02.jpg                       fotografie atașată de cititor (2)
+avatar-03.jpg                                avatar comentariu 3
+avatar-04.jpg                                avatar comentariu 4
+avatar-05.jpg                                avatar comentariu 5
+avatar-06.jpg                                avatar comentariu 6
+avatar-07.jpg                                avatar comentariu 7
+avatar-08.jpg                                avatar comentariu 8
+avatar-09.jpg                                avatar comentariu 9
+foto-comentariu-10.jpg                       fotografie atașată de cititor (10)
+avatar-11.jpg                                avatar comentariu 11
+avatar-12.jpg                                avatar comentariu 12
+avatar-13.jpg                                avatar comentariu 13
+foto-comentariu-14.jpg                       fotografie atașată de cititor (14)
+avatar-15.jpg                                avatar comentariu 15
+avatar-16.jpg                                avatar comentariu 16
+avatar-17.jpg                                avatar comentariu 17
+avatar-18.jpg                                avatar comentariu 18
+foto-comentariu-19.jpg                       fotografie atașată de cititor (19)
+avatar-20.jpg                                avatar comentariu 20
+avatar-21.jpg                                avatar comentariu 21
+avatar-22.jpg                                avatar comentariu 22
+avatar-23.jpg                                avatar comentariu 23
+avatar-24.jpg                                avatar comentariu 24
+foto-comentariu-25.jpg                       fotografie atașată de cititor (25)
+avatar-26.jpg                                avatar comentariu 26
+avatar-27.jpg                                avatar comentariu 27
+avatar-28.jpg                                avatar comentariu 28
+avatar-29.jpg                                avatar comentariu 29
+avatar-30.jpg                                avatar comentariu 30
+
+Всего слотов: 49
