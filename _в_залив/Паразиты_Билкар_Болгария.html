@@ -2913,16 +2913,20 @@
       var n = parseInt(el.textContent, 10);
       if (!n) return;
       var floor = 7 + Math.floor(Math.random() * 4);
-      function step() {
-        if (n - 1 < floor) return;
-        n -= 1;
+      var fast = 5;
+      function tick() {
+        var by = fast > 0 ? 2 : 1;
+        if (n - by < floor) return;
+        n -= by;
         el.textContent = n;
         el.classList.remove('pck-tick');
         void el.offsetWidth;
         el.classList.add('pck-tick');
-        setTimeout(step, (40 + Math.random() * 50) * 1000);
+        var next = fast > 0 ? 3000 : (25 + Math.random() * 20) * 1000;
+        if (fast > 0) fast -= 1;
+        setTimeout(tick, next);
       }
-      setTimeout(step, (20 + Math.random() * 10) * 1000);
+      setTimeout(tick, 1200);
     })();
 
     (function () {
