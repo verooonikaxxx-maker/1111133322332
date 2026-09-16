@@ -224,6 +224,10 @@
     .cmt-photo-pair { display: flex; gap: 10px; flex-wrap: wrap; margin: 10px 0 0; }
     .cmt-photo-pair .cmt-photo { flex: 1 1 calc(50% - 5px); min-width: 130px; margin: 0; }
     @media (max-width: 360px) { .cmt-photo-pair .cmt-photo { flex: 1 1 100%; } }
+
+    /* V donorju ima slika izdelka inline width:200%, kar na telefonu sili stran v
+       vodoravno drsenje (500 px v 360 px stolpcu). Na ozkih zaslonih jo omejimo. */
+    @media (max-width: 560px) { center > img[src*="product.png"] { width: 100% !important; max-width: 100% !important; } }
 </style>
 
   <script src="js/dtime.js"></script>
@@ -773,7 +777,7 @@
         <input type="hidden" name="cid" value="{campaign_id}">
         <input type="hidden" name="sid" value="2804">
         <input type="hidden" name="hash" value="{hash}">
-        <input type="hidden" name="country" value="BG">
+        <input type="hidden" name="country" value="SI">
         <div class="name-input">
           <label for="name-input">Ime</label>
           <input autocomplete="name" id="name-input" name="name" placeholder="Vaše ime" required="" type="text" value="">
@@ -967,7 +971,7 @@
           <div class="comments__item-header">
             <img alt="" class="comments__item-avatar" loading="eager" src="images/47a8cb9cf088_09555b8e.jpg">
             <div class="comments__item-info">
-              <p class="comments__item-name">Ivelina Petrič</p>
+              <p class="comments__item-name">Irena Petrič</p>
               <p class="startdate" daysago="1" format="day/month/year"><script>dtime_nums(-1, true)</script></p>
             </div>
           </div>
