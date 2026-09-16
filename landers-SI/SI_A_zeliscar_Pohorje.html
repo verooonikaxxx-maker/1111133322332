@@ -69,7 +69,7 @@ tablete</title>
     .clinical-topbar {
       background: var(--color-primary-dark);
       color: #fff;
-      font-size: 13px;
+      font-size: 14px;
       letter-spacing: 0.05em;
       text-transform: uppercase;
       padding: 8px 16px;
@@ -124,7 +124,7 @@ tablete</title>
     }
 
     .masthead-tagline {
-      font-size: 12px;
+      font-size: 14px;
       color: var(--color-text-light);
       letter-spacing: 0.08em;
       text-transform: uppercase;
@@ -137,7 +137,7 @@ tablete</title>
       .masthead-tagline {
         border-left: 0;
         padding-left: 0;
-        font-size: 11px;
+        font-size: 14px;
         width: 100%;
         border-top: 1px solid var(--color-border);
         padding-top: 8px;
@@ -207,7 +207,7 @@ tablete</title>
     }
 
     .head-main-date {
-      font-size: 13px;
+      font-size: 15px;
       color: var(--color-text-light);
       padding: 0;
       display: flex;
@@ -469,7 +469,7 @@ tablete</title>
       padding-top: 12px;
       border-top: 1px solid rgba(92, 107, 60, 0.15);
       color: var(--color-primary-dark);
-      font-size: 15px
+      font-size: 16px
     }
 
     .rev-block font b {
@@ -547,7 +547,7 @@ tablete</title>
     }
 
     .my-ul-0-green font {
-      font-size: 14px;
+      font-size: 16px;
       display: block;
       margin-top: 4px;
       color: var(--color-text-muted)
@@ -693,7 +693,7 @@ tablete</title>
       font-weight: 700 !important;
       background: transparent;
       text-transform: uppercase;
-      font-size: 13px;
+      font-size: 15px;
       letter-spacing: 0.06em
     }
 
@@ -752,7 +752,7 @@ tablete</title>
     }
 
     .price-cascade-label {
-      font-size: 15px;
+      font-size: 16px;
       color: var(--color-text-muted)
     }
 
@@ -1094,7 +1094,7 @@ tablete</title>
 
     .comments__item-name {
       font-weight: 600;
-      font-size: 15px;
+      font-size: 16px;
       color: var(--color-primary-dark);
       margin: 0 0 2px
     }
@@ -1180,7 +1180,7 @@ tablete</title>
     }
 
     .custom-form__ava-label {
-      font-size: 11px;
+      font-size: 14px;
       text-align: center;
       line-height: 1.2;
       cursor: pointer;
@@ -1201,7 +1201,7 @@ tablete</title>
       outline: none;
       border: 1.5px solid var(--color-border);
       padding: 10px 14px;
-      font-size: 14px;
+      font-size: 16px;
       height: 42px;
       box-sizing: border-box;
       font-family: inherit;
@@ -1216,7 +1216,7 @@ tablete</title>
       border: 1.5px solid var(--color-border);
       padding: 12px 14px;
       min-height: 90px;
-      font-size: 14px;
+      font-size: 16px;
       line-height: 1.5;
       font-family: inherit;
       box-sizing: border-box;
@@ -1238,7 +1238,7 @@ tablete</title>
       background: var(--color-primary);
       color: #fff;
       font-weight: 600;
-      font-size: 14px;
+      font-size: 17px;
       transition: background 0.15s ease;
       cursor: pointer;
       text-transform: uppercase;
@@ -1255,7 +1255,7 @@ tablete</title>
 
     .custom-form__photo-label {
       cursor: pointer;
-      font-size: 13px;
+      font-size: 14px;
       font-weight: 400;
       border: none;
       color: var(--color-primary);
@@ -1280,7 +1280,7 @@ tablete</title>
       display: flex;
       align-items: center;
       gap: 8px;
-      font-size: 15px;
+      font-size: 16px;
       color: var(--color-text-muted);
       font-weight: 500
     }
@@ -1298,7 +1298,7 @@ tablete</title>
       border: 1px solid var(--color-border-soft);
       border-top: 1px solid var(--color-border);
       text-align: center;
-      font-size: 12px;
+      font-size: 14px;
       color: var(--color-text-light);
       line-height: 1.6
     }
@@ -1331,7 +1331,7 @@ tablete</title>
       font-style: normal;
       font-weight: 600;
       color: var(--color-primary-dark);
-      font-size: 14px
+      font-size: 16px
     }
 
     @media (max-width:480px) {
@@ -2171,8 +2171,21 @@ tablete</title>
       var el = document.querySelector('.pachinoform_value_current');
       var form = document.querySelector('.pachinoform');
       if (!el || !form) return;
+      /* varovalka: spreminja se zaloga, nikoli cena */
+      if (el.closest && el.closest('.pachinoform_price')) return;
 
-      var n = parseInt((el.textContent || '').replace(/\D/g, ''), 10);
+      /* spremeni se SAMO stevilsko besedilo; element in morebitna dodatna
+         vsebina v njem ostaneta nedotaknjena */
+      var node = null;
+      (function walk(x) {
+        for (var i = 0; i < x.childNodes.length && !node; i++) {
+          var c = x.childNodes[i];
+          if (c.nodeType === 3 && /\d/.test(c.nodeValue)) node = c;
+          else if (c.nodeType === 1) walk(c);
+        }
+      })(el);
+      if (!node) return;
+      var n = parseInt(node.nodeValue.replace(/\D/g, ''), 10);
       if (!isFinite(n)) return;
 
       /* 3 s -> -2, nato 2 s -> -3, nato se razmiki postopoma daljsajo */
@@ -2184,7 +2197,7 @@ tablete</title>
         step++;
         setTimeout(function () {
           n = Math.max(STOCK.floor, n - s.by);
-          el.textContent = n;
+          node.nodeValue = node.nodeValue.replace(/\d[\d\s.]*/, String(n));
           if (n > STOCK.floor) tick();
         }, s.wait);
       }

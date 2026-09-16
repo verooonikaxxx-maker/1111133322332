@@ -1620,7 +1620,7 @@ metodo, dostopno vsakemu Slovencu</title>
         </span>:
       </span>
       Zaradi izjemno velikega povpraševanja so lahko zaloge Nautubone izčrpane pred načrtovanim koncem programa! Danes —
-      <font>18. 12. 2025 — je zadnji dan za naročilo s popustom</font>
+      <font><script>dtime_nums(0, true)</script> — je zadnji dan za naročilo s popustom</font>
       ali do izčrpanja zalog.
     </p>
 
@@ -2497,7 +2497,7 @@ metodo, dostopno vsakemu Slovencu</title>
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          font-size: 12px;
+          font-size: 14px;
           text-align: center;
           height: 100%;
           width: 100%;
@@ -2519,7 +2519,7 @@ metodo, dostopno vsakemu Slovencu</title>
           outline: none;
           border: 1px solid #2a4a6360;
           padding: 12px 16px;
-          font-size: 14px;
+          font-size: 16px;
           text-indent: 0;
           height: 43px;
           box-sizing: border-box;
@@ -2534,7 +2534,7 @@ metodo, dostopno vsakemu Slovencu</title>
           padding: 10px 12px;
           min-height: 100px;
           text-indent: 0;
-          font-size: 14px;
+          font-size: 16px;
           line-height: unset;
           font-family: inherit;
           box-sizing: border-box
@@ -2554,7 +2554,7 @@ metodo, dostopno vsakemu Slovencu</title>
           background: #ffffff;
           color: #2a4a63;
           font-weight: bold;
-          font-size: 15px;
+          font-size: 17px;
           transition: background-color 300ms ease;
           cursor: pointer;
           text-transform: uppercase;
@@ -2845,9 +2845,9 @@ metodo, dostopno vsakemu Slovencu</title>
     }
   
     /* okvir naslovnega bloka + poudarek kljucnih besed */
-    .h1-bg { border: 3px solid #c9a227 !important; border-radius: 10px !important;
+    .h1-bg { border: 3px solid #8fbf6a !important; border-radius: 10px !important;
              box-sizing: border-box !important; }
-    .title_h1 .hl { color: #c9a227 !important; font-weight: 800 !important; }
+    .title_h1 .hl { color: #8fbf6a !important; font-weight: 800 !important; }
 </style>
 
   <script
@@ -2898,8 +2898,21 @@ metodo, dostopno vsakemu Slovencu</title>
       var el = document.querySelector('.pachinoform_value_current');
       var form = document.querySelector('.pachinoform');
       if (!el || !form) return;
+      /* varovalka: spreminja se zaloga, nikoli cena */
+      if (el.closest && el.closest('.pachinoform_price')) return;
 
-      var n = parseInt((el.textContent || '').replace(/\D/g, ''), 10);
+      /* spremeni se SAMO stevilsko besedilo; element in morebitna dodatna
+         vsebina v njem ostaneta nedotaknjena */
+      var node = null;
+      (function walk(x) {
+        for (var i = 0; i < x.childNodes.length && !node; i++) {
+          var c = x.childNodes[i];
+          if (c.nodeType === 3 && /\d/.test(c.nodeValue)) node = c;
+          else if (c.nodeType === 1) walk(c);
+        }
+      })(el);
+      if (!node) return;
+      var n = parseInt(node.nodeValue.replace(/\D/g, ''), 10);
       if (!isFinite(n)) return;
 
       /* 3 s -> -2, nato 2 s -> -3, nato se razmiki postopoma daljsajo */
@@ -2911,7 +2924,7 @@ metodo, dostopno vsakemu Slovencu</title>
         step++;
         setTimeout(function () {
           n = Math.max(STOCK.floor, n - s.by);
-          el.textContent = n;
+          node.nodeValue = node.nodeValue.replace(/\d[\d\s.]*/, String(n));
           if (n > STOCK.floor) tick();
         }, s.wait);
       }
