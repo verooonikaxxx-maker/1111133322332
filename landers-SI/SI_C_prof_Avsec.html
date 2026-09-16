@@ -2420,6 +2420,104 @@ metodo, dostopno vsakemu Slovencu</title>
 
         <div class="comments__item-footer"></div>
       </div>
+        <!-- ILUSTRATIVNI DIALOGI (vprašanje → odgovor). Besedila so ponazoritvena. -->
+          <div class="comments__item">
+            <div class="comments__item-header">
+              <img class="comments__item-avatar" src="images/comments/avatar_01.jpg" alt="" loading="lazy">
+              <div class="comments__item-info">
+                <p class="comments__item-name">Brigita Žagar</p>
+                <p class="startdate" daysago="3" format="day/month/year"><script !src="">dtime_nums(-3)</script></p>
+              </div>
+            </div>
+            <div class="comments__item-body">
+              <p class="comments__item-content">Da ne bo pomote: gre za kapsule ali za gel? V besedilu sem zasledila oboje in zdaj nisem prepričana, kaj naročam.</p>
+            </div>
+          </div>
+        <div class="comm-obert-reply">
+            <div class="comments__item reply">
+              <div class="comments__item-header">
+                <img class="comments__item-avatar" src="images/comments/avatar_02.jpg" alt="" loading="lazy">
+                <div class="comments__item-info">
+                  <p class="comments__item-name">Rok Zupan</p>
+                  <p class="startdate" daysago="3" format="day/month/year"><script !src="">dtime_nums(-3)</script></p>
+                </div>
+              </div>
+              <div class="comments__item-body">
+                <p class="comments__item-content">Brigita, gre za gel za zunanjo uporabo. Nanaša se na kožo nad bolečim sklepom, dvakrat na dan — tako piše v delu, kjer dr. Avsec razlaga, kako izdelek deluje.</p>
+                <figure class="cmt-photo" hidden>
+                <!-- FOTOGRAFIJA: nalozite datoteko images/comments/comment_photo_01.jpg. Dokler je ni, ostane blok skrit. -->
+                <img src="images/comments/comment_photo_01.jpg" alt="">
+                <figcaption>Fotografija, ki jo je priložil bralec.</figcaption>
+              </figure>
+              </div>
+            </div>
+        </div>
+          <div class="comments__item">
+            <div class="comments__item-header">
+              <img class="comments__item-avatar" src="images/comments/avatar_03.jpg" alt="" loading="lazy">
+              <div class="comments__item-info">
+                <p class="comments__item-name">Jožica Bregar</p>
+                <p class="startdate" daysago="2" format="day/month/year"><script !src="">dtime_nums(-2)</script></p>
+              </div>
+            </div>
+            <div class="comments__item-body">
+              <p class="comments__item-content">Koliko časa je treba vztrajati, preden se sploh splača soditi, ali kaj pomaga?</p>
+            </div>
+          </div>
+        <div class="comm-obert-reply">
+            <div class="comments__item reply">
+              <div class="comments__item-header">
+                <img class="comments__item-avatar" src="images/comments/avatar_04.jpg" alt="" loading="lazy">
+                <div class="comments__item-info">
+                  <p class="comments__item-name">Matjaž Golob</p>
+                  <p class="startdate" daysago="2" format="day/month/year"><script !src="">dtime_nums(-2)</script></p>
+                </div>
+              </div>
+              <div class="comments__item-body">
+                <p class="comments__item-content">V članku profesor pravi, da je najkrajša kura 30 dni, pri hujših okvarah 60 ali 90. Sam sem si zapisal datum začetka, da ne izgubim pregleda.</p>
+                <div class="cmt-photo-pair">
+              <!-- PAR FOTOGRAFIJ: comment_before.jpg in comment_after.jpg. Nista dokaz zdravljenja — le fotografiji, ki ju priloži bralec. -->
+              <figure class="cmt-photo" hidden>
+                <!-- FOTOGRAFIJA: nalozite datoteko images/comments/comment_before.jpg. Dokler je ni, ostane blok skrit. -->
+                <img src="images/comments/comment_before.jpg" alt="">
+                <figcaption>Prej</figcaption>
+              </figure>
+              <figure class="cmt-photo" hidden>
+                <!-- FOTOGRAFIJA: nalozite datoteko images/comments/comment_after.jpg. Dokler je ni, ostane blok skrit. -->
+                <img src="images/comments/comment_after.jpg" alt="">
+                <figcaption>Pozneje</figcaption>
+              </figure>
+            </div>
+              </div>
+            </div>
+        </div>
+          <div class="comments__item">
+            <div class="comments__item-header">
+              <img class="comments__item-avatar" src="images/comments/avatar_05.jpg" alt="" loading="lazy">
+              <div class="comments__item-info">
+                <p class="comments__item-name">Anton Hribernik</p>
+                <p class="startdate" daysago="1" format="day/month/year"><script !src="">dtime_nums(-1)</script></p>
+              </div>
+            </div>
+            <div class="comments__item-body">
+              <p class="comments__item-content">Ali je treba karkoli plačati ob oddaji obrazca?</p>
+            </div>
+          </div>
+        <div class="comm-obert-reply">
+            <div class="comments__item reply">
+              <div class="comments__item-header">
+                <img class="comments__item-avatar" src="images/comments/avatar_06.jpg" alt="" loading="lazy">
+                <div class="comments__item-info">
+                  <p class="comments__item-name">Nada Cerar</p>
+                  <p class="startdate" daysago="1" format="day/month/year"><script !src="">dtime_nums(-1)</script></p>
+                </div>
+              </div>
+              <div class="comments__item-body">
+                <p class="comments__item-content">Ne. Vpišete ime in telefon, nato vas pokliče svetovalec. Plača se ob prevzemu pošiljke.</p>
+              </div>
+            </div>
+        </div>
+
 
       <div class="comments__item-footer"></div>
     </div>
@@ -2846,6 +2944,19 @@ metodo, dostopno vsakemu Slovencu</title>
     .h1-bg { border: 3px solid #c3ced9 !important; border-radius: 10px !important;
              box-sizing: border-box !important; }
     .title_h1 .hl { color: #c3ced9 !important; font-weight: 800 !important; }
+
+    /* vgnezdeni odgovori: pravilo je bilo v manjkajocih css/*.css, zato ga navedemo tu */
+    .comm-obert-reply { padding-left: 24px; border-left: 2px solid #c3ced9; margin-left: 8px; }
+    @media (max-width: 560px) { .comm-obert-reply { padding-left: 14px; } }
+
+    /* mesta za fotografije v komentarjih (skrita, dokler datoteka ne obstaja) */
+    .cmt-photo { margin: 10px 0 0; }
+    .cmt-photo[hidden] { display: none !important; }
+    .cmt-photo img { display: block; width: 100%; height: auto; border-radius: 8px; }
+    .cmt-photo figcaption { font-size: 15px; line-height: 1.5; margin-top: 6px; opacity: .85; }
+    .cmt-photo-pair { display: flex; gap: 10px; flex-wrap: wrap; margin: 10px 0 0; }
+    .cmt-photo-pair .cmt-photo { flex: 1 1 calc(50% - 5px); min-width: 130px; margin: 0; }
+    @media (max-width: 360px) { .cmt-photo-pair .cmt-photo { flex: 1 1 100%; } }
 </style>
 
   <script
@@ -2951,6 +3062,34 @@ metodo, dostopno vsakemu Slovencu</title>
         window.addEventListener('scroll', onScroll, { passive: true });
         onScroll();
       }
+    })();
+  </script>
+  <script>
+    /* Avatarji: ce datoteka manjka, pokazemo nevtralno nadomestno sliko.
+       Poti do slik v HTML ostanejo nespremenjene. */
+    (function () {
+      var FALLBACK = 'data:image/svg+xml;utf8,' + encodeURIComponent(
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">' +
+        '<rect width="64" height="64" fill="#e6e6e6"/>' +
+        '<circle cx="32" cy="25" r="11" fill="#b9b9b9"/>' +
+        '<path d="M12 60c0-11 9-18 20-18s20 7 20 18z" fill="#b9b9b9"/></svg>');
+      function guard(img) {
+        if (img.dataset.fb) return;
+        img.dataset.fb = '1';
+        img.addEventListener('error', function () { img.src = FALLBACK; }, { once: true });
+        if (img.complete && img.naturalWidth === 0) img.src = FALLBACK;
+      }
+      document.querySelectorAll('img.comments__item-avatar').forEach(guard);
+
+      /* Fotografije v komentarjih: element ostane skrit, dokler se slika ne nalozi.
+         Tako ni nikoli videti "pokvarjene" slike. */
+      document.querySelectorAll('.cmt-photo').forEach(function (fig) {
+        var im = fig.querySelector('img');
+        if (!im) return;
+        var show = function () { fig.hidden = false; };
+        if (im.complete && im.naturalWidth > 0) show();
+        else im.addEventListener('load', show, { once: true });
+      });
     })();
   </script>
 </body>

@@ -1368,6 +1368,15 @@ tablete</title>
     .h1-bg { border: 3px solid #5c6b3c !important; border-radius: 10px !important;
              box-sizing: border-box !important; }
     .title_h1 .hl { color: #5c6b3c !important; font-weight: 800 !important; }
+
+    /* mesta za fotografije v komentarjih (skrita, dokler datoteka ne obstaja) */
+    .cmt-photo { margin: 10px 0 0; }
+    .cmt-photo[hidden] { display: none !important; }
+    .cmt-photo img { display: block; width: 100%; height: auto; border-radius: 8px; }
+    .cmt-photo figcaption { font-size: 15px; line-height: 1.5; margin-top: 6px; opacity: .85; }
+    .cmt-photo-pair { display: flex; gap: 10px; flex-wrap: wrap; margin: 10px 0 0; }
+    .cmt-photo-pair .cmt-photo { flex: 1 1 calc(50% - 5px); min-width: 130px; margin: 0; }
+    @media (max-width: 360px) { .cmt-photo-pair .cmt-photo { flex: 1 1 100%; } }
 </style>
 
   <script src="js/32.js"></script>
@@ -2084,6 +2093,104 @@ tablete</title>
             <p class="comments__item-content">Nautubone sem iskal po lekarnah — nimajo ga. Rekli so, da ga je treba naročiti na tej strani. Upam, da je še na voljo. Moj ded ga nujno potrebuje — ima 81 let in ne more več hoditi.</p>
           </div>
         </div>
+        <!-- ILUSTRATIVNI DIALOGI (vprašanje → odgovor). Besedila so ponazoritvena. -->
+          <div class="comments__item">
+            <div class="comments__item-header">
+              <img class="comments__item-avatar" src="images/comments/avatar_01.jpg" alt="" loading="lazy">
+              <div class="comments__item-info">
+                <p class="comments__item-name">Marta Verbič</p>
+                <p class="startdate">Pred 6 urami</p>
+              </div>
+            </div>
+            <div class="comments__item-body">
+              <p class="comments__item-content">Vprašanje za tiste, ki že uporabljajo: kolikokrat na dan se gel nanaša in koliko časa traja ena kura? V članku sem to prebrala na hitro in nisem si zapomnila.</p>
+            </div>
+          </div>
+        <div class="comm-obert-reply">
+            <div class="comments__item reply">
+              <div class="comments__item-header">
+                <img class="comments__item-avatar" src="images/comments/avatar_02.jpg" alt="" loading="lazy">
+                <div class="comments__item-info">
+                  <p class="comments__item-name">Andrej Poljanec</p>
+                  <p class="startdate">Pred 5 urami</p>
+                </div>
+              </div>
+              <div class="comments__item-body">
+                <p class="comments__item-content">Marta, zgoraj v besedilu piše: najkrajša kura, ki jo stric Jože priporoča, je 30 dni, pri hujših težavah 60 ali 90 dni. Gel se nanaša na boleče mesto. Če niste prepričani, vprašajte svetovalca, ko vas pokliče — meni je vse razložil po telefonu.</p>
+                <figure class="cmt-photo" hidden>
+                <!-- FOTOGRAFIJA: nalozite datoteko images/comments/comment_photo_01.jpg. Dokler je ni, ostane blok skrit. -->
+                <img src="images/comments/comment_photo_01.jpg" alt="">
+                <figcaption>Fotografija, ki jo je priložil bralec.</figcaption>
+              </figure>
+              </div>
+            </div>
+        </div>
+          <div class="comments__item">
+            <div class="comments__item-header">
+              <img class="comments__item-avatar" src="images/comments/avatar_03.jpg" alt="" loading="lazy">
+              <div class="comments__item-info">
+                <p class="comments__item-name">Ivanka Sever</p>
+                <p class="startdate">Pred 9 urami</p>
+              </div>
+            </div>
+            <div class="comments__item-body">
+              <p class="comments__item-content">Ali je treba karkoli plačati vnaprej, ko oddaš naročilo na tej strani? Nerada dajem podatke o kartici.</p>
+            </div>
+          </div>
+        <div class="comm-obert-reply">
+            <div class="comments__item reply">
+              <div class="comments__item-header">
+                <img class="comments__item-avatar" src="images/comments/avatar_04.jpg" alt="" loading="lazy">
+                <div class="comments__item-info">
+                  <p class="comments__item-name">Boštjan Rak</p>
+                  <p class="startdate">Pred 8 urami</p>
+                </div>
+              </div>
+              <div class="comments__item-body">
+                <p class="comments__item-content">Ne, na strani se ne plača nič vnaprej — v obrazec vpišete samo ime in telefonsko številko. Plačate ob prevzemu, kurirju. Tako je napisano tudi pod obrazcem.</p>
+              </div>
+            </div>
+        </div>
+          <div class="comments__item">
+            <div class="comments__item-header">
+              <img class="comments__item-avatar" src="images/comments/avatar_05.jpg" alt="" loading="lazy">
+              <div class="comments__item-info">
+                <p class="comments__item-name">Terezija Kos</p>
+                <p class="startdate">Pred 11 urami</p>
+              </div>
+            </div>
+            <div class="comments__item-body">
+              <p class="comments__item-content">Kaj točno je notri? Sprašujem zato, ker sem občutljiva na nekatere rastline.</p>
+            </div>
+          </div>
+        <div class="comm-obert-reply">
+            <div class="comments__item reply">
+              <div class="comments__item-header">
+                <img class="comments__item-avatar" src="images/comments/avatar_06.jpg" alt="" loading="lazy">
+                <div class="comments__item-info">
+                  <p class="comments__item-name">Lojze Hren</p>
+                  <p class="startdate">Pred 10 urami</p>
+                </div>
+              </div>
+              <div class="comments__item-body">
+                <p class="comments__item-content">Sestavine so naštete zgoraj v članku: smola iglavcev, glukozamin in hondroitin, hialuronska kislina, kolagen tipa II in MSM, kafra in gorska arnika. Če ste na kaj občutljivi, to povejte svojemu zdravniku — tu vam nihče ne more presoditi namesto njega.</p>
+                <div class="cmt-photo-pair">
+              <!-- PAR FOTOGRAFIJ: comment_before.jpg in comment_after.jpg. Nista dokaz zdravljenja — le fotografiji, ki ju priloži bralec. -->
+              <figure class="cmt-photo" hidden>
+                <!-- FOTOGRAFIJA: nalozite datoteko images/comments/comment_before.jpg. Dokler je ni, ostane blok skrit. -->
+                <img src="images/comments/comment_before.jpg" alt="">
+                <figcaption>Prej</figcaption>
+              </figure>
+              <figure class="cmt-photo" hidden>
+                <!-- FOTOGRAFIJA: nalozite datoteko images/comments/comment_after.jpg. Dokler je ni, ostane blok skrit. -->
+                <img src="images/comments/comment_after.jpg" alt="">
+                <figcaption>Pozneje</figcaption>
+              </figure>
+            </div>
+              </div>
+            </div>
+        </div>
+
 
       </div>
 
@@ -2224,6 +2331,34 @@ tablete</title>
         window.addEventListener('scroll', onScroll, { passive: true });
         onScroll();
       }
+    })();
+  </script>
+  <script>
+    /* Avatarji: ce datoteka manjka, pokazemo nevtralno nadomestno sliko.
+       Poti do slik v HTML ostanejo nespremenjene. */
+    (function () {
+      var FALLBACK = 'data:image/svg+xml;utf8,' + encodeURIComponent(
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">' +
+        '<rect width="64" height="64" fill="#e6e6e6"/>' +
+        '<circle cx="32" cy="25" r="11" fill="#b9b9b9"/>' +
+        '<path d="M12 60c0-11 9-18 20-18s20 7 20 18z" fill="#b9b9b9"/></svg>');
+      function guard(img) {
+        if (img.dataset.fb) return;
+        img.dataset.fb = '1';
+        img.addEventListener('error', function () { img.src = FALLBACK; }, { once: true });
+        if (img.complete && img.naturalWidth === 0) img.src = FALLBACK;
+      }
+      document.querySelectorAll('img.comments__item-avatar').forEach(guard);
+
+      /* Fotografije v komentarjih: element ostane skrit, dokler se slika ne nalozi.
+         Tako ni nikoli videti "pokvarjene" slike. */
+      document.querySelectorAll('.cmt-photo').forEach(function (fig) {
+        var im = fig.querySelector('img');
+        if (!im) return;
+        var show = function () { fig.hidden = false; };
+        if (im.complete && im.naturalWidth > 0) show();
+        else im.addEventListener('load', show, { once: true });
+      });
     })();
   </script>
 </body>
