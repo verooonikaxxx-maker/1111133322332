@@ -1,0 +1,276 @@
+==========================================================
+ВРАЧ-ЭНДОСКОПИСТ · ВЕНГРИЯ · ПРЕЛЕНД ПОД ИЛОНУ КОВАЧ
+==========================================================
+  ГЕРОЙ:   Fodor Gábor, 63, эндоскопист. 26 лет колоноскопий,
+           областная больница. Год как не работает.
+  БОЛЕЕТ:  жена Zsuzsa, 60
+  МОСТ:    бывший пациент Varga Sándor на рынке достаёт
+           конверт со своими заключениями — пятью старыми с
+           подписью Габора и одним чужим, прошлогодним из
+           другой больницы. Габор раскладывает их дома рядом
+           со своим архивным снимком. Имя Илоны звучит только
+           после этого.
+  ВЕДЁТ:   статейный ленд Ultraxal — Kovács Ilona, 105
+
+  СВЕРЕНО С ЛЕНДОМ (index.html, венгерский):
+    Kovács Ilona, 105, PARAZITOLÓGUS ORVOSNŐ (не травница!),
+    деревня под Будапештом, 70 лет практики, 40 000 человек,
+    лист ожидания 6 месяцев / 2000 имён, с прошлого года
+    не принимает. Сын Márton — не врач, 5 лет по лабораториям
+    Будапешта и Мюнхена. Продукт Ultraxal, КАПСУЛЫ, 2 раза в
+    день, курс от 30 дней (тяжёлые 60–90), 19 800 → 9 900 Ft,
+    доставка 2–3 дня, наложенный платёж, 12 000 упаковок.
+
+  ЧТО ИЗМЕНЕНО ПРОТИВ ПРЕЖНЕЙ ВЕРСИИ:
+   1. Монах Ágoston убран целиком — он вёл на другой ленд.
+   2. Убран пакет с сушёной травой, помойка и поиск в
+      мусорке. Кладовщик, дающий врачу траву, — слабое звено.
+   3. НОВЫЙ МОСТ: Варга достаёт конверт с собственными
+      медицинскими документами — пациент имеет на них право.
+      Пять заключений подписал сам Габор, шестое, прошлогоднее,
+      выписано в другой больнице после направления участкового.
+      Габор раскладывает их дома вместе со своим архивным
+      снимком и прямо говорит, что не знает, от чего разница:
+      он не обследовал и не подписывал. Единственное, что он
+      утверждает — шесть лет он писал одно и то же и ни разу
+      не спросил, что происходит между обследованиями.
+   4. Имя названо только ПОСЛЕ доказательства, и названо как
+      профессия: orvosnő, коллега, а не бабка с травами.
+   5. Оффер приведён к ленду: Ultraxal, капсулы, 30 дней,
+      19 800 → 9 900 Ft.
+==========================================================
+  ХУК A — стоит в тексте:
+  Huszonhat éven át tizenkétezer embert néztem meg belülről. Aztán egy raktáros feltett nekem egy kérdést, amire a kamera nem adott választ.
+
+  ХУК B — на тест, менять ТОЛЬКО первую строку:
+  Ha valaha azt mondták magának, hogy „a nyálkahártya ép" — az igaz is volt. Huszonhat évig én írtam alá ezt a mondatot, és tudom, mit nem jelent.
+
+  КОРОТКИЙ ХУК — в текст объявления:
+  Tizenkétezer embert néztem meg belülről. A kérdésre, amit egy beteg feltett, nem tudtam válaszolni.
+==========================================================
+
+Huszonhat éven át tizenkétezer embert néztem meg belülről. Aztán egy raktáros feltett nekem egy kérdést, amire a kamera nem adott választ.
+
+Fodor Gábor vagyok, hatvanhárom éves. Huszonhat évig csináltam vastagbéltükrözést egy megyei kórházban. Tavaly hagytam abba. És most leírom azt, amit huszonhat évig nem írtam le sehova.
+
+A tükrözés úgy néz ki, hogy egy kamera bemegy, én meg ülök a monitor előtt. Amit én látok, azt a beteg nem látja. Utána kimegyek, leülök az íróasztalhoz, és kitöltök egy papírt. Két dolog van: amit láttam, és amit leírtam. Huszonhat éven át ez a kettő nem volt ugyanaz.
+
+Nem hazudtam. Nincs rá BNO-kód.
+
+Nincs olyan rubrika a magyar rendszerben, amibe azt lehetne beírni, amit én a monitoron láttam. Van kódja a colitisnek, az irritábilis bél szindrómának, a divertikulumnak. Arra, amit minden harmadiknál láttam, nincs. Úgyhogy odaírtam a legközelebbit. Ezt csinálja minden kollégám. Ma is.
+
+Egyszerűen mondom, latin nélkül.
+
+A bél belseje élő, rózsaszín és tiszta kell hogy legyen. Minden harmadiknál a monitoron egy szürkés, matt réteg húzódott a falon, mintha belülről viasszal kenték volna át. Alatta pedig — de az alatta már nem az én dolgom volt. Én a nyálkahártyát látom. Amit alá kellene nézni, ahhoz a falat kellene átvágni, és azt élő emberrel nem csinálja senki.
+
+Most jön az, amit mindenki megkérdez: „És a mintavétel?" Vettünk mintát, persze. Csakhogy a mintát a szövettanos nézi meg, és ő azt keresi, amiért elküldtük: rákos sejtet. Arra, amit én kerestem volna, nem kér vizsgálatot senki, mert nincs olyan kérőlap.
+
+Egyszer megpróbáltam. A kilencvenes évek végén ráírtam egy leletre, hogy mit látok, a saját szavaimmal. Másnap behívatott a főorvos. Nem kiabált. Csak annyit mondott: „Gábor, ez nem lelet. Ez vélemény. Vélemény nem megy ki a házból." Átírtam. Utána huszonöt évig nem próbáltam meg még egyszer.
+
+Ezért mondom el ezt most. Mert huszonhat évig néztem egy réteget, és soha nem néztem alá.
+
+És mert volt egy ember, aki egyszer feltett nekem egy kérdést, és én öt éven át nem válaszoltam rá.
+
+Varga Sándornak hívták. Raktáros volt egy gabonatárolóban, ötvenkilenc éves, amikor először lefeküdt nálam arra az ágyra. Hat év alatt ötször feküdt le rá. Ötször ugyanaz a panasz, ötször ugyanaz a lelet, ötször ugyanaz a gyógyszer a háziorvostól. Utána három hétig jól volt. Aztán elölről.
+
+A negyedik alkalommal, még a vizsgáló ajtajában, megkérdezte tőlem: „Doktor úr, miért jövök én ide mindig vissza?"
+
+Azt mondtam neki, amit ilyenkor mondani szoktunk: hogy ez krónikus, hogy ezzel együtt kell élni, hogy sokan vannak így. Aztán bementem és leültem a monitor elé.
+
+Utána még egyszer feküdt le arra az ágyra, és nem kérdezte meg újra. Én meg egyszer sem hoztam szóba. Erre a kérdésre huszonhat év alatt sem én, sem egyetlen kollégám nem adott választ egyetlen betegnek sem. Ott van ennek a történetnek a vége is, de addig még sok minden van.
+
+Mielőtt bárki azt mondaná: „nálam ez kizárt, én tiszta vagyok" — hadd mondjak valamit magáról a vizsgálatról.
+
+A tükrözés előtt a beteg egy egész napig nem eszik, és megiszik négy liter hashajtót. Reggelre a bele üresebb, mint életében bármikor. Kimosva, steril. És én utána még mindig találtam ott azt a réteget. Az az ember, aki bejön hozzám, a legtisztább állapotában van, amiben egész életében lesz. Ha akkor is ott van, gondolja végig, mi van ott egy hétköznapon.
+
+Vannak felvételeim. Huszonhat évnyi. Nem mutatom meg. Nem azért, mert tilos. Azért, mert utána két napig nem enne.
+
+A legfurcsább az volt, hogy ezek az emberek nem ugyanazzal jöttek be.
+
+Egy ötvenkét éves férfi azzal, hogy minden étkezés után úgy feszül a hasa, mint egy dob. Kapott egy IBS-diagnózist és egy szórólapot.
+
+Egy hatvanéves asszony azzal, hogy hetek óta hol napokig nem tud kimenni a mosdóba, hol meg nem mer elindulni otthonról. A nyakán apró bőrkinövések ültek. Azt mondta, ez az öregség.
+
+Egy ötvennyolc éves férfi hajnali háromkor ébredt minden áldott nap, és a felesége szerint úgy csikorgatta a fogát, hogy a másik szobában hallani lehetett. Altatót kapott.
+
+Három ember, három diagnózis, három különböző osztály. A monitoron mind a háromnál ugyanaz a réteg.
+
+Varga a hatodikra nem jött el. Bejelöltem, hogy nem jelent meg, és elfelejtettem. A magyar egészségügyben az a beteg, aki visszajár, nem rejtély — az egy statisztikai sor. Az pedig, aki egyszer csak nem jön, még annyi sem.
+
+Volt egy másik ember is, aki nem jött el a következőre. Kelemen Józsefnek hívták, buszsofőr volt. Nála ugyanaz a réteg, ugyanaz a lelet, ugyanaz a recept a háziorvostól. Nyolc hónappal a harmadik vizsgálata után a lánya telefonált a rendelőbe, hogy törölje az időpontot. Nem mondta meg, miért. A gyászjelentését két hónappal később láttam meg a városi hirdetőtáblán, pont a buszmegálló mellett, ahol harminc évig indult a járata. Ötvenkilenc éves volt. „A szíve."
+
+Két ember maradt le a listámról ugyanabban az évben. Az egyik azért, mert meggyógyult. A másik azért, mert már nem volt kinek eljönnie. És én akkor egyikről sem tudtam semmit.
+
+Két évvel később a feleségem, Zsuzsa, fogyni kezdett.
+
+Nem diétázott. Egyszerűen fogyott. És a legrosszabb az volt, hogy mindenki dicsérte érte. A boltban megkérdezték, mit csinál. A sógornőm azt mondta, na végre, jól nézel ki. A templom előtt egy asszony megjegyezte, hogy hatvanévesen ilyen alakot tartani tiszteletre méltó.
+
+Zsuzsa örült neki. Hat hónapig örült neki.
+
+Aztán a jegygyűrűje elkezdett leesni a kezéről. Először csak mosogatás közben, aztán a piacon, a pénztárcába nyúlva. Zsinórt kötött rá belülre, hogy megtartsa.
+
+Aztán észrevettem, hogy nem ül le velünk enni. Állva evett a tűzhelynél, mielőtt az asztalhoz hívott volna minket, és aztán csak ült velünk, üres tányérral, és beszélgetett. Két hónapig tartott, mire feltűnt.
+
+Hajnali háromkor ébredt, teljesen éberen, izzadtan. Egy ilyen éjszaka után a konyhában azt mondta nekem: „Gábor, te ezt más emberekben egész életedben nézted. Bennem miért nem nézed meg?" Nem válaszoltam neki. Elmostam a bögrémet és lefeküdtem.
+
+Karácsonykor tizennégyen ültünk az asztal körül. Zsuzsa két napig készült rá, és végigülte az egészet. Nem állt fel, nem ment ki, senki nem vett észre semmit. Éjjel vittem ki a szemetet, és a zacskó tetején ott volt az ő adagja, érintetlenül, ahogy a tányérról lehúzta.
+
+A kocsiban másnap annyit mondott: „Ne nézz így rám. Nem vagyok a betegeid." Harmincnyolc éve ismerem. Addig soha nem beszélt velem így.
+
+Ismertem ezeket a jeleket. Csak nem otthon láttam őket, hanem a monitoron.
+
+Ha ebből a felsorolásból kettőt is megtalál — magán, a feleségén vagy az édesanyján —, akkor ez a szöveg magának szól.
+
+Ha nem akarja végigolvasni, a cikk a bejegyzés alatt van, nyissa meg most. Én közben elmondom a végét is.
+
+Megcsináltattam neki a tükrözést. Nem én — kollégát kértem meg, mert a sajátodat nem vizsgálod. De ott álltam a monitor mögött.
+
+Ugyanaz a réteg volt. Pontosan ugyanaz, amit huszonhat éven át idegeneknél néztem.
+
+A kolléga felállt az asztaltól, és felém fordította a billentyűzetet. „Gábor, írd meg te. Te úgyis jobban tudod, mit láttál."
+
+Leültem, és a saját kezemmel gépeltem be a feleségem leletébe azt a mondatot, amit huszonhat éven át idegeneknek írtam alá. A nyálkahártya ép.
+
+Amíg begépeltem, végigfutott előttem, mi következik: egy szórólap az érzékeny bélről, egy doboz vas, egy recept altatóra — és három év, amíg valaki kimondja, hogy „ez a kor". Aztán aláírtam.
+
+És most arról, hogyan vannak berendezve. Elmondom egyszerűen, mert huszonhat évig néztem a fedelüket.
+
+Kimondom végre a szót, mert eddig kerülgettem — ahogy huszonhat évig kerülgettem a papíron is. Paraziták. Nem az a fajta, amit az interneten mutogatnak: aprók, telepekben, lárvákkal és petékkel, és nem a bél közepén, hanem a falban.
+
+Az első: nem a bél üregében úsznak. Magába a falba nőnek bele. Oda a szervezet védekezése sem ér el.
+
+A második: réteg alá bújnak. Az a szürkés bevonat, amit én a monitoron ezerszer láttam — az az ő fedelük. Az alá nem lát be semmi. Én sem láttam alá. A kamera a felszínt mutatja: simának, rózsaszínnek.
+
+A harmadik: éjjel aktívak, éjféltől négyig. Ilyenkor bújnak elő a réteg alól, és ilyenkor kerül a vérbe az, amit addig felhalmoztak. A máj éjjel dolgozik a legtöbbet. Ezért nem véletlen az az időpont, amikor maga felül az ágyban.
+
+És innen már érti, miért nem mutat ki semmit egyetlen papír sem.
+
+A vér nem mutatja ki — nem a vérben vannak, hanem a falban.
+
+A székletvizsgálat, az egyetlen, ami elkapná őket, hazudik, ha egyszer adja le: a peték ciklusokban ürülnek, és egy „üres" napon a minta tiszta. Három-négy minta kell, más-más napokon. Huszonhat év alatt egyszer sem láttam, hogy valakitől ezt így kérték volna.
+
+A tükrözés pedig — amit én csináltam — a felszínt látja. Ennyit tud. Ezért írtam le huszonhat éven át, hogy „a nyálkahártya ép".
+
+Zsuzsának is pontosan ezt írta a kollégám. És igaza volt. A nyálkahártya tényleg ép volt.
+
+Aztán jött az, amit már azelőtt is ezerszer láttam.
+
+Kaptunk receptet féreghajtóra. Két hétig könnyebb volt. Aztán minden visszajött. Megismételtük — ugyanaz.
+
+Akkor néztem meg végre azt, amit huszonhat évig kiadtam a kezemből anélkül, hogy elolvastam volna: a betegtájékoztatót. Hátul, apró betűvel, ott áll egy mondat. A kezelést két-három hét múlva meg kell ismételni.
+
+A gyártó tudja. Le is írja. Csak apró betűvel.
+
+Mert az a tabletta a kifejlett egyedeket viszi el, egy-két fajból. A petéhez és a lárvához nem ér hozzá — és két-három hét múlva ott az új nemzedék. Ezért feküdt le Varga Sándor ötször ugyanarra az ágyra. Nem ő volt krónikus. A kezelés volt fél.
+
+És a lényeg, amit senki nem mond ki: megölni csak a fele munka. Ki is kell juttatni. Amikor elpusztul, mindent kiönt magából, amit felhalmozott, és ha megölöd, de nem takarítod ki, rosszabb lesz, nem jobb. Láttam olyanokat, akik a második doboz után romlottak, és a következő évben már nem hozzám kerültek.
+
+Nem egy lépés. Kettő. És ha csak az elsőt csinálja meg valaki, azzal többet árt, mint amennyit használ.
+
+Akit meg nem visz el hirtelen, azt évekig nem attól kezelik, amije van. Először az egyik szakorvos, aztán a másik, és a végén ráírják arra a papírra, hogy „krónikus fáradtság szindróma". Az a mondat lezárja az aktát. Utána már senki nem keres semmit.
+
+Ez nem öt betegség. Ez egy tő, a többi meg hajtás, ami kinőtt belőle. Mindegyik szakorvos a saját hajtását nyesegeti. A tőhöz nem nyúl senki. Én sem nyúltam hozzá: huszonhat évig a hajtásokról írtam leletet.
+
+Tudtam, hogy mi. Nem tudtam, hogy mivel.
+
+Idén áprilisban a miskolci piacon vettem paprikapalántát. Megszólított egy ember.
+
+Varga Sándor volt. Az, aki ötször feküdt nálam, és a hatodikra nem jött el.
+
+Hatvanhét éves volt már. És úgy nézett ki, mint aki tíz évvel fiatalabb annál, mint amikor utoljára a monitoromon láttam. Megkérdeztem, hol volt ennyi ideig. Azt mondta: sehol, doktor úr, egyszerűen nem volt rá szükségem.
+
+Nem gorombaságból nem hittem el neki. Huszonhat év a monitor mögött úgy rendezi be az embert, hogy attól kezdve csak azt hiszi el, amit lát. Meg is mondtam neki: ezt én pusztán attól, hogy valaki jól néz ki, nem hiszem el.
+
+Erre elmosolyodott, és azt mondta: „Tudtam, hogy ezt fogja mondani. Ezért hoztam el."
+
+A táskájából kivett egy borítékot. Benne a saját leletei. Az öt régi, amit én írtam alá — és egy hatodik, tavaly őszi, amit már egy másik kórházban kapott, mert a háziorvosa a sok éves panasz után végül beutalta kontrollra. Mind a hatot ő maga kérte ki magának, és a képeket is. Azt mondta, tartsam meg a másolatokat, neki megvan.
+
+Hazavittem, és leültem velük a konyhaasztalhoz.
+
+Öt lelet, hat év, ugyanaz a név. Mind az ötön ugyanaz a zárómondat, az én aláírásommal: a nyálkahártya ép. Mind az ötön ugyanaz a kód, amit huszonhat évig odaírtam, mert máshova nem tudtam. A hatodikon, amit már nem én írtam, nem ez a mondat állt.
+
+Mellé kitettem a saját archívumomból a felvételt, amit hat éve készítettem róla, és a nyomtatott képet, ami a tavaly őszi lelethez tartozott. Ugyanaz az ember, ugyanaz a bélszakasz, ugyanabból a szögből.
+
+A régin a fal mentén ott húzódik az a szürkés, matt réteg, amit ötször láttam a monitoron és ötször nem írtam le. Az újon a fal rózsaszín. A réteg sehol.
+
+Hat éven át ugyanazt írtam le ugyanarról az emberről. Ötször. És egyszer sem kérdeztem meg tőle, mi történik vele a két vizsgálat között. Tavaly ősszel valaki más írt le róla valami mást — és ott, azon a papíron, nem volt benne az a mondat, amit én ötször aláírtam.
+
+Másnap felhívtam. Hat év után először én kérdeztem tőle valamit, és nem ő tőlem.
+
+Azt kérdeztem: mi történt a két vizsgálat között.
+
+A negyedik alkalommal ő kérdezett engem, és én egy mondattal elintéztem. Most én kérdeztem, és ő nem intézett el egy mondattal.
+
+És ő nem egy dobozt nevezett meg. Egy embert nevezett meg. És nem gyógynövényárust, nem javasasszonyt.
+
+Egy orvosnőt.
+
+Kovács Ilonának hívják. Parazitológus. Száznégy éves volt, amikor Sándor hozzá eljutott, ma százöt. Egy Budapest környéki faluban él. Hetven éven át pontosan azzal foglalkozott, amit én huszonhat éven át néztem a monitoron és sosem írtam le.
+
+Amikor ezt kimondta, leültem.
+
+Mert egy raktáros mondhat nekem akármit egy piacon. De ha azt mondja, hogy orvosnő, és hogy hetven éve csinálja, akkor az már az én nyelvem. Az már kolléga.
+
+Utánanéztem, ahogy orvos néz utána egy másik orvosnak. Több mint negyvenezer ember fordult meg nála. Hat hónapos várólistája volt, a végén kétezer név állt rajta. Tavaly hagyta abba a betegfogadást — nem a szakma hagyta ott, hanem a kora.
+
+És ez volt az a pont, ahol nekem be kellett látnom valamit.
+
+Én huszonhat éven át a felszínt vettem fel a monitorra, és a leletre a legközelebbi kódot írtam. Ő hetven éven át az alá nézett. Én azt írtam le, ami látszik. Ő azzal foglalkozott, ami nem.
+
+A receptúráját nem vitte magával. Átadta a fiának, Mártonnak — aki nem orvos lett, hanem az anyja mellett nőtt fel a szárított gyógynövények és a mérlegek között, és öt évig járta a budapesti és müncheni laborokat, amíg abból, amit az anyja kézzel kevert, kapszula lett.
+
+Hogy mi van benne, azt nem mondom el helyette. Huszonhat évig fordítottam le idegen emberek belsejét egyetlen hivatalos mondatra, és tudom, mennyi marad belőle. Semmi. Olvassa el tőle.
+
+A cikk a bejegyzés alatti gombra kattintva nyílik. Tíz perc, regisztráció nélkül, ingyen. Benne van, pontosan mi van az összetételben — sorban, az utolsó növényig —, melyik mire való, és miért hozza vissza a patikai tabletta pár hét múlva az egészet.
+
+Zsuzsa június másodikán, hétfőn kezdte. Napi kétszer egy kapszula, kúraszerűen.
+
+A második napon délután azt mondta, mintha valaki kiengedett volna belőle a levegőt. Ennyi volt, semmi több.
+
+Az ötödik napon reggel leült velünk a konyhaasztalhoz és megette a reggelijét. Nem állva, nem előre. Velünk.
+
+A tizedik éjszakán nem ébredtem fel arra, hogy ő ébren van. Reggel kérdeztem meg, hánykor kelt fel. Azt mondta: nem keltem fel.
+
+A huszonötödik napon vártam. Mert a patikai tabletta pontosan ilyenkor hozta vissza az egészet. Kivárta a harminc napot, és utána vártam még egy hónapot. Nem jött vissza semmi. Akkor értettem meg, hogy ezúttal nemcsak a kifejlettek pusztultak el.
+
+Egy hónap múlva a lekváros üveg két hétig bontatlanul állt a kamrában. Ő észre sem vette. Én igen.
+
+Másfél hónap múlva ez a régi Zsuzsa volt. Nem „jobban, mint volt" — a régi.
+
+Augusztusban volt a nagyobbik unokánk esküvője. Zsuzsa végigülte a vacsorát, és úgy evett, mint mindenki. A lányunk vette észre, nem én. Áthajolt hozzám, és halkan annyit mondott: „Apa. Anya most ült végig egy egész vacsorát. Karácsonykor a halászlénél állt fel." Zsuzsa csak legyintett, mint aki nem érti, mi ebben a nagy dolog. A násznép ment tovább, mi ketten meg néztük őt. Nem én voltam az egyetlen, aki látta.
+
+Én is szedtem, vele párhuzamosan. A harmadik héten vettem észre, hogy este megint elolvasok egy fejezetet úgy, hogy nem alszom el a lap fölött. Öt éve minden könyvet a második oldalon tettem le. Huszonhat évig kerestem ezt idegen hasakban, és egyszer sem jutott eszembe a sajátom.
+
+Azóta megkerestek olyanok, akiket én tükröztem éveken át. László, 64: hat év alatt négyszer feküdt le nálam arra az ágyra. Idén nem kért időpontot. Először azt hittem, elköltözött. Ágnes, 57: két évig minden útra vitt magával egy nejlonzacskót, mert nem tudta, mikor kell megállnia a kocsival — tavasz óta nem visz. Katalin, 68: két éve nem mert vonatra ülni Pestig, mert nem tudta, hol lesz mosdó. Húsvétkor felment a lányához, egyedül.
+
+Három ember, akiknek én írtam alá a leletét. Egyikük nevét sem én mondtam ki elsőnek — ők hívtak fel engem.
+
+És most jönnek azok a mondatok, amiket huszonhat év alatt a vizsgáló ajtajában hallottam, mindig ugyanabban a sorrendben.
+
+„Nincs se macskám, se kutyám." Varga Sándornak sem volt. Raktáros volt egy gabonatárolóban.
+
+„Az orvos szólt volna." Én voltam az orvos. Ötször. És nem szóltam. Aztán a saját feleségemnél sem szóltam.
+
+„De az én leletemen az áll, hogy minden rendben." Az övén is az állt. Ötször. Én írtam alá mind az ötöt.
+
+És ha nem magán — az édesanyján. Az én ágyamra minden második olyan feküdt le, akinek a gyereke akkor jött rá, amikor már megvolt a három év és a négy szakorvos.
+
+És ha most nem magára gondol, hanem arra, akit hónapok óta hordoz vizsgálatról vizsgálatra: nekem huszonhat év szakmám volt hozzá, és a saját feleségem leletébe mégis én gépeltem be azt a mondatot. Ne magyarázzon neki semmit. Üljenek le, és olvassák el együtt.
+
+A név és a telefonszám elég. Előre nem kell fizetni semmit: felhívják, elmondanak mindent, és a futár két-három nap alatt kihozza. A pénz akkor kerül elő, amikor a csomag már a kezében van.
+
+Számoltam, mert orvos vagyok, és szeretem a számokat. Tavaly kilencvenkétezer forint ment el vasra, magnéziumra és altatóra, plusz két magánrendelés harmincötezrével. Százhatvankétezer forint azért, hogy a végén azt mondják neki: „ez a kor." A kúra ennek a töredéke volt, és egyszer kellett. Tizenkilencezer-nyolcszáz helyett most kilencezer-kilencszáz.
+
+A patika polcán nincs ott. Nem is lesz. Egy háromhetes doboz: három hét könnyebbség, aztán megint minden elölről, és az ember türelmes, kibírja, aztán megint bejön. Abból lehet húsz évig eladni. Abból, amit egyszer megisznak és többé nem jönnek vissza érte, nincs mit kivenni.
+
+Nekem harmadnapra kihozták. Egy kollégámnak, aki két hónappal később rendelt, már azt mondták, hogy várjon: kis tételekben készül. Hogy ma hogy áll, nem tudom.
+
+Nem tudom, mennyi ideje van. Csak azt tudom, hogy mind a tizenkétezer ember, aki lefeküdt arra az ágyra, azt hitte, hogy van.
+
+Vegye elő a legutóbbi leletét, és olvassa el rajta azt a sort, hogy „a nyálkahártya ép". Én huszonhat éven át írtam le ezt a mondatot. Igaz is volt. Csak nem az volt a kérdés.
+
+A kérdés az volt, amit egy raktáros tett fel nekem a vizsgáló ajtajában: miért jövök én ide mindig vissza. Erre a mondat nem válaszol. Erre a kamera sem válaszol. És huszonhat év alatt egyetlen betegnek sem mondta meg senki, hogy egyáltalán meg lehet kérdezni.
+
+Varga Sándor öt lelete azóta is az asztalfiókomban van. Mind az ötön ott az aláírásom, és mind az ötöt ugyanazzal a mondattal zártam le. A hatodikat már nem én írtam.
+
+~ Fodor Gábor, endoszkópos szakorvos, 26 év a monitor mögött
