@@ -35,6 +35,10 @@ metodo, dostopno vsakemu Slovencu</title>
     
       font-size: 19px;
       line-height: 1.7;
+    
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     main p,
@@ -690,7 +694,7 @@ metodo, dostopno vsakemu Slovencu</title>
   <div class="h1-bg split">
     <h1 class="title_h1">
       <span class="head-one-part"></span>
-      <span class="head-two-part">PRI 102 LETIH JE NAJSTAREJŠI ORTOPED V SLOVENIJI IN EDINI IZ SVOJE GENERACIJE, KI HODI BREZ PALICE. PRVIČ RAZKRIVA FORMULO, KI JO JE 40 LET DAJAL SAMO SVOJIM PACIENTOM.</span>
+      <span class="head-two-part"><b class="hl">PRI 102 LETIH</b> JE <b class="hl">NAJSTAREJŠI ORTOPED V SLOVENIJI</b> IN EDINI IZ SVOJE GENERACIJE, KI HODI BREZ PALICE. PRVIČ RAZKRIVA FORMULO, KI JO JE <b class="hl">40 LET</b> DAJAL SAMO SVOJIM PACIENTOM.</span>
     </h1>
 
     <div class="tdate head-main-date">
@@ -2839,7 +2843,12 @@ metodo, dostopno vsakemu Slovencu</title>
         opacity: 0.7
       }
     }
-  </style>
+  
+    /* okvir naslovnega bloka + poudarek kljucnih besed */
+    .h1-bg { border: 3px solid #c9a227 !important; border-radius: 10px !important;
+             box-sizing: border-box !important; }
+    .title_h1 .hl { color: #c9a227 !important; font-weight: 800 !important; }
+</style>
 
   <script
     async> const LAZY = document.querySelectorAll('img'); for (let i = 0; i < LAZY.length; i++) { LAZY[i].setAttribute('loading', 'lazy'); } </script>

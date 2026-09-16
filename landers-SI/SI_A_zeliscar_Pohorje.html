@@ -1363,7 +1363,12 @@ tablete</title>
         font-size: 14px
       }
     }
-  </style>
+  
+    /* okvir naslovnega bloka + poudarek kljucnih besed */
+    .h1-bg { border: 3px solid #5c6b3c !important; border-radius: 10px !important;
+             box-sizing: border-box !important; }
+    .title_h1 .hl { color: #5c6b3c !important; font-weight: 800 !important; }
+</style>
 
   <script src="js/32.js"></script>
   <link rel="icon" href="images/0.webp">
@@ -1407,8 +1412,8 @@ tablete</title>
 
   <div class="h1-bg split">
     <h1 class="title_h1">
-      <span class="h1-quote">"Kdor ne verjame v moč narave, nikoli ne bo razumel lastnega telesa."</span>
-      <span class="head-two-part">Stric Jože Hribar, ljudski zdravilec s Pohorja, je več kot 1700 ljudem vrnil veselje do hoje brez ene same predpisane kemične tablete. Naš novinar se je odpravil na njegovo odmaknjeno domačijo, da bi mu zastavil najpomembnejše vprašanje: kako mu to uspeva?</span>
+      <span class="h1-quote">"Kdor ne verjame v <b class="hl">moč narave</b>, nikoli ne bo razumel <b class="hl">lastnega telesa</b>."</span>
+      <span class="head-two-part">Stric Jože Hribar, ljudski zdravilec s Pohorja, je <b class="hl">več kot 1700 ljudem</b> vrnil veselje do hoje <b class="hl">brez ene same predpisane kemične tablete</b>. Naš novinar se je odpravil na njegovo odmaknjeno domačijo, da bi mu zastavil najpomembnejše vprašanje: kako mu to uspeva?</span>
     </h1>
 
     <div class="tdate head-main-date">
