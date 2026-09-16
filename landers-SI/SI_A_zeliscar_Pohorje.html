@@ -19,26 +19,26 @@ tablete</title>
 
   <style>
     :root {
-      --color-primary: #0a5c9e;
-      --color-primary-dark: #084678;
-      --color-primary-light: #e8f2fa;
-      --color-accent: #0284c7;
-      --color-danger: #c0392b;
-      --color-danger-light: #fdecea;
-      --color-success: #1e8449;
-      --color-success-light: #e8f5ee;
+      --color-primary: #5c6b3c;
+      --color-primary-dark: #404b29;
+      --color-primary-light: #eff1e3;
+      --color-accent: #8a9a5b;
+      --color-danger: #9c4a30;
+      --color-danger-light: #f7ece7;
+      --color-success: #a8542a;
+      --color-success-light: #fbefe7;
       --color-warning: #b7791f;
-      --color-text: #1a2b42;
-      --color-text-muted: #4a5a70;
-      --color-text-light: #6b7a8f;
+      --color-text: #25291b;
+      --color-text-muted: #4b533c;
+      --color-text-light: #6a7259;
       --color-bg: #ffffff;
-      --color-bg-soft: #f7fafc;
-      --color-bg-alt: #eef4f9;
-      --color-border: #d9e2ec;
-      --color-border-soft: #e4ebf2;
-      --shadow-sm: 0 1px 2px rgba(10, 92, 158, 0.04), 0 1px 3px rgba(10, 92, 158, 0.06);
-      --shadow-md: 0 4px 12px rgba(10, 92, 158, 0.08), 0 2px 4px rgba(10, 92, 158, 0.04);
-      --shadow-lg: 0 10px 25px rgba(10, 92, 158, 0.10), 0 4px 10px rgba(10, 92, 158, 0.05);
+      --color-bg-soft: #faf9f1;
+      --color-bg-alt: #f2f1e4;
+      --color-border: #dcdcc6;
+      --color-border-soft: #e8e7d6;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 2px 6px rgba(0,0,0,0.05);
+      --shadow-lg: 0 4px 12px rgba(0,0,0,0.06);
       --radius-sm: 4px;
       --radius-md: 8px;
       --radius-lg: 12px;
@@ -58,8 +58,8 @@ tablete</title>
       margin: 0;
       padding: 0;
       font-family: var(--font-sans);
-      font-size: 17px;
-      line-height: 1.65;
+      font-size: 19px;
+      line-height: 1.7;
       color: var(--color-text);
       background: var(--color-bg-soft);
       -webkit-font-smoothing: antialiased;
@@ -69,7 +69,7 @@ tablete</title>
     .clinical-topbar {
       background: var(--color-primary-dark);
       color: #fff;
-      font-size: 12px;
+      font-size: 13px;
       letter-spacing: 0.05em;
       text-transform: uppercase;
       padding: 8px 16px;
@@ -180,8 +180,8 @@ tablete</title>
 
     .title_h1 {
       font-family: var(--font-serif);
-      font-size: 28px;
-      line-height: 1.25;
+      font-size: 31px;
+      line-height: 1.3;
       color: var(--color-text);
       font-weight: 700;
       margin: 0 0 14px;
@@ -235,7 +235,7 @@ tablete</title>
       display: block;
       padding: 16px 18px;
       color: var(--color-text);
-      font-size: 17px;
+      font-size: 19px;
       border-radius: var(--radius-md);
       font-weight: 500;
       border-left: 4px solid var(--color-primary);
@@ -248,8 +248,7 @@ tablete</title>
 
     @media (max-width:640px) {
       .title_h1 {
-        font-size: 22px
-      }
+        font-size: 25px}
 
       .h1-quote {
         font-size: 24px
@@ -260,7 +259,7 @@ tablete</title>
       }
 
       .main-subtitle {
-        font-size: 15px;
+        font-size: 17px;
         padding: 14px 14px
       }
 
@@ -285,7 +284,7 @@ tablete</title>
     }
 
     main p {
-      margin: 0 0 16px;
+      margin: 0 0 22px;
       color: var(--color-text)
     }
 
@@ -297,8 +296,8 @@ tablete</title>
 
     main h2 {
       font-family: var(--font-serif);
-      font-size: 24px;
-      line-height: 1.3;
+      font-size: 26px;
+      line-height: 1.35;
       font-weight: 700;
       color: var(--color-primary-dark);
       margin: 32px 0 16px;
@@ -310,7 +309,7 @@ tablete</title>
     main h2 span {
       display: block;
       font-family: var(--font-sans);
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 500;
       color: var(--color-text-muted);
       margin-top: 10px;
@@ -320,12 +319,10 @@ tablete</title>
 
     @media (max-width:640px) {
       main h2 {
-        font-size: 19px
-      }
+        font-size: 22px}
 
       main h2 span {
-        font-size: 15px
-      }
+        font-size: 17px}
     }
 
     main ul {
@@ -341,9 +338,8 @@ tablete</title>
     main ul li {
       position: relative;
       padding-left: 22px;
-      margin-bottom: 8px;
-      line-height: 1.5
-    }
+      margin-bottom: 12px;
+      line-height: 1.65}
 
     main ul li::before {
       content: "";
@@ -382,9 +378,9 @@ tablete</title>
     figure figcaption {
       margin-top: 12px;
       padding: 10px 14px;
-      font-size: 14px;
-      line-height: 1.5;
-      color: var(--color-text-muted);
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--color-text);
       background: var(--color-bg-soft);
       border-left: 3px solid var(--color-primary);
       border-radius: 0 var(--radius-sm) var(--radius-sm)0;
@@ -449,15 +445,15 @@ tablete</title>
       margin: 24px 0;
       padding: 20px 22px;
       background: var(--color-primary-light);
-      border: 1px solid rgba(10, 92, 158, 0.15);
+      border: 1px solid rgba(92, 107, 60, 0.15);
       border-left: 4px solid var(--color-primary);
       border-radius: var(--radius-md);
       box-shadow: none
     }
 
     .rev-block p {
-      font-size: 16px;
-      line-height: 1.6;
+      font-size: 18px;
+      line-height: 1.65;
       margin-bottom: 12px
     }
 
@@ -471,7 +467,7 @@ tablete</title>
       display: block;
       margin-top: 12px;
       padding-top: 12px;
-      border-top: 1px solid rgba(10, 92, 158, 0.15);
+      border-top: 1px solid rgba(92, 107, 60, 0.15);
       color: var(--color-primary-dark);
       font-size: 15px
     }
@@ -793,7 +789,7 @@ tablete</title>
 
     .pachinoform {
       padding: 0;
-      font-size: 17px;
+      font-size: 19px;
       line-height: 1.5;
       color: var(--color-text);
       border: 1px solid var(--color-border);
@@ -839,14 +835,14 @@ tablete</title>
     .pachinoform_title_text {
       align-self: center;
       color: #fff;
-      font-size: 15px;
+      font-size: 17px;
       line-height: 1.4
     }
 
     .pachinoform_title_text>b {
       display: block;
       line-height: 1.3;
-      font-size: 17px;
+      font-size: 19px;
       margin-bottom: 4px;
       color: #fff;
       font-weight: 600
@@ -855,7 +851,7 @@ tablete</title>
     .pachinoform_order {
       max-width: none;
       font-weight: 500;
-      font-size: 15px;
+      font-size: 18px;
       margin: 0;
       text-align: center;
       padding: 16px 24px;
@@ -874,7 +870,7 @@ tablete</title>
       display: flex;
       color: var(--color-text);
       font-weight: 600;
-      font-size: 15px;
+      font-size: 18px;
       align-items: center;
       justify-content: center;
       padding: 16px 24px 0;
@@ -886,7 +882,7 @@ tablete</title>
       border: 2px solid var(--color-danger);
       color: var(--color-danger);
       line-height: 1;
-      font-size: 22px;
+      font-size: 26px;
       padding: 6px 18px;
       margin: 0 6px;
       border-radius: var(--radius-sm);
@@ -895,7 +891,7 @@ tablete</title>
     }
 
     .pachinoform_value_total {
-      font-size: 18px;
+      font-size: 20px;
       color: var(--color-text-muted)
     }
 
@@ -964,20 +960,19 @@ tablete</title>
     .pachinoform .name-input,
     .pachinoform .phone-input {
       color: var(--color-text);
-      font-size: 15px;
+      font-size: 17px;
       margin-bottom: 14px
     }
 
     .pachinoform .name-input label,
     .pachinoform .phone-input label {
       font-weight: 500;
-      font-size: 14px;
-      color: var(--color-text-muted);
+      font-size: 17px;
+      color: var(--color-text);
       margin-bottom: 6px;
       display: block;
-      text-transform: uppercase;
-      letter-spacing: 0.04em
-    }
+      text-transform: none;
+      letter-spacing: normal}
 
     .pachinoform .name-input input,
     .pachinoform .phone-input input {
@@ -986,11 +981,11 @@ tablete</title>
       box-sizing: border-box;
       width: 100%;
       border-radius: var(--radius-sm);
-      padding: 12px 16px;
+      padding: 15px 18px;
       min-width: 0;
       background: #fff;
-      border: 1.5px solid var(--color-border);
-      font-size: 16px !important;
+      border: 2px solid var(--color-border);
+      font-size: 19px !important;
       transition: border-color 0.15s ease, box-shadow 0.15s ease
     }
 
@@ -999,16 +994,16 @@ tablete</title>
     .pachinoform input:focus {
       outline: 0;
       border-color: var(--color-primary);
-      box-shadow: 0 0 0 3px rgba(10, 92, 158, 0.15)
+      box-shadow: 0 0 0 3px rgba(92, 107, 60, 0.15)
     }
 
     .pachinoform .button-submit {
       width: 100%;
-      padding: 16px 22px;
+      padding: 18px 22px;
       background: var(--color-success);
       color: #fff;
       font-weight: 700;
-      font-size: 17px;
+      font-size: 21px;
       border: 0;
       border-radius: var(--radius-sm);
       cursor: pointer;
@@ -1029,7 +1024,7 @@ tablete</title>
     .pachinoform_footer {
       padding: 16px 24px 20px;
       text-align: center;
-      font-size: 14px;
+      font-size: 16px;
       color: var(--color-text-muted);
       line-height: 1.5
     }
@@ -1116,8 +1111,8 @@ tablete</title>
     }
 
     .comments__item-content {
-      font-size: 15px;
-      line-height: 1.55;
+      font-size: 17px;
+      line-height: 1.65;
       color: var(--color-text);
       margin: 0
     }
@@ -1285,7 +1280,7 @@ tablete</title>
       display: flex;
       align-items: center;
       gap: 8px;
-      font-size: 13px;
+      font-size: 15px;
       color: var(--color-text-muted);
       font-weight: 500
     }
@@ -1341,12 +1336,10 @@ tablete</title>
 
     @media (max-width:480px) {
       body {
-        font-size: 16px
-      }
+        font-size: 19px}
 
       main p {
-        font-size: 16px
-      }
+        font-size: 19px}
 
       .rev-block {
         padding: 16px
@@ -1374,6 +1367,22 @@ tablete</title>
 
   <script src="js/32.js"></script>
   <link rel="icon" href="images/0.webp">
+  <script>
+    /* Datum objave: dokument se posodablja vsak dan, zato se izpise vceraj.
+       Format je slovenski (d. m. llll). Uporablja se lokalni cas obiskovalca. */
+    function dtime_nums(offset, withYear) {
+      var host = document.currentScript && document.currentScript.parentNode;
+      var fmt = (host && host.getAttribute) ? host.getAttribute('format') : null;
+      var d = new Date();
+      d.setDate(d.getDate() + (Number(offset) || 0));   /* prehod mesecev in let uredi Date sam */
+      var day = d.getDate(), mon = d.getMonth() + 1, yr = d.getFullYear();
+      var out;
+      if (fmt === 'year') { out = String(yr); }
+      else if (withYear === false) { out = day + '. ' + mon + '.'; }
+      else { out = day + '. ' + mon + '. ' + yr; }
+      document.write(out);
+    }
+  </script>
 </head>
 
 <body data-archive-id="24211ac6-a421-480b-b035-9ffa25d5fe7e">
@@ -1405,7 +1414,7 @@ tablete</title>
     <div class="tdate head-main-date">
       <span class="head-main-date-title">Objavljeno:</span>
       <span>
-        <script>dtime_nums(-3, true)</script>, 09:36
+        <script>dtime_nums(-1, true)</script>, 09:36
       </span>
     </div>
 
@@ -1780,7 +1789,7 @@ tablete</title>
 
     <p class="pachino-ramka">
       <span class="ramka-title">Posodobljeno: <span>
-          <script>dtime_nums(-2, true)</script>
+          <script>dtime_nums(0, true)</script>
         </span>:</span>
       Glede na izjemno zanimanje se zaloge lahko izčrpajo hitreje, kot je predvideno! Danes —
       <font><span>
@@ -2146,6 +2155,61 @@ tablete</title>
   </script>
 
   <p style="opacity: 0;">{_box:2sHZz2rc}</p>
+  <script>
+    /* Stevec preostalih zalog.
+       POZOR: to je DEMONSTRACIJSKI nacin. Realnih podatkov o zalogi ni na voljo,
+       zato se zacetna vrednost bere iz HTML, zmanjsevanje pa je zgolj prikaz in
+       NE predstavlja resnicnih prodaj. Ko bo na voljo pravi vir zaloge,
+       nastavi STOCK.demo = false in STOCK.source na koncno tocko API-ja. */
+    (function () {
+      var STOCK = { demo: true, source: null, floor: 0 };
+      var el = document.querySelector('.pachinoform_value_current');
+      var form = document.querySelector('.pachinoform');
+      if (!el || !form) return;
+
+      var n = parseInt((el.textContent || '').replace(/\D/g, ''), 10);
+      if (!isFinite(n)) return;
+
+      /* 3 s -> -2, nato 2 s -> -3, nato se razmiki postopoma daljsajo */
+      var plan = [{ wait: 3000, by: 2 }, { wait: 2000, by: 3 }];
+      var step = 0, wait = 2000, started = false;
+
+      function tick() {
+        var s = plan[step] || { wait: Math.round(wait *= 1.6), by: 1 };
+        step++;
+        setTimeout(function () {
+          n = Math.max(STOCK.floor, n - s.by);
+          el.textContent = n;
+          if (n > STOCK.floor) tick();
+        }, s.wait);
+      }
+
+      function start() {
+        if (started) return;   /* ponoven scroll mehanizma ne zazene znova */
+        started = true;
+        tick();
+      }
+
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (es) {
+          for (var i = 0; i < es.length; i++) {
+            if (es[i].isIntersecting) { start(); io.disconnect(); return; }
+          }
+        }, { threshold: 0.2 });
+        io.observe(form);
+      } else {
+        var onScroll = function () {
+          var r = form.getBoundingClientRect();
+          if (r.top < window.innerHeight && r.bottom > 0) {
+            start();
+            window.removeEventListener('scroll', onScroll);
+          }
+        };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+      }
+    })();
+  </script>
 </body>
 
 </html>
