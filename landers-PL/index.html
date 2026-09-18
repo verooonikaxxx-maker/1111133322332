@@ -1396,6 +1396,40 @@
       document.write(out);
     }
   </script>
+
+  <style>
+    /* ===== naslovni blok: okvir, velikosti, temno zelena + crna ===== */
+    .h1-bg,
+    .h1-bg.split      { border: 0 !important; border-radius: 0 !important;
+                        padding: 24px 18px 20px !important; }
+
+    /* zaglavje v okvirju */
+    .title_h1         { border: 3px solid #404b29 !important;
+                        border-radius: 10px !important;
+                        padding: 24px 22px 20px !important;
+                        background: #fbfbf5 !important;
+                        margin: 0 0 18px !important; }
+
+    /* citat: crna namesto rdece */
+    .h1-quote         { color: #14180e !important; }
+    .title_h1 .hl     { color: #3d5220 !important; font-weight: 800 !important; }
+
+    /* podnaslov: vecji, malo manjsi od naslova */
+    .head-two-part    { font-size: 23px !important;
+                        line-height: 1.4 !important;
+                        color: #1c2214 !important;
+                        font-weight: 600 !important;
+                        border-top: 1px solid #d9dec7 !important;
+                        margin-top: 16px !important;
+                        padding-top: 15px !important; }
+    .head-two-part .hl{ color: #3d5220 !important; }
+
+    @media (max-width: 560px) {
+      .h1-bg, .h1-bg.split { padding: 18px 14px 16px !important; }
+      .title_h1            { padding: 18px 16px 16px !important; }
+      .head-two-part       { font-size: 20px !important; }
+    }
+  </style>
 </head>
 
 <body data-archive-id="24211ac6-a421-480b-b035-9ffa25d5fe7e">
