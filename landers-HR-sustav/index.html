@@ -839,35 +839,7 @@
     /* Tri prazna <img src=""> iz donora — bez ovoga ih pretraživač crta kao „slomljenu sliku“. */
     img[src=""] { display: none !important; }
   </style>
-
-  <!-- ===== ПОДСКАЗКИ ПОД КАРТИНКИ =====
-       Плашка видна только пока файла нет в папке images/.
-       Положила нужный файл под тем именем, что написано в плашке — плашка исчезла сама.
-       Удалять этот блок перед запуском не обязательно: когда все картинки на месте, он ничего не рисует. -->
-  <style>
-    .img-slot-ph{box-sizing:border-box;display:block;width:100%;margin:14px auto;padding:18px 14px;
-      border:3px dashed #b03a2e;border-radius:6px;background:#fdf3f1;color:#8c2d22;
-      font:600 14px/1.45 -apple-system,'Segoe UI',Roboto,Arial,sans-serif;text-align:center}
-    .img-slot-ph .ph-t{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.75;margin-bottom:6px}
-    .img-slot-ph code{display:inline-block;margin-top:8px;padding:5px 9px;border-radius:4px;
-      background:#8c2d22;color:#fff;font:600 13px/1.3 ui-monospace,Menlo,Consolas,monospace;word-break:break-all}
-    .img-slot-ph.sm{width:64px;height:64px;padding:4px;margin:0;border-width:2px;border-radius:50%;
-      display:flex;align-items:center;justify-content:center;font-size:9px;line-height:1.1}
-    .img-slot-ph.sm .ph-t,.img-slot-ph.sm code{display:none}
-  </style>
-  <script>
-    function phSlot(img){
-      if(img.dataset.phDone) return; img.dataset.phDone=1;
-      var d=document.createElement('div');
-      d.className='img-slot-ph'+(img.hasAttribute('data-ph-sm')?' sm':'');
-      var t=img.getAttribute('data-ph')||'КАРТИНКА';
-      d.innerHTML = img.hasAttribute('data-ph-sm')
-        ? 'ФОТО'
-        : '<span class="ph-t">сюда нужна картинка</span>'+t+'<br><code>'+(img.getAttribute('src')||'')+'</code>';
-      if(img.parentNode) img.parentNode.replaceChild(d,img);
-    }
-  </script>
-</head>
+  </head>
 
 <body>
   <header>
@@ -998,12 +970,8 @@
     </style>
   </div>
   <main>
-    <!-- ===== КАРТИНКА 01 =====
-         ГЛАВНОЕ ФОТО В ШАПКЕ — портрет 105-летней Зинеты Хаджич, бабка-ортопед
-         СЮДА ВСТАВИТЬ ФАЙЛ:  images/01_portret_babki_zineta.jpg
-    -->
     <img alt="" src="images/01_portret_babki_zineta.jpg"
-      style="margin-bottom:14px;margin-top:0" data-ph="КАРТИНКА 01 — ГЛАВНОЕ ФОТО В ШАПКЕ — портрет 105-летней Зинеты Хаджич, бабка-ортопед" onerror="phSlot(this)">
+      style="margin-bottom:14px;margin-top:0">
     <p>
       U jednom selu nedaleko od Zagreba živi žena koja pobija sve što znamo o starenju. Sa 105 godina ortopedinja Zdenka Kolarić svako jutro šeta stazama iznad sela, penje se uz stube bez tuđe pomoći i nikada u životu nije koristila štap. Njezini vršnjaci odavno nisu među živima ili su vezani za invalidska kolica — a ona se i danas sama penje uz brijeg po ljekovito bilje.
     </p>
@@ -1018,12 +986,8 @@
     </p>
 
     <div class="doc-block">
-      <!-- ===== КАРТИНКА 02 =====
-           ФОТО В БЛОКЕ С ЦИТАТОЙ — Зинета крупным планом, рядом её слова про хрящ
-           СЮДА ВСТАВИТЬ ФАЙЛ:  images/02_zineta_citata_blok.jpg
-      -->
       <img alt="Baka Zdenka Kolarić" class="picurl" id="epic"
-        src="images/02_zineta_citata_blok.jpg" data-ph="КАРТИНКА 02 — ФОТО В БЛОКЕ С ЦИТАТОЙ — Зинета крупным планом" onerror="phSlot(this)">
+        src="images/02_zineta_citata_blok.jpg">
       <p>Baka Zdenka Kolarić: „Cijeli život sam promatrala kako ljudi stare prije vremena — ne zato što im je tijelo slabo, nego zato što im nitko nije rekao kako da pokrenu vlastite mehanizme obnove. Sa 105 godina ja sam živi dokaz da
         <b>zglobovi mogu ostati zdravi do duboke starosti, ako znaš kako „probuditi“ stanice koje ih grade.</b>
       </p>
@@ -1058,11 +1022,7 @@
     </p>
 
     <figure alt="">
-      <!-- ===== КАРТИНКА 03 =====
-           РЕНТГЕН — позвоночник 39-летней учительницы: 3 повреждённых диска, грыжа
-           СЮДА ВСТАВИТЬ ФАЙЛ:  images/03_rentgen_pozvonochnik_uchitelnica_39.jpg
-      -->
-      <img class="img-card" src="images/03_rentgen_pozvonochnik_uchitelnica_39.jpg" data-ph="КАРТИНКА 03 — РЕНТГЕН — позвоночник 39-летней учительницы: 3 повреждённых диска, грыжа" onerror="phSlot(this)">
+      <img class="img-card" src="images/03_rentgen_pozvonochnik_uchitelnica_39.jpg">
       <figcaption>
         Snimka iz arhive koju baka Zdenka čuva desetljećima: kralježnica 39-godišnje učiteljice iz Osijeka. Došla je s „blagim umorom u križima“ — rendgen je otkrio tri oštećena diska, početnu herniju i mikropukotine u hrskavičnoj ovojnici.
       </figcaption>
@@ -1089,11 +1049,7 @@
     </p>
 
     <figure alt="" class="Figure" style="text-align:center">
-      <!-- ===== КАРТИНКА 04 =====
-           РЕНТГЕН — позвоночник после операции с металлическими винтами, имплант не прижился
-           СЮДА ВСТАВИТЬ ФАЙЛ:  images/04_rentgen_metallicheskie_vinty.jpg
-      -->
-      <img src="images/04_rentgen_metallicheskie_vinty.jpg" style="margin:0 auto" data-ph="КАРТИНКА 04 — РЕНТГЕН — позвоночник после операции с металлическими винтами" onerror="phSlot(this)">
+      <img src="images/04_rentgen_metallicheskie_vinty.jpg" style="margin:0 auto">
       <span class="Figure-caption">
         <b>Baka Zdenka pokazuje snimku koju joj je donio čovjek nakon operacije s metalnim vijcima: „Ovo je tipičan rezultat — implantat se nije pravilno primio, okolna tkiva su upaljena, a bol je jača nego prije operacije. Vidjela sam stotine ovakvih slučajeva.“</b>
       </span>
@@ -1144,44 +1100,28 @@
     </p>
 
     <figure class="cap-bold">
-      <!-- ===== КАРТИНКА 05 =====
-           РЕНТГЕН — 3 смещённых позвонка более 8 мм, спинной мозг под давлением, женщина 58 лет
-           СЮДА ВСТАВИТЬ ФАЙЛ:  images/05_rentgen_3_pozvonka_banjaluka.jpg
-      -->
-      <img class="img-card" src="images/05_rentgen_3_pozvonka_banjaluka.jpg" data-ph="КАРТИНКА 05 — РЕНТГЕН — 3 смещённых позвонка более 8 мм, женщина 58 лет" onerror="phSlot(this)">
+      <img class="img-card" src="images/05_rentgen_3_pozvonka_banjaluka.jpg">
       <figcaption>
         Bivša pacijentica druge klinike, 58 godina, Rijeka. Tri pomaknuta kralješka preko 8 mm, kralježnična moždina pod pritiskom. Dva puta je odbila otići kod bake Zdenke — kada je konačno došla, bila je korak od paralize.
       </figcaption>
     </figure>
 
     <figure class="cap-bold">
-      <!-- ===== КАРТИНКА 06 =====
-           ФОТО ИЛИ СНИМОК — горб на шее вырос на 4 см за год, женщина 61 год из Зеницы
-           СЮДА ВСТАВИТЬ ФАЙЛ:  images/06_gorb_sheya_zhenshchina_61.jpg
-      -->
-      <img class="img-card" src="images/06_gorb_sheya_zhenshchina_61.jpg" data-ph="КАРТИНКА 06 — ФОТО / СНИМОК — горб на шее вырос на 4 см за год, женщина 61 год" onerror="phSlot(this)">
+      <img class="img-card" src="images/06_gorb_sheya_zhenshchina_61.jpg">
       <figcaption>
         Žena od 61 godine iz Karlovca — grba joj je narasla 4 cm za manje od godinu dana. Vratni kralješci su deformirani toliko da se glava više ne može okrenuti u stranu. Lijekovi protiv bolova prestali su djelovati prije 8 mjeseci.
       </figcaption>
     </figure>
 
     <figure class="cap-bold">
-      <!-- ===== КАРТИНКА 07 =====
-           СНИМОК КОЛЕНА — хрящ истёрт до 1 мм, домохозяйка 59 лет из Мостара
-           СЮДА ВСТАВИТЬ ФАЙЛ:  images/07_koleno_hryashch_domohozyayka_59.jpg
-      -->
-      <img class="img-card" src="images/07_koleno_hryashch_domohozyayka_59.jpg" data-ph="КАРТИНКА 07 — СНИМОК КОЛЕНА — хрящ истёрт до 1 мм, домохозяйка 59 лет" onerror="phSlot(this)">
+      <img class="img-card" src="images/07_koleno_hryashch_domohozyayka_59.jpg">
       <figcaption>
         Domaćica, 59 godina, Split. Koljeni zglobovi su joj toliko istrošeni da je hrskavica stanjena na manje od 1 mm. Svaki korak zvuči kao škripa starih vrata. Tri ortopeda su joj rekla da je jedino rješenje dvostruka proteza, za preko 10.000 eura.
       </figcaption>
     </figure>
 
     <figure class="cap-bold">
-      <!-- ===== КАРТИНКА 08 =====
-           СНИМОК КОЛЕНА — хрящ полностью разрушен, некроз кости, шахтёр 68 лет
-           СЮДА ВСТАВИТЬ ФАЙЛ:  images/08_koleno_shahter_68.jpg
-      -->
-      <img class="img-card" src="images/08_koleno_shahter_68.jpg" data-ph="КАРТИНКА 08 — СНИМОК КОЛЕНА — хрящ разрушен, некроз кости, шахтёр 68 лет" onerror="phSlot(this)">
+      <img class="img-card" src="images/08_koleno_shahter_68.jpg">
       <figcaption>
         Bivši rudar, 68 godina, Labin. Hrskavica u desnom koljenu je potpuno uništena, koštano tkivo je ušlo u fazu nekroze. Četveromjesečno odgađanje koštalo ga je noge — amputacija iznad koljena i doživotna ovisnost o invalidskim kolicima.
       </figcaption>
@@ -1206,12 +1146,8 @@
     </p>
 
     <div class="gray-bg rev-block">
-      <!-- ===== КАРТИНКА 09 =====
-           ФОТО КЕЙСА — женщина, которая не могла дойти до ванной, жила как в тюрьме
-           СЮДА ВСТАВИТЬ ФАЙЛ:  images/09_keys_zhenshchina_doma.jpg
-      -->
       <img class="img-card2" src="images/09_keys_zhenshchina_doma.jpg"
-        style="max-width:500px" data-ph="КАРТИНКА 09 — ФОТО КЕЙСА — женщина, которая не могла дойти до ванной" onerror="phSlot(this)">
+        style="max-width:500px">
       <p>
         „Živjela sam kao u zatvoru — vlastita kuća postala mi je ćelija. Nisam mogla doći do kupaonice, nisam mogla stajati duže od minute, nisam si mogla ni čaj napraviti. Djeca su radila i nisu mogla dolaziti svaki dan. Ležala sam i gledala u strop. Liječnici su rekli da nema smisla operirati u tim godinama i dali mi samo lijekove protiv bolova.
       </p>
@@ -1243,11 +1179,7 @@
       <b>Ivan nam je ispričao:</b>
     </p>
     <div class="gray-bg rev-block">
-      <!-- ===== КАРТИНКА 10 =====
-           ФОТО КЕЙСА — строитель, 20 лет строил дома, проснулся и не смог пошевелить поясницей
-           СЮДА ВСТАВИТЬ ФАЙЛ:  images/10_keys_stroitel_spina.jpg
-      -->
-      <img class="img-card2" src="images/10_keys_stroitel_spina.jpg" data-ph="КАРТИНКА 10 — ФОТО КЕЙСА — строитель, не смог пошевелить поясницей" onerror="phSlot(this)">
+      <img class="img-card2" src="images/10_keys_stroitel_spina.jpg">
 
       „Dvadeset godina sam gradio zgrade, ali nisam vodio računa o vlastitoj kralježnici. Jednog jutra sam se probudio i nisam mogao pomaknuti križa. Žena je pozvala Hitnu pomoć. Dijagnoza — tri hernije i pritisak na živčani korijen. Liječnici su predložili operaciju za 6.000 eura, ali bez ikakvih jamstava.
 
@@ -1393,11 +1325,7 @@
       Zajedno s laboratorijem razvili smo proces koji smo nazvali <b>„Tehnologija nanodifuzije s poboljšanom bioraspoloživošću“</b> — metoda kod koje se aktivne tvari zatvaraju u posebne nanočestice koje prodiru duboko kroz kožu i stižu izravno do oštećenog zglobnog tkiva. To povećava apsorpciju za oko 380% u usporedbi s običnim gelovima i mastima. Proizvod sam nazvao <b>Nautubone</b> — gel koji se nanosi na kožu i djeluje upravo tamo gdje je potrebno. Nazvao sam ga u čast svoje majke i njezinih 40 godina truda.
     </p>
 
-    <!-- ===== КАРТИНКА 11 =====
-         ФОТО ПРОДУКТА ИЛИ СОСТАВА — 7 компонентов из рецепта матери плюс 29 экстрактов
-         СЮДА ВСТАВИТЬ ФАЙЛ:  images/11_sostav_produkta.jpg
-    -->
-    <img src="images/11_sostav_produkta.jpg" style="width:78%;max-width:340px" data-ph="КАРТИНКА 11 — ФОТО ПРОДУКТА / СОСТАВА — 7 компонентов + 29 экстрактов" onerror="phSlot(this)">
+    <img src="images/11_sostav_produkta.jpg" style="width:78%;max-width:340px">
 
     <p>
       Gel Nautubone sadrži svih sedam komponenti iz originalnog recepta moje majke, plus 29 dodatnih ekstrakata i vitamina koje smo dodali nakon laboratorijskih istraživanja u Münchenu. Rezultat je gel koji djeluje TOČNO ONAKO DOBRO kao ono što je moja majka pripremala vlastitim rukama — ali može biti dostavljen u svaki dom u Hrvatskoj. Nanosite ga na zglobove dva puta dnevno, a aktivne tvari prodiru kroz kožu izravno do zahvaćenih zglobova.
@@ -1753,33 +1681,21 @@
     </center>
 
     <figure>
-      <!-- ===== КАРТИНКА 12 =====
-           ФОТО КЕЙСА — пенсионерка 66 лет, Бихач: 4 смещённых позвонка, радикулопатия
-           СЮДА ВСТАВИТЬ ФАЙЛ:  images/12_keys_pensionerka_66_bihac.jpg
-      -->
-      <img src="images/12_keys_pensionerka_66_bihac.jpg" data-ph="КАРТИНКА 12 — ФОТО КЕЙСА — пенсионерка 66 лет, Бихач" onerror="phSlot(this)">
+      <img src="images/12_keys_pensionerka_66_bihac.jpg">
       <figcaption>
         Umirovljenica, 66 godina, Varaždin. Četiri pomaknuta kralješka i kronična radikulopatija. Sin joj je donosio gel Nautubone iz Zagreba. Dva mjeseca nanošenja — potpun povratak kralježnice u normalan položaj. Njezin ortoped je zatražio naziv proizvoda.
       </figcaption>
     </figure>
 
     <figure>
-      <!-- ===== КАРТИНКА 13 =====
-           ФОТО КЕЙСА — бухгалтер 41 год, Травник: колени деформировались внутрь
-           СЮДА ВСТАВИТЬ ФАЙЛ:  images/13_keys_buhgalter_41_travnik.jpg
-      -->
-      <img class="img-card" src="images/13_keys_buhgalter_41_travnik.jpg" data-ph="КАРТИНКА 13 — ФОТО КЕЙСА — бухгалтер 41 год, Травник: колени внутрь" onerror="phSlot(this)">
+      <img class="img-card" src="images/13_keys_buhgalter_41_travnik.jpg">
       <figcaption>
         Računovotkinja, 41 godina, Bjelovar. Koljena su joj se deformirala prema unutra nakon dvije trudnoće i dobivanja na težini. Ortoped joj je rekao „naviknite se“. S gelom Nautubone — 30 dana nanošenja, dva puta dnevno — os koljena se vidno ispravila na rendgenu.
       </figcaption>
     </figure>
 
     <figure>
-      <!-- ===== КАРТИНКА 14 =====
-           ФОТО КЕЙСА — пенсионер 73 года, Требине: артроз деформировал пальцы ног
-           СЮДА ВСТАВИТЬ ФАЙЛ:  images/14_keys_pensioner_73_trebinje.jpg
-      -->
-      <img class="img-card" src="images/14_keys_pensioner_73_trebinje.jpg" data-ph="КАРТИНКА 14 — ФОТО КЕЙСА — пенсионер 73 года, Требине: пальцы ног" onerror="phSlot(this)">
+      <img class="img-card" src="images/14_keys_pensioner_73_trebinje.jpg">
       <figcaption>
         Umirovljenik, 73 godine, Dubrovnik. Artroza mu je deformirala prste na nogama toliko da nije mogao obuti nijedan par cipela. Nanosio je gel Nautubone svaki dan — za 21 dan prsti su se ispravili, a cipele od prije 5 godina ponovno mu pristaju.
       </figcaption>
@@ -1818,12 +1734,8 @@
       Ne propustite posljednju priliku ove godine — Nautubone može nestati prije kraja programa!
     </h2>
 
-    <!-- ===== КАРТИНКА 15 =====
-         ФОТО ПЕРЕД ФОРМОЙ — производство и упаковки товара, речь Эмира Хаджича
-         СЮДА ВСТАВИТЬ ФАЙЛ:  images/15_proizvodstvo_upakovki.jpg
-    -->
     <img alt="Nautubone — pakiranje" class="picurl" id="epic2" src="images/15_proizvodstvo_upakovki.jpg"
-      style="margin:0 auto;display:block;max-width:500px;width:100%;margin-top:24px;margin-bottom:20px" data-ph="КАРТИНКА 15 — ФОТО ПЕРЕД ФОРМОЙ — производство / упаковки товара" onerror="phSlot(this)">
+      style="margin:0 auto;display:block;max-width:500px;width:100%;margin-top:24px;margin-bottom:20px">
 
     <p><b>Tomislav Kolarić:</b></p>
 
@@ -2169,7 +2081,6 @@
 
         <div class="comments__item">
           <div class="comments__item-header">
-            <!-- АВАТАРКА Violeta Stojanović  |  файл: images/7da17fc86c6c_2f1260d0.jpg -->
             <img alt="" class="comments__item-avatar" src="images/7da17fc86c6c_2f1260d0.jpg">
             <div class="comments__item-info">
               <p class="comments__item-name">Vlatka Stojanović</p>
@@ -2188,7 +2099,6 @@
         <div id="first-comment">
           <div class="comments__item">
             <div class="comments__item-header">
-              <!-- АВАТАРКА Stefica Petrović  |  файл: images/8ba73d45c164_4ede289a.jpg -->
               <img alt="" class="comments__item-avatar" src="images/8ba73d45c164_4ede289a.jpg">
               <div class="comments__item-info">
                 <p class="comments__item-name">Štefica Petrović</p>
@@ -2201,8 +2111,7 @@
             <div class="comments__item-body">
               <p class="comments__item-content">
                 Kurir mi ga je donio u srijedu. Deset dana nanosim gel ujutro i navečer — i razlika je OGROMNA! Ustajem bez onog groznog pucketanja! Muž gleda i ne vjeruje. Izdržat ću punu kuru od 60 dana, ali već sam uvjerena da djeluje.
-                <br><!-- ФОТО ОТ ЧИТАТЕЛЯ (Stefica Petrović)  |  ПУСТО, впиши src="images/foto_stefica.jpg" -->
-<img alt="" src="images/foto_stefica.jpg" style="width:97%;max-width:440px;margin-top:12px" data-ph="ФОТО ОТ ЧИТАТЕЛЯ — Stefica Petrović" onerror="phSlot(this)">
+                <br><img alt="" src="images/foto_stefica.jpg" style="width:97%;max-width:440px;margin-top:12px">
               </p>
             </div>
           </div>
@@ -2210,7 +2119,6 @@
 
         <div class="comments__item">
           <div class="comments__item-header">
-            <!-- АВАТАРКА Jordanka Krstić  |  файл: images/fa7f61c1431c_7946ff6c.jpg -->
             <img alt="" class="comments__item-avatar" src="images/fa7f61c1431c_7946ff6c.jpg">
             <div class="comments__item-info">
               <p class="comments__item-name">Jadranka Krstić</p>
@@ -2228,7 +2136,6 @@
 
         <div class="comments__item">
           <div class="comments__item-header">
-            <!-- АВАТАРКА Vaso Đurić  |  файл: images/dcc5cfe80d60_5aa7f8f7.jpg -->
             <img alt="" class="comments__item-avatar" src="images/dcc5cfe80d60_5aa7f8f7.jpg">
             <div class="comments__item-info">
               <p class="comments__item-name">Vlado Đurić</p>
@@ -2247,7 +2154,6 @@
 
         <div class="comments__item">
           <div class="comments__item-header">
-            <!-- АВАТАРКА Slavka Đurić  |  файл: images/73d3a879cef9_4a9ce85c.jpg -->
             <img alt="" class="comments__item-avatar" src="images/73d3a879cef9_4a9ce85c.jpg">
             <div class="comments__item-info">
               <p class="comments__item-name">Slavka Đurić</p>
@@ -2267,7 +2173,6 @@
         <div class="comm-obert-reply">
           <div class="comments__item reply">
             <div class="comments__item-header">
-              <!-- АВАТАРКА Dejan Krstić  |  файл: images/71deaf909b4e_ea30d07c.jpg -->
               <img alt="" class="comments__item-avatar" src="images/71deaf909b4e_ea30d07c.jpg">
               <div class="comments__item-info">
                 <p class="comments__item-name">Damir Krstić</p>
@@ -2292,7 +2197,6 @@
 
         <div class="comments__item">
           <div class="comments__item-header">
-            <!-- АВАТАРКА Gabrijela Panić  |  файл: images/d61700bc0961_28c03d39.jpg -->
             <img alt="" class="comments__item-avatar" src="images/d61700bc0961_28c03d39.jpg">
             <div class="comments__item-info">
               <p class="comments__item-name">Gabrijela Panić</p>
@@ -2311,7 +2215,6 @@
 
         <div class="comments__item">
           <div class="comments__item-header">
-            <!-- АВАТАРКА Jovana Zlatić  |  файл: images/fd9eb915b838_59aa235e.jpg -->
             <img alt="" class="comments__item-avatar" src="images/fd9eb915b838_59aa235e.jpg">
             <div class="comments__item-info">
               <p class="comments__item-name">Ivana Zlatić</p>
@@ -2325,7 +2228,6 @@
             <p class="comments__item-content">
               Na leđima mi je prije dva mjeseca počela rasti „grba“. Užasnula sam se! Probala sam razne masti iz ljekarne — ništa. Ali gel Nautubone je sasvim druga stvar — za 40 dana grba je gotovo potpuno nestala! Nastavljam ga nanositi, ali sam već nevjerojatno zadovoljna. Evo kako izgleda razlika:
               <br>
-              <!-- ФОТО ОТ ЧИТАТЕЛЯ (Jovana Zlatić)  |  файл: images/44214bb2f4c7_5f35e41f.jpg -->
               <img alt="" src="images/44214bb2f4c7_5f35e41f.jpg" style="width:97%;max-width:440px;margin-top:12px">
             </p>
           </div>
@@ -2333,7 +2235,6 @@
 
         <div class="comments__item">
           <div class="comments__item-header">
-            <!-- АВАТАРКА Pavlina Atanasović  |  файл: images/daeecf66dcf6_e1c9bf1a.jpg -->
             <img alt="" class="comments__item-avatar" src="images/daeecf66dcf6_e1c9bf1a.jpg">
             <div class="comments__item-info">
               <p class="comments__item-name">Paulina Antunović</p>
@@ -2352,7 +2253,6 @@
 
         <div class="comments__item">
           <div class="comments__item-header">
-            <!-- АВАТАРКА Bogdan Dedić  |  файл: images/a49c7ec0724d_6f186c1c.jpg -->
             <img alt="" class="comments__item-avatar" src="images/a49c7ec0724d_6f186c1c.jpg">
             <div class="comments__item-info">
               <p class="comments__item-name">Bogdan Dedić</p>
@@ -2371,7 +2271,6 @@
 
         <div class="comments__item">
           <div class="comments__item-header">
-            <!-- АВАТАРКА Todor Stojković  |  файл: images/14fcabaa91a3_d3871213.jpg -->
             <img alt="" class="comments__item-avatar" src="images/14fcabaa91a3_d3871213.jpg">
             <div class="comments__item-info">
               <p class="comments__item-name">Tomo Stojković</p>
@@ -2385,8 +2284,7 @@
             <p class="comments__item-content">
               Prije Nautubone nisam mogao podići ruke iznad glave — rame je pucketalo i užasno boljelo. Dvije godine sam obilazio liječnike — nitko nije pomogao. Dva mjeseca s Nautubone i ruke mi ponovno rade normalno. Evo mog rendgena — sam liječnik nije povjerovao:
               <br>
-              <!-- ФОТО ОТ ЧИТАТЕЛЯ (Todor Stojković)  |  ПУСТО, впиши src="images/foto_todor.jpg" -->
-              <img alt="" src="images/foto_todor.jpg" style="width:97%;max-width:440px;margin-top:12px" data-ph="ФОТО ОТ ЧИТАТЕЛЯ — Todor Stojković" onerror="phSlot(this)">
+              <img alt="" src="images/foto_todor.jpg" style="width:97%;max-width:440px;margin-top:12px">
             </p>
           </div>
         </div>
@@ -2396,7 +2294,6 @@
 
       <div class="comments__item">
         <div class="comments__item-header">
-          <!-- АВАТАРКА Anka Ivanović  |  файл: images/c364fa7fabf3_734a4c7f.jpg -->
           <img alt="" class="comments__item-avatar" src="images/c364fa7fabf3_734a4c7f.jpg">
           <div class="comments__item-info">
             <p class="comments__item-name">Anka Ivanović</p>
@@ -2417,7 +2314,6 @@
 
       <div class="comments__item">
         <div class="comments__item-header">
-          <!-- АВАТАРКА Emil Vukić  |  файл: images/7099c502f996_b89c4cc9.jpg -->
           <img alt="" class="comments__item-avatar" src="images/7099c502f996_b89c4cc9.jpg">
           <div class="comments__item-info">
             <p class="comments__item-name">Emil Vuković</p>
@@ -2437,7 +2333,6 @@
 
       <div class="comments__item">
         <div class="comments__item-header">
-          <!-- АВАТАРКА Nina Božić  |  файл: images/658f969bb746_3d8e16cd.jpg -->
           <img alt="" class="comments__item-avatar" src="images/658f969bb746_3d8e16cd.jpg">
           <div class="comments__item-info">
             <p class="comments__item-name">Nina Božić</p>
@@ -2458,7 +2353,6 @@
 
       <div class="comments__item">
         <div class="comments__item-header">
-          <!-- АВАТАРКА Ruža Milić  |  файл: images/b35ad35f2989_d19c0bad.jpg -->
           <img alt="" class="comments__item-avatar" src="images/b35ad35f2989_d19c0bad.jpg">
           <div class="comments__item-info">
             <p class="comments__item-name">Ruža Milić</p>
@@ -2472,7 +2366,6 @@
           <p class="comments__item-content">
             Imam 74 godine. Pet godina sam patila od artroze i bolova u leđima. Probala sam doslovno sve — masti, tablete, injekcije, fizioterapiju. NIŠTA nije pomoglo dugoročno. Gel Nautubone je jedino što mi je dalo PRAVI REZULTAT — nanosim ga dva puta dnevno i za mjesec i pol moji zglobovi se osjećaju iz temelja drugačije. Liječnik ne vjeruje rendgenskim snimkama!
             <br>
-            <!-- ФОТО ОТ ЧИТАТЕЛЯ (Ruža Milić)  |  файл: images/315861466b66_f8e4cdcb.jpg -->
             <img alt="" src="images/315861466b66_f8e4cdcb.jpg" style="width:97%;max-width:520px;margin-top:12px">
           </p>
         </div>
@@ -2482,7 +2375,6 @@
 
       <div class="comments__item">
         <div class="comments__item-header">
-          <!-- АВАТАРКА Vesna Penčić  |  файл: images/5293353f6d37_ac335d19.jpg -->
           <img alt="" class="comments__item-avatar" src="images/5293353f6d37_ac335d19.jpg">
           <div class="comments__item-info">
             <p class="comments__item-name">Vesna Pecić</p>
@@ -2501,7 +2393,6 @@
 
       <div class="comments__item">
         <div class="comments__item-header">
-          <!-- АВАТАРКА Grozdana Petrović  |  файл: images/df3e8c2eb745_86a29b61.jpg -->
           <img alt="" class="comments__item-avatar" src="images/df3e8c2eb745_86a29b61.jpg">
           <div class="comments__item-info">
             <p class="comments__item-name">Grozdana Petrović</p>
@@ -2522,7 +2413,6 @@
 
       <div class="comments__item">
         <div class="comments__item-header">
-          <!-- АВАТАРКА Mirela Donić  |  файл: images/95700a967e85_c7b9fe05.jpg -->
           <img alt="" class="comments__item-avatar" src="images/95700a967e85_c7b9fe05.jpg">
           <div class="comments__item-info">
             <p class="comments__item-name">Mirela Donić</p>
@@ -2542,7 +2432,6 @@
       <div class="comm-obert-reply">
         <div class="comments__item reply">
           <div class="comments__item-header">
-            <!-- АВАТАРКА Spaso Kalčić  |  файл: images/d653e647ce29_c22febb7.jpg -->
             <img alt="" class="comments__item-avatar" src="images/d653e647ce29_c22febb7.jpg">
             <div class="comments__item-info">
               <p class="comments__item-name">Stipe Kalčić</p>
@@ -2562,7 +2451,6 @@
 
       <div class="comments__item">
         <div class="comments__item-header">
-          <!-- АВАТАРКА Dora Savić  |  файл: images/71bb14a12f9e_280a6001.jpg -->
           <img alt="" class="comments__item-avatar" src="images/71bb14a12f9e_280a6001.jpg">
           <div class="comments__item-info">
             <p class="comments__item-name">Dora Savić</p>
@@ -2577,8 +2465,7 @@
             Prije nisam imala snage ustati — svaki pokret bio je muka, mislila sam da je moj život gotov. Kći mi je naručila gel Nautubone i natjerala me da probam — nanosila mi ga je ujutro i navečer. Dva mjeseca kasnije? Plesala sam na unukovoj svadbi!!! Nikada u životu nisam bila toliko zahvalna!
 
             <br>
-            <!-- ФОТО ОТ ЧИТАТЕЛЯ (Dora Savić)  |  ПУСТО, впиши src="images/foto_dora.jpg" -->
-            <img src="images/foto_dora.jpg" style="max-width:470px;width:98%;margin-top:10px" data-ph="ФОТО ОТ ЧИТАТЕЛЯ — Dora Savić" onerror="phSlot(this)">
+            <img src="images/foto_dora.jpg" style="max-width:470px;width:98%;margin-top:10px">
           </p>
         </div>
 
@@ -2587,7 +2474,6 @@
 
       <div class="comments__item">
         <div class="comments__item-header">
-          <!-- АВАТАРКА Svjetlana Bratić  |  файл: images/2d72d731d826_3ff382cb.jpg -->
           <img alt="" class="comments__item-avatar" src="images/2d72d731d826_3ff382cb.jpg">
           <div class="comments__item-info">
             <p class="comments__item-name">Svjetlana Bratić</p>
@@ -2608,7 +2494,6 @@
 
       <div class="comments__item">
         <div class="comments__item-header">
-          <!-- АВАТАРКА Snežana Minić  |  файл: images/1dcbfabe6827_57a19553.jpg -->
           <img alt="" class="comments__item-avatar" src="images/1dcbfabe6827_57a19553.jpg">
           <div class="comments__item-info">
             <p class="comments__item-name">Snježana Minić</p>
@@ -2629,7 +2514,6 @@
       <div class="comm-obert-reply">
         <div class="comments__item reply">
           <div class="comments__item-header">
-            <!-- АВАТАРКА Mihajlo Rajković  |  файл: images/ffd79a237d84_8971c06a.jpg -->
             <img alt="" class="comments__item-avatar" src="images/ffd79a237d84_8971c06a.jpg">
             <div class="comments__item-info">
               <p class="comments__item-name">Mihael Rajković</p>
@@ -2651,7 +2535,6 @@
 
       <div class="comments__item">
         <div class="comments__item-header">
-          <!-- АВАТАРКА Olivera Krumić  |  файл: images/47a8cb9cf088_09555b8e.jpg -->
           <img alt="" class="comments__item-avatar" src="images/47a8cb9cf088_09555b8e.jpg">
           <div class="comments__item-info">
             <p class="comments__item-name">Olivera Krumić</p>
@@ -2672,7 +2555,6 @@
 
       <div class="comments__item">
         <div class="comments__item-header">
-          <!-- АВАТАРКА Lenka Marinović  |  файл: images/a29369d9b077_c326beba.jpg -->
           <img alt="" class="comments__item-avatar" src="images/a29369d9b077_c326beba.jpg">
           <div class="comments__item-info">
             <p class="comments__item-name">Lenka Marinović</p>
@@ -2694,7 +2576,6 @@
         <!-- PITANJA I ODGOVORI ČITALACA -->
         <div class="comments__item">
           <div class="comments__item-header">
-            <!-- АВАТАРКА Amela Šehić  |  файл: images/7da17fc86c6c_2f1260d0.jpg -->
             <img alt="" class="comments__item-avatar" src="images/7da17fc86c6c_2f1260d0.jpg">
             <div class="comments__item-info">
               <p class="comments__item-name">Andrea Šebalj</p>
@@ -2714,7 +2595,6 @@
         <div class="comm-obert-reply">
             <div class="comments__item reply">
               <div class="comments__item-header">
-                <!-- АВАТАРКА Mirsad Begić  |  файл: images/7099c502f996_b89c4cc9.jpg -->
                 <img alt="" class="comments__item-avatar" src="images/7099c502f996_b89c4cc9.jpg">
                 <div class="comments__item-info">
                   <p class="comments__item-name">Marko Perić</p>
@@ -2734,7 +2614,6 @@
         </div>
         <div class="comments__item">
           <div class="comments__item-header">
-            <!-- АВАТАРКА Danica Lukić  |  файл: images/fa7f61c1431c_7946ff6c.jpg -->
             <img alt="" class="comments__item-avatar" src="images/fa7f61c1431c_7946ff6c.jpg">
             <div class="comments__item-info">
               <p class="comments__item-name">Danica Lukić</p>
@@ -2754,7 +2633,6 @@
         <div class="comm-obert-reply">
             <div class="comments__item reply">
               <div class="comments__item-header">
-                <!-- АВАТАРКА Nedžad Karić  |  файл: images/dcc5cfe80d60_5aa7f8f7.jpg -->
                 <img alt="" class="comments__item-avatar" src="images/dcc5cfe80d60_5aa7f8f7.jpg">
                 <div class="comments__item-info">
                   <p class="comments__item-name">Nenad Karić</p>
@@ -2774,7 +2652,6 @@
         </div>
         <div class="comments__item">
           <div class="comments__item-header">
-            <!-- АВАТАРКА Zlata Hodžić  |  файл: images/8ba73d45c164_4ede289a.jpg -->
             <img alt="" class="comments__item-avatar" src="images/8ba73d45c164_4ede289a.jpg">
             <div class="comments__item-info">
               <p class="comments__item-name">Zlata Horvatić</p>
@@ -2794,7 +2671,6 @@
         <div class="comm-obert-reply">
             <div class="comments__item reply">
               <div class="comments__item-header">
-                <!-- АВАТАРКА Senad Mujkić  |  файл: images/66ebad51123a_206d5fba.png -->
                 <img alt="" class="comments__item-avatar" src="images/66ebad51123a_206d5fba.png">
                 <div class="comments__item-info">
                   <p class="comments__item-name">Neven Marušić</p>
