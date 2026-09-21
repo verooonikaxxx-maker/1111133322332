@@ -52,7 +52,7 @@ T[27]='Zľava: dr. James Harlow, Sir Michael Dixont a dr. Priya Nair vo formula�
 T[28]='✦ ✦ ✦'
 T[29]='Prečo Slovensko — a prečo teraz'
 T[30]='Slovensko bolo našou prvou voľbou. Nie náhodou.'
-T[31]=('Na Slovensku je podiel kĺbových ochorení jeden z najvyšších v Európe: viac než 2 milióny ľudí trpí '
+T[31]=('Na Slovensku je podiel kĺbových ochorení jeden z najvyšších v Európe: viac než 1,1 milióna ľudí trpí '
        'niektorou formou artrózy — takmer každý piaty Slovák. U ľudí nad 65 rokov tento podiel presahuje 60%.')
 T[32]=('Ale to, čo nás naozaj presvedčilo, sú čakacie lehoty. Na ortopedickú ambulanciu sa čaká v priemere 2-3 '
        'mesiace. Na operáciu kolennej alebo bedrovej protézy v štátnej starostlivosti 1-2 roky — v niektorých '
@@ -63,7 +63,7 @@ T[33]=('Keď sme sa rozhodli sprístupniť STEPLEX aj mimo Spojeného kráľovst
        'ortopedického oddelenia v Bratislave, ktorého som spoznal na kongrese v Edinburghu v roku 2017. Formulu '
        'otestoval na šesťdesiatich pacientoch vo svojej súkromnej ambulancii. Výsledky potvrdili to, čo sme už '
        'vedeli. Povedal mi: «Michael, toto by malo byť v každej slovenskej lekárni.»')
-T[34]='2 milióny+'
+T[34]='1,1 milióna+'
 T[35]='Slovákov žijúcich s kĺbovým ochorením'
 T[36]='1-2 roky'
 T[37]='Čakanie na operáciu protézy'

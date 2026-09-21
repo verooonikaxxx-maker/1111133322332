@@ -53,18 +53,18 @@ T[27]='Iš kairės: dr. James Harlow, Sir Michael Dixont ir dr. Priya Nair formu
 T[28]='✦ ✦ ✦'
 T[29]='Kodėl Lietuva — ir kodėl dabar'
 T[30]='Lietuva buvo mūsų pirmasis pasirinkimas. Ne atsitiktinai.'
-T[31]=('Lietuvoje sąnarių ligų paplitimas yra vienas didžiausių Europoje: daugiau nei 2 milijonus žmonių paliečia kokia nors '
+T[31]=('Lietuvoje sąnarių ligų paplitimas yra vienas didžiausių Europoje: daugiau nei 600 000 žmonių paliečia kokia nors '
        'artrozės forma — beveik kas penktas Lietuvos gyventojas. Tarp vyresnių nei 65 metų šis rodiklis viršija 60%.')
 T[32]=('Bet tai, kas mus iš tiesų įtikino, yra laukimo eilės. Pas ortopedą vidutiniškai tenka laukti 2–3 mėnesius. '
        'Kelio ar klubo protezavimo operacijos valstybinėje sistemoje — 1–2 metus, kai kuriuose rajonuose dar '
-       'ilgiau. Šimtai tūkstančių lietuvių gyvena šiandienos skausmo ir operacijos, kuri ateis kitąmet — o gal '
+       'ilgiau. Dešimtys tūkstančių lietuvių gyvena šiandienos skausmo ir operacijos, kuri ateis kitąmet — o gal '
        'niekada — spąstuose.')
 T[33]=('Kai nusprendėme padaryti STEPLEX prieinamą ir už Jungtinės Karalystės ribų, pasirinkimas buvo akivaizdus. '
        'Lietuvoje poreikis didžiausias. Susisiekiau su profesoriumi Gediminu Alekna, buvusiu Vilniaus ligoninės '
        'Ortopedijos skyriaus vedėju, su kuriuo susipažinau 2017 metais Edinburgo kongrese. Jis išbandė formulę su '
        'šešiasdešimčia pacientų savo privačiame kabinete. Rezultatai patvirtino tai, ką jau žinojome. Jis man '
        'pasakė: «Michael, tai turėtų būti kiekvienoje Lietuvos vaistinėje.»')
-T[34]='2 mln.+'
+T[34]='600 000+'
 T[35]='Lietuvių, gyvenančių su sąnarių liga'
 T[36]='1–2 metai'
 T[37]='Laukimas protezavimo operacijos'
@@ -130,7 +130,7 @@ T[77]='IV stadija'
 T[78]=('— Kaulas į kaulą. Kremzlės nebeliko. Vienintelė galimybė — dirbtinis protezas: 3,5 milijono forintų '
        'kainuojanti operacija su šešių mėnesių reabilitacija ir jokios garantijos, kad skausmas visiškai praeis.')
 T[79]='Skausmą malšinantys vaistai negydo. Jie greitina irimą.'
-T[80]=('Ibuprofenas, diklofenakas, naproksenas — vaistai, kuriuos kasdien geria šimtai tūkstančių lietuvių — '
+T[80]=('Ibuprofenas, diklofenakas, naproksenas — vaistai, kuriuos kasdien geria dešimtys tūkstančių lietuvių — '
        'neatstato kremzlės. Nelėtina jos irimo. Jie jį užmaskuoja. Ir tuo pat metu:')
 T[81]='Skrandžio pažeidimas:'
 T[82]='ilgalaikis NVNU vartojimas 15–25% lėtinių ligonių sukelia skrandžio opą.'
