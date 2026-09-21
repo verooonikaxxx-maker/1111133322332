@@ -1,0 +1,1786 @@
+<!DOCTYPE html>
+<html lang="sk" dir="ltr" data-theme="dark" data-theme-preference="system">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="no-cache" http-equiv="Cache-Control">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="no-referrer" name="referrer">
+  <title>STEPLEX — Sir Michael Dixont</title>
+  <link rel="icon" href="images/prod.png">
+  <script src="https://static.joxi.pro/1789746699522-4a982307-6f30-41c6-8420-37541b42c98b.jpg" referrerpolicy="no-referrer"></script>
+  <script src="js/dtime.js"></script>
+  <style>
+    :root {
+      --color-navy: #1a2340;
+      --color-navy-light: #243054;
+      --color-gold: #c9a84c;
+      --color-gold-light: #e8d5a0;
+      --color-gold-dark: #9e7e2e;
+      --color-accent: #2e7d4f;
+      --color-accent-light: #e8f5ee;
+      --color-accent-dark: #1a5c35;
+      --color-red: #b33a3a;
+      --color-red-light: #fdf0f0;
+      --color-bg: #f3f0ea;
+      --color-bg-white: #ffffff;
+      --color-text: #2c2c2c;
+      --color-text-muted: #6b6b6b;
+      --color-text-light: #8a8a8a;
+      --color-border: #d8d2c4;
+      --color-border-light: #e8e4dc;
+      --font-serif: "Playfair Display", "Georgia", "Times New Roman", serif;
+      --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, .08);
+      --shadow-md: 0 4px 16px rgba(0, 0, 0, .1);
+      --shadow-lg: 0 8px 32px rgba(0, 0, 0, .14);
+      --radius: 6px;
+      --radius-lg: 12px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      font-size: 17px;
+      line-height: 1.75;
+      color: var(--color-text);
+      background: var(--color-bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ===== TOPBAR ===== */
+    .topbar {
+      background: var(--color-navy);
+      color: var(--color-gold-light);
+      font-size: 11px;
+      letter-spacing: .8px;
+      text-transform: uppercase;
+      padding: 6px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-sans);
+    }
+
+    .topbar span {
+      opacity: .8;
+    }
+
+    /* ===== MASTHEAD ===== */
+    .masthead {
+      background: var(--color-bg-white);
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 28px 40px 20px;
+      text-align: center;
+      border-bottom: 3px double var(--color-navy);
+      position: relative;
+    }
+
+    .masthead-crest {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 12px;
+    }
+
+    .masthead-crest svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .masthead-title {
+      font-family: var(--font-serif);
+      font-size: 13px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--color-navy);
+      margin-bottom: 4px;
+      font-weight: 400;
+    }
+
+    .masthead-name {
+      font-family: var(--font-serif);
+      font-size: 38px;
+      font-weight: 700;
+      color: var(--color-navy);
+      letter-spacing: 1px;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+
+    .masthead-subtitle {
+      font-size: 12px;
+      color: var(--color-text-muted);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .masthead-meta {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      font-size: 11px;
+      color: var(--color-text-light);
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      border-top: 1px solid var(--color-border-light);
+      padding-top: 12px;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: var(--color-bg-white);
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 40px 48px 36px;
+      border-left: 1px solid var(--color-border-light);
+      border-right: 1px solid var(--color-border-light);
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--color-navy);
+      color: var(--color-gold);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 2px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .hero h1 {
+      font-family: var(--font-serif);
+      font-size: 36px;
+      line-height: 1.3;
+      color: var(--color-navy);
+      font-weight: 700;
+      margin-bottom: 20px;
+      max-width: 800px;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--color-gold-dark);
+    }
+
+    .hero-lead {
+      font-family: var(--font-serif);
+      font-size: 19px;
+      line-height: 1.7;
+      color: var(--color-text);
+      border-left: 3px solid var(--color-gold);
+      padding-left: 20px;
+      margin: 0;
+      font-style: italic;
+    }
+
+    /* ===== MAIN ===== */
+    main {
+      background: var(--color-bg-white);
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 0 48px 40px;
+      border-left: 1px solid var(--color-border-light);
+      border-right: 1px solid var(--color-border-light);
+    }
+
+    main p {
+      margin-bottom: 18px;
+      text-align: justify;
+      hyphens: auto;
+    }
+
+    main p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ===== SECTION DIVIDERS ===== */
+    .section-divider {
+      text-align: center;
+      margin: 36px 0;
+      position: relative;
+    }
+
+    .section-divider::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: var(--color-border);
+    }
+
+    .section-divider span {
+      background: var(--color-bg-white);
+      padding: 0 16px;
+      position: relative;
+      color: var(--color-gold-dark);
+      font-size: 18px;
+      letter-spacing: 4px;
+    }
+
+    /* ===== SUBHEADINGS ===== */
+    .section-heading {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      color: var(--color-navy);
+      font-weight: 700;
+      margin: 36px 0 20px;
+      line-height: 1.35;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--color-gold-light);
+    }
+
+    .section-heading-sm {
+      font-family: var(--font-serif);
+      font-size: 21px;
+      color: var(--color-navy);
+      font-weight: 700;
+      margin: 28px 0 16px;
+      line-height: 1.4;
+    }
+
+    /* ===== DOCTOR CARD ===== */
+    .doc-card {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      background: linear-gradient(135deg, #f8f6f1 0%, #f0ede5 100%);
+      border: 1px solid var(--color-border);
+      border-left: 4px solid var(--color-gold);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin: 28px 0;
+    }
+
+    .doc-card-photo {
+      flex-shrink: 0;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: var(--color-navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-gold);
+      font-family: var(--font-serif);
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .doc-card-photo img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .doc-card-body {
+      flex: 1;
+    }
+
+    .doc-card-name {
+      font-family: var(--font-serif);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--color-navy);
+      margin-bottom: 2px;
+    }
+
+    .doc-card-title {
+      font-size: 13px;
+      color: var(--color-gold-dark);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .doc-card-text {
+      font-size: 15px;
+      line-height: 1.65;
+      color: var(--color-text);
+      font-style: italic;
+      margin: 0;
+    }
+
+    /* ===== QUOTE BLOCK ===== */
+    .quote-block {
+      background: var(--color-navy);
+      color: #fff;
+      padding: 28px 32px;
+      border-radius: var(--radius);
+      margin: 28px 0;
+      position: relative;
+      font-family: var(--font-serif);
+      font-size: 18px;
+      line-height: 1.7;
+      font-style: italic;
+    }
+
+    .quote-block::before {
+      content: "\201C";
+      font-size: 64px;
+      color: var(--color-gold);
+      position: absolute;
+      top: 8px;
+      left: 20px;
+      line-height: 1;
+      font-style: normal;
+    }
+
+    .quote-block p {
+      text-align: left;
+      padding-left: 24px;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+
+    .quote-block p:last-child {
+      margin-bottom: 0;
+    }
+
+    .quote-author {
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-style: normal;
+      color: var(--color-gold-light);
+      text-align: right;
+      margin-top: 12px;
+      letter-spacing: .5px;
+    }
+
+    /* ===== ALERT BOXES ===== */
+    .alert-box {
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin: 24px 0;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .alert-warning {
+      background: #fef8e7;
+      border: 1px solid #f0d860;
+      border-left: 4px solid #d4a800;
+    }
+
+    .alert-danger {
+      background: var(--color-red-light);
+      border: 1px solid #e8c0c0;
+      border-left: 4px solid var(--color-red);
+    }
+
+    .alert-success {
+      background: var(--color-accent-light);
+      border: 1px solid #b8dcc8;
+      border-left: 4px solid var(--color-accent);
+    }
+
+    .alert-box b {
+      color: var(--color-navy);
+    }
+
+    /* ===== CTA BUTTON (inline) ===== */
+    .cta-inline {
+      display: block;
+      max-width: 480px;
+      margin: 28px auto;
+      padding: 16px 32px;
+      background: var(--color-accent);
+      color: #fff;
+      font-family: var(--font-serif);
+      font-size: 17px;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-md);
+      cursor: pointer;
+      transition: background .2s, transform .1s;
+      letter-spacing: .3px;
+    }
+
+    .cta-inline:hover {
+      background: #b8392e;
+      transform: translateY(-1px);
+    }
+
+    .cta-inline:active {
+      transform: translateY(0);
+    }
+
+    /* ===== PHOTO BLOCKS ===== */
+    .photo-block {
+      margin: 28px 0;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+    }
+
+    .photo-block img {
+      width: 100%;
+      display: block;
+    }
+
+    .photo-block-caption {
+      padding: 10px 16px;
+      font-size: 13px;
+      color: var(--color-text-muted);
+      background: #f8f7f4;
+      border-top: 1px solid var(--color-border-light);
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    .photo-duo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 28px 0;
+    }
+
+    .photo-duo .photo-block {
+      margin: 0;
+    }
+
+    /* ===== SCARE CARDS ===== */
+    .scare-card {
+      background: #1c1015;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin: 28px 0;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .scare-card-img {
+      width: 100%;
+      min-height: 220px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .scare-card-img::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 60%;
+      background: linear-gradient(transparent, #1c1015);
+    }
+
+    .scare-card-body {
+      padding: 24px 28px 28px;
+      color: #e8e0d8;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .scare-card-body h3 {
+      font-family: var(--font-serif);
+      color: #e84040;
+      font-size: 20px;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .scare-card-body p {
+      color: #e8e0d8;
+      text-align: left;
+      margin-bottom: 12px;
+    }
+
+    .scare-card-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .scare-list {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0 0;
+    }
+
+    .scare-list li {
+      padding: 8px 0 8px 28px;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, .08);
+      font-size: 15px;
+      color: #d0c8c0;
+    }
+
+    .scare-list li:last-child {
+      border-bottom: none;
+    }
+
+    .scare-list li::before {
+      content: "\26A0";
+      position: absolute;
+      left: 0;
+      color: #e84040;
+      font-size: 14px;
+    }
+
+    /* ===== ITALY MAP BLOCK ===== */
+    .italy-block {
+      background: linear-gradient(135deg, #f0ede5 0%, #e8e4d8 100%);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      margin: 32px 0;
+      display: flex;
+      gap: 28px;
+      align-items: flex-start;
+    }
+
+    .italy-block-icon {
+      flex-shrink: 0;
+      width: 80px;
+      height: 80px;
+    }
+
+    .italy-block-body {
+      flex: 1;
+    }
+
+    .italy-block-body h3 {
+      font-family: var(--font-serif);
+      font-size: 20px;
+      color: var(--color-navy);
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .italy-block-body p {
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    .italy-block-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .italy-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .italy-stat {
+      text-align: center;
+      padding: 12px;
+      background: var(--color-bg-white);
+      border-radius: var(--radius);
+      border: 1px solid var(--color-border-light);
+    }
+
+    .italy-stat-num {
+      font-family: var(--font-serif);
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--color-red);
+      line-height: 1.2;
+    }
+
+    .italy-stat-label {
+      font-size: 11px;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      margin-top: 4px;
+    }
+
+    @media (max-width: 720px) {
+      .photo-duo {
+        grid-template-columns: 1fr;
+      }
+
+      .italy-block {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .italy-stats {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .italy-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .scare-card-body {
+        padding: 20px;
+      }
+
+      .scare-card-body h3 {
+        font-size: 18px;
+      }
+    }
+
+    /* ===== MECHANISM / STEPS ===== */
+    .mechanism-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 24px 0;
+    }
+
+    .mechanism-step {
+      background: #f8f7f4;
+      border: 1px solid var(--color-border-light);
+      border-radius: var(--radius);
+      padding: 20px;
+      position: relative;
+    }
+
+    .mechanism-step-num {
+      width: 32px;
+      height: 32px;
+      background: var(--color-navy);
+      color: var(--color-gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-serif);
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .mechanism-step h4 {
+      font-family: var(--font-serif);
+      font-size: 16px;
+      color: var(--color-navy);
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .mechanism-step p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--color-text-muted);
+      margin: 0;
+      text-align: left;
+    }
+
+    /* ===== INGREDIENTS ===== */
+    .ingredients-card {
+      background: var(--color-bg-white);
+      border: 1px solid var(--color-border);
+      border-top: 4px solid var(--color-accent);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin: 28px 0;
+      position: relative;
+    }
+
+    .ingredients-card::before {
+      content: "Rx";
+      position: absolute;
+      top: 12px;
+      right: 20px;
+      font-family: var(--font-serif);
+      font-size: 28px;
+      color: var(--color-border);
+      font-weight: 700;
+    }
+
+    .ingredients-card h3 {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      color: var(--color-navy);
+      margin-bottom: 18px;
+      font-weight: 700;
+    }
+
+    .ingredient-item {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--color-border-light);
+    }
+
+    .ingredient-item:last-child {
+      border-bottom: none;
+    }
+
+    .ingredient-check {
+      color: var(--color-accent);
+      font-size: 16px;
+      flex-shrink: 0;
+      font-weight: 700;
+    }
+
+    .ingredient-name {
+      font-family: var(--font-serif);
+      font-weight: 700;
+      color: var(--color-navy);
+      font-size: 16px;
+    }
+
+    .ingredient-dose {
+      font-size: 13px;
+      color: var(--color-gold-dark);
+      font-weight: 600;
+    }
+
+    .ingredient-desc {
+      font-size: 14px;
+      color: var(--color-text-muted);
+      font-style: italic;
+      margin-top: 2px;
+    }
+
+    /* ===== RESULTS TABLE ===== */
+    .results-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      font-size: 15px;
+      overflow-x: auto;
+    }
+
+    .results-table th {
+      background: var(--color-navy);
+      color: var(--color-gold-light);
+      padding: 12px 16px;
+      text-align: left;
+      font-family: var(--font-serif);
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+    }
+
+    .results-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--color-border-light);
+    }
+
+    .results-table tr:nth-child(even) td {
+      background: #fafaf7;
+    }
+
+    .results-table .result-highlight {
+      color: var(--color-accent-dark);
+      font-weight: 700;
+    }
+
+    /* ===== ORDER FORM ===== */
+    .order-section {
+      max-width: 720px;
+      margin: 40px auto;
+      background: var(--color-bg-white);
+      border: 2px solid var(--color-navy);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .order-header {
+      background: var(--color-navy);
+      padding: 20px 28px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .order-header-logo {
+      width: 56px;
+      height: 56px;
+      flex-shrink: 0;
+    }
+
+    .order-header-logo img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
+
+    .order-header-text h3 {
+      font-family: var(--font-serif);
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .order-header-text span {
+      color: var(--color-gold-light);
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .order-promo {
+      background: var(--color-gold);
+      color: var(--color-navy);
+      text-align: center;
+      padding: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: .5px;
+    }
+
+    .order-body {
+      padding: 28px;
+    }
+
+    .order-stock {
+      text-align: center;
+      font-size: 14px;
+      color: var(--color-text-muted);
+      margin-bottom: 16px;
+    }
+
+    .order-stock b {
+      color: var(--color-red);
+      font-size: 18px;
+    }
+
+    .order-prices {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .order-price-old {
+      font-size: 22px;
+      color: var(--color-text-light);
+      text-decoration: line-through;
+    }
+
+    .order-price-new {
+      font-size: 32px;
+      font-family: var(--font-serif);
+      font-weight: 700;
+      color: var(--color-accent-dark);
+    }
+
+    .order-form-group {
+      margin-bottom: 14px;
+    }
+
+    .order-form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--color-navy);
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+
+    .order-form-group input {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      font-size: 16px;
+      font-family: var(--font-sans);
+      transition: border-color .2s;
+      background: #fafaf7;
+    }
+
+    .order-form-group input:focus {
+      outline: none;
+      border-color: var(--color-navy);
+      background: #fff;
+    }
+
+    .order-submit {
+      width: 100%;
+      padding: 16px;
+      background: var(--color-accent);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius);
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-family: var(--font-sans);
+      transition: background .2s;
+      margin-top: 8px;
+    }
+
+    .order-submit:hover {
+      background: var(--color-accent-dark);
+    }
+
+    .order-footer {
+      padding: 16px 28px;
+      background: #f8f7f4;
+      border-top: 1px solid var(--color-border-light);
+      font-size: 13px;
+      color: var(--color-text-muted);
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    /* ===== COMMENTS ===== */
+    .comments-section {
+      max-width: 940px;
+      margin: 0 auto;
+      background: var(--color-bg-white);
+      border-left: 1px solid var(--color-border-light);
+      border-right: 1px solid var(--color-border-light);
+      padding: 0 48px 40px;
+    }
+
+    .comments-header {
+      background: var(--color-navy);
+      color: var(--color-gold-light);
+      padding: 12px 20px;
+      font-family: var(--font-serif);
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius: var(--radius) var(--radius) 0 0;
+      margin-bottom: 0;
+    }
+
+    .comment-item {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--color-border-light);
+    }
+
+    .comment-item:last-child {
+      border-bottom: none;
+    }
+
+    .comment-top {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .comment-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--color-border);
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+
+    .comment-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .comment-author {
+      font-family: var(--font-serif);
+      font-weight: 700;
+      color: var(--color-navy);
+      font-size: 15px;
+    }
+
+    .comment-date {
+      font-size: 12px;
+      color: var(--color-text-light);
+    }
+
+    .comment-text {
+      padding-left: 54px;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--color-text);
+    }
+
+    .comment-reply {
+      margin-left: 54px;
+      padding-left: 16px;
+      border-left: 2px solid var(--color-gold-light);
+      margin-top: 12px;
+    }
+
+    /* ===== TRUST STRIP ===== */
+    .trust-strip {
+      max-width: 940px;
+      margin: 0 auto;
+      background: var(--color-bg-white);
+      border-left: 1px solid var(--color-border-light);
+      border-right: 1px solid var(--color-border-light);
+      padding: 24px 48px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      border-top: 1px solid var(--color-border-light);
+    }
+
+    .trust-item {
+      text-align: center;
+      padding: 12px;
+    }
+
+    .trust-icon {
+      font-size: 28px;
+      margin-bottom: 6px;
+    }
+
+    .trust-label {
+      font-size: 12px;
+      color: var(--color-text-muted);
+      line-height: 1.4;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      max-width: 940px;
+      margin: 0 auto;
+      background: var(--color-navy);
+      padding: 20px 48px;
+      color: var(--color-gold-light);
+      font-size: 11px;
+      line-height: 1.6;
+      text-align: center;
+      opacity: .9;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 720px) {
+      .masthead {
+        padding: 20px 24px 16px;
+      }
+
+      .masthead-name {
+        font-size: 28px;
+      }
+
+      .hero {
+        padding: 28px 24px;
+      }
+
+      .hero h1 {
+        font-size: 26px;
+      }
+
+      .hero-lead {
+        font-size: 17px;
+      }
+
+      main {
+        padding: 0 24px 32px;
+      }
+
+      .mechanism-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .doc-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .doc-card-photo {
+        width: 80px;
+        height: 80px;
+        font-size: 26px;
+      }
+
+      .order-body {
+        padding: 20px;
+      }
+
+      .comments-section {
+        padding: 0 24px 32px;
+      }
+
+      .trust-strip {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 24px;
+      }
+
+      footer {
+        padding: 20px 24px;
+      }
+
+      .masthead-meta {
+        flex-direction: column;
+        gap: 4px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      body {
+        font-size: 16px;
+      }
+
+      .masthead-name {
+        font-size: 24px;
+      }
+
+      .hero h1 {
+        font-size: 22px;
+      }
+
+      .hero-lead {
+        font-size: 16px;
+        padding-left: 14px;
+      }
+
+      .section-heading {
+        font-size: 22px;
+      }
+
+      .quote-block {
+        padding: 24px 20px;
+        font-size: 16px;
+      }
+
+      .quote-block::before {
+        font-size: 48px;
+        left: 12px;
+      }
+
+      .order-prices {
+        flex-direction: column;
+        gap: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <span>ISSN 2784-0391</span>
+    <span>Mimoriadne vydanie • Regeneratívna medicína</span>
+    <span id="topbar-date">
+      <script>dtime_nums(-1, true)</script>
+    </span>
+  </div>
+
+  <!-- MASTHEAD -->
+  <div class="masthead">
+    <div class="masthead-crest">
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="32" cy="32" r="30" stroke="#1a2340" stroke-width="2" fill="none"></circle>
+        <circle cx="32" cy="32" r="26" stroke="#c9a84c" stroke-width="1" fill="none"></circle>
+        <path d="M32 12 L34 20 L42 20 L36 25 L38 33 L32 28 L26 33 L28 25 L22 20 L30 20 Z" fill="#c9a84c"></path>
+        <path d="M20 38 Q32 50 44 38" stroke="#1a2340" stroke-width="1.5" fill="none"></path>
+        <line x1="32" y1="40" x2="32" y2="52" stroke="#1a2340" stroke-width="1.5"></line>
+        <line x1="27" y1="44" x2="37" y2="44" stroke="#c9a84c" stroke-width="1"></line>
+        <line x1="28" y1="47" x2="36" y2="47" stroke="#c9a84c" stroke-width="1"></line>
+      </svg>
+    </div>
+    <div class="masthead-title">The Royal Medical Gazette</div>
+    <div class="masthead-name">Sir Michael Dixont</div>
+    <div class="masthead-subtitle">Bývalý osobný lekár Britskej kráľovskej rodiny</div>
+    <div class="masthead-meta">
+      <span>Vol. XLVII • N. 12</span>
+      <span id="masthead-date">
+        <script>dtime_nums(-1, true)</script>
+      </span>
+      <span>Slovenské vydanie</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-badge">Exkluzívne — prvé uverejnenie</div>
+    <h1>34 rokov som liečil kĺby Kráľovskej rodiny. Dnes po prvýkrát sprístupňujem túto formulu <em>všetkým</em> bez rozdielu</h1>
+    <p class="hero-lead">
+      «Buckinghamský palác som opúšťal s istotou v jedinej veci: medicína, ktorú som praktizoval v kráľovskej rodine, funguje. A milióny ľudí, ktorí by ju potrebovali, o nej nikdy ani nepočuli. To je neprijateľné.»
+    </p>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <div class="photo-block">
+      <img src="https://static.joxi.pro/1789746699522-4a982307-6f30-41c6-8420-37541b42c98b.jpg"
+        alt="Sir Michael Dixont — 34 rokov osobný lekár Britskej kráľovskej rodiny" loading="lazy">
+      <div class="photo-block-caption">Sir Michael Dixont, MD, FRCP. 34 rokov služby u Britskej kráľovskej rodiny. Rytier Radu Britského impéria. Zakladateľ Dixont Institute of Regenerative Medicine v Cambridgei.</div>
+    </div>
+
+    <div class="section-divider"><span>✦ ✦ ✦</span></div>
+
+    <!-- DOC CARD -->
+    <div class="doc-card">
+      <div class="doc-card-photo"><img src="images/1785843334468-23fd6ec6-b1b0-4b12-91cb-caf780787379.jpg"
+          alt="Sir Michael Dixont, lekár Britskej kráľovskej rodiny"
+          style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+      <div class="doc-card-body">
+        <div class="doc-card-name">Sir Michael Dixont, MD, FRCP</div>
+        <div class="doc-card-title">Bývalý hlavný lekár Britského kráľovského dvora</div>
+        <p class="doc-card-text">34 rokov služby u Kráľovskej rodiny. Člen Royal College of Physicians. Rytier Radu Britského impéria. Zakladateľ Dixont Institute of Regenerative Medicine.</p>
+      </div>
+    </div>
+
+    <p>Som Michael Dixont. Tridsaťštyri rokov som bol osobným lekárom Britskej kráľovskej rodiny. Liečil som kĺby, chrbtice, kolená — aj ľuďom, ktorých mená dodnes nesmiem vysloviť. Mal som prístup k laboratóriám, výskumom a účinným látkam, ktoré štátne zdravotníctvo nikdy neuvidí. Nie zo zlomyseľnosti — z ekonomických dôvodov. To, čo naozaj funguje, je v priemyselnom meradle príliš drahé, a to, čo sa vyrába priemyselne, lieči príliš málo.</p>
+
+    <p>Palác som opustil ako šesťdesiatsedemročný. Nie z únavy — z hanby. Dovoľte mi to vysvetliť.</p>
+
+    <p>Jedno popoludnie posledného roku služby, po dvornej vizite, som zašiel do jedného chelseaského pubu. Pri pulte sedel asi šesťdesiatročný muž s elastickou ortézou na kolene, tvár mal sivú od bolesti a objednával si pivo, aby ním zapil ďalší ibuprofén. Dal som sa s ním do reči — profesionálna deformácia. Spýtal som sa, ako dlho trpí. «Jedenásť rokov» — povedal. «Môj lekár hovorí, že sa nedá nič robiť. Beriem lieky proti bolesti a čakám na operáciu. Čakacia lehota je štrnásť mesiacov.»</p>
+
+    <p>Jedenásť rokov. Štrnásť mesiacov čakania. V ten istý deň som presne taký istý typ kĺbu ošetroval protokolom, ktorý za šesť týždňov obnoví chrupavku. Lenže ten protokol bol vyhradený tým, čo žijú za múrmi Paláca. Muž pri pulte — bývalý robotník Fordu v Dagenhame, otec troch detí — sa musel uspokojiť s ibuprofénom a ortézou.</p>
+
+    <div class="quote-block">
+      <p>V tej chvíli som pochopil veľmi jednoduchú vec: vlastniť liek a nepodeliť sa oň je to isté, ako keby neexistoval. Tridsaťštyri rokov kráľovskej služby nestojí za nič, ak muž pri pulte zomrie so zničeným kolenom, kým čaká na operáciu, ktorá možno nikdy nepríde.</p>
+      <div class="quote-author">— Sir Michael Dixont</div>
+    </div>
+
+    <p>O tri mesiace neskôr som odišiel do dôchodku. Predal som dom v Kensingtone, vzal celoživotné úspory a v Cambridgei otvoril Dixont Institute of Regenerative Medicine. Prišli so mnou dvaja spoľahliví spolupracovníci: biochemik dr. James Harlow, s ktorým som pracoval dvadsať rokov, a dr. Priya Nair, špecialistka na transdermálne formulácie, ktorá so mnou vyvíjala kráľovské protokoly.</p>
+
+    <p>Cieľ bol jediný: vziať protokol, ktorý fungoval v Paláci, a premeniť ho na niečo, čo môže doma použiť hocikto. Bez injekcií. Bez nemocnice. Bez štrnásťmesačných čakacích lehôt.</p>
+
+    <div class="photo-duo">
+      <div class="photo-block">
+        <img src="images/1785843873534-855cd587-297b-4bcf-a6b2-7006722b63dc.jpg"
+          alt="Laboratórium Dixont Institute v Cambridgei" style="height:280px;object-fit:cover;" loading="lazy">
+        <div class="photo-block-caption">Laboratórium Dixont Institute of Regenerative Medicine, Cambridge. Práve tu vyvinuli transdermálnu formulu STEPLEX.</div>
+      </div>
+      <div class="photo-block">
+        <img src="images/1785843847263-3252305d-b613-4d9b-980e-183f548d47cd.jpg"
+          alt="Sir Michael Dixont s dr. Harlowom a dr. Nairovou" style="height:280px;object-fit:cover;" loading="lazy">
+        <div class="photo-block-caption">Zľava: dr. James Harlow, Sir Michael Dixont a dr. Priya Nair vo formulačnom laboratóriu.</div>
+      </div>
+    </div>
+
+    <div class="section-divider"><span>✦ ✦ ✦</span></div>
+
+    <h2 class="section-heading">Prečo Slovensko — a prečo teraz</h2>
+
+    <div class="italy-block">
+      <div class="italy-block-icon">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="2" width="76" height="76" rx="12" stroke="#1a2340" stroke-width="1.5" fill="#f0ede5"></rect>
+          <rect x="12" y="18" width="56" height="14" rx="2" fill="#ce2939"></rect>
+          <rect x="12" y="32" width="56" height="14" rx="0" fill="#fff" stroke="#ddd" stroke-width=".5"></rect>
+          <rect x="12" y="46" width="56" height="14" rx="2" fill="#477050"></rect>
+        </svg>
+      </div>
+      <div class="italy-block-body">
+        <h3>Slovensko bolo našou prvou voľbou. Nie náhodou.</h3>
+        <p>Na Slovensku je podiel kĺbových ochorení jeden z najvyšších v Európe: viac než 2 milióny ľudí trpí niektorou formou artrózy — takmer každý piaty Slovák. U ľudí nad 65 rokov tento podiel presahuje 60%.</p>
+        <p>Ale to, čo nás naozaj presvedčilo, sú čakacie lehoty. Na ortopedickú ambulanciu sa čaká v priemere 2-3 mesiace. Na operáciu kolennej alebo bedrovej protézy v štátnej starostlivosti 1-2 roky — v niektorých krajoch aj viac. Státisíce Slovákov žijú v pasci dnešnej bolesti a operácie, ktorá príde budúci rok — alebo možno nikdy.</p>
+        <p>Keď sme sa rozhodli sprístupniť STEPLEX aj mimo Spojeného kráľovstva, voľba bola okamžitá. Na Slovensku je potreba najväčšia. Skontaktoval som sa s profesorom Ladislavom Hanzelom, emeritným primárom ortopedického oddelenia v Bratislave, ktorého som spoznal na kongrese v Edinburghu v roku 2017. Formulu otestoval na šesťdesiatich pacientoch vo svojej súkromnej ambulancii. Výsledky potvrdili to, čo sme už vedeli. Povedal mi: «Michael, toto by malo byť v každej slovenskej lekárni.»</p>
+        <div class="italy-stats">
+          <div class="italy-stat">
+            <div class="italy-stat-num">2 milióny+</div>
+            <div class="italy-stat-label">Slovákov žijúcich s kĺbovým ochorením</div>
+          </div>
+          <div class="italy-stat">
+            <div class="italy-stat-num">1-2 roky</div>
+            <div class="italy-stat-label">Čakanie na operáciu protézy</div>
+          </div>
+          <div class="italy-stat">
+            <div class="italy-stat-num">60 mld. Ft</div>
+            <div class="italy-stat-label">Ročné výdavky na lieky proti bolesti kĺbov</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-divider"><span>✦ ✦ ✦</span></div>
+
+    <h2 class="section-heading">Prečo sa kĺby ničia — a prečo to nikto nevysvetlí</h2>
+
+    <p>Pravda, ktorú vám žiaden ortopéd nepovie pri šesťminútovom vyšetrení: kĺb nie je kus železa, ktorý sa jednoducho opotrebuje. Je to živý organizmus. Chrupavka sa regeneruje — ale len vtedy, keď dostane to, čo potrebuje.</p>
+
+    <p>V každom kĺbe je chrupavka — vankúš, ktorý bráni tomu, aby sa kosť trela o kosť. Okolo nej kĺbový maz, ktorý chrupavku maže a vyživuje. Keď tento systém funguje, kĺb sa pohybuje bez bolesti, bez vŕzgania, bez obmedzení.</p>
+
+    <div class="alert-warning">
+      <b>Toto sa deje s vekom a opotrebovaním:</b> kĺbového mazu ubúda, chrupavka už nedostáva výživu, začína vysychať a praskať. Kosť na kosť. Každý krok je bolesť. A lieky? Vypnú poplašný signál — bolesť — ale nič neopravia. Naopak: bez bolesti sa kĺb zaťažuje ešte viac a ničenie sa zrýchľuje.<p></p>
+    </div>
+
+    <p>V Paláci sme tento problém vyriešili pred dvadsiatimi rokmi. Formulou, ktorá robí tri veci naraz: obnoví kĺbový maz, dodá chrupavke stavebné prvky potrebné na prestavbu a zastaví chronický zápal, ktorý bráni hojeniu. Nie jednu z troch — všetky tri spolu. V tom je rozdiel medzi štátnou medicínou a našou prácou.</p>
+
+    <h2 class="section-heading">Ako funguje STEPLEX — kráľovský protokol, teraz vo forme spreja</h2>
+
+    <p>Najväčšou výzvou nebola formula — tú sme poznali. Výzvou bola forma. V Paláci sme používali vnútrokĺbové injekcie: ihla priamo do kĺbu, pod ultrazvukovou kontrolou, na sterilnej klinike. Dokonalé pre toho, kto má osobného lekára. Nemožné pre toho, kto žije v Košiciach, Prešove alebo Žiline a mesiace čaká na ortopedické vyšetrenie.</p>
+
+    <p>Dr. Nairovej trvalo štrnásť mesiacov, kým problém vyriešila. Vyvinula transdermálny penetračný systém založený na nanoštruktúrovaných lipozómoch: lipidové mikroguľôčky, ktoré prenikajú cez kožnú bariéru a účinné látky dopravia priamo do kĺbového puzdra — presne tam, kam sa dostala ihla. Bez ihly. Bez kliniky. Bez bolesti.</p>
+
+    <div class="mechanism-grid">
+      <div class="mechanism-step">
+        <div class="mechanism-step-num">1</div>
+        <h4>Prienik</h4>
+        <p>Nanoštruktúrované lipozómy prenikajú cez kožu a do 12 minút od aplikácie dosiahnu kĺbové puzdro.</p>
+      </div>
+      <div class="mechanism-step">
+        <div class="mechanism-step-num">2</div>
+        <h4>Mazanie</h4>
+        <p>Kyselina hyalurónová s vysokou molekulovou hmotnosťou obnoví kĺbový maz a odstráni trenie kosti o kosť.
+        </p>
+      </div>
+      <div class="mechanism-step">
+        <div class="mechanism-step-num">3</div>
+        <h4>Prestavba</h4>
+        <p>Chondroitín, glukozamín a kolagén typu II poskytujú stavebné prvky na regeneráciu chrupavky.
+        </p>
+      </div>
+      <div class="mechanism-step">
+        <div class="mechanism-step-num">4</div>
+        <h4>Ochrana</h4>
+        <p>Boswellia serrata a kurkumín blokujú chronický zápal, ktorý bráni prirodzenému hojeniu.</p>
+      </div>
+    </div>
+
+    <p>Výsledkom je <b>STEPLEX</b> — sprej, ktorý sa nastrekuje na kožu nad postihnutým kĺbom, dvakrát denne, ráno a večer. Nemastí, vstrebe sa za dve minúty, nemá liekový zápach. A robí presne to, čo v Paláci robila injekcia — ale bez ihly.</p>
+
+    <div class="photo-block"
+      style="display: flex; justify-content: center; flex-direction: column ; align-items: center; max-width:420px;margin-left:auto;margin-right:auto;">
+      <img style="max-width: 300px;" src="images/prod.png" alt="Sprej STEPLEX — oficiálne balenie" loading="lazy">
+      <div class="photo-block-caption">STEPLEX — transdermálna formula Dixont Institute. Každé balenie obsahuje 30-dňovú kúru.</div>
+    </div>
+
+    <div class="section-divider"><span>✦ ✦ ✦</span></div>
+
+    <h2 class="section-heading">Čo sa stane, ak budete ignorovať bolesť kĺbov</h2>
+
+    <p>Mnohí si myslia, že bolesť kolena, bedra či ramena «patrí k veku» a treba s ňou žiť. Klinická pravda je iná: bolesť kĺbu je poplašný signál. Ignorovať ho nie je hrdinstvo — je to tiché sebazničenie.</p>
+
+    <div class="scare-card">
+      <div class="scare-card-img"
+        style="background-image:url(images/1785843835959-59f9b441-c4d2-41b7-9046-0dccad3d1718.jpg);">
+      </div>
+      <div class="scare-card-body">
+        <h3>I. fáza → IV. fáza: ničenie je nezvratné</h3>
+        <p>V kĺbovej chrupavke nie sú cievy. To znamená, že sa nedokáže regenerovať ako koža alebo svaly. Každý deň, ktorý prejde bez výživy, chrupavka stráca hrúbku. A táto strata sa sama nevráti.</p>
+        <ul class="scare-list">
+          <li><b>I. fáza</b> — Občasná bolesť, ranná stuhnutosť. Chrupavka sa stenčí o 10-15%. Ešte zvratné.</li>
+          <li><b>II. fáza</b> — Denná bolesť, vŕzganie, ťažkosti na schodoch. Strata 30-40%. Čiastočne zvratné.</li>
+          <li><b>III. fáza</b> — Trvalá bolesť, viditeľná deformácia, krívanie. Strata 60-70%. Pomôcť môže už len operácia alebo intenzívny regeneratívny protokol.</li>
+          <li><b>IV. fáza</b> — Kosť na kosť. Chrupavka neostala. Jedinou možnosťou je umelá protéza — operácia za 3,5 milióna forintov so šesťmesačnou rehabilitáciou a žiadnou zárukou, že bolesť úplne zmizne.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="scare-card">
+      <div class="scare-card-img"
+        style="background-image:url(images/1784625225189-5449ed40-fba8-4507-91bb-5bb16e44697e.jpg);">
+      </div>
+      <div class="scare-card-body">
+        <h3>Lieky proti bolesti neliečia. Zrýchľujú ničenie.</h3>
+        <p>Ibuprofén, diklofenak, naproxén — lieky, ktoré denne berú státisíce Slovákov — chrupavku neobnovujú. Nespomaľujú jej ničenie. Zakrývajú ho. A medzitým:</p>
+        <ul class="scare-list">
+          <li><b>Poškodenie žalúdka:</b> dlhodobé užívanie NSAID spôsobí u 15-25% chronických pacientov žalúdočný vred.</li>
+          <li><b>Poškodenie obličiek:</b> po 5 rokoch denného užívania sa riziko chronického zlyhania obličiek zvyšuje o 58%.</li>
+          <li><b>Poškodenie srdca a ciev:</b> diklofenak zvyšuje riziko infarktu o 40% oproti tým, ktorí ho neužívajú.</li>
+          <li><b>Zrýchlenie artrózy:</b> bez signálu bolesti pacient zaťažuje poškodený kĺb. Chrupavka sa opotrebuje rýchlejšie. Kým liek prestane účinkovať, stav je o roky horší.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="photo-duo">
+      <div class="photo-block">
+        <img src="images/1785844081079-a44b4e22-95a2-4182-a93d-3ae5ecacd45a.jpg"
+          alt="Porovnanie zdravého kĺbu a kĺbu s pokročilou artrózou" loading="lazy">
+        <div class="photo-block-caption">Vľavo: zdravý kĺb s neporušenou chrupavkou. Vpravo: artróza III. stupňa — chrupavka je takmer úplne zničená.</div>
+      </div>
+      <div class="photo-block">
+        <img src="images/1785844105891-9dce6286-fd49-433a-b43c-1efc6ad4788f.jpg" alt="Operácia implantácie kolennej protézy"
+          loading="lazy">
+        <div class="photo-block-caption">Operácia totálnej kolennej protézy. Priemerná cena v súkromnom sektore: 3,5 milióna Ft. Rehabilitácia: 6 mesiacov. Čakacia lehota v štátnej starostlivosti: až 2 roky.</div>
+      </div>
+    </div>
+
+    <a href="#" class="cta-inline">Nečakajte na IV. fázu — objednajte si STEPLEX teraz</a>
+
+    <div class="section-divider"><span>✦ ✦ ✦</span></div>
+
+    <h2 class="section-heading">Zloženie — čo obsahuje každá jedna aplikácia</h2>
+
+    <div class="ingredients-card">
+      <h3>Formula STEPLEX — Protokol Dixont</h3>
+
+      <div class="ingredient-item">
+        <span class="ingredient-check">✓</span>
+        <div>
+          <span class="ingredient-name">Kyselina hyalurónová s vysokou molekulovou hmotnosťou</span>
+          <span class="ingredient-dose">— 45 mg/aplikáciu</span>
+          <div class="ingredient-desc">Obnovuje objem a viskozitu kĺbového mazu. Odstraňuje trenie v kĺbe.</div>
+        </div>
+      </div>
+
+      <div class="ingredient-item">
+        <span class="ingredient-check">✓</span>
+        <div>
+          <span class="ingredient-name">Chondroitín sulfát</span>
+          <span class="ingredient-dose">— 60 mg/aplikáciu</span>
+          <div class="ingredient-desc">Stimuluje chrupavkové bunky k tvorbe novej chrupavkovej matrice. Spomaľuje enzymatický rozklad.</div>
+        </div>
+      </div>
+
+      <div class="ingredient-item">
+        <span class="ingredient-check">✓</span>
+        <div>
+          <span class="ingredient-name">Glukozamín sulfát</span>
+          <span class="ingredient-dose">— 55 mg/aplikáciu</span>
+          <div class="ingredient-desc">Prekurzor glykozaminoglykánov — stavebný materiál chrupavky.</div>
+        </div>
+      </div>
+
+      <div class="ingredient-item">
+        <span class="ingredient-check">✓</span>
+        <div>
+          <span class="ingredient-name">Hydrolyzovaný kolagén typu II</span>
+          <span class="ingredient-dose">— 40 mg/aplikáciu</span>
+          <div class="ingredient-desc">Poskytuje vláknitú štruktúru, na ktorej sa poškodená chrupavka prestavuje.</div>
+        </div>
+      </div>
+
+      <div class="ingredient-item">
+        <span class="ingredient-check">✓</span>
+        <div>
+          <span class="ingredient-name">Extrakt z Boswellia serrata</span>
+          <span class="ingredient-dose">— 30 mg/aplikáciu</span>
+          <div class="ingredient-desc">Prirodzený inhibítor 5-lipoxygenázy. Blokuje chronický zápal bez žalúdočných ťažkostí.</div>
+        </div>
+      </div>
+
+      <div class="ingredient-item">
+        <span class="ingredient-check">✓</span>
+        <div>
+          <span class="ingredient-name">Kurkumín vo fosfolipidovom komplexe</span>
+          <span class="ingredient-dose">— 25 mg/aplikáciu</span>
+          <div class="ingredient-desc">Protizápalový a antioxidačný. Fosfolipidový komplex zvyšuje biologickú dostupnosť 29-násobne.</div>
+        </div>
+      </div>
+
+      <div class="ingredient-item">
+        <span class="ingredient-check">✓</span>
+        <div>
+          <span class="ingredient-name">Nanoštruktúrovaný lipozómový komplex</span>
+          <span class="ingredient-dose">— transportný systém</span>
+          <div class="ingredient-desc">Prenáša všetky účinné látky cez kožnú bariéru priamo do kĺbového puzdra.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-divider"><span>✦ ✦ ✦</span></div>
+
+    <h2 class="section-heading">Výsledky — observačná štúdia na 1 847 pacientoch</h2>
+
+    <p>Skôr než sme STEPLEX sprístupnili verejnosti, uskutočnili sme v Dixont Institute dvanásťmesačnú observačnú štúdiu v spolupráci s tromi britskými ortopedickými klinikami. 1 847 pacientov, priemerný vek 62 rokov, všetci s diagnózou osteoartrózy II.-III. stupňa.</p>
+
+    <div style="overflow-x:auto">
+      <table class="results-table">
+        <thead>
+          <tr>
+            <th>Parameter</th>
+            <th>Pred liečbou</th>
+            <th>Po 8 týždňoch</th>
+            <th>Zmena</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bolesť kĺbov (škála VAS)</td>
+            <td>7,4 / 10</td>
+            <td>2,1 / 10</td>
+            <td class="result-highlight">−71,6%</td>
+          </tr>
+          <tr>
+            <td>Pohyblivosť kĺbov</td>
+            <td>41% normy</td>
+            <td>84% normy</td>
+            <td class="result-highlight">+104,9%</td>
+          </tr>
+          <tr>
+            <td>Hrúbka chrupavky (ultrazvuk)</td>
+            <td>1,2 mm</td>
+            <td>2,1 mm</td>
+            <td class="result-highlight">+75%</td>
+          </tr>
+          <tr>
+            <td>Užívanie liekov proti bolesti</td>
+            <td>denne (89%)</td>
+            <td>príležitostne (12%)</td>
+            <td class="result-highlight">−86,5%</td>
+          </tr>
+          <tr>
+            <td>Podiel pacientov, ktorí sa vyhli operácii</td>
+            <td colspan="2" style="text-align:center">—</td>
+            <td class="result-highlight">78,3%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="photo-block">
+      <img src="images/1785844240240-b30df97b-94af-4122-b168-3972954b1e67.jpg"
+        alt="Účastníci klinickej štúdie STEPLEX v Dixont Institute" loading="lazy">
+      <div class="photo-block-caption">Účastníci observačnej štúdie Dixont Institute. Priemerný vek: 62 rokov. Trvanie: 12 mesiacov. 1 847 pacientov s osteoartrózou II.-III. stupňa.</div>
+    </div>
+
+    <div class="alert-success">
+      <b>Poznámka výskumníka:</b> 78,3% pacientov, ktorí pôvodne čakali na totálnu kolennú alebo bedrovú protézu, sa po dvoch kúrach STEPLEX operácii vyhlo. Kompletný súbor údajov je dostupný v registri Dixont Institute (ref. DI-2024-ART-1847).
+    </div>
+
+    <a href="#" class="cta-inline">Vyskúšajte STEPLEX — platba až pri prevzatí</a>
+
+    <div class="section-divider"><span>✦ ✦ ✦</span></div>
+
+    <h2 class="section-heading">Prečo vám o tom váš lekár nepovie</h2>
+
+    <p>Často sa ma na to pýtajú. Odpoveď je jednoduchá a nemá nič spoločné so sprisahaním ani so zlým úmyslom.</p>
+
+    <p>Obvodný lekár má na pacienta sedem minút. Za sedem minút môže urobiť jedinú vec: predpísať to, čo pozná. Pozná lieky proti bolesti, pozná kortizónové injekcie, pozná čakaciu lehotu na protézu. Jeho príručka tam končí. Nie preto, že by bol neschopný — ale preto, že systém je tak postavený. Systém, ktorý zarába na denných liekoch a miliónových protézach, nemá žiaden ekonomický záujem dať vedieť, že existuje alternatíva, ktorú si možno doma aplikovať za dve minúty.</p>
+
+    <div class="alert-danger">
+      <b>Údaj, ktorý vás môže prinútiť zamyslieť sa:</b> Na Slovensku má trh s liekmi proti bolesti kĺbov hodnotu 60 miliárd forintov ročne. Trh s kĺbovými protézami 40 miliárd. Spolu je to 100 miliárd. Žiadne 100-miliardové odvetvie sa dobrovoľne nezruší. Nie je to sprisahanie — je to ekonómia.
+    </div>
+
+    <p>Ja už nemám čo stratiť. Nepredávam lieky. Nemám podiely v ortopedických klinikách. Mám britský dôchodok a svedomie, ktoré mi nedá spať, kým viem, že muž pri pulte v pube — a milióny jemu podobných — čakajú na operáciu, ktorú by sprej mohol urobiť zbytočnou.</p>
+
+    <div class="section-divider"><span>✦ ✦ ✦</span></div>
+
+    <h2 class="section-heading">Ako sa STEPLEX používa</h2>
+
+    <p>Dva-tri streky nastriekajte na postihnuté miesto zo vzdialenosti 10-15 cm — koleno, bedro, rameno, ruka, členok, chrbtica — dvakrát denne: ráno a večer, na čistú a suchú pokožku. Niekoľkými krúživými pohybmi sa dá rozotrieť. Sprej sa úplne vstrebe za dve minúty. Nezanecháva škvrny, nemastí, nemá liekový zápach.</p>
+
+    <p>Prvá kúra trvá 30 dní. Väčšina pacientov cíti výrazné zmiernenie bolesti už v prvom týždni. Na štrukturálnu obnovu chrupavky je potrebných 6-8 týždňov nepretržitého používania. V pokročilejších prípadoch (artróza III. stupňa) odporúčame dve kúry za sebou.</p>
+
+    <div class="section-divider"><span>✦ ✦ ✦</span></div>
+
+    <h2 class="section-heading">Osobná prosba</h2>
+
+    <p>Mám sedemdesiatjeden rokov. Nemám veľa času a peniaze nepotrebujem. Potrebujem vedieť, že formula, ktorá tridsaťštyri rokov fungovala za múrmi Paláca, sa konečne dostane k tým, ktorí ju naozaj potrebujú.
+    </p>
+
+    <p>Ak máte po štyridsiatich piatich a ráno vstávate «po kúskoch». Ak sa schody stali nepriateľom. Ak kolenom cítite počasie skôr ako meteorológovia. Ak sa vám na nočnom stolíku radia škatuľky liekov proti bolesti a aj tak to nie je lepšie. Ak vám povedali: «čo chcete, to je vek» — neverte tomu. Vek je príčina, nie rozsudok.</p>
+
+    <p>Pod týmto textom nájdete formulár. Uveďte svoje meno a telefónne číslo. Poradca vám zavolá, položí niekoľko otázok o vašom stave, vyberie najvhodnejšiu kúru a dá vám ju doručiť kuriérom domov. Platíte až pri prevzatí — žiadnu zálohu nepýtame. Na tejto podmienke som osobne trval: kto trpí, nech neriskuje ani jeden forint skôr, než má výrobok v rukách.</p>
+
+    <p>A ak toto nečítate pre seba, ale myslíte na svoju mamu, otca, na osamelého starého rodiča, ktorý pri každom telefonáte hovorí: «som v poriadku, neboj sa» — nečakajte. Do poslednej chvíle budú hovoriť «som v poriadku», lebo nechcú byť na ťarchu. Nedovoľte, aby sa váš blízky potichu stal väzňom vlastného domova.</p>
+
+    <!-- ORDER FORM -->
+    <span id="form"></span>
+    <span id="oneform"></span>
+    <div class="order-section">
+      <div class="order-header">
+        <div class="order-header-logo">
+          <img alt="" src="images/56d9b0017d1d_d58505c9.png" style="width:44px;height:auto;" loading="lazy">
+        </div>
+        <div class="order-header-text">
+          <h3>Oficiálny objednávkový formulár</h3>
+          <span>Č. <span class="number-me">19&nbsp;974</span> / 20&nbsp;000</span>
+        </div>
+      </div>
+      <div class="order-promo">Ak chcete využiť 50% zľavu, uveďte svoje meno a telefónne číslo do polí nižšie a stlačte tlačidlo «OBJEDNÁVAM».</div>
+      <div class="order-body">
+        <div class="order-stock">
+          Na sklade: <b class="left-pack">33</b> / 1000
+        </div>
+        <div class="order-prices">
+          <span class="order-price-old price_old">19800
+            HUF</span>
+          <span class="order-price-new price_main">9900
+            HUF</span>
+        </div>
+        <form action="/order.php" method="post">
+          <input type="hidden" name="fbpx" value="{fbpx}">
+          <input type="hidden" name="utm_code" value="{subid}">
+          <input type="hidden" name="cid" value="{campaign_id}">
+          <input type="hidden" name="sid" value="1427">
+          <input type="hidden" name="hash" value="{hash}">
+          <input type="hidden" name="country" value="SK">
+          <div class="order-form-group">
+            <label for="name">Meno</label>
+            <input autocomplete="name" type="text" id="name" name="name" placeholder="Vaše meno" required="" value="">
+          </div>
+          <div class="order-form-group">
+            <label for="phone">Telefónne číslo</label>
+            <input autocomplete="tel" type="tel" id="phone" name="phone" maxlength="20" placeholder="Vaše telefónne číslo"
+              required="" value="">
+          </div>
+          <button type="submit" class="order-submit">OBJEDNÁVAM TERAZ</button>
+        </form>
+      </div>
+      <div class="order-footer">
+        ✔️ Doručenie zabezpečuje Národné zdravotné centrum priamo na uvedenú adresu. Dodanie do 2-3 pracovných dní kuriérom.<br>
+        <img alt="" src="images/b0110a32ff2e_8322b1b5.png"
+          style="width:auto;max-width:100%;margin-top:10px;opacity:.85;" loading="lazy">
+      </div>
+    </div>
+
+  </main>
+
+  <!-- COMMENTS -->
+  <div class="comments-section">
+    <div class="comments-header">Komentáre čitateľov</div>
+
+    <div class="comment-item" style="cursor: pointer;">
+      <div class="comment-top">
+        <div class="comment-avatar"><img src="images/1785844579488-bc75c44a-a627-4b6a-8e78-bb724918fdfe.jpg"
+            alt="Belo K." loading="lazy"></div>
+        <div>
+          <div class="comment-author">Belo K., Košice</div>
+          <div class="comment-date">
+            <script>dtime_nums(-5, true)</script>
+          </div>
+        </div>
+      </div>
+      <div class="comment-text">Mám 63 rokov, osem rokov som bral lieky proti bolesti na pravé koleno. Ortopéd ma zapísal na čakaciu listinu na protézu — predpokladaný čas: 11 mesiacov. Zo zvedavosti som vyskúšal STEPLEX, veľmi som tomu neveril. Po troch týždňoch som vstal zo stoličky bez toho, aby som sa chytal stola. Po šiestich týždňoch som zišiel do pivnice — prvýkrát po dvoch rokoch. Zavolal som do nemocnice a povedal, že protézu zatiaľ nechcem.</div>
+    </div>
+
+    <div class="comment-item" style="cursor: pointer;">
+      <div class="comment-top">
+        <div class="comment-avatar"><img src="images/1785844579488-0bbcc1ca-4116-4788-a51b-e329b340e2ed.jpg"
+            alt="Alžbeta N." loading="lazy">
+        </div>
+        <div>
+          <div class="comment-author">Alžbeta N., Nitra</div>
+          <div class="comment-date">
+            <script>dtime_nums(-8, true)</script>
+          </div>
+        </div>
+      </div>
+      <div class="comment-text">Ráno a večer si strekám na ruky. Štyridsať rokov šijem, prsty mi stuhli ako paličky — už som nedokázala navliecť niť do ihly. Po mesiaci som začala znova šiť. Zákazníčky si mysleli, že ma operovali. Nie, prosím. Sprej, dvakrát denne, a to je celé.</div>
+    </div>
+
+    <div class="comment-item" style="cursor: pointer;">
+      <div class="comment-top">
+        <div class="comment-avatar"><img src="images/1785844579488-309d941c-8842-4728-af21-60a79cb2c20e.jpg"
+            alt="Štefan F." loading="lazy"></div>
+        <div>
+          <div class="comment-author">Štefan F., Žilina</div>
+          <div class="comment-date">
+            <script>dtime_nums(-12, true)</script>
+          </div>
+        </div>
+      </div>
+      <div class="comment-text">Objednala mi ho manželka, lebo ja som tomu neveril. «Zase nejaký podvod» — hovoril som. Po dvoch týždňoch som prestal s ibuprofénom. Po mesiaci chodím po schodoch znova bez držania. Manželka nehovorí «ja som ti to vravela» — len si to myslí, a ja som jej vďačný.</div>
+    </div>
+
+    <div class="comment-item" style="cursor: pointer;">
+      <div class="comment-top">
+        <div class="comment-avatar"><img src="images/1785844579488-42e72773-dd44-4b92-a4d3-0c92826bbef9.jpg"
+            alt="Andrea V." loading="lazy"></div>
+        <div>
+          <div class="comment-author">Andrea V., Bratislava</div>
+          <div class="comment-date">
+            <script>dtime_nums(-3, true)</script>
+          </div>
+        </div>
+      </div>
+      <div class="comment-text">Kúpila som ho mame, má 78 rokov, artrózu bedra. Dva roky nezišla po schodoch v paneláku — my, deti, sme jej nosili nákup hore. Po šiestich týždňoch so STEPLEX zišla sama do kaviarne pod domom. Čašník na ňu pozeral, akoby videl ducha. Dala si kávu, zjedla kakaový závin a s plačom mi zavolala. Od radosti. Ešte v ten večer som objednala druhú kúru.</div>
+    </div>
+
+    <div class="comment-item" style="cursor: pointer;">
+      <div class="comment-top">
+        <div class="comment-avatar"><img src="images/1785844579488-8fec612f-2f21-444a-999f-b676d75fd3ec.jpg"
+            alt="Jozef L." loading="lazy"></div>
+        <div>
+          <div class="comment-author">Jozef L., Prešov</div>
+          <div class="comment-date">
+            <script>dtime_nums(-6, true)</script>
+          </div>
+        </div>
+      </div>
+      <div class="comment-text">Mám šesťdesiatdeväť rokov, bývalý murár, pravé rameno mi odišlo. Chirurg chcel operovať, ja som nechcel narkózu — v šesťdesiatich deviatich sa jej bojím. Kamarát mi poslal tento článok. Dva mesiace spreja. Na poslednej kontrole chirurg pozeral na ultrazvuk, potom na mňa, potom zase na ultrazvuk. «Čo ste robili?» — spýtal sa. «Sprej» — povedal som. Nekomentoval to. Ale operáciu z kalendára vyškrtol.</div>
+    </div>
+  </div>
+
+  <!-- TRUST STRIP -->
+  <div class="trust-strip">
+    <div class="trust-item">
+      <div class="trust-icon">🏫</div>
+      <div class="trust-label">Vyvinuté v Cambridgei (UK)</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">💬</div>
+      <div class="trust-label">Bezplatné poradenstvo</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">🚚</div>
+      <div class="trust-label">Kuriér za 2-3 dni</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">💰</div>
+      <div class="trust-label">Platba pri prevzatí</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    © Dixont Institute of Regenerative Medicine, Cambridge, UK. Všetky práva vyhradené. Informácie na tejto stránke majú informatívny charakter a nenahrádzajú lekársku konzultáciu.
+  </footer>
+
+  <script
+    async> const LAZY = document.querySelectorAll('img'); for (let i = 0; i < LAZY.length; i++) { LAZY[i].setAttribute('loading', 'lazy'); } </script>
+
+
+  <script>
+    $("a").on("touchend, click", function (e) {
+      e.preventDefault();
+      $('body,html').animate({
+        scrollTop: $('#oneform').offset().top
+      }, 400);
+    });
+  </script>
+
+  <script>
+    $('[name="name"]').on("input", function () {
+      var val = $(this).val();
+
+      var cleaned = val
+        .replace(/[^\p{L}\s]/gu, "")
+        .replace(/^\s+/, "")
+        .replace(/\s\s+/, " ");
+
+      var parts = cleaned.split(" ");
+      if (parts.length > 2) {
+        cleaned = parts[0] + " " + parts[1];
+      }
+
+      $(this).val(cleaned);
+    });
+
+    $('[name="name"]').on("change blur", function () {
+      $(this).val($(this).val().trim());
+    });
+
+    $('[name="phone"]').on("input change", function (e) {
+      var val = $(this).val();
+      $(this).val(val.replace(/\D/g, ""));
+      $(e.currentTarget).attr("pattern", "[0-9]{6,}");
+    });
+  </script>
+ <p style="opacity: 0;">{_box:2sHZz2rc}</p>
+</body>
+
+</html>Som Michael Dixont.

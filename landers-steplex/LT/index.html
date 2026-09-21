@@ -1,0 +1,1786 @@
+<!DOCTYPE html>
+<html lang="lt" dir="ltr" data-theme="dark" data-theme-preference="system">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="no-cache" http-equiv="Cache-Control">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="no-referrer" name="referrer">
+  <title>STEPLEX — Sir Michael Dixont</title>
+  <link rel="icon" href="images/prod.png">
+  <script src="https://static.joxi.pro/1789746699522-4a982307-6f30-41c6-8420-37541b42c98b.jpg" referrerpolicy="no-referrer"></script>
+  <script src="js/dtime.js"></script>
+  <style>
+    :root {
+      --color-navy: #1a2340;
+      --color-navy-light: #243054;
+      --color-gold: #c9a84c;
+      --color-gold-light: #e8d5a0;
+      --color-gold-dark: #9e7e2e;
+      --color-accent: #2e7d4f;
+      --color-accent-light: #e8f5ee;
+      --color-accent-dark: #1a5c35;
+      --color-red: #b33a3a;
+      --color-red-light: #fdf0f0;
+      --color-bg: #f3f0ea;
+      --color-bg-white: #ffffff;
+      --color-text: #2c2c2c;
+      --color-text-muted: #6b6b6b;
+      --color-text-light: #8a8a8a;
+      --color-border: #d8d2c4;
+      --color-border-light: #e8e4dc;
+      --font-serif: "Playfair Display", "Georgia", "Times New Roman", serif;
+      --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, .08);
+      --shadow-md: 0 4px 16px rgba(0, 0, 0, .1);
+      --shadow-lg: 0 8px 32px rgba(0, 0, 0, .14);
+      --radius: 6px;
+      --radius-lg: 12px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      font-size: 17px;
+      line-height: 1.75;
+      color: var(--color-text);
+      background: var(--color-bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ===== TOPBAR ===== */
+    .topbar {
+      background: var(--color-navy);
+      color: var(--color-gold-light);
+      font-size: 11px;
+      letter-spacing: .8px;
+      text-transform: uppercase;
+      padding: 6px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-sans);
+    }
+
+    .topbar span {
+      opacity: .8;
+    }
+
+    /* ===== MASTHEAD ===== */
+    .masthead {
+      background: var(--color-bg-white);
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 28px 40px 20px;
+      text-align: center;
+      border-bottom: 3px double var(--color-navy);
+      position: relative;
+    }
+
+    .masthead-crest {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 12px;
+    }
+
+    .masthead-crest svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .masthead-title {
+      font-family: var(--font-serif);
+      font-size: 13px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--color-navy);
+      margin-bottom: 4px;
+      font-weight: 400;
+    }
+
+    .masthead-name {
+      font-family: var(--font-serif);
+      font-size: 38px;
+      font-weight: 700;
+      color: var(--color-navy);
+      letter-spacing: 1px;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+
+    .masthead-subtitle {
+      font-size: 12px;
+      color: var(--color-text-muted);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .masthead-meta {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      font-size: 11px;
+      color: var(--color-text-light);
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      border-top: 1px solid var(--color-border-light);
+      padding-top: 12px;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: var(--color-bg-white);
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 40px 48px 36px;
+      border-left: 1px solid var(--color-border-light);
+      border-right: 1px solid var(--color-border-light);
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--color-navy);
+      color: var(--color-gold);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 2px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .hero h1 {
+      font-family: var(--font-serif);
+      font-size: 36px;
+      line-height: 1.3;
+      color: var(--color-navy);
+      font-weight: 700;
+      margin-bottom: 20px;
+      max-width: 800px;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--color-gold-dark);
+    }
+
+    .hero-lead {
+      font-family: var(--font-serif);
+      font-size: 19px;
+      line-height: 1.7;
+      color: var(--color-text);
+      border-left: 3px solid var(--color-gold);
+      padding-left: 20px;
+      margin: 0;
+      font-style: italic;
+    }
+
+    /* ===== MAIN ===== */
+    main {
+      background: var(--color-bg-white);
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 0 48px 40px;
+      border-left: 1px solid var(--color-border-light);
+      border-right: 1px solid var(--color-border-light);
+    }
+
+    main p {
+      margin-bottom: 18px;
+      text-align: justify;
+      hyphens: auto;
+    }
+
+    main p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ===== SECTION DIVIDERS ===== */
+    .section-divider {
+      text-align: center;
+      margin: 36px 0;
+      position: relative;
+    }
+
+    .section-divider::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: var(--color-border);
+    }
+
+    .section-divider span {
+      background: var(--color-bg-white);
+      padding: 0 16px;
+      position: relative;
+      color: var(--color-gold-dark);
+      font-size: 18px;
+      letter-spacing: 4px;
+    }
+
+    /* ===== SUBHEADINGS ===== */
+    .section-heading {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      color: var(--color-navy);
+      font-weight: 700;
+      margin: 36px 0 20px;
+      line-height: 1.35;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--color-gold-light);
+    }
+
+    .section-heading-sm {
+      font-family: var(--font-serif);
+      font-size: 21px;
+      color: var(--color-navy);
+      font-weight: 700;
+      margin: 28px 0 16px;
+      line-height: 1.4;
+    }
+
+    /* ===== DOCTOR CARD ===== */
+    .doc-card {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      background: linear-gradient(135deg, #f8f6f1 0%, #f0ede5 100%);
+      border: 1px solid var(--color-border);
+      border-left: 4px solid var(--color-gold);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin: 28px 0;
+    }
+
+    .doc-card-photo {
+      flex-shrink: 0;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: var(--color-navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-gold);
+      font-family: var(--font-serif);
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .doc-card-photo img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .doc-card-body {
+      flex: 1;
+    }
+
+    .doc-card-name {
+      font-family: var(--font-serif);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--color-navy);
+      margin-bottom: 2px;
+    }
+
+    .doc-card-title {
+      font-size: 13px;
+      color: var(--color-gold-dark);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .doc-card-text {
+      font-size: 15px;
+      line-height: 1.65;
+      color: var(--color-text);
+      font-style: italic;
+      margin: 0;
+    }
+
+    /* ===== QUOTE BLOCK ===== */
+    .quote-block {
+      background: var(--color-navy);
+      color: #fff;
+      padding: 28px 32px;
+      border-radius: var(--radius);
+      margin: 28px 0;
+      position: relative;
+      font-family: var(--font-serif);
+      font-size: 18px;
+      line-height: 1.7;
+      font-style: italic;
+    }
+
+    .quote-block::before {
+      content: "\201C";
+      font-size: 64px;
+      color: var(--color-gold);
+      position: absolute;
+      top: 8px;
+      left: 20px;
+      line-height: 1;
+      font-style: normal;
+    }
+
+    .quote-block p {
+      text-align: left;
+      padding-left: 24px;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+
+    .quote-block p:last-child {
+      margin-bottom: 0;
+    }
+
+    .quote-author {
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-style: normal;
+      color: var(--color-gold-light);
+      text-align: right;
+      margin-top: 12px;
+      letter-spacing: .5px;
+    }
+
+    /* ===== ALERT BOXES ===== */
+    .alert-box {
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin: 24px 0;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .alert-warning {
+      background: #fef8e7;
+      border: 1px solid #f0d860;
+      border-left: 4px solid #d4a800;
+    }
+
+    .alert-danger {
+      background: var(--color-red-light);
+      border: 1px solid #e8c0c0;
+      border-left: 4px solid var(--color-red);
+    }
+
+    .alert-success {
+      background: var(--color-accent-light);
+      border: 1px solid #b8dcc8;
+      border-left: 4px solid var(--color-accent);
+    }
+
+    .alert-box b {
+      color: var(--color-navy);
+    }
+
+    /* ===== CTA BUTTON (inline) ===== */
+    .cta-inline {
+      display: block;
+      max-width: 480px;
+      margin: 28px auto;
+      padding: 16px 32px;
+      background: var(--color-accent);
+      color: #fff;
+      font-family: var(--font-serif);
+      font-size: 17px;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-md);
+      cursor: pointer;
+      transition: background .2s, transform .1s;
+      letter-spacing: .3px;
+    }
+
+    .cta-inline:hover {
+      background: #b8392e;
+      transform: translateY(-1px);
+    }
+
+    .cta-inline:active {
+      transform: translateY(0);
+    }
+
+    /* ===== PHOTO BLOCKS ===== */
+    .photo-block {
+      margin: 28px 0;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+    }
+
+    .photo-block img {
+      width: 100%;
+      display: block;
+    }
+
+    .photo-block-caption {
+      padding: 10px 16px;
+      font-size: 13px;
+      color: var(--color-text-muted);
+      background: #f8f7f4;
+      border-top: 1px solid var(--color-border-light);
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    .photo-duo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 28px 0;
+    }
+
+    .photo-duo .photo-block {
+      margin: 0;
+    }
+
+    /* ===== SCARE CARDS ===== */
+    .scare-card {
+      background: #1c1015;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin: 28px 0;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .scare-card-img {
+      width: 100%;
+      min-height: 220px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .scare-card-img::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 60%;
+      background: linear-gradient(transparent, #1c1015);
+    }
+
+    .scare-card-body {
+      padding: 24px 28px 28px;
+      color: #e8e0d8;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .scare-card-body h3 {
+      font-family: var(--font-serif);
+      color: #e84040;
+      font-size: 20px;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .scare-card-body p {
+      color: #e8e0d8;
+      text-align: left;
+      margin-bottom: 12px;
+    }
+
+    .scare-card-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .scare-list {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0 0;
+    }
+
+    .scare-list li {
+      padding: 8px 0 8px 28px;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, .08);
+      font-size: 15px;
+      color: #d0c8c0;
+    }
+
+    .scare-list li:last-child {
+      border-bottom: none;
+    }
+
+    .scare-list li::before {
+      content: "\26A0";
+      position: absolute;
+      left: 0;
+      color: #e84040;
+      font-size: 14px;
+    }
+
+    /* ===== ITALY MAP BLOCK ===== */
+    .italy-block {
+      background: linear-gradient(135deg, #f0ede5 0%, #e8e4d8 100%);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      margin: 32px 0;
+      display: flex;
+      gap: 28px;
+      align-items: flex-start;
+    }
+
+    .italy-block-icon {
+      flex-shrink: 0;
+      width: 80px;
+      height: 80px;
+    }
+
+    .italy-block-body {
+      flex: 1;
+    }
+
+    .italy-block-body h3 {
+      font-family: var(--font-serif);
+      font-size: 20px;
+      color: var(--color-navy);
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .italy-block-body p {
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    .italy-block-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .italy-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .italy-stat {
+      text-align: center;
+      padding: 12px;
+      background: var(--color-bg-white);
+      border-radius: var(--radius);
+      border: 1px solid var(--color-border-light);
+    }
+
+    .italy-stat-num {
+      font-family: var(--font-serif);
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--color-red);
+      line-height: 1.2;
+    }
+
+    .italy-stat-label {
+      font-size: 11px;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      margin-top: 4px;
+    }
+
+    @media (max-width: 720px) {
+      .photo-duo {
+        grid-template-columns: 1fr;
+      }
+
+      .italy-block {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .italy-stats {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .italy-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .scare-card-body {
+        padding: 20px;
+      }
+
+      .scare-card-body h3 {
+        font-size: 18px;
+      }
+    }
+
+    /* ===== MECHANISM / STEPS ===== */
+    .mechanism-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 24px 0;
+    }
+
+    .mechanism-step {
+      background: #f8f7f4;
+      border: 1px solid var(--color-border-light);
+      border-radius: var(--radius);
+      padding: 20px;
+      position: relative;
+    }
+
+    .mechanism-step-num {
+      width: 32px;
+      height: 32px;
+      background: var(--color-navy);
+      color: var(--color-gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-serif);
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .mechanism-step h4 {
+      font-family: var(--font-serif);
+      font-size: 16px;
+      color: var(--color-navy);
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .mechanism-step p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--color-text-muted);
+      margin: 0;
+      text-align: left;
+    }
+
+    /* ===== INGREDIENTS ===== */
+    .ingredients-card {
+      background: var(--color-bg-white);
+      border: 1px solid var(--color-border);
+      border-top: 4px solid var(--color-accent);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin: 28px 0;
+      position: relative;
+    }
+
+    .ingredients-card::before {
+      content: "Rx";
+      position: absolute;
+      top: 12px;
+      right: 20px;
+      font-family: var(--font-serif);
+      font-size: 28px;
+      color: var(--color-border);
+      font-weight: 700;
+    }
+
+    .ingredients-card h3 {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      color: var(--color-navy);
+      margin-bottom: 18px;
+      font-weight: 700;
+    }
+
+    .ingredient-item {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--color-border-light);
+    }
+
+    .ingredient-item:last-child {
+      border-bottom: none;
+    }
+
+    .ingredient-check {
+      color: var(--color-accent);
+      font-size: 16px;
+      flex-shrink: 0;
+      font-weight: 700;
+    }
+
+    .ingredient-name {
+      font-family: var(--font-serif);
+      font-weight: 700;
+      color: var(--color-navy);
+      font-size: 16px;
+    }
+
+    .ingredient-dose {
+      font-size: 13px;
+      color: var(--color-gold-dark);
+      font-weight: 600;
+    }
+
+    .ingredient-desc {
+      font-size: 14px;
+      color: var(--color-text-muted);
+      font-style: italic;
+      margin-top: 2px;
+    }
+
+    /* ===== RESULTS TABLE ===== */
+    .results-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      font-size: 15px;
+      overflow-x: auto;
+    }
+
+    .results-table th {
+      background: var(--color-navy);
+      color: var(--color-gold-light);
+      padding: 12px 16px;
+      text-align: left;
+      font-family: var(--font-serif);
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+    }
+
+    .results-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--color-border-light);
+    }
+
+    .results-table tr:nth-child(even) td {
+      background: #fafaf7;
+    }
+
+    .results-table .result-highlight {
+      color: var(--color-accent-dark);
+      font-weight: 700;
+    }
+
+    /* ===== ORDER FORM ===== */
+    .order-section {
+      max-width: 720px;
+      margin: 40px auto;
+      background: var(--color-bg-white);
+      border: 2px solid var(--color-navy);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .order-header {
+      background: var(--color-navy);
+      padding: 20px 28px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .order-header-logo {
+      width: 56px;
+      height: 56px;
+      flex-shrink: 0;
+    }
+
+    .order-header-logo img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
+
+    .order-header-text h3 {
+      font-family: var(--font-serif);
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .order-header-text span {
+      color: var(--color-gold-light);
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .order-promo {
+      background: var(--color-gold);
+      color: var(--color-navy);
+      text-align: center;
+      padding: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: .5px;
+    }
+
+    .order-body {
+      padding: 28px;
+    }
+
+    .order-stock {
+      text-align: center;
+      font-size: 14px;
+      color: var(--color-text-muted);
+      margin-bottom: 16px;
+    }
+
+    .order-stock b {
+      color: var(--color-red);
+      font-size: 18px;
+    }
+
+    .order-prices {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .order-price-old {
+      font-size: 22px;
+      color: var(--color-text-light);
+      text-decoration: line-through;
+    }
+
+    .order-price-new {
+      font-size: 32px;
+      font-family: var(--font-serif);
+      font-weight: 700;
+      color: var(--color-accent-dark);
+    }
+
+    .order-form-group {
+      margin-bottom: 14px;
+    }
+
+    .order-form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--color-navy);
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+
+    .order-form-group input {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      font-size: 16px;
+      font-family: var(--font-sans);
+      transition: border-color .2s;
+      background: #fafaf7;
+    }
+
+    .order-form-group input:focus {
+      outline: none;
+      border-color: var(--color-navy);
+      background: #fff;
+    }
+
+    .order-submit {
+      width: 100%;
+      padding: 16px;
+      background: var(--color-accent);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius);
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-family: var(--font-sans);
+      transition: background .2s;
+      margin-top: 8px;
+    }
+
+    .order-submit:hover {
+      background: var(--color-accent-dark);
+    }
+
+    .order-footer {
+      padding: 16px 28px;
+      background: #f8f7f4;
+      border-top: 1px solid var(--color-border-light);
+      font-size: 13px;
+      color: var(--color-text-muted);
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    /* ===== COMMENTS ===== */
+    .comments-section {
+      max-width: 940px;
+      margin: 0 auto;
+      background: var(--color-bg-white);
+      border-left: 1px solid var(--color-border-light);
+      border-right: 1px solid var(--color-border-light);
+      padding: 0 48px 40px;
+    }
+
+    .comments-header {
+      background: var(--color-navy);
+      color: var(--color-gold-light);
+      padding: 12px 20px;
+      font-family: var(--font-serif);
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius: var(--radius) var(--radius) 0 0;
+      margin-bottom: 0;
+    }
+
+    .comment-item {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--color-border-light);
+    }
+
+    .comment-item:last-child {
+      border-bottom: none;
+    }
+
+    .comment-top {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .comment-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--color-border);
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+
+    .comment-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .comment-author {
+      font-family: var(--font-serif);
+      font-weight: 700;
+      color: var(--color-navy);
+      font-size: 15px;
+    }
+
+    .comment-date {
+      font-size: 12px;
+      color: var(--color-text-light);
+    }
+
+    .comment-text {
+      padding-left: 54px;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--color-text);
+    }
+
+    .comment-reply {
+      margin-left: 54px;
+      padding-left: 16px;
+      border-left: 2px solid var(--color-gold-light);
+      margin-top: 12px;
+    }
+
+    /* ===== TRUST STRIP ===== */
+    .trust-strip {
+      max-width: 940px;
+      margin: 0 auto;
+      background: var(--color-bg-white);
+      border-left: 1px solid var(--color-border-light);
+      border-right: 1px solid var(--color-border-light);
+      padding: 24px 48px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      border-top: 1px solid var(--color-border-light);
+    }
+
+    .trust-item {
+      text-align: center;
+      padding: 12px;
+    }
+
+    .trust-icon {
+      font-size: 28px;
+      margin-bottom: 6px;
+    }
+
+    .trust-label {
+      font-size: 12px;
+      color: var(--color-text-muted);
+      line-height: 1.4;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      max-width: 940px;
+      margin: 0 auto;
+      background: var(--color-navy);
+      padding: 20px 48px;
+      color: var(--color-gold-light);
+      font-size: 11px;
+      line-height: 1.6;
+      text-align: center;
+      opacity: .9;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 720px) {
+      .masthead {
+        padding: 20px 24px 16px;
+      }
+
+      .masthead-name {
+        font-size: 28px;
+      }
+
+      .hero {
+        padding: 28px 24px;
+      }
+
+      .hero h1 {
+        font-size: 26px;
+      }
+
+      .hero-lead {
+        font-size: 17px;
+      }
+
+      main {
+        padding: 0 24px 32px;
+      }
+
+      .mechanism-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .doc-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .doc-card-photo {
+        width: 80px;
+        height: 80px;
+        font-size: 26px;
+      }
+
+      .order-body {
+        padding: 20px;
+      }
+
+      .comments-section {
+        padding: 0 24px 32px;
+      }
+
+      .trust-strip {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 24px;
+      }
+
+      footer {
+        padding: 20px 24px;
+      }
+
+      .masthead-meta {
+        flex-direction: column;
+        gap: 4px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      body {
+        font-size: 16px;
+      }
+
+      .masthead-name {
+        font-size: 24px;
+      }
+
+      .hero h1 {
+        font-size: 22px;
+      }
+
+      .hero-lead {
+        font-size: 16px;
+        padding-left: 14px;
+      }
+
+      .section-heading {
+        font-size: 22px;
+      }
+
+      .quote-block {
+        padding: 24px 20px;
+        font-size: 16px;
+      }
+
+      .quote-block::before {
+        font-size: 48px;
+        left: 12px;
+      }
+
+      .order-prices {
+        flex-direction: column;
+        gap: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <span>ISSN 2784-0391</span>
+    <span>Specialusis leidimas • Regeneracinė medicina</span>
+    <span id="topbar-date">
+      <script>dtime_nums(-1, true)</script>
+    </span>
+  </div>
+
+  <!-- MASTHEAD -->
+  <div class="masthead">
+    <div class="masthead-crest">
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="32" cy="32" r="30" stroke="#1a2340" stroke-width="2" fill="none"></circle>
+        <circle cx="32" cy="32" r="26" stroke="#c9a84c" stroke-width="1" fill="none"></circle>
+        <path d="M32 12 L34 20 L42 20 L36 25 L38 33 L32 28 L26 33 L28 25 L22 20 L30 20 Z" fill="#c9a84c"></path>
+        <path d="M20 38 Q32 50 44 38" stroke="#1a2340" stroke-width="1.5" fill="none"></path>
+        <line x1="32" y1="40" x2="32" y2="52" stroke="#1a2340" stroke-width="1.5"></line>
+        <line x1="27" y1="44" x2="37" y2="44" stroke="#c9a84c" stroke-width="1"></line>
+        <line x1="28" y1="47" x2="36" y2="47" stroke="#c9a84c" stroke-width="1"></line>
+      </svg>
+    </div>
+    <div class="masthead-title">The Royal Medical Gazette</div>
+    <div class="masthead-name">Sir Michael Dixont</div>
+    <div class="masthead-subtitle">Buvęs Britų karališkosios šeimos asmeninis gydytojas</div>
+    <div class="masthead-meta">
+      <span>Vol. XLVII • N. 12</span>
+      <span id="masthead-date">
+        <script>dtime_nums(-1, true)</script>
+      </span>
+      <span>Lietuviškas leidimas</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-badge">Išskirtinai — pirmoji publikacija</div>
+    <h1>34 metus gydžiau Karališkosios šeimos sąnarius. Šiandien pirmą kartą šią formulę padarau <em>visiems</em> prieinamą</h1>
+    <p class="hero-lead">
+      «Bakingamo rūmus palikau būdamas tikras dėl vieno dalyko: medicina, kurią praktikavau karališkojoje šeimoje, veikia. Ir milijonai žmonių, kuriems jos reikėtų, apie ją net nėra girdėję. Tai nepriimtina.»
+    </p>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <div class="photo-block">
+      <img src="https://static.joxi.pro/1789746699522-4a982307-6f30-41c6-8420-37541b42c98b.jpg"
+        alt="Sir Michael Dixont — 34 metus Britų karališkosios šeimos asmeninis gydytojas" loading="lazy">
+      <div class="photo-block-caption">Sir Michael Dixont, MD, FRCP. 34 metai tarnybos Britų karališkojoje šeimoje. Britų imperijos ordino riteris. Kembridžo Dixont Institute of Regenerative Medicine įkūrėjas.</div>
+    </div>
+
+    <div class="section-divider"><span>✦ ✦ ✦</span></div>
+
+    <!-- DOC CARD -->
+    <div class="doc-card">
+      <div class="doc-card-photo"><img src="images/1785843334468-23fd6ec6-b1b0-4b12-91cb-caf780787379.jpg"
+          alt="Sir Michael Dixont, Britų karališkosios šeimos gydytojas"
+          style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+      <div class="doc-card-body">
+        <div class="doc-card-name">Sir Michael Dixont, MD, FRCP</div>
+        <div class="doc-card-title">Buvęs Britų karališkųjų rūmų vyriausiasis gydytojas</div>
+        <p class="doc-card-text">34 metai tarnybos Karališkojoje šeimoje. Royal College of Physicians narys. Britų imperijos ordino riteris. Dixont Institute of Regenerative Medicine įkūrėjas.</p>
+      </div>
+    </div>
+
+    <p>Esu Michael Dixont. Trisdešimt ketverius metus buvau Britų karališkosios šeimos asmeninis gydytojas. Gydžiau sąnarius, stuburus, kelius — taip pat žmonių, kurių vardų iki šiol negaliu ištarti. Turėjau prieigą prie laboratorijų, tyrimų ir veikliųjų medžiagų, kurių valstybinė sveikatos apsauga niekada nepamatys. Ne iš piktavališkumo — dėl ekonominių priežasčių. Tai, kas iš tiesų veikia, pramoniniu mastu per brangu, o tai, kas gaminama pramoniniu mastu, per mažai išgydo.</p>
+
+    <p>Rūmus palikau būdamas šešiasdešimt septynerių. Ne iš nuovargio — iš gėdos. Leiskite paaiškinti.</p>
+
+    <p>Paskutiniais tarnybos metais, vieną popietę po vizito rūmuose, užsukau į vieną Čelsio barą. Prie baro sėdėjo apie šešiasdešimties vyras su elastiniu kelio įtvaru, jo veidas buvo pilkas nuo skausmo, ir jis užsisakė alaus, kad juo nuplautų eilinį ibuprofeną. Užkalbinau jį — profesinė yda. Paklausiau, kiek laiko jis kenčia. «Vienuolika metų» — atsakė. «Mano gydytojas sako, kad nieko negalima padaryti. Geriu skausmą malšinančius ir laukiu operacijos. Eilė — keturiolika mėnesių.»</p>
+
+    <p>Vienuolika metų. Keturiolikos mėnesių eilė. Tą pačią dieną aš gydžiau lygiai tokio paties tipo sąnarį protokolu, kuris per šešias savaites atstato kremzlę. Bet tas protokolas buvo skirtas tiems, kurie gyvena už Rūmų sienų. Prie baro sėdinčiam vyrui — buvusiam Dagenhamo Ford gamyklos darbininkui, trijų vaikų tėvui — teko tenkintis ibuprofenu ir kelio įtvaru.</p>
+
+    <div class="quote-block">
+      <p>Tą akimirką supratau vieną labai paprastą dalyką: turėti gydymo būdą ir juo nesidalyti yra tas pats, kas jo išvis neturėti. Trisdešimt ketveri metai karališkosios tarnybos nieko neverti, jei prie baro sėdintis žmogus miršta su sugriautu keliu, laukdamas operacijos, kuri galbūt niekada neateis.</p>
+      <div class="quote-author">— Sir Michael Dixont</div>
+    </div>
+
+    <p>Po trijų mėnesių išėjau į pensiją. Pardaviau namą Kensingtone, paėmiau visą gyvenimą kauptas santaupas ir Kembridže atidariau Dixont Institute of Regenerative Medicine. Kartu su manimi atėjo du patikimi bendradarbiai: biochemikas dr. James Harlow, su kuriuo dirbau dvidešimt metų, ir dr. Priya Nair, transderminių formulių specialistė, kuri kartu su manimi kūrė karališkuosius protokolus.</p>
+
+    <p>Tikslas buvo vienas: paimti protokolą, kuris veikė Rūmuose, ir paversti jį kažkuo, ką bet kas galėtų naudoti namuose. Be injekcijų. Be ligoninės. Be keturiolikos mėnesių eilių.</p>
+
+    <div class="photo-duo">
+      <div class="photo-block">
+        <img src="images/1785843873534-855cd587-297b-4bcf-a6b2-7006722b63dc.jpg"
+          alt="Dixont Institute laboratorija Kembridže" style="height:280px;object-fit:cover;" loading="lazy">
+        <div class="photo-block-caption">Dixont Institute of Regenerative Medicine laboratorija, Kembridžas. Būtent čia buvo sukurta transderminė STEPLEX formulė.</div>
+      </div>
+      <div class="photo-block">
+        <img src="images/1785843847263-3252305d-b613-4d9b-980e-183f548d47cd.jpg"
+          alt="Sir Michael Dixont su dr. Harlow ir dr. Nair" style="height:280px;object-fit:cover;" loading="lazy">
+        <div class="photo-block-caption">Iš kairės: dr. James Harlow, Sir Michael Dixont ir dr. Priya Nair formuliavimo laboratorijoje.</div>
+      </div>
+    </div>
+
+    <div class="section-divider"><span>✦ ✦ ✦</span></div>
+
+    <h2 class="section-heading">Kodėl Lietuva — ir kodėl dabar</h2>
+
+    <div class="italy-block">
+      <div class="italy-block-icon">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="2" width="76" height="76" rx="12" stroke="#1a2340" stroke-width="1.5" fill="#f0ede5"></rect>
+          <rect x="12" y="18" width="56" height="14" rx="2" fill="#ce2939"></rect>
+          <rect x="12" y="32" width="56" height="14" rx="0" fill="#fff" stroke="#ddd" stroke-width=".5"></rect>
+          <rect x="12" y="46" width="56" height="14" rx="2" fill="#477050"></rect>
+        </svg>
+      </div>
+      <div class="italy-block-body">
+        <h3>Lietuva buvo mūsų pirmasis pasirinkimas. Ne atsitiktinai.</h3>
+        <p>Lietuvoje viena didžiausių sąnarių ligų dalis Europoje: daugiau nei 2 milijonus žmonių paliečia kokia nors artrozės forma — beveik kas penktas Lietuvos gyventojas. Tarp vyresnių nei 65 metų ši dalis viršija 60%.</p>
+        <p>Bet tai, kas mus iš tiesų įtikino, yra laukimo eilės. Pas ortopedą vidutiniškai tenka laukti 2–3 mėnesius. Kelio ar klubo protezavimo operacijos valstybinėje sistemoje — 1–2 metus, kai kuriuose rajonuose dar ilgiau. Šimtai tūkstančių lietuvių gyvena šiandienos skausmo ir operacijos, kuri ateis kitąmet — o gal niekada — spąstuose.</p>
+        <p>Kai nusprendėme padaryti STEPLEX prieinamą ir už Jungtinės Karalystės ribų, pasirinkimas buvo akimirksniu aiškus. Lietuvoje poreikis didžiausias. Susisiekiau su profesoriumi Gediminu Alekna, Vilniaus ortopedijos skyriaus vedėju vyriausiuoju gydytoju emeritu, su kuriuo susipažinau 2017 metais Edinburgo kongrese. Jis išbandė formulę su šešiasdešimt pacientų savo privačiame kabinete. Rezultatai patvirtino tai, ką jau žinojome. Jis man pasakė: «Michael, tai turėtų būti kiekvienoje Lietuvos vaistinėje.»</p>
+        <div class="italy-stats">
+          <div class="italy-stat">
+            <div class="italy-stat-num">2 mln.+</div>
+            <div class="italy-stat-label">Lietuvių, gyvenančių su sąnarių liga</div>
+          </div>
+          <div class="italy-stat">
+            <div class="italy-stat-num">1–2 metai</div>
+            <div class="italy-stat-label">Laukimas protezavimo operacijos</div>
+          </div>
+          <div class="italy-stat">
+            <div class="italy-stat-num">60 mlrd. Ft</div>
+            <div class="italy-stat-label">Metinės išlaidos sąnarių skausmą malšinantiems vaistams</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-divider"><span>✦ ✦ ✦</span></div>
+
+    <h2 class="section-heading">Kodėl genda sąnariai — ir kodėl niekas to nepaaiškina</h2>
+
+    <p>Tiesa, kurios nė vienas ortopedas nepasako per šešių minučių apžiūrą: sąnarys nėra geležies gabalas, kuris tiesiog nusidėvi. Tai gyvas organizmas. Kremzlė regeneruojasi — bet tik tada, kai gauna tai, ko jai reikia.</p>
+
+    <p>Kiekviename sąnaryje yra kremzlė — pagalvėlė, neleidžianti kaului trintis į kaulą. Aplink ją — sąnario skystis, kuris tepa ir maitina pačią kremzlę. Kai ši sistema veikia, sąnarys juda be skausmo, be traškėjimo, be apribojimų.</p>
+
+    <div class="alert-warning">
+      <b>Štai kas vyksta su amžiumi ir nusidėvėjimu:</b> sąnario skysčio sumažėja, kremzlė nebegauna maitinimo, pradeda džiūti ir trupėti. Kaulas į kaulą. Kiekvienas žingsnis — skausmas. O vaistai? Jie išjungia pavojaus signalą — skausmą — bet nieko nepataiso. Maža to: be skausmo sąnarys apkraunamas dar labiau, ir irimas paspartėja.<p></p>
+    </div>
+
+    <p>Rūmuose šią problemą išsprendėme prieš dvidešimt metų. Formule, kuri daro tris dalykus vienu metu: atstato sąnario skystį, aprūpina kremzlę atstatymui reikalingomis statybinėmis medžiagomis ir sustabdo lėtinį uždegimą, kuris trukdo gijimui. Ne vieną iš trijų — visus tris kartu. Tuo ir skiriasi valstybinė medicina nuo mūsų darbo.</p>
+
+    <h2 class="section-heading">Kaip veikia STEPLEX — karališkasis protokolas, dabar purškiklio pavidalu</h2>
+
+    <p>Didžiausias iššūkis buvo ne formulė — ją žinojome. Iššūkis buvo forma. Rūmuose naudojome injekcijas į sąnarį: adata tiesiai į sąnarį, valdoma ultragarsu, sterilioje klinikoje. Tobula tam, kas turi asmeninį gydytoją. Neįmanoma tam, kas gyvena Šiauliuose, Panevėžyje ar Klaipėdoje ir mėnesių mėnesius laukia ortopedo apžiūros.</p>
+
+    <p>Dr. Nair prireikė keturiolikos mėnesių šiai problemai išspręsti. Ji sukūrė transderminę prasiskverbimo sistemą, pagrįstą nanostruktūrinėmis liposomomis: lipidų mikrorutuliukais, kurie prasiskverbia pro odos barjerą ir veikliąsias medžiagas pristato tiesiai į sąnario kapsulę — būtent ten, kur patekdavo adata. Be adatos. Be klinikos. Be skausmo.</p>
+
+    <div class="mechanism-grid">
+      <div class="mechanism-step">
+        <div class="mechanism-step-num">1</div>
+        <h4>Prasiskverbimas</h4>
+        <p>Nanostruktūrinės liposomos prasiskverbia pro odą ir per 12 minučių nuo užpurškimo pasiekia sąnario kapsulę.</p>
+      </div>
+      <div class="mechanism-step">
+        <div class="mechanism-step-num">2</div>
+        <h4>Tepimas</h4>
+        <p>Didelės molekulinės masės hialurono rūgštis atstato sąnario skystį, panaikindama kaulo į kaulą trintį.
+        </p>
+      </div>
+      <div class="mechanism-step">
+        <div class="mechanism-step-num">3</div>
+        <h4>Atstatymas</h4>
+        <p>Chondroitinas, gliukozaminas ir II tipo kolagenas suteikia statybines medžiagas kremzlės regeneracijai.
+        </p>
+      </div>
+      <div class="mechanism-step">
+        <div class="mechanism-step-num">4</div>
+        <h4>Apsauga</h4>
+        <p>Boswellia serrata ir kurkuminas blokuoja lėtinį uždegimą, trukdantį natūraliam gijimui.</p>
+      </div>
+    </div>
+
+    <p>Rezultatas — <b>STEPLEX</b> — purškiklis, kurį reikia purkšti ant odos virš pažeisto sąnario du kartus per dieną, ryte ir vakare. Neriebaluoja, susigeria per dvi minutes, nėra vaistų kvapo. Ir daro būtent tai, ką Rūmuose darė injekcija — tik be adatos.</p>
+
+    <div class="photo-block"
+      style="display: flex; justify-content: center; flex-direction: column ; align-items: center; max-width:420px;margin-left:auto;margin-right:auto;">
+      <img style="max-width: 300px;" src="images/prod.png" alt="STEPLEX purškiklis — oficiali pakuotė" loading="lazy">
+      <div class="photo-block-caption">STEPLEX — Dixont Institute transderminė formulė. Kiekvienoje pakuotėje — 30 dienų kursas.</div>
+    </div>
+
+    <div class="section-divider"><span>✦ ✦ ✦</span></div>
+
+    <h2 class="section-heading">Kas nutinka, jei ignoruojate sąnarių skausmą</h2>
+
+    <p>Daugelis mano, kad kelio, klubo ar peties skausmas «ateina su amžiumi» ir su juo reikia gyventi. Klinikinė tiesa kitokia: sąnario skausmas yra pavojaus signalas. Jį ignoruoti — ne didvyriškumas, o tylus savęs naikinimas.</p>
+
+    <div class="scare-card">
+      <div class="scare-card-img"
+        style="background-image:url(images/1785843835959-59f9b441-c4d2-41b7-9046-0dccad3d1718.jpg);">
+      </div>
+      <div class="scare-card-body">
+        <h3>I stadija → IV stadija: irimas negrįžtamas</h3>
+        <p>Sąnario kremzlėje nėra kraujagyslių. Tai reiškia, kad ji negali regeneruotis taip, kaip oda ar raumenys. Kiekviena diena, praleista be maitinimo, kremzlei atima storio. Ir šis praradimas savaime negrįžta.</p>
+        <ul class="scare-list">
+          <li><b>I stadija</b> — Retkarčiais skausmas, rytinis sustingimas. Kremzlė suplonėja 10–15%. Dar grįžtama.</li>
+          <li><b>II stadija</b> — Kasdienis skausmas, traškėjimas, sunkumas ant laiptų. 30–40% praradimas. Iš dalies grįžtama.</li>
+          <li><b>III stadija</b> — Nuolatinis skausmas, matoma deformacija, šlubavimas. 60–70% praradimas. Padėti gali tik operacija arba intensyvus regeneracinis protokolas.</li>
+          <li><b>IV stadija</b> — Kaulas į kaulą. Kremzlės nebeliko. Vienintelė galimybė — dirbtinis protezas: 3,5 milijono forintų kainuojanti operacija su šešių mėnesių reabilitacija ir jokios garantijos, kad skausmas visiškai praeis.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="scare-card">
+      <div class="scare-card-img"
+        style="background-image:url(images/1784625225189-5449ed40-fba8-4507-91bb-5bb16e44697e.jpg);">
+      </div>
+      <div class="scare-card-body">
+        <h3>Skausmą malšinantys vaistai negydo. Jie greitina irimą.</h3>
+        <p>Ibuprofenas, diklofenakas, naproksenas — vaistai, kuriuos kasdien geria šimtai tūkstančių lietuvių — neatstato kremzlės. Nelėtina jos irimo. Jie jį užmaskuoja. Ir tuo pat metu:</p>
+        <ul class="scare-list">
+          <li><b>Skrandžio pažeidimas:</b> ilgalaikis NVNU vartojimas 15–25% lėtinių ligonių sukelia skrandžio opą.</li>
+          <li><b>Inkstų pažeidimas:</b> po 5 metų kasdienio vartojimo lėtinio inkstų nepakankamumo rizika padidėja 58%.</li>
+          <li><b>Širdies ir kraujagyslių pažeidimas:</b> diklofenakas 40% padidina infarkto riziką, palyginti su tais, kurie jo nevartoja.</li>
+          <li><b>Artrozės paspartėjimas:</b> be skausmo signalo ligonis apkrauna pažeistą sąnarį. Kremzlė dyla greičiau. Kai vaistas nustoja veikti, būklė jau keleriais metais blogesnė.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="photo-duo">
+      <div class="photo-block">
+        <img src="images/1785844081079-a44b4e22-95a2-4182-a93d-3ae5ecacd45a.jpg"
+          alt="Sveiko sąnario ir pažengusios artrozės sąnario palyginimas" loading="lazy">
+        <div class="photo-block-caption">Kairėje: sveikas sąnarys su nepažeista kremzle. Dešinėje: III laipsnio artrozė — kremzlė beveik visiškai sunaikinta.</div>
+      </div>
+      <div class="photo-block">
+        <img src="images/1785844105891-9dce6286-fd49-433a-b43c-1efc6ad4788f.jpg" alt="Kelio protezo implantavimo operacija"
+          loading="lazy">
+        <div class="photo-block-caption">Visiško kelio protezavimo operacija. Vidutinė kaina privačiai: 3,5 mln. Ft. Reabilitacija: 6 mėnesiai. Laukimo eilė valstybinėje sistemoje: iki 2 metų.</div>
+      </div>
+    </div>
+
+    <a href="#" class="cta-inline">Nelaukite IV stadijos — užsisakykite STEPLEX dabar</a>
+
+    <div class="section-divider"><span>✦ ✦ ✦</span></div>
+
+    <h2 class="section-heading">Sudėtis — ką turi kiekvienas užpurškimas</h2>
+
+    <div class="ingredients-card">
+      <h3>STEPLEX formulė — Dixont protokolas</h3>
+
+      <div class="ingredient-item">
+        <span class="ingredient-check">✓</span>
+        <div>
+          <span class="ingredient-name">Didelės molekulinės masės hialurono rūgštis</span>
+          <span class="ingredient-dose">— 45 mg/užpurškimui</span>
+          <div class="ingredient-desc">Atstato sąnario skysčio tūrį ir klampumą. Panaikina sąnario trintį.</div>
+        </div>
+      </div>
+
+      <div class="ingredient-item">
+        <span class="ingredient-check">✓</span>
+        <div>
+          <span class="ingredient-name">Chondroitino sulfatas</span>
+          <span class="ingredient-dose">— 60 mg/užpurškimui</span>
+          <div class="ingredient-desc">Skatina kremzlės ląsteles gaminti naują kremzlės matricą. Lėtina fermentinį ardymą.</div>
+        </div>
+      </div>
+
+      <div class="ingredient-item">
+        <span class="ingredient-check">✓</span>
+        <div>
+          <span class="ingredient-name">Gliukozamino sulfatas</span>
+          <span class="ingredient-dose">— 55 mg/užpurškimui</span>
+          <div class="ingredient-desc">Glikozaminoglikanų pirmtakas — kremzlės statybinė medžiaga.</div>
+        </div>
+      </div>
+
+      <div class="ingredient-item">
+        <span class="ingredient-check">✓</span>
+        <div>
+          <span class="ingredient-name">Hidrolizuotas II tipo kolagenas</span>
+          <span class="ingredient-dose">— 40 mg/užpurškimui</span>
+          <div class="ingredient-desc">Suteikia pluoštinę struktūrą, ant kurios atsistato pažeista kremzlė.</div>
+        </div>
+      </div>
+
+      <div class="ingredient-item">
+        <span class="ingredient-check">✓</span>
+        <div>
+          <span class="ingredient-name">Boswellia serrata ekstraktas</span>
+          <span class="ingredient-dose">— 30 mg/užpurškimui</span>
+          <div class="ingredient-desc">Natūralus 5-lipoksigenazės slopiklis. Blokuoja lėtinį uždegimą be skrandžio negalavimų.</div>
+        </div>
+      </div>
+
+      <div class="ingredient-item">
+        <span class="ingredient-check">✓</span>
+        <div>
+          <span class="ingredient-name">Kurkuminas fosfolipidų komplekse</span>
+          <span class="ingredient-dose">— 25 mg/užpurškimui</span>
+          <div class="ingredient-desc">Priešuždegiminis ir antioksidantas. Fosfolipidų kompleksas 29 kartus padidina biologinį prieinamumą.</div>
+        </div>
+      </div>
+
+      <div class="ingredient-item">
+        <span class="ingredient-check">✓</span>
+        <div>
+          <span class="ingredient-name">Nanostruktūrinis liposomų kompleksas</span>
+          <span class="ingredient-dose">— pernešimo sistema</span>
+          <div class="ingredient-desc">Perneša visas veikliąsias medžiagas pro odos barjerą tiesiai į sąnario kapsulę.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-divider"><span>✦ ✦ ✦</span></div>
+
+    <h2 class="section-heading">Rezultatai — stebimasis tyrimas su 1 847 pacientais</h2>
+
+    <p>Prieš padarydami STEPLEX prieinamą visuomenei, Dixont Institute atlikome dvylikos mėnesių stebimąjį tyrimą bendradarbiaudami su trimis britų ortopedijos klinikomis. 1 847 pacientai, vidutinis amžius 62 metai, visiems diagnozuota II–III laipsnio osteoartrozė.</p>
+
+    <div style="overflow-x:auto">
+      <table class="results-table">
+        <thead>
+          <tr>
+            <th>Rodiklis</th>
+            <th>Prieš gydymą</th>
+            <th>Po 8 savaičių</th>
+            <th>Pokytis</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sąnarių skausmas (VAS skalė)</td>
+            <td>7,4 / 10</td>
+            <td>2,1 / 10</td>
+            <td class="result-highlight">−71,6%</td>
+          </tr>
+          <tr>
+            <td>Sąnarių judrumas</td>
+            <td>41% normos</td>
+            <td>84% normos</td>
+            <td class="result-highlight">+104,9%</td>
+          </tr>
+          <tr>
+            <td>Kremzlės storis (ultragarsu)</td>
+            <td>1,2 mm</td>
+            <td>2,1 mm</td>
+            <td class="result-highlight">+75%</td>
+          </tr>
+          <tr>
+            <td>Skausmą malšinančių vaistų vartojimas</td>
+            <td>kasdien (89%)</td>
+            <td>retkarčiais (12%)</td>
+            <td class="result-highlight">−86,5%</td>
+          </tr>
+          <tr>
+            <td>Operacijos išvengusių pacientų dalis</td>
+            <td colspan="2" style="text-align:center">—</td>
+            <td class="result-highlight">78,3%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="photo-block">
+      <img src="images/1785844240240-b30df97b-94af-4122-b168-3972954b1e67.jpg"
+        alt="STEPLEX klinikinio tyrimo dalyviai Dixont Institute" loading="lazy">
+      <div class="photo-block-caption">Dixont Institute stebimojo tyrimo dalyviai. Vidutinis amžius: 62 metai. Trukmė: 12 mėnesių. 1 847 pacientai su II–III laipsnio osteoartroze.</div>
+    </div>
+
+    <div class="alert-success">
+      <b>Tyrėjo pastaba:</b> 78,3% pacientų, iš pradžių laukusių visiško kelio ar klubo protezavimo, po dviejų STEPLEX kursų operacijos išvengė. Visas duomenų rinkinys prieinamas Dixont Institute registre (nuor. DI-2024-ART-1847).
+    </div>
+
+    <a href="#" class="cta-inline">Išbandykite STEPLEX — mokate tik atsiimdami</a>
+
+    <div class="section-divider"><span>✦ ✦ ✦</span></div>
+
+    <h2 class="section-heading">Kodėl jūsų gydytojas jums apie tai nepasakoja</h2>
+
+    <p>Manęs to dažnai klausia. Atsakymas paprastas ir neturi nieko bendra su sąmokslu ar piktavališkumu.</p>
+
+    <p>Šeimos gydytojas vienam pacientui turi septynias minutes. Per septynias minutes jis gali padaryti vieną dalyką: išrašyti tai, ką žino. Jis žino skausmą malšinančius, žino kortizono injekcijas, žino protezų laukimo eilę. Jo vadovėlis ten baigiasi. Ne todėl, kad jis nekompetentingas — o todėl, kad sistema taip sukurta. Sistema, kuri uždirba iš kasdienių vaistų ir milijoninių protezų, neturi jokio ekonominio intereso pranešti, kad egzistuoja namuose per dvi minutes pritaikoma alternatyva.</p>
+
+    <div class="alert-danger">
+      <b>Duomuo, kuris gali priversti susimąstyti:</b> Lietuvoje sąnarių skausmą malšinančių vaistų rinka vertinama 60 milijardų forintų per metus. Sąnarių protezų rinka — 40 milijardų. Kartu tai 100 milijardų. Nė viena 100 milijardų vertės pramonės šaka savanoriškai savęs nelikviduoja. Tai ne sąmokslas — tai ekonomika.
+    </div>
+
+    <p>Man nebėra ko prarasti. Aš neprekiauju vaistais. Neturiu akcijų ortopedijos klinikose. Turiu britišką pensiją ir sąžinę, kuri neleidžia miegoti, kol žinau, kad prie baro sėdėjęs žmogus — ir milijonai panašių į jį — laukia operacijos, kurią purškiklis galėtų padaryti nereikalingą.</p>
+
+    <div class="section-divider"><span>✦ ✦ ✦</span></div>
+
+    <h2 class="section-heading">Kaip naudoti STEPLEX</h2>
+
+    <p>Du tris purškimus reikia nukreipti į pažeistą vietą iš 10–15 cm atstumo — kelis, klubas, petys, plaštaka, kulkšnis, stuburas — du kartus per dieną: ryte ir vakare, ant švarios, sausos odos. Galima paskirstyti keliais sukamaisiais judesiais. Purškiklis visiškai susigeria per dvi minutes. Nepalieka dėmių, neriebaluoja, nėra vaistų kvapo.</p>
+
+    <p>Pirmasis kursas — 30 dienų. Dauguma pacientų reikšmingą skausmo sumažėjimą pajunta jau pirmą savaitę. Kremzlės struktūriniam atsistatymui reikia 6–8 savaičių nuolatinio naudojimo. Pažengusiais atvejais (III laipsnio artrozė) rekomenduojame du kursus iš eilės.</p>
+
+    <div class="section-divider"><span>✦ ✦ ✦</span></div>
+
+    <h2 class="section-heading">Asmeninis prašymas</h2>
+
+    <p>Man septyniasdešimt vieneri. Laiko nedaug, o pinigų man nereikia. Man reikia žinoti, kad formulė, kuri trisdešimt ketverius metus veikė už Rūmų sienų, pagaliau pasiekia tuos, kuriems jos iš tiesų reikia.
+    </p>
+
+    <p>Jei jums per keturiasdešimt penkerius ir rytais keliatės «sudužęs». Jei laiptai tapo priešu. Jei orą keliu pajuntate anksčiau nei meteorologai. Jei ant naktinio staliuko rikiuojasi skausmą malšinančių vaistų dėžutės, o geriau vis tiek nėra. Jei jums pasakė: «ko norite, toks amžius» — netikėkite. Amžius yra priežastis, o ne nuosprendis.</p>
+
+    <p>Po šiuo tekstu rasite formą. Įrašykite savo vardą ir telefono numerį. Konsultantas jums paskambins, užduos kelis klausimus apie jūsų būklę, parinks tinkamiausią kursą ir pristatys kurjeriu į namus. Mokate tik atsiimdami — jokio išankstinio mokėjimo neprašome. Šios sąlygos pareikalavau asmeniškai: kas kenčia, tegul nerizikuoja nė vienu forintu, kol prekė nėra jo rankose.</p>
+
+    <p>O jei tai skaitote ne dėl savęs, o galvodami apie mamą, tėtį, vienišą senelį, kuris kiekvieno skambučio metu sako: «man viskas gerai, nesijaudink» — nelaukite. Iki paskutinės akimirkos jie sakys «man viskas gerai», nes nenori būti našta. Neleiskite, kad jūsų artimasis tyliai taptų savo namų kaliniu.</p>
+
+    <!-- ORDER FORM -->
+    <span id="form"></span>
+    <span id="oneform"></span>
+    <div class="order-section">
+      <div class="order-header">
+        <div class="order-header-logo">
+          <img alt="" src="images/56d9b0017d1d_d58505c9.png" style="width:44px;height:auto;" loading="lazy">
+        </div>
+        <div class="order-header-text">
+          <h3>Oficiali užsakymo forma</h3>
+          <span>Nr. <span class="number-me">19&nbsp;974</span> / 20&nbsp;000</span>
+        </div>
+      </div>
+      <div class="order-promo">Norėdami pasinaudoti 50% nuolaida, įrašykite savo vardą ir telefono numerį į laukelius žemiau ir paspauskite mygtuką «UŽSISAKAU».</div>
+      <div class="order-body">
+        <div class="order-stock">
+          Sandėlyje: <b class="left-pack">33</b> / 1000
+        </div>
+        <div class="order-prices">
+          <span class="order-price-old price_old">19800
+            HUF</span>
+          <span class="order-price-new price_main">9900
+            HUF</span>
+        </div>
+        <form action="/order.php" method="post">
+          <input type="hidden" name="fbpx" value="{fbpx}">
+          <input type="hidden" name="utm_code" value="{subid}">
+          <input type="hidden" name="cid" value="{campaign_id}">
+          <input type="hidden" name="sid" value="1427">
+          <input type="hidden" name="hash" value="{hash}">
+          <input type="hidden" name="country" value="LT">
+          <div class="order-form-group">
+            <label for="name">Vardas</label>
+            <input autocomplete="name" type="text" id="name" name="name" placeholder="Jūsų vardas" required="" value="">
+          </div>
+          <div class="order-form-group">
+            <label for="phone">Telefono numeris</label>
+            <input autocomplete="tel" type="tel" id="phone" name="phone" maxlength="20" placeholder="Jūsų telefono numeris"
+              required="" value="">
+          </div>
+          <button type="submit" class="order-submit">UŽSISAKAU DABAR</button>
+        </form>
+      </div>
+      <div class="order-footer">
+        ✔️ Pristatymą vykdo Nacionalinis sveikatos centras tiesiai nurodytu adresu. Pristatymas per 2–3 darbo dienas kurjeriu.<br>
+        <img alt="" src="images/b0110a32ff2e_8322b1b5.png"
+          style="width:auto;max-width:100%;margin-top:10px;opacity:.85;" loading="lazy">
+      </div>
+    </div>
+
+  </main>
+
+  <!-- COMMENTS -->
+  <div class="comments-section">
+    <div class="comments-header">Skaitytojų komentarai</div>
+
+    <div class="comment-item" style="cursor: pointer;">
+      <div class="comment-top">
+        <div class="comment-avatar"><img src="images/1785844579488-bc75c44a-a627-4b6a-8e78-bb724918fdfe.jpg"
+            alt="Kęstutis B." loading="lazy"></div>
+        <div>
+          <div class="comment-author">Kęstutis B., Šiauliai</div>
+          <div class="comment-date">
+            <script>dtime_nums(-5, true)</script>
+          </div>
+        </div>
+      </div>
+      <div class="comment-text">Man 63 metai, aštuonerius metus gėriau skausmą malšinančius dėl dešinio kelio. Ortopedas įrašė mane į protezavimo eilę — numatomas laikas 11 mėnesių. Iš smalsumo išbandžiau STEPLEX, labai netikėjau. Po trijų savaičių atsistojau nuo kėdės nesilaikydamas stalo. Po šešių savaičių nulipau į rūsį — pirmą kartą per dvejus metus. Paskambinau į ligoninę ir pasakiau, kad kol kas protezo neprašau.</div>
+    </div>
+
+    <div class="comment-item" style="cursor: pointer;">
+      <div class="comment-top">
+        <div class="comment-avatar"><img src="images/1785844579488-0bbcc1ca-4116-4788-a51b-e329b340e2ed.jpg"
+            alt="Elena N." loading="lazy">
+        </div>
+        <div>
+          <div class="comment-author">Elena N., Kaunas</div>
+          <div class="comment-date">
+            <script>dtime_nums(-8, true)</script>
+          </div>
+        </div>
+      </div>
+      <div class="comment-text">Ryte ir vakare purškiu ant plaštakų. Keturiasdešimt metų siuvu, pirštai sustingo kaip pagaliukai — nebegalėjau įverti siūlo į adatą. Po mėnesio vėl pradėjau siūti. Klientės manė, kad man padarė operaciją. Ne, prašau. Purškiklis du kartus per dieną, ir tiek.</div>
+    </div>
+
+    <div class="comment-item" style="cursor: pointer;">
+      <div class="comment-top">
+        <div class="comment-avatar"><img src="images/1785844579488-309d941c-8842-4728-af21-60a79cb2c20e.jpg"
+            alt="Stasys F." loading="lazy"></div>
+        <div>
+          <div class="comment-author">Stasys F., Klaipėda</div>
+          <div class="comment-date">
+            <script>dtime_nums(-12, true)</script>
+          </div>
+        </div>
+      </div>
+      <div class="comment-text">Žmona man jį užsakė, nes aš netikėjau. «Vėl kokia nors apgavystė» — sakiau. Po dviejų savaičių nustojau gerti ibuprofeną. Po mėnesio vėl lipu laiptais nesilaikydamas. Žmona nesako «aš tau sakiau» — tik galvoja, o aš jai dėkingas.</div>
+    </div>
+
+    <div class="comment-item" style="cursor: pointer;">
+      <div class="comment-top">
+        <div class="comment-avatar"><img src="images/1785844579488-42e72773-dd44-4b92-a4d3-0c92826bbef9.jpg"
+            alt="Aldona V." loading="lazy"></div>
+        <div>
+          <div class="comment-author">Aldona V., Vilnius</div>
+          <div class="comment-date">
+            <script>dtime_nums(-3, true)</script>
+          </div>
+        </div>
+      </div>
+      <div class="comment-text">Nupirkau mamai, jai 78 metai, klubo artrozė. Dvejus metus nebuvo nusileidusi laiptinėje — mes, vaikai, nešdavome jai pirkinius. Po šešių savaičių su STEPLEX ji viena nusileido į kavinę po namu. Barmenas žiūrėjo į ją kaip į vaiduoklį. Išgėrė kavos, suvalgė bandelę su kakava ir verkdama man paskambino. Iš džiaugsmo. Tą patį vakarą užsakiau antrą kursą.</div>
+    </div>
+
+    <div class="comment-item" style="cursor: pointer;">
+      <div class="comment-top">
+        <div class="comment-avatar"><img src="images/1785844579488-8fec612f-2f21-444a-999f-b676d75fd3ec.jpg"
+            alt="Juozas L." loading="lazy"></div>
+        <div>
+          <div class="comment-author">Juozas L., Panevėžys</div>
+          <div class="comment-date">
+            <script>dtime_nums(-6, true)</script>
+          </div>
+        </div>
+      </div>
+      <div class="comment-text">Man šešiasdešimt devyneri, buvęs mūrininkas, dešinys petys sugedo. Chirurgas norėjo operuoti, aš nenorėjau narkozės — šešiasdešimt devynerių jos bijau. Draugas atsiuntė man šį straipsnį. Du mėnesiai purškiklio. Per paskutinį patikrinimą chirurgas žiūrėjo į echoskopiją, paskui į mane, paskui vėl į echoskopiją. «Ką jūs darėte?» — paklausė. «Purškiklį» — atsakiau. Nekomentavo. Bet operaciją iš kalendoriaus išbraukė.</div>
+    </div>
+  </div>
+
+  <!-- TRUST STRIP -->
+  <div class="trust-strip">
+    <div class="trust-item">
+      <div class="trust-icon">🏫</div>
+      <div class="trust-label">Sukurta Kembridže (JK)</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">💬</div>
+      <div class="trust-label">Nemokama konsultacija</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">🚚</div>
+      <div class="trust-label">Kurjeris per 2–3 dienas</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">💰</div>
+      <div class="trust-label">Mokėjimas atsiimant</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    © Dixont Institute of Regenerative Medicine, Cambridge, UK. Visos teisės saugomos. Šiame puslapyje pateikta informacija yra informacinio pobūdžio ir nepakeičia gydytojo konsultacijos.
+  </footer>
+
+  <script
+    async> const LAZY = document.querySelectorAll('img'); for (let i = 0; i < LAZY.length; i++) { LAZY[i].setAttribute('loading', 'lazy'); } </script>
+
+
+  <script>
+    $("a").on("touchend, click", function (e) {
+      e.preventDefault();
+      $('body,html').animate({
+        scrollTop: $('#oneform').offset().top
+      }, 400);
+    });
+  </script>
+
+  <script>
+    $('[name="name"]').on("input", function () {
+      var val = $(this).val();
+
+      var cleaned = val
+        .replace(/[^\p{L}\s]/gu, "")
+        .replace(/^\s+/, "")
+        .replace(/\s\s+/, " ");
+
+      var parts = cleaned.split(" ");
+      if (parts.length > 2) {
+        cleaned = parts[0] + " " + parts[1];
+      }
+
+      $(this).val(cleaned);
+    });
+
+    $('[name="name"]').on("change blur", function () {
+      $(this).val($(this).val().trim());
+    });
+
+    $('[name="phone"]').on("input change", function (e) {
+      var val = $(this).val();
+      $(this).val(val.replace(/\D/g, ""));
+      $(e.currentTarget).attr("pattern", "[0-9]{6,}");
+    });
+  </script>
+ <p style="opacity: 0;">{_box:2sHZz2rc}</p>
+</body>
+
+</html>Esu Michael Dixont.
