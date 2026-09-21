@@ -28,7 +28,7 @@ T[18]=('Som Michael Dixont. Tridsaťštyri rokov som bol osobným lekárom Brits
        'ekonomických dôvodov. To, čo naozaj funguje, je v priemyselnom meradle príliš drahé, a to, čo sa vyrába '
        'priemyselne, lieči príliš málo.')
 T[19]='Palác som opustil ako šesťdesiatsedemročný. Nie z únavy — z hanby. Dovoľte mi to vysvetliť.'
-T[20]=('Jedno popoludnie posledného roku služby, po dvornej vizite, som zašiel do jedného chelseaského pubu. Pri '
+T[20]=('Jedno popoludnie posledného roku služby, po vizite na kráľovskom dvore som zašiel do jedného chelseaského pubu. Pri '
        'pulte sedel asi šesťdesiatročný muž s elastickou ortézou na kolene, tvár mal sivú od bolesti a objednával '
        'si pivo, aby ním zapil ďalší ibuprofén. Dal som sa s ním do reči — profesionálna deformácia. Spýtal som '
        'sa, ako dlho trpí. «Jedenásť rokov» — povedal. «Môj lekár hovorí, že sa nedá nič robiť. Beriem lieky '
@@ -214,7 +214,7 @@ T[154]='Prečo vám o tom váš lekár nepovie'
 T[155]='Často sa ma na to pýtajú. Odpoveď je jednoduchá a nemá nič spoločné so sprisahaním ani so zlým úmyslom.'
 T[156]=('Obvodný lekár má na pacienta sedem minút. Za sedem minút môže urobiť jedinú vec: predpísať to, čo pozná. '
         'Pozná lieky proti bolesti, pozná kortizónové injekcie, pozná čakaciu lehotu na protézu. Jeho príručka '
-        'tam končí. Nie preto, že by bol neschopný — ale preto, že systém je tak postavený. Systém, ktorý '
+        'tam končí. Nie preto, že by bol neschopný — ale preto, že systém je takto nastavený. Systém, ktorý '
         'zarába na denných liekoch a miliónových protézach, nemá žiaden ekonomický záujem dať vedieť, že '
         'existuje alternatíva, ktorú si možno doma aplikovať za dve minúty.')
 T[157]='Údaj, ktorý vás môže prinútiť zamyslieť sa:'

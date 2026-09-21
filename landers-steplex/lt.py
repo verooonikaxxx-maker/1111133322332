@@ -30,7 +30,7 @@ T[18]=('Esu Michael Dixont. Trisdešimt ketverius metus buvau Britų karališkos
 T[19]='Rūmus palikau būdamas šešiasdešimt septynerių. Ne iš nuovargio — iš gėdos. Leiskite paaiškinti.'
 T[20]=('Paskutiniais tarnybos metais, vieną popietę po vizito rūmuose, užsukau į vieną Čelsio barą. Prie baro '
        'sėdėjo apie šešiasdešimties vyras su elastiniu kelio įtvaru, jo veidas buvo pilkas nuo skausmo, ir jis '
-       'užsisakė alaus, kad juo nuplautų eilinį ibuprofeną. Užkalbinau jį — profesinė yda. Paklausiau, kiek laiko '
+       'užsisakė alaus, kad juo užgertų eilinį ibuprofeną. Užkalbinau jį — profesinė yda. Paklausiau, kiek laiko '
        'jis kenčia. «Vienuolika metų» — atsakė. «Mano gydytojas sako, kad nieko negalima padaryti. Geriu skausmą '
        'malšinančius ir laukiu operacijos. Eilė — keturiolika mėnesių.»')
 T[21]=('Vienuolika metų. Keturiolikos mėnesių eilė. Tą pačią dieną aš gydžiau lygiai tokio paties tipo sąnarį '
@@ -49,21 +49,21 @@ T[25]=('Tikslas buvo vienas: paimti protokolą, kuris veikė Rūmuose, ir pavers
        'naudoti namuose. Be injekcijų. Be ligoninės. Be keturiolikos mėnesių eilių.')
 T[26]=('Dixont Institute of Regenerative Medicine laboratorija, Kembridžas. Būtent čia buvo sukurta transderminė '
        'STEPLEX formulė.')
-T[27]='Iš kairės: dr. James Harlow, Sir Michael Dixont ir dr. Priya Nair formuliavimo laboratorijoje.'
+T[27]='Iš kairės: dr. James Harlow, Sir Michael Dixont ir dr. Priya Nair formulių kūrimo laboratorijoje.'
 T[28]='✦ ✦ ✦'
 T[29]='Kodėl Lietuva — ir kodėl dabar'
 T[30]='Lietuva buvo mūsų pirmasis pasirinkimas. Ne atsitiktinai.'
-T[31]=('Lietuvoje viena didžiausių sąnarių ligų dalis Europoje: daugiau nei 2 milijonus žmonių paliečia kokia nors '
-       'artrozės forma — beveik kas penktas Lietuvos gyventojas. Tarp vyresnių nei 65 metų ši dalis viršija 60%.')
+T[31]=('Lietuvoje sąnarių ligų paplitimas yra vienas didžiausių Europoje: daugiau nei 2 milijonus žmonių paliečia kokia nors '
+       'artrozės forma — beveik kas penktas Lietuvos gyventojas. Tarp vyresnių nei 65 metų šis rodiklis viršija 60%.')
 T[32]=('Bet tai, kas mus iš tiesų įtikino, yra laukimo eilės. Pas ortopedą vidutiniškai tenka laukti 2–3 mėnesius. '
        'Kelio ar klubo protezavimo operacijos valstybinėje sistemoje — 1–2 metus, kai kuriuose rajonuose dar '
        'ilgiau. Šimtai tūkstančių lietuvių gyvena šiandienos skausmo ir operacijos, kuri ateis kitąmet — o gal '
        'niekada — spąstuose.')
-T[33]=('Kai nusprendėme padaryti STEPLEX prieinamą ir už Jungtinės Karalystės ribų, pasirinkimas buvo akimirksniu '
-       'aiškus. Lietuvoje poreikis didžiausias. Susisiekiau su profesoriumi Gediminu Alekna, Vilniaus ortopedijos '
-       'skyriaus vedėju vyriausiuoju gydytoju emeritu, su kuriuo susipažinau 2017 metais Edinburgo kongrese. Jis '
-       'išbandė formulę su šešiasdešimt pacientų savo privačiame kabinete. Rezultatai patvirtino tai, ką jau '
-       'žinojome. Jis man pasakė: «Michael, tai turėtų būti kiekvienoje Lietuvos vaistinėje.»')
+T[33]=('Kai nusprendėme padaryti STEPLEX prieinamą ir už Jungtinės Karalystės ribų, pasirinkimas buvo akivaizdus. '
+       'Lietuvoje poreikis didžiausias. Susisiekiau su profesoriumi Gediminu Alekna, buvusiu Vilniaus ligoninės '
+       'Ortopedijos skyriaus vedėju, su kuriuo susipažinau 2017 metais Edinburgo kongrese. Jis išbandė formulę su '
+       'šešiasdešimčia pacientų savo privačiame kabinete. Rezultatai patvirtino tai, ką jau žinojome. Jis man '
+       'pasakė: «Michael, tai turėtų būti kiekvienoje Lietuvos vaistinėje.»')
 T[34]='2 mln.+'
 T[35]='Lietuvių, gyvenančių su sąnarių liga'
 T[36]='1–2 metai'
@@ -218,7 +218,7 @@ T[156]=('Šeimos gydytojas vienam pacientui turi septynias minutes. Per septynia
         'laukimo eilę. Jo vadovėlis ten baigiasi. Ne todėl, kad jis nekompetentingas — o todėl, kad sistema taip '
         'sukurta. Sistema, kuri uždirba iš kasdienių vaistų ir milijoninių protezų, neturi jokio ekonominio '
         'intereso pranešti, kad egzistuoja namuose per dvi minutes pritaikoma alternatyva.')
-T[157]='Duomuo, kuris gali priversti susimąstyti:'
+T[157]='Skaičius, kuris gali priversti susimąstyti:'
 T[158]=('Lietuvoje sąnarių skausmą malšinančių vaistų rinka vertinama 60 milijardų forintų per metus. Sąnarių '
         'protezų rinka — 40 milijardų. Kartu tai 100 milijardų. Nė viena 100 milijardų vertės pramonės šaka '
         'savanoriškai savęs nelikviduoja. Tai ne sąmokslas — tai ekonomika.')
