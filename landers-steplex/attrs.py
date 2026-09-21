@@ -33,3 +33,15 @@ ALT={'LT':{
  'Térdprotézis-beültető műtét':'Operácia implantácie kolennej protézy',
  'A STEPLEX klinikai vizsgálatának résztvevői a Dixont Institute-ban':'Účastníci klinickej štúdie STEPLEX v Dixont Institute',
  'K. Béla':'Belo K.','N. Erzsébet':'Alžbeta N.','F. István':'Štefan F.','V. Andrea':'Andrea V.','L. József':'Jozef L.'}}
+
+ALT['BG']={
+ K:'Sir Michael Dixont — 34 години личен лекар на Британското кралско семейство',
+ 'Sir Michael Dixont, a Brit Királyi Család orvosa':'Sir Michael Dixont, лекар на Британското кралско семейство',
+ 'A Dixont Institute laboratóriuma Cambridge-ben':'Лабораторията на Dixont Institute в Кеймбридж',
+ 'Sir Michael Dixont dr. Harlow-val és dr. Nairrel':'Sir Michael Dixont с д-р Harlow и д-р Nair',
+ 'STEPLEX spray — hivatalos csomagolás':'Спрей STEPLEX — официална опаковка',
+ 'Egészséges ízület és előrehaladott artrózisos ízület összehasonlítása':'Сравнение между здрава става и става с напреднала артроза',
+ 'Térdprotézis-beültető műtét':'Операция за поставяне на колянна протеза',
+ 'A STEPLEX klinikai vizsgálatának résztvevői a Dixont Institute-ban':'Участници в клиничното проучване на STEPLEX в Dixont Institute',
+ 'K. Béla':'Кирил Б.','N. Erzsébet':'Елисавета Н.','F. István':'Стефан Ф.','V. Andrea':'Антония В.','L. József':'Йосиф Л.'}
+PH['BG']={'Az Ön neve':'Вашето име','Az Ön telefonszáma':'Вашият телефонен номер'}
