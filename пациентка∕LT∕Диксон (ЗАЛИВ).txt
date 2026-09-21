@@ -2,17 +2,17 @@ Turiu jums kai ką pasakyti — tai jus tikriausiai supykdys. Apie jūsų ortope
 
 Mano vardas Aldona. Man 57 metai. Šešerius metus žiūriu, kaip mano kelis pamažu griūva. Pastaruosius trejus metus skausmas vis stiprėjo, kad ir ką daryčiau.
 
-Ir kai sakau „kad ir ką daryčiau“ — turiu omenyje ABSOLIUČIAI VISKĄ.
+Ir kai sakau «kad ir ką daryčiau» — turiu omenyje ABSOLIUČIAI VISKĄ.
 
 Dariau mankštą — tą patį atspausdintą pratimų lapą, kurį duoda kineziterapijoje. Kas dieną, šešerius metus. Kelis ir toliau griuvo.
 
 Mėnesių mėnesius vaikščiojau į kineziterapiją. Magnetas, dešimt procedūrų, kursas po kurso, kaip į darbą. Vis tiek darėsi blogiau.
 
-Ibalginas. Paskui Movalis, o prie jo omeprazolas, nes pradėjo deginti skrandį. Kelio įtvaras, paskui antras, su lankstais ir brangesnis. Kortizono injekcija — tris mėnesius gyvenau kaip žmogus, o paskui pasidarė blogiau nei prieš ją. Hialurono rūgštis į sąnarį, trys injekcijos, jas vadina skystuoju protezu — užteko pusmečiui. „Dona“, paskui „Teraflex“ nuo vaistinės lentynos, dvejus metus gėriau. Numečiau aštuonis kilogramus. Pakeičiau visą gyvenimo būdą.
+Ibalginas. Paskui Movalis, o prie jo omeprazolas, nes pradėjo deginti skrandį. Kelio įtvaras, paskui antras, su lankstais ir brangesnis. Kortizono injekcija — tris mėnesius gyvenau kaip žmogus, o paskui pasidarė blogiau nei prieš ją. Hialurono rūgštis į sąnarį, trys injekcijos, jas vadina skystuoju protezu — užteko pusmečiui. «Dona», paskui «Teraflex» nuo vaistinės lentynos, dvejus metus gėriau. Numečiau aštuonis kilogramus. Pakeičiau visą gyvenimo būdą.
 
 Kelis? Vis tiek darėsi blogiau. Iš pradžių lipant laiptais žemyn. Paskui keliantis nuo kėdės. Paskui naktimis. Paskui prie kiekvieno judesio.
 
-Žinote, ką pasakė mano ortopedas? „Tiesiog tęskite tai, ką darote. Stebėsime.“
+Žinote, ką pasakė mano ortopedas? «Tiesiog tęskite tai, ką darote. Stebėsime.»
 
 PO VELNIŲ.
 
@@ -24,13 +24,13 @@ Nes šią akimirką vyksta trys dalykai:
 
 Pirma — jūsų kūnas šaukia, kad kažkas negerai.
 
-Antra — sveikatos sistema jus įtikinėja, kad tai tiesiog „amžius“ ir kad reikia ruoštis protezui.
+Antra — sveikatos sistema jus įtikinėja, kad tai tiesiog «amžius» ir kad reikia ruoštis protezui.
 
 Ir trečia — yra milijardinė pramonė, kuri kasdien uždirba iš to, kad jūsų problema tęsiasi.
 
 Šešerius metus nekeliu nieko sunkesnio už du kilogramus ir nepritūpiu. Mankštą darau kaip maldą. Į kineziterapiją einu kaip į visą etatą.
 
-Žinote kodėl? Nes visa kita neva „kenkia“. Kas rytą pabundu sudaužyta, dar nespėjus dienai prasidėti. Dešimt minučių laikausi baldų. Patinimas. Nuolatinis skaičiavimas, kiek žingsnių iki artimiausio suoliuko.
+Žinote kodėl? Nes visa kita neva «kenkia». Kas rytą pabundu sudaužyta, dar nespėjus dienai prasidėti. Dešimt minučių laikausi baldų. Patinimas. Nuolatinis skaičiavimas, kiek žingsnių iki artimiausio suoliuko.
 
 Tai vadinasi progresuojanti artrozė. Kremzlė mano sąnaryje griūva, ir, atrodo, niekam tai nerūpi.
 
@@ -64,7 +64,7 @@ Vos nepraslinkau pro šalį. Bet perskaičiau jos istoriją.
 
 Mankšta. Kineziterapija. Viskas, ką rekomendavo. Niekas neveikė.
 
-Gydytojas po gydytojo kartojo: „Tai tiesiog amžius. Ruoškitės protezui.“
+Gydytojas po gydytojo kartojo: «Tai tiesiog amžius. Ruoškitės protezui.»
 
 LYGIAI KAIP PAS MANE.
 
@@ -82,7 +82,7 @@ Vida rado straipsnį. Ne tabletes. Ne vaistinės buteliukus. Straipsnį.
 
 Anglų gydytojo straipsnį. Jo vardas — Sir Michael Dixont. Trisdešimt ketverius metus jis gydė karališkosios šeimos sąnarius — tuos pačius žmones, kuriuos mes matome tik per televizorių. Šešiasdešimt septynerių paliko rūmus, pardavė namą Kensingtone ir Kembridže atidarė institutą. O straipsnyje jis išdėstė viskas: kas tiksliai, kokiais kiekiais ir kokia tvarka grąžina kremzlei tai, iš ko ji statoma. Į sąnario vidų. Ten, kur problema.
 
-Gal galvojate: „O mankšta?“ arba „Aš juk einu į kineziterapiją“ arba „Argi vaistinės buteliukų sąnariams neužtenka?“
+Gal galvojate: «O mankšta?» arba «Aš juk einu į kineziterapiją» arba «Argi vaistinės buteliukų sąnariams neužtenka?»
 
 Ir taip, šiek tiek padėti gali.
 
@@ -138,7 +138,7 @@ Kelias sekundes negalėjau kalbėti.
 
 Vyras pažiūrėjo į mane, kai grįžau, tarsi pirmą kartą per daugelį metų mane matytų.
 
-Dukra praėjusią savaitę pasiūlė kelionę. Pirmą kartą per trejus metus pasakiau „taip“.
+Dukra praėjusią savaitę pasiūlė kelionę. Pirmą kartą per trejus metus pasakiau «taip».
 
 Nesu ypatinga. Nesu kitokia. Tiesiog pagaliau ėmiausi tikrosios, šaknies priežasties.
 
@@ -164,7 +164,7 @@ Pristatymas eina per odą, tiesiai į sąnarį, aplenkiant skrandį — ten, kur
 
 Bet kas mane siutina — tai jokia ne nauja mokslo naujiena.
 
-Tyrimai rodo, kad tikslinis kremzlės atkūrimas veikia jau dešimtmečius. Bet gydytojai ir toliau sako „nešiokite įtvarą ir ruoškitės protezui“, nes tai yra tai, ką jie moka.
+Tyrimai rodo, kad tikslinis kremzlės atkūrimas veikia jau dešimtmečius. Bet gydytojai ir toliau sako «nešiokite įtvarą ir ruoškitės protezui», nes tai yra tai, ką jie moka.
 
 Tuo tarpu mes atsisakome visko, ką mylime, gyvename žvilgčiodamos į kiekvieną laiptelį ir žiūrime, kaip kelis griūva, nors viską darome teisingai.
 
@@ -178,9 +178,9 @@ Jolanta: naktiniai skausmai praėjo pirmą kartą per 4 metus
 
 Algirdas (apie žmoną): visiškai išbraukta iš eilės protezui
 
-Nijolė: nuo „reikia kalbėti apie protezą“ iki normalių laiptų
+Nijolė: nuo «reikia kalbėti apie protezą» iki normalių laiptų
 
-Grupėje mes tai vadiname „pabėgimo nuo protezo planu“.
+Grupėje mes tai vadiname «pabėgimo nuo protezo planu».
 
 Nes tai jis ir yra. Pabėgimas:
 
@@ -244,9 +244,9 @@ Perskaitykite šio anglų gydytojo straipsnį. Nemokamai. Be registracijos. Konk
 
 P. S. — Keli dalykai, kurių gaila, kad nežinojau anksčiau:
 
-Kai pirmą kartą atsiverčiau tą straipsnį, nežinojau, kad receptas toks konkretus. Ne bendrai „maitinkitės sveikai ir judėkite“. Tikslios medžiagos. Tiksli dozė. Tiksli schema. Gaila, kad nepamačiau anksčiau — būčiau sutaupiusi mėnesius beverčiams metodams.
+Kai pirmą kartą atsiverčiau tą straipsnį, nežinojau, kad receptas toks konkretus. Ne bendrai «maitinkitės sveikai ir judėkite». Tikslios medžiagos. Tiksli dozė. Tiksli schema. Gaila, kad nepamačiau anksčiau — būčiau sutaupiusi mėnesius beverčiams metodams.
 
-Vienintelė bėda ta, kad tas straipsnis kol kas mažai kam žinomas. Dauguma ortopedų sako „darykite mankštą ir nešiokite įtvarą“ arba siūlo protezą. Šis gydytojas rodo trečią kelią, apie kurį niekas nekalba.
+Vienintelė bėda ta, kad tas straipsnis kol kas mažai kam žinomas. Dauguma ortopedų sako «darykite mankštą ir nešiokite įtvarą» arba siūlo protezą. Šis gydytojas rodo trečią kelią, apie kurį niekas nekalba.
 
 Jei turite bėdų su rytiniu sustingimu, naktiniu skausmu, laiptais, baime atsistoti nuo kėdės — ir ypač jei niekas iš to, ką darote, nepadeda — perskaitykite tą straipsnį, kol nepraradote dar daugiau laiko.
 
