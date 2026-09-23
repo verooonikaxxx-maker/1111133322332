@@ -1,3 +1,11 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@                                                      @@@
+@@@   ВСТАВИТЬ ИМЯ ВРАЧА — ОДИН РАЗ, АБЗАЦ 42@@@
+@@@   ИЩИ В ТЕКСТЕ ПО ЗНАКУ   @@@                        @@@
+@@@   ПОСЛЕ ВСТАВКИ УДАЛИ ЭТУ ШАПКУ                      @@@
+@@@                                                      @@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
 Je dois vous dire quelque chose qui va probablement vous mettre en colère — à propos de votre gynécologue.
 
 Je m'appelle Martine. J'ai 57 ans. Depuis six ans, je regarde mon incontinence s'aggraver lentement. Ces trois dernières années, les fuites n'ont cessé d'empirer, quoi que je fasse.
@@ -80,7 +88,7 @@ Pendant des années nous avons jeté des exercices sur le MAUVAIS problème.
 
 Françoise a trouvé une vidéo. Pas des cachets. Pas des compléments de pharmacie. Une vidéo.
 
-La courte vidéo de >>>Dr NOM DU MÉDECIN<<<, où elle montre la recette exacte de gélules naturelles qui reconstituent le collagène et l'élastine dans les tissus du périnée. De l'intérieur. Là où est le problème.
+La courte vidéo de @@@@@@@@@@ ВСТАВЬ ИМЯ ВРАЧА @@@@@@@@@@, où elle montre la recette exacte de gélules naturelles qui reconstituent le collagène et l'élastine dans les tissus du périnée. De l'intérieur. Là où est le problème.
 
 Vous pensez peut-être : « Et le Kegel ? » ou « Je fais de la rééducation » ou « Les compléments pour le périnée ne suffisent-ils pas ? »
 

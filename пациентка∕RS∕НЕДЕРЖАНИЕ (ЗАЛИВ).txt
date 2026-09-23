@@ -1,3 +1,11 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@                                                      @@@
+@@@   ВСТАВИТЬ ИМЯ ВРАЧА — ОДИН РАЗ, АБЗАЦ 42@@@
+@@@   ИЩИ В ТЕКСТЕ ПО ЗНАКУ   @@@                        @@@
+@@@   ПОСЛЕ ВСТАВКИ УДАЛИ ЭТУ ШАПКУ                      @@@
+@@@                                                      @@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
 Moram da vam kažem nešto što će vas verovatno naljutiti — o vašoj ginekologinji.
 
 Zovem se Snežana. Imam 57 godina. Šest godina gledam kako mi se inkontinencija polako pogoršava. Poslednje tri godine curenje se stalno pogoršavalo, šta god da sam radila.
@@ -80,7 +88,7 @@ Godinama smo bacale vežbe na POGREŠAN problem.
 
 Radmila je našla snimak. Ne tablete. Ne dodatke iz apoteke. Snimak.
 
-Kratak snimak >>>dr. IME LEKARA<<<, u kom pokazuje tačan recept za prirodne kapsule koje obnavljaju kolagen i elastin u tkivima karličnog dna. Iznutra. Tamo gde je problem.
+Kratak snimak @@@@@@@@@@ ВСТАВЬ ИМЯ ВРАЧА @@@@@@@@@@, u kom pokazuje tačan recept za prirodne kapsule koje obnavljaju kolagen i elastin u tkivima karličnog dna. Iznutra. Tamo gde je problem.
 
 Možda mislite: „A Kegel?" ili „Idem na fizioterapiju" ili „Zar dodaci za karlično dno nisu dovoljni?"
 

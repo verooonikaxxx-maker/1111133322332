@@ -1,3 +1,11 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@                                                      @@@
+@@@   ВСТАВИТЬ ИМЯ ВРАЧА — ОДИН РАЗ, АБЗАЦ 48@@@
+@@@   ИЩИ В ТЕКСТЕ ПО ЗНАКУ   @@@                        @@@
+@@@   ПОСЛЕ ВСТАВКИ УДАЛИ ЭТУ ШАПКУ                      @@@
+@@@                                                      @@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
 Prije dvije sedmice sam se upišala stojeći, držeći se za dršku u tramvaju. Pred ljudima.
 
 Ne zato što sam htjela. Nego zato što izbora više nisam imala.
@@ -92,7 +100,7 @@ Jer upravo to sam radila tri godine. Čekala da padne druga cipela. Čekala da m
 
 Došla sam kući i našla taj video.
 
->>>dr. IME LJEKARA<<< objašnjava ono što mi za tri godine nije objasnio nijedan pregled.
+@@@@@@@@@@ ВСТАВЬ ИМЯ ВРАЧА @@@@@@@@@@ objašnjava ono što mi za tri godine nije objasnio nijedan pregled.
 
 Karlično dno ne drži mišić koji vam govore da stežete. Mišić je pričvršćen na tkivo — na platno istkano od kolagena i elastina, od istih niti od kojih su koža i ligamenti. Porodi te niti kidaju. Hormoni ih prestaju obnavljati. Godine dojedaju ostalo.
 

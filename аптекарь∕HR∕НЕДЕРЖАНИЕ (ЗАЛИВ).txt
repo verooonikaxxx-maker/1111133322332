@@ -1,3 +1,11 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@                                                      @@@
+@@@   ВСТАВИТЬ ИМЯ ВРАЧА — ОДИН РАЗ, АБЗАЦ 31@@@
+@@@   ИЩИ В ТЕКСТЕ ПО ЗНАКУ   @@@                        @@@
+@@@   ПОСЛЕ ВСТАВКИ УДАЛИ ЭТУ ШАПКУ                      @@@
+@@@                                                      @@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
 Trideset i četiri godine stojim za ovim pultom. Sada ženama prodajem uloške za inkontinenciju — i šutim.
 
 Izdajem lijek. Kažem prije ili poslije jela. Nasmiješim se, poželim zdravlje. Ali znam da onoj ženi koja ovaj tjedan treći put dolazi po isto pakiranje uložaka ne trebaju ulošci. Vidim to na njoj. Vidim po licu, po očima, po tome kako stavlja pakiranje na pult naopako i pokrije ga novčanikom dok joj ga kucam. Znam. Ali ne smijem joj reći. Nisam liječnica.
@@ -58,7 +66,7 @@ Tada sam je prestala gledati kao ljekarnica i u njoj vidjela sebe. Išle smo po 
 
 Ono što mi je trebalo nisam našla u ljekarni. I nisam ga našla tada, nego nakon one noći u studenome. Rekla mi je jedna stara kolegica — radi u Osijeku, četrdeset godina ljekarnica, vjerujem joj. Čula je za prirodan način koji se u ljekarnama ne prodaje. On radi ne izvana nego iznutra: daje tkivu ono od čega je izgrađeno — kolagen i elastin — i daje ga navečer, da preko noći, dok ležiš, ode upravo u to tkivo. Ne zaglušuje signal, nego vraća oslonac. I mišići zdjeličnog dna, koje pošteno vježbaš, napokon dobiju na čemu da se drže.
 
-Kad sam saznala da iza toga stoji >>>dr. IME LIJEČNIKA<<< i da on sam sve objašnjava — kratak video, besplatno, bez registracije — pomislila sam: ovo nije televizijska reklama. Pogledala sam ga, ne odmičući se od stola. Objasnio mi je ono što mi u četiri godine nije objasnio nijedan pregled.
+Kad sam saznala da iza toga stoji @@@@@@@@@@ ВСТАВЬ ИМЯ ВРАЧА @@@@@@@@@@ i da on sam sve objašnjava — kratak video, besplatno, bez registracije — pomislila sam: ovo nije televizijska reklama. Pogledala sam ga, ne odmičući se od stola. Objasnio mi je ono što mi u četiri godine nije objasnio nijedan pregled.
 
 Deseti dan: spavala sam do jutra. Nisam ustala u tri — ustala sam u šest, od sunca. Plahta suha. To je bilo nešto drugo. To je bio odmor.
 
