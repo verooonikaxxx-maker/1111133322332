@@ -65,67 +65,67 @@ Hocam, bugün hanımlara tam olarak neyi tavsiye ettiğinizi anlatır mısınız
 
 **TR**
 
-Bugün konuşacağımız şey, mesaneye yeniden tam söz geçirmenin ve leğen tabanındaki gevşemiş dokuların hepsini kuvvetlendirmenin yolu.
+Bugün konuşacağımız şey, mesaneye yeniden tam söz geçirmenin ve leğen tabanındaki gevşemiş dokuları kuvvetlendirmenin yolu.
 
-Daha doğrusu: sürüp giden idrar kaçırmanın ve idrar yollarının vaktinden evvel yaşlanmasının asıl sebebini ortadan kaldırmanın yolu.
+Daha doğrusu: sürüp giden idrar kaçırmanın ve idrar yollarının vaktinden evvel yaşlanmasının asıl sebebini kaldırmanın yolu.
 
-Size sağlam bir mesaneyi, kendinize söz geçirmeyi ve insan içinde altınızı ıslatma korkusundan, gece kalkmalardan, o bitip tükenmeyen ped taşımaktan kurtulmayı geri verecek bir yol.
+Size sağlam bir mesaneyi, insan içinde altınızı ıslatma korkusundan, gece kalkmalardan ve o bitmeyen ped taşımaktan kurtulmayı geri verecek bir yol.
 
-Bir de şunun sebebi: yıllarca denediğiniz haplar, iğneler, eczaneden aldığınız mesane ilaçları neden kalıcı fayda etmiyor.
+Bir de şunun sebebi: yıllarca denediğiniz haplar, iğneler, eczane ilaçları neden kalıcı fayda etmiyor.
 
-Ve şunun: kimya olmadan, zehirli ilaç olmadan, ameliyat olmadan, hiçbir işe yaramayan o yorucu egzersizler olmadan ve tetkiklere, hastanelere bitmeyen para dökmeden yeniden kendinizi güvende ve kuru hissetmenin yolu.
+Ve şunun: kimyasız, zehirli ilaç olmadan, ameliyat olmadan, fayda etmeyen o yorucu egzersizler olmadan ve tetkiklere bitmeyen para dökmeden yeniden kuru ve güvende olmanın yolu.
 
 Ben şimdi ayrı ayrı saymıyorum: öksürünce kaçırma, ani sıkışma, huzursuz mesane, idrarı tutan kasın gevşemesi.
 
-Bu dertlerin hemen hepsinin kökü aynı ve hastanede bu kökten neredeyse hiç söz edilmiyor.
+Bu dertlerin hemen hepsinin kökü aynı ve hastanede bu kökten hiç söz edilmiyor.
 
-Her şey tek bir kökten başlıyorsa — onu durdurabilir miyiz? Kendimize gerçekten temelli söz geçirebilir miyiz?
+Her şey tek bir kökten başlıyorsa — onu durdurabilir miyiz? Temelli durdurabilir miyiz?
 
-Geçirebiliriz, Allah'ın izniyle. Ama bugüne kadar size sunulan yollarla değil.
+Durdurabiliriz, Allah'ın izniyle. Ama bugüne kadar size sunulan yollarla değil.
 
 Muhakkak size kuvvetli haplar, mesaneye botoks iğnesi veya pahalı ameliyatlar vaat edilmiştir.
 
 Hepsi de o ilaçları satanın kazancı için.
 
-Benim söylediğim büsbütün başka bir şey. Hakikaten fayda ediyor; bu kökü bana üroloji servisinde çalışan bir doktor, sık sık kapımı çalan bir dostum anlattı. Onun kelimeleriyle söyleyeyim.
+Benim söylediğim büsbütün başka bir şey. Bu kökü bana, sık sık kapımı çalan ürolog bir dostum anlattı. Onun kelimeleriyle söyleyeyim.
 
 Mesanenin duvarında sessiz bir iltihap yerleşiyor. Gözle görülmüyor ama durmadan sinir uçlarını tahriş ediyor, kas tabakasını ve idrarı tutan o kapağı sinsice kemiriyor.
 
-Yıllarca hiç belli etmeden gidiyor; bir gün bakıyorsunuz, mesane artık sizi dinlemiyor.
+Yıllarca belli etmeden gidiyor; bir gün bakıyorsunuz, mesane artık sizi dinlemiyor.
 
-Öksürürken, hapşırırken, gülerken kaçırma. Tutulamayan ani sıkışma. Gecede beş altı kere kalkmak. Mesanenin tam boşalmadığı hissi. Sürekli ıslaklık. Ciltte yanma. Dönüp dönüp gelen idrar yolu iltihapları. Eşinden uzaklaşmak — bunların hepsi netice.
+Öksürürken, hapşırırken, gülerken kaçırma. Tutulamayan ani sıkışma. Gecede beş altı kere kalkmak. Sürekli ıslaklık. Ciltte yanma. Dönüp dönüp gelen idrar yolu iltihapları. Eşinden uzaklaşmak — bunların hepsi netice.
 
 Son yıllarda anlaşılmış en mühim şeylerden biri bu.
 
-Ben bu işin peşine meraktan düşmedim: rahmetli anam son yıllarını bu dertle geçirdi, torunlarının karşısına çıkmaya utandığını gördüm. "Her derdin bir dermanı vardır" derler; ben de hizmette olduğum müddetçe o dermanı aradım. Din kardeşlerimle, aktarlarla ve Türkiye'nin dört bir yanındaki geleneksel tıp hekimleriyle beraber 2025 yılının Aralık ayında buna vardık.
+Bu işin peşine meraktan düşmedim: rahmetli anam son yıllarını bu dertle geçirdi, torunlarının karşısına çıkmaya utandığını gördüm. "Her derdin bir dermanı vardır" derler; ben de o dermanı aradım. Din kardeşlerimle, aktarlarla ve geleneksel tıp hekimleriyle beraber 2025'in Aralık ayında buna vardık.
 
-İdrar kaçırmanın var olduğunu herkes biliyor. Ama bugüne kadar kimse bu sessiz iltihabı zehirli ilaç olmadan nasıl söndüreceğini açıkça anlatmadı.
+İdrar kaçırmanın var olduğunu herkes biliyor. Ama kimse bu sessiz iltihabı zehirli ilaç olmadan nasıl söndüreceğini anlatmadı.
 
-Mesanenin toparlanması ve sözün yeniden sizde olması için, önce onun duvarındaki bu sessiz sebebi kaldırmak gerekiyor. Kimyasız, zehirsiz.
+Mesanenin toparlanması için önce duvarındaki bu sessiz sebebi kaldırmak gerekiyor. Kimyasız, zehirsiz.
 
 Halbuki eczanede bunu yapıp da ciğerinizi, böbreğinizi bozmayan tek bir ilaç yok.
 
-Tek yol, tabiattan gelen maddeler: doğru kullanıldığında mesanenin tahriş olmuş duvarını yatıştırıyor, o kapağa kuvvetini geri veriyor ve dokuyu bütün katmanlarda — kasta, sinirde, iç zarda — kaldırıyor.
+Tek yol, tabiattan gelen maddeler: tahriş olmuş duvarı yatıştırıyor, o kapağa kuvvetini geri veriyor ve dokuyu bütün katmanlarda kaldırıyor.
 
-Böylece yalnız sebep değil, onu ortadan kaldırmanın açık yolu da bulundu.
+Böylece yalnız sebep değil, onu kaldırmanın açık yolu da bulundu.
 
 **RU**
 
-Сегодня наш разговор — о способе полностью вернуть власть над мочевым пузырём и укрепить все ослабшие ткани тазового дна.
+Сегодня наш разговор — о способе полностью вернуть власть над мочевым пузырём и укрепить ослабшие ткани тазового дна.
 
 Точнее: о способе убрать главную причину непрекращающегося недержания и раннего старения мочевыводящих путей.
 
-О пути, который вернёт вам крепкий мочевой пузырь, власть над собой и избавление от страха обмочиться при людях, от ночных подъёмов, от этого бесконечного ношения прокладок.
+О пути, который вернёт вам крепкий мочевой пузырь и избавление от страха обмочиться при людях, от ночных подъёмов и от этого бесконечного ношения прокладок.
 
-И о том, почему таблетки, уколы и аптечные средства для мочевого пузыря, которые вы годами пробовали, не дают стойкой пользы.
+И о том, почему таблетки, уколы и аптечные средства, которые вы годами пробовали, не дают стойкой пользы.
 
-И о том, как снова почувствовать себя уверенно и сухо — без химии, без ядовитых лекарств, без операций, без тех изматывающих упражнений, которые ни на что не годны, и без бесконечных трат на обследования и больницы.
+И о том, как снова стать сухой и уверенной — без химии, без ядовитых лекарств, без операций, без тех изматывающих упражнений, что не помогают, и без бесконечных трат на обследования.
 
 Я сейчас не перечисляю отдельно: потеря мочи при кашле, внезапный позыв, беспокойный пузырь, ослабшая мышца, что держит мочу.
 
-Почти у всех этих бед один и тот же корень, и в больнице об этом корне почти никогда не говорят.
+Почти у всех этих бед один и тот же корень, и в больнице об этом корне не говорят.
 
-Если всё начинается с одного корня — можем ли мы его остановить? Можем ли и вправду вернуть власть над собой окончательно?
+Если всё начинается с одного корня — можем ли мы его остановить? Остановить окончательно?
 
 Можем, с позволения Аллаха. Но не теми путями, что вам предлагали до сих пор.
 
@@ -133,25 +133,25 @@ Böylece yalnız sebep değil, onu ortadan kaldırmanın açık yolu da bulundu.
 
 И всё это ради выгоды того, кто эти лекарства продаёт.
 
-То, о чём я говорю, — совсем другое. Оно и вправду помогает; а этот корень мне объяснил врач урологического отделения, мой приятель, который часто стучится в мою дверь. Скажу его словами.
+То, о чём я говорю, — совсем другое. Этот корень мне объяснил мой приятель, уролог, который часто стучится в мою дверь. Скажу его словами.
 
 В стенке мочевого пузыря заводится тихое воспаление. Глазом его не видно, но оно без устали раздражает нервные окончания и незаметно разъедает мышечный слой и ту заслонку, что держит мочу.
 
 Годами идёт, ничем себя не выдавая; а в один день видишь — мочевой пузырь тебя больше не слушается.
 
-Подтекание при кашле, чихании, смехе. Внезапный позыв, который не удержать. Пять-шесть подъёмов за ночь. Чувство, что пузырь опорожнился не до конца. Постоянная влажность. Жжение кожи. Воспаления мочевых путей, что возвращаются снова и снова. Отдаление от мужа — всё это следствия.
+Подтекание при кашле, чихании, смехе. Внезапный позыв, который не удержать. Пять-шесть подъёмов за ночь. Постоянная влажность. Жжение кожи. Воспаления мочевых путей, что возвращаются снова и снова. Отдаление от мужа — всё это следствия.
 
 Это одно из самых важных, что удалось понять за последние годы.
 
-Я взялся за это дело не из любопытства: моя покойная мать последние свои годы прожила с этой бедой, и я видел, как ей стыдно было выйти к внукам. «У всякой хвори есть лекарство», — так говорят; я и искал это лекарство, пока служу. Вместе с моими братьями по вере, с аптекарями-травниками и с врачами традиционной медицины со всей Турции мы пришли к этому в декабре 2025 года.
+Я взялся за это дело не из любопытства: моя покойная мать последние свои годы прожила с этой бедой, и я видел, как ей стыдно было выйти к внукам. «У всякой хвори есть лекарство», — так говорят; я и искал это лекарство. Вместе с моими братьями по вере, с аптекарями-травниками и с врачами традиционной медицины мы пришли к этому в декабре 2025 года.
 
-Что недержание есть — знают все. Но до сего дня никто внятно не объяснил, как погасить это тихое воспаление без ядовитых лекарств.
+Что недержание есть — знают все. Но никто не объяснил, как погасить это тихое воспаление без ядовитых лекарств.
 
-Чтобы мочевой пузырь оправился и власть снова была у вас, надо сперва убрать эту тихую причину в его стенке. Без химии, без отравы.
+Чтобы мочевой пузырь оправился, надо сперва убрать эту тихую причину в его стенке. Без химии, без отравы.
 
 А в аптеке нет ни одного лекарства, которое сделало бы это и не посадило вам печень и почки.
 
-Единственный путь — вещества, что даёт природа: при верном применении они успокаивают раздражённую стенку пузыря, возвращают силу той заслонке и поднимают ткань во всех слоях — в мышце, в нерве, во внутренней оболочке.
+Единственный путь — вещества, что даёт природа: они успокаивают раздражённую стенку, возвращают силу той заслонке и поднимают ткань во всех слоях.
 
 Так нашлась не только причина, но и ясный путь её убрать.
 
