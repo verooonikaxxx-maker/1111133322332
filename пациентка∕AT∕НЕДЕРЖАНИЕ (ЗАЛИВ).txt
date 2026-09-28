@@ -1,3 +1,11 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@                                                      @@@
+@@@   ВСТАВИТЬ ИМЯ СВЯЩЕННИКА — ОДИН РАЗ, АБЗАЦ 42       @@@
+@@@   ИЩИ В ТЕКСТЕ ПО ЗНАКУ   @@@                        @@@
+@@@   ПОСЛЕ ВСТАВКИ УДАЛИ ЭТУ ШАПКУ                      @@@
+@@@                                                      @@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
 Ich muss Ihnen etwas sagen, das Sie wahrscheinlich wütend machen wird — über Ihre Frauenärztin.
 
 Ich heiße Brigitte. Ich bin 57. Seit sechs Jahren schaue ich zu, wie meine Inkontinenz langsam schlimmer wird. In den letzten drei Jahren ist das Auslaufen ohne Pause schlimmer geworden, egal was ich getan habe.
@@ -80,7 +88,7 @@ Jahrelang haben wir Übungen auf das FALSCHE Problem geworfen.
 
 Renate hat ein Video gefunden. Keine Tabletten. Keine Nahrungsergänzung aus der Apotheke. Ein Video.
 
-Ein kurzes Video. Kein Arzt — ein Priester: Pfarrer Josef Hinterberger. Darin zeigt er das genaue Rezept für natürliche Kapseln, die das Kollagen und das Elastin im Gewebe des Beckenbodens wieder aufbauen. Von innen. Dort, wo das Problem ist.
+Ein kurzes Video. Kein Arzt — ein Priester: @@@@@@@@@@ ВСТАВЬ ИМЯ СВЯЩЕННИКА @@@@@@@@@@. Darin zeigt er das genaue Rezept für natürliche Kapseln, die das Kollagen und das Elastin im Gewebe des Beckenbodens wieder aufbauen. Von innen. Dort, wo das Problem ist.
 
 Vielleicht denken Sie: „Und Kegel?" oder „Ich gehe in die Therapie" oder „Reichen die Präparate für den Beckenboden nicht?"
 
