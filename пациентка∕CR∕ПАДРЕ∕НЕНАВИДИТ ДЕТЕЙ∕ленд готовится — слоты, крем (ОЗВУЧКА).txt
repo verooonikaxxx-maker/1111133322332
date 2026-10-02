@@ -1,9 +1,12 @@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@  РАМКА НЕ ЧАСТЬ ТЕКСТА — УДАЛИ ЕЁ ЦЕЛИКОМ ПЕРЕД ГЕНЕРАЦИЕЙ
-@@  Ленд: id 34677, Flexosamine, врач Carlos Estrada Garzona
-@@  ОДИН СЛОТ: возраст врача — абз 10. Поставь как на ленде.
-@@  ФОРМА ПОСТАВЛЕНА КРЕМОМ (crema) — на ленде лавровый лист и мёд,
-@@  это похоже на крем. Если там гель/спрей/капсулы — скажи,
+@@  Ленд на CR готовится. ДВА СЛОТА:
+@@    1) имя падре и его возраст — абз 10 и абз 16
+@@    2) название препарата — абз 15
+@@  ГЕРОЙ ПОСТАВЛЕН ПАДРЕ — как на UY, PY и PA. Если на ленде врач,
+@@  скажи: меняются две фразы в абз 10 (оставил клинику, исследовательский
+@@  центр вместо монастырских книг).
+@@  ФОРМА ПОСТАВЛЕНА КРЕМОМ (crema) — как на PY. Если гель/спрей/капсулы,
 @@  поменяю в 6 местах.
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
@@ -25,7 +28,7 @@ Y justo entonces sonó el teléfono. Mi compañera de escuela, Xinia. Cuatro añ
 
 Al día siguiente llegó de San José. Subió las escaleras. Estaba frente a mí derecha como una vela — a los 72 años se veía de 55. Se paró en medio de la sala y se puso en cuclillas cinco veces. Con la cadera destruida, con hernia de disco. Me quedé sin palabras.
 
-Me contó: hay un médico — el doctor Carlos Estrada Garzona, @@@@@@@@@@ ВСТАВЬ ВОЗРАСТ ВРАЧА С ЛЕНДА @@@@@@@@@@ años. Dejó la clínica privada y recorre los hogares de ancianos por todo Costa Rica. De una receta antigua juntó la fórmula — hoja de laurel y miel. La convirtió en una crema natural. No pastillas químicas de la farmacia, que envenenan el estómago y el hígado — una crema natural según una receta antigua. Se aplica en la piel y hasta en la vejez más avanzada arranca la regeneración del cartílago — hasta un 98% de desgaste se puede recuperar.
+Me contó: hay un sacerdote — @@@@@@@@@@ ВСТАВЬ ИМЯ ПАДРЕ И ЕГО ВОЗРАСТ С ЛЕНДА @@@@@@@@@@. Dejó su parroquia tranquila y recorre los hogares de ancianos por todo Costa Rica. De viejos libros de hierbas del monasterio juntó una receta centenaria — hierbas de montaña, incienso, garra del diablo. Junto con los monjes y un laboratorio confiable la convirtió en una crema natural. No pastillas químicas de la farmacia, que envenenan el estómago y el hígado — una crema natural según una receta centenaria. Se aplica en la piel y hasta en la vejez más avanzada arranca la regeneración del cartílago — hasta un 98% de desgaste se puede recuperar.
 
 30 años trabajé en la medicina y siempre decía: „El cartílago no se regenera." Pero miraba las piernas de Xinia. De una vez, desde el cuarto 14, hice el pedido. La crema llegó en dos días, le pagué al mensajero contra entrega.
 
@@ -35,9 +38,9 @@ A los tres meses salí por esa puerta con mis propias piernas. Llegué a mi casa
 
 Rodrigo también se untaba la crema — la espalda, que cinco años no se enderezaba, volvió a su forma en tres semanas, él solo se amarró los cordones. A nuestra vecina, doña Flora, le volvieron a funcionar los dedos deformados por la reuma — volvió a tejer en crochet. Y ese folleto de „Margarita" lo quemé en la cocina, en la estufa.
 
-Mujeres, si les duelen las articulaciones — rodillas, columna, manos, caderas — no corran a operarse, no gasten decenas de miles de dólares, no se envenenen el hígado con pastillas de farmacia. Y por Dios, no dejen que las lleven a un hogar de ancianos. Primero prueben esta crema natural Flexosamine — en la casa arranca la regeneración del cartílago.
+Mujeres, si les duelen las articulaciones — rodillas, columna, manos, caderas — no corran a operarse, no gasten decenas de miles de dólares, no se envenenen el hígado con pastillas de farmacia. Y por Dios, no dejen que las lleven a un hogar de ancianos. Primero prueben esta crema natural @@@@@@@@@@ ВСТАВЬ НАЗВАНИЕ ПРЕПАРАТА @@@@@@@@@@ — en la casa arranca la regeneración del cartílago.
 
-El enlace está abajo — el botón „Más información". Ahí van a encontrar la composición de la receta del doctor Carlos Estrada Garzona, cómo actúa la crema, y las historias de gente que se volvió a parar. Ahora hay 50% de descuento, pago contra entrega, directo a la casa, envío a todo Costa Rica. Solo no lo dejen para después — las existencias se van muy rápido. Cada día sin tratamiento es un día más de dolor innecesario, un día más de destrucción del cartílago, un día más cerca de la silla de ruedas.
+El enlace está abajo — el botón „Más información". Ahí van a encontrar la composición de la receta centenaria de @@@@@@@@@@ ВСТАВЬ ИМЯ ПАДРЕ @@@@@@@@@@, cómo actúa la crema, y las historias de gente que se volvió a parar. Ahora hay 50% de descuento, pago contra entrega, directo a la casa, envío a todo Costa Rica. Solo no lo dejen para después — las existencias se van muy rápido. Cada día sin tratamiento es un día más de dolor innecesario, un día más de destrucción del cartílago, un día más cerca de la silla de ruedas.
 
 A los 74 años pensaba que mi vida iba a terminar en un hogar de ancianos. Hoy camino por mi casa y abrazo a mis nietos de pie. Dense una oportunidad — mientras todavía tienen tiempo.
 
