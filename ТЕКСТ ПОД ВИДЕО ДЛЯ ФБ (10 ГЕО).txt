@@ -27,6 +27,9 @@ Odio a mis hijos. Tres meses pasé en un hogar de ancianos en las afueras de Pun
 PL | падре ojciec Wojciech Nowak, Metonil, крем — ДОНОР
 Nienawidzę swoich dzieci. Trzy miesiące spędziłam w domu opieki na obrzeżach Kielc. W wieku 74 lat zrozumiałam, że to wszystko: umrę tutaj.
 
+PA | падре Gabriel Jaramillo, Hondrocaps, капсулы
+Odio a mis hijos. Pasé tres meses en un asilo a las afueras de Chitré. A los 74 años entendí que eso era todo: me iba a morir ahí.
+
 ================= ХУК «ДОМ» =================
 
 BG | падре, sid 2804, гель
@@ -37,3 +40,6 @@ Tri mjeseca sam provela u jednom domu za starije na periferiji Varaždina. U 74.
 
 RS | врач, sid 2797, мелем
 Tri meseca sam provela u jednom domu za stare na periferiji Kragujevca. U 74. godini sam shvatila: to je sve. Tu ću umreti.
+
+PA | падре Gabriel Jaramillo, Hondrocaps, капсулы
+Tres meses pasé en un asilo de ancianos en las afueras de Aguadulce. A los 74 entendí: esto es todo. Aquí me voy a morir.
