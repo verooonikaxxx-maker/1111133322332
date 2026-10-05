@@ -3,25 +3,43 @@
 
 ================= ХУК «ДЕТИ» =================
 
-MK | врач, sid 2694, гель
-Ги мразам своите деца. Три месеци поминав во дом за стари на периферијата на Струмица. На 74 години разбрав дека тоа е сè: тука ќе умрам.
+MK | падре отец Илија Трајковски, sid 2694, Nautubone, гель
+Ги мразам своите деца. Три месеци поминав во дом за стари на периферијата на Кичево. На 74 години разбрав дека тоа е сè: тука ќе умрам.
 
-BA | врач, sid 2835, спрей
+BA | падре fra Ante, Nautubone, гель
+Mrzim svoju djecu. Tri mjeseca sam provela u domu za stare na periferiji Zenice. U 74. godini sam shvatila da je to sve: tu ću umrijeti.
+
+BA | врач dr. Amir Hadžić, sid 2835, спрей — ВТОРОЙ ВАРИАНТ
 Mrzim svoju djecu. Tri mjeseca sam provela u domu za stare na periferiji Bihaća. U 74. godini sam shvatila da je to sve: tu ću umrijeti.
 
-BG | падре, sid 2804, гель
-Ненавиждам децата си. Три месеца прекарах в дом за стари хора в края на Русе. На 74 години разбрах, че това е всичко: тук ще умра.
+RS | падре отац Милутин Јовановић, Nautubone, гель
+Мрзим своју децу. Три месеца сам провела у дому за старе на периферији Ваљева. У 74. години сам схватила да је то све: ту ћу умрети.
 
-SI | падре, sid 2761, гель
+SI | падре pater Anton Novak, sid 2761, Nautubone, крем
 Sovražim svoje otroke. Tri mesece sem preživela v domu za starejše na obrobju Maribora. Pri 74 letih sem razumela, da je to vse: tu bom umrla.
 
-SK | падре, Flexosamine, спрей
-Nenávidím svoje deti. Tri mesiace som strávila v domove pre seniorov na okraji Košíc. V 74 rokoch som pochopila, že to je všetko: tu umriem.
+CZ | падре páter Vojtěch Novák, sid 2406, Arthrovia, крем
+Nenávidím své děti. Tři měsíce jsem strávila v domově pro seniory na okraji Třebíče. V 74 letech jsem pochopila, že to je všechno: tady umřu.
 
-AL | имам, sid 2834, гель
+AL | имам Imam Osman Hoxha, sid 2834, Nautubone, гель
 I urrej fëmijët e mi. Tre muaj kalova në një shtëpi të moshuarve në periferi të Beratit. Në 74 vjeç kuptova se kjo është e gjitha: këtu do të vdes.
 
-CR | падре, sid 3874, капсулы
+TH | падре คุณพ่อสมบูรณ์, Nautubone, капсулы
+ฉันเกลียดลูกของตัวเอง สามเดือนที่ฉันอยู่ในบ้านพักคนชราชานเมืองลพบุรี ตอนอายุ 74 ฉันเข้าใจว่านี่คือทั้งหมดแล้ว: ฉันจะตายที่นี่
+
+LT | падре tėvas Juozapas Vaitkus, Nautubone, гель
+Nekenčiu savo vaikų. Tris mėnesius praleidau senelių namuose Kėdainių pakraštyje. Būdama 74 metų supratau, kad tai viskas: čia aš numirsiu.
+
+LV | падре tēvs Jāzeps Bērziņš, Nautubone, спрей
+Es ienīstu savus bērnus. Trīs mēnešus pavadīju pansionātā Smiltenes nomalē. 74 gadu vecumā sapratu, ka tas ir viss: šeit es nomiršu.
+
+BG | падре отец Никола Петров, sid 2804, Nautubone, гель
+Ненавиждам децата си. Три месеца прекарах в дом за стари хора в края на Враца. На 74 години разбрах, че това е всичко: тук ще умра.
+
+SK | падре páter Štefan Hruška, Flexosamine, спрей
+Nenávidím svoje deti. Tri mesiace som strávila v domove pre seniorov na okraji Košíc. V 74 rokoch som pochopila, že to je všetko: tu umriem.
+
+CR | падре el Padre Rafael Quesada, sid 3874, Flexosamine, капсулы
 Odio a mis hijos. Tres meses pasé en un hogar de ancianos en las afueras de Puntarenas. A los 74 años entendí que eso era todo: aquí voy a morir.
 
 PL | падре ojciec Wojciech Nowak, Metonil, крем — ДОНОР
