@@ -81,3 +81,9 @@ MK | падре 103 отец Илија Трајковски, sid 2694 Nautubone
 
 AL | имам Osman Hoxha, sid 2834 Nautubone, гель — вар. 2
 I urrej fëmijët që linda vetë. Tre muaj qëndrova në një azil pleqsh në buzë të Beratit. Në 74 e kuptova: këtu është fundi, këtu do të vdes.
+
+TR | врач 30 Doktor Orhan Yıldız, Nautubone, гель
+Çocuklarımdan nefret ediyorum. Üç ayımı Kütahya'nın kenarındaki bir huzurevinde geçirdim. 74 yaşımda anladım ki bu kadar: ben burada öleceğim.
+
+AL | врач 30 Doktor Markus Berger, Nautubone, крем
+I urrej fëmijët e mi. Tre muaj kalova në një shtëpi të moshuarve në periferi të Beratit. Në 74 vjeç kuptova se kjo është e gjitha: këtu do të vdes.
