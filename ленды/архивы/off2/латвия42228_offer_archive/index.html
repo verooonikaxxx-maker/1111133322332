@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+  <script>window.jQuery||document.write('<script src="js/jquery-3.6.0.min.js"><\/script>');</script>
+  <meta charset="utf-8">
+  <title>„Apmeklēju tos, kurus vairs neviens neapmeklē" — jaunais ārsts, kurš apceļo aprūpes namus Latvijā un atdod pamestajiem vecāka gadagājuma cilvēkiem locītavas un cieņu</title>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="no-cache" http-equiv="Cache-Control">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="no-referrer" name="referrer">
+  <meta content="noindex, nofollow" name="robots">
+
+  <link rel="icon" href="images/product.png">
+
+  <style>
+    :root {
+      --color-primary: #0a5c9e;
+      --color-primary-dark: #084678;
+      --color-primary-light: #e8f2fa;
+      --color-accent: #0284c7;
+      --color-danger: #c0392b;
+      --color-danger-light: #fdecea;
+      --color-success: #1e8449;
+      --color-success-light: #e8f5ee;
+      --color-warning: #b7791f;
+      --color-text: #1a2b42;
+      --color-text-muted: #4a5a70;
+      --color-text-light: #6b7a8f;
+      --color-bg: #ffffff;
+      --color-bg-soft: #f7fafc;
+      --color-bg-alt: #eef4f9;
+      --color-border: #d9e2ec;
+      --color-border-soft: #e4ebf2;
+      --shadow-sm: 0 1px 2px rgba(10, 92, 158, 0.04), 0 1px 3px rgba(10, 92, 158, 0.06);
+      --shadow-md: 0 4px 12px rgba(10, 92, 158, 0.08), 0 2px 4px rgba(10, 92, 158, 0.04);
+      --shadow-lg: 0 10px 25px rgba(10, 92, 158, 0.10), 0 4px 10px rgba(10, 92, 158, 0.05);
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --radius-lg: 12px;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --font-serif: 'Source Serif Pro', Georgia, 'Times New Roman', serif;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body { margin: 0; padding: 0; font-family: var(--font-sans); font-size: 17px; line-height: 1.65; color: var(--color-text); background: var(--color-bg-soft); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    .clinical-topbar { background: var(--color-primary-dark); color: #fff; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; padding: 8px 16px; text-align: center; font-weight: 500; }
+    .clinical-topbar::before { content: "⚕ "; margin-right: 6px; }
+    .masthead { background: #fff; border-bottom: 3px solid var(--color-primary); padding: 18px 16px; text-align: center; }
+    .masthead-inner { max-width: 900px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; }
+    .masthead-logo { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-serif); font-weight: 700; font-size: 22px; color: var(--color-primary-dark); letter-spacing: -0.01em; }
+    .masthead-logo-icon { width: 36px; height: 36px; background: var(--color-primary); border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #fff; font-size: 20px; font-weight: 700; }
+    .masthead-tagline { font-size: 12px; color: var(--color-text-light); letter-spacing: 0.08em; text-transform: uppercase; border-left: 1px solid var(--color-border); padding-left: 14px; font-weight: 500; }
+    @media (max-width:560px) { .masthead-tagline { border-left: 0; padding-left: 0; font-size: 11px; width: 100%; border-top: 1px solid var(--color-border); padding-top: 8px; margin-top: 4px; } }
+    header { max-width: 900px; margin: 0 auto; padding: 0; }
+    .bg-image { text-align: center; }
+    .bg-image img { max-width: 100%; height: auto; display: inline-block; }
+    .text-container { display: block; }
+    .h1-bg { position: relative; max-width: 900px; margin: 0 auto; padding: 28px 22px 20px; background: #fff; border-bottom: 1px solid var(--color-border); }
+    .h1-bg::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent) 100%); }
+    .title_h1 { font-family: var(--font-serif); font-size: 26px; line-height: 1.25; color: var(--color-text); font-weight: 700; margin: 0 0 14px; letter-spacing: -0.01em; }
+    .head-one-part { color: var(--color-danger); }
+    .head-two-part { display: block; }
+    .head-main-date { font-size: 13px; color: var(--color-text-light); padding: 0; display: flex; align-items: center; gap: 8px; margin-bottom: 16px; padding-bottom: 14px; border-bottom: 1px dashed var(--color-border); }
+    .head-main-date::before { content: "📅"; font-size: 14px; }
+    .head-main-date-title { display: inline; font-style: normal; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 500; }
+    .main-subtitle { display: block; padding: 16px 18px; color: var(--color-text); font-size: 17px; border-radius: var(--radius-md); font-weight: 500; border-left: 4px solid var(--color-primary); background: var(--color-primary-light); line-height: 1.55; font-style: normal; margin: 0; box-shadow: none; }
+    @media (max-width:640px) { .title_h1 { font-size: 20px; } .main-subtitle { font-size: 15px; padding: 14px 14px; } .h1-bg { padding: 22px 16px 18px; } }
+    main { max-width: 900px; margin: 0 auto; padding: 24px 22px 40px; background: #fff; border-left: 1px solid var(--color-border-soft); border-right: 1px solid var(--color-border-soft); }
+    @media (max-width:640px) { main { padding: 18px 14px 30px; } }
+    main p { margin: 0 0 16px; color: var(--color-text); }
+    main img { max-width: 100%; height: auto; border-radius: var(--radius-md); }
+    main h2 { font-family: var(--font-serif); font-size: 24px; line-height: 1.3; font-weight: 700; color: var(--color-primary-dark); margin: 32px 0 16px; padding-bottom: 12px; border-bottom: 2px solid var(--color-primary-light); letter-spacing: -0.01em; }
+    main h2 span { display: block; font-family: var(--font-sans); font-size: 16px; font-weight: 500; color: var(--color-text-muted); margin-top: 10px; margin-bottom: 0; line-height: 1.5; }
+    main h3 { font-family: var(--font-serif); font-size: 19px; color: var(--color-primary-dark); margin: 22px 0 12px; font-weight: 600; }
+    @media (max-width:640px) { main h2 { font-size: 19px; } main h2 span { font-size: 15px; } }
+    main ul { padding-left: 0; list-style: none; margin: 16px 0; background: var(--color-bg-soft); border: 1px solid var(--color-border-soft); border-radius: var(--radius-md); padding: 14px 18px 14px 20px; }
+    main ul li { position: relative; padding-left: 22px; margin-bottom: 8px; line-height: 1.5; }
+    main ul li::before { content: ""; position: absolute; left: 0; top: 10px; width: 10px; height: 10px; border: 2px solid var(--color-primary); border-radius: 50%; background: #fff; }
+    main ul li:last-child { margin-bottom: 0; }
+    .red-txt { color: var(--color-danger); font-weight: 600; }
+    .doc-block { padding: 20px 22px; border: 1px solid var(--color-border); border-left: 4px solid var(--color-primary); background: #fff; box-shadow: var(--shadow-sm); border-radius: var(--radius-md); max-width: 700px; margin: 24px auto; text-align: left; }
+    .doc-block img { border-radius: var(--radius-md); margin-bottom: 14px; }
+    .doc-block p { padding: 0; margin: 0 0 12px; font-size: 16px; line-height: 1.6; }
+    .doc-block p:last-child { margin-bottom: 0; }
+    .doc-block p b { color: var(--color-primary-dark); }
+    figure { margin: 22px 0; padding: 0; text-align: center; }
+    figure img { border-radius: var(--radius-md); box-shadow: var(--shadow-md); max-width: 100%; height: auto; }
+    figure figcaption { margin-top: 12px; padding: 10px 14px; font-size: 14px; line-height: 1.5; color: var(--color-text-muted); background: var(--color-bg-soft); border-left: 3px solid var(--color-primary); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; text-align: left; font-style: italic; }
+    figure.cap-bold figcaption { font-style: normal; font-weight: 500; color: var(--color-text); }
+    .img-card { border: 1px solid var(--color-border); padding: 6px; background: #fff; box-shadow: var(--shadow-md); border-radius: var(--radius-md); }
+    .img-card2 { border: 1px solid var(--color-border); padding: 6px; background: #fff; border-radius: var(--radius-md); }
+    .pachino-ramka312-block { margin: 24px 0; }
+    .pachino-ramka312 { background: var(--color-danger-light); border: 1px solid rgba(192, 57, 43, 0.25); border-left: 4px solid var(--color-danger); border-radius: var(--radius-md); padding: 18px 20px; color: var(--color-text); font-weight: 500; box-shadow: none; margin: 0; font-size: 16px; line-height: 1.6; position: relative; }
+    .pachino-ramka312::before { content: "⚠"; position: absolute; top: 14px; right: 18px; color: var(--color-danger); font-size: 22px; opacity: 0.7; }
+    .pachino-ramka312 .obertka-1 { display: block; }
+    .rev-block { margin: 24px 0; padding: 20px 22px; background: var(--color-primary-light); border: 1px solid rgba(10, 92, 158, 0.15); border-left: 4px solid var(--color-primary); border-radius: var(--radius-md); box-shadow: none; }
+    .rev-block p { font-size: 16px; line-height: 1.6; margin-bottom: 12px; }
+    .rev-block img { border-radius: var(--radius-md); margin-bottom: 14px; max-width: 100%; }
+    .rev-block font { display: block; margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(10, 92, 158, 0.15); color: var(--color-primary-dark); font-size: 15px; }
+    .rev-block font b { font-weight: 600; }
+    .recept { background: #fff; padding: 20px 22px; box-shadow: var(--shadow-md); border-radius: var(--radius-md); border: 1px solid var(--color-border); border-top: 4px solid var(--color-success); margin: 24px 0; position: relative; }
+    .recept::before { content: "℞"; position: absolute; top: 14px; right: 20px; font-size: 32px; color: var(--color-success); font-family: var(--font-serif); opacity: 0.4; line-height: 1; }
+    .recept p b { color: var(--color-primary-dark); font-size: 16px; }
+    .my-ul-0-green { margin: 12px 0 0 !important; padding: 0 !important; background: transparent !important; border: 0 !important; list-style: none; }
+    .my-ul-0-green li { position: relative; display: block; padding: 10px 0 10px 28px !important; margin: 0 !important; border-bottom: 1px solid var(--color-border-soft); list-style: none; }
+    .my-ul-0-green li::before { content: "✓" !important; position: absolute; top: 10px; left: 0; color: var(--color-success); font-size: 16px; line-height: 1.5; font-weight: 700; border: 0 !important; background: transparent !important; width: auto !important; height: auto !important; border-radius: 0 !important; }
+    .my-ul-0-green li:last-child { border-bottom: 0; }
+    .my-ul-0-green li b { color: var(--color-primary-dark); font-size: 16px; }
+    .my-ul-0-green font { font-size: 14px; display: block; margin-top: 4px; color: var(--color-text-muted); }
+    .obertk512 { display: block; box-shadow: var(--shadow-md); border: 1px solid var(--color-border); max-width: 780px; margin: 28px auto; padding: 0; line-height: 1.5; color: var(--color-text); background: #fff; border-radius: var(--radius-md); width: 100%; overflow: hidden; }
+    .obertk512 h1 { font-family: var(--font-serif); line-height: 1.3; margin: 0; color: #fff; font-size: 18px; padding: 16px 20px; font-weight: 600; background: var(--color-primary); border: 0; border-radius: 0; }
+    .block-offer-actions-block { padding: 10px 22px 22px; border: 0; }
+    .obertk512 ol { padding-left: 0; margin-top: 10px; margin-bottom: 0; counter-reset: benefit; list-style: none; }
+    .obertk512 li { line-height: 1.4; padding: 16px 0 16px 50px; border-bottom: 1px solid var(--color-border-soft); position: relative; counter-increment: benefit; }
+    .obertk512 li::before { content: counter(benefit); position: absolute; left: 0; top: 14px; width: 36px; height: 36px; background: var(--color-primary-light); color: var(--color-primary-dark); border-radius: 50%; font-weight: 700; font-size: 16px; display: flex; align-items: center; justify-content: center; border: 2px solid var(--color-primary); }
+    .obertk512 li::marker { content: none; }
+    .obertk512 li:last-child { border-bottom: 0; }
+    .obertk512 li font { line-height: 1.3; color: var(--color-primary-dark); text-align: left; font-weight: 600; font-size: 17px; display: block; margin-bottom: 6px; }
+    .block-offer-actions-block li span { display: block; font-size: 15px; line-height: 1.5; font-weight: 400; color: var(--color-text-muted); margin: 0; padding: 0; border-bottom: 0; }
+    .table-block { display: block; box-shadow: var(--shadow-md); border: 1px solid var(--color-border); border-radius: var(--radius-md); max-width: 700px; margin: 28px auto; padding: 0; font-size: 16px; line-height: 1.5; color: var(--color-text); background: #fff; width: 100%; overflow: hidden; }
+    .table-block h1 { font-family: var(--font-serif); line-height: 1.35; margin: 0; color: #fff; font-size: 17px; padding: 16px 20px; font-weight: 600; background: var(--color-primary); border: 0; border-radius: 0; }
+    .table { width: 100%; max-width: 100%; border-collapse: collapse; font-family: var(--font-sans); margin: 0; background: #fff; }
+    .table tr:nth-child(even) td { background: var(--color-bg-soft) !important; }
+    .table td { border: 0 !important; border-bottom: 1px solid var(--color-border-soft) !important; padding: 12px 16px !important; vertical-align: middle; background: #fff !important; }
+    .table tr:last-child td { border-bottom: 0 !important; }
+    .table td.one { text-align: left; width: 75%; font-size: 15px; font-weight: 500; color: var(--color-text); }
+    .table td.two { font-size: 18px; color: var(--color-success); text-align: right; font-weight: 700; width: 25%; white-space: nowrap; }
+    @media (max-width:560px) { .table td.one { font-size: 14px; } .table td.two { font-size: 16px; } .table td { padding: 10px 12px !important; } }
+    .pachino-ramka2 { text-align: left; color: var(--color-success); font-weight: 600; border: 1px solid rgba(30, 132, 73, 0.25); border-left: 4px solid var(--color-success); border-radius: var(--radius-md); padding: 18px 20px; background: var(--color-success-light); box-shadow: none; margin: 20px 0; font-size: 16px; line-height: 1.55; }
+    .pachino-ramka { border: 1px solid rgba(183, 121, 31, 0.3); border-left: 4px solid var(--color-warning); padding: 18px 20px; border-radius: var(--radius-md); background: #fff9ef; margin: 20px 0; font-size: 16px; line-height: 1.55; position: relative; }
+    .pachino-ramka::before { content: "🕐"; position: absolute; top: 14px; right: 18px; font-size: 22px; opacity: 0.8; }
+    .ramka-title { display: block; color: var(--color-warning); padding: 0; margin-bottom: 10px; font-weight: 700 !important; background: transparent; text-transform: uppercase; font-size: 13px; letter-spacing: 0.06em; }
+    .pachino-ramka font { color: var(--color-danger); font-weight: 600; }
+    .noclose-cta { font-size: 15px; max-width: 780px; margin: 16px auto; display: block; background: var(--color-danger-light); border: 1px solid rgba(192, 57, 43, 0.2); padding: 12px 16px; border-radius: var(--radius-md); line-height: 1.5; }
+    .pre-cta { display: block; color: var(--color-success); font-weight: 500; font-size: 16px; margin-top: 12px; }
+    .nowrap { white-space: nowrap; }
+    .pachinoform { padding: 0; font-size: 17px; line-height: 1.5; color: var(--color-text); border: 1px solid var(--color-border); background: #fff; display: block; border-radius: var(--radius-lg); width: 100%; max-width: 780px; margin: 24px auto; box-shadow: var(--shadow-lg); overflow: hidden; }
+    .pachinoform_title { display: flex; gap: 16px; max-width: none; align-self: stretch; text-align: left; background: var(--color-primary); color: #fff; padding: 20px 24px; align-items: center; }
+    .pachinoform_title_logo { flex-shrink: 0; background: #fff; padding: 6px; border-radius: 50%; width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; }
+    .pachinoform_title_logo img { max-width: 100%; height: auto; }
+    .pachinoform_title_text { align-self: center; color: #fff; font-size: 15px; line-height: 1.4; }
+    .pachinoform_title_text>b { display: block; line-height: 1.3; font-size: 17px; margin-bottom: 4px; color: #fff; font-weight: 600; }
+    .pachinoform_order { max-width: none; font-weight: 500; font-size: 15px; margin: 0; text-align: center; padding: 16px 24px; background: var(--color-primary-light); border-bottom: 1px solid var(--color-border-soft); color: var(--color-text); line-height: 1.5; }
+    .pachinoform_order>b { color: var(--color-danger); font-weight: 700; }
+    .pachinoform_value { display: flex; color: var(--color-text); font-weight: 600; font-size: 15px; align-items: center; justify-content: center; padding: 16px 24px 0; flex-wrap: wrap; gap: 10px; }
+    .pachinoform_value_current { border: 2px solid var(--color-danger); color: var(--color-danger); line-height: 1; font-size: 22px; padding: 6px 18px; margin: 0 6px; border-radius: var(--radius-sm); background: var(--color-danger-light); font-weight: 700; }
+    .pachinoform_value_total { font-size: 18px; color: var(--color-text-muted); }
+    .pachinoform_price { display: flex; align-items: center; justify-content: center; gap: 24px; margin: 20px 0 0; padding: 0 24px; }
+    .pachinoform_price_old span { display: block; font-size: 24px; font-weight: 600; letter-spacing: -0.5px; color: var(--color-text-light); position: relative; line-height: 1; }
+    .pachinoform_price_old span::before { position: absolute; content: ""; left: -4px; top: 50%; right: -4px; border-top: 2px solid var(--color-danger); transform: rotate(-12deg); }
+    .pachinoform_price_new span { display: inline-block; background: var(--color-success); color: #fff; text-shadow: none; font-size: 32px; padding: 8px 20px; font-weight: 700; line-height: 1; border-radius: var(--radius-sm); box-shadow: 0 4px 12px rgba(30, 132, 73, 0.25); }
+    .pachinoform form { padding: 22px 24px 20px; }
+    .pachinoform .name-input, .pachinoform .phone-input { color: var(--color-text); font-size: 15px; margin-bottom: 14px; }
+    .pachinoform .name-input label, .pachinoform .phone-input label { font-weight: 500; font-size: 14px; color: var(--color-text-muted); margin-bottom: 6px; display: block; text-transform: uppercase; letter-spacing: 0.04em; }
+    .pachinoform .name-input input, .pachinoform .phone-input input { font: inherit; color: var(--color-text); box-sizing: border-box; width: 100%; border-radius: var(--radius-sm); padding: 12px 16px; min-width: 0; background: #fff; border: 1.5px solid var(--color-border); font-size: 16px !important; transition: border-color 0.15s ease, box-shadow 0.15s ease; }
+    .pachinoform .name-input input:focus, .pachinoform .phone-input input:focus, .pachinoform input:focus { outline: 0; border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(10, 92, 158, 0.15); }
+    .pachinoform .button-submit { text-align: center; width: 100%; margin: 6px auto 0; text-decoration: none; border-radius: var(--radius-sm); color: #fff; border: 0; padding: 16px 20px; cursor: pointer; background: var(--color-primary); font-size: 17px; line-height: 1.3; font-weight: 600; letter-spacing: 0.02em; text-transform: uppercase; transition: background 0.15s ease, transform 0.05s ease; box-shadow: 0 4px 12px rgba(10, 92, 158, 0.25); font-family: var(--font-sans); }
+    .pachinoform .button-submit:hover { background: var(--color-primary-dark); }
+    .pachinoform .button-submit:active { transform: translateY(1px); }
+    .pachinoform .button-submit:focus { outline: 0; box-shadow: 0 0 0 3px rgba(10, 92, 158, 0.25); }
+    .pachinoform ::placeholder { color: var(--color-text-light); opacity: 1; font-size: 15px !important; }
+    .pachinoform_footer { text-align: center; color: var(--color-text-muted); font-size: 13px; padding: 14px 24px 20px; background: var(--color-bg-soft); border-top: 1px solid var(--color-border-soft); line-height: 1.5; }
+    .pachinoform_footer img { margin-top: 10px; max-width: 100%; height: auto; opacity: 0.85; }
+    @media (max-width:500px) { .pachinoform_title { gap: 10px; padding: 16px 18px; } .pachinoform_title_text { font-size: 13px; } .pachinoform_title_text>b { font-size: 15px; } .pachinoform_value { flex-wrap: wrap; justify-content: center; font-size: 14px; } .pachinoform_price_new span { font-size: 26px; } .pachinoform_price_old span { font-size: 20px; } .pachinoform form { padding: 18px 18px 18px; } .pachinoform_order { padding: 14px 18px; font-size: 14px; } .blc-pck { display: block; width: 100%; text-align: center; margin-top: 8px; } .pachinoform_value_current { margin: 0; } }
+    .comments { max-width: 900px; margin: 32px auto 20px; background: #fff; border-radius: var(--radius-md); border: 1px solid var(--color-border); overflow: hidden; }
+    .comments__header { padding: 16px 20px; background: var(--color-primary); color: #fff; display: flex; align-items: center; justify-content: space-between; }
+    .comments__header-title { font-family: var(--font-serif); font-size: 18px; font-weight: 600; margin: 0; color: #fff; letter-spacing: 0.02em; }
+    .comments__item-list { padding: 8px 20px; }
+    .comments__item { padding: 16px 0; border-bottom: 1px solid var(--color-border-soft); }
+    .comments__item:last-child { border-bottom: 0; }
+    .comments__item-header { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+    .comments__item-avatar { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 1px solid var(--color-border); }
+    .comments__item-info { flex: 1; min-width: 0; }
+    .comments__item-name { font-weight: 600; font-size: 15px; color: var(--color-primary-dark); margin: 0 0 2px; }
+    .comments__item-info p:last-child, .comments__item-info .startdate, .comments__item-info .nowdate { font-size: 12px; color: var(--color-text-light); margin: 0; }
+    .comments__item-body { padding-left: 56px; }
+    .comments__item-content { font-size: 15px; line-height: 1.55; color: var(--color-text); margin: 0; }
+    .comments__item-content img { border-radius: var(--radius-sm); margin-top: 10px; }
+    .comm-obert-reply { padding-left: 28px; border-left: 2px solid var(--color-primary-light); margin-left: 8px; }
+    .comm-obert-reply .comments__item.reply { border-bottom: 1px solid var(--color-border-soft); }
+    @media (max-width:560px) { .comments__item-body { padding-left: 0; } .comm-obert-reply { padding-left: 16px; } }
+    .form-container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+    .custom-form { max-width: 100%; margin: 0 auto; padding: 18px; box-shadow: var(--shadow-sm); border: 1px solid var(--color-border); box-sizing: border-box; font-family: var(--font-sans) !important; display: flex; flex-direction: column; gap: 12px; background: var(--color-bg-soft); border-radius: var(--radius-md); }
+    .custom-form__top-field { display: flex; gap: 16px; align-items: center; }
+    .custom-form__ava-block { position: relative; width: 54px; height: 54px; overflow: hidden; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px dashed var(--color-border); transition: 0.2s; flex: 0 0 auto; background: #fff; }
+    .custom-form__ava-label { font-size: 11px; text-align: center; line-height: 1.2; cursor: pointer; font-family: inherit; font-weight: 400; color: var(--color-text-light); padding: 4px; }
+    .custom-form__ava-label_red-text { color: var(--color-danger); }
+    .custom-form__name { width: 100%; max-width: 320px; display: inline-block; outline: none; border: 1.5px solid var(--color-border); padding: 10px 14px; font-size: 14px; height: 42px; box-sizing: border-box; font-family: inherit; border-radius: var(--radius-sm); background: #fff; }
+    .custom-form__message { resize: none; width: 100%; outline: none; border: 1.5px solid var(--color-border); padding: 12px 14px; min-height: 90px; font-size: 14px; line-height: 1.5; font-family: inherit; box-sizing: border-box; border-radius: var(--radius-sm); background: #fff; }
+    .custom-form__bottom-field { display: flex; flex-direction: row; gap: 14px; align-items: center; flex-wrap: wrap; }
+    .custom-form__btn { outline: none; padding: 10px 24px; background: var(--color-primary); color: #fff; font-weight: 600; font-size: 14px; transition: background 0.15s ease; cursor: pointer; text-transform: uppercase; border: 0; font-family: var(--font-sans); border-radius: var(--radius-sm); text-decoration: none !important; letter-spacing: 0.04em; }
+    .custom-form__btn:hover { background: var(--color-primary-dark); }
+    .custom-form__photo-label { cursor: pointer; font-size: 13px; font-weight: 400; border: none; color: var(--color-primary); text-decoration: underline; }
+    .trust-strip { max-width: 900px; margin: 0 auto; background: #fff; border: 1px solid var(--color-border-soft); border-top: 0; padding: 20px 22px; display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-around; align-items: center; }
+    .trust-item { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--color-text-muted); font-weight: 500; }
+    .trust-item-icon { color: var(--color-primary); font-size: 18px; }
+    .clinical-footer { max-width: 900px; margin: 0 auto 0; padding: 24px 22px 36px; background: #fff; border: 1px solid var(--color-border-soft); border-top: 1px solid var(--color-border); text-align: center; font-size: 12px; color: var(--color-text-light); line-height: 1.6; }
+    .clinical-footer a { color: var(--color-primary); text-decoration: none; }
+    .product-center { display: block; max-width: 220px; width: 100%; margin: 16px auto; }
+    #overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 100; transition: opacity 0.3s ease; }
+    #popup3 { background-size: cover; background-position: center; position: fixed; top: 50%; left: 50%; padding: 20px; background-color: white; box-shadow: var(--shadow-lg); transition: opacity 0.3s ease, transform 0.3s ease; max-width: 800px; width: 93%; height: 87%; overflow-y: auto; max-height: 100vh; z-index: 999999; }
+    body input[name="phone"] { background-repeat: no-repeat !important; background-position: left 15px center !important; }
+    main center { display: block; text-align: center; }
+    .sf-hidden { display: none !important; }
+    .quote-inline { margin: 20px 0; padding: 16px 20px; background: var(--color-bg-soft); border-left: 4px solid var(--color-text-light); border-radius: 0 var(--radius-md) var(--radius-md) 0; font-style: italic; color: var(--color-text-muted); font-size: 16px; line-height: 1.6; }
+    .quote-inline .quote-name { display: block; margin-top: 10px; font-style: normal; font-weight: 600; color: var(--color-primary-dark); font-size: 14px; }
+    @media (max-width:480px) { body { font-size: 16px; } main p { font-size: 16px; } .doc-block { padding: 16px; } .rev-block { padding: 16px; } .recept { padding: 16px; } .block-offer-actions-block { padding: 6px 16px 16px; } .obertk512 li { padding-left: 44px; } .obertk512 li::before { width: 30px; height: 30px; font-size: 14px; } }
+    @keyframes example { 0% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes blinker { from { opacity: 1.0; } to { opacity: 0.7; } }
+  </style>
+
+  <script src="js/dtime.js"></script>
+  <script>
+    
+    function dtime_nums(offset, withYear) {
+      var host = document.currentScript && document.currentScript.parentNode;
+      var fmt = (host && host.getAttribute) ? host.getAttribute('format') : null;
+      var d = new Date();
+      d.setDate(d.getDate() + (Number(offset) || 0));
+      var day = d.getDate(), mon = d.getMonth() + 1, yr = d.getFullYear();
+      var p = function (v) { return v < 10 ? '0' + v : String(v); };
+      var out;
+      if (fmt === 'year') { out = String(yr); }
+      else if (withYear === false) { out = p(day) + '.' + p(mon) + '.'; }
+      else { out = p(day) + '.' + p(mon) + '.' + yr + '.'; }
+      document.write(out);
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="clinical-topbar">Speciālais reportāžs · Veselība un sabiedrība</div>
+
+  <div class="masthead">
+    <div class="masthead-inner">
+      <div class="masthead-logo">
+        <span class="masthead-logo-icon">+</span>
+        <span>VeselībaInfo Latvija</span>
+      </div>
+      <div class="masthead-tagline">Reportāžas no sabiedrības veselības pasaules</div>
+    </div>
+  </div>
+
+  <header>
+    <div class="bg-image"></div>
+  </header>
+  <div class="text-container"></div>
+  <div class="h1-bg split">
+    <h1 class="title_h1">
+      <span class="head-one-part">„KAD VAIRS NEVARI STAIGĀT, ĢIMENE AIZMIRST TEVI."</span>
+      <span class="head-two-part">JAUNAIS ĀRSTS, KURŠ APCEĻO APRŪPES NAMUS VISĀ LATVIJĀ UN ATDOD PAMESTAJIEM VECĀKA GADAGĀJUMA CILVĒKIEM TO, KO NEVIENS CITS NEVAR DOT: VIŅU LOCĪTAVAS UN CIEŅU. VIŅA METODE IR SATRICINĀJUSI VISU MEDICĪNAS SABIEDRĪBU.</span>
+    </h1>
+
+    <div class="tdate head-main-date">
+      <span class="head-main-date-title">Publicēts: </span>
+      <span class="startdate">
+        <script>dtime_nums(-3, true)</script>, 09:36
+      </span>
+    </div>
+
+    <div class="main-subtitle">
+      Kā Dr. Markuss Dzenis, tikai 30 gadus vecs, pameta karjeru privātajā klīnikā Rīgā, lai darītu to, ko neviens cits ārsts negribēja: apceļotu aprūpes namus visā Latvijā un ārstētu vecāka gadagājuma cilvēkus, kurus ģimenes bija pametušas — tieši tāpēc, ka viņi vairs nevarēja staigāt, stāvēt, darīt neko patstāvīgi. Un kā metode, ko viņš izstrādāja kopā ar pētniecības centru, atdeva viņiem kustību spējas — bez operācijas un bez mūža medikamentiem.
+    </div>
+  </div>
+
+  <main>
+
+    <img alt="Dr. Markuss Dzenis izmeklē pacientes ceļgalu aprūpes namā"
+      src="https://static.joxi.pro/1778142925769-2045c9ea-f00c-48ab-ae5d-6e56aec020f0.jpg"
+      style="margin-bottom:14px;margin-top:0">
+
+    <p>
+      Mēs ieradāmies otrdien no rīta Cēsīs, Vidzemes reģionā. Ceļš uz aprūpes namu ved pa šaurām ieliņām, garām vecām mājām ar akmeņu sienām un rējošiem suņiem. „Vai jūs meklējat jauno ārstu?" — jautāja pārdevēja veikalā. „Viņš nāk katru ceturtdienu. Vecie cilvēki gaida viņu pie vārtiem. Daži raud, kad viņu redz."
+    </p>
+    <p>
+      Tā mēs pirmo reizi dzirdējām par Dr. Markusu Dzeni — 30 gadus veco ārstu, kurš pameta vietu privātajā klīnikā Rīgā, lai darītu to, ko neviens cits ārsts negribēja: apmeklētu aprūpes namus visā Latvijā un ārstētu pensionārus, kurus ģimenes bija pametušas.
+    </p>
+    <p>
+      Pamešanas iemesls? Gandrīz vienmēr viens un tas pats: <b>Vecāka gadagājuma cilvēki vairs nevarēja staigāt.</b> Ceļgali lūza. Mugurkauls saliecās. Rokas drebēja tik stipri, ka nevarēja turēt pat karoti. Un tieši tajā brīdī — kad viņiem visvairāk vajadzēja palīdzību — ģimene nolēma, ka tas ir par daudz. Pārāk grūti. Pārāk dārgi. Un ievietoja viņus aprūpes namā.
+    </p>
+
+    <div class="quote-inline">
+      „Mans dēls teica: 'Māmiņ, es nevaru tevi visu laiku celt no krēsla. Tas neiet.' Nākamajā dienā viņš aizveda mani uz aprūpes namu. Trīs gadus viņš mani nav apmeklējis."
+      <span class="quote-name">— kundze Edīte, 79 gadi, aprūpes nams Cēsīs</span>
+    </div>
+
+    <div class="quote-inline">
+      „Kad mani ceļgali pilnīgi nobloķējās, mana sieva teica, ka nevar dzīvot ar invalīdu. Viņa aizgāja. Bērni nostājās viņas pusē. Viņi atveda mani šurp un pazuda."
+      <span class="quote-name">— kungs Frīdrihs, 73 gadi, aprūpes nams Valmierā</span>
+    </div>
+
+    <h2>
+      „Redzēju, kā izskatās pamestība. Un nolēmu, ka nevaru palikt malā"
+      <span>Ekskluzīva intervija ar Dr. Markusu Dzeni — ārstu, kurš atteicās no 2 500 € mēneša algas, lai palīdzētu tiem, kuriem nav neviena</span>
+    </h2>
+
+    <div class="doc-block">
+      <img alt="Dr. Markuss Dzenis" src="https://static.joxi.pro/1778142925769-8d31ed89-cd31-449a-8c51-6ff1a0bfb48e.jpg">
+      <p>Dr. Markuss Dzenis: „Pirmo reizi aprūpes namā iegāju kā brīvprātīgais, kad man bija 28 gadi. Nebiju gatavs tam, ko redzēju. Sieviete, 76 gadi, kundze Hermīne, sēdēja uz gultas malas ar pietūkušām kājām un ceļgaliem, kas vairs neliecās. Četrus mēnešus viņa nebija izgājusi no istabas. Viņa satvēra manu roku un teica:
+        <b>„Doktor, mana meita atveda mani šurp, kad vairs nevarēju nokāpt pa kāpnēm. Viņa teica, ka nevar rūpēties par mani. Tas bija pirms diviem gadiem. Kopš tā laika viņa nav atgriezusies."</b>
+      </p>
+      <p><b>TAJĀ BRĪDĪ SAPRATU, KA ŠIE CILVĒKI MANI VAJADZĪGĀKU IR VISVAIRĀK —
+          <span class="red-txt">TIE, KURUS VISA PASAULE IR AIZMIRSTUS, TIEŠI TĀPĒC KA VIŅI VAIRS NEVAR STAIGĀT."</span></b>
+      </p>
+    </div>
+
+    <p>
+      Dr. Dzenis runā mierīgi, taču ar intensitāti, kuru nevar ignorēt. Divus gadus viņš apceļo aprūpes namus visā Latvijā — no Vidzemes līdz Latgalei, no Kurzemes līdz Zemgalei. Un visur atrod vienu un to pašu satraucošo ainu: vecāka gadagājuma cilvēkus ar iznīcinātām locītavām, kuri nesaņem nekādu reālu ārstēšanu, tikai pretiekaisuma tabletes, kas iznīcina viņu kuņģi un nieres.
+    </p>
+
+    <p>
+      „Lielākā daļa šo cilvēku nokļuva šeit locītavu dēļ. Ceļgals lūza. Mugurkauls nobloķējās. Gūžas locītava nodilās. Un tajā brīdī, kad viņi vairs nevarēja staigāt patstāvīgi, ģimene nolēma, ka viņi ir kļuvuši par <b>„nastu"</b>. Šis ir vārds, ko visbiežāk dzirdu aprūpes namos: „nasta". Savus vecākus sauc par nastu."
+    </p>
+
+    <div class="quote-inline">
+      „Mani neatveda šurp tāpēc, ka nemīl mani. Mani atveda šurp tāpēc, ka es trijos no rīta kliedzu no ceļgala sāpēm un neviens nevarēja gulēt. Vedekla teica: 'Vai es, vai viņa.' Mans dēls izvēlējās viņu."
+      <span class="quote-name">— kundze Hilde, 71 gads, aprūpes nams Jūrmalā</span>
+    </div>
+
+    <h2>
+      „Locītavu tabletes neatrisina neko — tās tikai maskē iznīcināšanu"
+      <span>Dr. Dzenis skaidro, kāpēc parastā ārstēšana aprūpes namos un aptiekās neizdodas</span>
+    </h2>
+
+    <p><b>Dr. Markuss Dzenis:</b></p>
+    <p>— Teikšu jums godīgi: tas, ko redzēju šajos aprūpes namos, mani šausmināja. Cilvēki vecumā no 55 līdz 80 gadiem, kuri gadiem saņem vienas un tās pašas pretiekaisuma tabletes — tabletes, kas uz dažām stundām nosedz sāpes, neārstējot cēloni. Skrimšļi turpina iznīcināties. Locītavu šķidrums izzūd. Locītavas berzē kaulu pret kaulu. Un tablešu ķīmija katru dienu iznīcina viņu kuņģi, aknas un nieres.
+    </p>
+
+    <p>Tas ir apburtais loks: sāpes → tabletes → sāpes atgriežas stiprākas → stiprākas tabletes → kuņģis lūst → tabletes kuņģim → nieres lūst. Un neviens nesaka viņiem patiesību: <b>ka pastāv metode, kas atjauno locītavu no iekšpuses, nevis tikai anestezē sāpes.</b>
+    </p>
+
+    <figure>
+      <img class="img-card" src="https://static.joxi.pro/1778142925769-a94978b4-3738-4aeb-950e-312b652009ac.jpg">
+      <figcaption>
+        Kundzes Zigrīdas ceļgali, 74 gadi, aprūpes nams Valmierā. Artroze 3. pakāpe, skrimšļi gandrīz pilnīgi iznīcināti. Piecus mēnešus viņa nav izgājusi no istabas. Uz naktsgaldiņa — 6 veidu tabletes, kas neko nav mainījušas.
+      </figcaption>
+    </figure>
+
+    <div class="pachino-ramka312-block">
+      <p class="pachino-ramka312">
+        <span class="obertka-1">
+          Sāpes ceļgalā, mugurā vai gūžā pēc 45 gadu vecuma nav „normālas vecuma dēļ" — tās ir zīme, ka locītavu skrimšļi tiek iznīcināti un locītavu šķidrums izzūd.
+          <br><br>
+          Pretiekaisuma tabletes tikai bloķē sāpju signālu, kamēr iznīcināšana klusi turpinās. Bez reālas skrimšļu atjaunošanas, locītava pilnīgi nodilst — un tad paliek tikai ratiņkrēsls vai locītavas protezēšanas operācija.
+        </span>
+      </p>
+    </div>
+
+    <p><b>Dr. Markuss Dzenis:</b></p>
+
+    <p>— Lūdzu, saprotiet situācijas nopietnību. Lielākajai daļai šo vecāka gadagājuma cilvēku ceļgala, mugurkaula vai gūžas skrimšļi ir iznīcināti par 70–90 %. Viņi staigā — ja vispār staigā — kauls pret kaulu. Katrs solis ir mokas. <b>PARASTĀS TABLETES NEVAR ATJAUNOT SKRIMŠĻUS — TĀS TIKAI MASKĒ SĀPES, LĪDZ VISS SABRŪK!</b>
+    </p>
+
+    <p>
+      Un tas, kas mani visvairāk sāpina: šiem cilvēkiem nav neviena. Ģimene viņus pameta tieši tajā brīdī, kad locītavas atteicās. Viņi guļ vieni gultā, mazā istabā, un gaida. Daži vairs nezina, ko gaida.
+    </p>
+
+    <div class="quote-inline">
+      „Uzaudzināju trīs bērnus. 40 gadus strādāju laukos. Un kad mani ceļgali lūza un nevarēju pati aiziet uz tualeti — novietoja mani aprūpes namā. Kā tad, ja es viņiem vairs neeksistētu. Kā tad, ja jau būtu mirusi."
+      <span class="quote-name">— kundze Elfrīda, 82 gadi, aprūpes nams Daugavpilī</span>
+    </div>
+
+    <div class="quote-inline">
+      „35 gadus biju mūrnieks. Mugura atteicās 62 gados — diska trūce, išiass, nevarēju stāvēt. Mans dēls teica, ka nevar palikt mājās un rūpēties par mani. Viņam ir savs darbs, sava ģimene. Saprotu. Bet sāp vairāk nekā mugura."
+      <span class="quote-name">— kungs Frančs, 68 gadi, aprūpes nams Liepājā</span>
+    </div>
+
+    <figure class="Figure" style="text-align:center">
+      <img src="https://static.joxi.pro/1778142925769-057465eb-7a53-45e0-ba84-1b9038913030.jpg" style="margin:0 auto">
+      <figcaption>
+        <b>Pa kreisi: vesela locītava ar neskartu skrimšļu un pietiekamu locītavu šķidrumu. Pa labi: iznīcināta locītava — nodilusi skrimšļu, hronisks iekaisums, kauls pret kaulu. Tāda ir realitāte vairāk nekā 80% aprūpes namu iemītnieku. Pretiekaisuma tabletes neatjauno skrimšļus.</b>
+      </figcaption>
+    </figure>
+
+    <p class="red-txt">
+      Svarīgi: 2 no 3 gadījumiem locītavas turpina pasliktināties — pat pie ikdienas pretsāpju tablešu lietošanas — jo reālais cēlonis — skrimšļu iznīcināšana un locītavu šķidruma izzušana — paliek neārstēts.
+    </p>
+
+    <p class="red-txt">
+      Pēc gadiem ilgas pretiekaisuma tablešu lietošanas daudzi pacienti zaudē ne tikai kustību spējas, bet arī kuņģi, aknas un nieres. Čūlas, aknu mazspēja, nieru tūska — tāda ir cena, ko maksā tie, kuriem neviens nav piedāvājis reālu alternatīvu.
+    </p>
+
+    <h2>
+      Stāsti, kas ir mainījuši manu dzīvi — un mainīs jūsu skatu uz vecumu
+    </h2>
+
+    <p><b>Dr. Markuss Dzenis:</b></p>
+
+    <p>— Ļaujiet man pastāstīt, ko es redzu katru nedēļu. Ne skaitļus. Ne statistiku. Cilvēkus. Cilvēkus ar vārdiem, ar stāstiem, ar bērniem, kuri vairs nenāk.</p>
+
+    <figure class="cap-bold">
+      <img class="img-card" src="https://static.joxi.pro/1778142925769-ab7d1e11-8df2-44ee-b472-2a3be72bb7b3.jpg">
+      <figcaption>
+        Kundze Margarēta, 77 gadi. Reimatoīdais artrīts abās rokās — nevar turēt tasi, nevar pati apģērbties. Meita atveda viņu uz aprūpes namu pirms 2 gadiem: „Nevaru viņu ģērbt katru rītu, man arī ir sava dzīve."
+      </figcaption>
+    </figure>
+
+    <div class="quote-inline">
+      „Nevaru pat iekampties. Nevaru ieliet ūdeni glāzē. Rokas neklausa. No rīta skatos uz tām un nepazīstu — pietūkušas, saliektas, it kā nebūtu manas. Vedekla man reiz teica: 'Kā lai uzticēšu tev mazbērnus, ja nevari turēt pat karoti?' Viņai bija taisnība. Bet šie vārdi mani nogalināja no iekšpuses."
+      <span class="quote-name">— kundze Margarēta, 77 gadi</span>
+    </div>
+
+    <figure class="cap-bold">
+      <img class="img-card" src="https://static.joxi.pro/1778142925769-980707f6-6c1c-40ec-96a5-61c8c9dcde54.jpg">
+      <figcaption>
+        Kungs Leopolds, 75 gadi. Diska trūce L4-L5, divpusēja koksartroze. Astoņus mēnešus nevar stāvēt. „Viņam teica, ka ir pārāk vecs operācijai. Viņam teica, ka jāpieņem."
+      </figcaption>
+    </figure>
+
+    <div class="quote-inline">
+      „Biju traktoristu. Uzaro tūkstošiem hektāru. Tagad nevaru pats apgāzties gultā. Mugura nobloķējās, gūža sastinga. Mani dēli strādā ārzemēs. Sūta naudu aprūpes namam, tas arī viss. Nepārmetu viņiem. Bet naktī, kad sāp un neviens nenāk… domāju, vai tas jau ir gals."
+      <span class="quote-name">— kungs Leopolds, 75 gadi</span>
+    </div>
+
+    <p><b>Šie ir simptomi, ko visbiežāk sastopami aprūpes namos — un kurus miljoni cilvēku Latvijā ignorē:</b></p>
+    <ul>
+      <li>Stipras ceļgala sāpes uz kāpnēm — vai katrā kustībā;</li>
+      <li>Rīta stīvums — ķermenis jūtas „kā koks", nepārvietojas 30–60 minūtes pēc pamošanās;</li>
+      <li>Hroniskas muguras sāpes — neiespējami saliekties, neiespējami piecelties no gultas;</li>
+      <li>Ceļgalu, potīšu vai pirkstu tūska;</li>
+      <li>Locītavu krakšķēšana un čīkstēšana katrā kustībā;</li>
+      <li>Gūžas sāpes, kas izstaro augšstilbā — neiespējami noiet vairāk par 50 metriem;</li>
+      <li>Saliekti, mezgloti pirksti — neiespējami satvert priekšmetus;</li>
+      <li>Tirpšana kājās vai rokās — diska trūces vai iespiesta nerva pazīme;</li>
+      <li>„Dūriena" sajūta muguras lejasdaļā ceļoties;</li>
+      <li>Noliekts mugurkauls, saliekta stāja — progresējoša kifoze;</li>
+      <li>Nakts sāpes, kas neļauj gulēt — pamošanās 4–5 reizes naktī;</li>
+    </ul>
+
+    <p>
+      Katrs no šiem simptomiem ir brīdinājuma signāls. Un pēc 45.–50. gadu vecuma to ignorēšana noved pie viena vienīga rezultāta:
+      <b class="red-txt">PILNĪGA NEKUSTĪGUMS, RATIŅKRĒSLS, PILNĪGA ATKARĪBA NO CITIEM — UN DAUDZOS GADĪJUMOS APRŪPES NAMS.</b>
+    </p>
+
+    <div class="pachino-ramka312-block">
+      <p class="pachino-ramka312">
+        <span class="obertka-1">
+          Katra diena ar neārstētām locītavām tuvina jūs pastāvīgai nekustīgumam!
+          Tūkstošiem pensionāru aprūpes namos nokļuva tur tieši tāpēc, ka ignorēja sāpes — vai lietoja tikai tabletes, kas neārstēja cēloni.
+          Rīkojieties tagad — sev vai saviem tuviniekiem — kamēr nav par vēlu!
+        </span>
+      </p>
+    </div>
+
+    <h2>
+      „Nolēmu, ka ir jābūt veidam, kā atjaunot locītavas — nevis tikai anestezēt sāpes"
+      <span>Kā 30 gadus vecs ārsts pārliecināja pētniecības centru izstrādāt kaut ko, ko farmācijas rūpniecība atsakās darīt</span>
+    </h2>
+
+    <p><b>Dr. Markuss Dzenis:</b></p>
+    <p>
+      — Pēc gada aprūpes namu apmeklējumu sāpīga patiesība kļuva skaidra: ar pretiekaisuma tabletēm nevaru izglābt nevienu. Šīs zāles tikai izslēdz ķermeņa trauksmes signālu, kamēr locītava turpina iznīcināties. Man vajadzēja kaut ko pilnīgi citu: metodi, kas atjauno skrimšļus no iekšpuses, atjauno locītavu šķidrumu un aptur iekaisumu šūnu līmenī.
+    </p>
+    <p>
+      Sazinājos ar pētniecības centru, ar kuru biju sadarbojies studiju laikā. Parādīju viņiem gadījumus, fotogrāfijas, aprūpes namu pacientu izmeklējumu rezultātus. Ņēmu pētniekus līdzi uz aprūpes namiem — lai ar savām acīm redzētu, kas tur notiek. Viņi palika bez vārdiem.
+    </p>
+    <p>
+      Strādājām kopā vairāk nekā 10 mēnešus. Izmēģinājām vairāk nekā 180 kombinācijas. Un galu galā atradām precīzu formulu — krēmu, kas, uzklāts uz slimās locītavas, iekļūst šūnu līmenī un aktivizē dabisko skrimšļu atjaunošanos. Ne tablete, kas iet caur kuņģi un iznīcina aknas. Krēms, kas darbojas tieši tur, kur vajadzīgs.
+    </p>
+
+    <div class="recept">
+      <p><b>Dr. Dzeņa izstrādātā formula satur šādas aktīvās vielas:</b></p>
+      <ul class="my-ul-0-green size1">
+        <li><b>Glikozamīna sulfāts</b>
+          <font>Attīrīts jūras izejmateriāls: 1500 mg/deva</font>
+        </li>
+        <li><b>Hondroitīna sulfāts</b>
+          <font>Ekstrakts ar augstu bioloģisko pieejamību: 1200 mg/deva</font>
+        </li>
+        <li><b>Boswellia serrata ekstrakts</b>
+          <font>Bosvēlija skābe koncentrēta līdz 65%: 800 mg</font>
+        </li>
+        <li><b>Zemas molekulmasas hialuronskābe</b>
+          <font>Transdermāla penetrācija: 200 mg</font>
+        </li>
+        <li><b>Hidrolizētais II tipa kolagēns</b>
+          <font>Sertificēts liellopu avots: 2000 mg</font>
+        </li>
+        <li><b>Arnikas ekstrakts</b>
+          <font>Dabisks pretiekaisuma līdzeklis: 500 mg</font>
+        </li>
+        <li><b>MSM (metilsulfonilmetāns)</b>
+          <font>Bioloģiski pieejams organiskais sērs: 1000 mg</font>
+        </li>
+        <li><b>Kampars un mentols</b>
+          <font>Dabisks pretsāpju komplekss ar siltuma efektu</font>
+        </li>
+      </ul>
+    </div>
+
+    <p>
+      Šīs sastāvdaļas ir grūti iegūt nepieciešamajās koncentrācijās. To pareizai sajaukšanai nepieciešama speciāla tehnoloģija — ja proporcijas atkāpjas pat par 0,1 %, krēms neiekļūst pietiekami dziļi un neaktivizē skrimšļu atjaunošanos.
+    </p>
+
+    <h2>
+      Tā radās Steplex — vienīgais krēms, kas satur visas šīs aktīvās vielas ideālās proporcijās pilnīgai locītavas atjaunošanai
+    </h2>
+    <p><b>Dr. Markuss Dzenis:</b></p>
+    <p>
+      — Kopā ar pētniecības centru mums izdevās izgatavot šo produktu: krēmu ārējai lietošanai, ko uzklāj tieši uz slimās locītavas — ceļgalam, mugurai, gūžai, rokām, kaklam. Tā nosaukums ir Steplex. Tas jālieto divas reizes dienā, rītā un vakarā, ar vieglu 2–3 minūšu masāžu. Aktīvās vielas iekļūst tieši locītavā, apejot kuņģi un aknas — tādējādi novēršot visas tablešu blakusparādības.
+    </p>
+
+    <img src="images/product.png" style="max-width:250px;display:block;margin:18px auto">
+
+    <p>
+      Noslēpums slēpjas „Dziļās transdermālās penetrācijas tehnoloģijā", ko izstrādājām laboratorijā kopā ar komandu. Šī metode ļauj aktīvajām vielām sasniegt tieši locītavas kapsulu — tur, kur skrimšļi tiek iznīcināti — ar 5 reizes lielāku efektivitāti nekā jebkurš parastais tirgū pieejamais krēms.
+    </p>
+    <p class="pachino-ramka2">
+      Steplex nav konkurentu. Katra sastāvdaļa — precīzā koncentrācijā — aktivizē skrimšļu atjaunošanos, atjauno locītavu šķidrumu un aptur iekaisumu. Tas ir vienīgais krēms, kas darbojas šūnu līmenī, tieši skartajā vietā — ceļgalā, mugurā, gūžā, rokās, kaklā — neejot caur kuņģi. Un svarīgākais: tas darbojas pat cilvēkiem 70, 80, 85 gadu vecumā. Vispirms to pārbaudīju saviem pacientiem aprūpes namos — tiem, kurus neviens cits vairs neārstēja.
+    </p>
+
+    <p><b>Dr. Markuss Dzenis:</b></p>
+    <p>
+      — Pirmie pacienti bija pamestie vecāka gadagājuma cilvēki no aprūpes namiem. Tie, kurus visi bija aizmirsuši. Uzklāju krēmu uz pietūkušajiem ceļgaliem, muguras, gūžas. Un gaidīju. Trešajā dienā — kundze Elfrīda, kura četrus mēnešus nebija cēlusies no gultas, spēra pirmos patstāvīgos soļus. Mēs abi raudājām.
+    </p>
+
+    <h2>
+      4 mehānismi, ar kuriem Steplex atjauno locītavas un atgriež kustību spējas — jebkurā vecumā
+    </h2>
+
+    <div class="obertk512">
+      <h1>4 galvenās Steplex krēma darbības:</h1>
+      <div class="block-offer-actions-block">
+        <ol>
+          <li>
+            <font>Sāpju un iekaisuma novēršana:</font>
+            <span>Jau 15–30 minūtes pēc uzklāšanas Boswellia, arnikas un kampara komplekss novērš sāpes un samazina iekaisumu. Ne bloķējot nervu signālu (kā tabletes) — bet apturot iekaisuma procesu tā avotā.</span>
+          </li>
+          <li>
+            <font>Locītavas skrimšļa atjaunošana:</font>
+            <span>Glikozamīns, hondroitīns un II tipa kolagēns iekļūst locītavas kapsulā un aktivizē skrimšļu šūnas (hondrocītus), stimulējot jauna skrimšļu audu veidošanos. Šis process sākas pēc 3–5 dienām regulāras lietošanas.</span>
+          </li>
+          <li>
+            <font>Locītavu šķidruma atjaunošana:</font>
+            <span>Zemas molekulmasas hialuronskābe iekļūst transdermāli un atjauno locītavu šķidrumu — locītavas dabisko „smērvielu". Pateicoties tam, kauli vairs neberzē viens pret otru, un kustība atkal kļūst vienmērīga un sāpju brīva.</span>
+          </li>
+          <li>
+            <font>Ilgtermiņa aizsardzība un profilakse:</font>
+            <span>MSM un minerālu komplekss stiprina saites un cīpslas ap locītavu, novēršot turpmākus bojājumus. Pēc 30–60 lietošanas dienām locītava iegūst stabilu aizsardzību, kas ilgst mēnešiem.</span>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <h2>
+      „Steplex vispirms pārbaudīju saviem pacientiem aprūpes namos — rezultāti pārspēja visu, ko biju redzējis 6 gadu praksē"
+      <span>Izmēģinājumi ar 2 340 cilvēkiem vecumā no 45 līdz 86 gadiem</span>
+    </h2>
+
+    <p><b>Dr. Markuss Dzenis:</b></p>
+    <p>
+      — Pirmie pacienti bija pamestie vecāka gadagājuma cilvēki no aprūpes namiem. Tie, kurus neviens vairs neārstēja. Rezultāti bija tik iespaidīgi, ka pētniecības centrs paplašināja izmēģinājumus uz grupu, kas pārsniedza 2 300 cilvēkus no visas Latvijas — ar visiem locītavu problēmu veidiem: ceļgalis, mugura, gūža, rokas, kakls.
+    </p>
+    <p>
+      Redzēju 80 gadus vecus cilvēkus, kuri nevarēja staigāt — un 6 nedēļas vēlāk paši izgāja aprūpes nama pagalmā. Medmāsas raudāja. Raudāju kopā ar viņām.
+    </p>
+
+    <div class="table-block">
+      <h1 class="title_h1">
+        Steplex izmēģinājumu rezultāti — kontroles grupa: 2 340 cilvēki, 45–86 gadi
+      </h1>
+      <table class="table">
+        <tbody>
+          <tr><td class="one">Pilnīga ceļgala sāpju novēršana</td><td class="two">96,2 %</td></tr>
+          <tr><td class="one">Muguras sāpju un rīta stīvuma novēršana</td><td class="two">94,7 %</td></tr>
+          <tr><td class="one">Artroze 1.–2. pakāpe (pilnīga kustību spēju atjaunošana)</td><td class="two">98,1 %</td></tr>
+          <tr><td class="one">Artroze 3. pakāpe (ievērojams uzlabojums)</td><td class="two">87,3 %</td></tr>
+          <tr><td class="one">Koksartroze (gūžas sāpes)</td><td class="two">91,5 %</td></tr>
+          <tr><td class="one">Diska trūce (sāpju un tirpšanas samazināšana)</td><td class="two">89,4 %</td></tr>
+          <tr><td class="one">Reimatoīdais artrīts (roku pirksti)</td><td class="two">93,8 %</td></tr>
+          <tr><td class="one">Pilnīga locītavas kustīguma atjaunošana</td><td class="two">95,6 %</td></tr>
+          <tr><td class="one">Tūskas un nakts krampju novēršana</td><td class="two">97,0 %</td></tr>
+          <tr><td class="one">Spēja staigāt bez palīdzības</td><td class="two">94,3 %</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>
+      Gadījumi, kas man salauzuši sirdi — un devuši vislielāko cerību
+      <span>
+        Kundze Rasma, 84 gadi. Pamesta aprūpes namā, kad ceļgali lūza. Pēc 2 mēnešu Steplex lietošanas — paša izgāja dārzā pirmo reizi 3 gados.
+      </span>
+    </h2>
+
+    <p>
+      Kundze Rasma Liepa bija Dr. Dzeņa pirmā paciente aprūpes namā Jelgavas novadā. 84 gadu vecumā, ar artrozi 3. pakāpē abos ceļgalos un koksartrozi kreisajā gūžā, 14 mēnešus viņa nevarēja staigāt. Dēls atveda viņu uz aprūpes namu, jo „vairs nevarēja nest viņu uz vannas istabu". Divus gadus viņš to nav apmeklējis.
+    </p>
+
+    <div class="gray-bg rev-block">
+      <img class="img-card2" src="https://static.joxi.pro/1778142925769-b234c916-2418-43cd-a09b-52da3b198c19.jpg">
+      <p>
+        „Neticēju, ka vēl kādreiz varēšu staigāt. Mani ceļgali bija tik pietūkuši, ka nevarēju tos saliecat. Pa istabu mani veda ar ratiņkrēslu. No rīta pamodos un stundu nevarēju pakustināt pat pirkstiņu. Kā tad, ja mans ķermenis būtu miris, bet es vēl dzīvotu.
+      </p>
+      <p>
+        <b>
+          Mans dēls atveda mani šurp, jo vairs nevarēja celt mani no gultas. Viņš teica: 'Māmiņ, es nākšu tevi apmeklēt katru svētdienu.' Divus gadus viņš nav atnācis. Nepārmetu viņam — viņam ir sava dzīve. Bet naktī, kad sāpes pamostas un neviena nav blakus… tas ir ļoti grūti.
+        </b>
+      </p>
+      <p>
+        <b>
+          Un tad atnāca jaunais ārsts. Viņš bija pirmais cilvēks, kurš pieskārās maniem ceļgaliem bez riebuma sejā. Viņš paskaidroja, kas notiek locītavās. Un uzklāja krēmu. Pēc nedēļas varēju saliecat kreiso ceļgalu. Pēc mēneša piecēlos pati no gultas. Pēc diviem mēnešiem — izgāju dārzā. Trīs gadus nebiju bijusi ārā.
+        </b>
+      </p>
+      <p>
+        Medmāsa raudāja, kad mani redzēja. Es vēl vairāk. Ne tāpēc, ka staigāju. Bet tāpēc, ka kāds — jaunais ārsts, kuru nekad nebiju pazinusi — man deva vairāk, nekā mans pašu dēls.
+      </p>
+      <font>
+        <b>Rasma Liepa, 84 gadi, aprūpes nams Jelgavas novadā</b>
+      </font>
+    </div>
+
+    <p>
+      Vēl viens gadījums: kungs Tomass, 58 gadi, visu mūžu mūrnieks, ar iznīcinātu muguru diska trūces dēļ. Sieva pameta viņu, kad viņš vairs nevarēja strādāt.
+    </p>
+
+    <div class="gray-bg rev-block">
+      <img class="img-card2" src="https://static.joxi.pro/1778142925769-f6ae7d5d-d93a-42f5-8684-d3c285fbc8bf.jpg">
+      <p>
+        „30 gadus biju mūrnieks. Mugura atteicās 54 gados — divas diska trūces un išiass. Nevarēju ne stāvēt, ne gulēt. Viss sāpēja. Sieva aizgāja — teica, ka nevar aprūpēt invalīdu. Nepārmetu viņai.
+      </p>
+      <p>
+        <b>
+          Māsa dzirdēja par jauno ārstu no kaimiņienes. Nosūtīja man Steplex krēmu. Sāku to uzklāt rītā un vakarā uz muguras. Trešajā dienā sajutu pirmo atvieglojumu. Pēc 3 nedēļām — varēju atkal aiziet uz veikalu. Pēc 2 mēnešiem — atgriezos darbā nepilnā slodzes režīmā.
+        </b>
+      </p>
+      <p>
+        Dažreiz no rīta paceļos no gultas bez sāpēm un apstājos uz mirkli. Stāvu un nevaru noticēt, ka tas ir patiesība. Ka vairs nesāp. Ja nebūtu bijis jaunā ārsta, iespējams, tagad es pats atrastos aprūpes namā."
+      </p>
+    </div>
+
+    <h2>
+      „Steplex ārstē ne tikai sāpes — tas atjauno visu locītavu no iekšpuses"
+      <span>
+        No tā iegūst ne tikai aprūpes namu iemītnieki. Visi, kas vecāki par 45 gadiem un jūt pirmās pazīmes, var novērst katastrofu.
+      </span>
+    </h2>
+
+    <p><b>Dr. Markuss Dzenis:</b></p>
+
+    <p>
+      — Minimālais lietošanas laiks ir 30 dienas, taču smagos artrozes vai diska trūces gadījumos var būt nepieciešami 2–3 mēneši. Taču visos gadījumos — bez izņēmuma — tiek novērota sāpju mazināšanās, skrimšļu atjaunošanās un kustību spēju atgriešanās.
+    </p>
+
+    <p>
+      Steplex darbojas no pirmās uzklāšanas: sāpes mazinās, iekaisums atkāpjas, kustība kļūst vieglāka. Taču patiesais brīnums notiek ar laiku: skrimšļi atjaunojas, locītavu šķidrums atgriežas, locītava „atjaunojas" no iekšpuses.
+      <b class="red-txt">
+        Redzēju 80 gadus vecus cilvēkus, kuri atkal sāka staigāt. Rokas, kuras nevarēja turēt tasi, cēla karoti pie mutes. Saliektas muguras, kas iztaisnojās. Un katrā gadījumā — prieka asaras.
+      </b>
+    </p>
+
+    <center>
+      <p><b>
+          Pateicoties jaunā ārsta metodei, vairāk nekā 12 000 cilvēku Latvijā ir atguvuši locītavu funkcijas. Šeit daži gadījumi:
+        </b></p>
+    </center>
+
+    <figure>
+      <img src="https://static.joxi.pro/1778142925769-baf151ad-77dc-450d-9a89-3293efafacfa.jpg">
+      <figcaption>Vīrietis, 65 gadi. Artroze 3. pakāpe abos ceļgalos — nevarēja kāpt pa kāpnēm. Steplex 60 dienās: pilnīga kustīgums, bez sāpēm.</figcaption>
+    </figure>
+
+    <figure>
+      <img class="img-card" src="https://static.joxi.pro/1778142925768-f19f7f66-3e45-449a-87f2-78884ec5e6e1.jpg">
+      <figcaption>Sieviete, 58 gadi. Hroniskas muguras sāpes un diska trūce L5-S1. Steplex 45 dienās: sāpes izzuda, var atkal veikt mājas darbus.</figcaption>
+    </figure>
+
+    <figure>
+      <img class="img-card" src="https://static.joxi.pro/1778142925768-7d23b447-1714-413e-b3dd-921918111aa3.jpg">
+      <figcaption>Sieviete, 72 gadi. Smags reimatoīdais artrīts pirkstu locītavās — nevarēja turēt pat tasi. Steplex 2 mēnešos: pirksti kustas, tūska izzuda.</figcaption>
+    </figure>
+
+    <figure>
+      <img class="img-card" src="https://static.joxi.pro/1778142925768-4a9900ea-fa77-4c81-a40e-dff210ebf7df.jpg">
+      <figcaption>Vīrietis, 70 gadi. Progresējoša koksartroze — varēja kustēties tikai ar staiguļiem. Steplex 2,5 mēnešos: staigā patstāvīgi, bez sāpēm.</figcaption>
+    </figure>
+
+    <p><b>Dr. Markuss Dzenis:</b></p>
+    <p>
+      — Šie gadījumi ir dzīvs pierādījums tam, ka locītavas var atjaunoties — pat tad, ja diagnoze izklausījās kā spriedums. Bez operācijas. Bez tabletēm, kas iznīcina kuņģi. Un tas, kas mani padara laimīgāko: daudzi no šiem cilvēkiem ir aprūpes namu iemītnieki — tie, kurus pasaule aizmirsa. <b>Bet es viņus neaizmirsiu. Un Steplex arī viņus neaizmirst.</b>
+    </p>
+
+    <div id="overlay" style="display:none;opacity:0"></div>
+    <div id="popup3" style="display:none;opacity:0;transform:translate(-50%,-50%) scale(0.8)"></div>
+
+    <h2>
+      Kāpēc Steplex nav pieejams aptiekās? Un kā to var iegādāties?
+    </h2>
+
+    <p><b>Dr. Markuss Dzenis:</b></p>
+
+    <p>Diemžēl Steplex ražošana ir sarežģīts un dārgs process. Izejmateriāli ir reti — zemas molekulmasas hialuronskābe, attīrīts II tipa kolagēns, koncentrēts Boswellia ekstrakts — un tos ir grūti iegādāties nepieciešamajos daudzumos. Mēs nevaram apmierināt visu pieprasījumu.</p>
+
+    <p>Pirms Steplex nonāks aptiekās, paies vismaz 2–3 gadi. Līdz tam produkts tiek pārdots tikai tiešsaistē, atbalsta programmu ietvaros, divas reizes gadā. Tomēr <font class="red-txt">atlaides var sasniegt pat 50 %</font> — kas pensionāriem ir izšķiroši svarīgi.</p>
+
+    <p>
+      Lūdzu jūs: NEPALAIDIET GARĀM ATBALSTA PROGRAMMU. Ne tikai sev — bet arī saviem vecākiem, vecvecākiem, tuviniekiem, kuri, iespējams, klusumā cieš. Vai tiem, kas jau atrodas aprūpes namā, vieni, un neviens viņiem neko nesūta. Esiet jūs tas cilvēks, kurš veic starpību.
+    </p>
+
+    <p class="red-txt"><b>Lai veiktu pasūtījumu, izmantojiet zemāk esošo formu.</b></p>
+
+    <h2>
+      Pēdējā iespēja šogad iegādāties Steplex — sev vai tuvam cilvēkam, kurš klusumā cieš
+    </h2>
+
+    <img alt="Steplex" src="https://static.joxi.pro/1778142925765-23a2eba7-86af-44ac-ba7c-09e3abb33bc2.jpg"
+      style="margin:0 auto;display:block;max-width:500px;width:100%;margin-top:24px;margin-bottom:20px">
+
+    <p><b>Dr. Markuss Dzenis:</b></p>
+
+    <p>
+      — Rezervēju 20 000 iepakojumu ekskluzīvi šī portāla lasītājiem. Katrs Latvijas pilsonis, kas vecāks par 40 gadiem, var saņemt <font class="red-txt">atlaidi līdz 50 %</font>, taču programma darbojas līdz <span>
+        <script>dtime_nums(0, true)</script>
+      </span>.
+    </p>
+
+    <p>Negaidiet, līdz nevarat kāpt pa kāpnēm. Līdz ceļgali pilnīgi lūst. Līdz mugura nobloķējas. Un galvenais — negaidiet, kamēr kļūsiet par „nastu" ģimenes acīs. Steplex ir kumulatīva darbība, un pietiek to lietot vienu reizi gadā kā profilaktisku pasākumu.</p>
+
+    <p>Ierakstiet savu vārdu un tālruņa numuru. Mūsu konsultants sazināsies ar jums, izvēlēs piemērotu programmu un organizēs piegādi 2–3 dienās ar kurjeru tieši uz norādīto adresi.</p>
+
+    <p><b>Ar cerību un cieņu — jaunais ārsts. Rūpējieties par saviem tuviniekiem. Varbūt vienīgais, kas viņiem vajadzīgs — ir apziņa, ka viņi nav aizmirsti.</b></p>
+
+    <p class="pachino-ramka">
+      <span class="ramka-title">Atjauninājums: <span>
+          <script>dtime_nums(0, true)</script>
+        </span>:</span>
+      Milzīgās intereses dēļ krājumi var beigties ātrāk nekā paredzēts! Šodien —
+      <font><span>
+          <script>dtime_nums(0, true)</script>
+        </span> — ir programmas pēdējā diena</font> vai līdz krājumu beigām.
+    </p>
+
+    <center><img src="images/product.png" style="max-width:250px;"></center><br>
+
+    <center>
+      <p class="noclose-cta red-txt">
+        Uzmanību! Neaizveriet un neatjauniniet šo lapu, pretējā gadījumā jums rezervētais Steplex iepakojums tiks nodots citai personai!
+      </p>
+      <span class="pre-cta">
+        Izmantojiet piedāvājumu — jūsu vieta ir rezervēta:
+        <span class="nowrap">Nr. <font class="number-me"
+            style="border-bottom:2px solid var(--color-danger);font-weight:700">19&nbsp;974</font></span>
+      </span>
+    </center>
+
+    <span id="form"></span>
+    <span id="oneform"></span>
+    <div class="pachinoform">
+      <div class="pachinoform_title">
+        <div class="pachinoform_title_logo">
+          <img alt="" src="images/56d9b0017d1d_d58505c9.png">
+        </div>
+        <div class="pachinoform_title_text">
+          <b>Oficiālā pasūtījuma veidlapa</b>
+          Nr. <font class="number-me nowrap">19&nbsp;974</font> / <font class="nowrap">20 000</font>
+        </div>
+      </div>
+      <div class="pachinoform_order">
+        Lai izmantotu <b>50% atlaidi</b>, ierakstiet savu vārdu un tālruņa numuru laukos un nospiediet „PASŪTĪT TAGAD".
+      </div>
+      <div class="pachinoform_value">
+        Pieejams:
+        <span class="blc-pck">
+          <strong class="pachinoform_value_current left-pack">33</strong>
+          <strong class="pachinoform_value_total"> /20 000</strong>
+        </span>
+      </div>
+      <div class="pachinoform_price">
+        <div class="pachinoform_price_old"><span class="price_old">78 €</span></div>
+        <div class="pachinoform_price_new"><span class="price_main">39 €</span></div>
+      </div>
+      <form action="/order.php" method="post">
+        <input type="hidden" name="fbpx" value="{fbpx}">
+        <input type="hidden" name="utm_code" value="{subid}">
+        <input type="hidden" name="cid" value="{campaign_id}">
+        <input type="hidden" name="sid" value="6645">
+        <input type="hidden" name="hash" value="{hash}">
+        <input type="hidden" name="country" value="LV">
+        <div class="name-input">
+          <label for="name-input">Vārds</label>
+          <input autocomplete="name" id="name-input" name="name" placeholder="Jūsu vārds" required="" type="text" value="">
+        </div>
+        <div class="phone-input">
+          <label for="phone-input">Tālruņa numurs</label>
+          <input autocomplete="tel" id="phone-input" maxlength="20" name="phone" pattern="^[\-+() 0-9]{8,20}$"
+            placeholder="Jūsu tālruņa numurs" required="" type="tel" value="">
+        </div>
+        <button class="button-submit" type="submit">PASŪTĪT TAGAD</button>
+      </form>
+      <div class="pachinoform_footer">
+        ✔️ Piegāde tieši uz jūsu adresi<br> ar kurjera dienestu visā Latvijā
+        <br>
+        <img alt="" src="images/b0110a32ff2e_8322b1b5.png" style="width:auto">
+      </div>
+    </div>
+
+    <!-- COMMENTS SECTION -->
+    <div class="comments comments-fb" id="pluginComments">
+      <div class="comments__header">
+        <div class="comments__left-box">
+          <p class="comments__header-title">KOMENTĀRI</p>
+        </div>
+      </div>
+
+      <div class="comments__item-list">
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/7da17fc86c6c_2f1260d0.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Marija Ozola</p>
+              <p class="startdate" daysago="3" format="day/month/year">
+                <script>dtime_nums(-3, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Raudāju lasot šo rakstu. Manai mātei ir 76 gadi un viņa jau 2 gadus atrodas aprūpes namā — tieši tāpēc, ka viņas ceļgali lūza un nevarēju rūpēties par viņu. Tas ir mans lielākais grēks. Pasūtīju Steplex viņai. Ceru, ka vēl nav par vēlu. Dievs, ceru, ka tas palīdzēs.</p>
+          </div>
+        </div>
+
+        <div id="first-comment">
+          <div class="comments__item">
+            <div class="comments__item-header">
+              <img alt="" class="comments__item-avatar" loading="eager" src="images/8ba73d45c164_4ede289a.jpg">
+              <div class="comments__item-info">
+                <p class="comments__item-name">Ingrīda Bērziņa</p>
+                <p class="startdate" daysago="3" format="day/month/year">
+                  <script>dtime_nums(-3, true)</script>
+                </p>
+              </div>
+            </div>
+            <div class="comments__item-body">
+              <p class="comments__item-content">Steplex pienāca pagājušajā piektdienā. Uzklāju rītā un vakarā uz ceļgaliem. Pēc 5 dienām — sāpes ievērojami mazinājušās, varu noiet pa kāpnēm, neturot aiz margas! Ārsta stāsts mani pārliecināja pasūtīt. Izcils cilvēks.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/fa7f61c1431c_7946ff6c.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Helga Vītola</p>
+              <p class="startdate" daysago="3" format="day/month/year">
+                <script>dtime_nums(-3, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Man ir 69 gadi. Mugura mani mocīja 4 gadus — diska trūce un išiass. Nevarēju pat noliekties, lai sasientu kurpes. Ārsti deva pretiekaisuma tabletes, kas iznīcināja manu kuņģi. Pēc 3 nedēļām ar Steplex — sāpes gandrīz pilnīgi izzudušas. Pati eju uz tirgu, iepērcos, gatavoju ēst. Esmu atguvusi savu dzīvi.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/dcc5cfe80d60_5aa7f8f7.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Kārlis Priedītis</p>
+              <p class="startdate" daysago="3" format="day/month/year">
+                <script>dtime_nums(-3, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Sēžu birojā 10 stundas dienā. Mugura un kakls atteicās. Ārsts teica: „Vai beidz strādāt, vai operācija." Es izvēlējos Steplex. Pēc 5 nedēļām — nav sāpju. Un milzīga cieņa jaunajam ārstam — pasaulē, kur visi domā tikai par naudu, viņš apmeklē aizmirstos vecāka gadagājuma cilvēkus.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/bcbe20e0b5d2_b241da99.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Voldemārs Eglītis</p>
+              <p class="startdate" daysago="2" format="day/month/year">
+                <script>dtime_nums(-2, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Pasūtīju 3 iepakojumus — sev (ceļgalis), sievai (rokas, artrīts) un sievastēvam aprūpes namā. Nevaram viņu bieži apmeklēt, bet vismaz sūtām viņam to, kas vajadzīgs. Ceru, ka palīdzēs arī viņam. Paldies par rakstu.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/73d3a879cef9_4a9ce85c.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Brigita Mazure</p>
+              <p class="startdate" daysago="2" format="day/month/year">
+                <script>dtime_nums(-2, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Domāju, vai pasūtīt tēvam. Viņš jau 3 gadus ir aprūpes namā — ceļgali nemaz nestrādā. Viņš ir padevies, gandrīz nerunā. Vai domājat, ka Steplex var palīdzēt pat 78 gadu vecumā?</p>
+          </div>
+        </div>
+
+        <div class="comm-obert-reply">
+          <div class="comments__item reply">
+            <div class="comments__item-header">
+              <img alt="" class="comments__item-avatar" loading="eager" src="images/71deaf909b4e_ea30d07c.jpg">
+              <div class="comments__item-info">
+                <p class="comments__item-name">Vija Zariņa</p>
+                <p class="startdate" daysago="2" format="day/month/year">
+                  <script>dtime_nums(-2, true)</script>
+                </p>
+              </div>
+            </div>
+            <div class="comments__item-body">
+              <p class="comments__item-content">Brigita, manai mātei ir 82 gadi! Smaga artroze abos ceļgalos, nevarēja piecelties no gultas. 2 mēneši Steplex — tagad pati iziet pagalmā. Nejokojos. Un visskaistākais: kad atnācu apmeklēt viņu, viņa sagaidīja mani pie durvīm stāvus. Abas raudājām. Pasūti bez vilcināšanās, tavs tēvs ir pelnījis šo iespēju.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="comm-obert-reply">
+          <div class="comments__item reply">
+            <div class="comments__item-header">
+              <img alt="" class="comments__item-avatar" loading="eager" src="images/66ebad51123a_206d5fba.png">
+              <div class="comments__item-info">
+                <p class="comments__item-name">Helmuts Kalniņš</p>
+                <p class="startdate" daysago="2" format="day/month/year">
+                  <script>dtime_nums(-2, true)</script>
+                </p>
+              </div>
+            </div>
+            <div class="comments__item-body">
+              <p class="comments__item-content">Brigita, vienkārši pasūti. Es 78 gadu vecumā biju soli no ratiņkrēsla — koksartroze. Steplex mani piecēla kājās 2 mēnešos. Burtiski. Tavam tēvam tas vajadzīgs vairāk, nekā tu domā.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/d61700bc0961_28c03d39.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Irma Lejiņa</p>
+              <p class="startdate" daysago="1" format="day/month/year">
+                <script>dtime_nums(-1, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Nedēļu uzklāju. No rīta vairs neesmu „stīva kā dēlis". Varu noliekties, piecelties bez vaidiem. Pasūtīju arī kaimiņienei — 73 gadi, dzīvo viena, un turējās aiz sienām, ejot pa dzīvokli.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/7db2eed8e880_6ecfd92a.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Elizabete Vilciņa</p>
+              <p class="startdate" daysago="1" format="day/month/year">
+                <script>dtime_nums(-1, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">68 gadu vecumā domāju, ka vairs nekad nevarēšu strādāt dārzā. Ceļgali un mugura bija mani paralizējuši. Steplex mainīja visu — pēc 4 nedēļām šogad apraku pirmo dobi. Jaunā ārsta stāsts mani dziļi aizkustināja. Pasaulē joprojām ir laipni cilvēki.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/a49c7ec0724d_6f186c1c.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Haralds Mežulis</p>
+              <p class="startdate" daysago="1" format="day/month/year">
+                <script>dtime_nums(-1, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Man ir 82 gadi. Pagājušajā gadā nevarēju pats aiziet uz tualeti. Bērni runāja par aprūpes namu. Izmēģināju Steplex — bez lielām cerībām. Un tas darbojas! Eju pats, ģērbjos pats, eju pats līdz vārtiem. Bērni vairs nerunā par aprūpes namu. Tas ir mans lielākais prieks dzīvē.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/7099c502f996_b89c4cc9.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Jāzeps Lapiņš</p>
+              <p class="startdate" daysago="1" format="day/month/year">
+                <script>dtime_nums(-1, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Mana sieva nevarēja noiet pa kāpnēm. Turējās aiz sienas un raudāja no sāpēm. Baidījos to pazaudēt — ne no slimības, bet no izmisuma. Pasūtīju Steplex ar atlaidi. Pēc 4 nedēļām — vakar viņa pati nogāja uz tirgu un atgriezās ar ziediem. Ar ziediem! Paldies no visas sirds.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/47a8cb9cf088_09555b8e.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Karīna Brūvere</p>
+              <p class="startdate" daysago="0" format="day/month/year">
+                <script>dtime_nums(0, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Pasūtīju 4 iepakojumus — mātei (aprūpes nams, ceļgalis), tēvam (mājās, mugura) un 2 sev (rokas, artrīts pirkstu locītavās, nevarēju rakstīt). Raksta stāsti mani satrieca. Vajadzēja to darīt sen. Vairs nav attaisnojumu.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/f021e0a36f8b_7c282874.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Gaida Auzāne</p>
+              <p class="nowdate" daysago="0" format="day/month/year">
+                <script>dtime_nums(0, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Steplex pienāca — kurjers piegādāja 2 dienās! Jau uzklāju uz mātes ceļgala aprūpes namā. Ceru no visas sirds. Nosūtīšu šo rakstu arī personālam — varbūt sazināsies ar jauno ārstu.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/d770c7a4cbdf_467ee117.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Raitis Alksnis</p>
+              <p class="nowdate" daysago="0" format="day/month/year">
+                <script>dtime_nums(0, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Jautāju aptiekā par Steplex — tur nav. Teica, ka jāpasūta caur šo lapu. Ceru, ka vēl ir pieejams. Manam vectēvam tas steidzami nepieciešams — viņam ir 81 gads un viņš vispār nevar staigāt.</p>
+          </div>
+        </div>
+
+        <div class="custom-commetns-container"></div>
+
+        <a href="#" style="text-decoration: none;">
+          <div class="form-container">
+            <form class="custom-form" id="custom-form">
+              <div class="custom-form__top-field">
+                <div class="custom-form__ava-block">
+                  <input disabled class="custom-form__ava-input sf-hidden" id="avatar" name="avatar" type="file" value="">
+                  <label class="custom-form__ava-label"><span class="custom-form__ava-label_red-text">*</span>Profila attēls</label>
+                </div>
+                <input disabled class="custom-form__name" placeholder="Jūsu vārds" required="" type="text" value="">
+              </div>
+              <textarea disabled class="custom-form__message" placeholder="Jūsu komentārs" required=""></textarea>
+              <div class="custom-form__bottom-field">
+                <div class="custom-form__photo-block">
+                  <input disabled class="custom-form__photo-input sf-hidden" id="photo" type="file" value="">
+                  <label class="custom-form__photo-label" for="photo">Pievienot attēlu</label>
+                </div>
+                <button disabled class="custom-form__btn">NOSŪTĪT</button>
+              </div>
+            </form>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+  </main>
+
+  <div class="trust-strip">
+    <div class="trust-item"><span class="trust-item-icon">🛡️</span> Sertificēta kvalitāte</div>
+    <div class="trust-item"><span class="trust-item-icon">🚚</span> Piegāde 2–3 dienās</div>
+    <div class="trust-item"><span class="trust-item-icon">⚕️</span> Pieejams bez receptes</div>
+    <div class="trust-item"><span class="trust-item-icon">🔒</span> Drošs pasūtījums</div>
+  </div>
+
+  <footer class="clinical-footer">
+    © VeselībaInfo Latvija — speciālais reportāžs<br>
+    Lapā sniegtā informācija ir informatīva rakstura un neaizstāj medicīnisko konsultāciju.
+  </footer>
+
+  <div class="ffl ffl__anim sf-hidden" data-name="div-gc0zvidej" style="display:block"></div>
+
+  <script async>
+    const LAZY = document.querySelectorAll('img');
+    for (let i = 0; i < LAZY.length; i++) { LAZY[i].setAttribute('loading', 'lazy'); }
+  </script>
+
+  <script>
+    $("a").on("touchend click", function (e) {
+      e.preventDefault();
+      $('body,html').animate({ scrollTop: $('#oneform').offset().top }, 400);
+    });
+  </script>
+
+  <script>
+    $('[name="name"]').on("input", function () {
+      var val = $(this).val();
+      var cleaned = val.replace(/[^\p{L}\s]/gu, "").replace(/^\s+/, "").replace(/\s\s+/, " ");
+      var parts = cleaned.split(" ");
+      if (parts.length > 2) { cleaned = parts[0] + " " + parts[1]; }
+      $(this).val(cleaned);
+    });
+    $('[name="name"]').on("change blur", function () { $(this).val($(this).val().trim()); });
+    $('[name="phone"]').on("input change", function(e) {
+      var val = $(this).val();
+      $(this).val(val.replace(/\D/g, ""));
+      $(e.currentTarget).attr("pattern", "[0-9]{8,11}");
+    });
+  </script>
+  <p style="opacity: 0;">{_box:2sHZz2rc}</p>
+</body>
+</html>

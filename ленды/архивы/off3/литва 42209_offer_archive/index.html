@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+  <script>window.jQuery||document.write('<script src="js/jquery-3.6.0.min.js"><\/script>');</script>
+  <meta charset="utf-8">
+  <title>„Lankau tuos, kurių niekas nebeženka" — jaunas gydytojas, apvažiuojantis slaugos namus Lietuvoje ir grąžinantis apleistiems senjorams sąnarius ir orumą</title>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="no-cache" http-equiv="Cache-Control">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="no-referrer" name="referrer">
+  <meta content="noindex, nofollow" name="robots">
+
+  <link rel="icon" href="images/product.png">
+
+  <style>
+    :root {
+      --color-primary: #0a5c9e;
+      --color-primary-dark: #084678;
+      --color-primary-light: #e8f2fa;
+      --color-accent: #0284c7;
+      --color-danger: #c0392b;
+      --color-danger-light: #fdecea;
+      --color-success: #1e8449;
+      --color-success-light: #e8f5ee;
+      --color-warning: #b7791f;
+      --color-text: #1a2b42;
+      --color-text-muted: #4a5a70;
+      --color-text-light: #6b7a8f;
+      --color-bg: #ffffff;
+      --color-bg-soft: #f7fafc;
+      --color-bg-alt: #eef4f9;
+      --color-border: #d9e2ec;
+      --color-border-soft: #e4ebf2;
+      --shadow-sm: 0 1px 2px rgba(10, 92, 158, 0.04), 0 1px 3px rgba(10, 92, 158, 0.06);
+      --shadow-md: 0 4px 12px rgba(10, 92, 158, 0.08), 0 2px 4px rgba(10, 92, 158, 0.04);
+      --shadow-lg: 0 10px 25px rgba(10, 92, 158, 0.10), 0 4px 10px rgba(10, 92, 158, 0.05);
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --radius-lg: 12px;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --font-serif: 'Source Serif Pro', Georgia, 'Times New Roman', serif;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body { margin: 0; padding: 0; font-family: var(--font-sans); font-size: 17px; line-height: 1.65; color: var(--color-text); background: var(--color-bg-soft); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    .clinical-topbar { background: var(--color-primary-dark); color: #fff; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; padding: 8px 16px; text-align: center; font-weight: 500; }
+    .clinical-topbar::before { content: "⚕ "; margin-right: 6px; }
+    .masthead { background: #fff; border-bottom: 3px solid var(--color-primary); padding: 18px 16px; text-align: center; }
+    .masthead-inner { max-width: 900px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; }
+    .masthead-logo { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-serif); font-weight: 700; font-size: 22px; color: var(--color-primary-dark); letter-spacing: -0.01em; }
+    .masthead-logo-icon { width: 36px; height: 36px; background: var(--color-primary); border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #fff; font-size: 20px; font-weight: 700; }
+    .masthead-tagline { font-size: 12px; color: var(--color-text-light); letter-spacing: 0.08em; text-transform: uppercase; border-left: 1px solid var(--color-border); padding-left: 14px; font-weight: 500; }
+    @media (max-width:560px) { .masthead-tagline { border-left: 0; padding-left: 0; font-size: 11px; width: 100%; border-top: 1px solid var(--color-border); padding-top: 8px; margin-top: 4px; } }
+    header { max-width: 900px; margin: 0 auto; padding: 0; }
+    .bg-image { text-align: center; }
+    .bg-image img { max-width: 100%; height: auto; display: inline-block; }
+    .text-container { display: block; }
+    .h1-bg { position: relative; max-width: 900px; margin: 0 auto; padding: 28px 22px 20px; background: #fff; border-bottom: 1px solid var(--color-border); }
+    .h1-bg::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent) 100%); }
+    .title_h1 { font-family: var(--font-serif); font-size: 26px; line-height: 1.25; color: var(--color-text); font-weight: 700; margin: 0 0 14px; letter-spacing: -0.01em; }
+    .head-one-part { color: var(--color-danger); }
+    .head-two-part { display: block; }
+    .head-main-date { font-size: 13px; color: var(--color-text-light); padding: 0; display: flex; align-items: center; gap: 8px; margin-bottom: 16px; padding-bottom: 14px; border-bottom: 1px dashed var(--color-border); }
+    .head-main-date::before { content: "📅"; font-size: 14px; }
+    .head-main-date-title { display: inline; font-style: normal; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 500; }
+    .main-subtitle { display: block; padding: 16px 18px; color: var(--color-text); font-size: 17px; border-radius: var(--radius-md); font-weight: 500; border-left: 4px solid var(--color-primary); background: var(--color-primary-light); line-height: 1.55; font-style: normal; margin: 0; box-shadow: none; }
+    @media (max-width:640px) { .title_h1 { font-size: 20px; } .main-subtitle { font-size: 15px; padding: 14px 14px; } .h1-bg { padding: 22px 16px 18px; } }
+    main { max-width: 900px; margin: 0 auto; padding: 24px 22px 40px; background: #fff; border-left: 1px solid var(--color-border-soft); border-right: 1px solid var(--color-border-soft); }
+    @media (max-width:640px) { main { padding: 18px 14px 30px; } }
+    main p { margin: 0 0 16px; color: var(--color-text); }
+    main img { max-width: 100%; height: auto; border-radius: var(--radius-md); }
+    main h2 { font-family: var(--font-serif); font-size: 24px; line-height: 1.3; font-weight: 700; color: var(--color-primary-dark); margin: 32px 0 16px; padding-bottom: 12px; border-bottom: 2px solid var(--color-primary-light); letter-spacing: -0.01em; }
+    main h2 span { display: block; font-family: var(--font-sans); font-size: 16px; font-weight: 500; color: var(--color-text-muted); margin-top: 10px; margin-bottom: 0; line-height: 1.5; }
+    main h3 { font-family: var(--font-serif); font-size: 19px; color: var(--color-primary-dark); margin: 22px 0 12px; font-weight: 600; }
+    @media (max-width:640px) { main h2 { font-size: 19px; } main h2 span { font-size: 15px; } }
+    main ul { padding-left: 0; list-style: none; margin: 16px 0; background: var(--color-bg-soft); border: 1px solid var(--color-border-soft); border-radius: var(--radius-md); padding: 14px 18px 14px 20px; }
+    main ul li { position: relative; padding-left: 22px; margin-bottom: 8px; line-height: 1.5; }
+    main ul li::before { content: ""; position: absolute; left: 0; top: 10px; width: 10px; height: 10px; border: 2px solid var(--color-primary); border-radius: 50%; background: #fff; }
+    main ul li:last-child { margin-bottom: 0; }
+    .red-txt { color: var(--color-danger); font-weight: 600; }
+    .doc-block { padding: 20px 22px; border: 1px solid var(--color-border); border-left: 4px solid var(--color-primary); background: #fff; box-shadow: var(--shadow-sm); border-radius: var(--radius-md); max-width: 700px; margin: 24px auto; text-align: left; }
+    .doc-block img { border-radius: var(--radius-md); margin-bottom: 14px; }
+    .doc-block p { padding: 0; margin: 0 0 12px; font-size: 16px; line-height: 1.6; }
+    .doc-block p:last-child { margin-bottom: 0; }
+    .doc-block p b { color: var(--color-primary-dark); }
+    figure { margin: 22px 0; padding: 0; text-align: center; }
+    figure img { border-radius: var(--radius-md); box-shadow: var(--shadow-md); max-width: 100%; height: auto; }
+    figure figcaption { margin-top: 12px; padding: 10px 14px; font-size: 14px; line-height: 1.5; color: var(--color-text-muted); background: var(--color-bg-soft); border-left: 3px solid var(--color-primary); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; text-align: left; font-style: italic; }
+    figure.cap-bold figcaption { font-style: normal; font-weight: 500; color: var(--color-text); }
+    .img-card { border: 1px solid var(--color-border); padding: 6px; background: #fff; box-shadow: var(--shadow-md); border-radius: var(--radius-md); }
+    .img-card2 { border: 1px solid var(--color-border); padding: 6px; background: #fff; border-radius: var(--radius-md); }
+    .pachino-ramka312-block { margin: 24px 0; }
+    .pachino-ramka312 { background: var(--color-danger-light); border: 1px solid rgba(192, 57, 43, 0.25); border-left: 4px solid var(--color-danger); border-radius: var(--radius-md); padding: 18px 20px; color: var(--color-text); font-weight: 500; box-shadow: none; margin: 0; font-size: 16px; line-height: 1.6; position: relative; }
+    .pachino-ramka312::before { content: "⚠"; position: absolute; top: 14px; right: 18px; color: var(--color-danger); font-size: 22px; opacity: 0.7; }
+    .pachino-ramka312 .obertka-1 { display: block; }
+    .rev-block { margin: 24px 0; padding: 20px 22px; background: var(--color-primary-light); border: 1px solid rgba(10, 92, 158, 0.15); border-left: 4px solid var(--color-primary); border-radius: var(--radius-md); box-shadow: none; }
+    .rev-block p { font-size: 16px; line-height: 1.6; margin-bottom: 12px; }
+    .rev-block img { border-radius: var(--radius-md); margin-bottom: 14px; max-width: 100%; }
+    .rev-block font { display: block; margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(10, 92, 158, 0.15); color: var(--color-primary-dark); font-size: 15px; }
+    .rev-block font b { font-weight: 600; }
+    .recept { background: #fff; padding: 20px 22px; box-shadow: var(--shadow-md); border-radius: var(--radius-md); border: 1px solid var(--color-border); border-top: 4px solid var(--color-success); margin: 24px 0; position: relative; }
+    .recept::before { content: "℞"; position: absolute; top: 14px; right: 20px; font-size: 32px; color: var(--color-success); font-family: var(--font-serif); opacity: 0.4; line-height: 1; }
+    .recept p b { color: var(--color-primary-dark); font-size: 16px; }
+    .my-ul-0-green { margin: 12px 0 0 !important; padding: 0 !important; background: transparent !important; border: 0 !important; list-style: none; }
+    .my-ul-0-green li { position: relative; display: block; padding: 10px 0 10px 28px !important; margin: 0 !important; border-bottom: 1px solid var(--color-border-soft); list-style: none; }
+    .my-ul-0-green li::before { content: "✓" !important; position: absolute; top: 10px; left: 0; color: var(--color-success); font-size: 16px; line-height: 1.5; font-weight: 700; border: 0 !important; background: transparent !important; width: auto !important; height: auto !important; border-radius: 0 !important; }
+    .my-ul-0-green li:last-child { border-bottom: 0; }
+    .my-ul-0-green li b { color: var(--color-primary-dark); font-size: 16px; }
+    .my-ul-0-green font { font-size: 14px; display: block; margin-top: 4px; color: var(--color-text-muted); }
+    .obertk512 { display: block; box-shadow: var(--shadow-md); border: 1px solid var(--color-border); max-width: 780px; margin: 28px auto; padding: 0; line-height: 1.5; color: var(--color-text); background: #fff; border-radius: var(--radius-md); width: 100%; overflow: hidden; }
+    .obertk512 h1 { font-family: var(--font-serif); line-height: 1.3; margin: 0; color: #fff; font-size: 18px; padding: 16px 20px; font-weight: 600; background: var(--color-primary); border: 0; border-radius: 0; }
+    .block-offer-actions-block { padding: 10px 22px 22px; border: 0; }
+    .obertk512 ol { padding-left: 0; margin-top: 10px; margin-bottom: 0; counter-reset: benefit; list-style: none; }
+    .obertk512 li { line-height: 1.4; padding: 16px 0 16px 50px; border-bottom: 1px solid var(--color-border-soft); position: relative; counter-increment: benefit; }
+    .obertk512 li::before { content: counter(benefit); position: absolute; left: 0; top: 14px; width: 36px; height: 36px; background: var(--color-primary-light); color: var(--color-primary-dark); border-radius: 50%; font-weight: 700; font-size: 16px; display: flex; align-items: center; justify-content: center; border: 2px solid var(--color-primary); }
+    .obertk512 li::marker { content: none; }
+    .obertk512 li:last-child { border-bottom: 0; }
+    .obertk512 li font { line-height: 1.3; color: var(--color-primary-dark); text-align: left; font-weight: 600; font-size: 17px; display: block; margin-bottom: 6px; }
+    .block-offer-actions-block li span { display: block; font-size: 15px; line-height: 1.5; font-weight: 400; color: var(--color-text-muted); margin: 0; padding: 0; border-bottom: 0; }
+    .table-block { display: block; box-shadow: var(--shadow-md); border: 1px solid var(--color-border); border-radius: var(--radius-md); max-width: 700px; margin: 28px auto; padding: 0; font-size: 16px; line-height: 1.5; color: var(--color-text); background: #fff; width: 100%; overflow: hidden; }
+    .table-block h1 { font-family: var(--font-serif); line-height: 1.35; margin: 0; color: #fff; font-size: 17px; padding: 16px 20px; font-weight: 600; background: var(--color-primary); border: 0; border-radius: 0; }
+    .table { width: 100%; max-width: 100%; border-collapse: collapse; font-family: var(--font-sans); margin: 0; background: #fff; }
+    .table tr:nth-child(even) td { background: var(--color-bg-soft) !important; }
+    .table td { border: 0 !important; border-bottom: 1px solid var(--color-border-soft) !important; padding: 12px 16px !important; vertical-align: middle; background: #fff !important; }
+    .table tr:last-child td { border-bottom: 0 !important; }
+    .table td.one { text-align: left; width: 75%; font-size: 15px; font-weight: 500; color: var(--color-text); }
+    .table td.two { font-size: 18px; color: var(--color-success); text-align: right; font-weight: 700; width: 25%; white-space: nowrap; }
+    @media (max-width:560px) { .table td.one { font-size: 14px; } .table td.two { font-size: 16px; } .table td { padding: 10px 12px !important; } }
+    .pachino-ramka2 { text-align: left; color: var(--color-success); font-weight: 600; border: 1px solid rgba(30, 132, 73, 0.25); border-left: 4px solid var(--color-success); border-radius: var(--radius-md); padding: 18px 20px; background: var(--color-success-light); box-shadow: none; margin: 20px 0; font-size: 16px; line-height: 1.55; }
+    .pachino-ramka { border: 1px solid rgba(183, 121, 31, 0.3); border-left: 4px solid var(--color-warning); padding: 18px 20px; border-radius: var(--radius-md); background: #fff9ef; margin: 20px 0; font-size: 16px; line-height: 1.55; position: relative; }
+    .pachino-ramka::before { content: "🕐"; position: absolute; top: 14px; right: 18px; font-size: 22px; opacity: 0.8; }
+    .ramka-title { display: block; color: var(--color-warning); padding: 0; margin-bottom: 10px; font-weight: 700 !important; background: transparent; text-transform: uppercase; font-size: 13px; letter-spacing: 0.06em; }
+    .pachino-ramka font { color: var(--color-danger); font-weight: 600; }
+    .noclose-cta { font-size: 15px; max-width: 780px; margin: 16px auto; display: block; background: var(--color-danger-light); border: 1px solid rgba(192, 57, 43, 0.2); padding: 12px 16px; border-radius: var(--radius-md); line-height: 1.5; }
+    .pre-cta { display: block; color: var(--color-success); font-weight: 500; font-size: 16px; margin-top: 12px; }
+    .nowrap { white-space: nowrap; }
+    .pachinoform { padding: 0; font-size: 17px; line-height: 1.5; color: var(--color-text); border: 1px solid var(--color-border); background: #fff; display: block; border-radius: var(--radius-lg); width: 100%; max-width: 780px; margin: 24px auto; box-shadow: var(--shadow-lg); overflow: hidden; }
+    .pachinoform_title { display: flex; gap: 16px; max-width: none; align-self: stretch; text-align: left; background: var(--color-primary); color: #fff; padding: 20px 24px; align-items: center; }
+    .pachinoform_title_logo { flex-shrink: 0; background: #fff; padding: 6px; border-radius: 50%; width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; }
+    .pachinoform_title_logo img { max-width: 100%; height: auto; }
+    .pachinoform_title_text { align-self: center; color: #fff; font-size: 15px; line-height: 1.4; }
+    .pachinoform_title_text>b { display: block; line-height: 1.3; font-size: 17px; margin-bottom: 4px; color: #fff; font-weight: 600; }
+    .pachinoform_order { max-width: none; font-weight: 500; font-size: 15px; margin: 0; text-align: center; padding: 16px 24px; background: var(--color-primary-light); border-bottom: 1px solid var(--color-border-soft); color: var(--color-text); line-height: 1.5; }
+    .pachinoform_order>b { color: var(--color-danger); font-weight: 700; }
+    .pachinoform_value { display: flex; color: var(--color-text); font-weight: 600; font-size: 15px; align-items: center; justify-content: center; padding: 16px 24px 0; flex-wrap: wrap; gap: 10px; }
+    .pachinoform_value_current { border: 2px solid var(--color-danger); color: var(--color-danger); line-height: 1; font-size: 22px; padding: 6px 18px; margin: 0 6px; border-radius: var(--radius-sm); background: var(--color-danger-light); font-weight: 700; }
+    .pachinoform_value_total { font-size: 18px; color: var(--color-text-muted); }
+    .pachinoform_price { display: flex; align-items: center; justify-content: center; gap: 24px; margin: 20px 0 0; padding: 0 24px; }
+    .pachinoform_price_old span { display: block; font-size: 24px; font-weight: 600; letter-spacing: -0.5px; color: var(--color-text-light); position: relative; line-height: 1; }
+    .pachinoform_price_old span::before { position: absolute; content: ""; left: -4px; top: 50%; right: -4px; border-top: 2px solid var(--color-danger); transform: rotate(-12deg); }
+    .pachinoform_price_new span { display: inline-block; background: var(--color-success); color: #fff; text-shadow: none; font-size: 32px; padding: 8px 20px; font-weight: 700; line-height: 1; border-radius: var(--radius-sm); box-shadow: 0 4px 12px rgba(30, 132, 73, 0.25); }
+    .pachinoform form { padding: 22px 24px 20px; }
+    .pachinoform .name-input, .pachinoform .phone-input { color: var(--color-text); font-size: 15px; margin-bottom: 14px; }
+    .pachinoform .name-input label, .pachinoform .phone-input label { font-weight: 500; font-size: 14px; color: var(--color-text-muted); margin-bottom: 6px; display: block; text-transform: uppercase; letter-spacing: 0.04em; }
+    .pachinoform .name-input input, .pachinoform .phone-input input { font: inherit; color: var(--color-text); box-sizing: border-box; width: 100%; border-radius: var(--radius-sm); padding: 12px 16px; min-width: 0; background: #fff; border: 1.5px solid var(--color-border); font-size: 16px !important; transition: border-color 0.15s ease, box-shadow 0.15s ease; }
+    .pachinoform .name-input input:focus, .pachinoform .phone-input input:focus, .pachinoform input:focus { outline: 0; border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(10, 92, 158, 0.15); }
+    .pachinoform .button-submit { text-align: center; width: 100%; margin: 6px auto 0; text-decoration: none; border-radius: var(--radius-sm); color: #fff; border: 0; padding: 16px 20px; cursor: pointer; background: var(--color-primary); font-size: 17px; line-height: 1.3; font-weight: 600; letter-spacing: 0.02em; text-transform: uppercase; transition: background 0.15s ease, transform 0.05s ease; box-shadow: 0 4px 12px rgba(10, 92, 158, 0.25); font-family: var(--font-sans); }
+    .pachinoform .button-submit:hover { background: var(--color-primary-dark); }
+    .pachinoform .button-submit:active { transform: translateY(1px); }
+    .pachinoform .button-submit:focus { outline: 0; box-shadow: 0 0 0 3px rgba(10, 92, 158, 0.25); }
+    .pachinoform ::placeholder { color: var(--color-text-light); opacity: 1; font-size: 15px !important; }
+    .pachinoform_footer { text-align: center; color: var(--color-text-muted); font-size: 13px; padding: 14px 24px 20px; background: var(--color-bg-soft); border-top: 1px solid var(--color-border-soft); line-height: 1.5; }
+    .pachinoform_footer img { margin-top: 10px; max-width: 100%; height: auto; opacity: 0.85; }
+    @media (max-width:500px) { .pachinoform_title { gap: 10px; padding: 16px 18px; } .pachinoform_title_text { font-size: 13px; } .pachinoform_title_text>b { font-size: 15px; } .pachinoform_value { flex-wrap: wrap; justify-content: center; font-size: 14px; } .pachinoform_price_new span { font-size: 26px; } .pachinoform_price_old span { font-size: 20px; } .pachinoform form { padding: 18px 18px 18px; } .pachinoform_order { padding: 14px 18px; font-size: 14px; } .blc-pck { display: block; width: 100%; text-align: center; margin-top: 8px; } .pachinoform_value_current { margin: 0; } }
+    .comments { max-width: 900px; margin: 32px auto 20px; background: #fff; border-radius: var(--radius-md); border: 1px solid var(--color-border); overflow: hidden; }
+    .comments__header { padding: 16px 20px; background: var(--color-primary); color: #fff; display: flex; align-items: center; justify-content: space-between; }
+    .comments__header-title { font-family: var(--font-serif); font-size: 18px; font-weight: 600; margin: 0; color: #fff; letter-spacing: 0.02em; }
+    .comments__item-list { padding: 8px 20px; }
+    .comments__item { padding: 16px 0; border-bottom: 1px solid var(--color-border-soft); }
+    .comments__item:last-child { border-bottom: 0; }
+    .comments__item-header { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+    .comments__item-avatar { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 1px solid var(--color-border); }
+    .comments__item-info { flex: 1; min-width: 0; }
+    .comments__item-name { font-weight: 600; font-size: 15px; color: var(--color-primary-dark); margin: 0 0 2px; }
+    .comments__item-info p:last-child, .comments__item-info .startdate, .comments__item-info .nowdate { font-size: 12px; color: var(--color-text-light); margin: 0; }
+    .comments__item-body { padding-left: 56px; }
+    .comments__item-content { font-size: 15px; line-height: 1.55; color: var(--color-text); margin: 0; }
+    .comments__item-content img { border-radius: var(--radius-sm); margin-top: 10px; }
+    .comm-obert-reply { padding-left: 28px; border-left: 2px solid var(--color-primary-light); margin-left: 8px; }
+    .comm-obert-reply .comments__item.reply { border-bottom: 1px solid var(--color-border-soft); }
+    @media (max-width:560px) { .comments__item-body { padding-left: 0; } .comm-obert-reply { padding-left: 16px; } }
+    .form-container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+    .custom-form { max-width: 100%; margin: 0 auto; padding: 18px; box-shadow: var(--shadow-sm); border: 1px solid var(--color-border); box-sizing: border-box; font-family: var(--font-sans) !important; display: flex; flex-direction: column; gap: 12px; background: var(--color-bg-soft); border-radius: var(--radius-md); }
+    .custom-form__top-field { display: flex; gap: 16px; align-items: center; }
+    .custom-form__ava-block { position: relative; width: 54px; height: 54px; overflow: hidden; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px dashed var(--color-border); transition: 0.2s; flex: 0 0 auto; background: #fff; }
+    .custom-form__ava-label { font-size: 11px; text-align: center; line-height: 1.2; cursor: pointer; font-family: inherit; font-weight: 400; color: var(--color-text-light); padding: 4px; }
+    .custom-form__ava-label_red-text { color: var(--color-danger); }
+    .custom-form__name { width: 100%; max-width: 320px; display: inline-block; outline: none; border: 1.5px solid var(--color-border); padding: 10px 14px; font-size: 14px; height: 42px; box-sizing: border-box; font-family: inherit; border-radius: var(--radius-sm); background: #fff; }
+    .custom-form__message { resize: none; width: 100%; outline: none; border: 1.5px solid var(--color-border); padding: 12px 14px; min-height: 90px; font-size: 14px; line-height: 1.5; font-family: inherit; box-sizing: border-box; border-radius: var(--radius-sm); background: #fff; }
+    .custom-form__bottom-field { display: flex; flex-direction: row; gap: 14px; align-items: center; flex-wrap: wrap; }
+    .custom-form__btn { outline: none; padding: 10px 24px; background: var(--color-primary); color: #fff; font-weight: 600; font-size: 14px; transition: background 0.15s ease; cursor: pointer; text-transform: uppercase; border: 0; font-family: var(--font-sans); border-radius: var(--radius-sm); text-decoration: none !important; letter-spacing: 0.04em; }
+    .custom-form__btn:hover { background: var(--color-primary-dark); }
+    .custom-form__photo-label { cursor: pointer; font-size: 13px; font-weight: 400; border: none; color: var(--color-primary); text-decoration: underline; }
+    .trust-strip { max-width: 900px; margin: 0 auto; background: #fff; border: 1px solid var(--color-border-soft); border-top: 0; padding: 20px 22px; display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-around; align-items: center; }
+    .trust-item { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--color-text-muted); font-weight: 500; }
+    .trust-item-icon { color: var(--color-primary); font-size: 18px; }
+    .clinical-footer { max-width: 900px; margin: 0 auto 0; padding: 24px 22px 36px; background: #fff; border: 1px solid var(--color-border-soft); border-top: 1px solid var(--color-border); text-align: center; font-size: 12px; color: var(--color-text-light); line-height: 1.6; }
+    .clinical-footer a { color: var(--color-primary); text-decoration: none; }
+    .product-center { display: block; max-width: 220px; width: 100%; margin: 16px auto; }
+    #overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 100; transition: opacity 0.3s ease; }
+    #popup3 { background-size: cover; background-position: center; position: fixed; top: 50%; left: 50%; padding: 20px; background-color: white; box-shadow: var(--shadow-lg); transition: opacity 0.3s ease, transform 0.3s ease; max-width: 800px; width: 93%; height: 87%; overflow-y: auto; max-height: 100vh; z-index: 999999; }
+    body input[name="phone"] { background-repeat: no-repeat !important; background-position: left 15px center !important; }
+    main center { display: block; text-align: center; }
+    .sf-hidden { display: none !important; }
+    .quote-inline { margin: 20px 0; padding: 16px 20px; background: var(--color-bg-soft); border-left: 4px solid var(--color-text-light); border-radius: 0 var(--radius-md) var(--radius-md) 0; font-style: italic; color: var(--color-text-muted); font-size: 16px; line-height: 1.6; }
+    .quote-inline .quote-name { display: block; margin-top: 10px; font-style: normal; font-weight: 600; color: var(--color-primary-dark); font-size: 14px; }
+    @media (max-width:480px) { body { font-size: 16px; } main p { font-size: 16px; } .doc-block { padding: 16px; } .rev-block { padding: 16px; } .recept { padding: 16px; } .block-offer-actions-block { padding: 6px 16px 16px; } .obertk512 li { padding-left: 44px; } .obertk512 li::before { width: 30px; height: 30px; font-size: 14px; } }
+    @keyframes example { 0% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes blinker { from { opacity: 1.0; } to { opacity: 0.7; } }
+  </style>
+
+  <script src="js/dtime.js"></script>
+  <script>
+    
+    function dtime_nums(offset, withYear) {
+      var host = document.currentScript && document.currentScript.parentNode;
+      var fmt = (host && host.getAttribute) ? host.getAttribute('format') : null;
+      var d = new Date();
+      d.setDate(d.getDate() + (Number(offset) || 0));
+      var day = d.getDate(), mon = d.getMonth() + 1, yr = d.getFullYear();
+      var p = function (v) { return v < 10 ? '0' + v : String(v); };
+      var out;
+      if (fmt === 'year') { out = String(yr); }
+      else if (withYear === false) { out = p(mon) + '-' + p(day); }
+      else { out = yr + '-' + p(mon) + '-' + p(day); }
+      document.write(out);
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="clinical-topbar">Specialusis reportažas · Sveikata ir visuomenė</div>
+
+  <div class="masthead">
+    <div class="masthead-inner">
+      <div class="masthead-logo">
+        <span class="masthead-logo-icon">+</span>
+        <span>SveikatosInfo Lietuva</span>
+      </div>
+      <div class="masthead-tagline">Reportažai iš visuomenės sveikatos pasaulio</div>
+    </div>
+  </div>
+
+  <header>
+    <div class="bg-image"></div>
+  </header>
+  <div class="text-container"></div>
+  <div class="h1-bg split">
+    <h1 class="title_h1">
+      <span class="head-one-part">„KAI NEBEGALI VAIKŠČIOTI, ŠEIMA PAMIRŠTA TAVE."</span>
+      <span class="head-two-part">JAUNAS GYDYTOJAS, KURIS APVAŽIUOJA SLAUGOS NAMUS VISOJE LIETUVOJE IR GRĄŽINA APLEISTIEMS SENJORAMS TAI, KO NIEKAS KITAS NEGALI DUOTI: JŲ SĄNARIUS IR ORUMĄ. JO METODAS SUKRĖTĖ VISĄ MEDICINOS BENDRUOMENĘ.</span>
+    </h1>
+
+    <div class="tdate head-main-date">
+      <span class="head-main-date-title">Paskelbta: </span>
+      <span class="startdate">
+        <script>dtime_nums(-3, true)</script>, 09:36
+      </span>
+    </div>
+
+    <div class="main-subtitle">
+      Kaip dr. Markas Urbonas, vos 30 metų, paliko karjerą privačioje Vilniaus klinikoje, kad darytų tai, ko nenorėjo joks kitas gydytojas: apvažiuotų slaugos namus visoje Lietuvoje ir gydytų vyresnius žmones, kuriuos šeimos paliko — būtent todėl, kad jie nebegalėjo vaikščioti, stovėti, daryti nieko savarankiškai. Ir kaip metodas, kurį jis sukūrė kartu su mokslinių tyrimų centru, sugrąžino jiems judėjimo galimybę — be operacijos ir be visą gyvenimą vartojamų vaistų.
+    </div>
+  </div>
+
+  <main>
+
+    <img alt="Dr. Markas Urbonas apžiūri pacientės kelį slaugos namuose"
+      src="https://static.joxi.pro/1778142925769-2045c9ea-f00c-48ab-ae5d-6e56aec020f0.jpg"
+      style="margin-bottom:14px;margin-top:0">
+
+    <p>
+      Atvykome antradienio rytą į Panevėžį, Aukštaitijoje. Kelias į slaugos namus eina siauromis gatvelėmis, pro senas akmeninėmis sienomis namais ir lojančius šunis. „Ar ieškote jauno gydytojo?" — paklausė pardavėja parduotuvėje. „Jis atvažiuoja kiekvieną ketvirtadienį. Seneliai laukia jo prie vartų. Kai kurie verkia, kai jį pamato."
+    </p>
+    <p>
+      Taip pirmą kartą išgirdome apie dr. Marką Urboną — 30 metų gydytoją, kuris paliko vietą privačioje Vilniaus klinikoje, kad darytų tai, ko nenorėjo joks kitas gydytojas: lankytų slaugos namus visoje Lietuvoje ir gydytų pensininkus, kuriuos šeimos buvo palikę.
+    </p>
+    <p>
+      Palikimo priežastis? Beveik visada ta pati: <b>Vyresni žmonės nebegalėjo vaikščioti.</b> Keliai lūžo. Stuburas sulinkęs. Rankos drebėjo taip stipriai, kad negalėjo laikyti net šaukšto. Ir kaip tik tuo momentu — kai jiems labiausiai reikėjo pagalbos — šeima nusprendė, kad tai per daug. Per sunku. Per brangu. Ir apgyvendino juos slaugos namuose.
+    </p>
+
+    <div class="quote-inline">
+      „Mano sūnus pasakė: 'Mama, negaliu tavęs nuolat kelti nuo kėdės. Nebeišeina.' Kitą dieną jis nuvežė mane į slaugos namus. Trejus metus jis manęs neaplankė."
+      <span class="quote-name">— ponia Edita, 79 metai, slaugos namai Panevėžyje</span>
+    </div>
+
+    <div class="quote-inline">
+      „Kai mano keliai visiškai užblokavo, žmona pasakė, kad negali gyventi su invalidu. Ji išėjo. Vaikai palaikė ją. Jie atvežė mane čia ir dingo."
+      <span class="quote-name">— ponas Frydrichas, 73 metai, slaugos namai Kaune</span>
+    </div>
+
+    <h2>
+      „Mačiau, kaip atrodo apleistumas. Ir nusprendžiau, kad negaliu stovėti nuošalyje"
+      <span>Išskirtinis interviu su dr. Marku Urbonu — gydytoju, kuris atsisakė 2 800 € per mėnesį algos, kad padėtų tiems, kurie neturi nė vieno</span>
+    </h2>
+
+    <div class="doc-block">
+      <img alt="Dr. Markas Urbonas" src="https://static.joxi.pro/1778142925769-8d31ed89-cd31-449a-8c51-6ff1a0bfb48e.jpg">
+      <p>Dr. Markas Urbonas: „Pirmą kartą į slaugos namus atėjau kaip savanoris, kai man buvo 28 metai. Nebuvau pasiruošęs tam, ką išvydau. Moteris, 76 metai, ponia Jadvyga, sėdėjo ant lovos krašto su ištinusiomis kojomis ir keliais, kurie nebesulenkė. Keturis mėnesius ji nebuvo išėjusi iš kambario. Ji paėmė mano ranką ir pasakė:
+        <b>„Daktare, dukra atvežė mane čia, kai nebegalėjau nulipti laiptais. Ji sakė, kad negali manimi rūpintis. Tai buvo prieš dvejus metus. Nuo tada ji negrįžo."</b>
+      </p>
+      <p><b>TĄ AKIMIRKĄ SUPRATAU, KAD ŠIE ŽMONĖS MANĘS REIKIA LABIAUSIAI —
+          <span class="red-txt">TIE, KURIUOS VISAS PASAULIS UŽMIRŠO, KAIP TIK TODĖL, KAD JIE NEBEGALI VAIKŠČIOTI."</span></b>
+      </p>
+    </div>
+
+    <p>
+      Dr. Urbonas kalba ramiai, tačiau su intensyvumu, kurio neįmanoma ignoruoti. Dvejus metus jis apvažiuoja slaugos namus visoje Lietuvoje — nuo Aukštaitijos iki Žemaitijos, nuo Dzūkijos iki Suvalkijos. Ir visur randa tą patį nerimą keliantį vaizdą: vyresnius žmones su sunaikintais sąnariais, kurie negauna jokio tikro gydymo, tik priešuždegiminius vaistus, kurie naikina jų skrandį ir inkstus.
+    </p>
+
+    <p>
+      „Dauguma šių žmonių čia atsidūrė dėl sąnarių. Kelis sugavo. Stuburas užblokavo. Klubas nudilo. Ir tą akimirką, kai jie nebegalėjo vaikščioti savarankiškai, šeima nusprendė, kad jie tapo <b>„našta"</b>. Tai žodis, kurį dažniausiai girdžiu slaugos namuose: „našta". Savus tėvus vadina našta."
+    </p>
+
+    <div class="quote-inline">
+      „Manęs čia atvežė ne todėl, kad nemyli manęs. Atvežė todėl, kad tris valandą nakties rėkiau iš kelio skausmo ir niekas negalėjo miegoti. Marti pasakė: 'Arba aš, arba ji.' Mano sūnus pasirinko ją."
+      <span class="quote-name">— ponia Valė, 71 metai, slaugos namai Vilniuje</span>
+    </div>
+
+    <h2>
+      „Sąnarių tabletės nieko neišsprendžia — jos tik maskuoja naikinimą"
+      <span>Dr. Urbonas aiškina, kodėl įprastinis gydymas slaugos namuose ir vaistinėse nepavyksta</span>
+    </h2>
+
+    <p><b>Dr. Markas Urbonas:</b></p>
+    <p>— Pasakysiu jums atvirai: tai, ką mačiau šiuose slaugos namuose, mane šokiravo. Žmonės nuo 55 iki 80 metų, kurie metų metus gauna tuos pačius priešuždegiminius vaistus — tabletes, kurios kelioms valandoms uždengia skausmą, negydant priežasties. Kremzlės toliau naikinasi. Sąnarių skystis dingsta. Sąnariai trina kaulą prie kaulo. O tablečių chemija kiekvieną dieną naikina jų skrandį, kepenis ir inkstus.
+    </p>
+
+    <p>Tai užburtas ratas: skausmas → tabletės → skausmas grįžta stipresnis → stipresnės tabletės → skrandis lūžta → tabletės skrandžiui → inkstai lūžta. Ir niekas nesako jiems tiesos: <b>kad egzistuoja metodas, atnaujinantis sąnarį iš vidaus, o ne tik maldantis skausmą.</b>
+    </p>
+
+    <figure>
+      <img class="img-card" src="https://static.joxi.pro/1778142925769-a94978b4-3738-4aeb-950e-312b652009ac.jpg">
+      <figcaption>
+        Ponios Genovaitės keliai, 74 metai, slaugos namai Kaune. Artrozė 3 laipsnio, kremzlės beveik visiškai sunaikintos. Penkis mėnesius ji neišėjo iš kambario. Ant naktinio staliuko — 6 rūšių tabletės, kurios nieko nepakeitė.
+      </figcaption>
+    </figure>
+
+    <div class="pachino-ramka312-block">
+      <p class="pachino-ramka312">
+        <span class="obertka-1">
+          Skausmai kelyje, nugaroje ar klubo srityje po 45 metų nėra „normalūs dėl amžiaus" — tai ženklas, kad sąnarių kremzlės naikinamos ir sąnarių skystis dingsta.
+          <br><br>
+          Priešuždegiminiai vaistai tik blokuoja skausmo signalą, o naikinimas tyliai tęsiasi. Be tikrojo kremzlių atnaujinimo sąnarys visiškai nudyla — ir tada belieka tik vežimėlis arba sąnario protezavimo operacija.
+        </span>
+      </p>
+    </div>
+
+    <p><b>Dr. Markas Urbonas:</b></p>
+
+    <p>— Prašau suprasti situacijos rimtumą. Daugumai šių vyresnių žmonių kelio, stuburo ar klubo kremzlės sunaikintos 70–90 %. Jie vaikšto — jei apskritai vaikšto — kaulas prie kaulo. Kiekvienas žingsnis yra kančia. <b>PAPRASTOS TABLETĖS NEGALI ATNAUJINTI KREMZLIŲ — JOS TIK MASKUOJA SKAUSMĄ, KOL VISKAS SUBYRĖS!</b>
+    </p>
+
+    <p>
+      Ir tai, kas mane labiausiai skauda: šie žmonės neturi nė vieno. Šeima juos paliko kaip tik tuo momentu, kai sąnariai atsisakė. Jie guli vieni lovoje, mažame kambaryje, ir laukia. Kai kurie nebežino, ko laukia.
+    </p>
+
+    <div class="quote-inline">
+      „Užauginau tris vaikus. 40 metų dirbau laukuose. Ir kai mano keliai lūžo ir nebegalėjau pati nueiti į tualetą — apgyvendino mane slaugos namuose. Lyg jų akyse aš nebeegsistuočiau. Lyg jau būčiau mirusi."
+      <span class="quote-name">— ponia Stasė, 82 metai, slaugos namai Klaipėdoje</span>
+    </div>
+
+    <div class="quote-inline">
+      „35 metus buvau mūrininkas. Nugara atsisakė 62-ejų — disko išvarža, išiasas, negalėjau stovėti. Mano sūnus pasakė, kad negali likti namuose ir rūpintis manimi. Jis turi savo darbą, savo šeimą. Suprantu. Bet skauda labiau nei nugara."
+      <span class="quote-name">— ponas Pranciškus, 68 metai, slaugos namai Šiauliuose</span>
+    </div>
+
+    <figure class="Figure" style="text-align:center">
+      <img src="https://static.joxi.pro/1778142925769-057465eb-7a53-45e0-ba84-1b9038913030.jpg" style="margin:0 auto">
+      <figcaption>
+        <b>Kairėje: sveikas sąnarys su nesugadinta kremzle ir pakankamai sąnarių skysčio. Dešinėje: sunaikintas sąnarys — nudilusi kremzlė, lėtinis uždegimas, kaulas prie kaulo. Tai yra daugiau nei 80 % slaugos namų gyventojų realybė. Priešuždegiminiai vaistai kremzlių neatnaujina.</b>
+      </figcaption>
+    </figure>
+
+    <p class="red-txt">
+      Svarbu: 2 iš 3 atvejų sąnariai toliau blogėja — net ir kasdien vartojant skausmą malšinančius vaistus — nes tikroji priežastis — kremzlių naikinimas ir sąnarių skysčio dingimas — lieka negydyta.
+    </p>
+
+    <p class="red-txt">
+      Po metų priešuždegiminių vaistų vartojimo daugelis pacientų praranda ne tik judėjimo galimybę, bet ir skrandį, kepenis ir inkstus. Opos, kepenų nepakankamumas, inkstų patinimas — tokia yra kaina, kurią moka tie, kuriems niekas nepasiūlė tikros alternatyvos.
+    </p>
+
+    <h2>
+      Istorijos, pakeitusios mano gyvenimą — ir pakeis jūsų požiūrį į senatvę
+    </h2>
+
+    <p><b>Dr. Markas Urbonas:</b></p>
+
+    <p>— Leiskite man papasakoti, ką matau kiekvieną savaitę. Ne skaičius. Ne statistiką. Žmones. Žmones su vardais, su istorijomis, su vaikais, kurie nebeatvyksta.</p>
+
+    <figure class="cap-bold">
+      <img class="img-card" src="https://static.joxi.pro/1778142925769-ab7d1e11-8df2-44ee-b472-2a3be72bb7b3.jpg">
+      <figcaption>
+        Ponia Aldona, 77 metai. Reumatoidinis artritas abiejose rankose — negali laikyti puodelio, negali pati apsirengti. Dukra atvežė ją į slaugos namus prieš 2 metus: „Negaliu jos rengt kiekvieną rytą, aš irgi turiu savo gyvenimą."
+      </figcaption>
+    </figure>
+
+    <div class="quote-inline">
+      „Negaliu net sušukuoti plaukų. Negaliu įpilti vandens į stiklinę. Rankos neklauso. Ryte į jas žiūriu ir neatpažįstu — ištinusios, sulinkusios, lyg nebūtų manos. Marti kartą man pasakė: 'Kaip tau patikėsiu anūkus, jei negali laikyti net šaukšto?' Ji buvo teisi. Bet tie žodžiai mane nužudė iš vidaus."
+      <span class="quote-name">— ponia Aldona, 77 metai</span>
+    </div>
+
+    <figure class="cap-bold">
+      <img class="img-card" src="https://static.joxi.pro/1778142925769-980707f6-6c1c-40ec-96a5-61c8c9dcde54.jpg">
+      <figcaption>
+        Ponas Leonas, 75 metai. Disko išvarža L4-L5, dvišalė koksartrozė. Aštuonis mėnesius negali stovėti. „Jam sakė, kad per senas operacijai. Jam sakė, kad turi susitaikyti."
+      </figcaption>
+    </figure>
+
+    <div class="quote-inline">
+      „Buvau traktorininkas. Išariau tūkstančius hektarų. Dabar negaliu pats apsiversti lovoje. Nugara užblokavo, klubas sustingo. Mano sūnūs dirba užsienyje. Siunčia pinigų slaugos namams, ir tiek. Nepriekaištauju jiems. Bet naktį, kai skauda ir niekas neatvyksta… galvoju, ar tai jau pabaiga."
+      <span class="quote-name">— ponas Leonas, 75 metai</span>
+    </div>
+
+    <p><b>Tai simptomai, kuriuos dažniausiai sutinku slaugos namuose — ir kuriuos milijonai žmonių Lietuvoje ignoruoja:</b></p>
+    <ul>
+      <li>Stiprus kelio skausmas laiptais — arba kiekvieno judesio metu;</li>
+      <li>Ryto sustingimas — kūnas jaučiasi „kaip medis", nesijudina 30–60 minučių po pabudimo;</li>
+      <li>Lėtiniai nugaros skausmai — neįmanoma pasilenkti, neįmanoma atsikelti iš lovos;</li>
+      <li>Kelių, kulkšnių ar pirštų patinimas;</li>
+      <li>Sąnarių traškėjimas ir girgždėjimas kiekvieno judesio metu;</li>
+      <li>Klubo skausmas, plintantis į šlaunį — neįmanoma nueiti daugiau kaip 50 metrų;</li>
+      <li>Sulinkę, mazgoti pirštai — neįmanoma sugriebti daiktų;</li>
+      <li>Tirpimas kojose ar rankose — disko išvaržos ar suspausto nervo požymis;</li>
+      <li>„Dūrio" pojūtis apatinėje nugaros dalyje kylant;</li>
+      <li>Palinkęs stuburas, palinkusi laikysena — progresuojanti kifozė;</li>
+      <li>Naktinis skausmas, neleidžiantis miegoti — prabudimas 4–5 kartus per naktį;</li>
+    </ul>
+
+    <p>
+      Kiekvienas iš šių simptomų yra įspėjamasis signalas. Ir po 45–50 metų jų ignoravimas veda prie vieno vienintelio rezultato:
+      <b class="red-txt">VISIŠKA NEJUDAMUMAS, VEŽIMĖLIS, VISIŠKAS PRIKLAUSOMUMAS NUO KITŲ — IR DAUGELIU ATVEJŲ SLAUGOS NAMAI.</b>
+    </p>
+
+    <div class="pachino-ramka312-block">
+      <p class="pachino-ramka312">
+        <span class="obertka-1">
+          Kiekviena diena su negydytais sąnariais artina jus prie nuolatinės nejudamumo!
+          Tūkstančiai pensininkų slaugos namuose atsidūrė ten kaip tik todėl, kad ignoravo skausmą — arba vartojo tik tabletes, kurios negydė priežasties.
+          Imkitės veiksmų dabar — sau ar savo artimiesiems — kol dar ne per vėlu!
+        </span>
+      </p>
+    </div>
+
+    <h2>
+      „Nusprendžiau, kad turi būti būdas atnaujinti sąnarius — o ne tik malšinti skausmą"
+      <span>Kaip 30 metų gydytojas įtikino mokslinių tyrimų centrą sukurti tai, ko farmacijos pramonė atsisako daryti</span>
+    </h2>
+
+    <p><b>Dr. Markas Urbonas:</b></p>
+    <p>
+      — Po metų slaugos namų lankymų skausminga tiesa tapo aiški: priešuždegiminiais vaistais negaliu išgelbėti nė vieno. Šie vaistai tik išjungia kūno pavojaus signalą, o sąnarys toliau naikinasi. Man reikėjo kažko visiškai kitokio: metodo, kuris atnaujina kremzles iš vidaus, atkuria sąnarių skystį ir sustabdo uždegimą ląstelių lygmeniu.
+    </p>
+    <p>
+      Susisiekiau su mokslinių tyrimų centru, su kuriuo bendradarbiavau studijų metu. Parodžiau jiems atvejus, nuotraukas, slaugos namų pacientų tyrimo rezultatus. Pasiėmiau tyrėjus į slaugos namus — kad savo akimis pamatytų, kas ten vyksta. Jie liko be žodžių.
+    </p>
+    <p>
+      Dirbome kartu daugiau nei 10 mėnesių. Išbandėme daugiau nei 180 kombinacijų. Ir galiausiai radome tikslią formulę — kremą, kuris, uždėtas ant sergančio sąnario, skverbiasi iki ląstelių lygmens ir aktyvuoja natūralų kremzlių atsinaujinimą. Ne tabletė, einanti per skrandį ir naikinanti kepenis. Kremas, veikiantis kaip tik ten, kur reikia.
+    </p>
+
+    <div class="recept">
+      <p><b>Dr. Urbono sukurta formulė turi šias veikliąsias medžiagas:</b></p>
+      <ul class="my-ul-0-green size1">
+        <li><b>Gliukozamino sulfatas</b>
+          <font>Išgrynintas jūros žaliavinis produktas: 1500 mg/dozė</font>
+        </li>
+        <li><b>Chondroitino sulfatas</b>
+          <font>Ekstraktas su aukštu biologiniu prieinamumu: 1200 mg/dozė</font>
+        </li>
+        <li><b>Boswellia serrata ekstraktas</b>
+          <font>Boswellia rūgštis sukoncentruota iki 65 %: 800 mg</font>
+        </li>
+        <li><b>Mažos molekulinės masės hialurono rūgštis</b>
+          <font>Transdermalinė penetracija: 200 mg</font>
+        </li>
+        <li><b>Hidrolizuotas II tipo kolagenas</b>
+          <font>Sertifikuotas galvijų šaltinis: 2000 mg</font>
+        </li>
+        <li><b>Arnikos ekstraktas</b>
+          <font>Natūralus priešuždegiminis: 500 mg</font>
+        </li>
+        <li><b>MSM (metilsulfonilmetanas)</b>
+          <font>Biologiškai prieinamas organinė siera: 1000 mg</font>
+        </li>
+        <li><b>Kamparas ir mentolis</b>
+          <font>Natūralus analgetinis kompleksas su šilumos efektu</font>
+        </li>
+      </ul>
+    </div>
+
+    <p>
+      Šias sudedamąsias dalis sunku įsigyti reikalingomis koncentracijomis. Jų sumaišymui reikalingomis proporcijomis reikia specialios technologijos — jei proporcijos nukrypsta net 0,1 %, kremas neprasiskverbia pakankamai giliai ir neaktyvuoja kremzlių atsinaujinimo.
+    </p>
+
+    <h2>
+      Taip atsirado Flexosamine — vienintelis kremas, turintis visas šias veikliąsias medžiagas idealiomis proporcijomis visapusiškam sąnario atnaujinimui
+    </h2>
+    <p><b>Dr. Markas Urbonas:</b></p>
+    <p>
+      — Kartu su mokslinių tyrimų centru mums pavyko pagaminti šį produktą: kremą išoriniam naudojimui, tepamą tiesiai ant sergančio sąnario — kelio, nugaros, klubo, rankų, kaklo. Jo pavadinimas — Flexosamine. Jis naudojamas du kartus per dieną, rytą ir vakare, švelniu 2–3 minučių masažu. Veikliosios medžiagos skverbiasi tiesiai į sąnarį, apeinant skrandį ir kepenis — taip pašalinant visas tablečių šalutines reakcijas.
+    </p>
+
+    <img src="images/product.png" style="max-width:250px;display:block;margin:18px auto">
+
+    <p>
+      Paslaptis slypi „Giliosios transdermalinės penetracijos technologijoje", kurią sukūrėme laboratorijoje su komanda. Šis metodas leidžia veikliosioms medžiagoms pasiekti tiesiai sąnario kapsulę — ten, kur naikinamos kremzlės — su 5 kartus didesniu efektyvumu nei bet kuris įprastas rinkoje esantis kremas.
+    </p>
+    <p class="pachino-ramka2">
+      Flexosamine neturi konkurentų. Kiekviena sudedamoji dalis — tikslia koncentracija — aktyvuoja kremzlių atsinaujinimą, atkuria sąnarių skystį ir sustabdo uždegimą. Tai vienintelis kremas, veikiantis ląstelių lygmeniu, tiesiai pažeistoje vietoje — kelyje, nugaroje, klubo srityje, rankose, kakle — neeinant per skrandį. Ir svarbiausia: jis veikia net žmonėms nuo 70, 80, 85 metų. Pirmiausia jį išbandžiau savo pacientams slaugos namuose — tiems, kurių niekas kitas nebegydė.
+    </p>
+
+    <p><b>Dr. Markas Urbonas:</b></p>
+    <p>
+      — Pirmieji pacientai buvo apleisti vyresni žmonės iš slaugos namų. Tie, kuriuos visi buvo užmiršę. Tepiau kremą ant ištinusių kelių, nugaros, klubų. Ir laukiau. Trečią dieną — ponia Stasė, kuri keturis mėnesius nebuvo kėlusis iš lovos, žengė pirmuosius savarankiškus žingsnius. Mudu abu verkėme.
+    </p>
+
+    <h2>
+      4 mechanizmai, kuriais Flexosamine atnaujina sąnarius ir grąžina judėjimo galimybę — bet kuriame amžiuje
+    </h2>
+
+    <div class="obertk512">
+      <h1>4 pagrindiniai kremo Flexosamine veikimai:</h1>
+      <div class="block-offer-actions-block">
+        <ol>
+          <li>
+            <font>Skausmo ir uždegimo pašalinimas:</font>
+            <span>Jau 15–30 minučių po tepimo Boswellia, arnikos ir kamparo kompleksas pašalina skausmą ir sumažina uždegimą. Ne blokuojant nervo signalą (kaip tabletės) — bet sustabdant uždegimo procesą jo šaltinyje.</span>
+          </li>
+          <li>
+            <font>Sąnario kremzlės atnaujinimas:</font>
+            <span>Gliukozaminas, chondroitinas ir II tipo kolagenas skverbiasi į sąnario kapsulę ir aktyvuoja kremzlių ląsteles (chondrocitus), skatindami naujo kremzlių audinio susidarymą. Šis procesas prasideda po 3–5 dienų reguliaraus naudojimo.</span>
+          </li>
+          <li>
+            <font>Sąnarių skysčio atkūrimas:</font>
+            <span>Mažos molekulinės masės hialurono rūgštis skverbiasi transdermaliai ir atkuria sąnarių skystį — natūralų sąnario „tepalą". Dėl to kaulai nebesitrins vienas prie kito, o judėjimas vėl taps sklandus ir neskausmingas.</span>
+          </li>
+          <li>
+            <font>Ilgalaikė apsauga ir profilaktika:</font>
+            <span>MSM ir mineralų kompleksas stiprina raiščius ir sausgysles aplink sąnarį, užkertant kelią tolesniems pažeidimams. Po 30–60 naudojimo dienų sąnarys įgyja stabilią apsaugą, trunkančią mėnesius.</span>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <h2>
+      „Flexosamine pirmiausia išbandžiau savo pacientams slaugos namuose — rezultatai pranoko viską, ką buvau matęs per 6 medicinos praktikos metus"
+      <span>Tyrimai su 2 340 žmonių nuo 45 iki 86 metų</span>
+    </h2>
+
+    <p><b>Dr. Markas Urbonas:</b></p>
+    <p>
+      — Pirmieji pacientai buvo apleisti vyresni žmonės iš slaugos namų. Tie, kurių niekas daugiau nebegydė. Rezultatai buvo tokie įspūdingi, kad mokslinių tyrimų centras išplėtė tyrimus į grupę, viršijančią 2 300 žmonių iš visos Lietuvos — su visų rūšių sąnarių problemomis: kelys, nugara, klubas, rankos, kaklas.
+    </p>
+    <p>
+      Mačiau 80 metų žmones, kurie negalėjo vaikščioti — o 6 savaites vėliau patys išėjo į slaugos namų kiemą. Slaugytojos verkė. Verkiau kartu su jomis.
+    </p>
+
+    <div class="table-block">
+      <h1 class="title_h1">
+        Flexosamine tyrimų rezultatai — kontrolinė grupė: 2 340 žmonių, 45–86 metai
+      </h1>
+      <table class="table">
+        <tbody>
+          <tr><td class="one">Visiškas kelio skausmų pašalinimas</td><td class="two">96,2 %</td></tr>
+          <tr><td class="one">Nugaros skausmų ir ryto sustingimo pašalinimas</td><td class="two">94,7 %</td></tr>
+          <tr><td class="one">Artrozė 1–2 laipsnio (visiškas judėjimo galimybės atgavimas)</td><td class="two">98,1 %</td></tr>
+          <tr><td class="one">Artrozė 3 laipsnio (žymus pagerėjimas)</td><td class="two">87,3 %</td></tr>
+          <tr><td class="one">Koksartrozė (klubo skausmai)</td><td class="two">91,5 %</td></tr>
+          <tr><td class="one">Disko išvarža (skausmo ir tirpimo sumažinimas)</td><td class="two">89,4 %</td></tr>
+          <tr><td class="one">Reumatoidinis artritas (rankų pirštai)</td><td class="two">93,8 %</td></tr>
+          <tr><td class="one">Visiškas sąnario judumo atgavimas</td><td class="two">95,6 %</td></tr>
+          <tr><td class="one">Patinimų ir naktinių traukulių pašalinimas</td><td class="two">97,0 %</td></tr>
+          <tr><td class="one">Gebėjimas vaikščioti be pagalbos</td><td class="two">94,3 %</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>
+      Atvejai, sulaužę mano širdį — ir davę didžiausią viltį
+      <span>
+        Ponia Zofija, 84 metai. Palikta slaugos namuose, kai keliai lūžo. Po 2 mėnesių naudojant Flexosamine — pati išėjo į sodą pirmą kartą per 3 metus.
+      </span>
+    </h2>
+
+    <p>
+      Ponia Zofija Kazlauskienė buvo pirmoji dr. Urbono pacientė slaugos namuose Jonavos rajone. 84 metų amžiaus, su 3 laipsnio artroze abiejuose keliuose ir koksartroze kairiajame klubo sąnaryje, 14 mėnesių ji negalėjo vaikščioti. Sūnus atvežė ją į slaugos namus, nes „nebegalėjo nešti jos į vonios kambarį". Dvejus metus jis jos neaplankė.
+    </p>
+
+    <div class="gray-bg rev-block">
+      <img class="img-card2" src="https://static.joxi.pro/1778142925769-b234c916-2418-43cd-a09b-52da3b198c19.jpg">
+      <p>
+        „Netikėjau, kad dar kada nors galėsiu vaikščioti. Mano keliai buvo tokie ištinę, kad negalėjau jų sulenkti. Kambaryje mane veždavo vežimėliu. Rytą pabudusi valandą negalėjau pajudinti nė piršto. Lyg mano kūnas būtų miręs, o aš dar gyvenčiau.
+      </p>
+      <p>
+        <b>
+          Mano sūnus atvežė mane čia, nes nebegalėjo kelti manęs iš lovos. Jis pasakė: 'Mama, atvažiuosiu tavęs lankyti kiekvieną sekmadienį.' Dvejus metus jis neatvažiavo. Nepriekaištauju jam — jis turi savo gyvenimą. Bet naktį, kai skausmas prabunda ir šalia nėra nė vieno… tai labai sunku.
+        </b>
+      </p>
+      <p>
+        <b>
+          Ir tada atėjo jaunas gydytojas. Jis buvo pirmasis žmogus, prisiliečiamas prie mano kelių be pasibjaurėjimo veide. Jis paaiškino, kas vyksta sąnariuose. Ir ištepė kremą. Po savaitės galėjau sulenkti kairįjį kelį. Po mėnesio pati atsikėliau iš lovos. Po dviejų mėnesių — išėjau į sodą. Trejus metus nebuvau lauke.
+        </b>
+      </p>
+      <p>
+        Slaugytoja verkė, kai mane pamatė. Aš dar labiau. Ne todėl, kad vaikščiojau. Bet todėl, kad kažkas — jaunas gydytojas, kurio niekada nepažinojau — davė man daugiau, nei mano paties sūnus.
+      </p>
+      <font>
+        <b>Zofija Kazlauskienė, 84 metai, slaugos namai Jonavos rajone</b>
+      </font>
+    </div>
+
+    <p>
+      Dar vienas atvejis: ponas Tomas, 58 metai, visą gyvenimą mūrininkas, su sunaikinta nugara dėl disko išvaržų. Žmona paliko jį, kai jis nebegalėjo dirbti.
+    </p>
+
+    <div class="gray-bg rev-block">
+      <img class="img-card2" src="https://static.joxi.pro/1778142925769-f6ae7d5d-d93a-42f5-8684-d3c285fbc8bf.jpg">
+      <p>
+        „30 metų buvau mūrininkas. Nugara atsisakė sulaukus 54 — dvi disko išvaržos ir išiasas. Negalėjau nei stovėti, nei gulėti. Viskas skaudėjo. Žmona išėjo — pasakė, kad negali prižiūrėti invalido. Nepriekaištauju jai.
+      </p>
+      <p>
+        <b>
+          Sesuo išgirdo apie jauną gydytoją iš kaimynės. Atsiuntė man kremą Flexosamine. Pradėjau jį tepti rytą ir vakare ant nugaros. Trečią dieną pajutau pirmą palengvėjimą. Po 3 savaičių — galėjau vėl nueiti į parduotuvę. Po 2 mėnesių — grįžau į darbą nepilnu darbo laiku.
+        </b>
+      </p>
+      <p>
+        Kartais ryte atsikeliu iš lovos be skausmo ir sustoju akimirkai. Stoviu ir negaliu patikėti, kad tai tiesa. Kad nebeskausmina. Jei nebūtų buvę jauno gydytojo, galbūt dabar pats bučiau slaugos namuose."
+      </p>
+    </div>
+
+    <h2>
+      „Flexosamine gydo ne tik skausmą — jis atnaujina visą sąnarį iš vidaus"
+      <span>
+        Iš to naudos gauna ne tik slaugos namų gyventojai. Visi, vyresni nei 45 metų ir jaučiantys pirmuosius požymius, gali išvengti katastrofos.
+      </span>
+    </h2>
+
+    <p><b>Dr. Markas Urbonas:</b></p>
+
+    <p>
+      — Minimalus naudojimo laikotarpis yra 30 dienų, tačiau sunkiais artrozės ar disko išvaržos atvejais gali prireikti 2–3 mėnesių. Tačiau visais atvejais — be išimties — stebimas skausmo sumažėjimas, kremzlių atsinaujinimas ir judėjimo galimybės grįžimas.
+    </p>
+
+    <p>
+      Flexosamine veikia nuo pirmojo tepimo: skausmas mažėja, uždegimas traukiasi, judėjimas tampa lengvesnis. Tačiau tikrasis stebuklas įvyksta per laiką: kremzlės atsinaujina, sąnarių skystis grįžta, sąnarys „atjaunėja" iš vidaus.
+      <b class="red-txt">
+        Mačiau 80 metų žmones, vėl pradėjusius vaikščioti. Rankas, negalėjusias laikyti puodelio, keliančias šaukštą prie burnos. Sulenktą stuburą, kuris atsitiesė. Ir kiekvienu atveju — džiaugsmo ašaros.
+      </b>
+    </p>
+
+    <center>
+      <p><b>
+          Dėkojant jauno gydytojo metodui, daugiau nei 12 000 žmonių Lietuvoje atgavo sąnarių funkcijas. Štai keli atvejai:
+        </b></p>
+    </center>
+
+    <figure>
+      <img src="https://static.joxi.pro/1778142925769-baf151ad-77dc-450d-9a89-3293efafacfa.jpg">
+      <figcaption>Vyras, 65 metai. Artrozė 3 laipsnio abiejuose keliuose — negalėjo lipti laiptais. Flexosamine per 60 dienų: visiškas judamumas, be skausmo.</figcaption>
+    </figure>
+
+    <figure>
+      <img class="img-card" src="https://static.joxi.pro/1778142925768-f19f7f66-3e45-449a-87f2-78884ec5e6e1.jpg">
+      <figcaption>Moteris, 58 metai. Lėtiniai nugaros skausmai ir disko išvarža L5-S1. Flexosamine per 45 dienas: skausmas dingo, vėl gali atlikti namų darbus.</figcaption>
+    </figure>
+
+    <figure>
+      <img class="img-card" src="https://static.joxi.pro/1778142925768-7d23b447-1714-413e-b3dd-921918111aa3.jpg">
+      <figcaption>Moteris, 72 metai. Sunkus reumatoidinis artritas pirštų sąnariuose — negalėjo laikyti net puodelio. Flexosamine per 2 mėnesius: pirštai juda, patinimas dingo.</figcaption>
+    </figure>
+
+    <figure>
+      <img class="img-card" src="https://static.joxi.pro/1778142925768-4a9900ea-fa77-4c81-a40e-dff210ebf7df.jpg">
+      <figcaption>Vyras, 70 metų. Progresuojanti koksartrozė — galėjo judėti tik su vaikštyne. Flexosamine per 2,5 mėnesio: vaikščioja savarankiškai, be skausmo.</figcaption>
+    </figure>
+
+    <p><b>Dr. Markas Urbonas:</b></p>
+    <p>
+      — Šie atvejai yra gyvas įrodymas, kad sąnariai gali atsinaujinti — net kai diagnozė skambėjo kaip nuosprendis. Be operacijos. Be tablečių, naikinančių skrandį. Ir tai, kas mane labiausiai džiugina: daugelis šių žmonių yra slaugos namų gyventojai — tie, kuriuos pasaulis užmiršo. <b>Bet aš jų neužmiršiu. Ir Flexosamine jų taip pat nepamiršta.</b>
+    </p>
+
+    <div id="overlay" style="display:none;opacity:0"></div>
+    <div id="popup3" style="display:none;opacity:0;transform:translate(-50%,-50%) scale(0.8)"></div>
+
+    <h2>
+      Kodėl Flexosamine neprieinamas vaistinėse? Ir kaip jį galima įsigyti?
+    </h2>
+
+    <p><b>Dr. Markas Urbonas:</b></p>
+
+    <p>Deja, Flexosamine gamyba yra sudėtingas ir brangus procesas. Žaliavos yra retos — mažos molekulinės masės hialurono rūgštis, išgrynintas II tipo kolagenas, koncentruotas Boswellia ekstraktas — ir sunku jas įsigyti reikalingais kiekiais. Mes negalime patenkinti viso paklausos.</p>
+
+    <p>Prieš Flexosamine patenkant į vaistines, praeis bent 2–3 metai. Tuo tarpu produktas parduodamas tik internetu, paramos programų ribose, du kartus per metus. Tačiau <font class="red-txt">nuolaidos gali siekti net 50 %</font> — o tai pensijų gavėjams yra itin svarbu.</p>
+
+    <p>
+      Prašau jūsų: NEPRALEISKITE PARAMOS PROGRAMOS. Ne tik sau — bet ir savo tėvams, seneliams, artimiesiems, kurie galbūt tyliai kenčia. Ar tiems, kurie jau yra slaugos namuose, vieni, ir niekas jiems nieko nesiunčia. Būkite jūs tas žmogus, darantis skirtumą.
+    </p>
+
+    <p class="red-txt"><b>Norėdami užsisakyti, naudokite žemiau esančią formą.</b></p>
+
+    <h2>
+      Paskutinė galimybė šiemet įsigyti Flexosamine — sau ar artimam žmogui, tyliai kenčiančiam
+    </h2>
+
+    <img alt="Flexosamine" src="https://static.joxi.pro/1778142925765-23a2eba7-86af-44ac-ba7c-09e3abb33bc2.jpg"
+      style="margin:0 auto;display:block;max-width:500px;width:100%;margin-top:24px;margin-bottom:20px">
+
+    <p><b>Dr. Markas Urbonas:</b></p>
+
+    <p>
+      — Rezervavau 20 000 pakuočių išskirtinai šio portalo skaitytojams. Kiekvienas Lietuvos pilietis, vyresnis nei 40 metų, gali gauti <font class="red-txt">nuolaidą iki 50 %</font>, tačiau programa veikia iki <span>
+        <script>dtime_nums(0, true)</script>
+      </span>.
+    </p>
+
+    <p>Nelaukite, kol nebegalėsite lipti laiptais. Kol keliai visiškai lūš. Kol nugara užblokuos. Ir svarbiausia — nelaukite, kol tapsite „našta" šeimos akyse. Flexosamine turi kumuliacinį poveikį ir pakanka jį naudoti kartą per metus kaip prevencinę priemonę.</p>
+
+    <p>Įrašykite savo vardą ir telefono numerį. Mūsų konsultantas susisieks su jumis, parinks tinkamą programą ir organizuos pristatymą per 2–3 dienas kurjeriu tiesiai nurodytu adresu.</p>
+
+    <p><b>Su viltimi ir pagarba — jaunas gydytojas. Rūpinkitės savo artimaisiais. Galbūt vienintelis dalykas, kurio jiems reikia — žinojimas, kad jie nėra užmiršti.</b></p>
+
+    <p class="pachino-ramka">
+      <span class="ramka-title">Atnaujinimas: <span>
+          <script>dtime_nums(0, true)</script>
+        </span>:</span>
+      Dėl milžiniško susidomėjimo atsargos gali baigtis anksčiau nei tikėtasi! Šiandien —
+      <font><span>
+          <script>dtime_nums(0, true)</script>
+        </span> — yra paskutinė programos diena</font> arba kol baigsis atsargos.
+    </p>
+
+    <center><img src="images/product.png" style="max-width:250px;"></center><br>
+
+    <center>
+      <p class="noclose-cta red-txt">
+        Dėmesio! Neuždarykite ir neatnaujinkite šio puslapio, kitaip jums rezervuota Flexosamine pakuotė bus perduota kitam asmeniui!
+      </p>
+      <span class="pre-cta">
+        Pasinaudokite pasiūlymu — jūsų vieta rezervuota:
+        <span class="nowrap">Nr. <font class="number-me"
+            style="border-bottom:2px solid var(--color-danger);font-weight:700">19&nbsp;974</font></span>
+      </span>
+    </center>
+
+    <span id="form"></span>
+    <span id="oneform"></span>
+    <div class="pachinoform">
+      <div class="pachinoform_title">
+        <div class="pachinoform_title_logo">
+          <img alt="" src="images/56d9b0017d1d_d58505c9.png">
+        </div>
+        <div class="pachinoform_title_text">
+          <b>Oficiali užsakymo forma</b>
+          Nr. <font class="number-me nowrap">19&nbsp;974</font> / <font class="nowrap">20 000</font>
+        </div>
+      </div>
+      <div class="pachinoform_order">
+        Norėdami pasinaudoti <b>50 % nuolaida</b>, įrašykite savo vardą ir telefono numerį į laukus ir spustelėkite „UŽSAKYTI DABAR".
+      </div>
+      <div class="pachinoform_value">
+        Prieinama:
+        <span class="blc-pck">
+          <strong class="pachinoform_value_current left-pack">33</strong>
+          <strong class="pachinoform_value_total"> /20 000</strong>
+        </span>
+      </div>
+      <div class="pachinoform_price">
+        <div class="pachinoform_price_old"><span class="price_old">78 €</span></div>
+        <div class="pachinoform_price_new"><span class="price_main">39 €</span></div>
+      </div>
+      <form action="/order.php" method="post">
+        <input type="hidden" name="fbpx" value="{fbpx}">
+        <input type="hidden" name="utm_code" value="{subid}">
+        <input type="hidden" name="cid" value="{campaign_id}">
+        <input type="hidden" name="sid" value="2885">
+        <input type="hidden" name="hash" value="{hash}">
+        <input type="hidden" name="country" value="LT">
+        <div class="name-input">
+          <label for="name-input">Vardas</label>
+          <input autocomplete="name" id="name-input" name="name" placeholder="Jūsų vardas" required="" type="text" value="">
+        </div>
+        <div class="phone-input">
+          <label for="phone-input">Telefono numeris</label>
+          <input autocomplete="tel" id="phone-input" maxlength="20" name="phone" pattern="^[\-+() 0-9]{8,20}$"
+            placeholder="Jūsų telefono numeris" required="" type="tel" value="">
+        </div>
+        <button class="button-submit" type="submit">UŽSAKYTI DABAR</button>
+      </form>
+      <div class="pachinoform_footer">
+        ✔️ Pristatymas tiesiai į jūsų adresą<br> kurjerio tarnyba visoje Lietuvoje
+        <br>
+        <img alt="" src="images/b0110a32ff2e_8322b1b5.png" style="width:auto">
+      </div>
+    </div>
+
+    <!-- COMMENTS SECTION -->
+    <div class="comments comments-fb" id="pluginComments">
+      <div class="comments__header">
+        <div class="comments__left-box">
+          <p class="comments__header-title">KOMENTARAI</p>
+        </div>
+      </div>
+
+      <div class="comments__item-list">
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/7da17fc86c6c_2f1260d0.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Marija Gudaitė</p>
+              <p class="startdate" daysago="3" format="day/month/year">
+                <script>dtime_nums(-3, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Verkiau skaitydama šį straipsnį. Mano mamai 76 metai ir ji jau 2 metus slaugos namuose — kaip tik todėl, kad jos keliai lūžo ir negalėjau ja rūpintis. Tai mano didžiausia kaltė. Užsisakiau Flexosamine jai. Tikiuosi, kad dar ne per vėlu. Dieve, tikiuosi, kad padės.</p>
+          </div>
+        </div>
+
+        <div id="first-comment">
+          <div class="comments__item">
+            <div class="comments__item-header">
+              <img alt="" class="comments__item-avatar" loading="eager" src="images/8ba73d45c164_4ede289a.jpg">
+              <div class="comments__item-info">
+                <p class="comments__item-name">Ingrida Stankevičienė</p>
+                <p class="startdate" daysago="3" format="day/month/year">
+                  <script>dtime_nums(-3, true)</script>
+                </p>
+              </div>
+            </div>
+            <div class="comments__item-body">
+              <p class="comments__item-content">Flexosamine atėjo praėjusį penktadienį. Tepiu rytą ir vakare ant kelių. Po 5 dienų — skausmai žymiai sumažėjo, galiu nulipti laiptais nesilaikydama už turėklo! Gydytojo istorija mane įtikino užsisakyti. Nuostabus žmogus.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/fa7f61c1431c_7946ff6c.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Elena Vaitkevičienė</p>
+              <p class="startdate" daysago="3" format="day/month/year">
+                <script>dtime_nums(-3, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Man 69 metai. Nugara mane kankino 4 metus — disko išvarža ir išiasas. Negalėjau net pasilenkti, kad surišti batus. Gydytojai davė priešuždegiminius vaistus, kurie sunaikino mano skrandį. Po 3 savaičių su Flexosamine — skausmai beveik visiškai dingo. Pati einu į turgų, perku, gaminu maistą. Atgavau savo gyvenimą.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/dcc5cfe80d60_5aa7f8f7.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Karolis Petraitis</p>
+              <p class="startdate" daysago="3" format="day/month/year">
+                <script>dtime_nums(-3, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Biure sėdžiu 10 valandų per dieną. Nugara ir kaklas atsisakė. Gydytojas pasakė: „Arba nustokite dirbti, arba operacija." Aš pasirinkau Flexosamine. Po 5 savaičių — nėra skausmų. Ir didžiulė pagarba jaunam gydytojui — pasaulyje, kur visi galvoja tik apie pinigus, jis lanko užmirštus vyresnius žmones.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/bcbe20e0b5d2_b241da99.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Valdemaras Eidukas</p>
+              <p class="startdate" daysago="2" format="day/month/year">
+                <script>dtime_nums(-2, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Užsisakiau 3 pakuotes — sau (kelis), žmonai (rankos, artritas) ir uošviui slaugos namuose. Negalime jo dažnai aplankyti, bet bent jau siunčiame jam tai, ko reikia. Tikiuosi, kad padės ir jam. Ačiū už straipsnį.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/73d3a879cef9_4a9ce85c.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Birutė Mažeikienė</p>
+              <p class="startdate" daysago="2" format="day/month/year">
+                <script>dtime_nums(-2, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Galvoju, ar užsisakyti tėčiui. Jis jau 3 metus slaugos namuose — keliai visiškai nebeveikia. Jis pasiduodė, beveik nebekalba. Ar manote, kad Flexosamine gali padėti net 78 metų amžiaus?</p>
+          </div>
+        </div>
+
+        <div class="comm-obert-reply">
+          <div class="comments__item reply">
+            <div class="comments__item-header">
+              <img alt="" class="comments__item-avatar" loading="eager" src="images/71deaf909b4e_ea30d07c.jpg">
+              <div class="comments__item-info">
+                <p class="comments__item-name">Danutė Jankauskienė</p>
+                <p class="startdate" daysago="2" format="day/month/year">
+                  <script>dtime_nums(-2, true)</script>
+                </p>
+              </div>
+            </div>
+            <div class="comments__item-body">
+              <p class="comments__item-content">Birute, mano mamai 82 metai! Sunki artrozė abiejuose keliuose, negalėjo atsikelti iš lovos. 2 mėnesiai Flexosamine — dabar pati išeina į kiemą. Nejuokauju. Ir gražiausia: kai atvažiavau jos aplankyti, ji pasitiko mane prie durų stovėdama. Abi verkėme. Užsisakyk nedvejodama, tavo tėtis nusipelnė šios galimybės.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="comm-obert-reply">
+          <div class="comments__item reply">
+            <div class="comments__item-header">
+              <img alt="" class="comments__item-avatar" loading="eager" src="images/66ebad51123a_206d5fba.png">
+              <div class="comments__item-info">
+                <p class="comments__item-name">Henrikas Kalvelis</p>
+                <p class="startdate" daysago="2" format="day/month/year">
+                  <script>dtime_nums(-2, true)</script>
+                </p>
+              </div>
+            </div>
+            <div class="comments__item-body">
+              <p class="comments__item-content">Birute, tiesiog užsisakyk. Aš sulaukęs 78 buvau žingsnis nuo vežimėlio — koksartrozė. Flexosamine mane pakėlė ant kojų per 2 mėnesius. Pažodžiui. Tavo tėčiui to reikia labiau, nei manai.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/d61700bc0961_28c03d39.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Irena Rimkienė</p>
+              <p class="startdate" daysago="1" format="day/month/year">
+                <script>dtime_nums(-1, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Savaitę tepiu. Ryte nebesu „kieta kaip lenta". Galiu pasilenkti, atsikelti be dejavimo. Užsisakiau ir kaimynei — 73 metai, gyvena viena, laikėsi už sienų, eidama per butą.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/7db2eed8e880_6ecfd92a.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Elvyra Vilkienė</p>
+              <p class="startdate" daysago="1" format="day/month/year">
+                <script>dtime_nums(-1, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Sulaukusi 68 maniau, kad daugiau niekada negalėsiu dirbti sode. Keliai ir nugara mane paralyžiavo. Flexosamine pakeitė viską — po 4 savaičių šiemet apkasiau pirmą lysvę. Jauno gydytojo istorija mane giliai paveikė. Pasaulyje dar yra gerų žmonių.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/a49c7ec0724d_6f186c1c.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Antanas Mockus</p>
+              <p class="startdate" daysago="1" format="day/month/year">
+                <script>dtime_nums(-1, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Man 82 metai. Praėjusiais metais negalėjau pats nueiti į tualetą. Vaikai kalbėjo apie slaugos namus. Išbandžiau Flexosamine — be didelių vilčių. Ir veikia! Einu pats, apsirengiu pats, išeinu pats iki vartų. Vaikai nebešneka apie slaugos namus. Tai mano didžiausias džiaugsmas gyvenime.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/7099c502f996_b89c4cc9.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Juozas Lapinskas</p>
+              <p class="startdate" daysago="1" format="day/month/year">
+                <script>dtime_nums(-1, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Mano žmona negalėjo nulipti laiptais. Laikėsi už sienos ir verkė iš skausmo. Bijojau ją prarasti — ne nuo ligos, o nuo nevilties. Užsisakiau Flexosamine su nuolaida. Po 4 savaičių — vakar ji pati nuėjo į turgų ir grįžo su gėlėmis. Su gėlėmis! Ačiū iš visos širdies.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/47a8cb9cf088_09555b8e.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Kristina Brazienė</p>
+              <p class="startdate" daysago="0" format="day/month/year">
+                <script>dtime_nums(0, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Užsisakiau 4 pakuotes — mamai (slaugos namai, kelys), tėčiui (namuose, nugara) ir 2 sau (rankos, artritas pirštų sąnariuose, negalėjau rašyti). Straipsnio istorijos mane sukrėtė. Reikėjo tai padaryti seniai. Daugiau jokių pasiteisinimų.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/f021e0a36f8b_7c282874.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Gražina Adomaitienė</p>
+              <p class="nowdate" daysago="0" format="day/month/year">
+                <script>dtime_nums(0, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Flexosamine atėjo — kurjeris pristatė per 2 dienas! Jau ištepiau ant mamos kelio slaugos namuose. Tikiuosi iš visos širdies. Atsiųsiu šį straipsnį ir personalui — galbūt susisieks su jaunam gydytoju.</p>
+          </div>
+        </div>
+
+        <div class="comments__item">
+          <div class="comments__item-header">
+            <img alt="" class="comments__item-avatar" loading="eager" src="images/d770c7a4cbdf_467ee117.jpg">
+            <div class="comments__item-info">
+              <p class="comments__item-name">Rimantas Alekna</p>
+              <p class="nowdate" daysago="0" format="day/month/year">
+                <script>dtime_nums(0, true)</script>
+              </p>
+            </div>
+          </div>
+          <div class="comments__item-body">
+            <p class="comments__item-content">Paklausiau vaistinėje apie Flexosamine — ten nėra. Pasakė, kad reikia užsisakyti per šį puslapį. Tikiuosi, kad dar yra. Mano seneliui tai skubiai reikia — jam 81 metai ir jis visiškai nebegali vaikščioti.</p>
+          </div>
+        </div>
+
+        <div class="custom-commetns-container"></div>
+
+        <a href="#" style="text-decoration: none;">
+          <div class="form-container">
+            <form class="custom-form" id="custom-form">
+              <div class="custom-form__top-field">
+                <div class="custom-form__ava-block">
+                  <input disabled class="custom-form__ava-input sf-hidden" id="avatar" name="avatar" type="file" value="">
+                  <label class="custom-form__ava-label"><span class="custom-form__ava-label_red-text">*</span>Profilio nuotrauka</label>
+                </div>
+                <input disabled class="custom-form__name" placeholder="Jūsų vardas" required="" type="text" value="">
+              </div>
+              <textarea disabled class="custom-form__message" placeholder="Jūsų komentaras" required=""></textarea>
+              <div class="custom-form__bottom-field">
+                <div class="custom-form__photo-block">
+                  <input disabled class="custom-form__photo-input sf-hidden" id="photo" type="file" value="">
+                  <label class="custom-form__photo-label" for="photo">Pridėti nuotrauką</label>
+                </div>
+                <button disabled class="custom-form__btn">SIŲSTI</button>
+              </div>
+            </form>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+  </main>
+
+  <div class="trust-strip">
+    <div class="trust-item"><span class="trust-item-icon">🛡️</span> Sertifikuota kokybė</div>
+    <div class="trust-item"><span class="trust-item-icon">🚚</span> Pristatymas per 2–3 dienas</div>
+    <div class="trust-item"><span class="trust-item-icon">⚕️</span> Prieinama be recepto</div>
+    <div class="trust-item"><span class="trust-item-icon">🔒</span> Saugus užsakymas</div>
+  </div>
+
+  <footer class="clinical-footer">
+    © SveikatosInfo Lietuva — specialusis reportažas<br>
+    Puslapyje pateikta informacija yra informatyvaus pobūdžio ir nepakeičia medicinės konsultacijos.
+  </footer>
+
+  <div class="ffl ffl__anim sf-hidden" data-name="div-gc0zvidej" style="display:block"></div>
+
+  <script async>
+    const LAZY = document.querySelectorAll('img');
+    for (let i = 0; i < LAZY.length; i++) { LAZY[i].setAttribute('loading', 'lazy'); }
+  </script>
+
+  <script>
+    $("a").on("touchend click", function (e) {
+      e.preventDefault();
+      $('body,html').animate({ scrollTop: $('#oneform').offset().top }, 400);
+    });
+  </script>
+
+  <script>
+    $('[name="name"]').on("input", function () {
+      var val = $(this).val();
+      var cleaned = val.replace(/[^\p{L}\s]/gu, "").replace(/^\s+/, "").replace(/\s\s+/, " ");
+      var parts = cleaned.split(" ");
+      if (parts.length > 2) { cleaned = parts[0] + " " + parts[1]; }
+      $(this).val(cleaned);
+    });
+    $('[name="name"]').on("change blur", function () { $(this).val($(this).val().trim()); });
+    $('[name="phone"]').on("input change", function(e) {
+      var val = $(this).val();
+      $(this).val(val.replace(/\D/g, ""));
+      $(e.currentTarget).attr("pattern", "[0-9]{8,11}");
+    });
+  </script>
+  <p style="opacity: 0;">{_box:2sHZz2rc}</p>
+</body>
+</html>
